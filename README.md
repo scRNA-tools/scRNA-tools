@@ -4,7 +4,7 @@ A table of software for the analysis of single-cell RNA-seq data. To make it
 into the table software must be available for download and public use somewhere
 (CRAN, Bioconductor, PyPI, Conda, Github, Bitbucket, a private website etc). If
 you just want to view the table or do some basic sorting/filtering a live
-version is available [here](goo.gl/4wcVwn).
+version is available [here](https://goo.gl/4wcVwn).
 
 ## Purpose
 
@@ -30,7 +30,7 @@ The table has the following columns:
 ### Function columns
 
 The function columns are TRUE/FALSE columns indicating if the software has a
-particular function. This are designed to be used as filters, for example when
+particular function. These are designed to be used as filters, for example when
 looking for software to accomplish a particular task. They are also the most
 likely to be inaccurate as software is frequently updated and it is hard to
 judge all the functions without making significant use of it. The function
