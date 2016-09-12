@@ -59,7 +59,6 @@ columns ask the following questions of the software:
   measure?
 * **Modality** - Does it identify or make use of modality in expression?
 * **Alternative Splicing** - Does it identify alternatice splicing?
-* **Copy Number** - Does it find copy number variation?
 * **Rare Cells** - Does it identify rare cells types?
 * **Stem Cells** - Does it identify stem cells in a population?
 * **Haplotypes** - Does it make use of haplotypes or perform phasing?
