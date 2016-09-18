@@ -25,6 +25,7 @@ The table has the following columns:
 * **Code** - URL for publically available code.
 * **Description**
 * ***FUNCTION COLUMNS*** (Described below)
+* **Added** - Date when the entry added.
 * **Updated** - Date when the entry was last updated.
 
 ### Function columns
