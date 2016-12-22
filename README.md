@@ -11,18 +11,18 @@ version is available [here](https://goo.gl/4wcVwn).
 This table is designed to be an overview of the currently available software, it
 is unlikely to be 100% complete or accurate but will be updated as new software
 becomes available. If you notice a problem or would like to add something please
-make a pull request or open a issue.
+make a pull request or open an issue.
 
 ## Structure
 
 The table has the following columns:
 
 * **Name**
-* **Platform** - Programming language or plaform where it can be used
+* **Platform** - Programming language or platform where it can be used
 * **DOI** - Publication DOI
 * **Pub Date** - Publication date. Preprints are marked with PREPRINT and will
   be updated when published.
-* **Code** - URL for publically available code.
+* **Code** - URL for publicly available code.
 * **Description**
 * ***FUNCTION COLUMNS*** (Described below)
 * **Added** - Date when the entry added.
@@ -34,9 +34,10 @@ The function columns are TRUE/FALSE columns indicating if the software has a
 particular function. These are designed to be used as filters, for example when
 looking for software to accomplish a particular task. They are also the most
 likely to be inaccurate as software is frequently updated and it is hard to
-judge all the functions without making significant use of it. The function
-columns ask the following questions of the software:
+judge all the functions a package has without making significant use of it. The
+function columns ask the following questions of the software:
 
+* **Assembly** - Can it perform assembly?
 * **Quantification** - Does it quantify expression from reads?
 * **QC** - Does it perform some type of quality control of cells?
 * **Normalisation** - Does it perform some type of normalisation?
@@ -67,4 +68,3 @@ columns ask the following questions of the software:
   make a plot using `ggplot` or `matplotlib` doesn't count)
 * **Interactive** - Does it have some kind of interactive component or a GUI?
 * **Simulation** - Does it have functions for simulating scRNA-seq data?
-
