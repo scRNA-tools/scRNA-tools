@@ -63,6 +63,7 @@ function columns ask the following questions of the software:
 * **Alternative Splicing** - Does it identify alternatice splicing?
 * **Rare Cells** - Does it identify rare cells types?
 * **Stem Cells** - Does it identify stem cells in a population?
+* **Variants** - Does it detect or make use of variants?
 * **Haplotypes** - Does it make use of haplotypes or perform phasing?
 * **Visualisation** - Does it do some kind of visualisation? (showing how to
   make a plot using `ggplot` or `matplotlib` doesn't count)
