@@ -24,6 +24,7 @@ The table has the following columns:
   be updated when published.
 * **Code** - URL for publicly available code.
 * **Description**
+* **License** - Software license
 * ***FUNCTION COLUMNS*** (Described below)
 * **Added** - Date when the entry added.
 * **Updated** - Date when the entry was last updated.
