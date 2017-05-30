@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-US">
+
+    <head>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    	<meta charset="UTF-8" />
+    	<title>Lukes Whizbang Contraptions</title>
+
+        <!--// Styles --------------------------------------------------------->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/jq-2.2.4/dt-1.10.15/datatables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+
+        <!--// Scripts -------------------------------------------------------->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/bs/jq-2.2.4/dt-1.10.15/datatables.min.js"></script>
+        <script type="application/javascript" src="js/jquery-table.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+            <!--// Intro ------------------------------------------------------>
+
+            <h1>Super cool table thing</h1>
+
+            <!--// Filter ----------------------------------------------------->
+
+            <div id="table-filter">
+                <form>
+                    <legend>Even cooler filter thing</legend>
+                    <fieldset class="form-group">
+                        <div class="form-check"><label><input type="checkbox" name="name" checked="checked"/>Name</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="platform" checked="checked"/>Platform</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="doi" checked="checked"/>DOI</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="pub_date" checked="checked"/>Pub Date</label>
+                        <div class="form-check"><label><input type="checkbox" name="code" checked="checked"/>Code</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="description" checked="checked"/>Description</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="license"/>License</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="assembly"/>Assembly</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="quantification"/>Quantification</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="qc"/>QC</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="normalisation"/>Normalisation</label></div></div>
+                        <div class="form-check"><label><input type="checkbox" name="imputation"/>Imputation</label></div>
+                        <div class="form-check"><label><div class="form-check"><input type="checkbox" name="gene_filtering"/>Gene Filtering</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="clustering"/>Clustering</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="pseudotime"/>Pseudotime</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="de"/>DE</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="marker_genes"/>Marker Genes</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="expression_patterns"/>Expression Patterns</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="variable_genes"/>Variable Genes</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="gene_sets"/>Gene Sets</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="gene_networks"/>Gene Networks</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="cell_cycle"/>Cell Cycle</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="dimensionality_reduction"/>Dimensionality Reduction</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="transformation"/>Transformation</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="modality"/>Modality</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="alternative_splicing"/>Alternative Splicing</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="rare_cells"/>Rare Cells</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="stem_cells"/>Stem Cells</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="variants"/>Variants</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="haplotypes"/>Haplotypes</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="allele_specific"/>Allele Specific</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="visualisation"/>Visualisation</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="interactive"/>Interactive</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="simulation"/>Simulation</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="added"/>Added</label></div>
+                        <div class="form-check"><label><input type="checkbox" name="updated"/>Updated</label></div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <!--// Table ------------------------------------------------------>
+
+            <div id="platforms" class="table-responsive">
+                <table id="main-table" class="table table-striped table-hover table-condensed" cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                        <tr>
+                            <th data-field="name">Name</th>
+                            <th data-field="platform">Platform</th>
+                            <th data-field="doi">DOI</th>
+                            <th data-field="date">Pub Date</th>
+                            <th data-field="code">Code</th>
+                            <th data-field="description">Description</th>
+                            <th data-field="license">License</th>
+                            <th data-field="assembly">Assembly</th>
+                            <th data-field="quantification">Quantification</th>
+                            <th data-field="qc">QC</th>
+                            <th data-field="normalisation">Normalisation</th>
+                            <th data-field="imputation">Imputation</th>
+                            <th data-field="gene_filtering">Gene Filtering</th>
+                            <th data-field="clustering">Clustering</th>
+                            <th data-field="pseudotime">Pseudotime</th>
+                            <th data-field="de">DE</th>
+                            <th data-field="marker_genes">Marker Genes</th>
+                            <th data-field="expression_patterns">Expression Patterns</th>
+                            <th data-field="variable_genes">Variable Genes</th>
+                            <th data-field="gene_sets">Gene Sets</th>
+                            <th data-field="gene_networks">Gene Networks</th>
+                            <th data-field="cell_cycle">Cell Cycle</th>
+                            <th data-field="dimensionality_reduction">Dimensionality Reduction</th>
+                            <th data-field="transformation">Transformation</th>
+                            <th data-field="modality">Modality</th>
+                            <th data-field="alternative_splicing">Alternative Splicing</th>
+                            <th data-field="rare_cells">Rare Cells</th>
+                            <th data-field="stem_cells">Stem Cells</th>
+                            <th data-field="variants">Variants</th>
+                            <th data-field="haplotypes">Haplotypes</th>
+                            <th data-field="allele Specific">Allele Specific</th>
+                            <th data-field="visualisation">Visualisation</th>
+                            <th data-field="interactive">Interactive</th>
+                            <th data-field="simulation">Simulation</th>
+                            <th data-field="added">Added</th>
+                            <th data-field="updated">Updated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,168 @@
+/************************************************************************
+*
+*   G L O B A L  C S S
+*
+*   Author:  Luke Zappia
+*   Date:    22 May 2017
+*   Email:   luke.zappia@mcri.edu.au
+*   Version: 1.0
+*
+*************************************************************************/
+
+/*-----------------------------------------------------------------------
+Reset
+------------------------------------------------------------------------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video,input, textarea, button
+{
+    background:transparent;
+    border:0;
+    font-size:100%;
+	list-style:none;
+    margin:0;
+    outline:0;
+    padding:0;
+    vertical-align:baseline;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary
+{
+    display:block;
+}
+
+nav ul
+{
+    list-style:none;
+}
+
+blockquote, q
+{
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after
+{
+    content:'';
+    content:none;
+}
+
+a
+{
+    background:transparent;
+    border:0;
+    font-size:100%;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+}
+
+ins
+{
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark
+{
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del
+{
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title]
+{
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table
+{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr
+{
+    border:0;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.float-left
+{
+    float:left;
+}
+
+.float-right
+{
+    float:right;
+}
+
+.bottomless
+{
+    border-bottom:none !important;
+}
+
+/*-----------------------------------------------------------------------
+Control Panel
+------------------------------------------------------------------------*/
+
+.float-left
+{
+    float:left;
+}
+
+.float-right
+{
+    float:right;
+}
+
+.clear
+{
+    clear:both;
+}
+
+/*-----------------------------------------------------------------------
+Big Table Page
+------------------------------------------------------------------------*/
+
+#table-filter
+{
+    background:#efefef;
+    border:1px solid #cccccc;
+    padding:20px;
+    margin:20px 0;
+}
+
+#table-filter .form-check
+{
+    display:inline;
+    margin:5px 5px 5px 0;
+}
+
+#table-filter .form-check input
+{
+    margin:0 5px 0 0;
+}
