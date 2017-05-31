@@ -11,6 +11,10 @@ $(document).ready(function(){
 
         /*-- Open JSON file, parse the contents, loop through & print markup--*/
 
+        $.ajaxSetup({
+            cache:false
+        });
+
         $.getJSON(json_location, function(data) {
             $.each(data, function(key, value) {
 
@@ -28,6 +32,7 @@ $(document).ready(function(){
                 license = value.License;
                 cats = value.categories.join(', ');
                 bioc = value.Bioconductor;
+                pypi = value.pypi;
 
                 /*-- Create markup --*/
                 /*entry = '<li>'+
@@ -39,17 +44,31 @@ $(document).ready(function(){
 
                 entry = '<div class="panel-heading">'+
                             '<h4 id="'+name+'" class="panel-title">'+
-                                '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#'+name+'_c">'+name+'</a>'+
-                            '</h4>'+
-                        '</div>'+
-                        '<div id="'+name+'_c" class="panel-collapse collapse">'+
-                            '<ul class="list-group">'+
-                                '<li class="list-group-item">'+description+'</li>'
+                                '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#'+name+'_c">'+name
 
-                //if ( typeof bioc !== 'undefined' ) {
-                    //entry += '<li class="list-group-item"><img border="0" src="http://bioconductor.org/shields/years-in-bioc/'+bioc+'.svg"></li>'
-                    entry += '<li class="list-group-item">'+bioc+'</li>'
-                //}
+
+
+                if ( typeof bioc !== 'undefined' ) {
+                    entry +=
+                    //'<li class="list-group-item">'+
+                        ' <img border="0" height="15" src="http://bioconductor.org/shields/years-in-bioc/'+bioc+'.svg">'+
+                        ' <img border="0" height="15" src="http://bioconductor.org/shields/downloads/'+bioc+'.svg">'
+                        //'</li>'
+                }
+
+                if ( typeof pypi !== 'undefined' ) {
+                    entry +=
+                    //'<li class="list-group-item">'+
+                        ' <img border="0" height="15" src="https://img.shields.io/pypi/v/'+pypi+'.svg">'+
+                        ' <img border="0" height="15" src="https://img.shields.io/pypi/pyversions/'+pypi+'.svg">'+
+                        ' <img border="0" height="15" src="https://img.shields.io/pypi/dm/'+pypi+'.svg">'
+                        //'</li>'
+                }
+
+                entry += '</a></h4></div>'+
+                    '<div id="'+name+'_c" class="panel-collapse collapse">'+
+                    '<ul class="list-group">'+
+                    '<li class="list-group-item">'+description+'</li>'
 
                 if ( typeof doi !== 'undefined' ) {
                     if ( typeof preprint != 'undefined') {

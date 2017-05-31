@@ -19,12 +19,18 @@ library(dplyr)
 library(tidyr)
 library(lubridate)
 library(stringr)
+library(rvest)
 
 #' Create tidy sheet from the google sheet
 #' @export
 get_tidy_sw_list <- function() {
     bioc.pkgs <- BiocInstaller::all_group()
     names(bioc.pkgs) <- str_to_lower(bioc.pkgs)
+
+    pypi.pkgs <- read_html("https://pypi.python.org/simple/") %>%
+        html_nodes('a') %>%
+        html_text()
+    names(pypi.pkgs) <- str_to_lower(pypi.pkgs)
 
     swsheet <- read_csv("single_cell_software.csv",
                         col_types = cols(
@@ -47,11 +53,15 @@ get_tidy_sw_list <- function() {
                                 paste0('http://dx.doi.org/', DOI))) %>%
         mutate(Bioconductor = str_to_lower(Name) %in% names(bioc.pkgs)) %>%
         mutate(Bioconductor = ifelse(Bioconductor,
-                                     bioc.pkgs[str_to_lower(Name)], NA))
+                                     bioc.pkgs[str_to_lower(Name)], NA)) %>%
+        mutate(pypi = str_to_lower(Name) %in% names(pypi.pkgs)) %>%
+        mutate(pypi = ifelse(pypi, pypi.pkgs[str_to_lower(Name)], NA)) %>%
+        mutate(pypi = ifelse(str_detect(str_to_lower(Platform), "python"),
+                             pypi, NA))
 
     gather(swsheet, key = 'category', value = 'val',
            -Description, -Name, -Platform, -DOI, -PubDate, -Updated, -Added,
-           -Preprint, -Code, -DOI_url, -License, -Bioconductor) %>%
+           -Preprint, -Code, -DOI_url, -License, -Bioconductor, -pypi) %>%
     #mutate(Github = grepl('github', Code)) %>%
     #mutate(CRAN = grepl('cran\\.r-project', Code)) %>%
     filter(val == TRUE) %>%
