@@ -4,7 +4,7 @@
     <head>
     	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
     	<meta charset="UTF-8" />
-    	<title>Lukes Whizbang Contraptions</title>
+    	<title>scRNA-seq Software</title>
 
         <!--// Styles --------------------------------------------------------->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -20,17 +20,32 @@
 
     <body>
 
+        <!--// NavBar --------------------------------------------------------->
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">scRNA-seq Software</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Table</a></li>
+                    <li class="active"><a href="#">Index</a></li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="container-fluid">
 
             <!--// Intro ------------------------------------------------------>
 
-            <h1>List of platforms</h1>
+            <!--<h1>List of platforms</h1>-->
 
-            <!--// JSNO Table ------------------------------------------------->
+            <!--// JSON Table ------------------------------------------------->
 
-            <ul id="platform-list">
-
-            </ul>
+            <div class="panel-group">
+                <div class="panel panel-default" id="platform-list">
+                </div>
+            </div>
 
         </div>
 

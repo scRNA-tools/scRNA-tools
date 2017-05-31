@@ -4,7 +4,6 @@
 *
 *   Author:  Luke Zappia
 *   Date:    22 May 2017
-*   Email:   luke.zappia@mcri.edu.au
 *   Version: 1.0
 *
 *************************************************************************/
@@ -166,3 +165,48 @@ Big Table Page
 {
     margin:0 5px 0 0;
 }
+
+
+
+.panel-title {
+  position: relative;
+}
+
+.panel-heading .accordion-toggle {
+  padding-left: 25px;
+  display: block;
+}
+
+.panel-heading .accordion-toggle:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e114";
+  /*glyphicon glyphicon-chevron-right*/
+  color: #333f48;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e080";
+  /*glyphicon glyphicon-chevron-down*/
+  color: #333f48;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* set panel-heading paddings to a instead of h3 */
+.panel-heading { padding: 0 }
+.panel-heading h4 { background: #ef8828; }
+.panel-heading a { padding: 10px 15px; }
+
+/* change color of collapsed class */
+.collapsed { background: #efefef; }
+
+/* reposition the left arrows */
+.panel-heading .accordion-toggle.collapsed:after { top: 10px; }
+.panel-heading .accordion-toggle:after { top: 10px; }
