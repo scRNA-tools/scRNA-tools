@@ -3,7 +3,7 @@ $(document).ready(function(){
     /*--Variables-------------------------------------------------------------*/
 
     platform_container = $("#platform-list");
-    json_location = "data/single-cell-software.json";
+    json_location = "data/software.json";
 
     /*--Functions-------------------------------------------------------------*/
 
@@ -18,6 +18,8 @@ $(document).ready(function(){
                 name = value.Name;
                 doi = value.DOI;
                 doi_url = value.DOI_url;
+                pub_date = value.PubDate;
+                preprint = value.Preprint;
                 description = value.Description;
                 platform = value.Platform;
                 code = value.Code;
@@ -25,6 +27,7 @@ $(document).ready(function(){
                 updated = value.Updated;
                 license = value.License;
                 cats = value.categories.join(', ');
+                bioc = value.Bioconductor;
 
                 /*-- Create markup --*/
                 /*entry = '<li>'+
@@ -43,8 +46,17 @@ $(document).ready(function(){
                             '<ul class="list-group">'+
                                 '<li class="list-group-item">'+description+'</li>'
 
+                //if ( typeof bioc !== 'undefined' ) {
+                    //entry += '<li class="list-group-item"><img border="0" src="http://bioconductor.org/shields/years-in-bioc/'+bioc+'.svg"></li>'
+                    entry += '<li class="list-group-item">'+bioc+'</li>'
+                //}
+
                 if ( typeof doi !== 'undefined' ) {
-                    entry += '<li class="list-group-item"><strong>DOI:</strong> <a href="'+doi_url+'">'+doi+'</a></li>'
+                    if ( typeof preprint != 'undefined') {
+                        entry += '<li class="list-group-item"><strong>Preprint: </strong> <a href="'+doi_url+'">'+doi+'</a></li>'
+                    } else {
+                        entry += '<li class="list-group-item"><strong>Publication: </strong> <a href="'+doi_url+'">'+doi+'</a> <strong>Date: </strong>'+pub_date+'</li>'
+                    }
                 }
 
                 entry += '<li class="list-group-item"><strong>Platform: </strong> '+platform+', <strong>Code: </strong> <a href="'+code+'">'+code+'</a></li>'
