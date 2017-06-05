@@ -33,6 +33,7 @@ $(document).ready(function(){
                 cats = value.categories.join(', ');
                 bioc = value.Bioconductor;
                 pypi = value.pypi;
+                cran = value.CRAN;
 
                 /*-- Create markup --*/
                 /*entry = '<li>'+
@@ -53,6 +54,14 @@ $(document).ready(function(){
                     //'<li class="list-group-item">'+
                         ' <img border="0" height="15" src="http://bioconductor.org/shields/years-in-bioc/'+bioc+'.svg">'+
                         ' <img border="0" height="15" src="http://bioconductor.org/shields/downloads/'+bioc+'.svg">'
+                        //'</li>'
+                }
+
+                if ( typeof cran !== 'undefined' ) {
+                    entry +=
+                    //'<li class="list-group-item">'+
+                        ' <img border="0" height="15" src="http://www.r-pkg.org/badges/version/'+cran+'">'+
+                        ' <img border="0" height="15" src="http://cranlogs.r-pkg.org/badges/grand-total/'+cran+'">'
                         //'</li>'
                 }
 
