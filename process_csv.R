@@ -20,6 +20,7 @@ library(tidyr)
 library(lubridate)
 library(stringr)
 library(rvest)
+library(rcrossref)
 
 #' Create tidy sheet from the google sheet
 #' @export
@@ -73,15 +74,40 @@ get_tidy_sw_list <- function() {
         mutate(pypi = ifelse(str_detect(str_to_lower(Platform), "python"),
                              pypi, NA))
 
+    message("Getting citations...")
+    swsheet$citations <- get_citations(swsheet$DOI)
+
     message("Tidying data...")
     gather(swsheet, key = 'category', value = 'val',
            -Description, -Name, -Platform, -DOI, -PubDate, -Updated, -Added,
-           -Preprint, -Code, -DOI_url, -License, -Bioconductor, -pypi, -CRAN) %>%
+           -Preprint, -Code, -DOI_url, -License, -Bioconductor, -pypi,
+           -CRAN, -citations) %>%
     #mutate(Github = grepl('github', Code)) %>%
     #mutate(CRAN = grepl('cran\\.r-project', Code)) %>%
         filter(val == TRUE) %>%
         select(-val) %>%
         arrange(Name)
+}
+
+get_citations <- function(dois) {
+
+    cites <- sapply(dois, function(doi) {
+        if (is.na(doi)) {
+            return(NA)
+        }
+
+        cit <-  tryCatch({
+            cr_citation_count(doi)
+        }, error = function(e) {
+            NA
+        })
+
+        Sys.sleep(sample(seq(0,2,0.5), 1))
+
+        return(cit)
+    })
+
+    return(cites)
 }
 
 tidysw_to_list_df <- function(tidysw) {

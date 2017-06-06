@@ -24,6 +24,7 @@ $(document).ready(function(){
                 doi_url = value.DOI_url;
                 pub_date = value.PubDate;
                 preprint = value.Preprint;
+                citations = value.citations;
                 description = value.Description;
                 platform = value.Platform;
                 code = value.Code;
@@ -46,8 +47,6 @@ $(document).ready(function(){
                 entry = '<div class="panel-heading">'+
                             '<h4 id="'+name+'" class="panel-title">'+
                                 '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#'+name+'_c">'+name
-
-
 
                 if ( typeof bioc !== 'undefined' ) {
                     entry +=
@@ -80,11 +79,16 @@ $(document).ready(function(){
                     '<li class="list-group-item">'+description+'</li>'
 
                 if ( typeof doi !== 'undefined' ) {
+                    entry += '<li class="list-group-item">'
                     if ( typeof preprint != 'undefined') {
-                        entry += '<li class="list-group-item"><strong>Preprint: </strong> <a href="'+doi_url+'">'+doi+'</a></li>'
+                        entry += '<strong>Preprint: </strong> <a href="'+doi_url+'">'+doi+'</a>'
                     } else {
-                        entry += '<li class="list-group-item"><strong>Publication: </strong> <a href="'+doi_url+'">'+doi+'</a> <strong>Date: </strong>'+pub_date+'</li>'
+                        entry += '<strong>Publication: </strong> <a href="'+doi_url+'">'+doi+'</a>, <strong>Date: </strong>'+pub_date
                     }
+                    if ( typeof citations !== 'undefined' ) {
+                        entry += ', <strong>Citations: </strong> '+citations
+                    }
+                    entry += '</li>'
                 }
 
                 entry += '<li class="list-group-item"><strong>Platform: </strong> '+platform+', <strong>Code: </strong> <a href="'+code+'">'+code+'</a></li>'
