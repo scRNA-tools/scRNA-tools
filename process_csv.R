@@ -24,7 +24,7 @@ library(rcrossref)
 
 #' Create tidy sheet from the google sheet
 #' @export
-get_tidy_sw_list <- function() {
+get_swsheet <- function() {
     message("Getting Bioconductor package list...")
     bioc.pkgs <- BiocInstaller::all_group()
     names(bioc.pkgs) <- str_to_lower(bioc.pkgs)
@@ -77,13 +77,17 @@ get_tidy_sw_list <- function() {
     message("Getting citations...")
     swsheet$citations <- get_citations(swsheet$DOI)
 
+    return(swsheet)
+}
+
+tidy_swsheet <- function(swsheet) {
     message("Tidying data...")
     gather(swsheet, key = 'category', value = 'val',
            -Description, -Name, -Platform, -DOI, -PubDate, -Updated, -Added,
            -Preprint, -Code, -DOI_url, -License, -Bioconductor, -pypi,
            -CRAN, -citations) %>%
-    #mutate(Github = grepl('github', Code)) %>%
-    #mutate(CRAN = grepl('cran\\.r-project', Code)) %>%
+        #mutate(Github = grepl('github', Code)) %>%
+        #mutate(CRAN = grepl('cran\\.r-project', Code)) %>%
         filter(val == TRUE) %>%
         select(-val) %>%
         arrange(Name)
@@ -111,23 +115,24 @@ get_citations <- function(dois) {
 }
 
 tidysw_to_list_df <- function(tidysw) {
-  catlist <- split(tidysw$category, f = tidysw$Name)
-  tidyswl <- tidysw %>%
-      select(-category) %>%
-      unique()
-  tidyswl[['categories']] <- catlist[tidyswl$Name]
-  tidyswl
+    catlist <- split(tidysw$category, f = tidysw$Name)
+    tidyswl <- tidysw %>%
+        select(-category) %>%
+        unique()
+    tidyswl[['categories']] <- catlist[tidyswl$Name]
+    tidyswl
 }
 
 
 #' write out json and csv files
 #'
 #' @export
-write_files = function(destdir) {
+write_files <- function(destdir) {
   dir.create(destdir, recursive = TRUE)
-  swsheet = get_tidy_sw_list()
+  swsheet <- get_swsheet()
+  tidysw <- tidy_swsheet(swsheet)
   #write_csv(swsheet,path=file.path(destdir,'single-cell-software_tidy.csv'))
-  writeLines(toJSON(tidysw_to_list_df(swsheet), pretty = TRUE),
+  writeLines(toJSON(tidysw_to_list_df(tidysw), pretty = TRUE),
              file.path(destdir, 'software.json'))
 }
 
