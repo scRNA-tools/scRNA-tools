@@ -148,6 +148,8 @@ write_files <- function(destdir) {
   swsheet <- get_swsheet()
   tidysw <- tidy_swsheet(swsheet)
   #write_csv(swsheet,path=file.path(destdir,'single-cell-software_tidy.csv'))
+  writeLines(toJSON(swsheet, pretty = TRUE),
+             file.path(destdir, 'software-table.json'))
   writeLines(toJSON(tidysw_to_list_df(tidysw), pretty = TRUE),
              file.path(destdir, 'software.json'))
   writeLines(toJSON(tidysw_to_cat_df(tidysw, swsheet), pretty = TRUE),
