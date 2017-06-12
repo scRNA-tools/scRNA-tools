@@ -20,15 +20,15 @@ $(document).ready(function(){
 
                 /*-- Assign returned data --*/
                 category = value.category;
-                cat_clean = category.replace(/ /g,"_");
+                //cat_clean = category.replace(/ /g,"_");
                 software = value.software;
 
                 entry = '<div class="panel-heading">'+
-                            '<h4 id="'+cat_clean+'" class="panel-title">'+
-                                '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#'+cat_clean+'_c">'+category
+                            '<h4 id="'+category+'" class="panel-title">'+
+                                '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#'+category+'_c">'+category
 
                 entry += '</a></h4></div>'+
-                    '<div id="'+cat_clean+'_c" class="panel-collapse collapse">'+
+                    '<div id="'+category+'_c" class="panel-collapse collapse">'+
                     '<ul class="list-group">'
 
                 $.each(software, function(k, val) {
@@ -41,23 +41,17 @@ $(document).ready(function(){
 
                     if ( typeof bioc !== 'undefined' ) {
                         entry +=
-                        //'<li class="list-group-item">'+
                             ' <img border="0" height="15" src="http://bioconductor.org/shields/years-in-bioc/'+bioc+'.svg">'+' <img border="0" height="15" src="http://bioconductor.org/shields/downloads/'+bioc+'.svg">';
-                            //'</li>'
                     }
 
                     if ( typeof cran !== 'undefined' ) {
                         entry +=
-                        //'<li class="list-group-item">'+
                             ' <img border="0" height="15" src="http://www.r-pkg.org/badges/version/'+cran+'">'+' <img border="0" height="15" src="http://cranlogs.r-pkg.org/badges/grand-total/'+cran+'">';
-                            //'</li>'
                     }
 
                     if ( typeof pypi !== 'undefined' ) {
                         entry +=
-                        //'<li class="list-group-item">'+
                             ' <img border="0" height="15" src="https://img.shields.io/pypi/v/'+pypi+'.svg">'+' <img border="0" height="15" src="https://img.shields.io/pypi/pyversions/'+pypi+'.svg">'+' <img border="0" height="15" src="https://img.shields.io/pypi/dm/'+pypi+'.svg">';
-                            //'</li>'
                     }
 
                     entry += '</li>';

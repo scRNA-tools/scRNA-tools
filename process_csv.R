@@ -51,14 +51,13 @@ get_swsheet <- function() {
                             Name = col_character(),
                             Platform = col_character(),
                             DOI = col_character(),
-                            `Pub Date` = col_character(),
+                            PubDate = col_character(),
                             Code = col_character(),
                             Description = col_character(),
                             License = col_character(),
                             Added = col_date(format = ""),
                             Updated = col_date(format = "")
                             )) %>%
-        rename(PubDate = `Pub Date`) %>%
         mutate(Preprint = (PubDate == "PREPRINT")) %>%
         mutate(PubDate = as_date(PubDate)) %>%
         mutate(Preprint = ifelse(Preprint == TRUE, TRUE, NA)) %>%

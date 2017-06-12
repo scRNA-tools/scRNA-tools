@@ -1,6 +1,6 @@
 [
   {
-    "category": "Allele Specific",
+    "category": "AlleleSpecific",
     "software": [
       {
         "Name": "SCALE",
@@ -9,7 +9,7 @@
     ]
   },
   {
-    "category": "Alternative Splicing",
+    "category": "AlternativeSplicing",
     "software": [
       {
         "Name": "BRIE",
@@ -33,7 +33,7 @@
     ]
   },
   {
-    "category": "Cell Cycle",
+    "category": "CellCycle",
     "software": [
       {
         "Name": "Oscope",
@@ -57,6 +57,9 @@
       },
       {
         "Name": "BEARscc"
+      },
+      {
+        "Name": "Cell Ranger"
       },
       {
         "Name": "CIDR"
@@ -138,13 +141,16 @@
     ]
   },
   {
-    "category": "DE",
+    "category": "DifferentialExpression",
     "software": [
       {
         "Name": "BASiCs"
       },
       {
         "Name": "BPSC"
+      },
+      {
+        "Name": "Cell Ranger"
       },
       {
         "Name": "countClust",
@@ -218,8 +224,11 @@
     ]
   },
   {
-    "category": "Dimensionality Reduction",
+    "category": "DimensionalityReduction",
     "software": [
+      {
+        "Name": "Cell Ranger"
+      },
       {
         "Name": "CIDR"
       },
@@ -296,7 +305,7 @@
     ]
   },
   {
-    "category": "Expression Patterns",
+    "category": "ExpressionPatterns",
     "software": [
       {
         "Name": "DeLorean",
@@ -346,7 +355,7 @@
     ]
   },
   {
-    "category": "Gene Filtering",
+    "category": "GeneFiltering",
     "software": [
       {
         "Name": "BackSPIN"
@@ -381,7 +390,7 @@
     ]
   },
   {
-    "category": "Gene Networks",
+    "category": "GeneNetworks",
     "software": [
       {
         "Name": "BTR",
@@ -422,7 +431,7 @@
     ]
   },
   {
-    "category": "Gene Sets",
+    "category": "GeneSets",
     "software": [
       {
         "Name": "CellTree",
@@ -483,6 +492,9 @@
   {
     "category": "Interactive",
     "software": [
+      {
+        "Name": "Cell Ranger"
+      },
       {
         "Name": "FastProject",
         "pypi": "FastProject"
@@ -550,8 +562,11 @@
     ]
   },
   {
-    "category": "Marker Genes",
+    "category": "MarkerGenes",
     "software": [
+      {
+        "Name": "Cell Ranger"
+      },
       {
         "Name": "M3Drop",
         "Bioconductor": "M3Drop"
@@ -784,8 +799,11 @@
     ]
   },
   {
-    "category": "QC",
+    "category": "QualityControl",
     "software": [
+      {
+        "Name": "Cell Ranger"
+      },
       {
         "Name": "Cellity",
         "Bioconductor": "cellity"
@@ -845,6 +863,9 @@
         "pypi": "brie"
       },
       {
+        "Name": "Cell Ranger"
+      },
+      {
         "Name": "demuxlet"
       },
       {
@@ -876,7 +897,7 @@
     ]
   },
   {
-    "category": "Rare Cells",
+    "category": "RareCells",
     "software": [
       {
         "Name": "GiniClust"
@@ -920,7 +941,7 @@
     ]
   },
   {
-    "category": "Stem Cells",
+    "category": "StemCells",
     "software": [
       {
         "Name": "StemID"
@@ -937,7 +958,7 @@
     ]
   },
   {
-    "category": "Variable Genes",
+    "category": "VariableGenes",
     "software": [
       {
         "Name": "BASiCs"
@@ -998,6 +1019,9 @@
       {
         "Name": "BTR",
         "CRAN": "BTR"
+      },
+      {
+        "Name": "Cell Ranger"
       },
       {
         "Name": "CellTree",
