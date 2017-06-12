@@ -20,7 +20,7 @@ The table has the following columns:
 * **Name**
 * **Platform** - Programming language or platform where it can be used
 * **DOI** - Publication DOI
-* **Pub Date** - Publication date. Preprints are marked with PREPRINT and will
+* **PubDate** - Publication date. Preprints are marked with PREPRINT and will
   be updated when published.
 * **Code** - URL for publicly available code.
 * **Description**
@@ -40,33 +40,33 @@ function columns ask the following questions of the software:
 
 * **Assembly** - Can it perform assembly?
 * **Quantification** - Does it quantify expression from reads?
-* **QC** - Does it perform some type of quality control of cells?
+* **QualityControl** - Does it perform some type of quality control of cells?
 * **Normalisation** - Does it perform some type of normalisation?
 * **Imputation** - Can it impute missing dropout values?
-* **Gene Filtering** - Does it perform some filtering of genes?
+* **GeneFiltering** - Does it perform some filtering of genes?
 * **Clustering** - Does it perform clustering of cells?
 * **Pseudotime** - Does it perform some pseudotime/lineage tracing/trajectory of
   cells?
-* **DE** - Does it do some kind of differential expression?
-* **Marker Genes** - Does it identify or mark use of cell type markers?
-* **Expression Patterns** - Can it find genes with interesting patterns over
+* **DifferentialExpression** - Does it do some kind of differential expression?
+* **MarkerGenes** - Does it identify or mark use of cell type markers?
+* **ExpressionPatterns** - Can it find genes with interesting patterns over
   (psuedo) time?
-* **Variable Genes** - Does it identify highly variable genes?
-* **Gene Sets** - Does it test or make use of annotated gene sets?
-* **Gene Networks** - Does it find co-regulated gene networks?
-* **Cell Cycle** - Does it identify or correct for the cell cycle or cell cycle
+* **VariableGenes** - Does it identify highly variable genes?
+* **GeneSets** - Does it test or make use of annotated gene sets?
+* **GeneNetworks** - Does it find co-regulated gene networks?
+* **CellCycle** - Does it identify or correct for the cell cycle or cell cycle
   (or similar) genes?
-* **Dimensionality Reduction** - Can it perform some type of dimensionality
+* **DimensionalityReduction** - Can it perform some type of dimensionality
   reduction?
 * **Transformation** - Does it transform between expression values and some over
   measure?
 * **Modality** - Does it identify or make use of modality in expression?
-* **Alternative Splicing** - Does it identify alternatice splicing?
-* **Rare Cells** - Does it identify rare cells types?
-* **Stem Cells** - Does it identify stem cells in a population?
+* **AlternativeSplicing** - Does it identify alternatice splicing?
+* **RareCells** - Does it identify rare cells types?
+* **StemCells** - Does it identify stem cells in a population?
 * **Variants** - Does it detect or make use of variants?
 * **Haplotypes** - Does it make use of haplotypes or perform phasing?
-* **Allele Specific** - Does it detect allele specific expression?
+* **AlleleSpecific** - Does it detect allele specific expression?
 * **Visualisation** - Does it do some kind of visualisation? (showing how to
   make a plot using `ggplot` or `matplotlib` doesn't count)
 * **Interactive** - Does it have some kind of interactive component or a GUI?
