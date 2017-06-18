@@ -139,6 +139,15 @@ tidysw_to_cat_df <- function(tidysw, swsheet) {
     tidyswl
 }
 
+add_cats_column <- function(swsheet, tidysw) {
+    catlist <- split(tidysw$category, f = tidysw$Name)
+
+    catdf <- data.frame(Name = names(catlist), stringsAsFactors = FALSE)
+    catdf[['categories']] <- catlist
+
+    swsheet <- left_join(swsheet, catdf, by = "Name")
+}
+
 #' write out json and csv files
 #'
 #' @export
@@ -147,6 +156,7 @@ write_files <- function(destdir) {
   swsheet <- get_swsheet()
   tidysw <- tidy_swsheet(swsheet)
   #write_csv(swsheet,path=file.path(destdir,'single-cell-software_tidy.csv'))
+  swsheet <- add_cats_column(swsheet, tidysw)
   writeLines(toJSON(swsheet, pretty = TRUE),
              file.path(destdir, 'software-table.json'))
   writeLines(toJSON(tidysw_to_list_df(tidysw), pretty = TRUE),
