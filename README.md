@@ -45,6 +45,7 @@ function columns ask the following questions of the software:
 * **Imputation** - Can it impute missing dropout values?
 * **GeneFiltering** - Does it perform some filtering of genes?
 * **Clustering** - Does it perform clustering of cells?
+* **Classification** - Does it classify cells based on a reference dataset?
 * **Pseudotime** - Does it perform some pseudotime/lineage tracing/trajectory of
   cells?
 * **DifferentialExpression** - Does it do some kind of differential expression?
