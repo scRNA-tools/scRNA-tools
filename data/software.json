@@ -23,14 +23,14 @@
     "Updated": "2016-09-08",
     "DOI_url": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "citations": 299,
+    "citations": 302,
     "categories": ["GeneFiltering", "Clustering"]
   },
   {
     "Name": "badger",
     "Platform": "R",
     "Code": "https://github.com/JEFworks/badger",
-    "Description": "ayesian approach for detecting copy number alterations from single cell RNA-seq data",
+    "Description": "Bayesian approach for detecting copy number alterations from single cell RNA-seq data",
     "Added": "2017-06-05",
     "Updated": "2017-06-05",
     "Github": "JEFworks/badger",
@@ -52,7 +52,7 @@
     "categories": ["Assembly"]
   },
   {
-    "Name": "BASiCs",
+    "Name": "BASiCS",
     "Platform": "R",
     "DOI": "10.1371/journal.pcbi.1004333",
     "PubDate": "2015-06-01",
@@ -60,11 +60,11 @@
     "Description": "Bayesian Analysis of single-cell RNA-seq data. Estimates cell-specific normalization constants. Technical variability is quantified based on spike-in genes. The total variability of the expression counts is decomposed into technical and biological components.",
     "License": "GPL (>= 2)",
     "Added": "2016-09-08",
-    "Updated": "2016-09-13",
+    "Updated": "2017-06-23",
     "DOI_url": "http://dx.doi.org/10.1371/journal.pcbi.1004333",
     "Github": "catavallejos/BASiCS",
     "citations": 22,
-    "categories": ["Normalisation", "DifferentialExpression", "VariableGenes"]
+    "categories": ["Normalisation", "DifferentialExpression", "VariableGenes", "Simulation"]
   },
   {
     "Name": "BEARscc",
@@ -470,7 +470,7 @@
     "Updated": "2017-03-10",
     "DOI_url": "http://dx.doi.org/10.1126/sciimmunol.aal2192",
     "Github": "Teichlab/GPfates",
-    "citations": 2,
+    "citations": 3,
     "categories": ["Pseudotime", "Visualisation"]
   },
   {
@@ -637,7 +637,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "Bioconductor": "monocle",
-    "citations": 231,
+    "citations": 232,
     "categories": ["Pseudotime", "DifferentialExpression", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -822,6 +822,20 @@
     "categories": ["Normalisation", "DifferentialExpression"]
   },
   {
+    "Name": "SAVER",
+    "Platform": "R",
+    "DOI": "10.1101/138677",
+    "Code": "https://github.com/mohuangx/SAVER",
+    "Description": "SAVER (Single-cell Analysis Via Expression Recovery) implements a regularized regression prediction and empirical Bayes method to recover the true gene expression profile in noisy and sparse single-cell RNA-seq data.",
+    "License": "GPL-2",
+    "Added": "2017-06-23",
+    "Updated": "2017-06-23",
+    "Preprint": true,
+    "DOI_url": "http://dx.doi.org/10.1101/138677",
+    "Github": "mohuangx/SAVER",
+    "categories": ["Imputation"]
+  },
+  {
     "Name": "SC3",
     "Platform": "R",
     "DOI": "10.1101/036558",
@@ -981,8 +995,22 @@
     "DOI_url": "http://dx.doi.org/10.1038/nbt.3102",
     "Github": "PMBio/scLVM",
     "pypi": "scLVM",
-    "citations": 172,
+    "citations": 173,
     "categories": ["Normalisation", "VariableGenes", "CellCycle", "Visualisation"]
+  },
+  {
+    "Name": "scmap",
+    "Platform": "R",
+    "DOI": "10.1101/150292",
+    "Code": "https://github.com/hemberg-lab/scmap",
+    "Description": "scmap is a method for projecting cells from a scRNA-seq experiment on to the cell-types identified in a different experiment.",
+    "License": "GPL-3",
+    "Added": "2017-06-23",
+    "Updated": "2017-06-23",
+    "Preprint": true,
+    "DOI_url": "http://dx.doi.org/10.1101/150292",
+    "Github": "hemberg-lab/scmap",
+    "categories": ["Classification"]
   },
   {
     "Name": "SCNorm",
@@ -1162,11 +1190,11 @@
     "Description": "It contains easy-to-use implementations of commonly used analytical techniques, including the identification of highly variable genes, dimensionality reduction (PCA, ICA, t-SNE), standard unsupervised clustering algorithms (density clustering, hierarchical clustering, k-means), and the discovery of differentially expressed genes and markers.",
     "License": "GPL-3",
     "Added": "2016-09-08",
-    "Updated": "2016-10-07",
+    "Updated": "2017-06-23",
     "DOI_url": "http://dx.doi.org/10.1038/nbt.3192",
     "Github": "satijalab/seurat",
-    "citations": 115,
-    "categories": ["Normalisation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
+    "citations": 118,
+    "categories": ["Normalisation", "Imputation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "SIMLR",
@@ -1467,7 +1495,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "pypi": "umis",
-    "citations": 6,
+    "citations": 7,
     "categories": ["Quantification"]
   },
   {
@@ -1498,7 +1526,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nbt.3569",
     "Github": "ManuSetty/wishbone",
     "pypi": "wishbone",
-    "citations": 26,
+    "citations": 27,
     "categories": ["Pseudotime", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
