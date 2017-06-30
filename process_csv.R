@@ -59,6 +59,7 @@ get_swsheet <- function() {
                             Updated = col_date(format = "")
                             )) %>%
         mutate(Preprint = (PubDate == "PREPRINT")) %>%
+        mutate(PubDate = ifelse(Preprint == FALSE, PubDate, NA)) %>%
         mutate(PubDate = as_date(PubDate)) %>%
         mutate(Preprint = ifelse(Preprint == TRUE, TRUE, NA)) %>%
         mutate(DOI_url = ifelse(is.na(DOI), NA,
