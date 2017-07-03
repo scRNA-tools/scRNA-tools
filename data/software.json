@@ -123,16 +123,17 @@
   {
     "Name": "BRIE",
     "Platform": "Python",
-    "DOI": "10.1101/098517",
+    "DOI": "10.1186/s13059-017-1248-5",
+    "PubDate": "2017-06-27",
     "Code": "https://github.com/huangyh09/brie",
     "Description": "BRIE (Bayesian regression for isoform estimate) is a Bayesian method to estimate isoform proportions from RNA-seq data.",
     "License": "Apache-2.0",
     "Added": "2017-01-10",
-    "Updated": "2017-01-10",
-    "Preprint": true,
-    "DOI_url": "http://dx.doi.org/10.1101/098517",
+    "Updated": "2017-07-03",
+    "DOI_url": "http://dx.doi.org/10.1186/s13059-017-1248-5",
     "Github": "huangyh09/brie",
     "pypi": "brie",
+    "citations": 0,
     "categories": ["Quantification", "AlternativeSplicing"]
   },
   {
@@ -303,7 +304,7 @@
     "Updated": "2017-04-18",
     "DOI_url": "http://dx.doi.org/10.1093/bioinformatics/btv715",
     "Bioconductor": "destiny",
-    "citations": 16,
+    "citations": 17,
     "categories": ["DimensionalityReduction", "Visualisation"]
   },
   {
@@ -329,6 +330,7 @@
     "License": "GPL-3",
     "Added": "2017-06-26",
     "Updated": "2017-06-26",
+    "Preprint": true,
     "DOI_url": "http://dx.doi.org/10.1101/143271",
     "Github": "ChengchenZhao/DrSeq2",
     "categories": ["Quantification", "QualityControl", "Normalisation", "Clustering", "VariableGenes", "DimensionalityReduction"]
@@ -664,7 +666,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "Bioconductor": "monocle",
-    "citations": 232,
+    "citations": 233,
     "categories": ["Pseudotime", "DifferentialExpression", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -709,7 +711,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nmeth.3549",
     "Github": "Bioconductor-mirror/Oscope",
     "Bioconductor": "Oscope",
-    "citations": 25,
+    "citations": 26,
     "categories": ["CellCycle"]
   },
   {
@@ -803,7 +805,7 @@
     "Updated": "2016-09-09",
     "DOI_url": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "citations": 18,
+    "citations": 19,
     "categories": ["RareCells"]
   },
   {
@@ -1036,7 +1038,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nbt.3102",
     "Github": "PMBio/scLVM",
     "pypi": "scLVM",
-    "citations": 177,
+    "citations": 178,
     "categories": ["Normalisation", "VariableGenes", "CellCycle", "Visualisation"]
   },
   {
@@ -1362,7 +1364,7 @@
     "Updated": "2016-09-08",
     "DOI_url": "http://dx.doi.org/10.1186/s13059-016-0975-3",
     "Github": "jw156605/SLICER",
-    "citations": 4,
+    "citations": 5,
     "categories": ["Pseudotime"]
   },
   {
@@ -1445,7 +1447,7 @@
     "Updated": "2016-09-09",
     "DOI_url": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "citations": 18,
+    "citations": 19,
     "categories": ["Pseudotime", "StemCells"]
   },
   {
@@ -1547,7 +1549,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "pypi": "umis",
-    "citations": 7,
+    "citations": 8,
     "categories": ["Quantification"]
   },
   {
@@ -1593,7 +1595,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nbt.3569",
     "Github": "ManuSetty/wishbone",
     "pypi": "wishbone",
-    "citations": 27,
+    "citations": 28,
     "categories": ["Pseudotime", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
@@ -1623,6 +1625,19 @@
     "DOI_url": "http://dx.doi.org/10.1101/125112",
     "Github": "drisso/zinbwave",
     "categories": ["Normalisation", "DimensionalityReduction"]
+  },
+  {
+    "Name": "zingeR",
+    "Platform": "R",
+    "DOI": "10.1101/157982",
+    "Code": "https://github.com/statOmics/zingeR",
+    "Description": "zingeR: Zero-Inflated Negative binomial Gene Expression in R.",
+    "Added": "2017-07-03",
+    "Updated": "2017-07-03",
+    "Preprint": true,
+    "DOI_url": "http://dx.doi.org/10.1101/157982",
+    "Github": "statOmics/zingeR",
+    "categories": ["DifferentialExpression", "Simulation"]
   },
   {
     "Name": "zUMIs",
