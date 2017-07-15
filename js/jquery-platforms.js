@@ -7,6 +7,42 @@ $(document).ready(function(){
 
     /*--Functions-------------------------------------------------------------*/
 
+    function link_it(){
+       var url = document.location.toString();
+       var hash = url.split('#')[1];
+
+       if ( typeof hash !== 'undefined') {
+
+           title = "#" + hash;
+           panel = title + '_c';
+
+           // collapse the expanded panel
+           all_panels = $('#accordion .accordion-collapse');
+
+           all_panels.removeClass('in');
+           all_panels.find(".accordion-toggle").addClass("collapsed");
+
+           // expand the requested panel, change the title
+           $(panel).addClass('in');
+           $(title).find(".accordion-toggle").removeClass("collapsed");
+
+           location.href = title;
+       }
+
+    }
+
+    function linkCats(cats) {
+        var linked = [];
+
+
+        for(var i = 0; i < cats.length; i++) {
+            var cat = cats[i]
+            linked.push('<a href="categories.html#' + cat + '">' + cat +'</a>');
+        }
+
+        return linked.join(', ')
+    }
+
     function print_list(){
 
         /*-- Open JSON file, parse the contents, loop through & print markup--*/
@@ -32,7 +68,7 @@ $(document).ready(function(){
                 added = value.Added;
                 updated = value.Updated;
                 license = value.License;
-                cats = value.categories.join(', ');
+                cats = value.categories;
                 bioc = value.Bioconductor;
                 pypi = value.pypi;
                 cran = value.CRAN;
@@ -99,14 +135,18 @@ $(document).ready(function(){
                     entry += '<li class="list-group-item"><strong>License: </strong> '+license+'</li>';
                 }
 
-                entry += '<li class="list-group-item"><strong>Categories: </strong> '+cats+'</li>'+'<li class="list-group-item"><strong>Added: </strong> '+added+', <strong>Updated: </strong>'+updated+'</li>'+
+                entry += '<li class="list-group-item"><strong>Categories: </strong> '+linkCats(cats)+'</li>'+'<li class="list-group-item"><strong>Added: </strong> '+added+', <strong>Updated: </strong>'+updated+'</li>'+
                     '</ul>'+'</div>';
 
                 /*-- Add it to the list! --*/
                 platform_container.append(entry);
 
             });
+
+            link_it();
+
         });
+
 
     }
 

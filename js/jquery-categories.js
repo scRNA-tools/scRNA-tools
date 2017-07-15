@@ -7,6 +7,30 @@ $(document).ready(function(){
 
     /*--Functions-------------------------------------------------------------*/
 
+    function link_it(){
+       var url = document.location.toString();
+       var hash = url.split('#')[1];
+
+       if ( typeof hash !== 'undefined') {
+
+           title = "#" + hash;
+           panel = title + '_c';
+
+           // collapse the expanded panel
+           all_panels = $('#accordion .accordion-collapse');
+
+           all_panels.removeClass('in');
+           all_panels.find(".accordion-toggle").addClass("collapsed");
+
+           // expand the requested panel, change the title
+           $(panel).addClass('in');
+           $(title).find(".accordion-toggle").removeClass("collapsed");
+
+           location.href = title;
+       }
+
+    }
+
     function print_list(){
 
         /*-- Open JSON file, parse the contents, loop through & print markup--*/
@@ -37,7 +61,7 @@ $(document).ready(function(){
                     pypi = val.pypi;
                     cran = val.CRAN;
 
-                    entry += '<li class="list-group-item">'+name;
+                    entry += '<li class="list-group-item"><a href="platforms.html#' + name + '">' + name +'</a>';
 
                     if ( typeof bioc !== 'undefined' ) {
                         entry +=
@@ -63,6 +87,9 @@ $(document).ready(function(){
                 platform_container.append(entry);
 
             });
+
+            link_it();
+
         });
 
     }
