@@ -1,7 +1,52 @@
 [
   {
+    "Name": "AltAnalyze",
+    "Platform": "Python",
+    "DOI": "10.1038/nature19348",
+    "PubDate": "2016-08-31",
+    "Code": "https://github.com/nsalomonis/altanalyze",
+    "Description": "AltAnalyze is an extreemly user-friendly and open-source analysis tool that can be used for a broad range of genomics analyses.",
+    "License": "Apache-2.0",
+    "Assembly": false,
+    "Quantification": true,
+    "QualityControl": true,
+    "Normalisation": false,
+    "Imputation": false,
+    "GeneFiltering": true,
+    "Clustering": true,
+    "Classification": false,
+    "Pseudotime": true,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": true,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": true,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": true,
+    "Interactive": true,
+    "Simulation": false,
+    "Added": "2017-07-16",
+    "Updated": "2017-07-16",
+    "DOI_url": "http://dx.doi.org/10.1038/nature19348",
+    "Github": "nsalomonis/altanalyze",
+    "citations": 22,
+    "categories": ["Quantification", "QualityControl", "GeneFiltering", "Clustering", "Pseudotime", "GeneSets", "DimensionalityReduction", "Visualisation", "Interactive"]
+  },
+  {
     "Name": "anchor",
     "Platform": "Python",
+    "DOI": "10.1016/j.molcel.2017.06.003",
+    "PubDate": "2017-06-29",
     "Code": "https://github.com/yeolab/anchor",
     "Description": "Find bimodal, unimodal, and multimodal features in your data",
     "License": "BSD-3-clause",
@@ -34,9 +79,11 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-08",
-    "Updated": "2016-09-08",
+    "Updated": "2017-07-16",
+    "DOI_url": "http://dx.doi.org/10.1016/j.molcel.2017.06.003",
     "Github": "yeolab/anchor",
     "pypi": "anchor",
+    "citations": 0,
     "categories": ["Modality"]
   },
   {
@@ -121,7 +168,7 @@
     "Updated": "2016-09-08",
     "DOI_url": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "citations": 304,
+    "citations": 314,
     "categories": ["GeneFiltering", "Clustering"]
   },
   {
@@ -245,7 +292,7 @@
     "Updated": "2017-06-23",
     "DOI_url": "http://dx.doi.org/10.1371/journal.pcbi.1004333",
     "Github": "catavallejos/BASiCS",
-    "citations": 22,
+    "citations": 23,
     "categories": ["Normalisation", "DifferentialExpression", "VariableGenes", "Simulation"]
   },
   {
@@ -292,6 +339,8 @@
   {
     "Name": "bonvoyage",
     "Platform": "Python",
+    "DOI": "10.1016/j.molcel.2017.06.003",
+    "PubDate": "2017-06-29",
     "Code": "https://github.com/yeolab/bonvoyage",
     "Description": "Transform percentage-based units into a 2d space to evaluate changes in distribution with both magnitude and direction.",
     "License": "BSD-3-clause",
@@ -324,9 +373,11 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-08",
-    "Updated": "2016-09-08",
+    "Updated": "2017-07-16",
+    "DOI_url": "http://dx.doi.org/10.1016/j.molcel.2017.06.003",
     "Github": "yeolab/bonvoyage",
     "pypi": "bonvoyage",
+    "citations": 0,
     "categories": ["Transformation"]
   },
   {
@@ -540,7 +591,7 @@
     "DOI_url": "http://dx.doi.org/10.1186/s13059-016-0888-1",
     "Github": "teichlab/cellity",
     "Bioconductor": "cellity",
-    "citations": 19,
+    "citations": 21,
     "categories": ["QualityControl"]
   },
   {
@@ -584,7 +635,7 @@
     "DOI_url": "http://dx.doi.org/10.1186/s12859-016-1175-6",
     "Github": "Bioconductor-mirror/cellTree",
     "Bioconductor": "cellTree",
-    "citations": 2,
+    "citations": 3,
     "categories": ["Pseudotime", "GeneSets", "Visualisation"]
   },
   {
@@ -920,7 +971,7 @@
     "Updated": "2017-04-18",
     "DOI_url": "http://dx.doi.org/10.1093/bioinformatics/btv715",
     "Bioconductor": "destiny",
-    "citations": 17,
+    "citations": 18,
     "categories": ["DimensionalityReduction", "Visualisation"]
   },
   {
@@ -962,50 +1013,8 @@
     "Added": "2016-09-22",
     "Updated": "2016-09-22",
     "DOI_url": "http://dx.doi.org/10.1038/nmeth.3971",
-    "citations": 13,
+    "citations": 15,
     "categories": ["Pseudotime", "ExpressionPatterns", "Visualisation"]
-  },
-  {
-    "Name": "Dr.seq2",
-    "Platform": "Python",
-    "DOI": "10.1101/143271",
-    "Code": "https://github.com/ChengchenZhao/DrSeq2",
-    "Description": "Quality control and analysis pipeline for parallel single cell transcriptome and epigenome data",
-    "License": "GPL-3",
-    "Assembly": false,
-    "Quantification": true,
-    "QualityControl": true,
-    "Normalisation": true,
-    "Imputation": false,
-    "GeneFiltering": false,
-    "Clustering": true,
-    "Classification": false,
-    "Pseudotime": false,
-    "DifferentialExpression": false,
-    "MarkerGenes": false,
-    "ExpressionPatterns": false,
-    "VariableGenes": true,
-    "GeneSets": false,
-    "GeneNetworks": false,
-    "CellCycle": false,
-    "DimensionalityReduction": true,
-    "Transformation": false,
-    "Modality": false,
-    "AlternativeSplicing": false,
-    "RareCells": false,
-    "StemCells": false,
-    "Variants": false,
-    "Haplotypes": false,
-    "AlleleSpecific": false,
-    "Visualisation": false,
-    "Interactive": false,
-    "Simulation": false,
-    "Added": "2017-06-26",
-    "Updated": "2017-06-26",
-    "Preprint": true,
-    "DOI_url": "http://dx.doi.org/10.1101/143271",
-    "Github": "ChengchenZhao/DrSeq2",
-    "categories": ["Quantification", "QualityControl", "Normalisation", "Clustering", "VariableGenes", "DimensionalityReduction"]
   },
   {
     "Name": "dropbead",
@@ -1086,6 +1095,48 @@
     "Updated": "2017-05-21",
     "Github": "Hoohm/dropSeqPipe",
     "categories": ["Quantification", "QualityControl", "Visualisation"]
+  },
+  {
+    "Name": "DrSeq2",
+    "Platform": "Python",
+    "DOI": "10.1101/143271",
+    "Code": "https://github.com/ChengchenZhao/DrSeq2",
+    "Description": "Quality control and analysis pipeline for parallel single cell transcriptome and epigenome data",
+    "License": "GPL-3",
+    "Assembly": false,
+    "Quantification": true,
+    "QualityControl": true,
+    "Normalisation": true,
+    "Imputation": false,
+    "GeneFiltering": false,
+    "Clustering": true,
+    "Classification": false,
+    "Pseudotime": false,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": true,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": true,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": false,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2017-06-26",
+    "Updated": "2017-06-26",
+    "Preprint": true,
+    "DOI_url": "http://dx.doi.org/10.1101/143271",
+    "Github": "ChengchenZhao/DrSeq2",
+    "categories": ["Quantification", "QualityControl", "Normalisation", "Clustering", "VariableGenes", "DimensionalityReduction"]
   },
   {
     "Name": "DTWScore",
@@ -1923,7 +1974,7 @@
     "DOI_url": "http://dx.doi.org/10.1186/s13059-015-0844-5",
     "Github": "RGLab/MAST",
     "Bioconductor": "MAST",
-    "citations": 31,
+    "citations": 34,
     "categories": ["QualityControl", "Normalisation", "DifferentialExpression", "GeneSets", "GeneNetworks"]
   },
   {
@@ -2010,7 +2061,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "Bioconductor": "monocle",
-    "citations": 233,
+    "citations": 239,
     "categories": ["Pseudotime", "DifferentialExpression", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -2095,7 +2146,7 @@
     "Updated": "2016-09-08",
     "DOI_url": "http://dx.doi.org/10.1093/bioinformatics/btw004",
     "Github": "lengning/OEFinder",
-    "citations": 3,
+    "citations": 4,
     "categories": ["QualityControl", "Normalisation", "Interactive"]
   },
   {
@@ -2139,7 +2190,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nmeth.3549",
     "Github": "Bioconductor-mirror/Oscope",
     "Bioconductor": "Oscope",
-    "citations": 26,
+    "citations": 27,
     "categories": ["CellCycle"]
   },
   {
@@ -2187,6 +2238,8 @@
   {
     "Name": "Outrigger",
     "Platform": "Python",
+    "DOI": "10.1016/j.molcel.2017.06.003",
+    "PubDate": "2017-06-29",
     "Code": "https://github.com/YeoLab/outrigger",
     "Description": "Outrigger is a program to calculate alternative splicing scores of RNA-Seq data based on junction reads and a de novo, custom annotation created with a graph database, especially made for single-cell analyses.",
     "License": "BSD-3-clause",
@@ -2219,9 +2272,11 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-08",
-    "Updated": "2016-09-08",
+    "Updated": "2017-07-16",
+    "DOI_url": "http://dx.doi.org/10.1016/j.molcel.2017.06.003",
     "Github": "YeoLab/outrigger",
     "pypi": "outrigger",
+    "citations": 0,
     "categories": ["AlternativeSplicing"]
   },
   {
@@ -2266,6 +2321,89 @@
     "Github": "JustinaZ/pcaReduce",
     "citations": 5,
     "categories": ["Clustering"]
+  },
+  {
+    "Name": "PhenoPath",
+    "Platform": "R",
+    "DOI": "10.1101/159913",
+    "Code": "https://github.com/kieranrcampbell/phenopath",
+    "Description": "PhenoPath learns genomic trajectories (pseudotimes) in the presence of heterogenous environmental and genetic backgrounds encoded as additional covariates and identifies interactions between the trajectories and covariates.",
+    "Assembly": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "GeneFiltering": false,
+    "Clustering": false,
+    "Classification": false,
+    "Pseudotime": true,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": false,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": false,
+    "Interactive": false,
+    "Simulation": true,
+    "Added": "2017-07-16",
+    "Updated": "2017-07-16",
+    "Preprint": true,
+    "DOI_url": "http://dx.doi.org/10.1101/159913",
+    "Github": "kieranrcampbell/phenopath",
+    "categories": ["Pseudotime", "Simulation"]
+  },
+  {
+    "Name": "PIVOT",
+    "Platform": "R",
+    "DOI": "10.1101/053348",
+    "Code": "https://github.com/qinzhu/PIVOT",
+    "Description": "PIVOT facilitates fast and interactive RNA-Seq data analysis and visualization.",
+    "License": "Custom",
+    "Assembly": false,
+    "Quantification": false,
+    "QualityControl": true,
+    "Normalisation": true,
+    "Imputation": false,
+    "GeneFiltering": true,
+    "Clustering": true,
+    "Classification": false,
+    "Pseudotime": true,
+    "DifferentialExpression": true,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": true,
+    "GeneNetworks": true,
+    "CellCycle": false,
+    "DimensionalityReduction": true,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": true,
+    "Interactive": true,
+    "Simulation": false,
+    "Added": "2017-07-16",
+    "Updated": "2017-07-16",
+    "Preprint": true,
+    "DOI_url": "http://dx.doi.org/10.1101/053348",
+    "Github": "qinzhu/PIVOT",
+    "categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Pseudotime", "DifferentialExpression", "GeneSets", "GeneNetworks", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
     "Name": "PoissonUMIs",
@@ -2429,7 +2567,7 @@
     "Updated": "2016-09-09",
     "DOI_url": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "citations": 19,
+    "citations": 21,
     "categories": ["RareCells"]
   },
   {
@@ -2475,6 +2613,48 @@
     "CRAN": "RCA",
     "citations": 0,
     "categories": ["Clustering", "Visualisation"]
+  },
+  {
+    "Name": "reCAT",
+    "Platform": "R",
+    "DOI": "10.1038/s41467-017-00039-z",
+    "PubDate": "2017-06-19",
+    "Code": "https://github.com/tinglab/reCAT",
+    "Description": "reCAT is a modelling framework for unsynchronized single-cell transcriptome data that can reconstruct a high-resolution cell cycle time-series.",
+    "Assembly": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "GeneFiltering": false,
+    "Clustering": true,
+    "Classification": false,
+    "Pseudotime": true,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": true,
+    "DimensionalityReduction": false,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": true,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2017-07-16",
+    "Updated": "2017-07-16",
+    "DOI_url": "http://dx.doi.org/10.1038/s41467-017-00039-z",
+    "Github": "tinglab/reCAT",
+    "citations": 0,
+    "categories": ["Clustering", "Pseudotime", "CellCycle", "Visualisation"]
   },
   {
     "Name": "sake",
@@ -2684,7 +2864,7 @@
     "DOI_url": "http://dx.doi.org/10.1186/s13059-017-1200-8",
     "Github": "yuchaojiang/SCALE",
     "CRAN": "Scale",
-    "citations": 0,
+    "citations": 1,
     "categories": ["AlleleSpecific"]
   },
   {
@@ -2812,7 +2992,7 @@
     "DOI_url": "http://dx.doi.org/10.1186/s13059-016-1077-y",
     "Github": "kdkorthauer/scDD",
     "Bioconductor": "scDD",
-    "citations": 3,
+    "citations": 4,
     "categories": ["DifferentialExpression", "Simulation"]
   },
   {
@@ -2855,7 +3035,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nmeth.2967",
     "Github": "hms-dbmi/scde",
     "Bioconductor": "scde",
-    "citations": 111,
+    "citations": 115,
     "categories": ["DifferentialExpression", "GeneSets", "Visualisation"]
   },
   {
@@ -2898,7 +3078,7 @@
     "Updated": "2016-09-08",
     "DOI_url": "http://dx.doi.org/10.1093/bioinformatics/btw201",
     "Github": "diazlab/SCell",
-    "citations": 5,
+    "citations": 6,
     "categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Pseudotime", "DifferentialExpression", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -3110,7 +3290,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nbt.3102",
     "Github": "PMBio/scLVM",
     "pypi": "scLVM",
-    "citations": 178,
+    "citations": 185,
     "categories": ["Normalisation", "VariableGenes", "CellCycle", "Visualisation"]
   },
   {
@@ -3613,7 +3793,7 @@
     "Updated": "2016-09-12",
     "DOI_url": "http://dx.doi.org/10.1073/pnas.1408993111",
     "Github": "gcyuan/SCUBA",
-    "citations": 49,
+    "citations": 51,
     "categories": ["Pseudotime", "ExpressionPatterns"]
   },
   {
@@ -3658,6 +3838,47 @@
     "Github": "hillas/scVEGs",
     "citations": 0,
     "categories": ["VariableGenes"]
+  },
+  {
+    "Name": "SEGtool",
+    "Platform": "R",
+    "DOI": "10.1093/bib/bbx074",
+    "PubDate": "2017-07-07",
+    "Code": "http://bioinfo.life.hust.edu.cn/SEGtool/",
+    "Description": "SEGtool is an R package with self-adaptive function and high accuracy for specifically expressed gene (SEG, also known as tissue specific gene) detection.",
+    "Assembly": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "GeneFiltering": true,
+    "Clustering": false,
+    "Classification": false,
+    "Pseudotime": false,
+    "DifferentialExpression": false,
+    "MarkerGenes": true,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": false,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": false,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2017-07-16",
+    "Updated": "2017-07-16",
+    "DOI_url": "http://dx.doi.org/10.1093/bib/bbx074",
+    "citations": 0,
+    "categories": ["GeneFiltering", "MarkerGenes"]
   },
   {
     "Name": "SEPA",
@@ -3739,7 +3960,7 @@
     "Updated": "2017-06-23",
     "DOI_url": "http://dx.doi.org/10.1038/nbt.3192",
     "Github": "satijalab/seurat",
-    "citations": 119,
+    "citations": 124,
     "categories": ["Normalisation", "Imputation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -3783,7 +4004,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nmeth.4207",
     "Github": "BatzoglouLabSU/SIMLR",
     "Bioconductor": "SIMLR",
-    "citations": 1,
+    "citations": 2,
     "categories": ["Clustering", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -3869,7 +4090,7 @@
     "Updated": "2017-06-08",
     "DOI_url": "http://dx.doi.org/10.1371/journal.pcbi.1004575",
     "Github": "xu-lab/SINCERA",
-    "citations": 18,
+    "citations": 20,
     "categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes"]
   },
   {
@@ -3912,7 +4133,7 @@
     "Updated": "2017-01-24",
     "DOI_url": "http://dx.doi.org/10.1093/nar/gkv1525",
     "Github": "jw156605/SingleSplice",
-    "citations": 7,
+    "citations": 8,
     "categories": ["AlternativeSplicing"]
   },
   {
@@ -3953,7 +4174,7 @@
     "Added": "2016-09-08",
     "Updated": "2017-04-18",
     "DOI_url": "http://dx.doi.org/10.1093/bioinformatics/btw176",
-    "citations": 2,
+    "citations": 3,
     "categories": ["QualityControl"]
   },
   {
@@ -4080,7 +4301,7 @@
     "Updated": "2016-09-08",
     "DOI_url": "http://dx.doi.org/10.1186/s13059-016-0975-3",
     "Github": "jw156605/SLICER",
-    "citations": 5,
+    "citations": 6,
     "categories": ["Pseudotime"]
   },
   {
@@ -4162,7 +4383,7 @@
     "Updated": "2017-04-18",
     "DOI_url": "http://dx.doi.org/10.1038/nprot.2016.066",
     "Github": "nolanlab/spade",
-    "citations": 5,
+    "citations": 6,
     "categories": ["Clustering", "Pseudotime", "MarkerGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -4212,7 +4433,7 @@
     "Name": "SPRING",
     "Platform": "Python/Matlab/Javascript",
     "DOI": "10.1101/090332",
-    "Code": "https://github.com/AllonKleinLab/SPRING/",
+    "Code": "https://github.com/AllonKleinLab/SPRING",
     "Description": "SPRING is a collection of pre-processing scripts and a web browser-based tool for visualizing and interacting with high dimensional data.",
     "Assembly": false,
     "Quantification": false,
@@ -4246,7 +4467,7 @@
     "Updated": "2016-12-05",
     "Preprint": true,
     "DOI_url": "http://dx.doi.org/10.1101/090332",
-    "Github": "AllonKleinLab/SPRING/",
+    "Github": "AllonKleinLab/SPRING",
     "pypi": "spring",
     "categories": ["DimensionalityReduction", "Visualisation", "Interactive"]
   },
@@ -4331,7 +4552,7 @@
     "Updated": "2016-09-09",
     "DOI_url": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "citations": 19,
+    "citations": 21,
     "categories": ["Pseudotime", "StemCells"]
   },
   {
@@ -4543,7 +4764,7 @@
     "DOI_url": "http://dx.doi.org/10.1093/nar/gkw430",
     "Github": "zji90/TSCAN",
     "Bioconductor": "TSCAN",
-    "citations": 14,
+    "citations": 15,
     "categories": ["Clustering", "Pseudotime", "MarkerGenes", "Visualisation", "Interactive"]
   },
   {
@@ -4629,7 +4850,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "pypi": "umis",
-    "citations": 8,
+    "citations": 9,
     "categories": ["Quantification"]
   },
   {
@@ -4715,7 +4936,7 @@
     "Updated": "2016-09-12",
     "DOI_url": "http://dx.doi.org/10.1186/s13059-016-1033-x",
     "Github": "lengning/WaveCrest",
-    "citations": 9,
+    "citations": 11,
     "categories": ["Pseudotime", "MarkerGenes", "ExpressionPatterns", "Interactive"]
   },
   {
@@ -4759,7 +4980,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nbt.3569",
     "Github": "ManuSetty/wishbone",
     "pypi": "wishbone",
-    "citations": 28,
+    "citations": 30,
     "categories": ["Pseudotime", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
@@ -4802,7 +5023,7 @@
     "Updated": "2016-12-22",
     "DOI_url": "http://dx.doi.org/10.1186/s13059-015-0805-z",
     "Github": "epierson9/ZIFA",
-    "citations": 27,
+    "citations": 30,
     "categories": ["DimensionalityReduction"]
   },
   {
@@ -4838,13 +5059,13 @@
     "AlleleSpecific": false,
     "Visualisation": false,
     "Interactive": false,
-    "Simulation": false,
+    "Simulation": true,
     "Added": "2017-04-27",
-    "Updated": "2017-04-27",
+    "Updated": "2017-07-03",
     "Preprint": true,
     "DOI_url": "http://dx.doi.org/10.1101/125112",
     "Github": "drisso/zinbwave",
-    "categories": ["Normalisation", "DimensionalityReduction"]
+    "categories": ["Normalisation", "DimensionalityReduction", "Simulation"]
   },
   {
     "Name": "zingeR",
