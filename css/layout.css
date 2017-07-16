@@ -40,10 +40,10 @@ footer,header,hgroup,menu,nav,section,summary
     display:block;
 }
 
-body
+/*body
 {
-    padding-top: 70px;
-}
+    padding-top: 50px;
+}*/
 
 nav ul
 {
@@ -171,8 +171,6 @@ Big Table Page
     margin:0 5px 0 0;
 }
 
-
-
 .panel-title {
   position: relative;
 }
@@ -215,3 +213,8 @@ Big Table Page
 /* reposition the left arrows */
 .panel-heading .accordion-toggle.collapsed:after { top: 10px; }
 .panel-heading .accordion-toggle:after { top: 10px; }
+
+.page-header {
+    font-size: 250%;
+    margin-top: 0;
+}

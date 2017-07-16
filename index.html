@@ -35,14 +35,14 @@
 
         <!--// NavBar --------------------------------------------------------->
 
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">scRNA-seq Software</a>
+                    <a class="navbar-brand" href="#">scRNA-tools</a>
                 </div>
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Table</a></li>
-                    <li><a href="platforms.html">Index</a></li>
+                    <li><a href="tools.html">Tools</a></li>
                     <li><a href="categories.html">Categories</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -55,9 +55,9 @@
 
             <!--// Intro ------------------------------------------------------>
 
-            <!--<h1>scRNA-seq Software Table</h1>-->
-
-            <!--// Filter ----------------------------------------------------->
+            <div class="page-header">
+                <h1>Tools table</h1>
+            </div>
 
             <!--// Table ------------------------------------------------------>
             <!--data-advanced-search="true"-->
@@ -121,33 +121,33 @@
             </table>
 
         </div>
+
     <script>
-        function logicalFormatter(value) {
-                if (value) {
-                    var colour = '#009933';
-                } else {
-                    var colour = '#ff9999';
-                }
+        function logicalFormatter (value) {
+          var colour = '#ff9999'
+          if (value) {
+            colour = '#009933'
+          }
 
-                return '<span  style="color: ' + colour + '">' + value + '</div>';
+          return '<span  style="color: ' + colour + '">' + value + '</div>'
         }
 
-        function nameFormatter(value) {
-                return '<a href="platforms.html#' + value + '">' + value +'</a>';
+        function nameFormatter (value) {
+          return '<a href="tools.html#' + value + '">' + value + '</a>'
         }
 
-        function catsFormatter(value) {
-            var values = value.toString().split(',');
-            var formatted = [];
+        function catsFormatter (value) {
+          var values = value.toString().split(',')
+          var formatted = []
 
+          for (var i = 0; i < values.length; i++) {
+            var cat = values[i]
+            formatted.push('<a href="categories.html#' + cat + '">' + cat + '</a>')
+          }
 
-            for(var i = 0; i < values.length; i++) {
-                var cat = values[i]
-                formatted.push('<a href="categories.html#' + cat + '">' + cat +'</a>');
-            }
-
-            return formatted.join(', ')
+          return formatted.join(', ')
         }
     </script>
+
     </body>
 </html>

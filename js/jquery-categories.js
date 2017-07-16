@@ -1,117 +1,94 @@
-$(document).ready(function(){
+$(document).ready(function () {
+  /* --Variables------------------------------------------------------------- */
 
-    /*--Variables-------------------------------------------------------------*/
+  var catsContainer = $('#categories-list')
+  var jsonPath = 'data/categories.json'
 
-    platform_container = $("#categories-list");
-    json_location = "data/categories.json";
+  /* --Functions------------------------------------------------------------- */
 
-    /*--Functions-------------------------------------------------------------*/
+  function expandLinked () {
+    var url = document.location.toString()
+    var hash = url.split('#')[1]
 
-    function link_it(){
-       var url = document.location.toString();
-       var hash = url.split('#')[1];
+    if (typeof hash !== 'undefined') {
+      var title = '#' + hash
+      var panel = title + '_c'
 
-       if ( typeof hash !== 'undefined') {
+      // collapse the expanded panel
+      var allPanels = $('#accordion .accordion-collapse')
 
-           title = "#" + hash;
-           panel = title + '_c';
+      allPanels.removeClass('in')
+      allPanels.find('.accordion-toggle').addClass('collapsed')
 
-           // collapse the expanded panel
-           all_panels = $('#accordion .accordion-collapse');
+      // expand the requested panel, change the title
+      $(panel).addClass('in')
+      $(title).find('.accordion-toggle').removeClass('collapsed')
 
-           all_panels.removeClass('in');
-           all_panels.find(".accordion-toggle").addClass("collapsed");
-
-           // expand the requested panel, change the title
-           $(panel).addClass('in');
-           $(title).find(".accordion-toggle").removeClass("collapsed");
-
-           location.href = title;
-       }
-
+      location.href = title
     }
+  }
 
-    function print_list(){
+  function printList () {
+    /* -- Open JSON file, parse the contents, loop through & print markup-- */
 
-        /*-- Open JSON file, parse the contents, loop through & print markup--*/
+    $.ajaxSetup({
+      cache: false
+    })
 
-        $.ajaxSetup({
-            cache:false
-        });
+    $.getJSON(jsonPath, function (data) {
+      $.each(data, function (key, value) {
+        /* -- Assign returned data -- */
+        var category = value.category
+        var software = value.software
 
-        $.getJSON(json_location, function(data) {
-            $.each(data, function(key, value) {
+        var entry = ''
+        entry += '<div class="panel-heading">' +
+                 '<h4 id="' + category + '" class="panel-title">' +
+                 '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + category + '_c">' + category
 
-                /*-- Assign returned data --*/
-                category = value.category;
-                //cat_clean = category.replace(/ /g,"_");
-                software = value.software;
+        entry += '</a></h4></div>' +
+                 '<div id="' + category + '_c" class="panel-collapse collapse">' +
+                 '<ul class="list-group">'
 
-                entry = '<div class="panel-heading">'+
-                            '<h4 id="'+category+'" class="panel-title">'+
-                                '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#'+category+'_c">'+category
+        // Loop over software
+        $.each(software, function (k, val) {
+          var name = val.Name
+          var bioc = val.Bioconductor
+          var pypi = val.pypi
+          var cran = val.CRAN
 
-                entry += '</a></h4></div>'+
-                    '<div id="'+category+'_c" class="panel-collapse collapse">'+
-                    '<ul class="list-group">'
+          entry += '<li class="list-group-item"><a href="tools.html#' + name + '">' + name + '</a>'
 
-                $.each(software, function(k, val) {
-                    name = val.Name;
-                    bioc = val.Bioconductor;
-                    pypi = val.pypi;
-                    cran = val.CRAN;
+          if (typeof bioc !== 'undefined') {
+            entry += ' <img border="0" height="15" src="http://bioconductor.org/shields/years-in-bioc/' + bioc + '.svg">' +
+                     ' <img border="0" height="15" src="http://bioconductor.org/shields/downloads/' + bioc + '.svg">'
+          }
 
-                    entry += '<li class="list-group-item"><a href="platforms.html#' + name + '">' + name +'</a>';
+          if (typeof cran !== 'undefined') {
+            entry += ' <img border="0" height="15" src="http://www.r-pkg.org/badges/version/' + cran + '">' +
+                     ' <img border="0" height="15" src="http://cranlogs.r-pkg.org/badges/grand-total/' + cran + '">'
+          }
 
-                    if ( typeof bioc !== 'undefined' ) {
-                        entry +=
-                            ' <img border="0" height="15" src="http://bioconductor.org/shields/years-in-bioc/'+bioc+'.svg">'+' <img border="0" height="15" src="http://bioconductor.org/shields/downloads/'+bioc+'.svg">';
-                    }
+          if (typeof pypi !== 'undefined') {
+            entry += ' <img border="0" height="15" src="https://img.shields.io/pypi/v/' + pypi + '.svg">' +
+                     ' <img border="0" height="15" src="https://img.shields.io/pypi/pyversions/' + pypi + '.svg">' +
+                     ' <img border="0" height="15" src="https://img.shields.io/pypi/dm/' + pypi + '.svg">'
+          }
 
-                    if ( typeof cran !== 'undefined' ) {
-                        entry +=
-                            ' <img border="0" height="15" src="http://www.r-pkg.org/badges/version/'+cran+'">'+' <img border="0" height="15" src="http://cranlogs.r-pkg.org/badges/grand-total/'+cran+'">';
-                    }
+          entry += '</li>'
+        })
 
-                    if ( typeof pypi !== 'undefined' ) {
-                        entry +=
-                            ' <img border="0" height="15" src="https://img.shields.io/pypi/v/'+pypi+'.svg">'+' <img border="0" height="15" src="https://img.shields.io/pypi/pyversions/'+pypi+'.svg">'+' <img border="0" height="15" src="https://img.shields.io/pypi/dm/'+pypi+'.svg">';
-                    }
+        entry += '</ul>' + '</div>'
 
-                    entry += '</li>';
-                });
+        /* -- Add it to the list! -- */
+        catsContainer.append(entry)
+      })
 
-                entry += '</ul>'+'</div>'
+      expandLinked()
+    })
+  }
 
-                /*-- Add it to the list! --*/
-                platform_container.append(entry);
+  /* --Calls----------------------------------------------------------------- */
 
-            });
-
-            link_it();
-
-        });
-
-    }
-
-    /*--Calls-----------------------------------------------------------------*/
-
-    print_list();
-
-});
-
-$(window).on('load', function(){
-    /*
-    var url = document.location.toString();
-
-    if ( url.match('#') ) {
-        var hash = url.split('#')[1];
-
-        // collapse the expanded panel
-        //$('#accordion .accordion-collapse').removeClass('in');
-
-        // expand the requested panel
-        $('#' + hash + '_c').addClass('in');
-    }
-    */
- });
+  printList()
+})
