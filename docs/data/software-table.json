@@ -18,7 +18,7 @@
     "Pseudotime": false,
     "DifferentialExpression": true,
     "MarkerGenes": true,
-    "ExpressionPatterns": true,
+    "ExpressionPatterns": false,
     "VariableGenes": false,
     "GeneSets": true,
     "GeneNetworks": true,
@@ -36,11 +36,11 @@
     "Interactive": true,
     "Simulation": false,
     "Added": "2017-07-16",
-    "Updated": "2017-07-16",
+    "Updated": "2017-07-21",
     "DOI_url": "http://dx.doi.org/10.1038/nature19348",
     "Github": "nsalomonis/altanalyze",
-    "citations": 168,
-    "categories": ["Quantification", "Normalisation", "QualityControl", "GeneFiltering", "Clustering", "Classification", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "GeneSets", "GeneNetworks", "CellCycle", "DimensionalityReduction", "AlternativeSplicing", "Visualisation", "Interactive"]
+    "citations": 24,
+    "categories": ["Quantification", "Normalisation", "GeneFiltering", "Clustering", "Classification", "DifferentialExpression", "MarkerGenes", "GeneSets", "GeneNetworks", "CellCycle", "DimensionalityReduction", "AlternativeSplicing", "Visualisation", "Interactive"]
   },
   {
     "Name": "anchor",
@@ -168,7 +168,7 @@
     "Updated": "2016-09-08",
     "DOI_url": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "citations": 315,
+    "citations": 316,
     "categories": ["GeneFiltering", "Clustering"]
   },
   {
@@ -1013,7 +1013,7 @@
     "Added": "2016-09-22",
     "Updated": "2016-09-22",
     "DOI_url": "http://dx.doi.org/10.1038/nmeth.3971",
-    "citations": 15,
+    "citations": 16,
     "categories": ["Pseudotime", "ExpressionPatterns", "Visualisation"]
   },
   {
@@ -1558,7 +1558,7 @@
     "Updated": "2017-03-10",
     "DOI_url": "http://dx.doi.org/10.1126/sciimmunol.aal2192",
     "Github": "Teichlab/GPfates",
-    "citations": 5,
+    "citations": 6,
     "categories": ["Pseudotime", "Visualisation"]
   },
   {
@@ -1679,6 +1679,48 @@
     "Updated": "2016-09-08",
     "Github": "joeburns06/hocuspocus",
     "categories": ["Visualisation"]
+  },
+  {
+    "Name": "HopLand",
+    "Platform": "MATLAB",
+    "DOI": "10.1093/bioinformatics/btx232",
+    "PubDate": "2017-07-12",
+    "Code": "https://github.com/NetLand-NTU/HopLand",
+    "Description": "Single-cell pseudotime recovery using continuous Hopfield network based modeling of Waddington’s epigenetic landscape",
+    "Assembly": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "GeneFiltering": false,
+    "Clustering": false,
+    "Classification": false,
+    "Pseudotime": true,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": false,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": true,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2017-07-24",
+    "Updated": "2017-07-24",
+    "DOI_url": "http://dx.doi.org/10.1093/bioinformatics/btx232",
+    "Github": "NetLand-NTU/HopLand",
+    "citations": 0,
+    "categories": ["Pseudotime", "Visualisation"]
   },
   {
     "Name": "ISOP",
@@ -2034,11 +2076,11 @@
     "Normalisation": false,
     "Imputation": false,
     "GeneFiltering": false,
-    "Clustering": false,
+    "Clustering": true,
     "Classification": false,
     "Pseudotime": true,
     "DifferentialExpression": true,
-    "MarkerGenes": false,
+    "MarkerGenes": true,
     "ExpressionPatterns": true,
     "VariableGenes": false,
     "GeneSets": false,
@@ -2057,12 +2099,12 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-08",
-    "Updated": "2016-09-08",
+    "Updated": "2017-07-24",
     "DOI_url": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "Bioconductor": "monocle",
-    "citations": 240,
-    "categories": ["Pseudotime", "DifferentialExpression", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
+    "citations": 242,
+    "categories": ["Clustering", "Pseudotime", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "Mpath",
@@ -2567,7 +2609,7 @@
     "Updated": "2016-09-09",
     "DOI_url": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "citations": 21,
+    "citations": 22,
     "categories": ["RareCells"]
   },
   {
@@ -2948,7 +2990,7 @@
     "DOI_url": "http://dx.doi.org/10.1093/bioinformatics/btw777",
     "Github": "davismcc/scater",
     "Bioconductor": "scater",
-    "citations": 1,
+    "citations": 2,
     "categories": ["Quantification", "QualityControl", "Normalisation", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -3035,7 +3077,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nmeth.2967",
     "Github": "hms-dbmi/scde",
     "Bioconductor": "scde",
-    "citations": 115,
+    "citations": 116,
     "categories": ["DifferentialExpression", "GeneSets", "Visualisation"]
   },
   {
@@ -3960,7 +4002,7 @@
     "Updated": "2017-06-23",
     "DOI_url": "http://dx.doi.org/10.1038/nbt.3192",
     "Github": "satijalab/seurat",
-    "citations": 125,
+    "citations": 126,
     "categories": ["Normalisation", "Imputation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -4133,7 +4175,7 @@
     "Updated": "2017-01-24",
     "DOI_url": "http://dx.doi.org/10.1093/nar/gkv1525",
     "Github": "jw156605/SingleSplice",
-    "citations": 8,
+    "citations": 9,
     "categories": ["AlternativeSplicing"]
   },
   {
@@ -4552,7 +4594,7 @@
     "Updated": "2016-09-09",
     "DOI_url": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "citations": 21,
+    "citations": 22,
     "categories": ["Pseudotime", "StemCells"]
   },
   {
@@ -4771,6 +4813,7 @@
     "Name": "UMI-tools",
     "Platform": "Python",
     "DOI": "10.1101/gr.209601.116",
+    "PubDate": "2017-01-18",
     "Code": "https://github.com/CGATOxford/UMI-tools",
     "Description": "This repository contains tools for dealing with Unique Molecular Identifiers (UMIs)/Random Molecular Tags (RMTs).",
     "License": "MIT",
@@ -4804,7 +4847,6 @@
     "Simulation": false,
     "Added": "2016-09-12",
     "Updated": "2017-07-19",
-    "Preprint": true,
     "DOI_url": "http://dx.doi.org/10.1101/gr.209601.116",
     "Github": "CGATOxford/UMI-tools",
     "citations": 3,
@@ -4851,7 +4893,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "pypi": "umis",
-    "citations": 9,
+    "citations": 11,
     "categories": ["Quantification"]
   },
   {
@@ -4937,7 +4979,7 @@
     "Updated": "2016-09-12",
     "DOI_url": "http://dx.doi.org/10.1186/s13059-016-1033-x",
     "Github": "lengning/WaveCrest",
-    "citations": 11,
+    "citations": 12,
     "categories": ["Pseudotime", "MarkerGenes", "ExpressionPatterns", "Interactive"]
   },
   {
@@ -4981,7 +5023,7 @@
     "DOI_url": "http://dx.doi.org/10.1038/nbt.3569",
     "Github": "ManuSetty/wishbone",
     "pypi": "wishbone",
-    "citations": 31,
+    "citations": 32,
     "categories": ["Pseudotime", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
@@ -5024,7 +5066,7 @@
     "Updated": "2016-12-22",
     "DOI_url": "http://dx.doi.org/10.1186/s13059-015-0805-z",
     "Github": "epierson9/ZIFA",
-    "citations": 30,
+    "citations": 31,
     "categories": ["DimensionalityReduction"]
   },
   {
