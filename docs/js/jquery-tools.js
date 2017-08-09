@@ -2,7 +2,7 @@ $(document).ready(function () {
   /* --Variables------------------------------------------------------------- */
 
   var toolsContainer = $('#tools-list')
-  var jsonPath = 'data/software.json'
+  var jsonPath = 'data/tools.json'
 
   /* --Functions------------------------------------------------------------- */
 
@@ -51,7 +51,7 @@ $(document).ready(function () {
         /* -- Assign returned data -- */
         var name = value.Name
         var doi = value.DOI
-        var doiURL = value.DOI_url
+        var doiURL = value.DOIURL
         var pubDate = value.PubDate
         var preprint = value.Preprint
         var citations = value.citations
@@ -62,9 +62,9 @@ $(document).ready(function () {
         var added = value.Added
         var updated = value.Updated
         var license = value.License
-        var cats = value.categories
-        var bioc = value.Bioconductor
-        var pypi = value.pypi
+        var cats = value.Categories
+        var bioc = value.BioC
+        var pypi = value.PyPI
         var cran = value.CRAN
 
         var entry = ''

@@ -160,7 +160,7 @@ add_cats <- function(swsheet, tidysw) {
     catlist <- split(tidysw$Category, f = tidysw$Name)
 
     catdf <- data.frame(Name = names(catlist), stringsAsFactors = FALSE)
-    catdf[['categories']] <- catlist
+    catdf[['Categories']] <- catlist
 
     swsheet <- left_join(swsheet, catdf, by = "Name")
 }
