@@ -1,50 +1,36 @@
 #!/usr/bin/env Rscript
-library(docopt)
-"Usage: process_csv OUTPUT_DIR
 
--h --help    show this
+"Usage: process_csv
 
-This utility script converts the 'single_cell_software.csv'
-spreadsheet to a set of files including:
+This utility script converts the 'single_cell_software.csv' spreadsheet to a set
+of files in 'docs/data' required for the scRNA-tools.org website including:
 
-  - data/software.json
-  - data/categories.json
+- software.json
+- software-table.json
+- categories.json
 " -> doc
 
-opts <- docopt(doc)
-print(opts)
+#### PACKAGES ####
 
-library(readr)
-library(jsonlite)
-library(dplyr)
-library(tidyr)
-library(lubridate)
-library(stringr)
-library(rvest)
-library(rcrossref)
+suppressPackageStartupMessages({
+    library(readr)
+    library(jsonlite)
+    library(dplyr)
+    library(tidyr)
+    library(lubridate)
+    library(stringr)
+    library(rvest)
+    library(rcrossref)
+    library(BiocInstaller)
+    library(docopt)
+    library(pbapply)
+})
 
-#' Create tidy sheet from the google sheet
-#' @export
+#### FUNCTIONS ####
+
 get_swsheet <- function() {
-    message("Getting Bioconductor package list...")
-    bioc.pkgs <- BiocInstaller::all_group()
-    names(bioc.pkgs) <- str_to_lower(bioc.pkgs)
 
-    message("Getting PyPI package list...")
-    pypi.pkgs <- read_html("https://pypi.python.org/simple/") %>%
-        html_nodes("a") %>%
-        html_text()
-    names(pypi.pkgs) <- str_to_lower(pypi.pkgs)
-
-    message("Getting CRAN package list...")
-    cran.url <- "https://cran.r-project.org/web/packages/available_packages_by_name.html"
-    cran.pkgs <- read_html(cran.url) %>%
-        html_nodes("a") %>%
-        html_text() %>%
-        setdiff(LETTERS) # Remove letter links at top of page
-    names(cran.pkgs) <- str_to_lower(cran.pkgs)
-
-    message("Processing table...")
+    message("Loading 'single_cell_software.csv'...")
     swsheet <- read_csv("single_cell_software.csv",
                         col_types = cols(
                             .default = col_logical(),
@@ -57,91 +43,121 @@ get_swsheet <- function() {
                             License = col_character(),
                             Added = col_date(format = ""),
                             Updated = col_date(format = "")
-                            )) %>%
+                        ))
+}
+
+get_pkgs <- function() {
+
+    message("Getting package repositories...")
+
+    message("Getting Bioconductor package list...")
+    bioc.pkgs <- all_group()
+    names(bioc.pkgs) <- str_to_lower(bioc.pkgs)
+
+    message("Getting CRAN package list...")
+    cran.url <- "https://cran.r-project.org/web/packages/available_packages_by_name.html"
+    cran.pkgs <- read_html(cran.url) %>%
+        html_nodes("a") %>%
+        html_text() %>%
+        setdiff(LETTERS) # Remove letter links at top of page
+    names(cran.pkgs) <- str_to_lower(cran.pkgs)
+
+    message("Getting PyPI package list...")
+    pypi.pkgs <- read_html("https://pypi.python.org/simple/") %>%
+        html_nodes("a") %>%
+        html_text()
+    names(pypi.pkgs) <- str_to_lower(pypi.pkgs)
+
+    pkgs <- list(BioC = bioc.pkgs, CRAN = cran.pkgs, PyPI = pypi.pkgs)
+}
+
+fix_doi <- function(swsheet) {
+
+    message("Fixing references...")
+
+    swsheet %>%
         mutate(Preprint = (PubDate == "PREPRINT")) %>%
         mutate(PubDate = ifelse(Preprint == FALSE, PubDate, NA)) %>%
         mutate(PubDate = as_date(PubDate)) %>%
         mutate(Preprint = ifelse(Preprint == TRUE, TRUE, NA)) %>%
-        mutate(DOI_url = ifelse(is.na(DOI), NA,
-                                paste0('http://dx.doi.org/', DOI))) %>%
+        mutate(DOIURL = ifelse(is.na(DOI), NA,
+                               paste0('http://dx.doi.org/', DOI)))
+}
+
+add_github <- function(swsheet) {
+
+    message("Adding Github...")
+
+    swsheet %>%
         mutate(Github = ifelse(str_detect(Code, "github"),
                                str_replace(Code, "https://github.com/", ""),
-                               NA)) %>%
-        mutate(Bioconductor = str_to_lower(Name) %in% names(bioc.pkgs)) %>%
-        mutate(Bioconductor = ifelse(Bioconductor,
-                                     bioc.pkgs[str_to_lower(Name)], NA)) %>%
-        mutate(CRAN = str_to_lower(Name) %in% names(cran.pkgs)) %>%
-        mutate(CRAN = ifelse(CRAN, cran.pkgs[str_to_lower(Name)], NA)) %>%
-        mutate(CRAN = ifelse(str_detect(Platform, "R"), CRAN, NA)) %>%
-        mutate(pypi = str_to_lower(Name) %in% names(pypi.pkgs)) %>%
-        mutate(pypi = ifelse(pypi, pypi.pkgs[str_to_lower(Name)], NA)) %>%
-        mutate(pypi = ifelse(str_detect(str_to_lower(Platform), "python"),
-                             pypi, NA))
+                               NA))
+}
 
-    message("Getting citations...")
-    swsheet$citations <- get_citations(swsheet$DOI)
+add_repos <- function(swsheet, pkgs) {
+
+    message("Adding package repositories...")
+
+    swsheet %>%
+        mutate(LowerName = str_to_lower(Name)) %>%
+        mutate(BioC = LowerName %in% names(pkgs$BioC)) %>%
+        mutate(BioC = ifelse(BioC, pkgs$BioC[LowerName], NA)) %>%
+        mutate(BioC = ifelse(str_detect(Platform, "R"), BioC, NA)) %>%
+        mutate(CRAN = LowerName %in% names(pkgs$CRAN)) %>%
+        mutate(CRAN = ifelse(CRAN, pkgs$CRAN[LowerName], NA)) %>%
+        mutate(CRAN = ifelse(str_detect(Platform, "R"), CRAN, NA)) %>%
+        mutate(PyPI = LowerName %in% names(pkgs$PyPI)) %>%
+        mutate(PyPI = ifelse(PyPI, pkgs$PyPI[LowerName], NA)) %>%
+        mutate(PyPI = ifelse(str_detect(str_to_lower(Platform), "python"),
+                             PyPI, NA)) %>%
+        select(-LowerName)
+}
+
+add_citations <- function(swsheet) {
+
+    message("Adding citations...")
+
+    dois <- swsheet$DOI
+
+    cites <- pbsapply(dois, function(doi) {
+            if (is.na(doi)) {
+                return(NA)
+            }
+
+            cite <-  tryCatch({
+                cr_citation_count(doi)
+            }, error = function(e) {
+                NA
+            })
+
+            Sys.sleep(sample(seq(0,2,0.5), 1))
+
+            return(cite)
+    })
+
+    swsheet$Citations <- cites
 
     return(swsheet)
 }
 
 tidy_swsheet <- function(swsheet) {
+
     message("Tidying data...")
-    gather(swsheet, key = 'category', value = 'val',
+
+    gather(swsheet, key = 'Category', value = 'Val',
            -Description, -Name, -Platform, -DOI, -PubDate, -Updated, -Added,
-           -Preprint, -Code, -Github, -DOI_url, -License, -Bioconductor, -pypi,
-           -CRAN, -citations) %>%
-        filter(val == TRUE) %>%
-        select(-val) %>%
+           -Preprint, -Code, -Github, -DOIURL, -License, -BioC, -CRAN, -PyPI,
+           -Citations) %>%
+        filter(Val == TRUE) %>%
+        select(-Val) %>%
         arrange(Name)
 }
 
-get_citations <- function(dois) {
+add_cats <- function(swsheet, tidysw) {
 
-    cites <- sapply(dois, function(doi) {
-        if (is.na(doi)) {
-            return(NA)
-        }
+    message("Adding categories to table...")
 
-        cit <-  tryCatch({
-            cr_citation_count(doi)
-        }, error = function(e) {
-            NA
-        })
-
-        Sys.sleep(sample(seq(0,2,0.5), 1))
-
-        return(cit)
-    })
-
-    return(cites)
-}
-
-tidysw_to_list_df <- function(tidysw) {
-    catlist <- split(tidysw$category, f = tidysw$Name)
-    tidyswl <- tidysw %>%
-        select(-category) %>%
-        unique()
-    tidyswl[['categories']] <- catlist[tidyswl$Name]
-    tidyswl
-}
-
-tidysw_to_cat_df <- function(tidysw, swsheet) {
-    namelist <- split(tidysw$Name, f = tidysw$category)
-    namelist <- lapply(namelist, function(x) {
-        swsheet %>%
-            filter(Name %in% x) %>%
-            select(Name, Bioconductor, CRAN, pypi)
-    })
-    tidyswl <- tidysw %>%
-        select(category) %>%
-        arrange(category) %>%
-        unique()
-    tidyswl[['software']] <- namelist[tidyswl$category]
-    tidyswl
-}
-
-add_cats_column <- function(swsheet, tidysw) {
-    catlist <- split(tidysw$category, f = tidysw$Name)
+    catlist <- split(tidysw$Category, f = tidysw$Name)
 
     catdf <- data.frame(Name = names(catlist), stringsAsFactors = FALSE)
     catdf[['categories']] <- catlist
@@ -149,21 +165,86 @@ add_cats_column <- function(swsheet, tidysw) {
     swsheet <- left_join(swsheet, catdf, by = "Name")
 }
 
-#' write out json and csv files
-#'
-#' @export
-write_files <- function(destdir) {
-  dir.create(destdir, recursive = TRUE)
-  swsheet <- get_swsheet()
-  tidysw <- tidy_swsheet(swsheet)
-  #write_csv(swsheet,path=file.path(destdir,'single-cell-software_tidy.csv'))
-  swsheet <- add_cats_column(swsheet, tidysw)
-  writeLines(toJSON(swsheet, pretty = TRUE),
-             file.path(destdir, 'software-table.json'))
-  writeLines(toJSON(tidysw_to_list_df(tidysw), pretty = TRUE),
-             file.path(destdir, 'software.json'))
-  writeLines(toJSON(tidysw_to_cat_df(tidysw, swsheet), pretty = TRUE),
-             file.path(destdir, 'categories.json'))
+get_tools_json <- function(tidysw) {
+
+    message("Converting tools...")
+
+    catlist <- split(tidysw$Category, f = tidysw$Name)
+
+    tools <- tidysw %>%
+        select(-Category) %>%
+        unique() %>%
+        mutate(Categories = catlist[Name]) %>%
+        toJSON(pretty = TRUE)
 }
 
-write_files(opts$OUTPUT_DIR)
+get_cats_json <- function(tidysw, swsheet) {
+
+    message("Converting categories...")
+
+    namelist <- split(tidysw$Name, f = tidysw$Category)
+    namelist <- lapply(namelist, function(x) {
+        swsheet %>%
+            filter(Name %in% x) %>%
+            select(Name, BioC, CRAN, PyPI)
+    })
+
+    cats <- tidysw %>%
+        select(Category) %>%
+        arrange(Category) %>%
+        unique() %>%
+        mutate(Tools = namelist[Category]) %>%
+        toJSON(pretty = TRUE)
+}
+
+process_csv <- function() {
+
+    message("Starting processing...")
+
+    # Load data
+    swsheet <- get_swsheet()
+    pkgs <- get_pkgs()
+
+    # Process table
+    message("Processing table...")
+    swsheet <- swsheet %>%
+        fix_doi() %>%
+        add_github() %>%
+        add_repos(pkgs) %>%
+        add_citations()
+
+    # Convert to tidy format
+    tidysw <- tidy_swsheet(swsheet)
+
+    # Add categories to table
+    swsheet <- add_cats(swsheet, tidysw)
+
+    # Convert to JSON
+    message("Converting to JSON...")
+    message("Converting table...")
+    table <- toJSON(swsheet, pretty = TRUE)
+    tools <- get_tools_json(tidysw)
+    cats <- get_cats_json(tidysw, swsheet)
+
+    # Output JSON
+    message("Writing JSON...")
+    message("Writing 'tools-table.json'...")
+    write_lines(table, "docs/data/tools-table.json")
+    message("Writing 'tools.json'...")
+    write_lines(tools, "docs/data/tools.json")
+    message("Writing 'categories.json'...")
+    write_lines(cats, "docs/data/categories.json")
+
+    message("Done!")
+}
+
+#### MAIN CODE ####
+
+# Setup progress bar
+pboptions(type = "timer", char = "=", style = 3)
+
+# Get options
+opts <- docopt(doc)
+
+# Process table
+process_csv()
