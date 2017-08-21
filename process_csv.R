@@ -71,6 +71,11 @@ get_pkgs <- function() {
     pkgs <- list(BioC = bioc.pkgs, CRAN = cran.pkgs, PyPI = pypi.pkgs)
 }
 
+get_descriptions <- function() {
+    message("Adding category descriptions...")
+    descs <- read_json("docs/data/descriptions.json", simplifyVector = TRUE)
+}
+
 fix_doi <- function(swsheet) {
 
     message("Fixing references...")
@@ -178,7 +183,7 @@ get_tools_json <- function(tidysw) {
         toJSON(pretty = TRUE)
 }
 
-get_cats_json <- function(tidysw, swsheet) {
+get_cats_json <- function(tidysw, swsheet, descs) {
 
     message("Converting categories...")
 
@@ -194,6 +199,7 @@ get_cats_json <- function(tidysw, swsheet) {
         arrange(Category) %>%
         unique() %>%
         mutate(Tools = namelist[Category]) %>%
+        left_join(descs, by = "Category") %>%
         toJSON(pretty = TRUE)
 }
 
@@ -204,6 +210,7 @@ process_csv <- function() {
     # Load data
     swsheet <- get_swsheet()
     pkgs <- get_pkgs()
+    descs <- get_descriptions()
 
     # Process table
     message("Processing table...")
@@ -224,7 +231,7 @@ process_csv <- function() {
     message("Converting table...")
     table <- toJSON(swsheet, pretty = TRUE)
     tools <- get_tools_json(tidysw)
-    cats <- get_cats_json(tidysw, swsheet)
+    cats <- get_cats_json(tidysw, swsheet, descs)
 
     # Output JSON
     message("Writing JSON...")

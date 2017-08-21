@@ -38,8 +38,9 @@ $(document).ready(function () {
     $.getJSON(jsonPath, function (data) {
       $.each(data, function (key, value) {
         /* -- Assign returned data -- */
-        var category = value.category
-        var tools = value.tools
+        var category = value.Category
+        var desc = value.Description
+        var tools = value.Tools
 
         var entry = ''
         entry += '<div class="panel-heading">' +
@@ -49,6 +50,9 @@ $(document).ready(function () {
         entry += '</a></h4></div>' +
                  '<div id="' + category + '_c" class="panel-collapse collapse">' +
                  '<ul class="list-group">'
+
+        // Add description
+        entry += '<li class="list-group-item"><h5>' + desc + '</h5></li>'
 
         // Loop over tools
         $.each(tools, function (k, val) {

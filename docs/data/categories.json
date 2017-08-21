@@ -6,7 +6,8 @@
         "Name": "SCALE",
         "CRAN": "Scale"
       }
-    ]
+    ],
+    "Description": "Detection of allele-specific expression"
   },
   {
     "Category": "AlternativeSplicing",
@@ -25,7 +26,8 @@
       {
         "Name": "SingleSplice"
       }
-    ]
+    ],
+    "Description": "Detection of alternative splicing"
   },
   {
     "Category": "Assembly",
@@ -33,7 +35,8 @@
       {
         "Name": "BASIC"
       }
-    ]
+    ],
+    "Description": "Tools that perform assembly of scRNA-seq reads"
   },
   {
     "Category": "CellCycle",
@@ -56,7 +59,8 @@
         "Name": "scran",
         "BioC": "scran"
       }
-    ]
+    ],
+    "Description": "Assignment or correction of stages of the cell cycle, or other uses of cell cycle (or similar) genes"
   },
   {
     "Category": "Classification",
@@ -68,7 +72,8 @@
         "Name": "scmap",
         "BioC": "scmap"
       }
-    ]
+    ],
+    "Description": "Assignment of cell types based on a reference dataset"
   },
   {
     "Category": "Clustering",
@@ -189,7 +194,8 @@
         "Name": "UNCURL",
         "PyPI": "uncurl"
       }
-    ]
+    ],
+    "Description": "Unsupervised grouping of cells based on expression profiles"
   },
   {
     "Category": "DifferentialExpression",
@@ -284,7 +290,8 @@
       {
         "Name": "zingeR"
       }
-    ]
+    ],
+    "Description": "Testing of differential expression across groups of cells"
   },
   {
     "Category": "DimensionalityReduction",
@@ -385,7 +392,8 @@
       {
         "Name": "ZINB-WaVE"
       }
-    ]
+    ],
+    "Description": "Projection of cells into a lower dimensional space"
   },
   {
     "Category": "ExpressionPatterns",
@@ -438,7 +446,8 @@
         "Name": "Wishbone",
         "PyPI": "wishbone"
       }
-    ]
+    ],
+    "Description": "Detection of genes that change over a trajectory"
   },
   {
     "Category": "GeneFiltering",
@@ -482,7 +491,8 @@
       {
         "Name": "Sincera"
       }
-    ]
+    ],
+    "Description": "Removal of lowly expressed or otherwise uninformative genes"
   },
   {
     "Category": "GeneNetworks",
@@ -535,7 +545,8 @@
       {
         "Name": "SCORPIUS"
       }
-    ]
+    ],
+    "Description": "Identification of co-regulated gene networks"
   },
   {
     "Category": "GeneSets",
@@ -572,7 +583,8 @@
         "Name": "SEPA",
         "BioC": "SEPA"
       }
-    ]
+    ],
+    "Description": "Testing or other uses of annotated gene sets"
   },
   {
     "Category": "Haplotypes",
@@ -580,7 +592,8 @@
       {
         "Name": "scphaser"
       }
-    ]
+    ],
+    "Description": "Use or assignment of haplotypes"
   },
   {
     "Category": "Imputation",
@@ -605,7 +618,8 @@
       {
         "Name": "Seurat"
       }
-    ]
+    ],
+    "Description": "Estimation of expression where zeros have been observed"
   },
   {
     "Category": "Interactive",
@@ -683,7 +697,8 @@
         "Name": "Wishbone",
         "PyPI": "wishbone"
       }
-    ]
+    ],
+    "Description": "Tools with an interactive component or a graphical user interface"
   },
   {
     "Category": "MarkerGenes",
@@ -721,7 +736,8 @@
       {
         "Name": "WaveCrest"
       }
-    ]
+    ],
+    "Description": "Identification or use of genes that mark cell populations"
   },
   {
     "Category": "Modality",
@@ -730,7 +746,8 @@
         "Name": "anchor",
         "PyPI": "anchor"
       }
-    ]
+    ],
+    "Description": "Identification or use of modality in gene expression"
   },
   {
     "Category": "Normalisation",
@@ -818,7 +835,8 @@
       {
         "Name": "ZINB-WaVE"
       }
-    ]
+    ],
+    "Description": "Removal of unwanted variation that may affect results"
   },
   {
     "Category": "Pseudotime",
@@ -967,7 +985,8 @@
         "Name": "Wishbone",
         "PyPI": "wishbone"
       }
-    ]
+    ],
+    "Description": "Ordering of cells along a trajectory"
   },
   {
     "Category": "QualityControl",
@@ -1033,7 +1052,8 @@
       {
         "Name": "SinQC"
       }
-    ]
+    ],
+    "Description": "Removal of low-quality cells"
   },
   {
     "Category": "Quantification",
@@ -1089,7 +1109,8 @@
       {
         "Name": "zUMIs"
       }
-    ]
+    ],
+    "Description": "Quantification of expression from reads, including handling unique molecular identifiers"
   },
   {
     "Category": "RareCells",
@@ -1100,7 +1121,8 @@
       {
         "Name": "RaceID2"
       }
-    ]
+    ],
+    "Description": "Identification of rare cell populations"
   },
   {
     "Category": "Simulation",
@@ -1150,7 +1172,8 @@
       {
         "Name": "zingeR"
       }
-    ]
+    ],
+    "Description": "Generation of synthetic scRNA-seq datasets"
   },
   {
     "Category": "StemCells",
@@ -1158,7 +1181,8 @@
       {
         "Name": "StemID"
       }
-    ]
+    ],
+    "Description": "Identification of cells with stem-like characteristics"
   },
   {
     "Category": "Transformation",
@@ -1167,7 +1191,8 @@
         "Name": "bonvoyage",
         "PyPI": "bonvoyage"
       }
-    ]
+    ],
+    "Description": "Transformation between expression levels and some other measure"
   },
   {
     "Category": "VariableGenes",
@@ -1213,7 +1238,8 @@
       {
         "Name": "Seurat"
       }
-    ]
+    ],
+    "Description": "Identifcation or use of highly (or lowly) variable genes"
   },
   {
     "Category": "Variants",
@@ -1225,7 +1251,8 @@
       {
         "Name": "SSrGE"
       }
-    ]
+    ],
+    "Description": "Detection or use of variants"
   },
   {
     "Category": "Visualisation",
@@ -1417,6 +1444,7 @@
       {
         "Name": "zUMIs"
       }
-    ]
+    ],
+    "Description": "Functions for visualising some aspect of scRNA-seq data or analysis"
   }
 ]
