@@ -56,7 +56,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "Citations": 327,
+    "Citations": 334,
     "Categories": ["GeneFiltering", "Clustering"]
   },
   {
@@ -81,7 +81,7 @@
     "Added": "2016-10-10",
     "Updated": "2016-10-10",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw631",
-    "Citations": 2,
+    "Citations": 3,
     "Categories": ["Assembly"]
   },
   {
@@ -96,7 +96,7 @@
     "Updated": "2017-06-23",
     "DOIURL": "http://dx.doi.org/10.1371/journal.pcbi.1004333",
     "Github": "catavallejos/BASiCS",
-    "Citations": 24,
+    "Citations": 25,
     "Categories": ["Normalisation", "DifferentialExpression", "VariableGenes", "Simulation"]
   },
   {
@@ -142,6 +142,20 @@
     "Github": "nghiavtr/BPSC",
     "Citations": 4,
     "Categories": ["DifferentialExpression"]
+  },
+  {
+    "Name": "BranchedGP",
+    "Platform": "Python",
+    "DOI": "10.1101/166868",
+    "Code": "https://github.com/ManchesterBioinference/BranchedGP",
+    "Description": "BranchedGP is a package for building Branching Gaussian process models in python, using TensorFlow and GPFlow.",
+    "License": "Apache-2.0",
+    "Added": "2017-07-20",
+    "Updated": "2017-08-20",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/166868",
+    "Github": "ManchesterBioinference/BranchedGP",
+    "Categories": ["ExpressionPatterns", "Visualisation"]
   },
   {
     "Name": "BRIE",
@@ -199,7 +213,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0888-1",
     "Github": "teichlab/cellity",
     "BioC": "cellity",
-    "Citations": 21,
+    "Citations": 23,
     "Categories": ["QualityControl"]
   },
   {
@@ -341,7 +355,7 @@
     "Added": "2016-09-22",
     "Updated": "2017-08-01",
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3971",
-    "Citations": 18,
+    "Citations": 20,
     "Categories": ["Pseudotime", "ExpressionPatterns", "Visualisation"]
   },
   {
@@ -357,6 +371,34 @@
     "DOIURL": "http://dx.doi.org/10.1101/099473",
     "Github": "rajewsky-lab/dropbead",
     "Categories": ["QualityControl", "Visualisation"]
+  },
+  {
+    "Name": "dropClust",
+    "Platform": "R/C++/Python",
+    "DOI": "10.1101/170308",
+    "Code": "https://github.com/debsin/dropClust",
+    "Description": "Efficient clustering of ultra-large scRNA-seq data",
+    "License": "GPL (>= 3)",
+    "Added": "2017-08-20",
+    "Updated": "2017-08-20",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/170308",
+    "Github": "debsin/dropClust",
+    "Categories": ["Normalisation", "Clustering", "DifferentialExpression", "VariableGenes", "DimensionalityReduction", "Visualisation"]
+  },
+  {
+    "Name": "dropEst",
+    "Platform": "C++/R",
+    "DOI": "10.1101/171496",
+    "Code": "https://github.com/hms-dbmi/dropEst",
+    "Description": "Pipeline for estimating molecular count matrices for droplet-based single-cell RNA-seq measurements.",
+    "License": "GPL-3",
+    "Added": "2017-08-20",
+    "Updated": "2017-08-20",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/171496",
+    "Github": "hms-dbmi/dropEst",
+    "Categories": ["Quantification", "QualityControl", "Visualisation"]
   },
   {
     "Name": "dropSeqPipe",
@@ -522,7 +564,7 @@
     "Updated": "2017-03-10",
     "DOIURL": "http://dx.doi.org/10.1126/sciimmunol.aal2192",
     "Github": "Teichlab/GPfates",
-    "Citations": 7,
+    "Citations": 10,
     "Categories": ["Pseudotime", "Visualisation"]
   },
   {
@@ -704,7 +746,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
-    "Citations": 250,
+    "Citations": 255,
     "Categories": ["Clustering", "Pseudotime", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -719,7 +761,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/ncomms11988",
     "Github": "JinmiaoChenLab/Mpath",
     "CRAN": "mpath",
-    "Citations": 8,
+    "Citations": 10,
     "Categories": ["Pseudotime"]
   },
   {
@@ -749,7 +791,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3549",
     "Github": "Bioconductor-mirror/Oscope",
     "BioC": "Oscope",
-    "Citations": 28,
+    "Citations": 29,
     "Categories": ["CellCycle"]
   },
   {
@@ -807,7 +849,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1186/s12859-016-0984-y",
     "Github": "JustinaZ/pcaReduce",
-    "Citations": 7,
+    "Citations": 8,
     "Categories": ["Clustering"]
   },
   {
@@ -1048,7 +1090,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.2967",
     "Github": "hms-dbmi/scde",
     "BioC": "scde",
-    "Citations": 121,
+    "Citations": 123,
     "Categories": ["DifferentialExpression", "GeneSets", "Visualisation"]
   },
   {
@@ -1063,7 +1105,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw201",
     "Github": "diazlab/SCell",
-    "Citations": 6,
+    "Citations": 7,
     "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Pseudotime", "DifferentialExpression", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -1135,7 +1177,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3102",
     "Github": "PMBio/scLVM",
     "PyPI": "scLVM",
-    "Citations": 195,
+    "Citations": 197,
     "Categories": ["Normalisation", "VariableGenes", "CellCycle", "Visualisation"]
   },
   {
@@ -1252,11 +1294,14 @@
   {
     "Name": "scPipe",
     "Platform": "R",
+    "DOI": "10.1101/175927",
     "Code": "https://github.com/LuyiTian/scPipe",
     "Description": "a pipeline for single cell RNA-seq data analysis",
     "License": "GPL (>= 2)",
     "Added": "2017-06-30",
-    "Updated": "2017-06-30",
+    "Updated": "2017-08-20",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/175927",
     "Github": "LuyiTian/scPipe",
     "Categories": ["Quantification", "Simulation"]
   },
@@ -1289,7 +1334,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3854",
     "Github": "RabadanLab/scTDA",
     "PyPI": "scTDA",
-    "Citations": 1,
+    "Citations": 3,
     "Categories": ["QualityControl", "Pseudotime", "Visualisation"]
   },
   {
@@ -1303,7 +1348,7 @@
     "Updated": "2016-09-12",
     "DOIURL": "http://dx.doi.org/10.1073/pnas.1408993111",
     "Github": "gcyuan/SCUBA",
-    "Citations": 52,
+    "Citations": 54,
     "Categories": ["Pseudotime", "ExpressionPatterns"]
   },
   {
@@ -1358,22 +1403,23 @@
     "Updated": "2017-06-23",
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3192",
     "Github": "satijalab/seurat",
-    "Citations": 131,
+    "Citations": 132,
     "Categories": ["Normalisation", "Imputation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "SIMLR",
-    "Platform": "R",
+    "Platform": "R/MATLAB/Python",
     "DOI": "10.1038/nmeth.4207",
     "PubDate": "2017-03-06",
     "Code": "https://github.com/BatzoglouLabSU/SIMLR",
     "Description": "Single-cell Interpretation via Multi-kernel LeaRning which learns an appropriate distance metric from the data for dimension reduction, clustering and visualization.",
     "License": "GPL-3",
     "Added": "2016-09-09",
-    "Updated": "2017-03-10",
+    "Updated": "2017-08-20",
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4207",
     "Github": "BatzoglouLabSU/SIMLR",
     "BioC": "SIMLR",
+    "PyPI": "SIMLR",
     "Citations": 3,
     "Categories": ["Clustering", "DimensionalityReduction", "Visualisation"]
   },
@@ -1404,7 +1450,7 @@
     "Updated": "2017-06-08",
     "DOIURL": "http://dx.doi.org/10.1371/journal.pcbi.1004575",
     "Github": "xu-lab/SINCERA",
-    "Citations": 23,
+    "Citations": 25,
     "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes"]
   },
   {
@@ -1432,7 +1478,7 @@
     "Added": "2016-09-08",
     "Updated": "2017-04-18",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw176",
-    "Citations": 3,
+    "Citations": 4,
     "Categories": ["QualityControl"]
   },
   {
@@ -1475,7 +1521,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0975-3",
     "Github": "jw156605/SLICER",
-    "Citations": 8,
+    "Citations": 9,
     "Categories": ["Pseudotime"]
   },
   {
@@ -1644,7 +1690,7 @@
     "DOIURL": "http://dx.doi.org/10.1093/nar/gkw430",
     "Github": "zji90/TSCAN",
     "BioC": "TSCAN",
-    "Citations": 17,
+    "Citations": 18,
     "Categories": ["Clustering", "Pseudotime", "MarkerGenes", "Visualisation", "Interactive"]
   },
   {
@@ -1675,7 +1721,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "PyPI": "umis",
-    "Citations": 13,
+    "Citations": 14,
     "Categories": ["Quantification"]
   },
   {
@@ -1721,7 +1767,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3569",
     "Github": "ManuSetty/wishbone",
     "PyPI": "wishbone",
-    "Citations": 35,
+    "Citations": 37,
     "Categories": ["Pseudotime", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
