@@ -1,78 +1,83 @@
 [
   {
-    "category": "AlleleSpecific",
-    "software": [
+    "Category": "AlleleSpecific",
+    "Tools": [
       {
         "Name": "SCALE",
         "CRAN": "Scale"
       }
-    ]
+    ],
+    "Description": "Detection of allele-specific expression"
   },
   {
-    "category": "AlternativeSplicing",
-    "software": [
+    "Category": "AlternativeSplicing",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
       {
         "Name": "BRIE",
-        "pypi": "brie"
+        "PyPI": "brie"
       },
       {
         "Name": "Outrigger",
-        "pypi": "outrigger"
+        "PyPI": "outrigger"
       },
       {
         "Name": "SingleSplice"
       }
-    ]
+    ],
+    "Description": "Detection of alternative splicing"
   },
   {
-    "category": "Assembly",
-    "software": [
+    "Category": "Assembly",
+    "Tools": [
       {
         "Name": "BASIC"
       }
-    ]
+    ],
+    "Description": "Tools that perform assembly of scRNA-seq reads"
   },
   {
-    "category": "CellCycle",
-    "software": [
+    "Category": "CellCycle",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
       {
         "Name": "Oscope",
-        "Bioconductor": "Oscope"
+        "BioC": "Oscope"
       },
       {
         "Name": "reCAT"
       },
       {
         "Name": "scLVM",
-        "pypi": "scLVM"
+        "PyPI": "scLVM"
       },
       {
         "Name": "scran",
-        "Bioconductor": "scran"
+        "BioC": "scran"
       }
-    ]
+    ],
+    "Description": "Assignment or correction of stages of the cell cycle, or other uses of cell cycle (or similar) genes"
   },
   {
-    "category": "Classification",
-    "software": [
+    "Category": "Classification",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
       {
         "Name": "scmap",
-        "Bioconductor": "scmap"
+        "BioC": "scmap"
       }
-    ]
+    ],
+    "Description": "Assignment of cell types based on a reference dataset"
   },
   {
-    "category": "Clustering",
-    "software": [
+    "Category": "Clustering",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
@@ -90,11 +95,11 @@
       },
       {
         "Name": "clusterExperiment",
-        "Bioconductor": "clusterExperiment"
+        "BioC": "clusterExperiment"
       },
       {
         "Name": "countClust",
-        "Bioconductor": "CountClust"
+        "BioC": "CountClust"
       },
       {
         "Name": "dropClust"
@@ -104,14 +109,14 @@
       },
       {
         "Name": "ECLAIR",
-        "pypi": "ECLAIR"
+        "PyPI": "ECLAIR"
       },
       {
         "Name": "ESAT"
       },
       {
         "Name": "flotilla",
-        "pypi": "flotilla"
+        "PyPI": "flotilla"
       },
       {
         "Name": "GiniClust"
@@ -121,11 +126,11 @@
       },
       {
         "Name": "Linnorm",
-        "Bioconductor": "Linnorm"
+        "BioC": "Linnorm"
       },
       {
         "Name": "Monocle",
-        "Bioconductor": "monocle"
+        "BioC": "monocle"
       },
       {
         "Name": "pcaReduce"
@@ -145,11 +150,11 @@
       },
       {
         "Name": "SC3",
-        "Bioconductor": "SC3"
+        "BioC": "SC3"
       },
       {
         "Name": "Scanpy",
-        "pypi": "scanpy"
+        "PyPI": "scanpy"
       },
       {
         "Name": "SCell"
@@ -162,12 +167,12 @@
       },
       {
         "Name": "SIMLR",
-        "Bioconductor": "SIMLR",
-        "pypi": "SIMLR"
+        "BioC": "SIMLR",
+        "PyPI": "SIMLR"
       },
       {
         "Name": "sincell",
-        "Bioconductor": "sincell"
+        "BioC": "sincell"
       },
       {
         "Name": "Sincera"
@@ -183,17 +188,18 @@
       },
       {
         "Name": "TSCAN",
-        "Bioconductor": "TSCAN"
+        "BioC": "TSCAN"
       },
       {
         "Name": "UNCURL",
-        "pypi": "uncurl"
+        "PyPI": "uncurl"
       }
-    ]
+    ],
+    "Description": "Unsupervised grouping of cells based on expression profiles"
   },
   {
-    "category": "DifferentialExpression",
-    "software": [
+    "Category": "DifferentialExpression",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
@@ -208,7 +214,7 @@
       },
       {
         "Name": "countClust",
-        "Bioconductor": "CountClust"
+        "BioC": "CountClust"
       },
       {
         "Name": "D3E"
@@ -227,19 +233,19 @@
       },
       {
         "Name": "Linnorm",
-        "Bioconductor": "Linnorm"
+        "BioC": "Linnorm"
       },
       {
         "Name": "M3Drop",
-        "Bioconductor": "M3Drop"
+        "BioC": "M3Drop"
       },
       {
         "Name": "MAST",
-        "Bioconductor": "MAST"
+        "BioC": "MAST"
       },
       {
         "Name": "Monocle",
-        "Bioconductor": "monocle"
+        "BioC": "monocle"
       },
       {
         "Name": "PIVOT"
@@ -252,15 +258,15 @@
       },
       {
         "Name": "Scanpy",
-        "pypi": "scanpy"
+        "PyPI": "scanpy"
       },
       {
         "Name": "scDD",
-        "Bioconductor": "scDD"
+        "BioC": "scDD"
       },
       {
         "Name": "SCDE",
-        "Bioconductor": "scde"
+        "BioC": "scde"
       },
       {
         "Name": "SCell"
@@ -276,7 +282,7 @@
       },
       {
         "Name": "switchde",
-        "Bioconductor": "switchde"
+        "BioC": "switchde"
       },
       {
         "Name": "TASC"
@@ -284,11 +290,12 @@
       {
         "Name": "zingeR"
       }
-    ]
+    ],
+    "Description": "Testing of differential expression across groups of cells"
   },
   {
-    "category": "DimensionalityReduction",
-    "software": [
+    "Category": "DimensionalityReduction",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
@@ -300,7 +307,7 @@
       },
       {
         "Name": "destiny",
-        "Bioconductor": "destiny"
+        "BioC": "destiny"
       },
       {
         "Name": "dropClust"
@@ -313,11 +320,11 @@
       },
       {
         "Name": "FastProject",
-        "pypi": "FastProject"
+        "PyPI": "FastProject"
       },
       {
         "Name": "flotilla",
-        "pypi": "flotilla"
+        "PyPI": "flotilla"
       },
       {
         "Name": "GiniClust"
@@ -327,11 +334,11 @@
       },
       {
         "Name": "MAGIC",
-        "pypi": "magic"
+        "PyPI": "magic"
       },
       {
         "Name": "Monocle",
-        "Bioconductor": "monocle"
+        "BioC": "monocle"
       },
       {
         "Name": "PIVOT"
@@ -341,11 +348,11 @@
       },
       {
         "Name": "Scanpy",
-        "pypi": "scanpy"
+        "PyPI": "scanpy"
       },
       {
         "Name": "Scater",
-        "Bioconductor": "scater"
+        "BioC": "scater"
       },
       {
         "Name": "SCell"
@@ -358,12 +365,12 @@
       },
       {
         "Name": "SIMLR",
-        "Bioconductor": "SIMLR",
-        "pypi": "SIMLR"
+        "BioC": "SIMLR",
+        "PyPI": "SIMLR"
       },
       {
         "Name": "sincell",
-        "Bioconductor": "sincell"
+        "BioC": "sincell"
       },
       {
         "Name": "SoptSC"
@@ -373,11 +380,11 @@
       },
       {
         "Name": "SPRING",
-        "pypi": "spring"
+        "PyPI": "spring"
       },
       {
         "Name": "UNCURL",
-        "pypi": "uncurl"
+        "PyPI": "uncurl"
       },
       {
         "Name": "ZIFA"
@@ -385,11 +392,12 @@
       {
         "Name": "ZINB-WaVE"
       }
-    ]
+    ],
+    "Description": "Projection of cells into a lower dimensional space"
   },
   {
-    "category": "ExpressionPatterns",
-    "software": [
+    "Category": "ExpressionPatterns",
+    "Tools": [
       {
         "Name": "BranchedGP"
       },
@@ -405,14 +413,14 @@
       },
       {
         "Name": "Monocle",
-        "Bioconductor": "monocle"
+        "BioC": "monocle"
       },
       {
         "Name": "Ouija"
       },
       {
         "Name": "SCIMITAR",
-        "pypi": "Scimitar"
+        "PyPI": "Scimitar"
       },
       {
         "Name": "SCORPIUS"
@@ -425,24 +433,25 @@
       },
       {
         "Name": "SEPA",
-        "Bioconductor": "SEPA"
+        "BioC": "SEPA"
       },
       {
         "Name": "switchde",
-        "Bioconductor": "switchde"
+        "BioC": "switchde"
       },
       {
         "Name": "WaveCrest"
       },
       {
         "Name": "Wishbone",
-        "pypi": "wishbone"
+        "PyPI": "wishbone"
       }
-    ]
+    ],
+    "Description": "Detection of genes that change over a trajectory"
   },
   {
-    "category": "GeneFiltering",
-    "software": [
+    "Category": "GeneFiltering",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
@@ -458,7 +467,7 @@
       },
       {
         "Name": "Linnorm",
-        "Bioconductor": "Linnorm"
+        "BioC": "Linnorm"
       },
       {
         "Name": "PIVOT"
@@ -468,7 +477,7 @@
       },
       {
         "Name": "Scanpy",
-        "pypi": "scanpy"
+        "PyPI": "scanpy"
       },
       {
         "Name": "SCell"
@@ -482,11 +491,12 @@
       {
         "Name": "Sincera"
       }
-    ]
+    ],
+    "Description": "Removal of lowly expressed or otherwise uninformative genes"
   },
   {
-    "category": "GeneNetworks",
-    "software": [
+    "Category": "GeneNetworks",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
@@ -499,7 +509,7 @@
       },
       {
         "Name": "flotilla",
-        "pypi": "flotilla"
+        "PyPI": "flotilla"
       },
       {
         "Name": "Granatum"
@@ -510,11 +520,11 @@
       },
       {
         "Name": "Linnorm",
-        "Bioconductor": "Linnorm"
+        "BioC": "Linnorm"
       },
       {
         "Name": "MAST",
-        "Bioconductor": "MAST"
+        "BioC": "MAST"
       },
       {
         "Name": "PIVOT"
@@ -527,7 +537,7 @@
       },
       {
         "Name": "SCIMITAR",
-        "pypi": "Scimitar"
+        "PyPI": "Scimitar"
       },
       {
         "Name": "SCODE"
@@ -535,28 +545,29 @@
       {
         "Name": "SCORPIUS"
       }
-    ]
+    ],
+    "Description": "Identification of co-regulated gene networks"
   },
   {
-    "category": "GeneSets",
-    "software": [
+    "Category": "GeneSets",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
       {
         "Name": "CellTree",
-        "Bioconductor": "cellTree"
+        "BioC": "cellTree"
       },
       {
         "Name": "FastProject",
-        "pypi": "FastProject"
+        "PyPI": "FastProject"
       },
       {
         "Name": "Granatum"
       },
       {
         "Name": "MAST",
-        "Bioconductor": "MAST"
+        "BioC": "MAST"
       },
       {
         "Name": "PIVOT"
@@ -566,35 +577,37 @@
       },
       {
         "Name": "SCDE",
-        "Bioconductor": "scde"
+        "BioC": "scde"
       },
       {
         "Name": "SEPA",
-        "Bioconductor": "SEPA"
+        "BioC": "SEPA"
       }
-    ]
+    ],
+    "Description": "Testing or other uses of annotated gene sets"
   },
   {
-    "category": "Haplotypes",
-    "software": [
+    "Category": "Haplotypes",
+    "Tools": [
       {
         "Name": "scphaser"
       }
-    ]
+    ],
+    "Description": "Use or assignment of haplotypes"
   },
   {
-    "category": "Imputation",
-    "software": [
+    "Category": "Imputation",
+    "Tools": [
       {
         "Name": "CIDR"
       },
       {
         "Name": "Linnorm",
-        "Bioconductor": "Linnorm"
+        "BioC": "Linnorm"
       },
       {
         "Name": "MAGIC",
-        "pypi": "magic"
+        "PyPI": "magic"
       },
       {
         "Name": "SAVER"
@@ -605,11 +618,12 @@
       {
         "Name": "Seurat"
       }
-    ]
+    ],
+    "Description": "Estimation of expression where zeros have been observed"
   },
   {
-    "category": "Interactive",
-    "software": [
+    "Category": "Interactive",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
@@ -618,11 +632,11 @@
       },
       {
         "Name": "FastProject",
-        "pypi": "FastProject"
+        "PyPI": "FastProject"
       },
       {
         "Name": "flotilla",
-        "pypi": "flotilla"
+        "PyPI": "flotilla"
       },
       {
         "Name": "GiniClust"
@@ -632,7 +646,7 @@
       },
       {
         "Name": "MAGIC",
-        "pypi": "magic"
+        "PyPI": "magic"
       },
       {
         "Name": "OEFinder"
@@ -645,49 +659,50 @@
       },
       {
         "Name": "SC3",
-        "Bioconductor": "SC3"
+        "BioC": "SC3"
       },
       {
         "Name": "Scater",
-        "Bioconductor": "scater"
+        "BioC": "scater"
       },
       {
         "Name": "SCell"
       },
       {
         "Name": "SCONE",
-        "Bioconductor": "scone"
+        "BioC": "scone"
       },
       {
         "Name": "SCPattern"
       },
       {
         "Name": "SEPA",
-        "Bioconductor": "SEPA"
+        "BioC": "SEPA"
       },
       {
         "Name": "SPRING",
-        "pypi": "spring"
+        "PyPI": "spring"
       },
       {
         "Name": "TASIC"
       },
       {
         "Name": "TSCAN",
-        "Bioconductor": "TSCAN"
+        "BioC": "TSCAN"
       },
       {
         "Name": "WaveCrest"
       },
       {
         "Name": "Wishbone",
-        "pypi": "wishbone"
+        "PyPI": "wishbone"
       }
-    ]
+    ],
+    "Description": "Tools with an interactive component or a graphical user interface"
   },
   {
-    "category": "MarkerGenes",
-    "software": [
+    "Category": "MarkerGenes",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
@@ -696,11 +711,11 @@
       },
       {
         "Name": "M3Drop",
-        "Bioconductor": "M3Drop"
+        "BioC": "M3Drop"
       },
       {
         "Name": "Monocle",
-        "Bioconductor": "monocle"
+        "BioC": "monocle"
       },
       {
         "Name": "SEGtool"
@@ -716,25 +731,27 @@
       },
       {
         "Name": "TSCAN",
-        "Bioconductor": "TSCAN"
+        "BioC": "TSCAN"
       },
       {
         "Name": "WaveCrest"
       }
-    ]
+    ],
+    "Description": "Identification or use of genes that mark cell populations"
   },
   {
-    "category": "Modality",
-    "software": [
+    "Category": "Modality",
+    "Tools": [
       {
         "Name": "anchor",
-        "pypi": "anchor"
+        "PyPI": "anchor"
       }
-    ]
+    ],
+    "Description": "Identification or use of modality in gene expression"
   },
   {
-    "category": "Normalisation",
-    "software": [
+    "Category": "Normalisation",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
@@ -761,11 +778,11 @@
       },
       {
         "Name": "Linnorm",
-        "Bioconductor": "Linnorm"
+        "BioC": "Linnorm"
       },
       {
         "Name": "MAST",
-        "Bioconductor": "MAST"
+        "BioC": "MAST"
       },
       {
         "Name": "OEFinder"
@@ -781,30 +798,30 @@
       },
       {
         "Name": "Scanpy",
-        "pypi": "scanpy"
+        "PyPI": "scanpy"
       },
       {
         "Name": "Scater",
-        "Bioconductor": "scater"
+        "BioC": "scater"
       },
       {
         "Name": "SCell"
       },
       {
         "Name": "scLVM",
-        "pypi": "scLVM"
+        "PyPI": "scLVM"
       },
       {
         "Name": "SCNorm",
-        "Bioconductor": "SCnorm"
+        "BioC": "SCnorm"
       },
       {
         "Name": "SCONE",
-        "Bioconductor": "scone"
+        "BioC": "scone"
       },
       {
         "Name": "scran",
-        "Bioconductor": "scran"
+        "BioC": "scran"
       },
       {
         "Name": "Seurat"
@@ -818,14 +835,15 @@
       {
         "Name": "ZINB-WaVE"
       }
-    ]
+    ],
+    "Description": "Removal of unwanted variation that may affect results"
   },
   {
-    "category": "Pseudotime",
-    "software": [
+    "Category": "Pseudotime",
+    "Tools": [
       {
         "Name": "CellTree",
-        "Bioconductor": "cellTree"
+        "BioC": "cellTree"
       },
       {
         "Name": "DeLorean",
@@ -839,7 +857,7 @@
       },
       {
         "Name": "ECLAIR",
-        "pypi": "ECLAIR"
+        "PyPI": "ECLAIR"
       },
       {
         "Name": "embeddr"
@@ -865,11 +883,11 @@
       },
       {
         "Name": "MFA",
-        "Bioconductor": "mfa"
+        "BioC": "mfa"
       },
       {
         "Name": "Monocle",
-        "Bioconductor": "monocle"
+        "BioC": "monocle"
       },
       {
         "Name": "Mpath",
@@ -883,7 +901,7 @@
       },
       {
         "Name": "PhenoPath",
-        "Bioconductor": "phenopath"
+        "BioC": "phenopath"
       },
       {
         "Name": "PIVOT"
@@ -896,7 +914,7 @@
       },
       {
         "Name": "Scanpy",
-        "pypi": "scanpy"
+        "PyPI": "scanpy"
       },
       {
         "Name": "SCell"
@@ -906,7 +924,7 @@
       },
       {
         "Name": "SCIMITAR",
-        "pypi": "Scimitar"
+        "PyPI": "Scimitar"
       },
       {
         "Name": "SCODE"
@@ -919,14 +937,14 @@
       },
       {
         "Name": "scTDA",
-        "pypi": "scTDA"
+        "PyPI": "scTDA"
       },
       {
         "Name": "SCUBA"
       },
       {
         "Name": "sincell",
-        "Bioconductor": "sincell"
+        "BioC": "sincell"
       },
       {
         "Name": "SLICE"
@@ -954,30 +972,31 @@
       },
       {
         "Name": "TSCAN",
-        "Bioconductor": "TSCAN"
+        "BioC": "TSCAN"
       },
       {
         "Name": "UNCURL",
-        "pypi": "uncurl"
+        "PyPI": "uncurl"
       },
       {
         "Name": "WaveCrest"
       },
       {
         "Name": "Wishbone",
-        "pypi": "wishbone"
+        "PyPI": "wishbone"
       }
-    ]
+    ],
+    "Description": "Ordering of cells along a trajectory"
   },
   {
-    "category": "QualityControl",
-    "software": [
+    "Category": "QualityControl",
+    "Tools": [
       {
         "Name": "Cell Ranger"
       },
       {
         "Name": "Cellity",
-        "Bioconductor": "cellity"
+        "BioC": "cellity"
       },
       {
         "Name": "dropbead"
@@ -993,18 +1012,18 @@
       },
       {
         "Name": "flotilla",
-        "pypi": "flotilla"
+        "PyPI": "flotilla"
       },
       {
         "Name": "Granatum"
       },
       {
         "Name": "MAGIC",
-        "pypi": "magic"
+        "PyPI": "magic"
       },
       {
         "Name": "MAST",
-        "Bioconductor": "MAST"
+        "BioC": "MAST"
       },
       {
         "Name": "OEFinder"
@@ -1014,18 +1033,18 @@
       },
       {
         "Name": "Scater",
-        "Bioconductor": "scater"
+        "BioC": "scater"
       },
       {
         "Name": "SCell"
       },
       {
         "Name": "SCONE",
-        "Bioconductor": "scone"
+        "BioC": "scone"
       },
       {
         "Name": "scTDA",
-        "pypi": "scTDA"
+        "PyPI": "scTDA"
       },
       {
         "Name": "Sincera"
@@ -1033,17 +1052,18 @@
       {
         "Name": "SinQC"
       }
-    ]
+    ],
+    "Description": "Removal of low-quality cells"
   },
   {
-    "category": "Quantification",
-    "software": [
+    "Category": "Quantification",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
       {
         "Name": "BRIE",
-        "pypi": "brie"
+        "PyPI": "brie"
       },
       {
         "Name": "Cell Ranger"
@@ -1068,7 +1088,7 @@
       },
       {
         "Name": "Scater",
-        "Bioconductor": "scater"
+        "BioC": "scater"
       },
       {
         "Name": "scPipe"
@@ -1084,27 +1104,29 @@
       },
       {
         "Name": "umis",
-        "pypi": "umis"
+        "PyPI": "umis"
       },
       {
         "Name": "zUMIs"
       }
-    ]
+    ],
+    "Description": "Quantification of expression from reads, including handling unique molecular identifiers"
   },
   {
-    "category": "RareCells",
-    "software": [
+    "Category": "RareCells",
+    "Tools": [
       {
         "Name": "GiniClust"
       },
       {
         "Name": "RaceID2"
       }
-    ]
+    ],
+    "Description": "Identification of rare cell populations"
   },
   {
-    "category": "Simulation",
-    "software": [
+    "Category": "Simulation",
+    "Tools": [
       {
         "Name": "BASiCS"
       },
@@ -1116,33 +1138,33 @@
       },
       {
         "Name": "Linnorm",
-        "Bioconductor": "Linnorm"
+        "BioC": "Linnorm"
       },
       {
         "Name": "MFA",
-        "Bioconductor": "mfa"
+        "BioC": "mfa"
       },
       {
         "Name": "PhenoPath",
-        "Bioconductor": "phenopath"
+        "BioC": "phenopath"
       },
       {
         "Name": "powsimR"
       },
       {
         "Name": "Scanpy",
-        "pypi": "scanpy"
+        "PyPI": "scanpy"
       },
       {
         "Name": "scDD",
-        "Bioconductor": "scDD"
+        "BioC": "scDD"
       },
       {
         "Name": "scPipe"
       },
       {
         "Name": "Splatter",
-        "Bioconductor": "splatter"
+        "BioC": "splatter"
       },
       {
         "Name": "ZINB-WaVE"
@@ -1150,34 +1172,37 @@
       {
         "Name": "zingeR"
       }
-    ]
+    ],
+    "Description": "Generation of synthetic scRNA-seq datasets"
   },
   {
-    "category": "StemCells",
-    "software": [
+    "Category": "StemCells",
+    "Tools": [
       {
         "Name": "StemID"
       }
-    ]
+    ],
+    "Description": "Identification of cells with stem-like characteristics"
   },
   {
-    "category": "Transformation",
-    "software": [
+    "Category": "Transformation",
+    "Tools": [
       {
         "Name": "bonvoyage",
-        "pypi": "bonvoyage"
+        "PyPI": "bonvoyage"
       }
-    ]
+    ],
+    "Description": "Transformation between expression levels and some other measure"
   },
   {
-    "category": "VariableGenes",
-    "software": [
+    "Category": "VariableGenes",
+    "Tools": [
       {
         "Name": "BASiCS"
       },
       {
         "Name": "countClust",
-        "Bioconductor": "CountClust"
+        "BioC": "CountClust"
       },
       {
         "Name": "dropClust"
@@ -1193,19 +1218,19 @@
       },
       {
         "Name": "Linnorm",
-        "Bioconductor": "Linnorm"
+        "BioC": "Linnorm"
       },
       {
         "Name": "Scanpy",
-        "pypi": "scanpy"
+        "PyPI": "scanpy"
       },
       {
         "Name": "scLVM",
-        "pypi": "scLVM"
+        "PyPI": "scLVM"
       },
       {
         "Name": "scran",
-        "Bioconductor": "scran"
+        "BioC": "scran"
       },
       {
         "Name": "scVEGs"
@@ -1213,11 +1238,12 @@
       {
         "Name": "Seurat"
       }
-    ]
+    ],
+    "Description": "Identifcation or use of highly (or lowly) variable genes"
   },
   {
-    "category": "Variants",
-    "software": [
+    "Category": "Variants",
+    "Tools": [
       {
         "Name": "badger",
         "CRAN": "badger"
@@ -1225,11 +1251,12 @@
       {
         "Name": "SSrGE"
       }
-    ]
+    ],
+    "Description": "Detection or use of variants"
   },
   {
-    "category": "Visualisation",
-    "software": [
+    "Category": "Visualisation",
+    "Tools": [
       {
         "Name": "AltAnalyze"
       },
@@ -1252,11 +1279,11 @@
       },
       {
         "Name": "CellTree",
-        "Bioconductor": "cellTree"
+        "BioC": "cellTree"
       },
       {
         "Name": "countClust",
-        "Bioconductor": "CountClust"
+        "BioC": "CountClust"
       },
       {
         "Name": "DeLorean",
@@ -1264,7 +1291,7 @@
       },
       {
         "Name": "destiny",
-        "Bioconductor": "destiny"
+        "BioC": "destiny"
       },
       {
         "Name": "DPT"
@@ -1283,11 +1310,11 @@
       },
       {
         "Name": "ECLAIR",
-        "pypi": "ECLAIR"
+        "PyPI": "ECLAIR"
       },
       {
         "Name": "FastProject",
-        "pypi": "FastProject"
+        "PyPI": "FastProject"
       },
       {
         "Name": "GPfates"
@@ -1303,23 +1330,23 @@
       },
       {
         "Name": "Linnorm",
-        "Bioconductor": "Linnorm"
+        "BioC": "Linnorm"
       },
       {
         "Name": "M3Drop",
-        "Bioconductor": "M3Drop"
+        "BioC": "M3Drop"
       },
       {
         "Name": "MAGIC",
-        "pypi": "magic"
+        "PyPI": "magic"
       },
       {
         "Name": "MFA",
-        "Bioconductor": "mfa"
+        "BioC": "mfa"
       },
       {
         "Name": "Monocle",
-        "Bioconductor": "monocle"
+        "BioC": "monocle"
       },
       {
         "Name": "Ouija"
@@ -1348,15 +1375,15 @@
       },
       {
         "Name": "Scanpy",
-        "pypi": "scanpy"
+        "PyPI": "scanpy"
       },
       {
         "Name": "Scater",
-        "Bioconductor": "scater"
+        "BioC": "scater"
       },
       {
         "Name": "SCDE",
-        "Bioconductor": "scde"
+        "BioC": "scde"
       },
       {
         "Name": "SCell"
@@ -1366,57 +1393,58 @@
       },
       {
         "Name": "scLVM",
-        "pypi": "scLVM"
+        "PyPI": "scLVM"
       },
       {
         "Name": "SCONE",
-        "Bioconductor": "scone"
+        "BioC": "scone"
       },
       {
         "Name": "SCORPIUS"
       },
       {
         "Name": "scTDA",
-        "pypi": "scTDA"
+        "PyPI": "scTDA"
       },
       {
         "Name": "Seurat"
       },
       {
         "Name": "SIMLR",
-        "Bioconductor": "SIMLR",
-        "pypi": "SIMLR"
+        "BioC": "SIMLR",
+        "PyPI": "SIMLR"
       },
       {
         "Name": "sincell",
-        "Bioconductor": "sincell"
+        "BioC": "sincell"
       },
       {
         "Name": "SPADE"
       },
       {
         "Name": "Splatter",
-        "Bioconductor": "splatter"
+        "BioC": "splatter"
       },
       {
         "Name": "SPRING",
-        "pypi": "spring"
+        "PyPI": "spring"
       },
       {
         "Name": "TSCAN",
-        "Bioconductor": "TSCAN"
+        "BioC": "TSCAN"
       },
       {
         "Name": "UNCURL",
-        "pypi": "uncurl"
+        "PyPI": "uncurl"
       },
       {
         "Name": "Wishbone",
-        "pypi": "wishbone"
+        "PyPI": "wishbone"
       },
       {
         "Name": "zUMIs"
       }
-    ]
+    ],
+    "Description": "Functions for visualising some aspect of scRNA-seq data or analysis"
   }
 ]

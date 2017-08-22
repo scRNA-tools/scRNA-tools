@@ -86,20 +86,20 @@
                 data-filter-show-clear="true"
                 data-show-export="true"
                 data-export-data-type="all"
-                data-id-table="software-table"
+                data-id-table="tools-table"
                 data-filter-control="true"
-                data-url="data/software-table.json">
+                data-url="data/tools-table.json">
                 <thead>
                     <tr>
                         <th data-field="Name" data-sortable="true" data-switchable="false" data-formatter="nameFormatter">Name</th>
                         <th data-field="Platform" data-sortable="true" data-filter-control="select">Platform</th>
                         <th data-field="DOI" data-sortable="true" data-visible="true">DOI</th>
                         <th data-field="PubDate" data-sortable="true" data-visible="false">Pub Date</th>
-                        <th data-field="citations" data-sortable="true" data-visible="true">Citations</th>
+                        <th data-field="Citations" data-sortable="true" data-visible="true">Citations</th>
                         <th data-field="Code" data-sortable="true" data-visible="false">Code</th>
                         <th data-field="Description" data-sortable="true" data-visible="false">Description</th>
                         <th data-field="License" data-sortable="true" data-visible="true" data-filter-control="select">License</th>
-                        <th data-field="categories" data-sortable="true" data-visible="true" data-formatter="catsFormatter">Categories</th>
+                        <th data-field="Categories" data-sortable="true" data-visible="true" data-formatter="catsFormatter">Categories</th>
                         <th data-field="Assembly" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Assembly</th>
                         <th data-field="Quantification" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Quantification</th>
                         <th data-field="QualityControl" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Quality Control</th>
@@ -155,7 +155,7 @@
 
           for (var i = 0; i < values.length; i++) {
             var cat = values[i]
-            formatted.push('<a href="categories.html#' + cat + '">' + cat + '</a>')
+            formatted.push('<a href="categories.html#' + cat + '">' + cat.replace(/([a-z])([A-Z])/g, '$1 $2') + '</a>')
           }
 
           return formatted.join(', ')

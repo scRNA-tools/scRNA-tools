@@ -38,23 +38,27 @@ $(document).ready(function () {
     $.getJSON(jsonPath, function (data) {
       $.each(data, function (key, value) {
         /* -- Assign returned data -- */
-        var category = value.category
-        var software = value.software
+        var category = value.Category
+        var desc = value.Description
+        var tools = value.Tools
 
         var entry = ''
         entry += '<div class="panel-heading">' +
                  '<h4 id="' + category + '" class="panel-title">' +
-                 '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + category + '_c">' + category
+                 '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + category + '_c">' + category.replace(/([a-z])([A-Z])/g, '$1 $2')
 
         entry += '</a></h4></div>' +
                  '<div id="' + category + '_c" class="panel-collapse collapse">' +
                  '<ul class="list-group">'
 
-        // Loop over software
-        $.each(software, function (k, val) {
+        // Add description
+        entry += '<li class="list-group-item"><h5>' + desc + '</h5></li>'
+
+        // Loop over tools
+        $.each(tools, function (k, val) {
           var name = val.Name
-          var bioc = val.Bioconductor
-          var pypi = val.pypi
+          var bioc = val.BioC
+          var pypi = val.PyPI
           var cran = val.CRAN
 
           entry += '<li class="list-group-item"><a href="tools.html#' + name + '">' + name + '</a>'
