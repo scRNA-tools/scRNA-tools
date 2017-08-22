@@ -28,6 +28,11 @@ suppressPackageStartupMessages({
 
 #### FUNCTIONS ####
 
+#' Get software sheet
+#'
+#' Read `single_cell_software.csv`
+#'
+#' @return Tibble containing table
 get_swsheet <- function() {
 
     message("Loading 'single_cell_software.csv'...")
@@ -46,6 +51,12 @@ get_swsheet <- function() {
                         ))
 }
 
+
+#' Get packages
+#'
+#' Get lists of the packages available in Bioconductor, CRAN and PyPI
+#'
+#' @return List of named vectors containg available packages
 get_pkgs <- function() {
 
     message("Getting package repositories...")
@@ -71,11 +82,25 @@ get_pkgs <- function() {
     pkgs <- list(BioC = bioc.pkgs, CRAN = cran.pkgs, PyPI = pypi.pkgs)
 }
 
+
+#' Get category descriptions
+#'
+#' Read `docs/data/descriptions.json`
+#'
+#' @return data.frame containing categories and descriptions
 get_descriptions <- function() {
     message("Adding category descriptions...")
     descs <- read_json("docs/data/descriptions.json", simplifyVector = TRUE)
 }
 
+
+#' Fix DOIs
+#'
+#' Determine which papers are preprints and add `DOIURL` field
+#'
+#' @param swsheet Tibble containing software table
+#'
+#' @return swsheet with additional columns
 fix_doi <- function(swsheet) {
 
     message("Fixing references...")
@@ -89,6 +114,14 @@ fix_doi <- function(swsheet) {
                                paste0('http://dx.doi.org/', DOI)))
 }
 
+
+#' Add Github
+#'
+#' Add field indicating Github repositories
+#'
+#' @param swsheet Tibble containing software table
+#'
+#' @return swsheet with Github column
 add_github <- function(swsheet) {
 
     message("Adding Github...")
@@ -99,6 +132,16 @@ add_github <- function(swsheet) {
                                NA))
 }
 
+
+#' Add repositories
+#'
+#' Add fields indicating if tools are available from various software
+#' repositories
+#'
+#' @param swsheet Tibble containing software table
+#' @param pkgs List of available packages
+#'
+#' @return swsheet with additional repository columns
 add_repos <- function(swsheet, pkgs) {
 
     message("Adding package repositories...")
@@ -118,6 +161,14 @@ add_repos <- function(swsheet, pkgs) {
         select(-LowerName)
 }
 
+
+#' Add citations
+#'
+#' Add citations from Crossref
+#'
+#' @param swsheet Tibble containing software table
+#'
+#' @return swsheet with additional citations column
 add_citations <- function(swsheet) {
 
     message("Adding citations...")
@@ -145,6 +196,14 @@ add_citations <- function(swsheet) {
     return(swsheet)
 }
 
+
+#' Tidy software table
+#'
+#' Convert the software table to tidy format
+#'
+#' @param swsheet Tibble containing software table
+#'
+#' @return Tidy swsheet tibble
 tidy_swsheet <- function(swsheet) {
 
     message("Tidying data...")
@@ -158,6 +217,15 @@ tidy_swsheet <- function(swsheet) {
         arrange(Name)
 }
 
+
+#' Add categories
+#'
+#' Add categories column to software table
+#'
+#' @param swsheet Tibble containing software table
+#' @param tidysw Tibble containing tidy software table
+#'
+#' @return swsheet with additional categories column
 add_cats <- function(swsheet, tidysw) {
 
     message("Adding categories to table...")
@@ -170,6 +238,14 @@ add_cats <- function(swsheet, tidysw) {
     swsheet <- left_join(swsheet, catdf, by = "Name")
 }
 
+
+#' Get tools JSON
+#'
+#' Create tools JSON
+#'
+#' @param tidysw Tibble containing tidy software table
+#'
+#' @return tools JSON
 get_tools_json <- function(tidysw) {
 
     message("Converting tools...")
@@ -183,6 +259,16 @@ get_tools_json <- function(tidysw) {
         toJSON(pretty = TRUE)
 }
 
+
+#' Get categories JSON
+#'
+#' Create catefories JSON
+#'
+#' @param tidysw Tibble containing tidy software table
+#' @param swsheet Tibble containing software table
+#' @param descs data.frame containing category descriptions
+#'
+#' @return categories JSON
 get_cats_json <- function(tidysw, swsheet, descs) {
 
     message("Converting categories...")
@@ -203,6 +289,10 @@ get_cats_json <- function(tidysw, swsheet, descs) {
         toJSON(pretty = TRUE)
 }
 
+
+#' Process CSV
+#'
+#' Process `single_cell_software.csv` and create the various output files
 process_csv <- function() {
 
     message("Starting processing...")
