@@ -155,7 +155,7 @@
 
           for (var i = 0; i < values.length; i++) {
             var cat = values[i]
-            formatted.push('<a href="categories.html#' + cat + '">' + cat + '</a>')
+            formatted.push('<a href="categories.html#' + cat + '">' + cat.replace(/([a-z])([A-Z])/g, '$1 $2') + '</a>')
           }
 
           return formatted.join(', ')

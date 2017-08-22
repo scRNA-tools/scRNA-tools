@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     for (var i = 0; i < cats.length; i++) {
       var cat = cats[i]
-      linked.push('<a href="categories.html#' + cat + '">' + cat + '</a>')
+      linked.push('<a href="categories.html#' + cat + '">' + cat.replace(/([a-z])([A-Z])/g, '$1 $2') + '</a>')
     }
 
     return linked.join(', ')

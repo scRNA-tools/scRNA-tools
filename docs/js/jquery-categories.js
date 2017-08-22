@@ -45,7 +45,7 @@ $(document).ready(function () {
         var entry = ''
         entry += '<div class="panel-heading">' +
                  '<h4 id="' + category + '" class="panel-title">' +
-                 '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + category + '_c">' + category
+                 '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + category + '_c">' + category.replace(/([a-z])([A-Z])/g, '$1 $2')
 
         entry += '</a></h4></div>' +
                  '<div id="' + category + '_c" class="panel-collapse collapse">' +
