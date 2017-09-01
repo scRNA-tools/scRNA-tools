@@ -168,7 +168,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "Citations": 337,
+    "Citations": 340,
     "Categories": ["GeneFiltering", "Clustering"]
   },
   {
@@ -249,7 +249,7 @@
     "Added": "2016-10-10",
     "Updated": "2016-10-10",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw631",
-    "Citations": 3,
+    "Citations": 2,
     "Categories": ["Assembly"]
   },
   {
@@ -1023,6 +1023,47 @@
     "Categories": ["DimensionalityReduction", "Visualisation"]
   },
   {
+    "Name": "DistMap",
+    "Platform": "R",
+    "DOI": "10.1126/science.aan3235",
+    "Code": "https://github.com/rajewsky-lab/distmap",
+    "Description": "DistMap can be used to spatially map single cell RNA sequencing data by using an existing reference database of in situs.",
+    "License": "MIT",
+    "Assembly": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "GeneFiltering": false,
+    "Clustering": false,
+    "Classification": true,
+    "Pseudotime": false,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": false,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": true,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2017-09-01",
+    "Updated": "2017-09-01",
+    "DOIURL": "http://dx.doi.org/10.1126/science.aan3235",
+    "Github": "rajewsky-lab/distmap",
+    "Categories": ["Classification", "Visualisation"]
+  },
+  {
     "Name": "DPT",
     "Platform": "R/MATLAB",
     "DOI": "10.1038/nmeth.3971",
@@ -1061,8 +1102,52 @@
     "Added": "2016-09-22",
     "Updated": "2017-08-01",
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3971",
-    "Citations": 21,
+    "Citations": 22,
     "Categories": ["Pseudotime", "ExpressionPatterns", "Visualisation"]
+  },
+  {
+    "Name": "DrImpute",
+    "Platform": "R",
+    "DOI": "10.1101/181479",
+    "Code": "https://github.com/ikwak2/DrImpute",
+    "Description": "DrImpute is an R package for imputing dropout events in single-cell RNA-sequencing data.",
+    "License": "GPL-3",
+    "Assembly": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": true,
+    "GeneFiltering": false,
+    "Clustering": false,
+    "Classification": false,
+    "Pseudotime": false,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": false,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": false,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2017-09-01",
+    "Updated": "2017-09-01",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/181479",
+    "Github": "ikwak2/DrImpute",
+    "CRAN": "DrImpute",
+    "Citations": 0,
+    "Categories": ["Imputation"]
   },
   {
     "Name": "dropbead",
@@ -1698,7 +1783,7 @@
     "Updated": "2017-03-10",
     "DOIURL": "http://dx.doi.org/10.1126/sciimmunol.aal2192",
     "Github": "Teichlab/GPfates",
-    "Citations": 10,
+    "Citations": 11,
     "Categories": ["Pseudotime", "Visualisation"]
   },
   {
@@ -2293,7 +2378,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
-    "Citations": 258,
+    "Citations": 260,
     "Categories": ["Clustering", "Pseudotime", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -2891,7 +2976,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/ng.3818",
     "Github": "GIS-SP-Group/RCA",
     "CRAN": "RCA",
-    "Citations": 2,
+    "Citations": 4,
     "Categories": ["Clustering", "Visualisation"]
   },
   {
@@ -3575,7 +3660,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3102",
     "Github": "PMBio/scLVM",
     "PyPI": "scLVM",
-    "Citations": 199,
+    "Citations": 200,
     "Categories": ["Normalisation", "VariableGenes", "CellCycle", "Visualisation"]
   },
   {
@@ -4725,7 +4810,7 @@
     "Updated": "2017-04-18",
     "DOIURL": "http://dx.doi.org/10.1038/nprot.2016.066",
     "Github": "nolanlab/spade",
-    "Citations": 7,
+    "Citations": 8,
     "Categories": ["Clustering", "Pseudotime", "MarkerGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -5154,7 +5239,7 @@
     "Updated": "2017-07-19",
     "DOIURL": "http://dx.doi.org/10.1101/gr.209601.116",
     "Github": "CGATOxford/UMI-tools",
-    "Citations": 3,
+    "Citations": 4,
     "Categories": ["Quantification"]
   },
   {
@@ -5198,7 +5283,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "PyPI": "umis",
-    "Citations": 15,
+    "Citations": 16,
     "Categories": ["Quantification"]
   },
   {
@@ -5372,7 +5457,7 @@
     "Updated": "2016-12-22",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0805-z",
     "Github": "epierson9/ZIFA",
-    "Citations": 34,
+    "Citations": 35,
     "Categories": ["DimensionalityReduction"]
   },
   {
