@@ -34,6 +34,9 @@
     "Tools": [
       {
         "Name": "BASIC"
+      },
+      {
+        "Name": "BraCeR"
       }
     ],
     "Description": "Tools that perform assembly of scRNA-seq reads"
@@ -612,6 +615,15 @@
     "Description": "Use or assignment of haplotypes"
   },
   {
+    "Category": "Immune",
+    "Tools": [
+      {
+        "Name": "BraCeR"
+      }
+    ],
+    "Description": "Assignment of receptor sequences and immunce cell clonality"
+  },
+  {
     "Category": "Imputation",
     "Tools": [
       {
@@ -1087,6 +1099,9 @@
         "Name": "AltAnalyze"
       },
       {
+        "Name": "BraCeR"
+      },
+      {
         "Name": "BRIE",
         "PyPI": "brie"
       },
@@ -1290,6 +1305,9 @@
       {
         "Name": "badger",
         "CRAN": "badger"
+      },
+      {
+        "Name": "BraCeR"
       },
       {
         "Name": "BranchedGP"
