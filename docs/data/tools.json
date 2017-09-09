@@ -79,10 +79,10 @@
     "Description": "BASIC is a semi-de novo assembly method to determine the full-length sequence of the BCR in single B cells from scRNA-seq data.",
     "License": "MIT",
     "Added": "2016-10-10",
-    "Updated": "2016-10-10",
+    "Updated": "2017-09-09",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw631",
     "Citations": 2,
-    "Categories": ["Assembly"]
+    "Categories": ["Assembly", "Immune"]
   },
   {
     "Name": "BASiCS",
@@ -148,14 +148,14 @@
     "Name": "BraCeR",
     "Platform": "Python/R",
     "DOI": "10.1101/185504",
-    "Code": "https://github.com/teichlab/bracer/",
+    "Code": "https://github.com/teichlab/bracer",
     "Description": "BraCeR - reconstruction of B cell receptor sequences from single-cell RNA-seq data.",
     "License": "Apache-2.0",
     "Added": "2017-09-09",
     "Updated": "2017-09-09",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/185504",
-    "Github": "teichlab/bracer/",
+    "Github": "teichlab/bracer",
     "Citations": 0,
     "Categories": ["Assembly", "Quantification", "Immune", "Visualisation"]
   },
@@ -798,6 +798,21 @@
     "Categories": ["Pseudotime", "ExpressionPatterns", "Visualisation"]
   },
   {
+    "Name": "MetaNeighbour",
+    "Platform": "R",
+    "DOI": "10.1101/150524",
+    "Code": "https://github.com/maggiecrow/MetaNeighbor",
+    "Description": "MetaNeighbor: a method to rapidly assess cell type identity using both functional and random gene sets",
+    "License": "MIT",
+    "Added": "2017-09-09",
+    "Updated": "2017-09-09",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/150524",
+    "Github": "maggiecrow/MetaNeighbor",
+    "Citations": 0,
+    "Categories": ["Clustering", "Classification", "VariableGenes", "GeneSets"]
+  },
+  {
     "Name": "MFA",
     "Platform": "R",
     "DOI": "10.12688/wellcomeopenres.11087.1",
@@ -1428,6 +1443,17 @@
     "Categories": ["GeneNetworks", "DimensionalityReduction"]
   },
   {
+    "Name": "scTCRseq",
+    "Platform": "Python",
+    "Code": "https://github.com/ElementoLab/scTCRseq",
+    "Description": "This project is an implementation of a pipeline for Single-cell RNAseq package for recovering TCR data in python.",
+    "License": "GPL-3",
+    "Added": "2017-09-09",
+    "Updated": "2017-09-09",
+    "Github": "ElementoLab/scTCRseq",
+    "Categories": ["Immune"]
+  },
+  {
     "Name": "scTDA",
     "Platform": "Python",
     "DOI": "10.1038/nbt.3854",
@@ -1794,6 +1820,37 @@
     "Categories": ["Pseudotime"]
   },
   {
+    "Name": "TraCeR",
+    "Platform": "Python",
+    "DOI": "10.1038/nmeth.3800",
+    "PubDate": "2016-03-07",
+    "Code": "https://github.com/teichlab/tracer",
+    "Description": "TraCeR - reconstruction of T cell receptor sequences from single-cell RNA-seq data.",
+    "License": "Apache-2.0",
+    "Added": "2016-09-08",
+    "Updated": "2017-09-09",
+    "DOIURL": "http://dx.doi.org/10.1038/nmeth.3800",
+    "Github": "teichlab/tracer",
+    "PyPI": "tracer",
+    "Citations": 42,
+    "Categories": ["Assembly", "Quantification", "Immune", "Visualisation"]
+  },
+  {
+    "Name": "TRAPeS",
+    "Platform": "Python",
+    "DOI": "10.1093/nar/gkx615",
+    "PubDate": "2017-07-17",
+    "Code": "https://github.com/yoseflab/trapes",
+    "Description": "TRAPeS (TCR Reconstruction Algorithm for Paired-End Single-cell),  software for reconstruction of T cell receptors (TCR) using short, paired-end single-cell RNA-sequencing.",
+    "License": "Custom",
+    "Added": "2016-11-10",
+    "Updated": "2017-09-09",
+    "DOIURL": "http://dx.doi.org/10.1093/nar/gkx615",
+    "Github": "yoseflab/trapes",
+    "Citations": 0,
+    "Categories": ["Quantification", "Immune"]
+  },
+  {
     "Name": "TSCAN",
     "Platform": "R",
     "DOI": "10.1093/nar/gkw430",
@@ -1855,6 +1912,20 @@
     "PyPI": "uncurl",
     "Citations": 0,
     "Categories": ["Clustering", "Pseudotime", "DimensionalityReduction", "Visualisation"]
+  },
+  {
+    "Name": "VDJPuzzle",
+    "Platform": "Python/Shell",
+    "DOI": "10.1101/181156",
+    "Code": "https://bitbucket.org/kirbyvisp/vdjpuzzle2",
+    "Description": "TCR and BCR reconstruction from scRNA-seq data",
+    "License": "Custom",
+    "Added": "2017-09-01",
+    "Updated": "2017-09-09",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/181156",
+    "Citations": 0,
+    "Categories": ["Immune"]
   },
   {
     "Name": "WaveCrest",
