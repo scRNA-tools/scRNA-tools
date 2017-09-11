@@ -39,6 +39,7 @@ judge all the functions a package has without making significant use of it. The
 function columns ask the following questions of the software:
 
 * **Assembly** - Can it perform assembly?
+* **UMIs** - Does it handle Unique Molecular Identifiers?
 * **Quantification** - Does it quantify expression from reads?
 * **QualityControl** - Does it perform some type of quality control of cells?
 * **Normalisation** - Does it perform some type of normalisation?

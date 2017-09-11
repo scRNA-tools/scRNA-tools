@@ -1186,7 +1186,7 @@
         "Name": "zUMIs"
       }
     ],
-    "Description": "Quantification of expression from reads, including handling unique molecular identifiers"
+    "Description": "Quantification of expression from reads"
   },
   {
     "Category": "RareCells",
@@ -1267,6 +1267,43 @@
       }
     ],
     "Description": "Transformation between expression levels and some other measure"
+  },
+  {
+    "Category": "UMIs",
+    "Tools": [
+      {
+        "Name": "Cell Ranger"
+      },
+      {
+        "Name": "demuxlet"
+      },
+      {
+        "Name": "dropEst"
+      },
+      {
+        "Name": "dropSeqPipe"
+      },
+      {
+        "Name": "DrSeq2"
+      },
+      {
+        "Name": "scPipe"
+      },
+      {
+        "Name": "sircel"
+      },
+      {
+        "Name": "UMI-tools"
+      },
+      {
+        "Name": "umis",
+        "PyPI": "umis"
+      },
+      {
+        "Name": "zUMIs"
+      }
+    ],
+    "Description": "Processing of Unique Molecular Identifiers"
   },
   {
     "Category": "VariableGenes",

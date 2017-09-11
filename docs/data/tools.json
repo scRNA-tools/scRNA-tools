@@ -212,11 +212,11 @@
     "DOI": "10.1101/065912",
     "Description": "Cell Ranger is a set of analysis pipelines that process Chromium single cell 3’ RNA-seq output to align reads, generate gene-cell matrices and perform clustering and gene expression analysis.",
     "Added": "2017-06-08",
-    "Updated": "2017-06-08",
+    "Updated": "2017-09-11",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/065912",
     "Citations": 2,
-    "Categories": ["Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
+    "Categories": ["UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
     "Name": "Cellity",
@@ -343,12 +343,12 @@
     "Description": "Sample demultiplexing of droplet sc-RNAseq reads.",
     "License": "GPL-3",
     "Added": "2017-03-29",
-    "Updated": "2017-03-29",
+    "Updated": "2017-09-11",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/118778",
     "Github": "hyunminkang/apigenome",
     "Citations": 0,
-    "Categories": ["Quantification"]
+    "Categories": ["UMIs", "Quantification"]
   },
   {
     "Name": "destiny",
@@ -447,12 +447,12 @@
     "Description": "Pipeline for estimating molecular count matrices for droplet-based single-cell RNA-seq measurements.",
     "License": "GPL-3",
     "Added": "2017-08-20",
-    "Updated": "2017-08-20",
+    "Updated": "2017-09-11",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/171496",
     "Github": "hms-dbmi/dropEst",
     "Citations": 0,
-    "Categories": ["Quantification", "QualityControl", "Visualisation"]
+    "Categories": ["UMIs", "Quantification", "QualityControl", "Visualisation"]
   },
   {
     "Name": "dropSeqPipe",
@@ -460,9 +460,9 @@
     "Code": "https://github.com/Hoohm/dropSeqPipe",
     "Description": "This pipeline is based on snakemake and the dropseq tools provided by the McCarroll Lab. It allows to go from raw data of your dropSeq/scrbSeq experiment until the final count matrix with QC plots along the way.",
     "Added": "2017-05-21",
-    "Updated": "2017-05-21",
+    "Updated": "2017-09-11",
     "Github": "Hoohm/dropSeqPipe",
-    "Categories": ["Quantification", "QualityControl", "Visualisation"]
+    "Categories": ["UMIs", "Quantification", "QualityControl", "Visualisation"]
   },
   {
     "Name": "DrSeq2",
@@ -472,12 +472,12 @@
     "Description": "Quality control and analysis pipeline for parallel single cell transcriptome and epigenome data",
     "License": "GPL-3",
     "Added": "2017-06-26",
-    "Updated": "2017-06-26",
+    "Updated": "2017-09-11",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/143271",
     "Github": "ChengchenZhao/DrSeq2",
     "Citations": 0,
-    "Categories": ["Quantification", "QualityControl", "Normalisation", "Clustering", "VariableGenes", "DimensionalityReduction"]
+    "Categories": ["UMIs", "Quantification", "QualityControl", "Normalisation", "Clustering", "VariableGenes", "DimensionalityReduction"]
   },
   {
     "Name": "DTWScore",
@@ -855,7 +855,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/ncomms11988",
     "Github": "JinmiaoChenLab/Mpath",
     "CRAN": "mpath",
-    "Citations": 10,
+    "Citations": 9,
     "Categories": ["Pseudotime"]
   },
   {
@@ -1405,12 +1405,12 @@
     "Description": "a pipeline for single cell RNA-seq data analysis",
     "License": "GPL (>= 2)",
     "Added": "2017-06-30",
-    "Updated": "2017-08-20",
+    "Updated": "2017-09-11",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/175927",
     "Github": "LuyiTian/scPipe",
     "Citations": 0,
-    "Categories": ["Quantification", "Simulation"]
+    "Categories": ["UMIs", "Quantification", "Simulation"]
   },
   {
     "Name": "scran",
@@ -1623,12 +1623,12 @@
     "Description": "Identify cell barcodes from single-cell genomics sequencing experiments",
     "License": "MIT",
     "Added": "2017-05-21",
-    "Updated": "2017-05-21",
+    "Updated": "2017-09-11",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/136242",
     "Github": "pachterlab/Sircel",
     "Citations": 0,
-    "Categories": ["Quantification"]
+    "Categories": ["UMIs", "Quantification"]
   },
   {
     "Name": "SLICE",
@@ -1875,11 +1875,11 @@
     "Description": "This repository contains tools for dealing with Unique Molecular Identifiers (UMIs)/Random Molecular Tags (RMTs).",
     "License": "MIT",
     "Added": "2016-09-12",
-    "Updated": "2017-07-19",
+    "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1101/gr.209601.116",
     "Github": "CGATOxford/UMI-tools",
     "Citations": 4,
-    "Categories": ["Quantification"]
+    "Categories": ["UMIs", "Quantification"]
   },
   {
     "Name": "umis",
@@ -1890,12 +1890,12 @@
     "Description": "umis provides tools for estimating expression in RNA-Seq data which performs sequencing of end tags of trancsript, and incorporate molecular tags to correct for amplification bias.",
     "License": "MIT",
     "Added": "2016-09-12",
-    "Updated": "2017-03-10",
+    "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "PyPI": "umis",
     "Citations": 17,
-    "Categories": ["Quantification"]
+    "Categories": ["UMIs", "Quantification"]
   },
   {
     "Name": "UNCURL",
@@ -2008,11 +2008,11 @@
     "Code": "https://github.com/sdparekh/zUMIs",
     "Description": "zUMIs is a fast and flexible pipeline to process RNA-seq data with UMIs",
     "Added": "2017-06-30",
-    "Updated": "2017-06-30",
+    "Updated": "2017-09-11",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/153940",
     "Github": "sdparekh/zUMIs",
     "Citations": 0,
-    "Categories": ["Quantification", "Visualisation"]
+    "Categories": ["UMIs", "Quantification", "Visualisation"]
   }
 ]
