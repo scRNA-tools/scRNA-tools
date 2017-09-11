@@ -106,14 +106,15 @@ $(document).ready(function () {
           entry += '</li>'
         }
 
-        entry += '<li class="list-group-item"><strong>Platform: </strong> ' + platform + '</li>' +
-                 '<li class="list-group-item"><strong>Code: </strong> <a href="' + code + '">' + code + '</a>'
-        if (typeof github !== 'undefined') {
-          entry += ' <img border="0" height="15" src="https://img.shields.io/github/stars/' + github + '.svg?style=social&label=Star">' +
-                   ' <img border="0" height="15" src="https://img.shields.io/github/forks/' + github + '.svg?style=social&label=Fork">'
+        entry += '<li class="list-group-item"><strong>Platform: </strong> ' + platform + '</li>'
+        if (typeof code !== 'undefined') {
+            entry += '<li class="list-group-item"><strong>Code: </strong> <a href="' + code + '">' + code + '</a>'
+            if (typeof github !== 'undefined') {
+                entry += ' <img border="0" height="15" src="https://img.shields.io/github/stars/' + github + '.svg?style=social&label=Star">' +
+                    ' <img border="0" height="15" src="https://img.shields.io/github/forks/' + github + '.svg?style=social&label=Fork">'
+            }
+            entry += '</li>'
         }
-        entry += '</li>'
-
         if (typeof license !== 'undefined') {
           entry += '<li class="list-group-item"><strong>License: </strong> ' + license + '</li>'
         }

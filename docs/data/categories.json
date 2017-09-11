@@ -6,7 +6,8 @@
         "Name": "BraCeR"
       },
       {
-        "Name": "Cell Ranger"
+        "Name": "CellRanger",
+        "CRAN": "cellranger"
       },
       {
         "Name": "dropSeqPipe"
@@ -131,7 +132,8 @@
         "Name": "BEARscc"
       },
       {
-        "Name": "Cell Ranger"
+        "Name": "CellRanger",
+        "CRAN": "cellranger"
       },
       {
         "Name": "CIDR"
@@ -257,7 +259,8 @@
         "Name": "BPSC"
       },
       {
-        "Name": "Cell Ranger"
+        "Name": "CellRanger",
+        "CRAN": "cellranger"
       },
       {
         "Name": "countClust",
@@ -348,7 +351,8 @@
         "Name": "AltAnalyze"
       },
       {
-        "Name": "Cell Ranger"
+        "Name": "CellRanger",
+        "CRAN": "cellranger"
       },
       {
         "Name": "CIDR"
@@ -721,7 +725,8 @@
         "Name": "AltAnalyze"
       },
       {
-        "Name": "Cell Ranger"
+        "Name": "CellRanger",
+        "CRAN": "cellranger"
       },
       {
         "Name": "FastProject",
@@ -800,7 +805,8 @@
         "Name": "AltAnalyze"
       },
       {
-        "Name": "Cell Ranger"
+        "Name": "CellRanger",
+        "CRAN": "cellranger"
       },
       {
         "Name": "M3Drop",
@@ -933,7 +939,7 @@
     "Description": "Removal of unwanted variation that may affect results"
   },
   {
-    "Category": "Pseudotime",
+    "Category": "Ordering",
     "Tools": [
       {
         "Name": "CellTree",
@@ -1089,11 +1095,15 @@
     "Category": "QualityControl",
     "Tools": [
       {
-        "Name": "Cell Ranger"
+        "Name": "CellRanger",
+        "CRAN": "cellranger"
       },
       {
         "Name": "Cellity",
         "BioC": "cellity"
+      },
+      {
+        "Name": "demuxlet"
       },
       {
         "Name": "dropbead"
@@ -1166,10 +1176,8 @@
         "PyPI": "brie"
       },
       {
-        "Name": "Cell Ranger"
-      },
-      {
-        "Name": "demuxlet"
+        "Name": "CellRanger",
+        "CRAN": "cellranger"
       },
       {
         "Name": "dropEst"
@@ -1303,7 +1311,8 @@
     "Category": "UMIs",
     "Tools": [
       {
-        "Name": "Cell Ranger"
+        "Name": "CellRanger",
+        "CRAN": "cellranger"
       },
       {
         "Name": "demuxlet"
@@ -1395,6 +1404,9 @@
         "CRAN": "badger"
       },
       {
+        "Name": "demuxlet"
+      },
+      {
         "Name": "SSrGE"
       }
     ],
@@ -1424,7 +1436,8 @@
         "CRAN": "BTR"
       },
       {
-        "Name": "Cell Ranger"
+        "Name": "CellRanger",
+        "CRAN": "cellranger"
       },
       {
         "Name": "CellTree",

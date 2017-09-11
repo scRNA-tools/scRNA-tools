@@ -207,18 +207,6 @@
     "Categories": ["GeneNetworks", "Visualisation"]
   },
   {
-    "Name": "Cell Ranger",
-    "Platform": "Python/R",
-    "DOI": "10.1101/065912",
-    "Description": "Cell Ranger is a set of analysis pipelines that process Chromium single cell 3’ RNA-seq output to align reads, generate gene-cell matrices and perform clustering and gene expression analysis.",
-    "Added": "2017-06-08",
-    "Updated": "2017-09-11",
-    "Preprint": true,
-    "DOIURL": "http://dx.doi.org/10.1101/065912",
-    "Citations": 2,
-    "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
-  },
-  {
     "Name": "Cellity",
     "Platform": "R",
     "DOI": "10.1186/s13059-016-0888-1",
@@ -235,6 +223,19 @@
     "Categories": ["QualityControl"]
   },
   {
+    "Name": "CellRanger",
+    "Platform": "Python/R",
+    "DOI": "10.1038/ncomms14049",
+    "PubDate": "2017-01-16",
+    "Description": "Cell Ranger is a set of analysis pipelines that process Chromium single cell 3’ RNA-seq output to align reads, generate gene-cell matrices and perform clustering and gene expression analysis.",
+    "Added": "2017-06-08",
+    "Updated": "2017-09-11",
+    "DOIURL": "http://dx.doi.org/10.1038/ncomms14049",
+    "CRAN": "cellranger",
+    "Citations": 44,
+    "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
+  },
+  {
     "Name": "CellTree",
     "Platform": "R",
     "DOI": "10.1186/s12859-016-1175-6",
@@ -248,7 +249,7 @@
     "Github": "Bioconductor-mirror/cellTree",
     "BioC": "cellTree",
     "Citations": 5,
-    "Categories": ["Pseudotime", "GeneSets", "Visualisation"]
+    "Categories": ["Ordering", "GeneSets", "Visualisation"]
   },
   {
     "Name": "CIDR",
@@ -333,22 +334,22 @@
     "Github": "JohnReid/DeLorean",
     "CRAN": "DeLorean",
     "Citations": 9,
-    "Categories": ["GeneFiltering", "Pseudotime", "ExpressionPatterns", "Visualisation"]
+    "Categories": ["GeneFiltering", "Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
     "Name": "demuxlet",
     "Platform": "C++",
     "DOI": "10.1101/118778",
-    "Code": "https://github.com/hyunminkang/apigenome",
-    "Description": "Sample demultiplexing of droplet sc-RNAseq reads.",
-    "License": "GPL-3",
+    "Code": "https://github.com/statgen/demuxlet",
+    "Description": "Genetic multiplexing of barcoded single cell RNA-seq",
+    "License": "Apache-2.0",
     "Added": "2017-03-29",
     "Updated": "2017-09-11",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/118778",
-    "Github": "hyunminkang/apigenome",
+    "Github": "statgen/demuxlet",
     "Citations": 0,
-    "Categories": ["UMIs", "Quantification"]
+    "Categories": ["UMIs", "QualityControl", "Variants"]
   },
   {
     "Name": "destiny",
@@ -391,7 +392,7 @@
     "Updated": "2017-08-01",
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3971",
     "Citations": 22,
-    "Categories": ["Pseudotime", "ExpressionPatterns", "Visualisation"]
+    "Categories": ["Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
     "Name": "DrImpute",
@@ -459,6 +460,7 @@
     "Platform": "Snakemake",
     "Code": "https://github.com/Hoohm/dropSeqPipe",
     "Description": "This pipeline is based on snakemake and the dropseq tools provided by the McCarroll Lab. It allows to go from raw data of your dropSeq/scrbSeq experiment until the final count matrix with QC plots along the way.",
+    "License": "CC BY-SA 4.0",
     "Added": "2017-05-21",
     "Updated": "2017-09-11",
     "Github": "Hoohm/dropSeqPipe",
@@ -491,7 +493,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s12859-017-1647-3",
     "Github": "xiaoxiaoxier/DTWscore",
     "Citations": 0,
-    "Categories": ["Pseudotime", "DifferentialExpression", "VariableGenes"]
+    "Categories": ["Ordering", "DifferentialExpression", "VariableGenes"]
   },
   {
     "Name": "ECLAIR",
@@ -507,7 +509,7 @@
     "Github": "GGiecold/ECLAIR",
     "PyPI": "ECLAIR",
     "Citations": 0,
-    "Categories": ["Clustering", "Pseudotime", "Visualisation"]
+    "Categories": ["Clustering", "Ordering", "Visualisation"]
   },
   {
     "Name": "embeddr",
@@ -522,7 +524,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/027219",
     "Github": "kieranrcampbell/embeddr",
     "Citations": 3,
-    "Categories": ["Pseudotime"]
+    "Categories": ["Ordering"]
   },
   {
     "Name": "ESAT",
@@ -536,7 +538,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/gr.207902.116",
     "Github": "garber-lab/ESAT",
     "Citations": 4,
-    "Categories": ["Quantification", "Clustering", "Pseudotime", "DimensionalityReduction"]
+    "Categories": ["Quantification", "Clustering", "Ordering", "DimensionalityReduction"]
   },
   {
     "Name": "f-scLVM",
@@ -624,7 +626,7 @@
     "DOIURL": "http://dx.doi.org/10.1126/sciimmunol.aal2192",
     "Github": "Teichlab/GPfates",
     "Citations": 11,
-    "Categories": ["Pseudotime", "Visualisation"]
+    "Categories": ["Ordering", "Visualisation"]
   },
   {
     "Name": "Granatum",
@@ -637,7 +639,7 @@
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/110759",
     "Citations": 0,
-    "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Pseudotime", "DifferentialExpression", "GeneSets", "GeneNetworks", "DimensionalityReduction", "Visualisation", "Interactive"]
+    "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Ordering", "DifferentialExpression", "GeneSets", "GeneNetworks", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
     "Name": "GRM",
@@ -674,7 +676,7 @@
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btx232",
     "Github": "NetLand-NTU/HopLand",
     "Citations": 0,
-    "Categories": ["Pseudotime", "Visualisation"]
+    "Categories": ["Ordering", "Visualisation"]
   },
   {
     "Name": "ISOP",
@@ -704,7 +706,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/094532",
     "Github": "theislab/kbranches",
     "Citations": 0,
-    "Categories": ["Pseudotime"]
+    "Categories": ["Ordering"]
   },
   {
     "Name": "LEAP",
@@ -719,7 +721,7 @@
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw729",
     "CRAN": "LEAP",
     "Citations": 0,
-    "Categories": ["Pseudotime", "GeneNetworks"]
+    "Categories": ["Ordering", "GeneNetworks"]
   },
   {
     "Name": "Linnorm",
@@ -795,7 +797,7 @@
     "Github": "jw156605/MATCHER",
     "PyPI": "matcher",
     "Citations": 0,
-    "Categories": ["Pseudotime", "ExpressionPatterns", "Visualisation"]
+    "Categories": ["Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
     "Name": "MetaNeighbour",
@@ -825,7 +827,7 @@
     "DOIURL": "http://dx.doi.org/10.12688/wellcomeopenres.11087.1",
     "Github": "kieranrcampbell/mfa",
     "Citations": 0,
-    "Categories": ["Pseudotime", "Visualisation", "Simulation"]
+    "Categories": ["Ordering", "Visualisation", "Simulation"]
   },
   {
     "Name": "Monocle",
@@ -841,7 +843,7 @@
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
     "Citations": 263,
-    "Categories": ["Clustering", "Pseudotime", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
+    "Categories": ["Clustering", "Ordering", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "Mpath",
@@ -856,7 +858,7 @@
     "Github": "JinmiaoChenLab/Mpath",
     "CRAN": "mpath",
     "Citations": 9,
-    "Categories": ["Pseudotime"]
+    "Categories": ["Ordering"]
   },
   {
     "Name": "OEFinder",
@@ -901,7 +903,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/060442",
     "Github": "kieranrcampbell/ouija",
     "Citations": 2,
-    "Categories": ["Pseudotime", "ExpressionPatterns", "Visualisation"]
+    "Categories": ["Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
     "Name": "Outrigger",
@@ -931,7 +933,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/170118",
     "Github": "AllonKleinLab/PBA",
     "Citations": 0,
-    "Categories": ["Pseudotime"]
+    "Categories": ["Ordering"]
   },
   {
     "Name": "pcaReduce",
@@ -960,7 +962,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/159913",
     "Github": "kieranrcampbell/phenopath",
     "Citations": 0,
-    "Categories": ["Pseudotime", "Simulation"]
+    "Categories": ["Ordering", "Simulation"]
   },
   {
     "Name": "PIVOT",
@@ -975,7 +977,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/053348",
     "Github": "qinzhu/PIVOT",
     "Citations": 0,
-    "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Pseudotime", "DifferentialExpression", "GeneSets", "GeneNetworks", "DimensionalityReduction", "Visualisation", "Interactive"]
+    "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Ordering", "DifferentialExpression", "GeneSets", "GeneNetworks", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
     "Name": "PoissonUMIs",
@@ -1016,7 +1018,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/047365",
     "Github": "kieranrcampbell/pseudogp",
     "Citations": 0,
-    "Categories": ["Pseudotime", "Visualisation"]
+    "Categories": ["Ordering", "Visualisation"]
   },
   {
     "Name": "RaceID2",
@@ -1060,7 +1062,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/s41467-017-00039-z",
     "Github": "tinglab/reCAT",
     "Citations": 0,
-    "Categories": ["Clustering", "Pseudotime", "CellCycle", "Visualisation"]
+    "Categories": ["Clustering", "Ordering", "CellCycle", "Visualisation"]
   },
   {
     "Name": "sake",
@@ -1145,7 +1147,7 @@
     "Updated": "2017-05-21",
     "Github": "theislab/scanpy",
     "PyPI": "scanpy",
-    "Categories": ["Normalisation", "GeneFiltering", "Clustering", "Pseudotime", "DifferentialExpression", "VariableGenes", "DimensionalityReduction", "Visualisation", "Simulation"]
+    "Categories": ["Normalisation", "GeneFiltering", "Clustering", "Ordering", "DifferentialExpression", "VariableGenes", "DimensionalityReduction", "Visualisation", "Simulation"]
   },
   {
     "Name": "Scater",
@@ -1201,13 +1203,13 @@
     "PubDate": "2016-04-19",
     "Code": "https://github.com/diazlab/SCell",
     "Description": "SCell is an integrated software tool for quality filtering, normalization, feature selection, iterative dimensionality reduction, clustering and the estimation of gene-expression gradients from large ensembles of single-cell RNA-seq datasets. SCell is open source, and implemented with an intuitive graphical interface.",
-    "License": "GNU",
+    "License": "GPL",
     "Added": "2016-09-08",
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw201",
     "Github": "diazlab/SCell",
     "Citations": 7,
-    "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Pseudotime", "DifferentialExpression", "DimensionalityReduction", "Visualisation", "Interactive"]
+    "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Ordering", "DifferentialExpression", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
     "Name": "SCENIC",
@@ -1237,7 +1239,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/ncomms15599",
     "Github": "aet21/SCENT",
     "Citations": 0,
-    "Categories": ["Pseudotime"]
+    "Categories": ["Ordering"]
   },
   {
     "Name": "SCIMITAR",
@@ -1252,7 +1254,7 @@
     "Github": "dimenwarper/scimitar",
     "PyPI": "Scimitar",
     "Citations": 0,
-    "Categories": ["Pseudotime", "ExpressionPatterns", "GeneNetworks"]
+    "Categories": ["Ordering", "ExpressionPatterns", "GeneNetworks"]
   },
   {
     "Name": "scImpute",
@@ -1327,7 +1329,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/088856",
     "Github": "hmatsu1226/SCODE",
     "Citations": 0,
-    "Categories": ["Pseudotime", "GeneNetworks"]
+    "Categories": ["Ordering", "GeneNetworks"]
   },
   {
     "Name": "SCONE",
@@ -1354,7 +1356,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/079509",
     "Github": "rcannood/SCORPIUS",
     "Citations": 0,
-    "Categories": ["Pseudotime", "ExpressionPatterns", "GeneNetworks", "DimensionalityReduction", "Visualisation"]
+    "Categories": ["Ordering", "ExpressionPatterns", "GeneNetworks", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "SCOUP",
@@ -1365,7 +1367,7 @@
     "Added": "2016-09-08",
     "Updated": "2016-09-08",
     "Github": "hmatsu1226/SCOUP",
-    "Categories": ["Pseudotime"]
+    "Categories": ["Ordering"]
   },
   {
     "Name": "SCPattern",
@@ -1467,7 +1469,7 @@
     "Github": "RabadanLab/scTDA",
     "PyPI": "scTDA",
     "Citations": 3,
-    "Categories": ["QualityControl", "Pseudotime", "Visualisation"]
+    "Categories": ["QualityControl", "Ordering", "Visualisation"]
   },
   {
     "Name": "SCUBA",
@@ -1481,7 +1483,7 @@
     "DOIURL": "http://dx.doi.org/10.1073/pnas.1408993111",
     "Github": "gcyuan/SCUBA",
     "Citations": 55,
-    "Categories": ["Pseudotime", "ExpressionPatterns"]
+    "Categories": ["Ordering", "ExpressionPatterns"]
   },
   {
     "Name": "scVEGs",
@@ -1570,7 +1572,7 @@
     "Github": "Bioconductor-mirror/sincell",
     "BioC": "sincell",
     "Citations": 0,
-    "Categories": ["Clustering", "Pseudotime", "DimensionalityReduction", "Visualisation"]
+    "Categories": ["Clustering", "Ordering", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "Sincera",
@@ -1642,7 +1644,7 @@
     "Updated": "2017-01-10",
     "DOIURL": "http://dx.doi.org/10.1093/nar/gkw1278",
     "Citations": 1,
-    "Categories": ["Pseudotime"]
+    "Categories": ["Ordering"]
   },
   {
     "Name": "SLICER",
@@ -1658,7 +1660,7 @@
     "Github": "jw156605/SLICER",
     "CRAN": "SLICER",
     "Citations": 10,
-    "Categories": ["Pseudotime"]
+    "Categories": ["Ordering"]
   },
   {
     "Name": "slingshot",
@@ -1669,7 +1671,7 @@
     "Added": "2016-09-09",
     "Updated": "2016-09-09",
     "Github": "kstreet13/slingshot",
-    "Categories": ["Pseudotime"]
+    "Categories": ["Ordering"]
   },
   {
     "Name": "SoptSC",
@@ -1684,7 +1686,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/168922",
     "Github": "WangShuxiong/SoptSC",
     "Citations": 0,
-    "Categories": ["Clustering", "Pseudotime", "DimensionalityReduction"]
+    "Categories": ["Clustering", "Ordering", "DimensionalityReduction"]
   },
   {
     "Name": "SPADE",
@@ -1699,7 +1701,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nprot.2016.066",
     "Github": "nolanlab/spade",
     "Citations": 9,
-    "Categories": ["Clustering", "Pseudotime", "MarkerGenes", "DimensionalityReduction", "Visualisation"]
+    "Categories": ["Clustering", "Ordering", "MarkerGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "Splatter",
@@ -1759,7 +1761,7 @@
     "DOIURL": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
     "Citations": 24,
-    "Categories": ["Pseudotime", "StemCells"]
+    "Categories": ["Ordering", "StemCells"]
   },
   {
     "Name": "switchde",
@@ -1802,7 +1804,7 @@
     "Added": "2017-04-27",
     "Updated": "2017-04-27",
     "DOIURL": "http://dx.doi.org/bioinformatics/btx173",
-    "Categories": ["Pseudotime", "Interactive"]
+    "Categories": ["Ordering", "Interactive"]
   },
   {
     "Name": "topslam",
@@ -1817,7 +1819,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/057778",
     "Github": "mzwiessele/topslam",
     "Citations": 0,
-    "Categories": ["Pseudotime"]
+    "Categories": ["Ordering"]
   },
   {
     "Name": "TraCeR",
@@ -1864,7 +1866,7 @@
     "Github": "zji90/TSCAN",
     "BioC": "TSCAN",
     "Citations": 18,
-    "Categories": ["Clustering", "Pseudotime", "MarkerGenes", "Visualisation", "Interactive"]
+    "Categories": ["Clustering", "Ordering", "MarkerGenes", "Visualisation", "Interactive"]
   },
   {
     "Name": "UMI-tools",
@@ -1911,7 +1913,7 @@
     "Github": "mukhes3/UNCURL_release",
     "PyPI": "uncurl",
     "Citations": 0,
-    "Categories": ["Clustering", "Pseudotime", "DimensionalityReduction", "Visualisation"]
+    "Categories": ["Clustering", "Ordering", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "VDJPuzzle",
@@ -1940,7 +1942,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-1033-x",
     "Github": "lengning/WaveCrest",
     "Citations": 13,
-    "Categories": ["Pseudotime", "MarkerGenes", "ExpressionPatterns", "Interactive"]
+    "Categories": ["Ordering", "MarkerGenes", "ExpressionPatterns", "Interactive"]
   },
   {
     "Name": "Wishbone",
@@ -1956,7 +1958,7 @@
     "Github": "ManuSetty/wishbone",
     "PyPI": "wishbone",
     "Citations": 38,
-    "Categories": ["Pseudotime", "ExpressionPatterns", "Visualisation", "Interactive"]
+    "Categories": ["Ordering", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
     "Name": "ZIFA",
@@ -1998,7 +2000,6 @@
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/157982",
     "Github": "statOmics/zingeR",
-    "Citations": 0,
     "Categories": ["DifferentialExpression", "Simulation"]
   },
   {
@@ -2007,6 +2008,7 @@
     "DOI": "10.1101/153940",
     "Code": "https://github.com/sdparekh/zUMIs",
     "Description": "zUMIs is a fast and flexible pipeline to process RNA-seq data with UMIs",
+    "License": "GPL-3",
     "Added": "2017-06-30",
     "Updated": "2017-09-11",
     "Preprint": true,
