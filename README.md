@@ -39,6 +39,7 @@ judge all the functions a package has without making significant use of it. The
 function columns ask the following questions of the software:
 
 * **Assembly** - Can it perform assembly?
+* **Alignment** - Does it align reads to a reference?
 * **UMIs** - Does it handle Unique Molecular Identifiers?
 * **Quantification** - Does it quantify expression from reads?
 * **QualityControl** - Does it perform some type of quality control of cells?
@@ -47,8 +48,7 @@ function columns ask the following questions of the software:
 * **GeneFiltering** - Does it perform some filtering of genes?
 * **Clustering** - Does it perform clustering of cells?
 * **Classification** - Does it classify cells based on a reference dataset?
-* **Pseudotime** - Does it perform some pseudotime/lineage tracing/trajectory of
-  cells?
+* **Ordering** - Does it order cells along a (pseudotime) trajectory?
 * **DifferentialExpression** - Does it do some kind of differential expression?
 * **MarkerGenes** - Does it identify or mark use of cell type markers?
 * **ExpressionPatterns** - Can it find genes with interesting patterns over
