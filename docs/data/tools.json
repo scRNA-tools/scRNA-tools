@@ -152,12 +152,12 @@
     "Description": "BraCeR - reconstruction of B cell receptor sequences from single-cell RNA-seq data.",
     "License": "Apache-2.0",
     "Added": "2017-09-09",
-    "Updated": "2017-09-09",
+    "Updated": "2017-09-11",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/185504",
     "Github": "teichlab/bracer",
     "Citations": 0,
-    "Categories": ["Assembly", "Quantification", "Immune", "Visualisation"]
+    "Categories": ["Assembly", "Alignment", "Quantification", "Immune", "Visualisation"]
   },
   {
     "Name": "BranchedGP",
@@ -216,7 +216,7 @@
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/065912",
     "Citations": 2,
-    "Categories": ["UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
+    "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
     "Name": "Cellity",
@@ -462,7 +462,7 @@
     "Added": "2017-05-21",
     "Updated": "2017-09-11",
     "Github": "Hoohm/dropSeqPipe",
-    "Categories": ["UMIs", "Quantification", "QualityControl", "Visualisation"]
+    "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Visualisation"]
   },
   {
     "Name": "DrSeq2",
@@ -477,7 +477,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/143271",
     "Github": "ChengchenZhao/DrSeq2",
     "Citations": 0,
-    "Categories": ["UMIs", "Quantification", "QualityControl", "Normalisation", "Clustering", "VariableGenes", "DimensionalityReduction"]
+    "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Normalisation", "Clustering", "VariableGenes", "DimensionalityReduction"]
   },
   {
     "Name": "DTWScore",
@@ -561,12 +561,12 @@
     "Description": "A Cloud-based Genetic Feature Quantification Analysis Tool",
     "License": "GPL-3",
     "Added": "2016-09-08",
-    "Updated": "2016-09-08",
+    "Updated": "2017-09-11",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/064006",
     "Github": "VCCRI/Falco",
     "Citations": 0,
-    "Categories": ["Quantification"]
+    "Categories": ["Alignment", "Quantification"]
   },
   {
     "Name": "FastProject",
@@ -1410,7 +1410,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/175927",
     "Github": "LuyiTian/scPipe",
     "Citations": 0,
-    "Categories": ["UMIs", "Quantification", "Simulation"]
+    "Categories": ["Alignment", "UMIs", "Quantification", "Simulation"]
   },
   {
     "Name": "scran",
@@ -1828,12 +1828,12 @@
     "Description": "TraCeR - reconstruction of T cell receptor sequences from single-cell RNA-seq data.",
     "License": "Apache-2.0",
     "Added": "2016-09-08",
-    "Updated": "2017-09-09",
+    "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3800",
     "Github": "teichlab/tracer",
     "PyPI": "tracer",
     "Citations": 42,
-    "Categories": ["Assembly", "Quantification", "Immune", "Visualisation"]
+    "Categories": ["Assembly", "Alignment", "Quantification", "Immune", "Visualisation"]
   },
   {
     "Name": "TRAPeS",
@@ -2013,6 +2013,6 @@
     "DOIURL": "http://dx.doi.org/10.1101/153940",
     "Github": "sdparekh/zUMIs",
     "Citations": 0,
-    "Categories": ["UMIs", "Quantification", "Visualisation"]
+    "Categories": ["Alignment", "UMIs", "Quantification", "Visualisation"]
   }
 ]
