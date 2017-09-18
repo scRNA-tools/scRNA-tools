@@ -114,7 +114,8 @@
         "Name": "MetaNeighbour"
       },
       {
-        "Name": "scmap"
+        "Name": "scmap",
+        "BioC": "scmap"
       }
     ],
     "Description": "Assignment of cell types based on a reference dataset"
@@ -685,7 +686,7 @@
         "Name": "VDJPuzzle"
       }
     ],
-    "Description": "Assignment of receptor sequences and immunce cell clonality"
+    "Description": "Assignment of receptor sequences and immune cell clonality"
   },
   {
     "Category": "Imputation",
@@ -912,7 +913,8 @@
         "PyPI": "scLVM"
       },
       {
-        "Name": "SCNorm"
+        "Name": "SCNorm",
+        "BioC": "SCnorm"
       },
       {
         "Name": "SCONE",
@@ -986,7 +988,8 @@
         "PyPI": "matcher"
       },
       {
-        "Name": "MFA"
+        "Name": "MFA",
+        "BioC": "mfa"
       },
       {
         "Name": "Monocle",
@@ -1003,7 +1006,8 @@
         "Name": "PBA"
       },
       {
-        "Name": "PhenoPath"
+        "Name": "PhenoPath",
+        "BioC": "phenopath"
       },
       {
         "Name": "PIVOT"
@@ -1150,6 +1154,9 @@
         "BioC": "scone"
       },
       {
+        "Name": "scPipe"
+      },
+      {
         "Name": "scTDA",
         "PyPI": "scTDA"
       },
@@ -1256,10 +1263,12 @@
         "BioC": "Linnorm"
       },
       {
-        "Name": "MFA"
+        "Name": "MFA",
+        "BioC": "mfa"
       },
       {
-        "Name": "PhenoPath"
+        "Name": "PhenoPath",
+        "BioC": "phenopath"
       },
       {
         "Name": "powsimR"
@@ -1510,7 +1519,8 @@
         "PyPI": "matcher"
       },
       {
-        "Name": "MFA"
+        "Name": "MFA",
+        "BioC": "mfa"
       },
       {
         "Name": "Monocle",
@@ -1569,6 +1579,9 @@
       },
       {
         "Name": "SCORPIUS"
+      },
+      {
+        "Name": "scPipe"
       },
       {
         "Name": "scTDA",

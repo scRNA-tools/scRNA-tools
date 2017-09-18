@@ -101,13 +101,15 @@
                         <th data-field="License" data-sortable="true" data-visible="true" data-filter-control="select">License</th>
                         <th data-field="Categories" data-sortable="true" data-visible="true" data-formatter="catsFormatter">Categories</th>
                         <th data-field="Assembly" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Assembly</th>
+                        <th data-field="Alignment" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Alignment</th>
+                        <th data-field="UMIs" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">UMIs</th>
                         <th data-field="Quantification" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Quantification</th>
                         <th data-field="QualityControl" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Quality Control</th>
                         <th data-field="Normalisation" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Normalisation</th>
                         <th data-field="Imputation" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Imputation</th>
                         <th data-field="GeneFiltering" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Gene Filtering</th>
                         <th data-field="Clustering" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Clustering</th>
-                        <th data-field="Pseudotime" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Pseudotime</th>
+                        <th data-field="Ordering" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Ordering</th>
                         <th data-field="DifferentialExpression" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Differential Expression</th>
                         <th data-field="MarkerGenes" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Marker Genes</th>
                         <th data-field="ExpressionPatterns" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Expression Patterns</th>
@@ -121,6 +123,7 @@
                         <th data-field="AlternativeSplicing" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Alternative Splicing</th>
                         <th data-field="RareCells" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Rare Cells</th>
                         <th data-field="StemCells" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Stem Cells</th>
+                        <th data-field="Immune" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Immune</th>
                         <th data-field="Variants" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Variants</th>
                         <th data-field="Haplotypes" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Haplotypes</th>
                         <th data-field="AlleleSpecific" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Allele Specific</th>
@@ -155,7 +158,8 @@
 
           for (var i = 0; i < values.length; i++) {
             var cat = values[i]
-            formatted.push('<a href="categories.html#' + cat + '">' + cat.replace(/([a-z])([A-Z])/g, '$1 $2') + '</a>')
+            formatted.push('<a href="categories.html#' + cat + '">' +
+                    cat.replace(/([a-z])([A-Z])/g, '$1 $2') + '</a>')
           }
 
           return formatted.join(', ')
