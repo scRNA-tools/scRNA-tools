@@ -54,7 +54,7 @@ $(document).ready(function () {
         var doiURL = value.DOIURL
         var pubDate = value.PubDate
         var preprint = value.Preprint
-        var citations = value.citations
+        var citations = value.Citations
         var description = value.Description
         var platform = value.Platform
         var code = value.Code
