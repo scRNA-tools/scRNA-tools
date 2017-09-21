@@ -609,6 +609,9 @@
       },
       {
         "Name": "SCRL"
+      },
+      {
+        "Name": "SINCERITIES"
       }
     ],
     "Description": "Identification of co-regulated gene networks"
@@ -1099,12 +1102,12 @@
     "Category": "QualityControl",
     "Tools": [
       {
-        "Name": "CellRanger",
-        "CRAN": "cellranger"
-      },
-      {
         "Name": "Cellity",
         "BioC": "cellity"
+      },
+      {
+        "Name": "CellRanger",
+        "CRAN": "cellranger"
       },
       {
         "Name": "demuxlet"
