@@ -45,6 +45,8 @@ function columns ask the following questions of the software:
 * **QualityControl** - Does it perform some type of quality control of cells?
 * **Normalisation** - Does it perform some type of normalisation?
 * **Imputation** - Can it impute missing dropout values?
+* **Integration** - Does it combine scRNA-seq datasets or other single-cell data
+  types?
 * **GeneFiltering** - Does it perform some filtering of genes?
 * **Clustering** - Does it perform clustering of cells?
 * **Classification** - Does it classify cells based on a reference dataset?
