@@ -563,7 +563,8 @@
         "Name": "AltAnalyze"
       },
       {
-        "Name": "AUCell"
+        "Name": "AUCell",
+        "BioC": "AUCell"
       },
       {
         "Name": "BTR",
@@ -575,6 +576,9 @@
       },
       {
         "Name": "Granatum"
+      },
+      {
+        "Name": "GRNVBEM"
       },
       {
         "Name": "LEAP",
@@ -683,7 +687,8 @@
         "PyPI": "tracer"
       },
       {
-        "Name": "TRAPeS"
+        "Name": "TRAPeS",
+        "PyPI": "trapes"
       },
       {
         "Name": "VDJPuzzle"
@@ -721,6 +726,30 @@
       }
     ],
     "Description": "Estimation of expression where zeros have been observed"
+  },
+  {
+    "Category": "Integration",
+    "Tools": [
+      {
+        "Name": "DrSeq2"
+      },
+      {
+        "Name": "MATCHER",
+        "PyPI": "matcher"
+      },
+      {
+        "Name": "scran",
+        "BioC": "scran"
+      },
+      {
+        "Name": "Seurat",
+        "CRAN": "Seurat"
+      },
+      {
+        "Name": "SSrGE"
+      }
+    ],
+    "Description": "Combining scRNA-seq datasets or integrating scRNA-seq data with other single-cell data types"
   },
   {
     "Category": "Interactive",
@@ -1222,7 +1251,8 @@
         "PyPI": "tracer"
       },
       {
-        "Name": "TRAPeS"
+        "Name": "TRAPeS",
+        "PyPI": "trapes"
       },
       {
         "Name": "UMI-tools"
@@ -1339,6 +1369,9 @@
         "Name": "DrSeq2"
       },
       {
+        "Name": "PoissonUMIs"
+      },
+      {
         "Name": "scPipe"
       },
       {
@@ -1431,7 +1464,8 @@
         "Name": "AltAnalyze"
       },
       {
-        "Name": "AUCell"
+        "Name": "AUCell",
+        "BioC": "AUCell"
       },
       {
         "Name": "badger",
