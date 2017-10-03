@@ -1,4 +1,4 @@
-![scRNA-tools](doc/img/square.png)
+![scRNA-tools](docs/img/banner.png)
 
 # scRNA-tools
 
