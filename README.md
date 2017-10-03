@@ -1,21 +1,22 @@
-# Single-cell software
+![scRNA-tools](doc/img/square.png)
 
-A table of software for the analysis of single-cell RNA-seq data. To make it
-into the table software must be available for download and public use somewhere
-(CRAN, Bioconductor, PyPI, Conda, Github, Bitbucket, a private website etc). If
-you just want to view the table or do some basic sorting/filtering a live
-version is available [here](https://goo.gl/4wcVwn).
+# scRNA-tools
+
+A database of software tools for the analysis of single-cell RNA-seq data. To
+make it into the database software must be available for download and public use
+somewhere (CRAN, Bioconductor, PyPI, Conda, Github, Bitbucket, a private website
+etc). To view the database head to https://www.scRNA-tools.org.
 
 ## Purpose
 
-This table is designed to be an overview of the currently available software, it
-is unlikely to be 100% complete or accurate but will be updated as new software
-becomes available. If you notice a problem or would like to add something please
-make a pull request or open an issue.
+This database is designed to be an overview of the currently available scRNA-seq
+analysis software, it is unlikely to be 100% complete or accurate but will be
+updated as new software becomes available. If you notice a problem or would like
+to add something please make a pull request or open an issue.
 
 ## Structure
 
-The table has the following columns:
+The main tools table has the following columns:
 
 * **Name**
 * **Platform** - Programming language or platform where it can be used
