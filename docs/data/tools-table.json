@@ -43,7 +43,7 @@
     "Updated": "2017-07-21",
     "DOIURL": "http://dx.doi.org/10.1038/nature19348",
     "Github": "nsalomonis/altanalyze",
-    "Citations": 32,
+    "Citations": 33,
     "Categories": ["Quantification", "Normalisation", "GeneFiltering", "Clustering", "Classification", "DifferentialExpression", "MarkerGenes", "GeneSets", "GeneNetworks", "CellCycle", "DimensionalityReduction", "AlternativeSplicing", "Visualisation", "Interactive"]
   },
   {
@@ -185,7 +185,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "Citations": 359,
+    "Citations": 365,
     "Categories": ["GeneFiltering", "Clustering"]
   },
   {
@@ -462,7 +462,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw202",
     "Github": "nghiavtr/BPSC",
-    "Citations": 4,
+    "Citations": 5,
     "Categories": ["DifferentialExpression"]
   },
   {
@@ -700,7 +700,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0888-1",
     "Github": "teichlab/cellity",
     "BioC": "cellity",
-    "Citations": 24,
+    "Citations": 25,
     "Categories": ["QualityControl"]
   },
   {
@@ -1256,7 +1256,7 @@
     "Added": "2016-09-22",
     "Updated": "2017-08-01",
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3971",
-    "Citations": 24,
+    "Citations": 25,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
@@ -2002,7 +2002,7 @@
     "Updated": "2017-03-10",
     "DOIURL": "http://dx.doi.org/10.1126/sciimmunol.aal2192",
     "Github": "Teichlab/GPfates",
-    "Citations": 12,
+    "Citations": 13,
     "Categories": ["Ordering", "Visualisation"]
   },
   {
@@ -2322,6 +2322,52 @@
     "Github": "theislab/kbranches",
     "Citations": 0,
     "Categories": ["Ordering"]
+  },
+  {
+    "Name": "kBET",
+    "Platform": "R",
+    "DOI": "10.1101/200345",
+    "Code": "https://github.com/theislab/kBET",
+    "Description": "An R package to provide a test for batch effects in high-dimensional single-cell RNA sequencing data.",
+    "License": "GPL-3",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "Integration": true,
+    "GeneFiltering": false,
+    "Clustering": false,
+    "Classification": false,
+    "Ordering": false,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": false,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": false,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2017-10-10",
+    "Updated": "2017-10-10",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/200345",
+    "Github": "theislab/kBET",
+    "Categories": ["Integration"]
   },
   {
     "Name": "LEAP",
@@ -2746,7 +2792,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
-    "Citations": 272,
+    "Citations": 275,
     "Categories": ["Clustering", "Ordering", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -2887,7 +2933,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3549",
     "Github": "Bioconductor-mirror/Oscope",
     "BioC": "Oscope",
-    "Citations": 31,
+    "Citations": 32,
     "Categories": ["CellCycle"]
   },
   {
@@ -3450,6 +3496,54 @@
     "Categories": ["Clustering", "Ordering", "CellCycle", "Visualisation"]
   },
   {
+    "Name": "SAIC",
+    "Platform": "R",
+    "DOI": "10.1186/s12864-017-4019-5",
+    "PubDate": "2017-10-03",
+    "Code": "https://github.com/xiweiwu/SAIC",
+    "Description": "Single cell RNA-seq analysis with iterative clustering (SAIC) is a method to identify subgroups and signature genes in single cell RNA-seq data.",
+    "License": "LGPL(>= 2.0)",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "Integration": false,
+    "GeneFiltering": false,
+    "Clustering": true,
+    "Classification": false,
+    "Ordering": false,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": false,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": false,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2017-10-10",
+    "Updated": "2017-10-10",
+    "DOIURL": "http://dx.doi.org/10.1186/s12864-017-4019-5",
+    "Github": "xiweiwu/SAIC",
+    "CRAN": "sAIC",
+    "Citations": 0,
+    "Categories": ["Clustering"]
+  },
+  {
     "Name": "sake",
     "Platform": "R",
     "Code": "https://github.com/naikai/sake",
@@ -3631,7 +3725,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4236",
     "Github": "hemberg-lab/sc3",
     "BioC": "SC3",
-    "Citations": 9,
+    "Citations": 11,
     "Categories": ["Clustering", "Interactive"]
   },
   {
@@ -4151,7 +4245,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3102",
     "Github": "PMBio/scLVM",
     "PyPI": "scLVM",
-    "Citations": 208,
+    "Citations": 211,
     "Categories": ["Normalisation", "VariableGenes", "CellCycle", "Visualisation"]
   },
   {
@@ -4617,7 +4711,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0947-7",
     "Github": "MarioniLab/scran",
     "BioC": "scran",
-    "Citations": 27,
+    "Citations": 28,
     "Categories": ["Normalisation", "Integration", "VariableGenes", "CellCycle"]
   },
   {
@@ -4800,7 +4894,7 @@
     "Updated": "2016-09-12",
     "DOIURL": "http://dx.doi.org/10.1073/pnas.1408993111",
     "Github": "gcyuan/SCUBA",
-    "Citations": 56,
+    "Citations": 57,
     "Categories": ["Ordering", "ExpressionPatterns"]
   },
   {
@@ -4984,7 +5078,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3192",
     "Github": "satijalab/seurat",
     "CRAN": "Seurat",
-    "Citations": 148,
+    "Citations": 150,
     "Categories": ["Normalisation", "Imputation", "Integration", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -5128,7 +5222,7 @@
     "Updated": "2017-06-08",
     "DOIURL": "http://dx.doi.org/10.1371/journal.pcbi.1004575",
     "Github": "xu-lab/SINCERA",
-    "Citations": 26,
+    "Citations": 27,
     "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes"]
   },
   {
@@ -5967,7 +6061,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3800",
     "Github": "teichlab/tracer",
     "PyPI": "tracer",
-    "Citations": 44,
+    "Citations": 46,
     "Categories": ["Assembly", "Alignment", "Quantification", "Immune", "Visualisation"]
   },
   {
@@ -6063,7 +6157,7 @@
     "DOIURL": "http://dx.doi.org/10.1093/nar/gkw430",
     "Github": "zji90/TSCAN",
     "BioC": "TSCAN",
-    "Citations": 19,
+    "Citations": 20,
     "Categories": ["Clustering", "Ordering", "MarkerGenes", "Visualisation", "Interactive"]
   },
   {
@@ -6158,7 +6252,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "PyPI": "umis",
-    "Citations": 19,
+    "Citations": 22,
     "Categories": ["UMIs", "Quantification"]
   },
   {
@@ -6347,7 +6441,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3569",
     "Github": "ManuSetty/wishbone",
     "PyPI": "wishbone",
-    "Citations": 41,
+    "Citations": 43,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
@@ -6394,7 +6488,7 @@
     "Updated": "2016-12-22",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0805-z",
     "Github": "epierson9/ZIFA",
-    "Citations": 39,
+    "Citations": 40,
     "Categories": ["DimensionalityReduction"]
   },
   {
