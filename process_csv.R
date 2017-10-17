@@ -71,8 +71,8 @@ get_pkgs <- function() {
     names(bioc.pkgs) <- str_to_lower(bioc.pkgs)
 
     message("Getting CRAN package list...")
-    #cran.url <- "https://cran.r-project.org/web/packages/available_packages_by_name.html"
-    cran.url <- "cran_packages.html"
+    cran.url <- "https://cran.r-project.org/web/packages/available_packages_by_name.html"
+    #cran.url <- "cran_packages.html"
     cran.pkgs <- read_html(cran.url) %>%
         html_nodes("a") %>%
         html_text() %>%

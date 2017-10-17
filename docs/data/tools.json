@@ -11,7 +11,7 @@
     "Updated": "2017-07-21",
     "DOIURL": "http://dx.doi.org/10.1038/nature19348",
     "Github": "nsalomonis/altanalyze",
-    "Citations": 33,
+    "Citations": 35,
     "Categories": ["Quantification", "Normalisation", "GeneFiltering", "Clustering", "Classification", "DifferentialExpression", "MarkerGenes", "GeneSets", "GeneNetworks", "CellCycle", "DimensionalityReduction", "AlternativeSplicing", "Visualisation", "Interactive"]
   },
   {
@@ -57,7 +57,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "Citations": 365,
+    "Citations": 372,
     "Categories": ["GeneFiltering", "Clustering"]
   },
   {
@@ -97,7 +97,8 @@
     "Updated": "2017-06-23",
     "DOIURL": "http://dx.doi.org/10.1371/journal.pcbi.1004333",
     "Github": "catavallejos/BASiCS",
-    "Citations": 28,
+    "BioC": "BASiCS",
+    "Citations": 29,
     "Categories": ["Normalisation", "DifferentialExpression", "VariableGenes", "Simulation"]
   },
   {
@@ -204,7 +205,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s12859-016-1235-y",
     "Github": "cheeyeelim/btr",
     "CRAN": "BTR",
-    "Citations": 2,
+    "Citations": 3,
     "Categories": ["GeneNetworks", "Visualisation"]
   },
   {
@@ -233,7 +234,7 @@
     "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1038/ncomms14049",
     "CRAN": "cellranger",
-    "Citations": 51,
+    "Citations": 55,
     "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -378,7 +379,7 @@
     "Updated": "2017-09-01",
     "DOIURL": "http://dx.doi.org/10.1126/science.aan3235",
     "Github": "rajewsky-lab/distmap",
-    "Citations": 0,
+    "Citations": 1,
     "Categories": ["Classification", "Visualisation"]
   },
   {
@@ -392,7 +393,7 @@
     "Added": "2016-09-22",
     "Updated": "2017-08-01",
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3971",
-    "Citations": 25,
+    "Citations": 26,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
@@ -735,6 +736,7 @@
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/200345",
     "Github": "theislab/kBET",
+    "Citations": 0,
     "Categories": ["Integration"]
   },
   {
@@ -809,7 +811,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0844-5",
     "Github": "RGLab/MAST",
     "BioC": "MAST",
-    "Citations": 40,
+    "Citations": 43,
     "Categories": ["QualityControl", "Normalisation", "DifferentialExpression", "GeneSets", "GeneNetworks"]
   },
   {
@@ -872,7 +874,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
-    "Citations": 275,
+    "Citations": 278,
     "Categories": ["Clustering", "Ordering", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -889,6 +891,21 @@
     "CRAN": "mpath",
     "Citations": 9,
     "Categories": ["Ordering"]
+  },
+  {
+    "Name": "NetworkInference",
+    "Platform": "Julia",
+    "DOI": "10.1016/j.cels.2017.08.014",
+    "PubDate": "2017-09-27",
+    "Code": "https://github.com/Tchanders/NetworkInference.jl",
+    "Description": "NetworkInference is a package for inferring (undirected) networks, given a set of measurements for each node.",
+    "License": "MIT",
+    "Added": "2017-10-17",
+    "Updated": "2017-10-17",
+    "DOIURL": "http://dx.doi.org/10.1016/j.cels.2017.08.014",
+    "Github": "Tchanders/NetworkInference.jl",
+    "Citations": 1,
+    "Categories": ["GeneNetworks"]
   },
   {
     "Name": "OEFinder",
@@ -917,7 +934,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3549",
     "Github": "Bioconductor-mirror/Oscope",
     "BioC": "Oscope",
-    "Citations": 32,
+    "Citations": 33,
     "Categories": ["CellCycle"]
   },
   {
@@ -1165,7 +1182,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4236",
     "Github": "hemberg-lab/sc3",
     "BioC": "SC3",
-    "Citations": 11,
+    "Citations": 13,
     "Categories": ["Clustering", "Interactive"]
   },
   {
@@ -1243,7 +1260,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.2967",
     "Github": "hms-dbmi/scde",
     "BioC": "scde",
-    "Citations": 128,
+    "Citations": 132,
     "Categories": ["DifferentialExpression", "GeneSets", "Visualisation"]
   },
   {
@@ -1333,7 +1350,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3102",
     "Github": "PMBio/scLVM",
     "PyPI": "scLVM",
-    "Citations": 211,
+    "Citations": 215,
     "Categories": ["Normalisation", "VariableGenes", "CellCycle", "Visualisation"]
   },
   {
@@ -1407,6 +1424,7 @@
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/079509",
     "Github": "rcannood/SCORPIUS",
+    "CRAN": "SCORPIUS",
     "Citations": 0,
     "Categories": ["Ordering", "ExpressionPatterns", "GeneNetworks", "DimensionalityReduction", "Visualisation"]
   },
@@ -1479,7 +1497,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0947-7",
     "Github": "MarioniLab/scran",
     "BioC": "scran",
-    "Citations": 28,
+    "Citations": 29,
     "Categories": ["Normalisation", "Integration", "VariableGenes", "CellCycle"]
   },
   {
@@ -1534,7 +1552,7 @@
     "Updated": "2016-09-12",
     "DOIURL": "http://dx.doi.org/10.1073/pnas.1408993111",
     "Github": "gcyuan/SCUBA",
-    "Citations": 57,
+    "Citations": 59,
     "Categories": ["Ordering", "ExpressionPatterns"]
   },
   {
@@ -1590,7 +1608,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3192",
     "Github": "satijalab/seurat",
     "CRAN": "Seurat",
-    "Citations": 150,
+    "Citations": 152,
     "Categories": ["Normalisation", "Imputation", "Integration", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -1901,7 +1919,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3800",
     "Github": "teichlab/tracer",
     "PyPI": "tracer",
-    "Citations": 46,
+    "Citations": 49,
     "Categories": ["Assembly", "Alignment", "Quantification", "Immune", "Visualisation"]
   },
   {
@@ -1933,7 +1951,7 @@
     "DOIURL": "http://dx.doi.org/10.1093/nar/gkw430",
     "Github": "zji90/TSCAN",
     "BioC": "TSCAN",
-    "Citations": 20,
+    "Citations": 22,
     "Categories": ["Clustering", "Ordering", "MarkerGenes", "Visualisation", "Interactive"]
   },
   {
@@ -1948,7 +1966,7 @@
     "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1101/gr.209601.116",
     "Github": "CGATOxford/UMI-tools",
-    "Citations": 6,
+    "Citations": 8,
     "Categories": ["UMIs", "Quantification"]
   },
   {
@@ -2009,7 +2027,7 @@
     "Updated": "2016-09-12",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-1033-x",
     "Github": "lengning/WaveCrest",
-    "Citations": 14,
+    "Citations": 15,
     "Categories": ["Ordering", "MarkerGenes", "ExpressionPatterns", "Interactive"]
   },
   {
@@ -2025,7 +2043,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3569",
     "Github": "ManuSetty/wishbone",
     "PyPI": "wishbone",
-    "Citations": 43,
+    "Citations": 44,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
@@ -2040,7 +2058,7 @@
     "Updated": "2016-12-22",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0805-z",
     "Github": "epierson9/ZIFA",
-    "Citations": 40,
+    "Citations": 43,
     "Categories": ["DimensionalityReduction"]
   },
   {
