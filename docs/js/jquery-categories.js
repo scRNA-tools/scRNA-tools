@@ -60,6 +60,7 @@ $(document).ready(function () {
           var bioc = val.BioC
           var pypi = val.PyPI
           var cran = val.CRAN
+          var github = val.Github
 
           entry += '<li class="list-group-item"><a href="tools.html#' + name + '">' + name + '</a>'
 
@@ -76,7 +77,7 @@ $(document).ready(function () {
           if (typeof pypi !== 'undefined') {
             entry += ' <img border="0" height="15" src="https://img.shields.io/pypi/v/' + pypi + '.svg">' +
                      ' <img border="0" height="15" src="https://img.shields.io/pypi/pyversions/' + pypi + '.svg">' +
-                     ' <img border="0" height="15" src="https://img.shields.io/pypi/dm/' + pypi + '.svg">'
+                     ' <img border="0" height="15" src="https://img.shields.io/pypi/status/' + pypi + '.svg">'
           }
 
           entry += '</li>'

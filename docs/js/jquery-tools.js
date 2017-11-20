@@ -85,7 +85,7 @@ $(document).ready(function () {
         if (typeof pypi !== 'undefined') {
           entry += ' <img border="0" height="15" src="https://img.shields.io/pypi/v/' + pypi + '.svg">' +
                    ' <img border="0" height="15" src="https://img.shields.io/pypi/pyversions/' + pypi + '.svg">' +
-                   ' <img border="0" height="15" src="https://img.shields.io/pypi/dm/' + pypi + '.svg">'
+                   ' <img border="0" height="15" src="https://img.shields.io/pypi/status/' + pypi + '.svg">'
         }
 
         entry += '</a></h4></div>' +
@@ -110,8 +110,9 @@ $(document).ready(function () {
         if (typeof code !== 'undefined') {
             entry += '<li class="list-group-item"><strong>Code: </strong> <a href="' + code + '">' + code + '</a>'
             if (typeof github !== 'undefined') {
-                entry += ' <img border="0" height="15" src="https://img.shields.io/github/stars/' + github + '.svg?style=social&label=Star">' +
-                    ' <img border="0" height="15" src="https://img.shields.io/github/forks/' + github + '.svg?style=social&label=Fork">'
+                entry += ' <img border="0" height="15" src="https://img.shields.io/github/stars/' + github + '.svg">' +
+                    ' <img border="0" height="15" src="https://img.shields.io/github/forks/' + github + '.svg">' +
+                    ' <img border="0" height="15" src="https://img.shields.io/github/last-commit/' + github + '.svg">'
             }
             entry += '</li>'
         }
