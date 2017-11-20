@@ -12,7 +12,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nature19348",
     "Github": "nsalomonis/altanalyze",
     "PyPI": "AltAnalyze",
-    "Citations": 39,
+    "Citations": 42,
     "Categories": ["Quantification", "Normalisation", "GeneFiltering", "Clustering", "Classification", "DifferentialExpression", "MarkerGenes", "GeneSets", "GeneNetworks", "CellCycle", "DimensionalityReduction", "AlternativeSplicing", "Visualisation", "Interactive"]
   },
   {
@@ -30,6 +30,21 @@
     "PyPI": "anchor",
     "Citations": 0,
     "Categories": ["Modality"]
+  },
+  {
+    "Name": "ascend",
+    "Platform": "R",
+    "DOI": "10.1101/207704",
+    "Code": "https://github.com/IMB-Computational-Genomics-Lab/ascend",
+    "Description": "Analysis of Single Cell Expresssion Normalisation and Differential Expression",
+    "License": "GPL-3",
+    "Added": "2017-11-20",
+    "Updated": "2017-11-20",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/207704",
+    "Github": "IMB-Computational-Genomics-Lab/ascend",
+    "Citations": 0,
+    "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "DifferentialExpression", "CellCycle", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "AUCell",
@@ -58,7 +73,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "Citations": 390,
+    "Citations": 397,
     "Categories": ["GeneFiltering", "Clustering"]
   },
   {
@@ -99,7 +114,7 @@
     "DOIURL": "http://dx.doi.org/10.1371/journal.pcbi.1004333",
     "Github": "catavallejos/BASiCS",
     "BioC": "BASiCS",
-    "Citations": 31,
+    "Citations": 32,
     "Categories": ["Normalisation", "DifferentialExpression", "VariableGenes", "Simulation"]
   },
   {
@@ -249,7 +264,7 @@
     "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1038/ncomms14049",
     "CRAN": "cellranger",
-    "Citations": 61,
+    "Citations": 64,
     "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -380,7 +395,7 @@
     "Updated": "2017-04-18",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btv715",
     "BioC": "destiny",
-    "Citations": 25,
+    "Citations": 26,
     "Categories": ["DimensionalityReduction", "Visualisation"]
   },
   {
@@ -558,33 +573,18 @@
     "Categories": ["Quantification", "Clustering", "Ordering", "DimensionalityReduction"]
   },
   {
-    "Name": "f-scLVM",
-    "Platform": "Python",
-    "DOI": "10.1101/087775",
-    "Code": "https://github.com/PMBio/f-scLVM",
-    "Description": "f-scLVM is a scalable modelling framework for single-cell RNA-seq data that uses gene set annotations to dissect single-cell transcriptome heterogeneity, thereby allowing to identify biological drivers of cell-to-cell variability and model confounding factors.",
-    "License": "Apache-2.0",
-    "Added": "2016-11-29",
-    "Updated": "2016-11-29",
-    "Preprint": true,
-    "DOIURL": "http://dx.doi.org/10.1101/087775",
-    "Github": "PMBio/f-scLVM",
-    "Citations": 1,
-    "Categories": ["VariableGenes"]
-  },
-  {
     "Name": "Falco",
     "Platform": "AWS",
-    "DOI": "10.1101/064006",
+    "DOI": "10.1093/bioinformatics/btw732",
+    "PubDate": "2016-12-13",
     "Code": "https://github.com/VCCRI/Falco",
     "Description": "A Cloud-based Genetic Feature Quantification Analysis Tool",
     "License": "GPL-3",
     "Added": "2016-09-08",
-    "Updated": "2017-09-11",
-    "Preprint": true,
-    "DOIURL": "http://dx.doi.org/10.1101/064006",
+    "Updated": "2017-11-20",
+    "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw732",
     "Github": "VCCRI/Falco",
-    "Citations": 0,
+    "Citations": 3,
     "Categories": ["Alignment", "Quantification"]
   },
   {
@@ -627,7 +627,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-1010-4",
     "Github": "lanjiangboston/GiniClust",
-    "Citations": 13,
+    "Citations": 14,
     "Categories": ["Normalisation", "Clustering", "DimensionalityReduction", "RareCells", "Interactive"]
   },
   {
@@ -642,7 +642,7 @@
     "Updated": "2017-03-10",
     "DOIURL": "http://dx.doi.org/10.1126/sciimmunol.aal2192",
     "Github": "Teichlab/GPfates",
-    "Citations": 14,
+    "Citations": 15,
     "Categories": ["Ordering", "Visualisation"]
   },
   {
@@ -668,7 +668,7 @@
     "Added": "2016-09-09",
     "Updated": "2017-04-18",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btv122",
-    "Citations": 23,
+    "Citations": 24,
     "Categories": ["Normalisation"]
   },
   {
@@ -708,6 +708,17 @@
     "Github": "NetLand-NTU/HopLand",
     "Citations": 0,
     "Categories": ["Ordering", "Visualisation"]
+  },
+  {
+    "Name": "iscandar",
+    "Platform": "Python",
+    "Code": "https://github.com/jarny/iscandar",
+    "Description": "Iscandar (Interactive Single Cell Data Analysis Report) is a set of python scripts and html/javascript files used to create interactive report for single cell rna-seq analysis.",
+    "License": "MIT",
+    "Added": "2017-11-20",
+    "Updated": "2017-11-20",
+    "Github": "jarny/iscandar",
+    "Categories": ["Visualisation", "Interactive"]
   },
   {
     "Name": "ISOP",
@@ -799,16 +810,17 @@
   },
   {
     "Name": "MAGIC",
-    "Platform": "Python",
+    "Platform": "Python/R/MATLAB",
     "DOI": "10.1101/111591",
     "Code": "https://github.com/pkathail/magic",
     "Description": "Markov Affinity-based Graph Imputation of Cells (MAGIC)",
     "License": "GPL-2",
     "Added": "2017-02-27",
-    "Updated": "2017-02-17",
+    "Updated": "2017-11-20",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/111591",
     "Github": "pkathail/magic",
+    "CRAN": "magic",
     "PyPI": "magic",
     "Citations": 1,
     "Categories": ["QualityControl", "Imputation", "DimensionalityReduction", "Visualisation", "Interactive"]
@@ -826,7 +838,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0844-5",
     "Github": "RGLab/MAST",
     "BioC": "MAST",
-    "Citations": 51,
+    "Citations": 52,
     "Categories": ["QualityControl", "Normalisation", "DifferentialExpression", "GeneSets", "GeneNetworks"]
   },
   {
@@ -873,7 +885,7 @@
     "DOIURL": "http://dx.doi.org/10.12688/wellcomeopenres.11087.1",
     "Github": "kieranrcampbell/mfa",
     "BioC": "mfa",
-    "Citations": 1,
+    "Citations": 2,
     "Categories": ["Ordering", "Visualisation", "Simulation"]
   },
   {
@@ -889,7 +901,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
-    "Citations": 288,
+    "Citations": 291,
     "Categories": ["Clustering", "Ordering", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -1009,7 +1021,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1186/s12859-016-0984-y",
     "Github": "JustinaZ/pcaReduce",
-    "Citations": 11,
+    "Citations": 12,
     "Categories": ["Clustering"]
   },
   {
@@ -1023,6 +1035,21 @@
     "Updated": "2017-11-08",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/211938",
+    "Citations": 0,
+    "Categories": ["DimensionalityReduction", "Visualisation"]
+  },
+  {
+    "Name": "PHATE",
+    "Platform": "Python/MATLAB",
+    "DOI": "10.1101/120378",
+    "Code": "https://github.com/KrishnaswamyLab/PHATE",
+    "Description": "PHATE is a tool for visualizing high dimensional single-cell data with natural progressions or trajectories.",
+    "License": "GPL-2",
+    "Added": "2017-11-20",
+    "Updated": "2017-11-20",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/120378",
+    "Github": "KrishnaswamyLab/PHATE",
     "Citations": 0,
     "Categories": ["DimensionalityReduction", "Visualisation"]
   },
@@ -1108,7 +1135,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "Citations": 27,
+    "Citations": 29,
     "Categories": ["RareCells"]
   },
   {
@@ -1124,7 +1151,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/ng.3818",
     "Github": "GIS-SP-Group/RCA",
     "CRAN": "RCA",
-    "Citations": 8,
+    "Citations": 10,
     "Categories": ["Clustering", "Visualisation"]
   },
   {
@@ -1180,7 +1207,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btt511",
     "Github": "shka/R-SAMstrt",
-    "Citations": 27,
+    "Citations": 28,
     "Categories": ["Normalisation", "DifferentialExpression"]
   },
   {
@@ -1223,10 +1250,11 @@
     "Description": "Allele-Specific Expression by Single-Cell RNA Sequencing",
     "License": "GPL-3",
     "Added": "2017-02-23",
+    "Updated": "2017-02-23",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-017-1200-8",
     "Github": "yuchaojiang/SCALE",
     "CRAN": "Scale",
-    "Citations": 1,
+    "Citations": 2,
     "Categories": ["AlleleSpecific"]
   },
   {
@@ -1274,7 +1302,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-1077-y",
     "Github": "kdkorthauer/scDD",
     "BioC": "scDD",
-    "Citations": 8,
+    "Citations": 9,
     "Categories": ["DifferentialExpression", "Simulation"]
   },
   {
@@ -1289,7 +1317,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.2967",
     "Github": "hms-dbmi/scde",
     "BioC": "scde",
-    "Citations": 140,
+    "Citations": 142,
     "Categories": ["DifferentialExpression", "GeneSets", "Visualisation"]
   },
   {
@@ -1334,7 +1362,7 @@
     "Updated": "2017-06-08",
     "DOIURL": "http://dx.doi.org/10.1038/ncomms15599",
     "Github": "aet21/SCENT",
-    "Citations": 0,
+    "Citations": 1,
     "Categories": ["Ordering"]
   },
   {
@@ -1379,7 +1407,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3102",
     "Github": "PMBio/scLVM",
     "PyPI": "scLVM",
-    "Citations": 227,
+    "Citations": 228,
     "Categories": ["Normalisation", "VariableGenes", "CellCycle", "Visualisation"]
   },
   {
@@ -1523,12 +1551,12 @@
     "Description": "This package implements a variety of low-level analyses of single-cell RNA-seq data. Methods are provided for normalization of cell-specific biases, pool-based norms to estimate size factors, assignment of cell cycle phase, and detection of highly variable and significantly correlated genes.",
     "License": "GPL-3",
     "Added": "2016-09-08",
-    "Updated": "2017-09-25",
+    "Updated": "2017-11-20",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0947-7",
     "Github": "MarioniLab/scran",
     "BioC": "scran",
-    "Citations": 33,
-    "Categories": ["Normalisation", "Integration", "VariableGenes", "CellCycle"]
+    "Citations": 34,
+    "Categories": ["Normalisation", "Integration", "VariableGenes", "CellCycle", "Visualisation", "Interactive"]
   },
   {
     "Name": "SCRL",
@@ -1543,6 +1571,16 @@
     "Github": "SuntreeLi/SCRL",
     "Citations": 0,
     "Categories": ["GeneNetworks", "DimensionalityReduction"]
+  },
+  {
+    "Name": "scRutiNy",
+    "Platform": "Python",
+    "Code": "https://lbm.niddk.nih.gov/mckennajp/scRutiNy/",
+    "Description": "scRutiNy is comprised of two modules: RNAscrutiny.MatriSeq for simulation and RNAscrutiny.RegNetInference for inferring gene networks",
+    "Added": "2017-11-20",
+    "Updated": "2017-11-20",
+    "PyPI": "Scrutiny",
+    "Categories": ["GeneNetworks", "Visualisation", "Simulation"]
   },
   {
     "Name": "scTCRseq",
@@ -1582,7 +1620,7 @@
     "Updated": "2016-09-12",
     "DOIURL": "http://dx.doi.org/10.1073/pnas.1408993111",
     "Github": "gcyuan/SCUBA",
-    "Citations": 63,
+    "Citations": 65,
     "Categories": ["Ordering", "ExpressionPatterns"]
   },
   {
@@ -1638,7 +1676,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3192",
     "Github": "satijalab/seurat",
     "CRAN": "Seurat",
-    "Citations": 160,
+    "Citations": 162,
     "Categories": ["Normalisation", "Imputation", "Integration", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -1655,7 +1693,7 @@
     "Github": "BatzoglouLabSU/SIMLR",
     "BioC": "SIMLR",
     "PyPI": "SIMLR",
-    "Citations": 5,
+    "Citations": 6,
     "Categories": ["Clustering", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -1705,6 +1743,19 @@
     "Categories": ["GeneNetworks"]
   },
   {
+    "Name": "SinCHet",
+    "Platform": "MATLAB",
+    "DOI": "10.1093/bioinformatics/btx297",
+    "PubDate": "2017-05-04",
+    "Code": "http://labpages2.moffitt.org/chen/software",
+    "Description": "a MATLAB GUI toolbox for Single Cell Heterogeneity analysis in cancer",
+    "Added": "2017-11-20",
+    "Updated": "2017-11-20",
+    "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btx297",
+    "Citations": 0,
+    "Categories": ["Clustering", "Visualisation", "Interactive"]
+  },
+  {
     "Name": "SingleSplice",
     "Platform": "R/Perl/C++",
     "DOI": "10.1093/nar/gkv1525",
@@ -1750,19 +1801,19 @@
   {
     "Name": "slalom",
     "Platform": "R/Python",
-    "DOI": "10.1101/087775",
+    "DOI": "10.1186/s13059-017-1334-8",
+    "PubDate": "2017-11-07",
     "Code": "https://github.com/bioFAM/slalom",
     "Description": "slalom is a scalable modelling framework for single-cell RNA-seq data that uses gene set annotations to dissect single-cell transcriptome heterogeneity.",
     "License": "Apache-2.0",
-    "Added": "2017-11-08",
-    "Updated": "2017-11-08",
-    "Preprint": true,
-    "DOIURL": "http://dx.doi.org/10.1101/087775",
+    "Added": "2016-11-29",
+    "Updated": "2017-11-20",
+    "DOIURL": "http://dx.doi.org/10.1186/s13059-017-1334-8",
     "Github": "bioFAM/slalom",
     "BioC": "slalom",
     "PyPI": "slalom",
-    "Citations": 1,
-    "Categories": ["GeneSets", "DimensionalityReduction", "Visualisation"]
+    "Citations": 0,
+    "Categories": ["VariableGenes", "GeneSets", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "SLICE",
@@ -1791,7 +1842,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0975-3",
     "Github": "jw156605/SLICER",
     "CRAN": "SLICER",
-    "Citations": 14,
+    "Citations": 16,
     "Categories": ["Ordering"]
   },
   {
@@ -1832,7 +1883,7 @@
     "Updated": "2017-04-18",
     "DOIURL": "http://dx.doi.org/10.1038/nprot.2016.066",
     "Github": "nolanlab/spade",
-    "Citations": 12,
+    "Citations": 14,
     "Categories": ["Clustering", "Ordering", "MarkerGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -1892,7 +1943,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "Citations": 27,
+    "Citations": 29,
     "Categories": ["Ordering", "StemCells"]
   },
   {
@@ -1998,7 +2049,7 @@
     "DOIURL": "http://dx.doi.org/10.1093/nar/gkw430",
     "Github": "zji90/TSCAN",
     "BioC": "TSCAN",
-    "Citations": 25,
+    "Citations": 27,
     "Categories": ["Clustering", "Ordering", "MarkerGenes", "Visualisation", "Interactive"]
   },
   {
@@ -2029,7 +2080,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "PyPI": "umis",
-    "Citations": 27,
+    "Citations": 28,
     "Categories": ["UMIs", "Quantification"]
   },
   {
@@ -2105,7 +2156,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3569",
     "Github": "ManuSetty/wishbone",
     "PyPI": "wishbone",
-    "Citations": 49,
+    "Citations": 52,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
@@ -2120,7 +2171,7 @@
     "Updated": "2016-12-22",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0805-z",
     "Github": "epierson9/ZIFA",
-    "Citations": 46,
+    "Citations": 48,
     "Categories": ["DimensionalityReduction"]
   },
   {
