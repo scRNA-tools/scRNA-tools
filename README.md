@@ -14,6 +14,13 @@ analysis software, it is unlikely to be 100% complete or accurate but will be
 updated as new software becomes available. If you notice a problem or would like
 to add something please make a pull request or open an issue.
 
+## Citation
+
+If you find the scRNA-tools database useful for your work please cite our
+preprint: "Zappia L, Phipson B, Oshlack A. [Exploring the single-cell RNA-seq
+analysis landscape with the scRNA-tools
+database](http://dx.doi.org/10.1101/206573), bioRxiv (2017), DOI: 10.1101/206573"
+
 ## Structure
 
 The main tools table has the following columns:
