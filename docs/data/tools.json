@@ -604,6 +604,22 @@
     "Categories": ["GeneSets", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
+    "Name": "FateID",
+    "Platform": "R",
+    "DOI": "10.1101/218115",
+    "Code": "https://github.com/dgrun/FateID",
+    "Description": "FateID is a random forests-based algorithm for the quantification of the fate biases of multipotent progenitors, i. e. the probabilities of differentiating towards particular cell lineages.",
+    "License": "GPL-3",
+    "Added": "2017-11-21",
+    "Updated": "2017-11-21",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/218115",
+    "Github": "dgrun/FateID",
+    "CRAN": "FateID",
+    "Citations": 0,
+    "Categories": ["Classification", "DifferentialExpression", "StemCells", "Visualisation"]
+  },
+  {
     "Name": "flotilla",
     "Platform": "Python",
     "Code": "https://github.com/yeolab/flotilla",
@@ -1110,6 +1126,21 @@
     "Categories": ["Visualisation", "Simulation"]
   },
   {
+    "Name": "pseudodynamics",
+    "Platform": "MATLAB",
+    "DOI": "10.1101/219188",
+    "Code": "https://github.com/theislab/pseudodynamics",
+    "Description": "Pseudodynamics provides a dynamic (time­ resolved) description of a population as a density over a cell state coordinate.",
+    "License": "GPL-3",
+    "Added": "2017-11-21",
+    "Updated": "2017-11-21",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/219188",
+    "Github": "theislab/pseudodynamics",
+    "Citations": 0,
+    "Categories": ["Ordering"]
+  },
+  {
     "Name": "pseudogp",
     "Platform": "R",
     "DOI": "10.1101/047365",
@@ -1151,7 +1182,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/ng.3818",
     "Github": "GIS-SP-Group/RCA",
     "CRAN": "RCA",
-    "Citations": 10,
+    "Citations": 11,
     "Categories": ["Clustering", "Visualisation"]
   },
   {
@@ -1167,6 +1198,20 @@
     "Github": "tinglab/reCAT",
     "Citations": 0,
     "Categories": ["Clustering", "Ordering", "CellCycle", "Visualisation"]
+  },
+  {
+    "Name": "SAFE",
+    "Platform": "R",
+    "DOI": "10.1101/215723",
+    "Code": "http://yunliweb.its.unc.edu/safe/",
+    "Description": "SAFE-clustering is a flexible, accurate and robust method for clustering scRNA-seq data.",
+    "Added": "2017-11-21",
+    "Updated": "2017-11-21",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/215723",
+    "BioC": "safe",
+    "Citations": 0,
+    "Categories": ["Clustering"]
   },
   {
     "Name": "SAIC",
@@ -1676,7 +1721,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3192",
     "Github": "satijalab/seurat",
     "CRAN": "Seurat",
-    "Citations": 162,
+    "Citations": 163,
     "Categories": ["Normalisation", "Imputation", "Integration", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -1885,6 +1930,22 @@
     "Github": "nolanlab/spade",
     "Citations": 14,
     "Categories": ["Clustering", "Ordering", "MarkerGenes", "DimensionalityReduction", "Visualisation"]
+  },
+  {
+    "Name": "SparseDC",
+    "Platform": "R",
+    "DOI": "10.1093/nar/gkx1113",
+    "PubDate": "2017-11-13",
+    "Code": "https://github.com/cran/SparseDC",
+    "Description": "A sparse differential clustering algorithm for tracing cell type changes via single-cell RNA-sequencing data",
+    "License": "GPL-3",
+    "Added": "2017-11-21",
+    "Updated": "2017-11-21",
+    "DOIURL": "http://dx.doi.org/10.1093/nar/gkx1113",
+    "Github": "cran/SparseDC",
+    "CRAN": "SparseDC",
+    "Citations": 0,
+    "Categories": ["Clustering", "MarkerGenes"]
   },
   {
     "Name": "Splatter",
