@@ -44,7 +44,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nature19348",
     "Github": "nsalomonis/altanalyze",
     "PyPI": "AltAnalyze",
-    "Citations": 42,
+    "Citations": 46,
     "Categories": ["Quantification", "Normalisation", "GeneFiltering", "Clustering", "Classification", "DifferentialExpression", "MarkerGenes", "GeneSets", "GeneNetworks", "CellCycle", "DimensionalityReduction", "AlternativeSplicing", "Visualisation", "Interactive"]
   },
   {
@@ -233,7 +233,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "Citations": 397,
+    "Citations": 408,
     "Categories": ["GeneFiltering", "Clustering"]
   },
   {
@@ -557,7 +557,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw202",
     "Github": "nghiavtr/BPSC",
-    "Citations": 9,
+    "Citations": 11,
     "Categories": ["DifferentialExpression"]
   },
   {
@@ -1117,7 +1117,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1186/s12859-016-0944-6",
     "Github": "hemberg-lab/D3E",
-    "Citations": 4,
+    "Citations": 5,
     "Categories": ["DifferentialExpression"]
   },
   {
@@ -1165,7 +1165,7 @@
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw372",
     "Github": "JohnReid/DeLorean",
     "CRAN": "DeLorean",
-    "Citations": 13,
+    "Citations": 14,
     "Categories": ["GeneFiltering", "Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
@@ -1259,7 +1259,7 @@
     "Updated": "2017-04-18",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btv715",
     "BioC": "destiny",
-    "Citations": 26,
+    "Citations": 28,
     "Categories": ["DimensionalityReduction", "Visualisation"]
   },
   {
@@ -1351,7 +1351,7 @@
     "Added": "2016-09-22",
     "Updated": "2017-08-01",
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3971",
-    "Citations": 28,
+    "Citations": 30,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
@@ -1912,7 +1912,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s12859-016-1176-5",
     "Github": "YosefLab/FastProject",
     "PyPI": "FastProject",
-    "Citations": 2,
+    "Citations": 3,
     "Categories": ["GeneSets", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -2051,7 +2051,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-1010-4",
     "Github": "lanjiangboston/GiniClust",
-    "Citations": 14,
+    "Citations": 15,
     "Categories": ["Normalisation", "Clustering", "DimensionalityReduction", "RareCells", "Interactive"]
   },
   {
@@ -2098,7 +2098,7 @@
     "Updated": "2017-03-10",
     "DOIURL": "http://dx.doi.org/10.1126/sciimmunol.aal2192",
     "Github": "Teichlab/GPfates",
-    "Citations": 15,
+    "Citations": 17,
     "Categories": ["Ordering", "Visualisation"]
   },
   {
@@ -2145,6 +2145,52 @@
     "DOIURL": "http://dx.doi.org/10.1101/110759",
     "Citations": 0,
     "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Ordering", "DifferentialExpression", "GeneSets", "GeneNetworks", "DimensionalityReduction", "Visualisation", "Interactive"]
+  },
+  {
+    "Name": "GrandPrix",
+    "Platform": "Python",
+    "DOI": "10.1101/227843",
+    "Code": "https://github.com/ManchesterBioinference/GrandPrix",
+    "Description": "GrandPrix is a python package implementing the approach described in the paper \"GrandPrix: Scaling up the Bayesian GPLVM for single-cell data\" .",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "Integration": false,
+    "GeneFiltering": false,
+    "Clustering": false,
+    "Classification": false,
+    "Ordering": true,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": true,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": false,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2017-12-07",
+    "Updated": "2017-12-07",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/227843",
+    "Github": "ManchesterBioinference/GrandPrix",
+    "Citations": 0,
+    "Categories": ["Ordering", "DimensionalityReduction"]
   },
   {
     "Name": "GRM",
@@ -2694,7 +2740,7 @@
     "Github": "pkathail/magic",
     "CRAN": "magic",
     "PyPI": "magic",
-    "Citations": 1,
+    "Citations": 2,
     "Categories": ["QualityControl", "Imputation", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -2742,14 +2788,13 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0844-5",
     "Github": "RGLab/MAST",
     "BioC": "MAST",
-    "Citations": 52,
+    "Citations": 55,
     "Categories": ["QualityControl", "Normalisation", "DifferentialExpression", "GeneSets", "GeneNetworks"]
   },
   {
     "Name": "MATCHER",
     "Platform": "Python",
     "DOI": "10.1186/s13059-017-1269-0",
-    "PubDate": "2017-07-20",
     "Code": "https://github.com/jw156605/MATCHER",
     "Description": "Manifold Alignment to Characterize Experimental Relationships (MATCHER)",
     "License": "MIT",
@@ -2885,7 +2930,7 @@
     "DOIURL": "http://dx.doi.org/10.12688/wellcomeopenres.11087.1",
     "Github": "kieranrcampbell/mfa",
     "BioC": "mfa",
-    "Citations": 2,
+    "Citations": 3,
     "Categories": ["Ordering", "Visualisation", "Simulation"]
   },
   {
@@ -2933,7 +2978,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
-    "Citations": 291,
+    "Citations": 297,
     "Categories": ["Clustering", "Ordering", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -2980,7 +3025,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/ncomms11988",
     "Github": "JinmiaoChenLab/Mpath",
     "CRAN": "mpath",
-    "Citations": 10,
+    "Citations": 11,
     "Categories": ["Ordering"]
   },
   {
@@ -3309,7 +3354,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1186/s12859-016-0984-y",
     "Github": "JustinaZ/pcaReduce",
-    "Citations": 12,
+    "Citations": 13,
     "Categories": ["Clustering"]
   },
   {
@@ -3357,6 +3402,54 @@
     "DOIURL": "http://dx.doi.org/10.1101/211938",
     "Citations": 0,
     "Categories": ["DimensionalityReduction", "Visualisation"]
+  },
+  {
+    "Name": "pCreode",
+    "Platform": "Python",
+    "DOI": "10.1016/j.cels.2017.10.012",
+    "PubDate": "2017-11-15",
+    "Code": "https://github.com/KenLauLab/pCreode",
+    "Description": "The term creode was coined by C.H. Waddington, combining the Greek words for “necessary” and “path” to describe the cell state transitional trajectories that define cell fate specification. Our algorithm aims to identify consensus routes from relatively noisy single-cell data and thus we named this algorithm p- (putative) Creode.",
+    "License": "Apache-2.0",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "Integration": false,
+    "GeneFiltering": false,
+    "Clustering": false,
+    "Classification": false,
+    "Ordering": true,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": true,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": true,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2017-12-07",
+    "Updated": "2017-12-07",
+    "DOIURL": "http://dx.doi.org/10.1016/j.cels.2017.10.012",
+    "Github": "KenLauLab/pCreode",
+    "PyPI": "pcreode",
+    "Citations": 0,
+    "Categories": ["Ordering", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "PHATE",
@@ -3726,7 +3819,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "Citations": 29,
+    "Citations": 31,
     "Categories": ["RareCells"]
   },
   {
@@ -3774,7 +3867,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/ng.3818",
     "Github": "GIS-SP-Group/RCA",
     "CRAN": "RCA",
-    "Citations": 11,
+    "Citations": 14,
     "Categories": ["Clustering", "Visualisation"]
   },
   {
@@ -4051,7 +4144,7 @@
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/138677",
     "Github": "mohuangx/SAVER",
-    "Citations": 0,
+    "Citations": 1,
     "Categories": ["Imputation"]
   },
   {
@@ -4099,7 +4192,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4236",
     "Github": "hemberg-lab/sc3",
     "BioC": "SC3",
-    "Citations": 15,
+    "Citations": 17,
     "Categories": ["Clustering", "Interactive"]
   },
   {
@@ -4243,7 +4336,7 @@
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw777",
     "Github": "davismcc/scater",
     "BioC": "scater",
-    "Citations": 3,
+    "Citations": 5,
     "Categories": ["Quantification", "QualityControl", "Normalisation", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -4291,7 +4384,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-1077-y",
     "Github": "kdkorthauer/scDD",
     "BioC": "scDD",
-    "Citations": 9,
+    "Citations": 11,
     "Categories": ["DifferentialExpression", "Simulation"]
   },
   {
@@ -4338,7 +4431,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.2967",
     "Github": "hms-dbmi/scde",
     "BioC": "scde",
-    "Citations": 142,
+    "Citations": 148,
     "Categories": ["DifferentialExpression", "GeneSets", "Visualisation"]
   },
   {
@@ -4572,7 +4665,7 @@
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/141598",
     "Github": "Vivianstats/scImpute",
-    "Citations": 0,
+    "Citations": 1,
     "Categories": ["Imputation"]
   },
   {
@@ -4620,7 +4713,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3102",
     "Github": "PMBio/scLVM",
     "PyPI": "scLVM",
-    "Citations": 228,
+    "Citations": 233,
     "Categories": ["Normalisation", "VariableGenes", "CellCycle", "Visualisation"]
   },
   {
@@ -4716,7 +4809,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4263",
     "Github": "rhondabacher/SCnorm",
     "BioC": "SCnorm",
-    "Citations": 5,
+    "Citations": 6,
     "Categories": ["Normalisation"]
   },
   {
@@ -5044,6 +5137,53 @@
     "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Visualisation", "Simulation"]
   },
   {
+    "Name": "scploid",
+    "Platform": "R",
+    "DOI": "10.1186/s12864-017-4253-x",
+    "PubDate": "2017-11-25",
+    "Code": "https://github.com/MarioniLab/Aneuploidy2017",
+    "Description": "To detect aneuploidies from scRNA-sequencing data we computed, for a defined group of cells, a score for each chromosome-cell pair that measures whether the expression level of genes in that chromosome differs substantially from other cells.",
+    "License": "GPL-3",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "Integration": false,
+    "GeneFiltering": false,
+    "Clustering": false,
+    "Classification": false,
+    "Ordering": false,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": false,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": true,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": true,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2017-12-07",
+    "Updated": "2017-12-07",
+    "DOIURL": "http://dx.doi.org/10.1186/s12864-017-4253-x",
+    "Github": "MarioniLab/Aneuploidy2017",
+    "Citations": 0,
+    "Categories": ["Variants", "Visualisation"]
+  },
+  {
     "Name": "scran",
     "Platform": "R",
     "DOI": "10.1186/s13059-016-0947-7",
@@ -5088,7 +5228,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0947-7",
     "Github": "MarioniLab/scran",
     "BioC": "scran",
-    "Citations": 34,
+    "Citations": 35,
     "Categories": ["Normalisation", "Integration", "VariableGenes", "CellCycle", "Visualisation", "Interactive"]
   },
   {
@@ -5267,7 +5407,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3854",
     "Github": "pcamara/scTDA",
     "PyPI": "scTDA",
-    "Citations": 7,
+    "Citations": 9,
     "Categories": ["QualityControl", "Ordering", "Visualisation"]
   },
   {
@@ -5313,7 +5453,7 @@
     "Updated": "2016-09-12",
     "DOIURL": "http://dx.doi.org/10.1073/pnas.1408993111",
     "Github": "gcyuan/SCUBA",
-    "Citations": 65,
+    "Citations": 66,
     "Categories": ["Ordering", "ExpressionPatterns"]
   },
   {
@@ -5497,7 +5637,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3192",
     "Github": "satijalab/seurat",
     "CRAN": "Seurat",
-    "Citations": 163,
+    "Citations": 167,
     "Categories": ["Normalisation", "Imputation", "Integration", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -5641,7 +5781,7 @@
     "Updated": "2017-06-08",
     "DOIURL": "http://dx.doi.org/10.1371/journal.pcbi.1004575",
     "Github": "xu-lab/SINCERA",
-    "Citations": 30,
+    "Citations": 31,
     "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes"]
   },
   {
@@ -6015,7 +6155,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0975-3",
     "Github": "jw156605/SLICER",
     "CRAN": "SLICER",
-    "Citations": 16,
+    "Citations": 17,
     "Categories": ["Ordering"]
   },
   {
@@ -6248,7 +6388,7 @@
     "DOIURL": "http://dx.doi.org/10.1101/133173",
     "Github": "Oshlack/splatter",
     "BioC": "splatter",
-    "Citations": 0,
+    "Citations": 1,
     "Categories": ["Visualisation", "Simulation"]
   },
   {
@@ -6388,7 +6528,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "Citations": 29,
+    "Citations": 31,
     "Categories": ["Ordering", "StemCells"]
   },
   {
@@ -6622,7 +6762,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3800",
     "Github": "teichlab/tracer",
     "PyPI": "tracer",
-    "Citations": 52,
+    "Citations": 54,
     "Categories": ["Assembly", "Alignment", "Quantification", "Immune", "Visualisation"]
   },
   {
@@ -6718,7 +6858,7 @@
     "DOIURL": "http://dx.doi.org/10.1093/nar/gkw430",
     "Github": "zji90/TSCAN",
     "BioC": "TSCAN",
-    "Citations": 27,
+    "Citations": 29,
     "Categories": ["Clustering", "Ordering", "MarkerGenes", "Visualisation", "Interactive"]
   },
   {
@@ -6813,7 +6953,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "PyPI": "umis",
-    "Citations": 28,
+    "Citations": 29,
     "Categories": ["UMIs", "Quantification"]
   },
   {
@@ -7001,7 +7141,7 @@
     "Updated": "2016-09-12",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-1033-x",
     "Github": "lengning/WaveCrest",
-    "Citations": 16,
+    "Citations": 17,
     "Categories": ["Ordering", "MarkerGenes", "ExpressionPatterns", "Interactive"]
   },
   {
@@ -7049,7 +7189,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3569",
     "Github": "ManuSetty/wishbone",
     "PyPI": "wishbone",
-    "Citations": 52,
+    "Citations": 55,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
@@ -7096,7 +7236,7 @@
     "Updated": "2016-12-22",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0805-z",
     "Github": "epierson9/ZIFA",
-    "Citations": 48,
+    "Citations": 49,
     "Categories": ["DimensionalityReduction"]
   },
   {
