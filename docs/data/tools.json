@@ -12,7 +12,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nature19348",
     "Github": "nsalomonis/altanalyze",
     "PyPI": "AltAnalyze",
-    "Citations": 46,
+    "Citations": 47,
     "Categories": ["Quantification", "Normalisation", "GeneFiltering", "Clustering", "Classification", "DifferentialExpression", "MarkerGenes", "GeneSets", "GeneNetworks", "CellCycle", "DimensionalityReduction", "AlternativeSplicing", "Visualisation", "Interactive"]
   },
   {
@@ -49,16 +49,17 @@
   {
     "Name": "AUCell",
     "Platform": "R",
-    "DOI": "10.1101/144502",
+    "DOI": "10.1038/nmeth.4463",
+    "PubDate": "2017-10-09",
     "Code": "https://github.com/aertslab/AUCell",
     "Description": "AUCell is an R-package to analyze the state of gene-sets in single-cell RNA-seq data (i.e. identify cells with active gene signatures).",
     "License": "Custom",
     "Added": "2017-06-26",
-    "Updated": "2017-06-26",
-    "Preprint": true,
-    "DOIURL": "http://dx.doi.org/10.1101/144502",
+    "Updated": "2017-12-20",
+    "DOIURL": "http://dx.doi.org/10.1038/nmeth.4463",
     "Github": "aertslab/AUCell",
     "BioC": "AUCell",
+    "Citations": 0,
     "Categories": ["GeneNetworks", "Visualisation"]
   },
   {
@@ -73,7 +74,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "Citations": 408,
+    "Citations": 418,
     "Categories": ["GeneFiltering", "Clustering"]
   },
   {
@@ -251,7 +252,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0888-1",
     "Github": "teichlab/cellity",
     "BioC": "cellity",
-    "Citations": 27,
+    "Citations": 28,
     "Categories": ["QualityControl"]
   },
   {
@@ -264,7 +265,7 @@
     "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1038/ncomms14049",
     "CRAN": "cellranger",
-    "Citations": 64,
+    "Citations": 67,
     "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -353,6 +354,21 @@
     "Categories": ["DifferentialExpression"]
   },
   {
+    "Name": "DECENT",
+    "Platform": "R",
+    "DOI": "10.1101/225177",
+    "Code": "https://github.com/cz-ye/DECENT",
+    "Description": "Differential Expression with Capture Efficiency AdjustmeNT for Single-Cell RNA-seq Data",
+    "License": "GPL-3",
+    "Added": "2017-12-20",
+    "Updated": "2017-12-20",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/225177",
+    "Github": "cz-ye/DECENT",
+    "Citations": 0,
+    "Categories": ["Imputation", "DifferentialExpression"]
+  },
+  {
     "Name": "DeLorean",
     "Platform": "R",
     "DOI": "10.1093/bioinformatics/btw372",
@@ -364,24 +380,38 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw372",
     "Github": "JohnReid/DeLorean",
-    "CRAN": "DeLorean",
     "Citations": 14,
     "Categories": ["GeneFiltering", "Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
     "Name": "demuxlet",
     "Platform": "C++",
-    "DOI": "10.1101/118778",
+    "DOI": "10.1038/nbt.4042",
+    "PubDate": "2017-12-11",
     "Code": "https://github.com/statgen/demuxlet",
     "Description": "Genetic multiplexing of barcoded single cell RNA-seq",
     "License": "Apache-2.0",
     "Added": "2017-03-29",
-    "Updated": "2017-09-11",
-    "Preprint": true,
-    "DOIURL": "http://dx.doi.org/10.1101/118778",
+    "Updated": "2017-12-20",
+    "DOIURL": "http://dx.doi.org/10.1038/nbt.4042",
     "Github": "statgen/demuxlet",
     "Citations": 0,
     "Categories": ["UMIs", "QualityControl", "Variants"]
+  },
+  {
+    "Name": "DESCEND",
+    "Platform": "R",
+    "DOI": "10.1101/227033",
+    "Code": "https://github.com/jingshuw/descend",
+    "Description": "DESCEND deconvolves the true gene expression distribution across cells for UMI scRNA-seq counts",
+    "License": "GPL (>=2)",
+    "Added": "2017-12-20",
+    "Updated": "2017-12-20",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/227033",
+    "Github": "jingshuw/descend",
+    "Citations": 0,
+    "Categories": ["DifferentialExpression", "VariableGenes", "Modality", "Visualisation"]
   },
   {
     "Name": "destiny",
@@ -395,7 +425,7 @@
     "Updated": "2017-04-18",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btv715",
     "BioC": "destiny",
-    "Citations": 28,
+    "Citations": 30,
     "Categories": ["DimensionalityReduction", "Visualisation"]
   },
   {
@@ -423,7 +453,7 @@
     "Added": "2016-09-22",
     "Updated": "2017-08-01",
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3971",
-    "Citations": 30,
+    "Citations": 31,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
@@ -643,7 +673,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-1010-4",
     "Github": "lanjiangboston/GiniClust",
-    "Citations": 15,
+    "Citations": 16,
     "Categories": ["Normalisation", "Clustering", "DimensionalityReduction", "RareCells", "Interactive"]
   },
   {
@@ -868,7 +898,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0844-5",
     "Github": "RGLab/MAST",
     "BioC": "MAST",
-    "Citations": 55,
+    "Citations": 56,
     "Categories": ["QualityControl", "Normalisation", "DifferentialExpression", "GeneSets", "GeneNetworks"]
   },
   {
@@ -930,7 +960,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
-    "Citations": 297,
+    "Citations": 301,
     "Categories": ["Clustering", "Ordering", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -947,6 +977,21 @@
     "CRAN": "mpath",
     "Citations": 11,
     "Categories": ["Ordering"]
+  },
+  {
+    "Name": "netSmooth",
+    "Platform": "R",
+    "DOI": "10.1101/234021",
+    "Code": "https://github.com/BIMSBbioinfo/netSmooth",
+    "Description": "A Network smoothing based method for single cell RNA-seq",
+    "License": "GPL-3",
+    "Added": "2017-12-20",
+    "Updated": "2017-12-20",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/234021",
+    "Github": "BIMSBbioinfo/netSmooth",
+    "Citations": 0,
+    "Categories": ["Imputation", "Clustering", "GeneNetworks", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "NetworkInference",
@@ -990,7 +1035,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3549",
     "Github": "Bioconductor-mirror/Oscope",
     "BioC": "Oscope",
-    "Citations": 33,
+    "Citations": 34,
     "Categories": ["CellCycle"]
   },
   {
@@ -1195,7 +1240,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "Citations": 31,
+    "Citations": 32,
     "Categories": ["RareCells"]
   },
   {
@@ -1312,7 +1357,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4236",
     "Github": "hemberg-lab/sc3",
     "BioC": "SC3",
-    "Citations": 17,
+    "Citations": 19,
     "Categories": ["Clustering", "Interactive"]
   },
   {
@@ -1391,7 +1436,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.2967",
     "Github": "hms-dbmi/scde",
     "BioC": "scde",
-    "Citations": 148,
+    "Citations": 149,
     "Categories": ["DifferentialExpression", "GeneSets", "Visualisation"]
   },
   {
@@ -1412,14 +1457,14 @@
   {
     "Name": "SCENIC",
     "Platform": "R",
-    "DOI": "10.1101/144501",
+    "DOI": "10.1038/nmeth.4463",
+    "PubDate": "2017-10-09",
     "Code": "https://github.com/aertslab/SCENIC",
     "Description": "SCENIC is a tool to infer Gene Regulatory Networks and cell types from single-cell RNA-seq data.",
     "License": "Custom",
     "Added": "2017-06-26",
-    "Updated": "2017-06-26",
-    "Preprint": true,
-    "DOIURL": "http://dx.doi.org/10.1101/144501",
+    "Updated": "2017-12-20",
+    "DOIURL": "http://dx.doi.org/10.1038/nmeth.4463",
     "Github": "aertslab/SCENIC",
     "Citations": 0,
     "Categories": ["Clustering", "GeneNetworks", "Visualisation"]
@@ -1481,7 +1526,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3102",
     "Github": "PMBio/scLVM",
     "PyPI": "scLVM",
-    "Citations": 233,
+    "Citations": 236,
     "Categories": ["Normalisation", "VariableGenes", "CellCycle", "Visualisation"]
   },
   {
@@ -1513,7 +1558,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4263",
     "Github": "rhondabacher/SCnorm",
     "BioC": "SCnorm",
-    "Citations": 6,
+    "Citations": 7,
     "Categories": ["Normalisation"]
   },
   {
@@ -1532,15 +1577,19 @@
     "Categories": ["Ordering", "GeneNetworks"]
   },
   {
-    "Name": "SCONE",
+    "Name": "scone",
     "Platform": "R",
+    "DOI": "10.1101/235382",
     "Code": "https://github.com/YosefLab/scone",
     "Description": "SCONE (Single-Cell Overview of Normalized Expression), a package for single-cell RNA-seq data quality control (QC) and normalization. This data-driven framework uses summaries of expression data to assess the efficacy of normalization workflows.",
     "License": "Artistic-2.0",
     "Added": "2016-09-08",
-    "Updated": "2016-09-08",
+    "Updated": "2017-12-20",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/235382",
     "Github": "YosefLab/scone",
     "BioC": "scone",
+    "Citations": 0,
     "Categories": ["QualityControl", "Normalisation", "Visualisation", "Interactive"]
   },
   {
@@ -1644,7 +1693,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0947-7",
     "Github": "MarioniLab/scran",
     "BioC": "scran",
-    "Citations": 35,
+    "Citations": 36,
     "Categories": ["Normalisation", "Integration", "VariableGenes", "CellCycle", "Visualisation", "Interactive"]
   },
   {
@@ -1765,7 +1814,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3192",
     "Github": "satijalab/seurat",
     "CRAN": "Seurat",
-    "Citations": 167,
+    "Citations": 174,
     "Categories": ["Normalisation", "Imputation", "Integration", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -1858,6 +1907,18 @@
     "Github": "jw156605/SingleSplice",
     "Citations": 9,
     "Categories": ["AlternativeSplicing"]
+  },
+  {
+    "Name": "singlet",
+    "Platform": "Python",
+    "Code": "https://github.com/iosonofabio/singlet",
+    "Description": "Single cell RNA-Seq analysis with quantitative phenotypes.",
+    "License": "MIT",
+    "Added": "2017-12-20",
+    "Updated": "2017-12-20",
+    "Github": "iosonofabio/singlet",
+    "PyPI": "singlet",
+    "Categories": ["Normalisation", "GeneFiltering", "Clustering", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "SinQC",
@@ -1972,7 +2033,7 @@
     "Updated": "2017-04-18",
     "DOIURL": "http://dx.doi.org/10.1038/nprot.2016.066",
     "Github": "nolanlab/spade",
-    "Citations": 14,
+    "Citations": 15,
     "Categories": ["Clustering", "Ordering", "MarkerGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -2048,7 +2109,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "Citations": 31,
+    "Citations": 32,
     "Categories": ["Ordering", "StemCells"]
   },
   {
@@ -2185,7 +2246,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "PyPI": "umis",
-    "Citations": 29,
+    "Citations": 30,
     "Categories": ["UMIs", "Quantification"]
   },
   {
@@ -2203,6 +2264,20 @@
     "PyPI": "uncurl",
     "Citations": 0,
     "Categories": ["Clustering", "Ordering", "DimensionalityReduction", "Visualisation"]
+  },
+  {
+    "Name": "VASC",
+    "Platform": "Python",
+    "DOI": "10.1101/199315",
+    "Code": "https://github.com/wang-research/VASC",
+    "Description": "Variational autoencoder for single cell RNA-seq datasets",
+    "Added": "2017-12-20",
+    "Updated": "2017-12-20",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/199315",
+    "Github": "wang-research/VASC",
+    "Citations": 0,
+    "Categories": ["DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "VDJPuzzle",
@@ -2245,7 +2320,7 @@
     "Updated": "2016-09-12",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-1033-x",
     "Github": "lengning/WaveCrest",
-    "Citations": 17,
+    "Citations": 19,
     "Categories": ["Ordering", "MarkerGenes", "ExpressionPatterns", "Interactive"]
   },
   {
@@ -2261,7 +2336,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3569",
     "Github": "ManuSetty/wishbone",
     "PyPI": "wishbone",
-    "Citations": 55,
+    "Citations": 57,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
