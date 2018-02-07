@@ -842,7 +842,7 @@
     "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1038/ncomms14049",
     "CRAN": "cellranger",
-    "Citations": 81,
+    "Citations": 82,
     "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -1447,7 +1447,7 @@
     "Updated": "2017-04-18",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btv715",
     "BioC": "destiny",
-    "Citations": 39,
+    "Citations": 41,
     "Categories": ["DimensionalityReduction", "Visualisation"]
   },
   {
@@ -1539,7 +1539,7 @@
     "Added": "2016-09-22",
     "Updated": "2017-08-01",
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3971",
-    "Citations": 41,
+    "Citations": 42,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
@@ -2186,7 +2186,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s12859-016-1176-5",
     "Github": "YosefLab/FastProject",
     "PyPI": "FastProject",
-    "Citations": 6,
+    "Citations": 7,
     "Categories": ["GeneSets", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -2418,7 +2418,7 @@
     "Updated": "2017-03-10",
     "DOIURL": "http://dx.doi.org/10.1126/sciimmunol.aal2192",
     "Github": "Teichlab/GPfates",
-    "Citations": 22,
+    "Citations": 23,
     "Categories": ["Ordering", "Visualisation"]
   },
   {
@@ -3197,7 +3197,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0844-5",
     "Github": "RGLab/MAST",
     "BioC": "MAST",
-    "Citations": 64,
+    "Citations": 65,
     "Categories": ["QualityControl", "Normalisation", "DifferentialExpression", "GeneSets", "GeneNetworks"]
   },
   {
@@ -3387,7 +3387,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
-    "Citations": 322,
+    "Citations": 323,
     "Categories": ["Clustering", "Ordering", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -4139,6 +4139,53 @@
     "Categories": ["Visualisation", "Simulation"]
   },
   {
+    "Name": "PROSSTT",
+    "Platform": "Python",
+    "DOI": "10.1101/256941",
+    "Code": "https://github.com/soedinglab/prosstt",
+    "Description": "PROSSTT (PRObabilistic Simulations of ScRNA-seq Tree-like Topologies) is a package with code for the simulation of scRNAseq data for dynamic processes such as cell differentiation.",
+    "License": "GPL-3",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "Integration": false,
+    "GeneFiltering": false,
+    "Clustering": false,
+    "Classification": false,
+    "Ordering": false,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": false,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": false,
+    "Interactive": false,
+    "Simulation": true,
+    "Added": "2018-02-07",
+    "Updated": "2018-02-07",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/256941",
+    "Github": "soedinglab/prosstt",
+    "Citations": 0,
+    "Categories": ["Simulation"]
+  },
+  {
     "Name": "pseudodynamics",
     "Platform": "MATLAB",
     "DOI": "10.1101/219188",
@@ -4279,6 +4326,51 @@
     "Categories": ["RareCells"]
   },
   {
+    "Name": "RAFSIL",
+    "Platform": "R",
+    "DOI": "10.1101/258699",
+    "Code": "http://www.kostkalab.net/software.html",
+    "Description": "Implements a two-step procedure using feature construction and random forest based similarity learning for single cell RNA sequencing data.",
+    "License": "GPL-2",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "Integration": false,
+    "GeneFiltering": false,
+    "Clustering": true,
+    "Classification": false,
+    "Ordering": false,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": true,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": false,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2018-02-07",
+    "Updated": "2018-02-07",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/258699",
+    "Categories": ["Clustering", "DimensionalityReduction"]
+  },
+  {
     "Name": "RCA",
     "Platform": "R",
     "DOI": "10.1038/ng.3818",
@@ -4323,7 +4415,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/ng.3818",
     "Github": "GIS-SP-Group/RCA",
     "CRAN": "RCA",
-    "Citations": 17,
+    "Citations": 18,
     "Categories": ["Clustering", "Visualisation"]
   },
   {
@@ -4887,7 +4979,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.2967",
     "Github": "hms-dbmi/scde",
     "BioC": "scde",
-    "Citations": 164,
+    "Citations": 166,
     "Categories": ["DifferentialExpression", "GeneSets", "Visualisation"]
   },
   {
@@ -5262,7 +5354,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3102",
     "Github": "PMBio/scLVM",
     "PyPI": "scLVM",
-    "Citations": 250,
+    "Citations": 252,
     "Categories": ["Normalisation", "VariableGenes", "CellCycle", "Visualisation"]
   },
   {
@@ -6006,7 +6098,7 @@
     "Updated": "2016-09-12",
     "DOIURL": "http://dx.doi.org/10.1073/pnas.1408993111",
     "Github": "gcyuan/SCUBA",
-    "Citations": 70,
+    "Citations": 71,
     "Categories": ["Ordering", "ExpressionPatterns"]
   },
   {
@@ -6190,7 +6282,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3192",
     "Github": "satijalab/seurat",
     "CRAN": "Seurat",
-    "Citations": 191,
+    "Citations": 193,
     "Categories": ["Normalisation", "Imputation", "Integration", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -6704,7 +6796,7 @@
     "Github": "bioFAM/slalom",
     "BioC": "slalom",
     "PyPI": "slalom",
-    "Citations": 0,
+    "Citations": 1,
     "Categories": ["VariableGenes", "GeneSets", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -7505,7 +7597,7 @@
     "DOIURL": "http://dx.doi.org/10.1093/nar/gkw430",
     "Github": "zji90/TSCAN",
     "BioC": "TSCAN",
-    "Citations": 32,
+    "Citations": 33,
     "Categories": ["Clustering", "Ordering", "MarkerGenes", "Visualisation", "Interactive"]
   },
   {
@@ -7552,7 +7644,7 @@
     "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1101/gr.209601.116",
     "Github": "CGATOxford/UMI-tools",
-    "Citations": 16,
+    "Citations": 17,
     "Categories": ["UMIs", "Quantification"]
   },
   {
@@ -7600,7 +7692,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "PyPI": "umis",
-    "Citations": 37,
+    "Citations": 38,
     "Categories": ["UMIs", "Quantification"]
   },
   {
@@ -7929,7 +8021,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3569",
     "Github": "ManuSetty/wishbone",
     "PyPI": "wishbone",
-    "Citations": 71,
+    "Citations": 73,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
