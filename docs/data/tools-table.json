@@ -44,7 +44,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nature19348",
     "Github": "nsalomonis/altanalyze",
     "PyPI": "AltAnalyze",
-    "Citations": 52,
+    "Citations": 53,
     "Categories": ["Quantification", "Normalisation", "GeneFiltering", "Clustering", "Classification", "DifferentialExpression", "MarkerGenes", "GeneSets", "GeneNetworks", "CellCycle", "DimensionalityReduction", "AlternativeSplicing", "Visualisation", "Interactive"]
   },
   {
@@ -92,7 +92,7 @@
     "DOIURL": "http://dx.doi.org/10.1016/j.molcel.2017.06.003",
     "Github": "yeolab/anchor",
     "PyPI": "anchor",
-    "Citations": 1,
+    "Citations": 2,
     "Categories": ["Modality"]
   },
   {
@@ -234,7 +234,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "Citations": 454,
+    "Citations": 459,
     "Categories": ["GeneFiltering", "Clustering"]
   },
   {
@@ -512,7 +512,7 @@
     "DOIURL": "http://dx.doi.org/10.1016/j.molcel.2017.06.003",
     "Github": "yeolab/bonvoyage",
     "PyPI": "bonvoyage",
-    "Citations": 1,
+    "Citations": 2,
     "Categories": ["Transformation"]
   },
   {
@@ -797,7 +797,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0888-1",
     "Github": "teichlab/cellity",
     "BioC": "cellity",
-    "Citations": 31,
+    "Citations": 32,
     "Categories": ["QualityControl"]
   },
   {
@@ -842,7 +842,7 @@
     "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1038/ncomms14049",
     "CRAN": "cellranger",
-    "Citations": 82,
+    "Citations": 84,
     "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -1447,7 +1447,7 @@
     "Updated": "2017-04-18",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btv715",
     "BioC": "destiny",
-    "Citations": 41,
+    "Citations": 42,
     "Categories": ["DimensionalityReduction", "Visualisation"]
   },
   {
@@ -2325,7 +2325,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-1010-4",
     "Github": "lanjiangboston/GiniClust",
-    "Citations": 18,
+    "Citations": 19,
     "Categories": ["Normalisation", "Clustering", "DimensionalityReduction", "RareCells", "Interactive"]
   },
   {
@@ -3197,7 +3197,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0844-5",
     "Github": "RGLab/MAST",
     "BioC": "MAST",
-    "Citations": 65,
+    "Citations": 66,
     "Categories": ["QualityControl", "Normalisation", "DifferentialExpression", "GeneSets", "GeneNetworks"]
   },
   {
@@ -3387,7 +3387,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
-    "Citations": 323,
+    "Citations": 324,
     "Categories": ["Clustering", "Ordering", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -3436,6 +3436,49 @@
     "CRAN": "mpath",
     "Citations": 12,
     "Categories": ["Ordering"]
+  },
+  {
+    "Name": "MUDAN",
+    "Platform": "R",
+    "Code": "https://github.com/JEFworks/MUDAN",
+    "Description": "Multi-sample Unified Discriminant ANalysis",
+    "License": "GPL",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": true,
+    "Normalisation": true,
+    "Imputation": false,
+    "Integration": false,
+    "GeneFiltering": true,
+    "Clustering": true,
+    "Classification": false,
+    "Ordering": false,
+    "DifferentialExpression": true,
+    "MarkerGenes": true,
+    "ExpressionPatterns": false,
+    "VariableGenes": true,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": true,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": true,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2018-02-13",
+    "Updated": "2018-02-13",
+    "Github": "JEFworks/MUDAN",
+    "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "netSmooth",
@@ -3717,7 +3760,7 @@
     "DOIURL": "http://dx.doi.org/10.1016/j.molcel.2017.06.003",
     "Github": "YeoLab/outrigger",
     "PyPI": "outrigger",
-    "Citations": 1,
+    "Citations": 2,
     "Categories": ["AlternativeSplicing"]
   },
   {
@@ -4794,15 +4837,16 @@
   {
     "Name": "Scanpy",
     "Platform": "Python",
-    "DOI": "10.1101/174029",
+    "DOI": "10.1186/s13059-017-1382-0",
+    "PubDate": "2018-02-06",
     "Code": "https://github.com/theislab/scanpy",
-    "Description": "Single-Cell Analysis in Python",
+    "Description": "Scanpy is a scalable toolkit for analyzing single-cell gene expression data.",
     "License": "BSD-3-clause",
     "Assembly": false,
     "Alignment": false,
     "UMIs": false,
     "Quantification": false,
-    "QualityControl": false,
+    "QualityControl": true,
     "Normalisation": true,
     "Imputation": false,
     "Integration": false,
@@ -4831,13 +4875,12 @@
     "Interactive": false,
     "Simulation": true,
     "Added": "2017-05-21",
-    "Updated": "2017-09-18",
-    "Preprint": true,
-    "DOIURL": "http://dx.doi.org/10.1101/174029",
+    "Updated": "2018-02-13",
+    "DOIURL": "http://dx.doi.org/10.1186/s13059-017-1382-0",
     "Github": "theislab/scanpy",
     "PyPI": "scanpy",
     "Citations": 0,
-    "Categories": ["Normalisation", "GeneFiltering", "Clustering", "Ordering", "DifferentialExpression", "VariableGenes", "DimensionalityReduction", "Visualisation", "Simulation"]
+    "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Ordering", "DifferentialExpression", "VariableGenes", "DimensionalityReduction", "Visualisation", "Simulation"]
   },
   {
     "Name": "Scater",
@@ -4979,7 +5022,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.2967",
     "Github": "hms-dbmi/scde",
     "BioC": "scde",
-    "Citations": 166,
+    "Citations": 167,
     "Categories": ["DifferentialExpression", "GeneSets", "Visualisation"]
   },
   {
@@ -5169,6 +5212,52 @@
     "Github": "aet21/SCENT",
     "Citations": 1,
     "Categories": ["Ordering"]
+  },
+  {
+    "Name": "scEpath",
+    "Platform": "MATLAB",
+    "DOI": "10.1093/bioinformatics/bty058",
+    "PubDate": "2018-02-05",
+    "Code": "https://github.com/sqjin/scEpath",
+    "Description": "scEpath is a novel computational method for quantitatively measuring developmental potency and plasticity of single cells and transition probabilities between cell states, and inferring lineage relationships and pseudotemporal ordering from single-cell gene expression data.",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": true,
+    "Normalisation": true,
+    "Imputation": false,
+    "Integration": false,
+    "GeneFiltering": false,
+    "Clustering": true,
+    "Classification": false,
+    "Ordering": true,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": true,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": true,
+    "CellCycle": false,
+    "DimensionalityReduction": true,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": true,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2018-02-13",
+    "Updated": "2018-02-13",
+    "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/bty058",
+    "Github": "sqjin/scEpath",
+    "Citations": 0,
+    "Categories": ["QualityControl", "Normalisation", "Clustering", "Ordering", "ExpressionPatterns", "GeneNetworks", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "scFBA",
@@ -6052,7 +6141,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3854",
     "Github": "pcamara/scTDA",
     "PyPI": "scTDA",
-    "Citations": 13,
+    "Citations": 14,
     "Categories": ["QualityControl", "Ordering", "Visualisation"]
   },
   {
@@ -7501,7 +7590,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3800",
     "Github": "teichlab/tracer",
     "PyPI": "tracer",
-    "Citations": 58,
+    "Citations": 60,
     "Categories": ["Assembly", "Alignment", "Quantification", "Immune", "Visualisation"]
   },
   {
@@ -7692,7 +7781,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4220",
     "Github": "vals/umis",
     "PyPI": "umis",
-    "Citations": 38,
+    "Citations": 39,
     "Categories": ["UMIs", "Quantification"]
   },
   {
