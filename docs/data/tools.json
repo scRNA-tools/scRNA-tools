@@ -12,7 +12,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nature19348",
     "Github": "nsalomonis/altanalyze",
     "PyPI": "AltAnalyze",
-    "Citations": 53,
+    "Citations": 54,
     "Categories": ["Quantification", "Normalisation", "GeneFiltering", "Clustering", "Classification", "DifferentialExpression", "MarkerGenes", "GeneSets", "GeneNetworks", "CellCycle", "DimensionalityReduction", "AlternativeSplicing", "Visualisation", "Interactive"]
   },
   {
@@ -74,7 +74,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "Citations": 459,
+    "Citations": 461,
     "Categories": ["GeneFiltering", "Clustering"]
   },
   {
@@ -266,7 +266,7 @@
     "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1038/ncomms14049",
     "CRAN": "cellranger",
-    "Citations": 84,
+    "Citations": 86,
     "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -725,7 +725,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-1010-4",
     "Github": "lanjiangboston/GiniClust",
-    "Citations": 19,
+    "Citations": 21,
     "Categories": ["Normalisation", "Clustering", "DimensionalityReduction", "RareCells", "Interactive"]
   },
   {
@@ -834,6 +834,20 @@
     "Github": "NetLand-NTU/HopLand",
     "Citations": 0,
     "Categories": ["Ordering", "Visualisation"]
+  },
+  {
+    "Name": "ideXplorer",
+    "Platform": "R",
+    "DOI": "10.1038/ncb3494",
+    "PubDate": "2017-03-21",
+    "Code": "https://git.embl.de/velten/indeXplorer/",
+    "Description": "indeXplorer is a web-based App written with shiny for the explorative analysis of index-sorted, single-cell transcriptomic data.",
+    "License": "GPL-3",
+    "Added": "2018-02-16",
+    "Updated": "2018-02-16",
+    "DOIURL": "http://dx.doi.org/10.1038/ncb3494",
+    "Citations": 0,
+    "Categories": ["Visualisation", "Interactive"]
   },
   {
     "Name": "iscandar",
@@ -1008,6 +1022,22 @@
     "Categories": ["Integration", "Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
+    "Name": "MERLoT",
+    "Platform": "R/Python",
+    "DOI": "10.1101/261768",
+    "Code": "https://github.com/soedinglab/merlot",
+    "Description": "MERLot is a tool that can reconstruct the lineage tree topology that explains the emergence of different cell types from a progenitor population.",
+    "License": "GPL-3",
+    "Added": "2018-02-16",
+    "Updated": "2018-02-16",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/261768",
+    "Github": "soedinglab/merlot",
+    "PyPI": "Merlot",
+    "Citations": 0,
+    "Categories": ["Ordering", "Visualisation"]
+  },
+  {
     "Name": "MetaNeighbour",
     "Platform": "R",
     "DOI": "10.1101/150524",
@@ -1051,7 +1081,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
-    "Citations": 324,
+    "Citations": 325,
     "Categories": ["Clustering", "Ordering", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -1068,6 +1098,21 @@
     "CRAN": "mpath",
     "Citations": 12,
     "Categories": ["Ordering"]
+  },
+  {
+    "Name": "MPSSC",
+    "Platform": "MATLAB",
+    "DOI": "10.1093/bioinformatics/bty050",
+    "PubDate": "2018-02-08",
+    "Code": "https://github.com/ishspsy/project/tree/master/MPSSC",
+    "Description": "MPSSC is a novel spectral clustering framework that imposes sparse structures on a target matrix.",
+    "License": "GPL-3",
+    "Added": "2018-02-17",
+    "Updated": "2018-02-17",
+    "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/bty050",
+    "Github": "ishspsy/project/tree/master/MPSSC",
+    "Citations": 0,
+    "Categories": ["Clustering"]
   },
   {
     "Name": "MUDAN",
@@ -1371,6 +1416,7 @@
     "Updated": "2018-02-07",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/258699",
+    "Citations": 0,
     "Categories": ["Clustering", "DimensionalityReduction"]
   },
   {
@@ -1487,7 +1533,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4236",
     "Github": "hemberg-lab/sc3",
     "BioC": "SC3",
-    "Citations": 33,
+    "Citations": 34,
     "Categories": ["Clustering", "Interactive"]
   },
   {
@@ -1535,7 +1581,7 @@
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btw777",
     "Github": "davismcc/scater",
     "BioC": "scater",
-    "Citations": 8,
+    "Citations": 9,
     "Categories": ["Quantification", "QualityControl", "Normalisation", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -1566,7 +1612,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.2967",
     "Github": "hms-dbmi/scde",
     "BioC": "scde",
-    "Citations": 167,
+    "Citations": 168,
     "Categories": ["DifferentialExpression", "GeneSets", "Visualisation"]
   },
   {
@@ -1866,7 +1912,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0947-7",
     "Github": "MarioniLab/scran",
     "BioC": "scran",
-    "Citations": 41,
+    "Citations": 42,
     "Categories": ["Normalisation", "Integration", "VariableGenes", "CellCycle", "Visualisation", "Interactive"]
   },
   {
@@ -2224,7 +2270,7 @@
     "Updated": "2017-04-18",
     "DOIURL": "http://dx.doi.org/10.1038/nprot.2016.066",
     "Github": "nolanlab/spade",
-    "Citations": 19,
+    "Citations": 20,
     "Categories": ["Clustering", "Ordering", "MarkerGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -2302,6 +2348,20 @@
     "Github": "dgrun/StemID",
     "Citations": 36,
     "Categories": ["Ordering", "StemCells"]
+  },
+  {
+    "Name": "STEMNET",
+    "Platform": "R",
+    "DOI": "10.1038/ncb3493",
+    "PubDate": "2017-03-20",
+    "Code": "https://git.embl.de/velten/STEMNET",
+    "Description": "We first use hierarchical clustering to identify the most mature cell populations; we then use these populations as a training set to classify priming in the less mature populations.",
+    "License": "GPL-3",
+    "Added": "2018-02-16",
+    "Updated": "2018-02-16",
+    "DOIURL": "http://dx.doi.org/10.1038/ncb3493",
+    "Citations": 27,
+    "Categories": ["Ordering", "Visualisation"]
   },
   {
     "Name": "switchde",
@@ -2421,7 +2481,7 @@
     "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1101/gr.209601.116",
     "Github": "CGATOxford/UMI-tools",
-    "Citations": 17,
+    "Citations": 18,
     "Categories": ["UMIs", "Quantification"]
   },
   {
@@ -2557,7 +2617,7 @@
     "Updated": "2016-12-22",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0805-z",
     "Github": "epierson9/ZIFA",
-    "Citations": 57,
+    "Citations": 59,
     "Categories": ["DimensionalityReduction"]
   },
   {
