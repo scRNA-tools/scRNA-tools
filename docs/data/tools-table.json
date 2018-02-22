@@ -234,7 +234,7 @@
     "Updated": "2016-09-08",
     "DOIURL": "http://dx.doi.org/10.1126/science.aaa1934",
     "Github": "linnarsson-lab/BackSPIN",
-    "Citations": 461,
+    "Citations": 462,
     "Categories": ["GeneFiltering", "Clustering"]
   },
   {
@@ -606,7 +606,7 @@
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/185504",
     "Github": "teichlab/bracer",
-    "Citations": 0,
+    "Citations": 1,
     "Categories": ["Assembly", "Alignment", "Quantification", "Immune", "Visualisation"]
   },
   {
@@ -842,7 +842,7 @@
     "Updated": "2017-09-11",
     "DOIURL": "http://dx.doi.org/10.1038/ncomms14049",
     "CRAN": "cellranger",
-    "Citations": 86,
+    "Citations": 87,
     "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -1447,7 +1447,7 @@
     "Updated": "2017-04-18",
     "DOIURL": "http://dx.doi.org/10.1093/bioinformatics/btv715",
     "BioC": "destiny",
-    "Citations": 42,
+    "Citations": 43,
     "Categories": ["DimensionalityReduction", "Visualisation"]
   },
   {
@@ -1539,7 +1539,7 @@
     "Added": "2016-09-22",
     "Updated": "2017-08-01",
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3971",
-    "Citations": 42,
+    "Citations": 44,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation"]
   },
   {
@@ -2738,6 +2738,52 @@
     "Categories": ["Visualisation", "Interactive"]
   },
   {
+    "Name": "inferCNV",
+    "Platform": "R",
+    "DOI": "10.1126/science.1254257",
+    "PubDate": "2014-06-20",
+    "Code": "https://github.com/broadinstitute/inferCNV",
+    "Description": "Infer Copy Number Variation using Single-cell RNA-Seq Expression Data.",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "Integration": false,
+    "GeneFiltering": false,
+    "Clustering": false,
+    "Classification": false,
+    "Ordering": false,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": false,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": true,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": true,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2018-02-22",
+    "Updated": "2018-02-22",
+    "DOIURL": "http://dx.doi.org/10.1126/science.1254257",
+    "Github": "broadinstitute/inferCNV",
+    "Citations": 611,
+    "Categories": ["Variants", "Visualisation"]
+  },
+  {
     "Name": "iscandar",
     "Platform": "Python",
     "Code": "https://github.com/jarny/iscandar",
@@ -3243,7 +3289,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0844-5",
     "Github": "RGLab/MAST",
     "BioC": "MAST",
-    "Citations": 66,
+    "Citations": 67,
     "Categories": ["QualityControl", "Normalisation", "DifferentialExpression", "GeneSets", "GeneNetworks"]
   },
   {
@@ -3481,7 +3527,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.2859",
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
-    "Citations": 325,
+    "Citations": 327,
     "Categories": ["Clustering", "Ordering", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -3994,7 +4040,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1186/s12859-016-0984-y",
     "Github": "JustinaZ/pcaReduce",
-    "Citations": 15,
+    "Citations": 16,
     "Categories": ["Clustering"]
   },
   {
@@ -4088,7 +4134,7 @@
     "DOIURL": "http://dx.doi.org/10.1016/j.cels.2017.10.012",
     "Github": "KenLauLab/pCreode",
     "PyPI": "pcreode",
-    "Citations": 0,
+    "Citations": 1,
     "Categories": ["Ordering", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -4506,7 +4552,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "Citations": 36,
+    "Citations": 37,
     "Categories": ["RareCells"]
   },
   {
@@ -4600,7 +4646,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/ng.3818",
     "Github": "GIS-SP-Group/RCA",
     "CRAN": "RCA",
-    "Citations": 18,
+    "Citations": 20,
     "Categories": ["Clustering", "Visualisation"]
   },
   {
@@ -4834,6 +4880,52 @@
     "Categories": ["Normalisation", "DifferentialExpression"]
   },
   {
+    "Name": "SAUCIE",
+    "Platform": "Python",
+    "DOI": "10.1101/237065",
+    "Code": "https://github.com/KrishnaswamyLab/SAUCIE/",
+    "Description": "SAUCIE (Sparse Autoencoder for Unsupervised Clustering, Imputation, and Embedding), simultaneously performs several key tasks for single-cell data analysis including 1) clustering, 2) batch correction, 3) visualization, and 4) denoising/imputation.",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": true,
+    "Imputation": true,
+    "Integration": false,
+    "GeneFiltering": false,
+    "Clustering": true,
+    "Classification": false,
+    "Ordering": false,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": false,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": true,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": false,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2018-02-22",
+    "Updated": "2018-02-22",
+    "Preprint": true,
+    "DOIURL": "http://dx.doi.org/10.1101/237065",
+    "Github": "KrishnaswamyLab/SAUCIE/",
+    "Citations": 0,
+    "Categories": ["Normalisation", "Imputation", "Clustering", "DimensionalityReduction"]
+  },
+  {
     "Name": "SAVER",
     "Platform": "R",
     "DOI": "10.1101/138677",
@@ -4925,7 +5017,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4236",
     "Github": "hemberg-lab/sc3",
     "BioC": "SC3",
-    "Citations": 34,
+    "Citations": 37,
     "Categories": ["Clustering", "Interactive"]
   },
   {
@@ -5164,7 +5256,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.2967",
     "Github": "hms-dbmi/scde",
     "BioC": "scde",
-    "Citations": 168,
+    "Citations": 171,
     "Categories": ["DifferentialExpression", "GeneSets", "Visualisation"]
   },
   {
@@ -5681,7 +5773,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.4263",
     "Github": "rhondabacher/SCnorm",
     "BioC": "SCnorm",
-    "Citations": 10,
+    "Citations": 11,
     "Categories": ["Normalisation"]
   },
   {
@@ -6104,7 +6196,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0947-7",
     "Github": "MarioniLab/scran",
     "BioC": "scran",
-    "Citations": 42,
+    "Citations": 43,
     "Categories": ["Normalisation", "Integration", "VariableGenes", "CellCycle", "Visualisation", "Interactive"]
   },
   {
@@ -6329,7 +6421,7 @@
     "Updated": "2016-09-12",
     "DOIURL": "http://dx.doi.org/10.1073/pnas.1408993111",
     "Github": "gcyuan/SCUBA",
-    "Citations": 71,
+    "Citations": 73,
     "Categories": ["Ordering", "ExpressionPatterns"]
   },
   {
@@ -6703,7 +6795,7 @@
     "Updated": "2017-06-08",
     "DOIURL": "http://dx.doi.org/10.1371/journal.pcbi.1004575",
     "Github": "xu-lab/SINCERA",
-    "Citations": 35,
+    "Citations": 36,
     "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes"]
   },
   {
@@ -7121,7 +7213,7 @@
     "DOIURL": "http://dx.doi.org/10.1186/s13059-016-0975-3",
     "Github": "jw156605/SLICER",
     "CRAN": "SLICER",
-    "Citations": 20,
+    "Citations": 21,
     "Categories": ["Ordering"]
   },
   {
@@ -7498,7 +7590,7 @@
     "Updated": "2016-09-09",
     "DOIURL": "http://dx.doi.org/10.1016/j.stem.2016.05.010",
     "Github": "dgrun/StemID",
-    "Citations": 36,
+    "Citations": 37,
     "Categories": ["Ordering", "StemCells"]
   },
   {
@@ -7544,7 +7636,7 @@
     "Added": "2018-02-16",
     "Updated": "2018-02-16",
     "DOIURL": "http://dx.doi.org/10.1038/ncb3493",
-    "Citations": 27,
+    "Citations": 29,
     "Categories": ["Ordering", "Visualisation"]
   },
   {
@@ -7778,7 +7870,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nmeth.3800",
     "Github": "teichlab/tracer",
     "PyPI": "tracer",
-    "Citations": 60,
+    "Citations": 62,
     "Categories": ["Assembly", "Alignment", "Quantification", "Immune", "Visualisation"]
   },
   {
@@ -7874,7 +7966,7 @@
     "DOIURL": "http://dx.doi.org/10.1093/nar/gkw430",
     "Github": "zji90/TSCAN",
     "BioC": "TSCAN",
-    "Citations": 33,
+    "Citations": 34,
     "Categories": ["Clustering", "Ordering", "MarkerGenes", "Visualisation", "Interactive"]
   },
   {
@@ -8109,7 +8201,7 @@
     "Updated": "2017-09-09",
     "Preprint": true,
     "DOIURL": "http://dx.doi.org/10.1101/181156",
-    "Citations": 0,
+    "Citations": 1,
     "Categories": ["Immune"]
   },
   {
@@ -8298,7 +8390,7 @@
     "DOIURL": "http://dx.doi.org/10.1038/nbt.3569",
     "Github": "ManuSetty/wishbone",
     "PyPI": "wishbone",
-    "Citations": 73,
+    "Citations": 74,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
@@ -8345,7 +8437,7 @@
     "Updated": "2016-12-22",
     "DOIURL": "http://dx.doi.org/10.1186/s13059-015-0805-z",
     "Github": "epierson9/ZIFA",
-    "Citations": 59,
+    "Citations": 60,
     "Categories": ["DimensionalityReduction"]
   },
   {
