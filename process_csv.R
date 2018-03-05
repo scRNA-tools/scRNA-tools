@@ -29,6 +29,7 @@ suppressPackageStartupMessages({
     library(plotly)
     library(htmlwidgets)
     library(widgetframe)
+    library(purrr)
 })
 
 #### FUNCTIONS ####
@@ -170,6 +171,8 @@ add_refs <- function(swsheet) {
     })
 
     swsheet$Refs <- ref_list
+
+    return(swsheet)
 }
 
 
@@ -268,8 +271,7 @@ tidy_swsheet <- function(swsheet) {
 
     gather(swsheet, key = 'Category', value = 'Val',
            -Description, -Name, -Platform, -DOI, -PubDate, -Updated, -Added,
-           -Preprint, -Code, -Github, -DOIURL, -License, -BioC, -CRAN, -PyPI,
-           -Citations) %>%
+           -Code, -Github, -License, -BioC, -CRAN, -PyPI, -Refs) %>%
         filter(Val == TRUE) %>%
         select(-Val) %>%
         arrange(Name)
@@ -393,12 +395,18 @@ plot_number <- function(swsheet) {
 #' @param swsheet Tibble containing software table
 plot_publication <- function(swsheet) {
     plot <- swsheet %>%
-        mutate(IsPub = !is.na(PubDate)) %>%
-        mutate(IsPre = !is.na(Preprint)) %>%
-        mutate(IsNot = is.na(PubDate) & is.na(Preprint)) %>%
-        summarise(NotPublished = sum(IsNot),
-                  Published = sum(IsPub, na.rm = TRUE),
-                  Preprint = sum(IsPre, na.rm = TRUE)) %>%
+        mutate(HasPub = map_if(.$Refs, !is.na(Refs),
+                               function(x) {any(x$Preprint == FALSE)}),
+               HasPub = unlist(HasPub),
+               HasPub = if_else(is.na(HasPub), FALSE, HasPub)) %>%
+        mutate(HasPre = map_if(.$Refs, !is.na(Refs),
+                               function(x) {any(x$Preprint == TRUE)}),
+               HasPre = unlist(HasPre),
+               HasPre = if_else(is.na(HasPre), FALSE, HasPre & !HasPub)) %>%
+        mutate(HasNot = !HasPub & !HasPre) %>%
+        summarise(NotPublished = sum(HasNot),
+                  Published = sum(HasPub),
+                  Preprint = sum(HasPre)) %>%
         gather(key = Type, value = Count) %>%
         mutate(Type = factor(Type,
                              levels = c("Published", "Preprint",
@@ -601,10 +609,10 @@ process_csv <- function() {
     # Process table
     message("Processing table...")
     swsheet <- swsheet %>%
-        fix_doi() %>%
+        add_refs() %>%
         add_github() %>%
-        add_repos(pkgs) %>%
-        add_citations()
+        add_repos(pkgs) #%>%
+        #add_citations()
 
     # Convert to tidy format
     tidysw <- tidy_swsheet(swsheet)
