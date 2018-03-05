@@ -121,6 +121,58 @@ fix_doi <- function(swsheet) {
 }
 
 
+#' Add references
+#'
+#' Covert references to list column and get citations
+#'
+#' @param swsheet Tibble containing software table
+#'
+#' @return swsheet with additional column
+add_refs <- function(swsheet) {
+
+    message("Adding references...")
+
+    doi_list <- swsheet %>%
+        mutate(DOI = str_split(DOI, ";")) %>%
+        pull(DOI) %>%
+        setNames(swsheet$Name)
+
+    date_list <- swsheet %>%
+        mutate(PubDate = str_split(PubDate, ";")) %>%
+        pull(PubDate) %>%
+        setNames(swsheet$Name)
+
+    ref_list <- pbsapply(names(doi_list), function(x) {
+        dois <- doi_list[[x]]
+        dates <- date_list[[x]]
+        stopifnot(length(dois) == length(dates))
+
+        if (all(is.na(dois))) {
+            return(NA)
+        }
+
+        cites <- sapply(dois, function(doi) {
+            cite <- tryCatch({
+                cr_citation_count(doi)
+            }, error = function(e) {
+                NA
+            })
+
+            Sys.sleep(sample(seq(0, 1, 0.1), 1))
+
+            return(cite)
+        })
+
+        ref <- tibble(DOI = dois,
+                      PubDate = ifelse(dates != "PREPRINT", dates, NA),
+                      Preprint = dates == "PREPRINT",
+                      Citations = cites)
+    })
+
+    swsheet$Refs <- ref_list
+}
+
+
 #' Add Github
 #'
 #' Add field indicating Github repositories
@@ -192,7 +244,7 @@ add_citations <- function(swsheet) {
                 NA
             })
 
-            Sys.sleep(sample(seq(0,2,0.5), 1))
+            Sys.sleep(sample(seq(0, 2, 0.5), 1))
 
             return(cite)
     })
@@ -268,7 +320,7 @@ get_tools_json <- function(tidysw) {
 
 #' Get categories JSON
 #'
-#' Create catefories JSON
+#' Create categories JSON
 #'
 #' @param tidysw Tibble containing tidy software table
 #' @param swsheet Tibble containing software table
