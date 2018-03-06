@@ -47,8 +47,8 @@ get_swsheet <- function() {
                             .default = col_logical(),
                             Name = col_character(),
                             Platform = col_character(),
-                            DOI = col_character(),
-                            PubDate = col_character(),
+                            DOIs = col_character(),
+                            PubDates = col_character(),
                             Code = col_character(),
                             Description = col_character(),
                             License = col_character(),
@@ -113,9 +113,9 @@ fix_doi <- function(swsheet) {
     message("Fixing references...")
 
     swsheet %>%
-        mutate(Preprint = (PubDate == "PREPRINT")) %>%
-        mutate(PubDate = ifelse(Preprint == FALSE, PubDate, NA)) %>%
-        mutate(PubDate = as_date(PubDate)) %>%
+        mutate(Preprint = (PubDates == "PREPRINT")) %>%
+        mutate(PubDates = ifelse(Preprint == FALSE, PubDates, NA)) %>%
+        mutate(PubDates = as_date(PubDates)) %>%
         mutate(Preprint = ifelse(Preprint == TRUE, TRUE, NA)) %>%
         mutate(DOIURL = ifelse(is.na(DOI), NA,
                                paste0('http://dx.doi.org/', DOI)))
@@ -134,13 +134,13 @@ add_refs <- function(swsheet) {
     message("Adding references...")
 
     doi_list <- swsheet %>%
-        mutate(DOI = str_split(DOI, ";")) %>%
-        pull(DOI) %>%
+        mutate(DOIs = str_split(DOIs, ";")) %>%
+        pull(DOIs) %>%
         setNames(swsheet$Name)
 
     date_list <- swsheet %>%
-        mutate(PubDate = str_split(PubDate, ";")) %>%
-        pull(PubDate) %>%
+        mutate(PubDates = str_split(PubDates, ";")) %>%
+        pull(PubDates) %>%
         setNames(swsheet$Name)
 
     ref_list <- pbsapply(names(doi_list), function(x) {
@@ -171,6 +171,9 @@ add_refs <- function(swsheet) {
     })
 
     swsheet$Refs <- ref_list
+    swsheet$Citations <- ref_list %>%
+        map_if(!is.na(ref_list), function(x) {sum(x$Citations)}) %>%
+        unlist()
 
     return(swsheet)
 }
@@ -270,8 +273,8 @@ tidy_swsheet <- function(swsheet) {
     message("Tidying data...")
 
     gather(swsheet, key = 'Category', value = 'Val',
-           -Description, -Name, -Platform, -DOI, -PubDate, -Updated, -Added,
-           -Code, -Github, -License, -BioC, -CRAN, -PyPI, -Refs) %>%
+           -Description, -Name, -Platform, -DOIs, -PubDates, -Updated, -Added,
+           -Code, -Github, -License, -BioC, -CRAN, -PyPI, -Refs, -Citations) %>%
         filter(Val == TRUE) %>%
         select(-Val) %>%
         arrange(Name)
