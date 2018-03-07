@@ -113,19 +113,23 @@ $(document).ready(function () {
                    '<ul class="list-group">'
 
           $.each(refs, function (k, val) {
+            var title = val.Title
             var doi = val.DOI
             var date = val.PubDate
             var isPre = val.Preprint
             var cites = val.Citations
 
             entry += '<li class="list-group-item">'
+            if (typeof title !== 'undefined') {
+              entry += '<em>"' + title + '"</em><br/>'
+            }
             entry += '<strong>DOI: </strong> <a href="http://dx.doi.org/' + doi + '">' + doi + '</a>'
             if (isPre == true) {
               entry += ', <strong>Preprint</strong>'
             } else {
               entry += ', <strong>Published: </strong>' + date
             }
-            if (typeof cites!== 'undefined') {
+            if (typeof cites !== 'undefined') {
               entry += ', <strong>Citations: </strong> ' + cites
             }
             entry += '</li>'

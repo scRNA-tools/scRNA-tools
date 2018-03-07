@@ -164,7 +164,14 @@ add_refs <- function(swsheet) {
             return(cite)
         })
 
-        ref <- tibble(DOI = dois,
+        titles <- cr_works(dois)$data$title
+
+        print(x)
+        print(dois)
+        print(titles)
+
+        ref <- tibble(Title = titles,
+                      DOI = dois,
                       PubDate = ifelse(dates != "PREPRINT", dates, NA),
                       Preprint = dates == "PREPRINT",
                       Citations = cites)
