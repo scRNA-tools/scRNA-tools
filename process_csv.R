@@ -29,6 +29,7 @@ suppressPackageStartupMessages({
     library(plotly)
     library(htmlwidgets)
     library(widgetframe)
+    library(purrr)
 })
 
 #### FUNCTIONS ####
@@ -46,8 +47,8 @@ get_swsheet <- function() {
                             .default = col_logical(),
                             Name = col_character(),
                             Platform = col_character(),
-                            DOI = col_character(),
-                            PubDate = col_character(),
+                            DOIs = col_character(),
+                            PubDates = col_character(),
                             Code = col_character(),
                             Description = col_character(),
                             License = col_character(),
@@ -95,8 +96,64 @@ get_pkgs <- function() {
 #'
 #' @return data.frame containing categories and descriptions
 get_descriptions <- function() {
-    message("Adding category descriptions...")
+    message("Getting category descriptions...")
     descs <- read_json("docs/data/descriptions.json", simplifyVector = TRUE)
+}
+
+
+#' Get cached reference titles
+#'
+#' Read `docs/data/titles.csv`, create if missing
+#'
+#' @return title containing DOIs and titles
+get_cached_titles <- function() {
+    message("Getting cached titles...")
+
+    if (!file.exists("docs/data/titles.csv")) {
+        message("Cache file missing, creating...")
+        write_lines("DOI,Title", "docs/data/titles.csv")
+    }
+
+    titles <- read_csv("docs/data/titles.csv",
+                       col_types = cols(
+                           DOI = col_character(),
+                           Title = col_character()
+                       )
+              )
+}
+
+
+#' Add to titles cache
+#'
+#' Add a DOI-Title pair to the title cache
+#'
+#' @param swsheet Tibble containing software table
+#' @param titles_cache Current titles cache
+#'
+#' @return Updated titles cache
+add_to_titles_cache <- function(swsheet, titles_cache) {
+    message("Adding new titles to cache...")
+
+    n_added <- 0
+    for (dois in swsheet$DOIs) {
+        for (doi in str_split(dois, ";")[[1]]) {
+            if (!is.na(doi) & !(doi %in% titles_cache$DOI)) {
+                title <- cr_works(doi)$data$title
+
+                if (!is.null(title)) {
+                    titles_cache <- bind_rows(titles_cache,
+                                              c(DOI = doi, Title = title))
+                    message(doi, " added to cache")
+                    n_added <- n_added + 1
+                }
+            }
+        }
+    }
+
+    write_csv(titles_cache, "docs/data/titles.csv")
+    message("Added ", n_added, " new titles to cache")
+
+    return(titles_cache)
 }
 
 
@@ -112,12 +169,99 @@ fix_doi <- function(swsheet) {
     message("Fixing references...")
 
     swsheet %>%
-        mutate(Preprint = (PubDate == "PREPRINT")) %>%
-        mutate(PubDate = ifelse(Preprint == FALSE, PubDate, NA)) %>%
-        mutate(PubDate = as_date(PubDate)) %>%
+        mutate(Preprint = (PubDates == "PREPRINT")) %>%
+        mutate(PubDates = ifelse(Preprint == FALSE, PubDates, NA)) %>%
+        mutate(PubDates = as_date(PubDates)) %>%
         mutate(Preprint = ifelse(Preprint == TRUE, TRUE, NA)) %>%
         mutate(DOIURL = ifelse(is.na(DOI), NA,
                                paste0('http://dx.doi.org/', DOI)))
+}
+
+
+#' Get titles
+#'
+#' Get title for DOIs. Return from cache if present, otherwise requests from
+#' Crossref
+#'
+#' @param dois Character vector of dois
+#' @param titles_cache Tibble containing cached titles
+#'
+#' @return vector of titles
+get_titles <- function(dois, titles_cache) {
+
+    titles <- map(dois, function(doi) {
+        if (doi %in% titles_cache$DOI) {
+            titles_cache %>%
+                filter(DOI == doi) %>%
+                pull(Title)
+        } else {
+            NA
+        }
+    }) %>%
+        flatten_chr()
+
+    return(titles)
+}
+
+
+#' Add references
+#'
+#' Covert references to list column and get citations
+#'
+#' @param swsheet Tibble containing software table
+#' @param titles_cache Tibble containing titles cache
+#'
+#' @return swsheet with additional columns
+add_refs <- function(swsheet, titles_cache) {
+
+    message("Adding references...")
+
+    doi_list <- swsheet %>%
+        mutate(DOIs = str_split(DOIs, ";")) %>%
+        pull(DOIs) %>%
+        setNames(swsheet$Name)
+
+    date_list <- swsheet %>%
+        mutate(PubDates = str_split(PubDates, ";")) %>%
+        pull(PubDates) %>%
+        setNames(swsheet$Name)
+
+    ref_list <- pbsapply(names(doi_list), function(x) {
+        dois <- doi_list[[x]]
+        dates <- date_list[[x]]
+        stopifnot(length(dois) == length(dates))
+
+        if (all(is.na(dois))) {
+            return(NA)
+        }
+
+        cites <- sapply(dois, function(doi) {
+            cite <- tryCatch({
+                cr_citation_count(doi)
+            }, error = function(e) {
+                NA
+            })
+
+            Sys.sleep(sample(seq(0, 1, 0.1), 1))
+
+            return(cite)
+        })
+
+        titles <- get_titles(dois, titles_cache)
+
+        ref <- tibble(Title = titles,
+                      DOI = dois,
+                      PubDate = ifelse(dates != "PREPRINT", dates, NA),
+                      Preprint = dates == "PREPRINT",
+                      Citations = cites)
+    })
+
+    swsheet$Refs <- ref_list
+    swsheet$Citations <- ref_list %>%
+        map_if(!is.na(ref_list), function(x) {sum(x$Citations)}) %>%
+        unlist()
+
+    return(swsheet)
 }
 
 
@@ -192,7 +336,7 @@ add_citations <- function(swsheet) {
                 NA
             })
 
-            Sys.sleep(sample(seq(0,2,0.5), 1))
+            Sys.sleep(sample(seq(0, 2, 0.5), 1))
 
             return(cite)
     })
@@ -215,9 +359,8 @@ tidy_swsheet <- function(swsheet) {
     message("Tidying data...")
 
     gather(swsheet, key = 'Category', value = 'Val',
-           -Description, -Name, -Platform, -DOI, -PubDate, -Updated, -Added,
-           -Preprint, -Code, -Github, -DOIURL, -License, -BioC, -CRAN, -PyPI,
-           -Citations) %>%
+           -Description, -Name, -Platform, -DOIs, -PubDates, -Updated, -Added,
+           -Code, -Github, -License, -BioC, -CRAN, -PyPI, -Refs, -Citations) %>%
         filter(Val == TRUE) %>%
         select(-Val) %>%
         arrange(Name)
@@ -268,7 +411,7 @@ get_tools_json <- function(tidysw) {
 
 #' Get categories JSON
 #'
-#' Create catefories JSON
+#' Create categories JSON
 #'
 #' @param tidysw Tibble containing tidy software table
 #' @param swsheet Tibble containing software table
@@ -341,12 +484,18 @@ plot_number <- function(swsheet) {
 #' @param swsheet Tibble containing software table
 plot_publication <- function(swsheet) {
     plot <- swsheet %>%
-        mutate(IsPub = !is.na(PubDate)) %>%
-        mutate(IsPre = !is.na(Preprint)) %>%
-        mutate(IsNot = is.na(PubDate) & is.na(Preprint)) %>%
-        summarise(NotPublished = sum(IsNot),
-                  Published = sum(IsPub, na.rm = TRUE),
-                  Preprint = sum(IsPre, na.rm = TRUE)) %>%
+        mutate(HasPub = map_if(.$Refs, !is.na(Refs),
+                               function(x) {any(x$Preprint == FALSE)}),
+               HasPub = unlist(HasPub),
+               HasPub = if_else(is.na(HasPub), FALSE, HasPub)) %>%
+        mutate(HasPre = map_if(.$Refs, !is.na(Refs),
+                               function(x) {any(x$Preprint == TRUE)}),
+               HasPre = unlist(HasPre),
+               HasPre = if_else(is.na(HasPre), FALSE, HasPre & !HasPub)) %>%
+        mutate(HasNot = !HasPub & !HasPre) %>%
+        summarise(NotPublished = sum(HasNot),
+                  Published = sum(HasPub),
+                  Preprint = sum(HasPre)) %>%
         gather(key = Type, value = Count) %>%
         mutate(Type = factor(Type,
                              levels = c("Published", "Preprint",
@@ -545,14 +694,18 @@ process_csv <- function() {
     swsheet <- get_swsheet()
     pkgs <- get_pkgs()
     descs <- get_descriptions()
+    titles_cache <- get_cached_titles()
+
+    # Add new titles
+    titles_cache <- add_to_titles_cache(swsheet, titles_cache)
 
     # Process table
     message("Processing table...")
     swsheet <- swsheet %>%
-        fix_doi() %>%
+        add_refs(titles_cache) %>%
         add_github() %>%
-        add_repos(pkgs) %>%
-        add_citations()
+        add_repos(pkgs) #%>%
+        #add_citations()
 
     # Convert to tidy format
     tidysw <- tidy_swsheet(swsheet)
