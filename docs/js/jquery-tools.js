@@ -50,11 +50,12 @@ $(document).ready(function () {
       $.each(data, function (key, value) {
         /* -- Assign returned data -- */
         var name = value.Name
-        var doi = value.DOI
+        var doi = value.DOIs
         var doiURL = value.DOIURL
-        var pubDate = value.PubDate
+        var pubDate = value.PubDates
         var preprint = value.Preprint
         var citations = value.Citations
+        var refs = value.Refs
         var description = value.Description
         var platform = value.Platform
         var code = value.Code
@@ -92,18 +93,45 @@ $(document).ready(function () {
                  '<div id="' + name + '_c" class="panel-collapse collapse">' +
                  '<ul class="list-group">' +
                  '<li class="list-group-item">' + description + '</li>'
-        if (typeof doi !== 'undefined') {
+
+        var noRefs = refs.every(function(v) {return v === null})
+
+        // Loop over references
+        if (noRefs == false) {
+
           entry += '<li class="list-group-item">'
-          if (typeof preprint !== 'undefined') {
-            entry += '<strong>Preprint: </strong> <a href="' + doiURL + '">' + doi + '</a>'
-          } else {
-            entry += '<strong>Publication: </strong> <a href="' + doiURL + '">' + doi + '</a>' +
-                     ', <strong>Date: </strong>' + pubDate
-          }
-          if (typeof citations !== 'undefined') {
-            entry += ', <strong>Citations: </strong> ' + citations
-          }
+          entry += '<strong>Publications:</strong> ' + refs.length  +
+                   ', <strong>Total citations:</strong> ' + citations
           entry += '</li>'
+
+          entry += '<div class="panel-heading">' +
+                   '<h3 id="' + name + '_pubs" class="panel-title">' +
+                   '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + name + '_pubs_c">' +
+                   'Publication details'
+          entry += '</a></h4></div>' +
+                   '<div id="' + name + '_pubs_c" class="panel-collapse collapse">' +
+                   '<ul class="list-group">'
+
+          $.each(refs, function (k, val) {
+            var doi = val.DOI
+            var date = val.PubDate
+            var isPre = val.Preprint
+            var cites = val.Citations
+
+            entry += '<li class="list-group-item">'
+            entry += '<strong>DOI: </strong> <a href="http://dx.doi.org/' + doi + '">' + doi + '</a>'
+            if (isPre == true) {
+              entry += ', <strong>Preprint</strong>'
+            } else {
+              entry += ', <strong>Published: </strong>' + date
+            }
+            if (typeof cites!== 'undefined') {
+              entry += ', <strong>Citations: </strong> ' + cites
+            }
+            entry += '</li>'
+          })
+
+          entry += '</ul></div>'
         }
 
         entry += '<li class="list-group-item"><strong>Platform: </strong> ' + platform + '</li>'
