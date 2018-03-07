@@ -529,6 +529,26 @@
     "Categories": ["Clustering", "DifferentialExpression", "VariableGenes", "Visualisation"]
   },
   {
+    "Name": "CSMF",
+    "Platform": "Matlab",
+    "DOIs": "10.1101/272443",
+    "PubDates": "PREPRINT",
+    "Code": "http://page.amss.ac.cn/shihua.zhang/software.html",
+    "Description": "CSMF (Common and Specific Matrix Factorization) is a MATLAB package to simultaneously extract common and specific patterns from the data of two or multiple biological interrelated conditions via matrix factorization.",
+    "Added": "2018-03-08",
+    "Updated": "2018-03-08",
+    "Refs": [
+      {
+        "Title": "Learning common and specific patterns from data of multiple interrelated biological scenarios with matrix factorization",
+        "DOI": "10.1101/272443",
+        "Preprint": true,
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "Categories": ["Clustering", "DimensionalityReduction"]
+  },
+  {
     "Name": "D3E",
     "Platform": "Python",
     "DOIs": "10.1186/s12859-016-0944-6",
@@ -642,6 +662,27 @@
     "Github": "jessemzhang/dendrosplit",
     "PyPI": "dendrosplit",
     "Categories": ["Normalisation", "GeneFiltering", "Clustering"]
+  },
+  {
+    "Name": "DensityPath",
+    "Platform": "R/Matlab",
+    "DOIs": "10.1101/276311",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/ucasdp/DensityPath",
+    "Description": "DensityPath can accurately and efficiently reconstruct the underlying cell developmental trajectories for large-scale scRNAseq data.",
+    "Added": "2018-03-08",
+    "Updated": "2018-03-08",
+    "Refs": [
+      {
+        "Title": "DensityPath: a level-set algorithm to visualize and reconstruct cell developmental trajectories for large-scale single-cell RNAseq data",
+        "DOI": "10.1101/276311",
+        "Preprint": true,
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "Github": "ucasdp/DensityPath",
+    "Categories": ["Clustering", "Ordering", "DimensionalityReduction"]
   },
   {
     "Name": "DESCEND",
@@ -821,6 +862,25 @@
     "Citations": 0,
     "Github": "hms-dbmi/dropEst",
     "Categories": ["UMIs", "Quantification", "QualityControl", "Visualisation"]
+  },
+  {
+    "Name": "DropLasso",
+    "Platform": "R/C++",
+    "DOIs": "arxiv/1802.09381",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/jpvert/droplasso",
+    "Description": "Dropout Lasso, a robust variant of Lasso for data with dropout.",
+    "License": "GPL (>=2)",
+    "Added": "2018-03-08",
+    "Updated": "2018-03-08",
+    "Refs": [
+      {
+        "DOI": "arxiv/1802.09381",
+        "Preprint": true
+      }
+    ],
+    "Github": "jpvert/droplasso",
+    "Categories": ["Classification"]
   },
   {
     "Name": "dropletUtils",
@@ -1826,6 +1886,27 @@
     "Github": "YeoLab/outrigger",
     "PyPI": "outrigger",
     "Categories": ["AlternativeSplicing"]
+  },
+  {
+    "Name": "ParaDPMM",
+    "Platform": "Matlab",
+    "DOIs": "10.1101/271163",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/tiehangd/Para_DPMM",
+    "Description": "Parallelized Inference for Single Cell Transcriptomic Clustering with Split Merge Sampling on DPMM Model",
+    "Added": "2018-03-08",
+    "Updated": "2018-03-08",
+    "Refs": [
+      {
+        "Title": "Parallelized Inference for Single Cell Transcriptomic Clustering with Split Merge Sampling on DPMM Model",
+        "DOI": "10.1101/271163",
+        "Preprint": true,
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "Github": "tiehangd/Para_DPMM",
+    "Categories": ["Classification"]
   },
   {
     "Name": "PBA",
@@ -3641,6 +3722,28 @@
     "Github": "kieranrcampbell/switchde",
     "BioC": "switchde",
     "Categories": ["DifferentialExpression", "ExpressionPatterns"]
+  },
+  {
+    "Name": "SWNE",
+    "Platform": "R/C++",
+    "DOIs": "10.1101/276261",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/yanwu2014/swne",
+    "Description": "Similarity Weighted Nonnegative Embedding (SWNE), is a method for visualizing high dimensional datasets.",
+    "License": "GPL-2",
+    "Added": "2018-03-08",
+    "Updated": "2018-03-08",
+    "Refs": [
+      {
+        "Title": "Visualizing single-cell RNA-seq datasets with Similarity Weighted Nonnegative Embedding",
+        "DOI": "10.1101/276261",
+        "Preprint": true,
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "Github": "yanwu2014/swne",
+    "Categories": ["Normalisation", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "TASC",
