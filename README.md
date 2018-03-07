@@ -27,9 +27,9 @@ The main tools table has the following columns:
 
 * **Name**
 * **Platform** - Programming language or platform where it can be used
-* **DOI** - Publication DOI
-* **PubDate** - Publication date. Preprints are marked with PREPRINT and will
-  be updated when published.
+* **DOIs** - Publication DOIs separated by semi-colons
+* **PubDates** - Publication dates separated with semi-colons. Preprints are
+  marked with PREPRINT and will be updated when published.
 * **Code** - URL for publicly available code.
 * **Description**
 * **License** - Software license
