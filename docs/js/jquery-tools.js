@@ -123,7 +123,12 @@ $(document).ready(function () {
             if (typeof title !== 'undefined') {
               entry += '<em>"' + title + '"</em><br/>'
             }
-            entry += '<strong>DOI: </strong> <a href="http://dx.doi.org/' + doi + '">' + doi + '</a>'
+            if (doi.includes('arxiv')) {
+              var id = doi.replace("arxiv/", "")
+              entry += '<strong>arXiv: </strong> <a href="https://arxiv.org/abs/' + id + '">' + id + '</a>'
+            } else {
+              entry += '<strong>DOI: </strong> <a href="http://dx.doi.org/' + doi + '">' + doi + '</a>'
+            }
             if (isPre == true) {
               entry += ', <strong>Preprint</strong>'
             } else {

@@ -30,6 +30,7 @@ suppressPackageStartupMessages({
     library(htmlwidgets)
     library(widgetframe)
     library(purrr)
+    library(aRxiv)
 })
 
 #### FUNCTIONS ####
@@ -138,7 +139,13 @@ add_to_titles_cache <- function(swsheet, titles_cache) {
     for (dois in swsheet$DOIs) {
         for (doi in str_split(dois, ";")[[1]]) {
             if (!is.na(doi) & !(doi %in% titles_cache$DOI)) {
-                title <- cr_works(doi)$data$title
+
+                if (str_detect(doi, "arxiv")) {
+                    id <- str_remove(doi, "arxiv/")
+                    title <- arxiv_search(id_list = id)$title
+                } else {
+                    title <- cr_works(doi)$data$title
+                }
 
                 if (!is.null(title)) {
                     titles_cache <- bind_rows(titles_cache,
