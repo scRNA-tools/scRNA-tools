@@ -158,7 +158,7 @@ $(document).ready(function () {
               var id = doi.replace("arxiv/", "")
               entry += '<strong>arXiv: </strong> <a href="https://arxiv.org/abs/' + id + '">' + id + '</a>'
             } else {
-              entry += '<strong>DOI: </strong> <a href="http://dx.doi.org/' + doi + '">' + doi + '</a>'
+              entry += '<strong>DOI: </strong> <a href="https://doi.org/' + doi + '">' + doi + '</a>'
             }
             if (isPre == true) {
               entry += ', <strong>Preprint</strong>'

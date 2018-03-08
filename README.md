@@ -19,7 +19,7 @@ to add something please make a pull request or open an issue.
 If you find the scRNA-tools database useful for your work please cite our
 preprint: "Zappia L, Phipson B, Oshlack A. [Exploring the single-cell RNA-seq
 analysis landscape with the scRNA-tools
-database](http://dx.doi.org/10.1101/206573), bioRxiv (2017), DOI: 10.1101/206573"
+database](https://doi.org/10.1101/206573), bioRxiv (2017), DOI: 10.1101/206573"
 
 ## Structure
 

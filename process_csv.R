@@ -181,7 +181,7 @@ fix_doi <- function(swsheet) {
         mutate(PubDates = as_date(PubDates)) %>%
         mutate(Preprint = ifelse(Preprint == TRUE, TRUE, NA)) %>%
         mutate(DOIURL = ifelse(is.na(DOI), NA,
-                               paste0('http://dx.doi.org/', DOI)))
+                               paste0('https://doi.org/', DOI)))
 }
 
 
