@@ -28,7 +28,7 @@ $(document).ready(function () {
     }
   }
 
-  function printList () {
+  function printList (urlParams) {
     /* -- Open JSON file, parse the contents, loop through & print markup-- */
 
     $.ajaxSetup({
@@ -53,6 +53,36 @@ $(document).ready(function () {
 
         // Add description
         entry += '<li class="list-group-item"><h5>' + desc + '</h5></li>'
+
+        /* -- Sort tools -- */
+        if (urlParams.has('sort')) {
+          switch(urlParams.get('sort')) {
+            case 'cites':
+              tools.sort(function(obj1, obj2) {
+                return obj2.Citations - obj1.Citations
+              })
+              break
+            case 'pubs':
+              tools.sort(function(obj1, obj2) {
+                return obj2.Publications - obj1.Publications
+              })
+              break
+            case 'added':
+              tools.sort(function(obj1, obj2) {
+                var x = new Date(obj1.Added);
+                var y = new Date(obj2.Added);
+                return (y > x) - (y < x)
+              })
+              break
+            case 'updated':
+              tools.sort(function(obj1, obj2) {
+                var x = new Date(obj1.Updated);
+                var y = new Date(obj2.Updated);
+                return (y > x) - (y < x)
+              })
+              break
+          }
+        }
 
         // Loop over tools
         $.each(tools, function (k, val) {
@@ -95,5 +125,39 @@ $(document).ready(function () {
 
   /* --Calls----------------------------------------------------------------- */
 
-  printList()
+  var urlParams = new URLSearchParams(window.location.search);
+
+  if (urlParams.has('sort')) {
+    $("[name=selectsort]").val(urlParams.get('sort')).change()
+  }
+
+  $(function(){
+    $("[name=selectsort]").change(function(){
+        var val = $(this).val()
+        var sorter
+        if (typeof val !== 'undefined') {
+            sorter = val
+        }
+
+        var url = document.location.toString()
+
+        var hash
+        if (url.includes('#')) {
+          hash = url.split('#')[1]
+          url = url.split('#')[0]
+        }
+
+        url = url.split('?')[0]
+
+        if (hash !== undefined) {
+          window.location.href = url + '?sort=' + sorter + '#' + hash
+        } else {
+          window.location.href = url + '?sort=' + sorter
+        }
+
+        return true
+    })
+  })
+
+  printList(urlParams)
 })

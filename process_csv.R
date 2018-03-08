@@ -263,10 +263,15 @@ add_refs <- function(swsheet, titles_cache) {
                       Citations = cites)
     })
 
-    swsheet$Refs <- ref_list
-    swsheet$Citations <- ref_list %>%
-        map_if(!is.na(ref_list), function(x) {sum(x$Citations)}) %>%
-        unlist()
+
+    swsheet <- swsheet %>%
+        mutate(Refs = ref_list) %>%
+        mutate(Citations = map_if(Refs, !is.na(Refs),
+                                  function(x) {sum(x$Citations)}),
+               Publications = map_if(Refs, !is.na(Refs),
+                                     function(x) {nrow(x)})) %>%
+        mutate(Citations = flatten_dbl(Citations),
+               Publications = flatten_int(Publications))
 
     return(swsheet)
 }
@@ -367,7 +372,8 @@ tidy_swsheet <- function(swsheet) {
 
     gather(swsheet, key = 'Category', value = 'Val',
            -Description, -Name, -Platform, -DOIs, -PubDates, -Updated, -Added,
-           -Code, -Github, -License, -BioC, -CRAN, -PyPI, -Refs, -Citations) %>%
+           -Code, -Github, -License, -BioC, -CRAN, -PyPI, -Refs, -Citations,
+           -Publications) %>%
         filter(Val == TRUE) %>%
         select(-Val) %>%
         arrange(Name)
@@ -433,7 +439,8 @@ get_cats_json <- function(tidysw, swsheet, descs) {
     namelist <- lapply(namelist, function(x) {
         swsheet %>%
             filter(Name %in% x) %>%
-            select(Name, BioC, CRAN, PyPI)
+            select(Name, BioC, CRAN, PyPI, Citations, Publications, Added,
+                   Updated)
     })
 
     cats <- tidysw %>%
