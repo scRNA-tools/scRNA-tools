@@ -39,7 +39,7 @@ $(document).ready(function () {
     return linked.join(', ')
   }
 
-  function printList () {
+  function printList (urlParams) {
     /* -- Open JSON file, parse the contents, loop through & print markup -- */
 
     $.ajaxSetup({
@@ -47,6 +47,37 @@ $(document).ready(function () {
     })
 
     $.getJSON(jsonPath, function (data) {
+
+      /* -- Sort data -- */
+      if (urlParams.has('sort')) {
+        switch(urlParams.get('sort')) {
+          case 'cites':
+            data.sort(function(obj1, obj2) {
+              return obj2.Citations - obj1.Citations
+            })
+            break
+          case 'pubs':
+            data.sort(function(obj1, obj2) {
+              return obj2.Refs.length - obj1.Refs.length
+            })
+            break
+          case 'added':
+            data.sort(function(obj1, obj2) {
+              var x = new Date(obj1.Added);
+              var y = new Date(obj2.Added);
+              return (y > x) - (y < x)
+            })
+            break
+          case 'updated':
+            data.sort(function(obj1, obj2) {
+              var x = new Date(obj1.Updated);
+              var y = new Date(obj2.Updated);
+              return (y > x) - (y < x)
+            })
+            break
+        }
+      }
+
       $.each(data, function (key, value) {
         /* -- Assign returned data -- */
         var name = value.Name
@@ -175,5 +206,27 @@ $(document).ready(function () {
 
   /* --Calls----------------------------------------------------------------- */
 
-  printList()
+  var urlParams = new URLSearchParams(window.location.search);
+
+  if (urlParams.has('sort')) {
+    $("[name=selectsort]").val(urlParams.get('sort')).change()
+  }
+
+  $(function(){
+    $("[name=selectsort]").change(function(){
+        var val = $(this).val()
+        var year
+        if (typeof val !== 'undefined') {
+            year = val
+        }
+        else {
+            year = "<?php echo date('Y');?>"
+        }
+
+        window.location.href = window.location.href.split('?')[0] + '?sort=' + year;
+        return true
+    })
+  })
+
+  printList(urlParams)
 })
