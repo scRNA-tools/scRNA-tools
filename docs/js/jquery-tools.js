@@ -215,15 +215,27 @@ $(document).ready(function () {
   $(function(){
     $("[name=selectsort]").change(function(){
         var val = $(this).val()
-        var year
+        var sorter
         if (typeof val !== 'undefined') {
-            year = val
-        }
-        else {
-            year = "<?php echo date('Y');?>"
+            sorter = val
         }
 
-        window.location.href = window.location.href.split('?')[0] + '?sort=' + year;
+        var url = document.location.toString()
+
+        var hash
+        if (url.includes('#')) {
+          hash = url.split('#')[1]
+          url = url.split('#')[0]
+        }
+
+        url = url.split('?')[0]
+
+        if (hash !== undefined) {
+          window.location.href = url + '?sort=' + sorter + '#' + hash
+        } else {
+          window.location.href = url + '?sort=' + sorter
+        }
+
         return true
     })
   })
