@@ -322,28 +322,108 @@ add_github <- function(swsheet) {
 #' repositories
 #'
 #' @param swsheet Tibble containing software table
-#' @param pkgs List of available packages
+#' @param repos List of repo information
 #'
 #' @return swsheet with additional repository columns
-add_repos <- function(swsheet, pkgs) {
+add_repos <- function(swsheet, repos) {
 
     message("Adding package repositories...")
 
+    # swsheet %>%
+    #     mutate(LowerName = str_to_lower(Name)) %>%
+    #     mutate(BioC = LowerName %in% names(pkgs$BioC)) %>%
+    #     mutate(BioC = ifelse(BioC, pkgs$BioC[LowerName], NA)) %>%
+    #     mutate(BioC = ifelse(str_detect(Platform, "R"), BioC, NA)) %>%
+    #     mutate(CRAN = LowerName %in% names(pkgs$CRAN)) %>%
+    #     mutate(CRAN = ifelse(CRAN, pkgs$CRAN[LowerName], NA)) %>%
+    #     mutate(CRAN = ifelse(str_detect(Platform, "R"), CRAN, NA)) %>%
+    #     mutate(PyPI = LowerName %in% names(pkgs$PyPI)) %>%
+    #     mutate(PyPI = ifelse(PyPI, pkgs$PyPI[LowerName], NA)) %>%
+    #     mutate(PyPI = ifelse(str_detect(str_to_lower(Platform), "python"),
+    #                          PyPI, NA)) %>%
+    #     mutate(Conda = LowerName %in% names(pkgs$Conda)) %>%
+    #     mutate(Conda = ifelse(Conda, pkgs$Conda[LowerName], NA)) %>%
+    #     select(-LowerName)
+
     swsheet %>%
-        mutate(LowerName = str_to_lower(Name)) %>%
-        mutate(BioC = LowerName %in% names(pkgs$BioC)) %>%
-        mutate(BioC = ifelse(BioC, pkgs$BioC[LowerName], NA)) %>%
-        mutate(BioC = ifelse(str_detect(Platform, "R"), BioC, NA)) %>%
-        mutate(CRAN = LowerName %in% names(pkgs$CRAN)) %>%
-        mutate(CRAN = ifelse(CRAN, pkgs$CRAN[LowerName], NA)) %>%
-        mutate(CRAN = ifelse(str_detect(Platform, "R"), CRAN, NA)) %>%
-        mutate(PyPI = LowerName %in% names(pkgs$PyPI)) %>%
-        mutate(PyPI = ifelse(PyPI, pkgs$PyPI[LowerName], NA)) %>%
-        mutate(PyPI = ifelse(str_detect(str_to_lower(Platform), "python"),
-                             PyPI, NA)) %>%
-        mutate(Conda = LowerName %in% names(pkgs$Conda)) %>%
-        mutate(Conda = ifelse(Conda, pkgs$Conda[LowerName], NA)) %>%
-        select(-LowerName)
+        rowwise() %>%
+        mutate(BioC = ifelse(!is.null(repos[[Name]]$BioC),
+                             repos[[Name]]$BioC, NA)) %>%
+        mutate(CRAN = ifelse(!is.null(repos[[Name]]$CRAN),
+                             repos[[Name]]$CRAN, NA)) %>%
+        mutate(PyPI = ifelse(!is.null(repos[[Name]]$PyPI),
+                             repos[[Name]]$PyPI, NA)) %>%
+        mutate(Conda = ifelse(!is.null(repos[[Name]]$Conda),
+                             repos[[Name]]$Conda, NA)) %>%
+        ungroup()
+}
+
+
+#' Check repositories
+#'
+#' Check if tools are in pkg repositories
+#'
+#' @param names Vector of tool names
+#' @param pkgs List of available packages
+#'
+#' @return list with repo information
+check_repos <- function(names, pkgs) {
+
+    message("Checking repositories...")
+    repos <- fromJSON("docs/data/repositories.json")
+
+    added <- 0
+    ignored <- 0
+
+    # Iterate over tool names
+    for (name in names) {
+        # Iterate over package lists
+        for(repo in names(pkgs)) {
+            # Check this repo isn't already set
+            if (is.null(repos[[name]][[repo]])) {
+
+                lower <- str_to_lower(name)
+                # Check if tool in repository
+                if (lower %in% names(pkgs[[repo]])) {
+
+                    repo_name <- pkgs[[repo]][[lower]]
+                    repo_path <- paste(repo, repo_name, sep = "/")
+
+                    # Skip if ignored
+                    if (repo_path %in% repos[[name]]$Ignored) {
+                        next
+                    }
+
+                    # Create tool entry if missing
+                    if (!(name %in% names(repos))) {
+                        repos[[name]] <- list()
+                    }
+
+                    # Ask for confirmation repository is correct
+                    message("Suggested repository for ", name, ": ", repo_path)
+                    confirmed <- prompt_yn("Confirm")
+                    if (confirmed) {
+                        # Set repository
+                        repos[[name]][[repo]] <- repo_name
+                        message("Confirmed")
+                        added <- added + 1
+                    } else {
+                        # Ignore repository
+                        repos[[name]]$Ignored <- c(repos[[name]]$Ignored,
+                                                   repo_path)
+                        message("Added to ignore list")
+                        ignored <- ignored + 1
+                    }
+                }
+            }
+        }
+    }
+
+    message("Added ", added, " new repositories")
+    message("Ignored ", ignored, " repostories")
+    write_lines(toJSON(repos, pretty = TRUE), "docs/data/repositories.json")
+
+    return(repos)
 }
 
 
@@ -720,6 +800,35 @@ plot_categories <- function(swsheet) {
 }
 
 
+#' Prompt Y/N
+#'
+#' Prompt the user for a yes or no response
+#'
+#' @param prompt Text prompt to use
+#'
+#' @return TRUE or FALSE
+prompt_yn <- function(prompt) {
+
+    prompt <- paste0(prompt, "? (y/n): ")
+
+    if (interactive()) {
+        response <- readline(prompt)
+    } else {
+        cat(prompt)
+        response <- readLines("stdin", n = 1)
+    }
+
+    if (response %in% c("y", "n")) {
+        value <- ifelse(response == "y", TRUE, FALSE)
+    } else {
+        message("Please enter 'y' or 'n'")
+        value <- prompt_yn(prompt)
+    }
+
+    return(value)
+}
+
+
 #' Process CSV
 #'
 #' Process `single_cell_software.csv` and create the various output files
@@ -736,12 +845,15 @@ process_csv <- function() {
     # Add new titles
     titles_cache <- add_to_titles_cache(swsheet, titles_cache)
 
+    # Check repositories
+    repos <- check_repos(swsheet$Name, pkgs)
+
     # Process table
     message("Processing table...")
     swsheet <- swsheet %>%
         add_refs(titles_cache) %>%
         add_github() %>%
-        add_repos(pkgs) #%>%
+        add_repos(repos) #%>%
         #add_citations()
 
     # Convert to tidy format
