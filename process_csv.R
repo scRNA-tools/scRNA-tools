@@ -87,7 +87,28 @@ get_pkgs <- function() {
         html_text()
     names(pypi.pkgs) <- str_to_lower(pypi.pkgs)
 
-    pkgs <- list(BioC = bioc.pkgs, CRAN = cran.pkgs, PyPI = pypi.pkgs)
+    message("Getting Anaconda package list...")
+    pages <- read_html("https://anaconda.org/anaconda/repo") %>%
+        html_nodes(".unavailable:nth-child(2)") %>%
+        html_text() %>% str_split(" ") %>%
+        unlist()
+    pages <- as.numeric(pages[4])
+
+    conda.pkgs <- pbsapply(seq_len(pages), function(p) {
+        url <- paste0("https://anaconda.org/anaconda/repo?sort=_name&sort_order=asc&page=",
+                      p)
+
+        read_html(url) %>%
+            html_nodes(".packageName") %>%
+            html_text()
+    })
+    conda.pkgs <- unlist(conda.pkgs)
+    names(conda.pkgs) <- str_to_lower(conda.pkgs)
+
+    pkgs <- list(BioC = bioc.pkgs,
+                 CRAN = cran.pkgs,
+                 PyPI = pypi.pkgs,
+                 Conda = conda.pkgs)
 }
 
 
@@ -320,6 +341,8 @@ add_repos <- function(swsheet, pkgs) {
         mutate(PyPI = ifelse(PyPI, pkgs$PyPI[LowerName], NA)) %>%
         mutate(PyPI = ifelse(str_detect(str_to_lower(Platform), "python"),
                              PyPI, NA)) %>%
+        mutate(Conda = LowerName %in% names(pkgs$Conda)) %>%
+        mutate(Conda = ifelse(Conda, pkgs$Conda[LowerName], NA)) %>%
         select(-LowerName)
 }
 
@@ -372,8 +395,8 @@ tidy_swsheet <- function(swsheet) {
 
     gather(swsheet, key = 'Category', value = 'Val',
            -Description, -Name, -Platform, -DOIs, -PubDates, -Updated, -Added,
-           -Code, -Github, -License, -BioC, -CRAN, -PyPI, -Refs, -Citations,
-           -Publications) %>%
+           -Code, -Github, -License, -Refs, -BioC, -CRAN, -PyPI, -Conda,
+           -Citations, -Publications) %>%
         filter(Val == TRUE) %>%
         select(-Val) %>%
         arrange(Name)
@@ -439,8 +462,8 @@ get_cats_json <- function(tidysw, swsheet, descs) {
     namelist <- lapply(namelist, function(x) {
         swsheet %>%
             filter(Name %in% x) %>%
-            select(Name, BioC, CRAN, PyPI, Citations, Publications, Added,
-                   Updated)
+            select(Name, Citations, Publications, BioC, CRAN, PyPI, Conda,
+                   Added, Updated)
     })
 
     cats <- tidysw %>%
