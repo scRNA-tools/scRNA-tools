@@ -31,6 +31,7 @@ suppressPackageStartupMessages({
     library(widgetframe)
     library(purrr)
     library(aRxiv)
+    library(progress)
 })
 
 #### FUNCTIONS ####
@@ -356,6 +357,117 @@ add_repos <- function(swsheet, repos) {
         mutate(Conda = ifelse(!is.null(repos[[Name]]$Conda),
                              repos[[Name]]$Conda, NA)) %>%
         ungroup()
+}
+
+
+#' Get shields
+#'
+#' Download shields describing various repositories
+#'
+#' @param swsheet Tibble containing software table
+get_shields <- function(swsheet) {
+
+    message("Getting shields...")
+    pb_format <- "   |:bar| :percent Elapsed: :elapsed Remaining: :eta"
+
+    pb <- progress_bar$new(total = nrow(swsheet), format = pb_format,
+                           clear = FALSE)
+    message("Downloading Bioconductor shields...")
+    for (repo in swsheet$BioC) {
+        pb$tick()
+        if (!is.na(repo)) {
+            years_url <- paste0("http://bioconductor.org/shields/years-in-bioc/",
+                                repo, ".svg")
+            down_url <- paste0("http://bioconductor.org/shields/downloads/",
+                               repo, ".svg")
+
+            download.file(years_url,
+                          paste0("docs/img/shields/BioC/", repo, "_years.svg"),
+                          quiet = TRUE)
+            download.file(down_url,
+                          paste0("docs/img/shields/BioC/", repo,
+                                 "_downloads.svg"),
+                          quiet = TRUE)
+        }
+    }
+
+    pb <- progress_bar$new(total = nrow(swsheet),format = pb_format,
+                           clear = FALSE)
+    message("Downloading CRAN shields...")
+    for (repo in swsheet$CRAN) {
+        pb$tick()
+        if (!is.na(repo)) {
+            version_url <- paste0("http://www.r-pkg.org/badges/version/",
+                                  repo)
+            down_url <- paste0("http://cranlogs.r-pkg.org/badges/grand-total/",
+                               repo)
+
+            download.file(version_url,
+                          paste0("docs/img/shields/CRAN/", repo, "_version.svg"),
+                          quiet = TRUE)
+            download.file(down_url,
+                          paste0("docs/img/shields/CRAN/", repo,
+                                 "_downloads.svg"),
+                          quiet = TRUE)
+        }
+    }
+
+    pb <- progress_bar$new(total = nrow(swsheet), format = pb_format,
+                           clear = FALSE)
+    message("Downloading PyPI shields...")
+    for (repo in swsheet$PyPI) {
+        pb$tick()
+        if (!is.na(repo)) {
+            version_url <- paste0("https://img.shields.io/pypi/v/",
+                                  repo, ".svg")
+            python_url <- paste0("https://img.shields.io/pypi/pyversions/",
+                                 repo, ".svg")
+            status_url <- paste0("https://img.shields.io/pypi/status/",
+                                 repo, ".svg")
+
+            download.file(version_url,
+                          paste0("docs/img/shields/PyPI/", repo,
+                                 "_version.svg"),
+                          quiet = TRUE)
+            download.file(python_url,
+                          paste0("docs/img/shields/PyPI/", repo,
+                                 "_python.svg"),
+                          quiet = TRUE)
+            download.file(status_url,
+                          paste0("docs/img/shields/PyPI/", repo,
+                                 "_status.svg"),
+                          quiet = TRUE)
+        }
+    }
+
+    pb <- progress_bar$new(total = nrow(swsheet), format = pb_format,
+                           clear = FALSE)
+    message("Downloading GitHub shields...")
+    for (repo in swsheet$Github) {
+        pb$tick()
+        if (!is.na(repo)) {
+            stars_url <- paste0("https://img.shields.io/github/stars/",
+                                repo, ".svg")
+            forks_url <- paste0("https://img.shields.io/github/forks/",
+                                repo, ".svg")
+            commit_url <- paste0("https://img.shields.io/github/last-commit/",
+                                 repo, ".svg")
+
+            repo_clean <- str_replace(repo, "/", "_")
+            download.file(stars_url,
+                          paste0("docs/img/shields/GitHub/", repo_clean,
+                                 "_stars.svg"),
+                          quiet = TRUE)
+            download.file(forks_url,
+                          paste0("docs/img/shields/GitHub/", repo_clean,
+                                 "_forks.svg"),
+                          quiet = TRUE)
+            download.file(commit_url,
+                          paste0("docs/img/shields/GitHub/", repo_clean,
+                                 "_commit.svg"),
+                          quiet = TRUE)
+        }
+    }
 }
 
 
@@ -753,6 +865,7 @@ plot_platforms <- function(swsheet) {
                selfcontained = FALSE, libdir = "libraries")
 }
 
+
 #' Plot categories
 #'
 #' Produces a HTML page with an interactive plot showing the percentage of tools
@@ -856,6 +969,9 @@ process_csv <- function() {
         add_repos(repos) #%>%
         #add_citations()
 
+    # Get shields
+    get_shields(swsheet)
+
     # Convert to tidy format
     tidysw <- tidy_swsheet(swsheet)
 
@@ -895,6 +1011,9 @@ process_csv <- function() {
 
 
 #### MAIN CODE ####
+
+# Show warnings
+options(warn = 1)
 
 # Setup progress bar
 pboptions(type = "timer", char = "=", style = 3)

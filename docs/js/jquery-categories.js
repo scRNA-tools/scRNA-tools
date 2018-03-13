@@ -95,19 +95,19 @@ $(document).ready(function () {
           entry += '<li class="list-group-item"><a href="tools.html#' + name + '">' + name + '</a>'
 
           if (typeof bioc !== 'undefined') {
-            entry += ' <img border="0" height="15" src="http://bioconductor.org/shields/years-in-bioc/' + bioc + '.svg">' +
-                     ' <img border="0" height="15" src="http://bioconductor.org/shields/downloads/' + bioc + '.svg">'
+            entry += ' <img border="0" height="15" src="img/shields/BioC/' + bioc + '_years.svg">' +
+                     ' <img border="0" height="15" src="img/shields/BioC/' + bioc + '_downloads.svg">'
           }
 
           if (typeof cran !== 'undefined') {
-            entry += ' <img border="0" height="15" src="http://www.r-pkg.org/badges/version/' + cran + '">' +
-                     ' <img border="0" height="15" src="http://cranlogs.r-pkg.org/badges/grand-total/' + cran + '">'
+            entry += ' <img border="0" height="15" src="img/shields/CRAN/' + cran + '_version.svg">' +
+                     ' <img border="0" height="15" src="img/shields/CRAN/' + cran + '_downloads.svg">'
           }
 
           if (typeof pypi !== 'undefined') {
-            entry += ' <img border="0" height="15" src="https://img.shields.io/pypi/v/' + pypi + '.svg">' +
-                     ' <img border="0" height="15" src="https://img.shields.io/pypi/pyversions/' + pypi + '.svg">' +
-                     ' <img border="0" height="15" src="https://img.shields.io/pypi/status/' + pypi + '.svg">'
+            entry += ' <img border="0" height="15" src="img/shields/PyPI/' + pypi + '_version.svg">' +
+                     ' <img border="0" height="15" src="img/shields/PyPI/' + pypi + '_python.svg">' +
+                     ' <img border="0" height="15" src="img/shields/PyPI/' + pypi + '_status.svg">'
           }
 
           entry += '</li>'
