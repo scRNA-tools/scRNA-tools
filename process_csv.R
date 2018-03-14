@@ -942,6 +942,19 @@ prompt_yn <- function(prompt) {
 }
 
 
+#' Write footer
+#'
+#' Write a HTML footer to use on website pages
+write_footer <- function() {
+    datetime <- Sys.time()
+    attr(datetime, "tzone") <- "UTC"
+
+    writeLines(paste0('<p class="text-muted">Last updated: ', datetime,
+                      ' UTC</p>'),
+               "docs/footer_content.html")
+}
+
+
 #' Process CSV
 #'
 #' Process `single_cell_software.csv` and create the various output files
@@ -1006,6 +1019,7 @@ process_csv <- function() {
     message("Plotting categories...")
     plot_categories(swsheet)
 
+    write_footer()
     message("Done!")
 }
 

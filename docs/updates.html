@@ -27,6 +27,12 @@
         ga('send', 'pageview')
         </script>
 
+        <script>
+        $(function(){
+          $("#footerContent").load("footer_content.html")
+        })
+        </script>
+
     </head>
 
     <body>
@@ -67,6 +73,10 @@
             <a class="twitter-timeline" data-link-color="#984ea3" href="https://twitter.com/scRNAtools">Tweets by scRNAtools</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
         </div>
+
+        <footer class="footer">
+            <div id="footerContent" class="container"></div>
+        </footer>
 
     </body>
 </html>
