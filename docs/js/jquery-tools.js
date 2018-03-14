@@ -105,19 +105,19 @@ $(document).ready(function () {
                  '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + name + '_c">' + name
 
         if (typeof bioc !== 'undefined') {
-          entry += ' <img border="0" height="15" src="http://bioconductor.org/shields/years-in-bioc/' + bioc + '.svg">' +
-                   ' <img border="0" height="15" src="http://bioconductor.org/shields/downloads/' + bioc + '.svg">'
+          entry += ' <img border="0" height="15" src="img/shields/BioC/' + bioc + '_years.svg">' +
+                   ' <img border="0" height="15" src="img/shields/BioC/' + bioc + '_downloads.svg">'
         }
 
         if (typeof cran !== 'undefined') {
-          entry += ' <img border="0" height="15" src="http://www.r-pkg.org/badges/version/' + cran + '">' +
-                   ' <img border="0" height="15" src="http://cranlogs.r-pkg.org/badges/grand-total/' + cran + '">'
+          entry += ' <img border="0" height="15" src="img/shields/CRAN/' + cran + '_version.svg">' +
+                   ' <img border="0" height="15" src="img/shields/CRAN/' + cran + '_downloads.svg">'
         }
 
         if (typeof pypi !== 'undefined') {
-          entry += ' <img border="0" height="15" src="https://img.shields.io/pypi/v/' + pypi + '.svg">' +
-                   ' <img border="0" height="15" src="https://img.shields.io/pypi/pyversions/' + pypi + '.svg">' +
-                   ' <img border="0" height="15" src="https://img.shields.io/pypi/status/' + pypi + '.svg">'
+          entry += ' <img border="0" height="15" src="img/shields/PyPI/' + pypi + '_version.svg">' +
+                   ' <img border="0" height="15" src="img/shields/PyPI/' + pypi + '_python.svg">' +
+                   ' <img border="0" height="15" src="img/shields/PyPI/' + pypi + '_status.svg">'
         }
 
         entry += '</a></h4></div>' +
@@ -178,9 +178,11 @@ $(document).ready(function () {
         if (typeof code !== 'undefined') {
             entry += '<li class="list-group-item"><strong>Code: </strong> <a href="' + code + '">' + code + '</a>'
             if (typeof github !== 'undefined') {
-                entry += ' <img border="0" height="15" src="https://img.shields.io/github/stars/' + github + '.svg">' +
-                    ' <img border="0" height="15" src="https://img.shields.io/github/forks/' + github + '.svg">' +
-                    ' <img border="0" height="15" src="https://img.shields.io/github/last-commit/' + github + '.svg">'
+              var github_clean = github.replace("/", "_")
+
+              entry += ' <img border="0" height="15" src="img/shields/GitHub/' + github_clean + '_stars.svg">' +
+              ' <img border="0" height="15" src="img/shields/GitHub/' + github_clean + '_forks.svg">' +
+              ' <img border="0" height="15" src="img/shields/GitHub/' + github_clean + '_commit.svg">'
             }
             entry += '</li>'
         }

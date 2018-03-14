@@ -28,6 +28,12 @@
         ga('send', 'pageview')
         </script>
 
+        <script>
+        $(function(){
+          $("#footerContent").load("footer_content.html")
+        })
+        </script>
+
     </head>
 
     <body>
@@ -80,6 +86,10 @@
             </div>
 
         </div>
+
+        <footer class="footer">
+            <div id="footerContent" class="container"></div>
+        </footer>
 
     </body>
 </html>
