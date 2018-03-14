@@ -31,6 +31,7 @@ suppressPackageStartupMessages({
     library(widgetframe)
     library(purrr)
     library(aRxiv)
+    library(progress)
 })
 
 #### FUNCTIONS ####
@@ -87,7 +88,28 @@ get_pkgs <- function() {
         html_text()
     names(pypi.pkgs) <- str_to_lower(pypi.pkgs)
 
-    pkgs <- list(BioC = bioc.pkgs, CRAN = cran.pkgs, PyPI = pypi.pkgs)
+    message("Getting Anaconda package list...")
+    pages <- read_html("https://anaconda.org/anaconda/repo") %>%
+        html_nodes(".unavailable:nth-child(2)") %>%
+        html_text() %>% str_split(" ") %>%
+        unlist()
+    pages <- as.numeric(pages[4])
+
+    conda.pkgs <- pbsapply(seq_len(pages), function(p) {
+        url <- paste0("https://anaconda.org/anaconda/repo?sort=_name&sort_order=asc&page=",
+                      p)
+
+        read_html(url) %>%
+            html_nodes(".packageName") %>%
+            html_text()
+    })
+    conda.pkgs <- unlist(conda.pkgs)
+    names(conda.pkgs) <- str_to_lower(conda.pkgs)
+
+    pkgs <- list(BioC = bioc.pkgs,
+                 CRAN = cran.pkgs,
+                 PyPI = pypi.pkgs,
+                 Conda = conda.pkgs)
 }
 
 
@@ -301,26 +323,219 @@ add_github <- function(swsheet) {
 #' repositories
 #'
 #' @param swsheet Tibble containing software table
-#' @param pkgs List of available packages
+#' @param repos List of repo information
 #'
 #' @return swsheet with additional repository columns
-add_repos <- function(swsheet, pkgs) {
+add_repos <- function(swsheet, repos) {
 
     message("Adding package repositories...")
 
+    # swsheet %>%
+    #     mutate(LowerName = str_to_lower(Name)) %>%
+    #     mutate(BioC = LowerName %in% names(pkgs$BioC)) %>%
+    #     mutate(BioC = ifelse(BioC, pkgs$BioC[LowerName], NA)) %>%
+    #     mutate(BioC = ifelse(str_detect(Platform, "R"), BioC, NA)) %>%
+    #     mutate(CRAN = LowerName %in% names(pkgs$CRAN)) %>%
+    #     mutate(CRAN = ifelse(CRAN, pkgs$CRAN[LowerName], NA)) %>%
+    #     mutate(CRAN = ifelse(str_detect(Platform, "R"), CRAN, NA)) %>%
+    #     mutate(PyPI = LowerName %in% names(pkgs$PyPI)) %>%
+    #     mutate(PyPI = ifelse(PyPI, pkgs$PyPI[LowerName], NA)) %>%
+    #     mutate(PyPI = ifelse(str_detect(str_to_lower(Platform), "python"),
+    #                          PyPI, NA)) %>%
+    #     mutate(Conda = LowerName %in% names(pkgs$Conda)) %>%
+    #     mutate(Conda = ifelse(Conda, pkgs$Conda[LowerName], NA)) %>%
+    #     select(-LowerName)
+
     swsheet %>%
-        mutate(LowerName = str_to_lower(Name)) %>%
-        mutate(BioC = LowerName %in% names(pkgs$BioC)) %>%
-        mutate(BioC = ifelse(BioC, pkgs$BioC[LowerName], NA)) %>%
-        mutate(BioC = ifelse(str_detect(Platform, "R"), BioC, NA)) %>%
-        mutate(CRAN = LowerName %in% names(pkgs$CRAN)) %>%
-        mutate(CRAN = ifelse(CRAN, pkgs$CRAN[LowerName], NA)) %>%
-        mutate(CRAN = ifelse(str_detect(Platform, "R"), CRAN, NA)) %>%
-        mutate(PyPI = LowerName %in% names(pkgs$PyPI)) %>%
-        mutate(PyPI = ifelse(PyPI, pkgs$PyPI[LowerName], NA)) %>%
-        mutate(PyPI = ifelse(str_detect(str_to_lower(Platform), "python"),
-                             PyPI, NA)) %>%
-        select(-LowerName)
+        rowwise() %>%
+        mutate(BioC = ifelse(!is.null(repos[[Name]]$BioC),
+                             repos[[Name]]$BioC, NA)) %>%
+        mutate(CRAN = ifelse(!is.null(repos[[Name]]$CRAN),
+                             repos[[Name]]$CRAN, NA)) %>%
+        mutate(PyPI = ifelse(!is.null(repos[[Name]]$PyPI),
+                             repos[[Name]]$PyPI, NA)) %>%
+        mutate(Conda = ifelse(!is.null(repos[[Name]]$Conda),
+                             repos[[Name]]$Conda, NA)) %>%
+        ungroup()
+}
+
+
+#' Get shields
+#'
+#' Download shields describing various repositories
+#'
+#' @param swsheet Tibble containing software table
+get_shields <- function(swsheet) {
+
+    message("Getting shields...")
+    pb_format <- "   |:bar| :percent Elapsed: :elapsed Remaining: :eta"
+
+    pb <- progress_bar$new(total = nrow(swsheet), format = pb_format,
+                           clear = FALSE)
+    message("Downloading Bioconductor shields...")
+    for (repo in swsheet$BioC) {
+        pb$tick()
+        if (!is.na(repo)) {
+            years_url <- paste0("http://bioconductor.org/shields/years-in-bioc/",
+                                repo, ".svg")
+            down_url <- paste0("http://bioconductor.org/shields/downloads/",
+                               repo, ".svg")
+
+            download.file(years_url,
+                          paste0("docs/img/shields/BioC/", repo, "_years.svg"),
+                          quiet = TRUE)
+            download.file(down_url,
+                          paste0("docs/img/shields/BioC/", repo,
+                                 "_downloads.svg"),
+                          quiet = TRUE)
+        }
+    }
+
+    pb <- progress_bar$new(total = nrow(swsheet),format = pb_format,
+                           clear = FALSE)
+    message("Downloading CRAN shields...")
+    for (repo in swsheet$CRAN) {
+        pb$tick()
+        if (!is.na(repo)) {
+            version_url <- paste0("http://www.r-pkg.org/badges/version/",
+                                  repo)
+            down_url <- paste0("http://cranlogs.r-pkg.org/badges/grand-total/",
+                               repo)
+
+            download.file(version_url,
+                          paste0("docs/img/shields/CRAN/", repo, "_version.svg"),
+                          quiet = TRUE)
+            download.file(down_url,
+                          paste0("docs/img/shields/CRAN/", repo,
+                                 "_downloads.svg"),
+                          quiet = TRUE)
+        }
+    }
+
+    pb <- progress_bar$new(total = nrow(swsheet), format = pb_format,
+                           clear = FALSE)
+    message("Downloading PyPI shields...")
+    for (repo in swsheet$PyPI) {
+        pb$tick()
+        if (!is.na(repo)) {
+            version_url <- paste0("https://img.shields.io/pypi/v/",
+                                  repo, ".svg")
+            python_url <- paste0("https://img.shields.io/pypi/pyversions/",
+                                 repo, ".svg")
+            status_url <- paste0("https://img.shields.io/pypi/status/",
+                                 repo, ".svg")
+
+            download.file(version_url,
+                          paste0("docs/img/shields/PyPI/", repo,
+                                 "_version.svg"),
+                          quiet = TRUE)
+            download.file(python_url,
+                          paste0("docs/img/shields/PyPI/", repo,
+                                 "_python.svg"),
+                          quiet = TRUE)
+            download.file(status_url,
+                          paste0("docs/img/shields/PyPI/", repo,
+                                 "_status.svg"),
+                          quiet = TRUE)
+        }
+    }
+
+    pb <- progress_bar$new(total = nrow(swsheet), format = pb_format,
+                           clear = FALSE)
+    message("Downloading GitHub shields...")
+    for (repo in swsheet$Github) {
+        pb$tick()
+        if (!is.na(repo)) {
+            stars_url <- paste0("https://img.shields.io/github/stars/",
+                                repo, ".svg")
+            forks_url <- paste0("https://img.shields.io/github/forks/",
+                                repo, ".svg")
+            commit_url <- paste0("https://img.shields.io/github/last-commit/",
+                                 repo, ".svg")
+
+            repo_clean <- str_replace(repo, "/", "_")
+            download.file(stars_url,
+                          paste0("docs/img/shields/GitHub/", repo_clean,
+                                 "_stars.svg"),
+                          quiet = TRUE)
+            download.file(forks_url,
+                          paste0("docs/img/shields/GitHub/", repo_clean,
+                                 "_forks.svg"),
+                          quiet = TRUE)
+            download.file(commit_url,
+                          paste0("docs/img/shields/GitHub/", repo_clean,
+                                 "_commit.svg"),
+                          quiet = TRUE)
+        }
+    }
+}
+
+
+#' Check repositories
+#'
+#' Check if tools are in pkg repositories
+#'
+#' @param names Vector of tool names
+#' @param pkgs List of available packages
+#'
+#' @return list with repo information
+check_repos <- function(names, pkgs) {
+
+    message("Checking repositories...")
+    repos <- fromJSON("docs/data/repositories.json")
+
+    added <- 0
+    ignored <- 0
+
+    # Iterate over tool names
+    for (name in names) {
+        # Iterate over package lists
+        for(repo in names(pkgs)) {
+            # Check this repo isn't already set
+            if (is.null(repos[[name]][[repo]])) {
+
+                lower <- str_to_lower(name)
+                # Check if tool in repository
+                if (lower %in% names(pkgs[[repo]])) {
+
+                    repo_name <- pkgs[[repo]][[lower]]
+                    repo_path <- paste(repo, repo_name, sep = "/")
+
+                    # Skip if ignored
+                    if (repo_path %in% repos[[name]]$Ignored) {
+                        next
+                    }
+
+                    # Create tool entry if missing
+                    if (!(name %in% names(repos))) {
+                        repos[[name]] <- list()
+                    }
+
+                    # Ask for confirmation repository is correct
+                    message("Suggested repository for ", name, ": ", repo_path)
+                    confirmed <- prompt_yn("Confirm")
+                    if (confirmed) {
+                        # Set repository
+                        repos[[name]][[repo]] <- repo_name
+                        message("Confirmed")
+                        added <- added + 1
+                    } else {
+                        # Ignore repository
+                        repos[[name]]$Ignored <- c(repos[[name]]$Ignored,
+                                                   repo_path)
+                        message("Added to ignore list")
+                        ignored <- ignored + 1
+                    }
+                }
+            }
+        }
+    }
+
+    message("Added ", added, " new repositories")
+    message("Ignored ", ignored, " repostories")
+    write_lines(toJSON(repos, pretty = TRUE), "docs/data/repositories.json")
+
+    return(repos)
 }
 
 
@@ -372,8 +587,8 @@ tidy_swsheet <- function(swsheet) {
 
     gather(swsheet, key = 'Category', value = 'Val',
            -Description, -Name, -Platform, -DOIs, -PubDates, -Updated, -Added,
-           -Code, -Github, -License, -BioC, -CRAN, -PyPI, -Refs, -Citations,
-           -Publications) %>%
+           -Code, -Github, -License, -Refs, -BioC, -CRAN, -PyPI, -Conda,
+           -Citations, -Publications) %>%
         filter(Val == TRUE) %>%
         select(-Val) %>%
         arrange(Name)
@@ -439,8 +654,8 @@ get_cats_json <- function(tidysw, swsheet, descs) {
     namelist <- lapply(namelist, function(x) {
         swsheet %>%
             filter(Name %in% x) %>%
-            select(Name, BioC, CRAN, PyPI, Citations, Publications, Added,
-                   Updated)
+            select(Name, Citations, Publications, BioC, CRAN, PyPI, Conda,
+                   Added, Updated)
     })
 
     cats <- tidysw %>%
@@ -650,6 +865,7 @@ plot_platforms <- function(swsheet) {
                selfcontained = FALSE, libdir = "libraries")
 }
 
+
 #' Plot categories
 #'
 #' Produces a HTML page with an interactive plot showing the percentage of tools
@@ -697,6 +913,48 @@ plot_categories <- function(swsheet) {
 }
 
 
+#' Prompt Y/N
+#'
+#' Prompt the user for a yes or no response
+#'
+#' @param prompt Text prompt to use
+#'
+#' @return TRUE or FALSE
+prompt_yn <- function(prompt) {
+
+    prompt <- paste0(prompt, "? (y/n): ")
+
+    if (interactive()) {
+        response <- readline(prompt)
+    } else {
+        cat(prompt)
+        response <- readLines("stdin", n = 1)
+    }
+
+    if (response %in% c("y", "n")) {
+        value <- ifelse(response == "y", TRUE, FALSE)
+    } else {
+        message("Please enter 'y' or 'n'")
+        value <- prompt_yn(prompt)
+    }
+
+    return(value)
+}
+
+
+#' Write footer
+#'
+#' Write a HTML footer to use on website pages
+write_footer <- function() {
+    datetime <- Sys.time()
+    attr(datetime, "tzone") <- "UTC"
+
+    writeLines(paste0('<p class="text-muted">Last updated: ', datetime,
+                      ' UTC</p>'),
+               "docs/footer_content.html")
+}
+
+
 #' Process CSV
 #'
 #' Process `single_cell_software.csv` and create the various output files
@@ -713,13 +971,19 @@ process_csv <- function() {
     # Add new titles
     titles_cache <- add_to_titles_cache(swsheet, titles_cache)
 
+    # Check repositories
+    repos <- check_repos(swsheet$Name, pkgs)
+
     # Process table
     message("Processing table...")
     swsheet <- swsheet %>%
         add_refs(titles_cache) %>%
         add_github() %>%
-        add_repos(pkgs) #%>%
+        add_repos(repos) #%>%
         #add_citations()
+
+    # Get shields
+    get_shields(swsheet)
 
     # Convert to tidy format
     tidysw <- tidy_swsheet(swsheet)
@@ -755,11 +1019,15 @@ process_csv <- function() {
     message("Plotting categories...")
     plot_categories(swsheet)
 
+    write_footer()
     message("Done!")
 }
 
 
 #### MAIN CODE ####
+
+# Show warnings
+options(warn = 1)
 
 # Setup progress bar
 pboptions(type = "timer", char = "=", style = 3)

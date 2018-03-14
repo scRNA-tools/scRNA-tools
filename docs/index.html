@@ -40,6 +40,12 @@
         ga('send', 'pageview')
         </script>
 
+        <script>
+        $(function(){
+          $("#footerContent").load("footer_content.html")
+        })
+        </script>
+
     </head>
 
     <body>
@@ -139,8 +145,11 @@
                     </tr>
                 </thead>
             </table>
-
         </div>
+
+        <footer class="footer">
+            <div id="footerContent" class="container"></div>
+        </footer>
 
     <script>
         function logicalFormatter (value) {
