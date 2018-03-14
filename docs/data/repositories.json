@@ -14,7 +14,8 @@
     "Ignored": ["PyPI/DeLorean", "PyPI/Delorean"]
   },
   "anchor": {
-    "Ignored": ["PyPI/anchor"]
+    "Ignored": ["PyPI/anchor"],
+    "PyPI": ["anchor-bio"]
   },
   "BASIC": {
     "Ignored": ["PyPI/Basic"]
@@ -196,13 +197,15 @@
     "BioC": ["scran"]
   },
   "scRutiNy": {
-    "Ignored": ["PyPI/Scrutiny"]
+    "Ignored": ["PyPI/Scrutiny"],
+    "PyPI": ["RNAscrutiny"]
   },
   "scTDA": {
     "PyPI": ["scTDA"]
   },
   "SCUBA": {
-    "Ignored": ["CRAN/scuba", "PyPI/scuba"]
+    "Ignored": ["CRAN/scuba", "PyPI/scuba"],
+    "PyPI": ["PySCUBA"]
   },
   "SEPA": {
     "BioC": ["SEPA"],
@@ -265,7 +268,8 @@
     "PyPI": ["umis"]
   },
   "UNCURL": {
-    "Ignored": ["PyPI/uncurl"]
+    "Ignored": ["PyPI/uncurl"],
+    "PyPI": ["uncurl-seq"]
   },
   "velocyto": {
     "PyPI": ["velocyto"]
