@@ -10,13 +10,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/layout.css"/>
-        <link rel="stylesheet" type="text/css" href="css/analysis.css"/>
+        <link rel="stylesheet" type="text/css" href="css/submit.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!--// Scripts ----------------------------------------------------- -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
 
         <script>
         (function (i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -51,9 +50,9 @@
                     <li><a href="index.html">Table</a></li>
                     <li><a href="tools.html">Tools</a></li>
                     <li><a href="categories.html">Categories</a></li>
-                    <li class="active"><a href="#">Analysis</a></li>
+                    <li><a href="analysis.html">Analysis</a></li>
                     <li><a href="updates.html">Updates</a></li>
-                    <li><a href="submit.html">Submit</a></li>
+                    <li class="active"><a href="#">Submit</a></li>
                     <li><a href="faqs.html">FAQs</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -67,36 +66,63 @@
             <!--// Intro --------------------------------------------------- -->
 
             <div class="page-header">
-                <h1>Analysis</h1>
+                <h1>Submit</h1>
             </div>
 
-            <!--// Plots --------------------------------------------------- -->
+            <!--// Submission form ----------------------------------------- -->
 
-            <div class="row">
-                <div class="plot col-xs-12 col-md-6">
-                    <div id="number"></div>
-                </div>
-                <div class="plot col-xs-12 col-md-6">
-                    <div id="publication"></div>
-                </div>
-                <div class="plot col-xs-12 col-md-6">
-                    <div id="platforms"></div>
-                </div>
-                <div class="plot col-xs-12 col-md-6">
-                    <div id="licenses"></div>
-                </div>
-                <div class="plot col-xs-12">
-                    <div id="categories"></div>
-                </div>
+            <img id="logo-square" alt="scRNA-tools" src="img/square.svg" />
+
+            <div class="form-group">
+                <p>
+                    We would love to hear your suggestions for the scRNA-tools
+                    database! To contact us please fill in the form below or
+                    open an issue or pull request via
+                    <a href="https://github.com/Oshlack/scRNA-tools">GitHub</a>.
+                </p>
             </div>
 
-            <script>
-            var p1 = new pym.Parent('number', 'plots/number.html', {})
-            var p2 = new pym.Parent('publication', 'plots/publication.html', {})
-            var p3 = new pym.Parent('platforms', 'plots/platforms.html', {})
-            var p4 = new pym.Parent('licenses', 'plots/licenses.html', {})
-            var p5 = new pym.Parent('categories', 'plots/categories.html', {})
-            </script>
+            <form action="https://formspree.io/scrna.tools@gmail.com" method="POST">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Tool name">
+                </div>
+                <div class="form-group">
+                        <label for="platform">Platform(s):</label>
+                        <input type="text" class="form-control" id="platform" name="platform" placeholder="Available platforms (eg. R/Python)">
+                </div>
+                <div class="form-group">
+                        <label for="doi">DOI(s):</label>
+                        <input type="text" class="form-control" id="doi" name="doi" placeholder="DOIs for associated publications/preprints">
+                </div>
+                <div class="form-group">
+                        <label for="code">Code:</label>
+                        <input type="text" class="form-control" id="code" name="code" placeholder="Link to code repository (eg. GitHub)">
+                </div>
+                <div class="form-group">
+                        <label for="license">License:</label>
+                        <input type="text" class="form-control" id="license" name="license" placeholder="Associated software license">
+                </div>
+                <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea type="text" class="form-control" id="description" name="description" placeholder="Short description of the tool and what it does"></textarea>
+                </div>
+                <div class="form-group">
+                        <label for="categories">Categories:</label>
+                        <input type="text" class="form-control" id="categories" name="categories" placeholder="Types of analysis the tool is used for (eg. Visualisation, Clustering,...)">
+                </div>
+                <div class="form-group">
+                        <label for="notes">Notes:</label>
+                        <textarea type="text" class="form-control" id="notes" name="notes" placeholder="Anything else you would like to tell us about the tool?"></textarea>
+                </div>
+                <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your email in case we have questions">
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </form>
 
         </div>
 
