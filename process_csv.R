@@ -258,7 +258,9 @@ add_refs <- function(swsheet, titles_cache) {
     ref_list <- pbsapply(names(doi_list), function(x) {
         dois <- doi_list[[x]]
         dates <- date_list[[x]]
-        stopifnot(length(dois) == length(dates))
+        if (!(length(dois) == length(dates))) {
+            stop(x, " - length(dois) != length(dates)", call. = FALSE)
+        }
 
         if (all(is.na(dois))) {
             return(NA)

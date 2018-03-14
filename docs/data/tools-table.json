@@ -110,6 +110,7 @@
     "Citations": 2,
     "Publications": 1,
     "Github": "yeolab/anchor",
+    "PyPI": "anchor-bio",
     "Categories": ["Modality"]
   },
   {
@@ -170,8 +171,8 @@
   {
     "Name": "AUCell",
     "Platform": "R",
-    "DOIs": "10.1038/nmeth.4463",
-    "PubDates": "2017-10-09",
+    "DOIs": "10.1101/144501;10.1038/nmeth.4463",
+    "PubDates": "PREPRINT;2017-10-09",
     "Code": "https://github.com/aertslab/AUCell",
     "Description": "AUCell is an R-package to analyze the state of gene-sets in single-cell RNA-seq data (i.e. identify cells with active gene signatures).",
     "License": "Custom",
@@ -208,8 +209,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2017-06-26",
-    "Updated": "2017-12-20",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "SCENIC: Single-Cell Regulatory Network Inference And Clustering",
+        "DOI": "10.1101/144501",
+        "Preprint": true,
+        "Citations": 0
+      },
       {
         "Title": "SCENIC: single-cell regulatory network inference and clustering",
         "DOI": "10.1038/nmeth.4463",
@@ -219,7 +226,7 @@
       }
     ],
     "Citations": 3,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "aertslab/AUCell",
     "BioC": "AUCell",
     "Categories": ["GeneNetworks", "Visualisation"]
@@ -783,8 +790,8 @@
   {
     "Name": "BRIE",
     "Platform": "Python",
-    "DOIs": "10.1186/s13059-017-1248-5",
-    "PubDates": "2017-06-27",
+    "DOIs": "10.1101/098517;10.1186/s13059-017-1248-5",
+    "PubDates": "PREPRINT;2017-06-27",
     "Code": "https://github.com/huangyh09/brie",
     "Description": "BRIE (Bayesian regression for isoform estimate) is a Bayesian method to estimate isoform proportions from RNA-seq data.",
     "License": "Apache-2.0",
@@ -821,8 +828,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2017-01-10",
-    "Updated": "2017-07-03",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "Transcriptome-wide splicing quantification in single cells",
+        "DOI": "10.1101/098517",
+        "Preprint": true,
+        "Citations": 0
+      },
       {
         "Title": "BRIE: transcriptome-wide splicing quantification in single cells",
         "DOI": "10.1186/s13059-017-1248-5",
@@ -832,7 +845,7 @@
       }
     ],
     "Citations": 2,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "huangyh09/brie",
     "PyPI": "brie",
     "Categories": ["Quantification", "AlternativeSplicing"]
@@ -1064,8 +1077,8 @@
   {
     "Name": "CIDR",
     "Platform": "R",
-    "DOIs": "10.1101/068775",
-    "PubDates": "PREPRINT",
+    "DOIs": "10.1101/068775;10.1186/s13059-017-1188-0",
+    "PubDates": "PREPRINT;2017-03-28",
     "Code": "https://github.com/VCCRI/CIDR",
     "Description": "Ultrafast and accurate clustering through imputation and dimensionality reduction for single-cell RNA-seq data.",
     "License": "GPL (>=2)",
@@ -1102,17 +1115,24 @@
     "Interactive": false,
     "Simulation": true,
     "Added": "2016-09-09",
-    "Updated": "2016-11-29",
+    "Updated": "2018-03-14",
     "Refs": [
       {
         "Title": "CIDR: Ultrafast and accurate clustering through imputation for single-cell RNA-Seq data",
         "DOI": "10.1101/068775",
         "Preprint": true,
         "Citations": 0
+      },
+      {
+        "Title": "CIDR: Ultrafast and accurate clustering through imputation for single-cell RNA-seq data",
+        "DOI": "10.1186/s13059-017-1188-0",
+        "PubDate": "2017-03-28",
+        "Preprint": false,
+        "Citations": 15
       }
     ],
-    "Citations": 0,
-    "Publications": 1,
+    "Citations": 15,
+    "Publications": 2,
     "Github": "VCCRI/CIDR",
     "Categories": ["Imputation", "Clustering", "DimensionalityReduction", "Simulation"]
   },
@@ -1538,8 +1558,8 @@
   {
     "Name": "demuxlet",
     "Platform": "C++",
-    "DOIs": "10.1038/nbt.4042",
-    "PubDates": "2017-12-11",
+    "DOIs": "10.1101/118778;10.1038/nbt.4042",
+    "PubDates": "PREPRINT;2017-12-11",
     "Code": "https://github.com/statgen/demuxlet",
     "Description": "Genetic multiplexing of barcoded single cell RNA-seq",
     "License": "Apache-2.0",
@@ -1576,8 +1596,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2017-03-29",
-    "Updated": "2017-12-20",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "Multiplexing droplet-based single cell RNA-sequencing using natural genetic barcodes",
+        "DOI": "10.1101/118778",
+        "Preprint": true,
+        "Citations": 0
+      },
       {
         "Title": "Multiplexed droplet single-cell RNA-sequencing using natural genetic variation",
         "DOI": "10.1038/nbt.4042",
@@ -1587,7 +1613,7 @@
       }
     ],
     "Citations": 0,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "statgen/demuxlet",
     "Categories": ["UMIs", "QualityControl", "Variants"]
   },
@@ -2610,8 +2636,8 @@
   {
     "Name": "Falco",
     "Platform": "AWS",
-    "DOIs": "10.1093/bioinformatics/btw732",
-    "PubDates": "2016-12-13",
+    "DOIs": "10.1101/064006;10.1093/bioinformatics/btw732",
+    "PubDates": "PREPRINT;2016-12-13",
     "Code": "https://github.com/VCCRI/Falco",
     "Description": "A Cloud-based Genetic Feature Quantification Analysis Tool",
     "License": "GPL-3",
@@ -2648,8 +2674,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-08",
-    "Updated": "2017-11-20",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "Falco: A quick and flexible single-cell RNA-seq processing framework on the cloud",
+        "DOI": "10.1101/064006",
+        "Preprint": true,
+        "Citations": 0
+      },
       {
         "Title": "Falco: a quick and flexible single-cell RNA-seq processing framework on the cloud",
         "DOI": "10.1093/bioinformatics/btw732",
@@ -2659,7 +2691,7 @@
       }
     ],
     "Citations": 4,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "VCCRI/Falco",
     "Categories": ["Alignment", "Quantification"]
   },
@@ -2934,8 +2966,8 @@
   {
     "Name": "GPfates",
     "Platform": "Python",
-    "DOIs": "10.1126/sciimmunol.aal2192",
-    "PubDates": "2017-03-03",
+    "DOIs": "10.1101/074971;10.1126/sciimmunol.aal2192",
+    "PubDates": "PREPRINT;2017-03-03",
     "Code": "https://github.com/Teichlab/GPfates",
     "Description": "Model transcriptional cell fates as mixtures of Gaussian Processes",
     "License": "MIT",
@@ -2972,8 +3004,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-19",
-    "Updated": "2017-03-10",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "Temporal mixture modelling of single-cell RNA-seq data resolves a CD4+ T cell fate bifurcation",
+        "DOI": "10.1101/074971",
+        "Preprint": true,
+        "Citations": 2
+      },
       {
         "Title": "Single-cell RNA-seq and computational analysis using temporal mixture modeling resolves TH1/TFHfate bifurcation in malaria",
         "DOI": "10.1126/sciimmunol.aal2192",
@@ -2982,8 +3020,8 @@
         "Citations": 28
       }
     ],
-    "Citations": 28,
-    "Publications": 1,
+    "Citations": 30,
+    "Publications": 2,
     "Github": "Teichlab/GPfates",
     "Categories": ["Ordering", "Visualisation"]
   },
@@ -3502,8 +3540,8 @@
   {
     "Name": "ISOP",
     "Platform": "R",
-    "DOIs": "10.1093/bioinformatics/bty100",
-    "PubDates": "2018-02-27",
+    "DOIs": "10.1101/036988;10.1093/bioinformatics/bty100",
+    "PubDates": "PREPRINT;2018-02-27",
     "Code": "https://github.com/nghiavtr/ISOP",
     "Description": "ISOform-level expression Patterns in single-cell RNA-sequencing data.",
     "License": "GPL-3",
@@ -3540,8 +3578,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-09",
-    "Updated": "2018-03-02",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "Isoform-level gene expression patterns in single-cell RNA-sequencing data",
+        "DOI": "10.1101/036988",
+        "Preprint": true,
+        "Citations": 0
+      },
       {
         "Title": "Isoform-level gene expression patterns in single-cell RNA-sequencing data",
         "DOI": "10.1093/bioinformatics/bty100",
@@ -3551,7 +3595,7 @@
       }
     ],
     "Citations": 0,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "nghiavtr/ISOP",
     "Categories": ["DifferentialExpression", "ExpressionPatterns"]
   },
@@ -3778,7 +3822,7 @@
   {
     "Name": "Linnorm",
     "Platform": "R",
-    "Code": "https://github.com/Bioconductor-mirror/Linnorm",
+    "Code": "https://github.com/kenshunyip/Linnorm",
     "Description": "Linnorm is an R package for the analysis of RNA-seq, scRNA-seq, ChIP-seq count data or any large scale count data.",
     "License": "MIT",
     "Assembly": false,
@@ -3814,9 +3858,9 @@
     "Interactive": false,
     "Simulation": true,
     "Added": "2017-02-01",
-    "Updated": "2017-02-01",
+    "Updated": "2018-03-14",
     "Refs": [null],
-    "Github": "Bioconductor-mirror/Linnorm",
+    "Github": "kenshunyip/Linnorm",
     "BioC": "Linnorm",
     "Categories": ["Normalisation", "Imputation", "GeneFiltering", "Clustering", "DifferentialExpression", "VariableGenes", "GeneNetworks", "Visualisation", "Simulation"]
   },
@@ -4102,8 +4146,8 @@
   {
     "Name": "MetaNeighbour",
     "Platform": "R",
-    "DOIs": "10.1038/s41467-018-03282-0",
-    "PubDates": "2018-02-02",
+    "DOIs": "10.1101/150524;10.1038/s41467-018-03282-0",
+    "PubDates": "PREPRINT;2018-02-02",
     "Code": "https://github.com/maggiecrow/MetaNeighbor",
     "Description": "MetaNeighbor: a method to rapidly assess cell type identity using both functional and random gene sets",
     "License": "MIT",
@@ -4140,8 +4184,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2017-09-09",
-    "Updated": "2018-03-08",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "Addressing the looming identity crisis in single cell RNA-seq",
+        "DOI": "10.1101/150524",
+        "Preprint": true,
+        "Citations": 0
+      },
       {
         "Title": "Characterizing the replicability of cell types defined by single cell RNA-sequencing data using MetaNeighbor",
         "DOI": "10.1038/s41467-018-03282-0",
@@ -4151,7 +4201,7 @@
       }
     ],
     "Citations": 0,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "maggiecrow/MetaNeighbor",
     "Categories": ["Clustering", "Classification", "VariableGenes", "GeneSets"]
   },
@@ -4215,8 +4265,8 @@
   {
     "Name": "Monocle",
     "Platform": "R",
-    "DOIs": "10.1038/nbt.2859;10.1038/nmeth.4150;10.1038/nmeth.4402",
-    "PubDates": "2014-04-01;2017-01-23;2017-08-21",
+    "DOIs": "10.1038/nbt.2859;10.1038/nmeth.4150;10.1101/110668;10.1038/nmeth.4402",
+    "PubDates": "2014-04-01;2017-01-23;PREPRINTl;2017-08-21",
     "Code": "https://github.com/cole-trapnell-lab/monocle-release",
     "Description": "Differential expression and time-series analysis for single-cell RNA-Seq.",
     "License": "Artistic-2.0",
@@ -4253,7 +4303,7 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-08",
-    "Updated": "2018-03-07",
+    "Updated": "2018-03-14",
     "Refs": [
       {
         "Title": "The dynamics and regulators of cell fate decisions are revealed by pseudotemporal ordering of single cells",
@@ -4270,6 +4320,13 @@
         "Citations": 29
       },
       {
+        "Title": "Reversed graph embedding resolves complex single-cell developmental trajectories",
+        "DOI": "10.1101/110668",
+        "PubDate": "PREPRINTl",
+        "Preprint": false,
+        "Citations": 3
+      },
+      {
         "Title": "Reversed graph embedding resolves complex single-cell trajectories",
         "DOI": "10.1038/nmeth.4402",
         "PubDate": "2017-08-21",
@@ -4277,8 +4334,8 @@
         "Citations": 17
       }
     ],
-    "Citations": 389,
-    "Publications": 3,
+    "Citations": 392,
+    "Publications": 4,
     "Github": "cole-trapnell-lab/monocle-release",
     "BioC": "monocle",
     "Categories": ["Clustering", "Ordering", "DifferentialExpression", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
@@ -4343,7 +4400,7 @@
     "Platform": "MATLAB",
     "DOIs": "10.1093/bioinformatics/bty050",
     "PubDates": "2018-02-08",
-    "Code": "https://github.com/ishspsy/project/tree/master/MPSSC",
+    "Code": "https://github.com/ishspsy/project",
     "Description": "MPSSC is a novel spectral clustering framework that imposes sparse structures on a target matrix.",
     "License": "GPL-3",
     "Assembly": false,
@@ -4379,7 +4436,7 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2018-02-17",
-    "Updated": "2018-02-17",
+    "Updated": "2018-03-14",
     "Refs": [
       {
         "Title": "Spectral clustering based on learning similarity matrix",
@@ -4391,7 +4448,7 @@
     ],
     "Citations": 0,
     "Publications": 1,
-    "Github": "ishspsy/project/tree/master/MPSSC",
+    "Github": "ishspsy/project",
     "Categories": ["Clustering"]
   },
   {
@@ -5161,8 +5218,8 @@
   {
     "Name": "PIVOT",
     "Platform": "R",
-    "DOIs": "10.1186/s12859-017-1994-0",
-    "PubDates": "2018-01-05",
+    "DOIs": "10.1101/053348;10.1186/s12859-017-1994-0",
+    "PubDates": "PREPRINT;2018-01-05",
     "Code": "https://github.com/qinzhu/PIVOT",
     "Description": "PIVOT facilitates fast and interactive RNA-Seq data analysis and visualization.",
     "License": "Custom",
@@ -5199,8 +5256,14 @@
     "Interactive": true,
     "Simulation": false,
     "Added": "2017-07-16",
-    "Updated": "2018-01-18",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "PIVOT: Platform for Interactive Analysis and Visualization of Transcriptomics Data",
+        "DOI": "10.1101/053348",
+        "Preprint": true,
+        "Citations": 1
+      },
       {
         "Title": "PIVOT: platform for interactive analysis and visualization of transcriptomics data",
         "DOI": "10.1186/s12859-017-1994-0",
@@ -5209,8 +5272,8 @@
         "Citations": 0
       }
     ],
-    "Citations": 0,
-    "Publications": 1,
+    "Citations": 1,
+    "Publications": 2,
     "Github": "qinzhu/PIVOT",
     "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Ordering", "DifferentialExpression", "GeneSets", "GeneNetworks", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
@@ -5912,7 +5975,7 @@
     "Platform": "Python",
     "DOIs": "10.1101/237065",
     "PubDates": "PREPRINT",
-    "Code": "https://github.com/KrishnaswamyLab/SAUCIE/",
+    "Code": "https://github.com/KrishnaswamyLab/SAUCIE",
     "Description": "SAUCIE (Sparse Autoencoder for Unsupervised Clustering, Imputation, and Embedding), simultaneously performs several key tasks for single-cell data analysis including 1) clustering, 2) batch correction, 3) visualization, and 4) denoising/imputation.",
     "Assembly": false,
     "Alignment": false,
@@ -5958,7 +6021,7 @@
     ],
     "Citations": 0,
     "Publications": 1,
-    "Github": "KrishnaswamyLab/SAUCIE/",
+    "Github": "KrishnaswamyLab/SAUCIE",
     "Categories": ["Normalisation", "Imputation", "Clustering", "DimensionalityReduction"]
   },
   {
@@ -6071,8 +6134,8 @@
   {
     "Name": "SC3",
     "Platform": "R",
-    "DOIs": "10.1038/nmeth.4236",
-    "PubDates": "2017-03-27",
+    "DOIs": "10.1101/036558;10.1038/nmeth.4236",
+    "PubDates": "PREPRINT;2017-03-27",
     "Code": "https://github.com/hemberg-lab/sc3",
     "Description": "SC3 is an interactive tool for the unsupervised clustering of cells from single cell RNA-Seq experiments.",
     "License": "GPL-3",
@@ -6109,8 +6172,14 @@
     "Interactive": true,
     "Simulation": false,
     "Added": "2016-09-08",
-    "Updated": "2017-09-21",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "SC3 - consensus clustering of single-cell RNA-Seq data",
+        "DOI": "10.1101/036558",
+        "Preprint": true,
+        "Citations": 1
+      },
       {
         "Title": "SC3: consensus clustering of single-cell RNA-seq data",
         "DOI": "10.1038/nmeth.4236",
@@ -6119,8 +6188,8 @@
         "Citations": 43
       }
     ],
-    "Citations": 43,
-    "Publications": 1,
+    "Citations": 44,
+    "Publications": 2,
     "Github": "hemberg-lab/sc3",
     "BioC": "SC3",
     "Categories": ["Clustering", "Interactive"]
@@ -6128,8 +6197,8 @@
   {
     "Name": "SCALE",
     "Platform": "R",
-    "DOIs": "10.1186/s13059-017-1200-8",
-    "PubDates": "2017-04-26",
+    "DOIs": "10.1101/109629;10.1186/s13059-017-1200-8",
+    "PubDates": "PREPRINT;2017-04-26",
     "Code": "https://github.com/yuchaojiang/SCALE",
     "Description": "Allele-Specific Expression by Single-Cell RNA Sequencing",
     "License": "GPL-3",
@@ -6166,8 +6235,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2017-02-23",
-    "Updated": "2017-02-23",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "Modeling allele-specific gene expression by single-cell RNA sequencing",
+        "DOI": "10.1101/109629",
+        "Preprint": true,
+        "Citations": 0
+      },
       {
         "Title": "SCALE: modeling allele-specific gene expression by single-cell RNA sequencing",
         "DOI": "10.1186/s13059-017-1200-8",
@@ -6177,15 +6252,15 @@
       }
     ],
     "Citations": 2,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "yuchaojiang/SCALE",
     "Categories": ["AlleleSpecific"]
   },
   {
     "Name": "Scanpy",
     "Platform": "Python",
-    "DOIs": "10.1186/s13059-017-1382-0;10.1101/208819",
-    "PubDates": "2018-02-06;PREPRINT",
+    "DOIs": "10.1101/174029;10.1101/208819;10.1186/s13059-017-1382-0",
+    "PubDates": "PREPRINT;PREPRINT;2018-02-06",
     "Code": "https://github.com/theislab/scanpy",
     "Description": "Scanpy is a scalable toolkit for analyzing single-cell gene expression data.",
     "License": "BSD-3-clause",
@@ -6222,13 +6297,12 @@
     "Interactive": false,
     "Simulation": true,
     "Added": "2017-05-21",
-    "Updated": "2018-03-07",
+    "Updated": "2018-03-14",
     "Refs": [
       {
-        "Title": "SCANPY: large-scale single-cell gene expression data analysis",
-        "DOI": "10.1186/s13059-017-1382-0",
-        "PubDate": "2018-02-06",
-        "Preprint": false,
+        "Title": "Scanpy for analysis of large-scale single-cell gene expression data",
+        "DOI": "10.1101/174029",
+        "Preprint": true,
         "Citations": 1
       },
       {
@@ -6236,10 +6310,17 @@
         "DOI": "10.1101/208819",
         "Preprint": true,
         "Citations": 0
+      },
+      {
+        "Title": "SCANPY: large-scale single-cell gene expression data analysis",
+        "DOI": "10.1186/s13059-017-1382-0",
+        "PubDate": "2018-02-06",
+        "Preprint": false,
+        "Citations": 1
       }
     ],
-    "Citations": 1,
-    "Publications": 2,
+    "Citations": 2,
+    "Publications": 3,
     "Github": "theislab/scanpy",
     "PyPI": "scanpy",
     "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Ordering", "DifferentialExpression", "VariableGenes", "DimensionalityReduction", "Visualisation", "Simulation"]
@@ -6247,8 +6328,8 @@
   {
     "Name": "Scater",
     "Platform": "R",
-    "DOIs": "10.1093/bioinformatics/btw777",
-    "PubDates": "2017-01-14",
+    "DOIs": "10.1101/069633;10.1093/bioinformatics/btw777",
+    "PubDates": "PREPRINT;2017-01-14",
     "Code": "https://github.com/davismcc/scater",
     "Description": "Scater places an emphasis on tools for quality control, visualisation and pre-processing of data before further downstream analysis, filling a useful niche between raw RNA-sequencing count or transcripts-per-million data and more focused downstream modelling tools such as monocle, scLVM, SCDE, edgeR, limma and so on.",
     "License": "GPL (>= 2)",
@@ -6285,8 +6366,14 @@
     "Interactive": true,
     "Simulation": false,
     "Added": "2016-09-08",
-    "Updated": "2017-03-01",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "scater: pre-processing, quality control, normalisation and visualisation of single-cell RNA-seq data in R",
+        "DOI": "10.1101/069633",
+        "Preprint": true,
+        "Citations": 1
+      },
       {
         "Title": "Scater: pre-processing, quality control, normalization and visualization of single-cell RNA-seq data in R",
         "DOI": "10.1093/bioinformatics/btw777",
@@ -6295,8 +6382,8 @@
         "Citations": 10
       }
     ],
-    "Citations": 10,
-    "Publications": 1,
+    "Citations": 11,
+    "Publications": 2,
     "Github": "davismcc/scater",
     "BioC": "scater",
     "Categories": ["Quantification", "QualityControl", "Normalisation", "DimensionalityReduction", "Visualisation", "Interactive"]
@@ -6304,8 +6391,8 @@
   {
     "Name": "scDD",
     "Platform": "R",
-    "DOIs": "10.1186/s13059-016-1077-y",
-    "PubDates": "2016-10-25",
+    "DOIs": "10.1101/035501;10.1186/s13059-016-1077-y",
+    "PubDates": "PREPRINT;2016-10-25",
     "Code": "https://github.com/kdkorthauer/scDD",
     "Description": "scDD (Single-Cell Differential Distributions) is a framework to identify genes with different expression patterns between biological groups of interest. In addition to traditional differential expression, it can detect differences that are more complex and subtle than a mean shift.",
     "License": "GPL-2",
@@ -6342,8 +6429,14 @@
     "Interactive": false,
     "Simulation": true,
     "Added": "2016-09-08",
-    "Updated": "2016-11-07",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "scDD: A statistical approach for identifying differential distributions in single-cell RNA-seq experiments",
+        "DOI": "10.1101/035501",
+        "Preprint": true,
+        "Citations": 1
+      },
       {
         "Title": "A statistical approach for identifying differential distributions in single-cell RNA-seq experiments",
         "DOI": "10.1186/s13059-016-1077-y",
@@ -6352,8 +6445,8 @@
         "Citations": 19
       }
     ],
-    "Citations": 19,
-    "Publications": 1,
+    "Citations": 20,
+    "Publications": 2,
     "Github": "kdkorthauer/scDD",
     "BioC": "scDD",
     "Categories": ["DifferentialExpression", "Simulation"]
@@ -6530,8 +6623,8 @@
   {
     "Name": "SCENIC",
     "Platform": "R",
-    "DOIs": "10.1038/nmeth.4463",
-    "PubDates": "2017-10-09",
+    "DOIs": "10.1101/144501;10.1038/nmeth.4463",
+    "PubDates": "PREPRINT;2017-10-09",
     "Code": "https://github.com/aertslab/SCENIC",
     "Description": "SCENIC is a tool to infer Gene Regulatory Networks and cell types from single-cell RNA-seq data.",
     "License": "Custom",
@@ -6568,8 +6661,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2017-06-26",
-    "Updated": "2017-12-20",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "SCENIC: Single-Cell Regulatory Network Inference And Clustering",
+        "DOI": "10.1101/144501",
+        "Preprint": true,
+        "Citations": 0
+      },
       {
         "Title": "SCENIC: single-cell regulatory network inference and clustering",
         "DOI": "10.1038/nmeth.4463",
@@ -6579,17 +6678,17 @@
       }
     ],
     "Citations": 3,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "aertslab/SCENIC",
     "Categories": ["Clustering", "GeneNetworks", "Visualisation"]
   },
   {
     "Name": "SCENT",
     "Platform": "R",
-    "DOIs": "10.1038/ncomms15599",
-    "PubDates": "2017-06-01",
+    "DOIs": "10.1101/084202;10.1038/ncomms15599",
+    "PubDates": "PREPRINT;2017-06-01",
     "Code": "https://github.com/aet21/SCENT",
-    "Description": "scent_1.0 is an R-package for analysis of single-cell RNA-Seq data. It uses single-cell entropy to help analyse and interpret such data.",
+    "Description": "scent is an R-package for analysis of single-cell RNA-Seq data. It uses single-cell entropy to help analyse and interpret such data.",
     "License": "GPL-3",
     "Assembly": false,
     "Alignment": false,
@@ -6624,8 +6723,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-11-09",
-    "Updated": "2017-06-08",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "Single-cell entropy for quantification of differentiation potency from a cell's transcriptome",
+        "DOI": "10.1101/084202",
+        "Preprint": true,
+        "Citations": 1
+      },
       {
         "Title": "Single-cell entropy for accurate estimation of differentiation potency from a cell’s transcriptome",
         "DOI": "10.1038/ncomms15599",
@@ -6634,8 +6739,8 @@
         "Citations": 2
       }
     ],
-    "Citations": 2,
-    "Publications": 1,
+    "Citations": 3,
+    "Publications": 2,
     "Github": "aet21/SCENT",
     "Categories": ["Ordering"]
   },
@@ -7028,8 +7133,8 @@
   {
     "Name": "SCNorm",
     "Platform": "R",
-    "DOIs": "10.1038/nmeth.4263",
-    "PubDates": "2017-04-17",
+    "DOIs": "10.1101/090167;10.1038/nmeth.4263",
+    "PubDates": "PREPRINT;2017-04-17",
     "Code": "https://github.com/rhondabacher/SCnorm",
     "Description": "A quantile regression based approach for robust normalization of single cell RNA-seq data.",
     "License": "GPL (>= 2)",
@@ -7066,8 +7171,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-11-29",
-    "Updated": "2017-04-27",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "SCnorm: A quantile-regression based approach for robust normalization of single-cell RNA-seq data",
+        "DOI": "10.1101/090167",
+        "Preprint": true,
+        "Citations": 0
+      },
       {
         "Title": "SCnorm: robust normalization of single-cell RNA-seq data",
         "DOI": "10.1038/nmeth.4263",
@@ -7077,7 +7188,7 @@
       }
     ],
     "Citations": 12,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "rhondabacher/SCnorm",
     "BioC": "SCnorm",
     "Categories": ["Normalisation"]
@@ -7520,7 +7631,7 @@
     "Name": "scran",
     "Platform": "R",
     "DOIs": "10.1186/s13059-016-0947-7;10.1101/165118",
-    "PubDates": "2016-04-27;2017-07-24",
+    "PubDates": "2016-04-27;PREPRINT",
     "Code": "https://github.com/MarioniLab/scran",
     "Description": "This package implements a variety of low-level analyses of single-cell RNA-seq data. Methods are provided for normalization of cell-specific biases, pool-based norms to estimate size factors, assignment of cell cycle phase, and detection of highly variable and significantly correlated genes.",
     "License": "GPL-3",
@@ -7569,8 +7680,7 @@
       {
         "Title": "Correcting batch effects in single-cell RNA sequencing data by matching mutual nearest neighbours.",
         "DOI": "10.1101/165118",
-        "PubDate": "2017-07-24",
-        "Preprint": false,
+        "Preprint": true,
         "Citations": 1
       }
     ],
@@ -7675,6 +7785,7 @@
     "Added": "2017-11-20",
     "Updated": "2017-11-20",
     "Refs": [null],
+    "PyPI": "RNAscrutiny",
     "Categories": ["GeneNetworks", "Visualisation", "Simulation"]
   },
   {
@@ -7831,6 +7942,7 @@
     "Citations": 77,
     "Publications": 1,
     "Github": "gcyuan/SCUBA",
+    "PyPI": "PySCUBA",
     "Categories": ["Ordering", "ExpressionPatterns"]
   },
   {
@@ -8107,8 +8219,8 @@
   {
     "Name": "SIMLR",
     "Platform": "R/MATLAB/Python",
-    "DOIs": "10.1038/nmeth.4207;10.1002/pmic.201700232",
-    "PubDates": "2017-03-06;2017-12-19",
+    "DOIs": "10.1101/052225;10.1038/nmeth.4207;10.1002/pmic.201700232",
+    "PubDates": "PREPRINT;2017-03-06;2017-12-19",
     "Code": "https://github.com/BatzoglouLabSU/SIMLR",
     "Description": "Single-cell Interpretation via Multi-kernel LeaRning which learns an appropriate distance metric from the data for dimension reduction, clustering and visualization.",
     "License": "GPL-3",
@@ -8145,8 +8257,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-09",
-    "Updated": "2018-03-07",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "Visualization and analysis of single-cell RNA-seq data by kernel-based similarity learning",
+        "DOI": "10.1101/052225",
+        "Preprint": true,
+        "Citations": 1
+      },
       {
         "Title": "Visualization and analysis of single-cell RNA-seq data by kernel-based similarity learning",
         "DOI": "10.1038/nmeth.4207",
@@ -8162,8 +8280,8 @@
         "Citations": 0
       }
     ],
-    "Citations": 16,
-    "Publications": 2,
+    "Citations": 17,
+    "Publications": 3,
     "Github": "BatzoglouLabSU/SIMLR",
     "BioC": "SIMLR",
     "PyPI": "SIMLR",
@@ -8172,8 +8290,8 @@
   {
     "Name": "sincell",
     "Platform": "R",
-    "DOIs": "10.1101/014472",
-    "PubDates": "PREPRINT",
+    "DOIs": "10.1101/014472;10.1093/bioinformatics/btv368",
+    "PubDates": "PREPRINT;2015-10-15",
     "Code": "https://github.com/Bioconductor-mirror/sincell",
     "Description": "Existing computational approaches for the assessment of cell-state hierarchies from single-cell data might be formalized under a general workflow composed of i) a metric to assess cell-to-cell similarities (combined or not with a dimensionality reduction step), and ii) a graph-building algorithm (optionally making use of a cells-clustering step). Sincell R package implements a methodological toolbox allowing flexible workflows under such framework.",
     "License": "GPL (>= 2)",
@@ -8210,17 +8328,24 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-08",
-    "Updated": "2016-09-08",
+    "Updated": "2018-03-14",
     "Refs": [
       {
         "Title": "Sincell: Bioconductor package for the statistical assessment of cell-state hierarchies from single-cell RNA-seq data",
         "DOI": "10.1101/014472",
         "Preprint": true,
         "Citations": 0
+      },
+      {
+        "Title": "Sincell: an R/Bioconductor package for statistical assessment of cell-state hierarchies from single-cell RNA-seq: Fig. 1.",
+        "DOI": "10.1093/bioinformatics/btv368",
+        "PubDate": "2015-10-15",
+        "Preprint": false,
+        "Citations": 19
       }
     ],
-    "Citations": 0,
-    "Publications": 1,
+    "Citations": 19,
+    "Publications": 2,
     "Github": "Bioconductor-mirror/sincell",
     "BioC": "sincell",
     "Categories": ["Clustering", "Ordering", "DimensionalityReduction", "Visualisation"]
@@ -9003,8 +9128,8 @@
   {
     "Name": "Splatter",
     "Platform": "R",
-    "DOIs": "10.1186/s13059-017-1305-0",
-    "PubDates": "2017-09-12",
+    "DOIs": "10.1101/133173;10.1186/s13059-017-1305-0",
+    "PubDates": "PREPRINT;2017-09-12",
     "Code": "https://github.com/Oshlack/splatter",
     "Description": "Splatter is a package for the simple simulation of single-cell RNA-seq count data.",
     "License": "GPL-3",
@@ -9041,8 +9166,14 @@
     "Interactive": false,
     "Simulation": true,
     "Added": "2016-10-27",
-    "Updated": "2018-01-31",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "Splatter: Simulation Of Single-Cell RNA Sequencing Data",
+        "DOI": "10.1101/133173",
+        "Preprint": true,
+        "Citations": 1
+      },
       {
         "Title": "Splatter: simulation of single-cell RNA sequencing data",
         "DOI": "10.1186/s13059-017-1305-0",
@@ -9051,8 +9182,8 @@
         "Citations": 3
       }
     ],
-    "Citations": 3,
-    "Publications": 1,
+    "Citations": 4,
+    "Publications": 2,
     "Github": "Oshlack/splatter",
     "BioC": "splatter",
     "Categories": ["Visualisation", "Simulation"]
@@ -9391,8 +9522,8 @@
   {
     "Name": "TASC",
     "Platform": "C++",
-    "DOIs": "10.1093/nar/gkx754",
-    "PubDates": "2017-09-25",
+    "DOIs": "10.1101/116939;10.1093/nar/gkx754",
+    "PubDates": "PREPRINT;2017-09-25",
     "Code": "https://github.com/scrna-seq/TASC",
     "Description": "TASC (Toolkit for Analysis of Single Cell RNA-seq), an empirical Bayes approach to reliably model the cell-specific dropout rates and amplification bias by use of external RNA spike-ins.",
     "License": "MIT",
@@ -9429,8 +9560,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2017-03-29",
-    "Updated": "2017-10-02",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "Accounting For Technical Noise In Single-Cell RNA Sequencing Analysis",
+        "DOI": "10.1101/116939",
+        "Preprint": true,
+        "Citations": 0
+      },
       {
         "Title": "Accounting for technical noise in differential expression analysis of single-cell RNA sequencing data",
         "DOI": "10.1093/nar/gkx754",
@@ -9440,7 +9577,7 @@
       }
     ],
     "Citations": 0,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "scrna-seq/TASC",
     "Categories": ["Quantification", "Normalisation", "DifferentialExpression"]
   },
@@ -9726,8 +9863,8 @@
   {
     "Name": "UMI-tools",
     "Platform": "Python",
-    "DOIs": "10.1101/gr.209601.116",
-    "PubDates": "2017-01-18",
+    "DOIs": "10.1101/051755;10.1101/gr.209601.116",
+    "PubDates": "PREPRINT;2017-01-18",
     "Code": "https://github.com/CGATOxford/UMI-tools",
     "Description": "This repository contains tools for dealing with Unique Molecular Identifiers (UMIs)/Random Molecular Tags (RMTs).",
     "License": "MIT",
@@ -9764,8 +9901,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-12",
-    "Updated": "2017-09-11",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "UMI-tools: Modelling sequencing errors in Unique Molecular Identifiers to improve quantification accuracy",
+        "DOI": "10.1101/051755",
+        "Preprint": true,
+        "Citations": 2
+      },
       {
         "Title": "UMI-tools: modeling sequencing errors in Unique Molecular Identifiers to improve quantification accuracy",
         "DOI": "10.1101/gr.209601.116",
@@ -9774,16 +9917,16 @@
         "Citations": 18
       }
     ],
-    "Citations": 18,
-    "Publications": 1,
+    "Citations": 20,
+    "Publications": 2,
     "Github": "CGATOxford/UMI-tools",
     "Categories": ["UMIs", "Quantification"]
   },
   {
     "Name": "umis",
     "Platform": "Python",
-    "DOIs": "10.1038/nmeth.4220",
-    "PubDates": "2017-03-06",
+    "DOIs": "10.1101/073692;10.1038/nmeth.4220",
+    "PubDates": "PREPRINT;2017-03-06",
     "Code": "https://github.com/vals/umis",
     "Description": "umis provides tools for estimating expression in RNA-Seq data which performs sequencing of end tags of trancsript, and incorporate molecular tags to correct for amplification bias.",
     "License": "MIT",
@@ -9820,8 +9963,14 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-12",
-    "Updated": "2017-09-11",
+    "Updated": "2018-03-14",
     "Refs": [
+      {
+        "Title": "Power Analysis of Single Cell RNA‐Sequencing Experiments",
+        "DOI": "10.1101/073692",
+        "Preprint": true,
+        "Citations": 0
+      },
       {
         "Title": "Power analysis of single-cell RNA-sequencing experiments",
         "DOI": "10.1038/nmeth.4220",
@@ -9831,7 +9980,7 @@
       }
     ],
     "Citations": 43,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "vals/umis",
     "PyPI": "umis",
     "Categories": ["UMIs", "Quantification"]
@@ -9889,6 +10038,7 @@
     "Citations": 0,
     "Publications": 1,
     "Github": "mukhes3/UNCURL_release",
+    "PyPI": "uncurl-seq",
     "Categories": ["Clustering", "Ordering", "DimensionalityReduction", "Visualisation"]
   },
   {
@@ -10281,8 +10431,8 @@
   {
     "Name": "ZINB-WaVE",
     "Platform": "R",
-    "DOIs": "10.1038/s41467-017-02554-5;10.1186/s13059-018-1406-4",
-    "PubDates": "2018-01-18;2018-02-26",
+    "DOIs": "10.1101/125112;10.1038/s41467-017-02554-5;10.1101/250126;10.1186/s13059-018-1406-4",
+    "PubDates": "PREPRINT;2018-01-18;PREPRINT;2018-02-26",
     "Code": "https://github.com/drisso/zinbwave",
     "Description": "Zero-inflated Negative Binomial based Wanted Variation Extraction (ZINB-WaVE)",
     "Assembly": false,
@@ -10321,11 +10471,23 @@
     "Updated": "2018-03-07",
     "Refs": [
       {
+        "Title": "ZINB-WaVE: A general and flexible method for signal extraction from single-cell RNA-seq data",
+        "DOI": "10.1101/125112",
+        "Preprint": true,
+        "Citations": 2
+      },
+      {
         "Title": "A general and flexible method for signal extraction from single-cell RNA-seq data",
         "DOI": "10.1038/s41467-017-02554-5",
         "PubDate": "2018-01-18",
         "Preprint": false,
         "Citations": 2
+      },
+      {
+        "Title": "Observation weights to unlock bulk RNA-seq tools for zero inflation and single-cell applications",
+        "DOI": "10.1101/250126",
+        "Preprint": true,
+        "Citations": 0
       },
       {
         "Title": "Observation weights unlock bulk RNA-seq tools for zero inflation and single-cell applications",
@@ -10335,8 +10497,8 @@
         "Citations": 0
       }
     ],
-    "Citations": 2,
-    "Publications": 2,
+    "Citations": 4,
+    "Publications": 4,
     "Github": "drisso/zinbwave",
     "Categories": ["Normalisation", "DimensionalityReduction", "Simulation"]
   },
