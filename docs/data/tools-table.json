@@ -908,6 +908,62 @@
     "Categories": ["GeneNetworks", "Visualisation"]
   },
   {
+    "Name": "cellAlign",
+    "Platform": "R/C++",
+    "DOIs": "10.1038/nmeth.4628",
+    "PubDates": "2018-03-12",
+    "Code": "https://github.com/shenorrLab/cellAlign",
+    "Description": "CellAlign is a tool for quantitative comparison of expression dynamics within or between single-cell trajectories.",
+    "License": "Custom",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": true,
+    "Imputation": false,
+    "Integration": false,
+    "GeneFiltering": false,
+    "Clustering": false,
+    "Classification": false,
+    "Ordering": true,
+    "DifferentialExpression": false,
+    "MarkerGenes": false,
+    "ExpressionPatterns": true,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": false,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": true,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2018-03-14",
+    "Updated": "2018-03-14",
+    "Refs": [
+      {
+        "Title": "Alignment of single-cell trajectories to compare cellular expression dynamics",
+        "DOI": "10.1038/nmeth.4628",
+        "PubDate": "2018-03-12",
+        "Preprint": false,
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "Publications": 1,
+    "Github": "shenorrLab/cellAlign",
+    "Categories": ["Normalisation", "Ordering", "ExpressionPatterns", "Visualisation"]
+  },
+  {
     "Name": "Cellity",
     "Platform": "R",
     "DOIs": "10.1186/s13059-016-0888-1",
@@ -955,10 +1011,10 @@
         "DOI": "10.1186/s13059-016-0888-1",
         "PubDate": "2016-02-17",
         "Preprint": false,
-        "Citations": 34
+        "Citations": 35
       }
     ],
-    "Citations": 34,
+    "Citations": 35,
     "Publications": 1,
     "Github": "teichlab/cellity",
     "BioC": "cellity",
@@ -1016,6 +1072,61 @@
     "Citations": 99,
     "Publications": 1,
     "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
+  },
+  {
+    "Name": "CellRouter",
+    "Platform": "R",
+    "DOIs": "10.1038/s41467-018-03214-y",
+    "PubDates": "2018-03-01",
+    "Code": "https://github.com/edroaldo/cellrouter",
+    "Description": "CellRouter is a multifaceted single-cell analysis platform that identifies complex cell-state transition trajectories by using flow networks to explore the subpopulation structure of multi-dimensional, single-cell omics data.",
+    "Assembly": false,
+    "Alignment": false,
+    "UMIs": false,
+    "Quantification": false,
+    "QualityControl": false,
+    "Normalisation": false,
+    "Imputation": false,
+    "Integration": false,
+    "GeneFiltering": false,
+    "Clustering": true,
+    "Classification": false,
+    "Ordering": true,
+    "DifferentialExpression": false,
+    "MarkerGenes": true,
+    "ExpressionPatterns": true,
+    "VariableGenes": false,
+    "GeneSets": false,
+    "GeneNetworks": false,
+    "CellCycle": false,
+    "DimensionalityReduction": true,
+    "Transformation": false,
+    "Modality": false,
+    "AlternativeSplicing": false,
+    "RareCells": false,
+    "StemCells": false,
+    "Immune": false,
+    "Variants": false,
+    "Haplotypes": false,
+    "AlleleSpecific": false,
+    "Visualisation": true,
+    "Interactive": false,
+    "Simulation": false,
+    "Added": "2018-03-14",
+    "Updated": "2018-03-14",
+    "Refs": [
+      {
+        "Title": "Reconstruction of complex single-cell trajectories using CellRouter",
+        "DOI": "10.1038/s41467-018-03214-y",
+        "PubDate": "2018-03-01",
+        "Preprint": false,
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "Publications": 1,
+    "Github": "edroaldo/cellrouter",
+    "Categories": ["Clustering", "Ordering", "MarkerGenes", "ExpressionPatterns", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "CellTree",
@@ -1194,6 +1305,8 @@
   {
     "Name": "clusterExperiment",
     "Platform": "R",
+    "DOIs": "10.1101/280545",
+    "PubDates": "PREPRINT",
     "Code": "https://github.com/epurdom/clusterExperiment",
     "Description": "Functions for running and comparing many different clusterings of single-cell sequencing data. Meant to work with SCONE and slingshot.",
     "License": "Artistic-2.0",
@@ -1210,7 +1323,7 @@
     "Classification": false,
     "Ordering": false,
     "DifferentialExpression": false,
-    "MarkerGenes": false,
+    "MarkerGenes": true,
     "ExpressionPatterns": false,
     "VariableGenes": false,
     "GeneSets": false,
@@ -1226,15 +1339,24 @@
     "Variants": false,
     "Haplotypes": false,
     "AlleleSpecific": false,
-    "Visualisation": false,
+    "Visualisation": true,
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-08",
-    "Updated": "2016-09-08",
-    "Refs": [null],
+    "Updated": "2018-03-14",
+    "Refs": [
+      {
+        "Title": "clusterExperiment and RSEC: A Bioconductor package and framework for clustering of single-cell and other large gene expression datasets",
+        "DOI": "10.1101/280545",
+        "Preprint": true,
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "Publications": 1,
     "Github": "epurdom/clusterExperiment",
     "BioC": "clusterExperiment",
-    "Categories": ["Clustering"]
+    "Categories": ["Clustering", "MarkerGenes", "Visualisation"]
   },
   {
     "Name": "ClusterMine",
@@ -4266,7 +4388,7 @@
     "Name": "Monocle",
     "Platform": "R",
     "DOIs": "10.1038/nbt.2859;10.1038/nmeth.4150;10.1101/110668;10.1038/nmeth.4402",
-    "PubDates": "2014-04-01;2017-01-23;PREPRINTl;2017-08-21",
+    "PubDates": "2014-04-01;2017-01-23;PREPRINT;2017-08-21",
     "Code": "https://github.com/cole-trapnell-lab/monocle-release",
     "Description": "Differential expression and time-series analysis for single-cell RNA-Seq.",
     "License": "Artistic-2.0",
@@ -4322,8 +4444,7 @@
       {
         "Title": "Reversed graph embedding resolves complex single-cell developmental trajectories",
         "DOI": "10.1101/110668",
-        "PubDate": "PREPRINTl",
-        "Preprint": false,
+        "Preprint": true,
         "Citations": 3
       },
       {
@@ -6910,10 +7031,11 @@
   {
     "Name": "scImpute",
     "Platform": "R",
-    "DOIs": "10.1101/141598",
-    "PubDates": "PREPRINT",
+    "DOIs": "10.1101/141598;10.1038/s41467-018-03405-7",
+    "PubDates": "PREPRINT;2018-03-08",
     "Code": "https://github.com/Vivianstats/scImpute",
     "Description": "scImpute is developed to accurately and robustly impute the dropout values in scRNA-seq data",
+    "License": "GPL",
     "Assembly": false,
     "Alignment": false,
     "UMIs": false,
@@ -6947,17 +7069,24 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2017-05-30",
-    "Updated": "2017-05-30",
+    "Updated": "2018-03-14",
     "Refs": [
       {
         "Title": "scImpute: Accurate And Robust Imputation For Single Cell RNA-Seq Data",
         "DOI": "10.1101/141598",
         "Preprint": true,
         "Citations": 3
+      },
+      {
+        "Title": "An accurate and robust imputation method scImpute for single-cell RNA-seq data",
+        "DOI": "10.1038/s41467-018-03405-7",
+        "PubDate": "2018-03-08",
+        "Preprint": false,
+        "Citations": 0
       }
     ],
     "Citations": 3,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "Vivianstats/scImpute",
     "Categories": ["Imputation"]
   },
@@ -8351,10 +8480,10 @@
     "Categories": ["Clustering", "Ordering", "DimensionalityReduction", "Visualisation"]
   },
   {
-    "Name": "Sincera",
+    "Name": "SINCERA",
     "Platform": "R",
-    "DOIs": "10.1371/journal.pcbi.1004575",
-    "PubDates": "2015-11-04",
+    "DOIs": "10.1371/journal.pcbi.1004575;10.1007/978-1-4939-7710-9_15",
+    "PubDates": "2015-11-04;2018-03-06",
     "Code": "https://github.com/xu-lab/SINCERA",
     "Description": "R-based pipeline for single-cell analysis including clustering and visualization.",
     "License": "GPL-3",
@@ -8391,7 +8520,7 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2016-09-08",
-    "Updated": "2017-06-08",
+    "Updated": "2018-03-14",
     "Refs": [
       {
         "Title": "SINCERA: A Pipeline for Single-Cell RNA-Seq Profiling Analysis",
@@ -8399,10 +8528,17 @@
         "PubDate": "2015-11-04",
         "Preprint": false,
         "Citations": 39
+      },
+      {
+        "Title": "Single-Cell Transcriptome Analysis Using SINCERA Pipeline",
+        "DOI": "10.1007/978-1-4939-7710-9_15",
+        "PubDate": "2018-03-06",
+        "Preprint": false,
+        "Citations": 0
       }
     ],
     "Citations": 39,
-    "Publications": 1,
+    "Publications": 2,
     "Github": "xu-lab/SINCERA",
     "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes"]
   },
