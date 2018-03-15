@@ -287,15 +287,21 @@ add_refs <- function(swsheet, titles_cache) {
                       Citations = cites)
     })
 
+    pre_list <- map_if(ref_list, !is.na(ref_list), filter, Preprint == TRUE)
+    pub_list <- map_if(ref_list, !is.na(ref_list), filter, Preprint == FALSE)
 
     swsheet <- swsheet %>%
-        mutate(Refs = ref_list) %>%
-        mutate(Citations = map_if(Refs, !is.na(Refs),
+        mutate(Refs = map2(pub_list, pre_list,
+                           function(x, y) {
+                               list(Publications = x, Preprints = y)
+                           })) %>%
+        mutate(Citations = map_if(ref_list, !is.na(ref_list),
                                   function(x) {sum(x$Citations)}),
-               Publications = map_if(Refs, !is.na(Refs),
-                                     function(x) {nrow(x)})) %>%
+               Publications = map_if(pub_list, !is.na(pub_list), nrow),
+               Preprints = map_if(pre_list, !is.na(pre_list), nrow)) %>%
         mutate(Citations = flatten_dbl(Citations),
-               Publications = flatten_int(Publications))
+               Publications = flatten_int(Publications),
+               Preprints = flatten_int(Preprints))
 
     return(swsheet)
 }
@@ -590,7 +596,7 @@ tidy_swsheet <- function(swsheet) {
     gather(swsheet, key = 'Category', value = 'Val',
            -Description, -Name, -Platform, -DOIs, -PubDates, -Updated, -Added,
            -Code, -Github, -License, -Refs, -BioC, -CRAN, -PyPI, -Conda,
-           -Citations, -Publications) %>%
+           -Citations, -Publications, -Preprints) %>%
         filter(Val == TRUE) %>%
         select(-Val) %>%
         arrange(Name)
@@ -656,8 +662,8 @@ get_cats_json <- function(tidysw, swsheet, descs) {
     namelist <- lapply(namelist, function(x) {
         swsheet %>%
             filter(Name %in% x) %>%
-            select(Name, Citations, Publications, BioC, CRAN, PyPI, Conda,
-                   Added, Updated)
+            select(Name, Citations, Publications, Preprints, BioC, CRAN, PyPI,
+                   Conda, Added, Updated)
     })
 
     cats <- tidysw %>%
@@ -715,14 +721,15 @@ plot_number <- function(swsheet) {
 #' @param swsheet Tibble containing software table
 plot_publication <- function(swsheet) {
     plot <- swsheet %>%
-        mutate(HasPub = map_if(.$Refs, !is.na(Refs),
-                               function(x) {any(x$Preprint == FALSE)}),
-               HasPub = unlist(HasPub),
-               HasPub = if_else(is.na(HasPub), FALSE, HasPub)) %>%
-        mutate(HasPre = map_if(.$Refs, !is.na(Refs),
-                               function(x) {any(x$Preprint == TRUE)}),
-               HasPre = unlist(HasPre),
-               HasPre = if_else(is.na(HasPre), FALSE, HasPre & !HasPub)) %>%
+        mutate(HasPub = map(.$Refs, function(x) {nrow(x$Publications) > 0})) %>%
+        mutate(HasPub = map(.$HasPub,
+                            function(x) {ifelse(length(x) == 0, FALSE, x)}),
+               HasPub = flatten_lgl(HasPub)) %>%
+        mutate(HasPre = map(.$Refs, function(x) {nrow(x$Preprints) > 0})) %>%
+        mutate(HasPre = map(.$HasPre,
+                            function(x) {ifelse(length(x) == 0, FALSE, x)}),
+               HasPre = flatten_lgl(HasPre),
+               HasPre = HasPre & !HasPub) %>%
         mutate(HasNot = !HasPub & !HasPre) %>%
         summarise(NotPublished = sum(HasNot),
                   Published = sum(HasPub),

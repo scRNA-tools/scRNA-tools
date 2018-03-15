@@ -54,7 +54,6 @@ $(document).ready(function () {
         // Add description
         entry += '<li class="list-group-item"><h5>' + desc + '</h5></li>'
 
-        /* -- Sort tools -- */
         if (urlParams.has('sort')) {
           switch(urlParams.get('sort')) {
             case 'cites':
@@ -62,9 +61,19 @@ $(document).ready(function () {
                 return obj2.Citations - obj1.Citations
               })
               break
+            case 'refs':
+              tools.sort(function(obj1, obj2) {
+                return (obj2.Publications + obj2.Preprints) - (obj1.Publications + obj1.Preprints)
+              })
+              break
             case 'pubs':
               tools.sort(function(obj1, obj2) {
                 return obj2.Publications - obj1.Publications
+              })
+              break
+            case 'pres':
+              tools.sort(function(obj1, obj2) {
+                return obj2.Preprints - obj1.Preprints
               })
               break
             case 'added':

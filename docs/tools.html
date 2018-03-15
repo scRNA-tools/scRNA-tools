@@ -2,9 +2,27 @@
 <html lang="en-US">
 
     <head>
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    	<meta charset="UTF-8" />
-    	<title>scRNA-tools</title>
+        <!--// Metadata ---------------------------------------------------- -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" href="img/favicon.ico" />
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="scRNA-tools" />
+        <meta property="og:url" content="https://www.scrna-tools.org/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="A catalogue of single-cell RNA-sequencing analysis tools" />
+        <meta property="og:image" content="https://cdn.rawgit.com/Oshlack/scRNA-tools/f45942d5/docs/img/square.png" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@scRNAtools" />
+        <meta name="twitter:title" content="scRNA-tools tools page" />
+        <meta name="twitter:description" content="Catalogue of scRNA-seq analysis tools" />
+        <meta name="twitter:image" content="https://cdn.rawgit.com/Oshlack/scRNA-tools/f45942d5/docs/img/square.png" />
+
+        <meta name="description" content="A catalogue of single-cell RNA-sequencing analysis tools">
+        <title>scRNA-tools</title>
 
         <!--// Styles ------------------------------------------------------ -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -71,8 +89,10 @@
 
                 <h2>Sort by:</h2>
                 <select name="selectsort", class="sortbox">
-                    <option value="alpha">Alphabetical</option>
+                    <option value="name">Name</option>
+                    <option value="refs">References</option>
                     <option value="pubs">Publications</option>
+                    <option value="pres">Preprints</option>
                     <option value="cites">Citations</option>
                     <option value="added">Added</option>
                     <option value="updated">Updated</option>
