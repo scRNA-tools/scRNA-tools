@@ -137,12 +137,12 @@
           "DOI": "10.1126/science.aaa1934",
           "PubDate": "2015-03-06",
           "Preprint": false,
-          "Citations": 475
+          "Citations": 479
         }
       ],
       "Preprints": []
     },
-    "Citations": 475,
+    "Citations": 479,
     "Publications": 1,
     "Preprints": 0,
     "Github": "linnarsson-lab/BackSPIN",
@@ -331,12 +331,12 @@
           "DOI": "10.1093/bioinformatics/btw202",
           "PubDate": "2016-04-19",
           "Preprint": false,
-          "Citations": 13
+          "Citations": 14
         }
       ],
       "Preprints": []
     },
-    "Citations": 13,
+    "Citations": 14,
     "Publications": 1,
     "Preprints": 0,
     "Github": "nghiavtr/BPSC",
@@ -462,6 +462,33 @@
     "Categories": ["GeneNetworks", "Visualisation"]
   },
   {
+    "Name": "CALISTA",
+    "Platform": "MATLAB/R",
+    "DOIs": "10.1101/257550",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/CABSEL/CALISTA",
+    "Description": "CALISTA provides a user-friendly toolbox for the analysis of single cell expression data.",
+    "License": "BSD-3-clause",
+    "Added": "2018-03-22",
+    "Updated": "2018-03-22",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "CALISTA: Clustering And Lineage Inference in Single-Cell Transcriptional Analysis",
+          "DOI": "10.1101/257550",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "CABSEL/CALISTA",
+    "Categories": ["Normalisation", "Clustering", "Ordering", "Visualisation"]
+  },
+  {
     "Name": "cellAlign",
     "Platform": "R/C++",
     "DOIs": "10.1038/nmeth.4628",
@@ -533,12 +560,12 @@
           "DOI": "10.1038/ncomms14049",
           "PubDate": "2017-01-16",
           "Preprint": false,
-          "Citations": 101
+          "Citations": 102
         }
       ],
       "Preprints": []
     },
-    "Citations": 101,
+    "Citations": 102,
     "Publications": 1,
     "Preprints": 0,
     "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
@@ -1070,12 +1097,12 @@
           "DOI": "10.1126/science.aan3235",
           "PubDate": "2017-09-31",
           "Preprint": false,
-          "Citations": 4
+          "Citations": 5
         }
       ],
       "Preprints": []
     },
-    "Citations": 4,
+    "Citations": 5,
     "Publications": 1,
     "Preprints": 0,
     "Github": "rajewsky-lab/distmap",
@@ -1098,12 +1125,12 @@
           "DOI": "10.1038/nmeth.3971",
           "PubDate": "2016-08-29",
           "Preprint": false,
-          "Citations": 48
+          "Citations": 49
         }
       ],
       "Preprints": []
     },
-    "Citations": 48,
+    "Citations": 49,
     "Publications": 1,
     "Preprints": 0,
     "Categories": ["Ordering", "ExpressionPatterns", "Visualisation"]
@@ -1561,6 +1588,33 @@
     "Categories": ["QualityControl", "Clustering", "GeneNetworks", "DimensionalityReduction", "Interactive"]
   },
   {
+    "Name": "FORKS",
+    "Platform": "Python",
+    "DOIs": "10.1101/132811",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/macsharma/FORKS",
+    "Description": "Finding Orderings Robustly using K-means and Steiner trees (FORKS), an algorithm that pseudo-temporally orders cells and thereby infers bifurcating state trajectories.",
+    "License": "GPL-3",
+    "Added": "2018-03-22",
+    "Updated": "2018-03-22",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "FORKS: Finding Orderings Robustly using K-means and Steiner trees",
+          "DOI": "10.1101/132811",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "macsharma/FORKS",
+    "Categories": ["Normalisation", "GeneFiltering", "Clustering", "Ordering", "Visualisation"]
+  },
+  {
     "Name": "GiniClust",
     "Platform": "R/Python",
     "DOIs": "10.1186/s13059-016-1010-4",
@@ -1631,7 +1685,7 @@
           "DOI": "10.1126/sciimmunol.aal2192",
           "PubDate": "2017-03-03",
           "Preprint": false,
-          "Citations": 29
+          "Citations": 30
         }
       ],
       "Preprints": [
@@ -1643,11 +1697,38 @@
         }
       ]
     },
-    "Citations": 31,
+    "Citations": 32,
     "Publications": 1,
     "Preprints": 1,
     "Github": "Teichlab/GPfates",
     "Categories": ["Ordering", "Visualisation"]
+  },
+  {
+    "Name": "GPseudoRank",
+    "Platform": "MATLAB",
+    "DOIs": "10.1101/211417",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/magStra/GPseudoRank",
+    "Description": "GPseudoRank, an algorithm sampling from a posterior distribution of pseudo-orders instead of pseudotimes, avoiding the exploration of pseudotime assignments that all map to the same ordering.",
+    "License": "MIT",
+    "Added": "2018-03-22",
+    "Updated": "2018-03-22",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "GPseudoRank: a permutation sampler for single cell orderings",
+          "DOI": "10.1101/211417",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "magStra/GPseudoRank",
+    "Categories": ["Ordering"]
   },
   {
     "Name": "Granatum",
@@ -1864,12 +1945,12 @@
           "DOI": "10.1126/science.1254257",
           "PubDate": "2014-06-20",
           "Preprint": false,
-          "Citations": 620
+          "Citations": 624
         }
       ],
       "Preprints": []
     },
-    "Citations": 620,
+    "Citations": 624,
     "Publications": 1,
     "Preprints": 0,
     "Github": "broadinstitute/inferCNV",
@@ -2299,7 +2380,7 @@
           "DOI": "10.1038/nbt.2859",
           "PubDate": "2014-04-01",
           "Preprint": false,
-          "Citations": 345
+          "Citations": 349
         },
         {
           "Title": "Single-cell mRNA quantification and differential analysis with Census",
@@ -2313,7 +2394,7 @@
           "DOI": "10.1038/nmeth.4402",
           "PubDate": "2017-08-21",
           "Preprint": false,
-          "Citations": 17
+          "Citations": 19
         }
       ],
       "Preprints": [
@@ -2325,7 +2406,7 @@
         }
       ]
     },
-    "Citations": 395,
+    "Citations": 401,
     "Publications": 3,
     "Preprints": 1,
     "Github": "cole-trapnell-lab/monocle-release",
@@ -2998,12 +3079,12 @@
           "DOI": "10.1038/ng.3818",
           "PubDate": "2017-03-20",
           "Preprint": false,
-          "Citations": 25
+          "Citations": 26
         }
       ],
       "Preprints": []
     },
-    "Citations": 25,
+    "Citations": 26,
     "Publications": 1,
     "Preprints": 0,
     "Github": "GIS-SP-Group/RCA",
@@ -3024,11 +3105,13 @@
           "Title": "Reconstructing cell cycle pseudo time-series via single-cell transcriptome data",
           "DOI": "10.1038/s41467-017-00039-z",
           "PubDate": "2017-06-19",
-          "Preprint": false
+          "Preprint": false,
+          "Citations": 1
         }
       ],
       "Preprints": []
     },
+    "Citations": 1,
     "Publications": 1,
     "Preprints": 0,
     "Github": "tinglab/reCAT",
@@ -3295,7 +3378,7 @@
           "DOI": "10.1186/s13059-017-1382-0",
           "PubDate": "2018-02-06",
           "Preprint": false,
-          "Citations": 1
+          "Citations": 2
         }
       ],
       "Preprints": [
@@ -3313,7 +3396,7 @@
         }
       ]
     },
-    "Citations": 2,
+    "Citations": 3,
     "Publications": 1,
     "Preprints": 2,
     "Github": "theislab/scanpy",
@@ -3337,7 +3420,7 @@
           "DOI": "10.1093/bioinformatics/btw777",
           "PubDate": "2017-01-14",
           "Preprint": false,
-          "Citations": 10
+          "Citations": 11
         }
       ],
       "Preprints": [
@@ -3349,7 +3432,7 @@
         }
       ]
     },
-    "Citations": 11,
+    "Citations": 12,
     "Publications": 1,
     "Preprints": 1,
     "Github": "davismcc/scater",
@@ -3408,12 +3491,12 @@
           "DOI": "10.1038/nmeth.2967",
           "PubDate": "2014-07-01",
           "Preprint": false,
-          "Citations": 181
+          "Citations": 184
         }
       ],
       "Preprints": []
     },
-    "Citations": 181,
+    "Citations": 184,
     "Publications": 1,
     "Preprints": 0,
     "Github": "hms-dbmi/scde",
@@ -3466,12 +3549,12 @@
           "DOI": "10.1093/bioinformatics/btw201",
           "PubDate": "2016-04-19",
           "Preprint": false,
-          "Citations": 10
+          "Citations": 11
         }
       ],
       "Preprints": []
     },
-    "Citations": 10,
+    "Citations": 11,
     "Publications": 1,
     "Preprints": 0,
     "Github": "diazlab/SCell",
@@ -3678,12 +3761,12 @@
           "DOI": "10.1038/nbt.3102",
           "PubDate": "2015-02-01",
           "Preprint": false,
-          "Citations": 263
+          "Citations": 264
         }
       ],
       "Preprints": []
     },
-    "Citations": 263,
+    "Citations": 264,
     "Publications": 1,
     "Preprints": 0,
     "Github": "PMBio/scLVM",
@@ -3735,12 +3818,12 @@
           "DOI": "10.1016/j.cell.2018.02.001",
           "PubDate": "2018-02-22",
           "Preprint": false,
-          "Citations": 0
+          "Citations": 1
         }
       ],
       "Preprints": []
     },
-    "Citations": 0,
+    "Citations": 1,
     "Publications": 1,
     "Preprints": 0,
     "Github": "ggjlab/scMCA",
@@ -4227,7 +4310,7 @@
           "DOI": "10.1038/nbt.3192",
           "PubDate": "2015-04-13",
           "Preprint": false,
-          "Citations": 207
+          "Citations": 209
         }
       ],
       "Preprints": [
@@ -4239,7 +4322,7 @@
         }
       ]
     },
-    "Citations": 208,
+    "Citations": 210,
     "Publications": 1,
     "Preprints": 1,
     "Github": "satijalab/seurat",
@@ -4455,12 +4538,12 @@
           "DOI": "10.1093/nar/gkv1525",
           "PubDate": "2016-01-05",
           "Preprint": false,
-          "Citations": 11
+          "Citations": 12
         }
       ],
       "Preprints": []
     },
-    "Citations": 11,
+    "Citations": 12,
     "Publications": 1,
     "Preprints": 0,
     "Github": "jw156605/SingleSplice",
@@ -4871,12 +4954,12 @@
           "DOI": "10.1038/ncb3493",
           "PubDate": "2017-03-20",
           "Preprint": false,
-          "Citations": 38
+          "Citations": 40
         }
       ],
       "Preprints": []
     },
-    "Citations": 38,
+    "Citations": 40,
     "Publications": 1,
     "Preprints": 0,
     "Categories": ["Ordering", "Visualisation"]
@@ -5070,12 +5153,12 @@
           "DOI": "10.1093/nar/gkx615",
           "PubDate": "2017-07-17",
           "Preprint": false,
-          "Citations": 1
+          "Citations": 2
         }
       ],
       "Preprints": []
     },
-    "Citations": 1,
+    "Citations": 2,
     "Publications": 1,
     "Preprints": 0,
     "Github": "yoseflab/trapes",
@@ -5128,7 +5211,7 @@
           "DOI": "10.1101/gr.209601.116",
           "PubDate": "2017-01-18",
           "Preprint": false,
-          "Citations": 19
+          "Citations": 20
         }
       ],
       "Preprints": [
@@ -5140,7 +5223,7 @@
         }
       ]
     },
-    "Citations": 21,
+    "Citations": 22,
     "Publications": 1,
     "Preprints": 1,
     "Github": "CGATOxford/UMI-tools",
@@ -5272,7 +5355,7 @@
     "Description": "TCR and BCR reconstruction from scRNA-seq data",
     "License": "Custom",
     "Added": "2017-09-01",
-    "Updated": "2017-09-09",
+    "Updated": "2018-03-22",
     "Refs": {
       "Publications": [],
       "Preprints": [
@@ -5287,7 +5370,7 @@
     "Citations": 1,
     "Publications": 0,
     "Preprints": 1,
-    "Categories": ["Immune"]
+    "Categories": ["Assembly", "Alignment", "Quantification", "Immune", "Visualisation"]
   },
   {
     "Name": "velocyto",
