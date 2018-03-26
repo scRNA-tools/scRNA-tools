@@ -13,26 +13,23 @@ of files in 'docs/data' required for the scRNA-tools.org website including:
 #### PACKAGES ####
 
 suppressPackageStartupMessages({
-    library(readr)
-    library(jsonlite)
-    library(dplyr)
-    library(tidyr)
-    library(lubridate)
-    library(stringr)
-    library(rvest)
-    library(rcrossref)
-    library(BiocInstaller)
-    library(docopt)
-    library(pbapply)
-    library(ggplot2)
-    library(cowplot)
-    library(plotly)
-    library(htmlwidgets)
-    library(widgetframe)
-    library(purrr)
-    library(aRxiv)
-    library(progress)
+     library(readr)
+     library(jsonlite)
+     library(docopt)
+     library(pbapply)
+     library(magrittr)
 })
+
+#### SOURCE ####
+
+source("R/json.R")
+source("R/load.R")
+source("R/manipulation.R")
+source("R/misc.R")
+source("R/plotting.R")
+source("R/references.R")
+source("R/repositories.R")
+source("R/titles.R")
 
 #### FUNCTIONS ####
 

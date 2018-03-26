@@ -11,11 +11,11 @@ get_cached_titles <- function() {
         write_lines("DOI,Title", "docs/data/titles.csv")
     }
 
-    titles <- read_csv("docs/data/titles.csv",
-                       col_types = cols(
-                           DOI = col_character(),
-                           Title = col_character()
-                       )
+    titles <- readr::read_csv("docs/data/titles.csv",
+                              col_types = readr::cols(
+                                  DOI   = readr::col_character(),
+                                  Title = readr::col_character()
+                             )
     )
 }
 
@@ -33,19 +33,20 @@ add_to_titles_cache <- function(swsheet, titles_cache) {
 
     n_added <- 0
     for (dois in swsheet$DOIs) {
-        for (doi in str_split(dois, ";")[[1]]) {
+        for (doi in stringr::str_split(dois, ";")[[1]]) {
             if (!is.na(doi) & !(doi %in% titles_cache$DOI)) {
 
-                if (str_detect(doi, "arxiv")) {
-                    id <- str_remove(doi, "arxiv/")
-                    title <- arxiv_search(id_list = id)$title
+                if (stringr::str_detect(doi, "arxiv")) {
+                    id <- stringr::str_remove(doi, "arxiv/")
+                    title <- aRxiv::arxiv_search(id_list = id)$title
                 } else {
-                    title <- cr_works(doi)$data$title
+                    title <- rcrossref::cr_works(doi)$data$title
                 }
 
                 if (!is.null(title)) {
-                    titles_cache <- bind_rows(titles_cache,
-                                              c(DOI = doi, Title = title))
+                    titles_cache <- dplyr::bind_rows(titles_cache,
+                                                     c(DOI = doi,
+                                                       Title = title))
                     message(doi, " added to cache")
                     n_added <- n_added + 1
                 }
@@ -53,7 +54,7 @@ add_to_titles_cache <- function(swsheet, titles_cache) {
         }
     }
 
-    write_csv(titles_cache, "docs/data/titles.csv")
+    readr::write_csv(titles_cache, "docs/data/titles.csv")
     message("Added ", n_added, " new titles to cache")
 
     return(titles_cache)
@@ -71,16 +72,18 @@ add_to_titles_cache <- function(swsheet, titles_cache) {
 #' @return vector of titles
 get_titles <- function(dois, titles_cache) {
 
-    titles <- map(dois, function(doi) {
+    `%>%` <- magrittr::`%>%`
+
+    titles <- purrr::map(dois, function(doi) {
         if (doi %in% titles_cache$DOI) {
             titles_cache %>%
-                filter(DOI == doi) %>%
-                pull(Title)
+                dplyr::filter(DOI == doi) %>%
+                dplyr::pull(Title)
         } else {
             NA
         }
     }) %>%
-        flatten_chr()
+        purrr::flatten_chr()
 
     return(titles)
 }

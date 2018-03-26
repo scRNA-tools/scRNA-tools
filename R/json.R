@@ -7,15 +7,17 @@
 #' @return tools JSON
 make_tools_json <- function(tidysw) {
 
+    `%>%` <- magrittr::`%>%`
+
     message("Converting tools...")
 
     catlist <- split(tidysw$Category, f = tidysw$Name)
 
     tools <- tidysw %>%
-        select(-Category) %>%
+        dplyr::select(-Category) %>%
         unique() %>%
-        mutate(Categories = catlist[Name]) %>%
-        toJSON(pretty = TRUE)
+        dplyr::mutate(Categories = catlist[Name]) %>%
+        jsonlite::toJSON(pretty = TRUE)
 }
 
 
@@ -30,23 +32,25 @@ make_tools_json <- function(tidysw) {
 #' @return categories JSON
 make_cats_json <- function(tidysw, swsheet, descs) {
 
+    `%>%` <- magrittr::`%>%`
+
     message("Converting categories...")
 
     namelist <- split(tidysw$Name, f = tidysw$Category)
     namelist <- lapply(namelist, function(x) {
         swsheet %>%
-            filter(Name %in% x) %>%
-            select(Name, Citations, Publications, Preprints, BioC, CRAN, PyPI,
-                   Conda, Added, Updated)
+            dplyr::filter(Name %in% x) %>%
+            dplyr::select(Name, Citations, Publications, Preprints, BioC, CRAN,
+                          PyPI, Conda, Added, Updated)
     })
 
     cats <- tidysw %>%
-        select(Category) %>%
-        arrange(Category) %>%
+        dplyr::select(Category) %>%
+        dplyr::arrange(Category) %>%
         unique() %>%
-        mutate(Tools = namelist[Category]) %>%
-        left_join(descs, by = "Category") %>%
-        toJSON(pretty = TRUE)
+        dplyr::mutate(Tools = namelist[Category]) %>%
+        dplyr::left_join(descs, by = "Category") %>%
+        jsonlite::toJSON(pretty = TRUE)
 }
 
 

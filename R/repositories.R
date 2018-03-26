@@ -9,7 +9,7 @@
 check_repos <- function(names, pkgs) {
 
     message("Checking repositories...")
-    repos <- fromJSON("docs/data/repositories.json")
+    repos <- jsonlite::fromJSON("docs/data/repositories.json")
 
     added <- 0
     ignored <- 0
@@ -21,7 +21,7 @@ check_repos <- function(names, pkgs) {
             # Check this repo isn't already set
             if (is.null(repos[[name]][[repo]])) {
 
-                lower <- str_to_lower(name)
+                lower <- stringr::str_to_lower(name)
                 # Check if tool in repository
                 if (lower %in% names(pkgs[[repo]])) {
 
@@ -60,7 +60,8 @@ check_repos <- function(names, pkgs) {
 
     message("Added ", added, " new repositories")
     message("Ignored ", ignored, " repostories")
-    write_lines(toJSON(repos, pretty = TRUE), "docs/data/repositories.json")
+    readr::write_lines(jsonlite::toJSON(repos, pretty = TRUE),
+                       "docs/data/repositories.json")
 
     return(repos)
 }
@@ -75,12 +76,16 @@ check_repos <- function(names, pkgs) {
 #' @return swsheet with Github column
 add_github <- function(swsheet) {
 
+    `%>%` <- magrittr::`%>%`
+
     message("Adding Github...")
 
     swsheet %>%
-        mutate(Github = ifelse(str_detect(Code, "github"),
-                               str_replace(Code, "https://github.com/", ""),
-                               NA))
+        dplyr::mutate(Github = ifelse(stringr::str_detect(Code, "github"),
+                                      stringr::str_replace(Code,
+                                                           "https://github.com/",
+                                                           ""),
+                                      NA))
 }
 
 
@@ -95,19 +100,21 @@ add_github <- function(swsheet) {
 #' @return swsheet with additional repository columns
 add_repos <- function(swsheet, repos) {
 
+    `%>%` <- magrittr::`%>%`
+
     message("Adding package repositories...")
 
     swsheet %>%
-        rowwise() %>%
-        mutate(BioC = ifelse(!is.null(repos[[Name]]$BioC),
-                             repos[[Name]]$BioC, NA)) %>%
-        mutate(CRAN = ifelse(!is.null(repos[[Name]]$CRAN),
-                             repos[[Name]]$CRAN, NA)) %>%
-        mutate(PyPI = ifelse(!is.null(repos[[Name]]$PyPI),
-                             repos[[Name]]$PyPI, NA)) %>%
-        mutate(Conda = ifelse(!is.null(repos[[Name]]$Conda),
-                              repos[[Name]]$Conda, NA)) %>%
-        ungroup()
+        dplyr::rowwise() %>%
+        dplyr::mutate(BioC = ifelse(!is.null(repos[[Name]]$BioC),
+                                    repos[[Name]]$BioC, NA)) %>%
+        dplyr::mutate(CRAN = ifelse(!is.null(repos[[Name]]$CRAN),
+                                    repos[[Name]]$CRAN, NA)) %>%
+        dplyr::mutate(PyPI = ifelse(!is.null(repos[[Name]]$PyPI),
+                                    repos[[Name]]$PyPI, NA)) %>%
+        dplyr::mutate(Conda = ifelse(!is.null(repos[[Name]]$Conda),
+                                     repos[[Name]]$Conda, NA)) %>%
+        dplyr::ungroup()
 }
 
 
@@ -121,8 +128,8 @@ get_shields <- function(swsheet) {
     message("Getting shields...")
     pb_format <- "   |:bar| :percent Elapsed: :elapsed Remaining: :eta"
 
-    pb <- progress_bar$new(total = nrow(swsheet), format = pb_format,
-                           clear = FALSE)
+    pb <- progress::progress_bar$new(total = nrow(swsheet), format = pb_format,
+                                     clear = FALSE)
     message("Downloading Bioconductor shields...")
     for (repo in swsheet$BioC) {
         pb$tick()
@@ -142,8 +149,8 @@ get_shields <- function(swsheet) {
         }
     }
 
-    pb <- progress_bar$new(total = nrow(swsheet),format = pb_format,
-                           clear = FALSE)
+    pb <- progress::progress_bar$new(total = nrow(swsheet),format = pb_format,
+                                     clear = FALSE)
     message("Downloading CRAN shields...")
     for (repo in swsheet$CRAN) {
         pb$tick()
@@ -163,8 +170,8 @@ get_shields <- function(swsheet) {
         }
     }
 
-    pb <- progress_bar$new(total = nrow(swsheet), format = pb_format,
-                           clear = FALSE)
+    pb <- progress::progress_bar$new(total = nrow(swsheet), format = pb_format,
+                                     clear = FALSE)
     message("Downloading PyPI shields...")
     for (repo in swsheet$PyPI) {
         pb$tick()
@@ -191,8 +198,8 @@ get_shields <- function(swsheet) {
         }
     }
 
-    pb <- progress_bar$new(total = nrow(swsheet), format = pb_format,
-                           clear = FALSE)
+    pb <- progress::progress_bar$new(total = nrow(swsheet), format = pb_format,
+                                     clear = FALSE)
     message("Downloading GitHub shields...")
     for (repo in swsheet$Github) {
         pb$tick()
@@ -204,7 +211,7 @@ get_shields <- function(swsheet) {
             commit_url <- paste0("https://img.shields.io/github/last-commit/",
                                  repo, ".svg")
 
-            repo_clean <- str_replace(repo, "/", "_")
+            repo_clean <- stringr::str_replace(repo, "/", "_")
             download.file(stars_url,
                           paste0("docs/img/shields/GitHub/", repo_clean,
                                  "_stars.svg"),

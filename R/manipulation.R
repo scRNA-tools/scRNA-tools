@@ -7,15 +7,17 @@
 #' @return Tidy swsheet tibble
 tidy_swsheet <- function(swsheet) {
 
+    `%>%` <- magrittr::`%>%`
+
     message("Tidying data...")
 
-    gather(swsheet, key = 'Category', value = 'Val',
-           -Description, -Name, -Platform, -DOIs, -PubDates, -Updated, -Added,
-           -Code, -Github, -License, -Refs, -BioC, -CRAN, -PyPI, -Conda,
-           -Citations, -Publications, -Preprints) %>%
-        filter(Val == TRUE) %>%
-        select(-Val) %>%
-        arrange(Name)
+    tidyr::gather(swsheet, key = 'Category', value = 'Val',
+                  -Description, -Name, -Platform, -DOIs, -PubDates, -Updated,
+                  -Added, -Code, -Github, -License, -Refs, -BioC, -CRAN, -PyPI,
+                  -Conda, -Citations, -Publications, -Preprints) %>%
+        dplyr::filter(Val == TRUE) %>%
+        dplyr::select(-Val) %>%
+        dplyr::arrange(Name)
 }
 
 
@@ -34,7 +36,7 @@ add_cats <- function(swsheet, tidysw) {
     catlist <- split(tidysw$Category, f = tidysw$Name)
 
     catdf <- data.frame(Name = names(catlist), stringsAsFactors = FALSE)
-    catdf[['Categories']] <- catlist
+    catdf[["Categories"]] <- catlist
 
-    swsheet <- left_join(swsheet, catdf, by = "Name")
+    swsheet <- dplyr::left_join(swsheet, catdf, by = "Name")
 }
