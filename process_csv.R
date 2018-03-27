@@ -136,6 +136,47 @@ process_csv <- function(skip_shields = FALSE, skip_cites = FALSE,
 
 #### MAIN CODE ####
 
+logo <- "
+                                /////////////////
+                            ////      /////      ////
+                          ///   //               //   ///
+                        //  /                           //
+                      //  // @     @@@@@@@@@@@@@@@@@   //  //
+                    /// //   @@@@@@@@@@@@@@@@@@@@@@@@@@@ // ///
+                   //  /     @@@@@@@@@@@@@@@@@@      @@@@  /  //
+                  //  /      @@@@@@@@@@@@@@@@@@         @   /  //
+                 //  /       @@    @@@@@@@@@@@@              /  //
+                 // /                @@@@@@@                  / //
+                //  /               @ @@                      /  //
+                // /              @@  @  @@                      //
+                // /            @@  @   @                      / //
+                // /          @@  @   @                          //
+                //  /       @   @   @                         /  //
+                 // /      @  @@  @         @   @             / //
+                 //  /    @  @@        @  @    @   @         /  //
+                 //  /  @@@@@@@@@@  @ @  @  @ @ @    @     /  //
+                  //  /  @   @ @@ @  @ @  @@@@ @  @@      /  //
+                   /// // @@  @ @  @ @@@        @       // ///
+                     //  //  @@  @@@                  //  //
+                       //   /                       /   //
+                         ///   //               //   ///
+                            ////      /////      ////
+                                /////////////////
+
+
+
+              RRRRRR   NNN    N     AA          tt                    ll
+ ssss   cccc  RR   RR  N NN   N    A  A        tttt   oooo     oooo   ll   ssss
+sss    cc     RRRRRR   N  NN  N   AAAAAA        tt  oo    oo oo    oo ll  sss
+  sss  cc     RR  RR   N   NN N   A    A  ===== tt  oo    oo oo    oo ll    sss
+ssss    cccc  RR   RR  N    NNN  AA    AA       ttt  oooooo   oooooo  ll  ssss
+
+
+
+"
+
+cat(logo)
+
 # Show warnings
 options(warn = 1)
 
