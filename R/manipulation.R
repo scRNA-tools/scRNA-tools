@@ -9,7 +9,7 @@ tidy_swsheet <- function(swsheet) {
 
     `%>%` <- magrittr::`%>%`
 
-    message("Tidying data...")
+    futile.logger::flog.info("Tidying data...")
 
     tidyr::gather(swsheet, key = 'Category', value = 'Val',
                   -Description, -Name, -Platform, -DOIs, -PubDates, -Updated,
@@ -31,7 +31,7 @@ tidy_swsheet <- function(swsheet) {
 #' @return swsheet with additional categories column
 add_cats <- function(swsheet, tidysw) {
 
-    message("Adding categories to table...")
+    futile.logger::flog.info("Adding categories to table...")
 
     catlist <- split(tidysw$Category, f = tidysw$Name)
 

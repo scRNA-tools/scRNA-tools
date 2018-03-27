@@ -4,10 +4,10 @@
 #'
 #' @return title containing DOIs and titles
 get_cached_titles <- function() {
-    message("Getting cached titles...")
+    futile.logger::flog.info("Getting cached titles...")
 
     if (!file.exists("docs/data/titles.csv")) {
-        message("Cache file missing, creating...")
+        futile.logger::flog.info("Cache file missing, creating...")
         write_lines("DOI,Title", "docs/data/titles.csv")
     }
 
@@ -29,7 +29,7 @@ get_cached_titles <- function() {
 #'
 #' @return Updated titles cache
 add_to_titles_cache <- function(swsheet, titles_cache) {
-    message("Adding new titles to cache...")
+    futile.logger::flog.info("Adding new titles to cache...")
 
     n_added <- 0
     for (dois in swsheet$DOIs) {
@@ -55,7 +55,8 @@ add_to_titles_cache <- function(swsheet, titles_cache) {
     }
 
     readr::write_csv(titles_cache, "docs/data/titles.csv")
-    message("Added ", n_added, " new titles to cache")
+    msg <- paste("Added", n_added, "new titles to cache")
+    futile.logger::flog.info(msg)
 
     return(titles_cache)
 }

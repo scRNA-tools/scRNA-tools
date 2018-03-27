@@ -8,7 +8,7 @@
 #' @return list with repo information
 check_repos <- function(names, pkgs) {
 
-    message("Checking repositories...")
+    futile.logger::flog.info("Checking repositories...")
     repos <- jsonlite::fromJSON("docs/data/repositories.json")
 
     added <- 0
@@ -58,8 +58,10 @@ check_repos <- function(names, pkgs) {
         }
     }
 
-    message("Added ", added, " new repositories")
-    message("Ignored ", ignored, " repostories")
+    msg <- paste("Added", added, "new repositories")
+    futile.logger::flog.info(msg)
+    msg <- paste("Ignored", ignored, "repostories")
+    futile.logger::flog.info(msg)
     readr::write_lines(jsonlite::toJSON(repos, pretty = TRUE),
                        "docs/data/repositories.json")
 
@@ -78,7 +80,7 @@ add_github <- function(swsheet) {
 
     `%>%` <- magrittr::`%>%`
 
-    message("Adding Github...")
+    futile.logger::flog.info("Adding Github...")
 
     swsheet %>%
         dplyr::mutate(Github = ifelse(stringr::str_detect(Code, "github"),
@@ -102,7 +104,7 @@ add_repos <- function(swsheet, repos) {
 
     `%>%` <- magrittr::`%>%`
 
-    message("Adding package repositories...")
+    futile.logger::flog.info("Adding package repositories...")
 
     swsheet %>%
         dplyr::rowwise() %>%
@@ -125,12 +127,12 @@ add_repos <- function(swsheet, repos) {
 #' @param swsheet Tibble containing software table
 get_shields <- function(swsheet) {
 
-    message("Getting shields...")
+    futile.logger::flog.info("Getting shields...")
     pb_format <- "   |:bar| :percent Elapsed: :elapsed Remaining: :eta"
 
     pb <- progress::progress_bar$new(total = nrow(swsheet), format = pb_format,
                                      clear = FALSE)
-    message("Downloading Bioconductor shields...")
+    futile.logger::flog.info("Downloading Bioconductor shields...")
     for (repo in swsheet$BioC) {
         pb$tick()
         if (!is.na(repo)) {
@@ -151,7 +153,7 @@ get_shields <- function(swsheet) {
 
     pb <- progress::progress_bar$new(total = nrow(swsheet),format = pb_format,
                                      clear = FALSE)
-    message("Downloading CRAN shields...")
+    futile.logger::flog.info("Downloading CRAN shields...")
     for (repo in swsheet$CRAN) {
         pb$tick()
         if (!is.na(repo)) {
@@ -172,7 +174,7 @@ get_shields <- function(swsheet) {
 
     pb <- progress::progress_bar$new(total = nrow(swsheet), format = pb_format,
                                      clear = FALSE)
-    message("Downloading PyPI shields...")
+    futile.logger::flog.info("Downloading PyPI shields...")
     for (repo in swsheet$PyPI) {
         pb$tick()
         if (!is.na(repo)) {
@@ -200,7 +202,7 @@ get_shields <- function(swsheet) {
 
     pb <- progress::progress_bar$new(total = nrow(swsheet), format = pb_format,
                                      clear = FALSE)
-    message("Downloading GitHub shields...")
+    futile.logger::flog.info("Downloading GitHub shields...")
     for (repo in swsheet$Github) {
         pb$tick()
         if (!is.na(repo)) {

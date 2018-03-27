@@ -15,11 +15,12 @@ Options:
 #### PACKAGES ####
 
 suppressPackageStartupMessages({
-     library(readr)
-     library(jsonlite)
-     library(docopt)
-     library(pbapply)
-     library(magrittr)
+    library(readr)
+    library(jsonlite)
+    library(docopt)
+    library(pbapply)
+    library(magrittr)
+    library(futile.logger)
 })
 
 #### SOURCE ####
@@ -41,15 +42,16 @@ source("R/titles.R")
 process_csv <- function(skip_shields = FALSE, skip_cites = FALSE,
                         skip_packages = FALSE, skip_analysis = FALSE) {
 
-    message("Starting processing...")
+    flog.info("***** STARTING PROCESSING *****")
 
+    flog.info("***** Loading data ******")
     # Load data
     swsheet <- get_swsheet()
     if (!skip_packages) {
         pkgs <- get_pkgs()
     } else {
-        warning("Skipping downloading of package lists. ",
-                "They may be out of date.")
+        msg <- "Skipping downloading of package lists, they may be out of date!"
+        flog.warn(msg)
         pkgs <- list(BioC  = "DUMMMY",
                      CRAN  = "DUMMY",
                      PyPI  = "DUMMY",
@@ -65,19 +67,11 @@ process_csv <- function(skip_shields = FALSE, skip_cites = FALSE,
     repos <- check_repos(swsheet$Name, pkgs)
 
     # Process table
-    message("Processing table...")
+    flog.info("***** Processing table ******")
     swsheet <- swsheet %>%
         add_refs(titles_cache, skip_cites) %>%
         add_github() %>%
         add_repos(repos)
-
-    # Get shields
-    if (!skip_shields) {
-        get_shields(swsheet)
-    } else {
-        warning("Downloading of shields has been skipped. ",
-                "They may be out of date.")
-    }
 
     # Convert to tidy format
     tidysw <- tidy_swsheet(swsheet)
@@ -85,53 +79,70 @@ process_csv <- function(skip_shields = FALSE, skip_cites = FALSE,
     # Add categories to table
     swsheet <- add_cats(swsheet, tidysw)
 
+    flog.info("***** Downloading shields ******")
+    # Get shields
+    if (!skip_shields) {
+        get_shields(swsheet)
+    } else {
+        msg <- paste("Downloading of shields has been skipped,",
+                     "they may be out of date!")
+        flog.warn(msg)
+    }
+
     # Convert to JSON
-    message("Converting to JSON...")
-    message("Converting table...")
+    flog.info("***** Converting to JSON *****")
+    flog.info("Converting table...")
     table <- toJSON(swsheet, pretty = TRUE)
     tools <- make_tools_json(tidysw)
     cats <- make_cats_json(tidysw, swsheet, descs)
 
     # Output JSON
-    message("Writing JSON...")
-    message("Writing 'tools-table.json'...")
+    flog.info("Writing JSON...")
+    flog.info("Writing 'tools-table.json'...")
     write_lines(table, "docs/data/tools-table.json")
-    message("Writing 'tools.json'...")
+    flog.info("Writing 'tools.json'...")
     write_lines(tools, "docs/data/tools.json")
-    message("Writing 'categories.json'...")
+    flog.info("Writing 'categories.json'...")
     write_lines(cats, "docs/data/categories.json")
 
+    flog.info("***** Performing analysis *****")
     if (!skip_analysis) {
         # Make plots
-        message("Plotting tools over time...")
+        flog.info("Plotting tools over time...")
         plot_number(swsheet)
-        message("Plotting publication status...")
+        flog.info("Plotting publication status...")
         plot_publication(swsheet)
-        message("Plotting licenses...")
+        flog.info("Plotting licenses...")
         plot_licenses(swsheet)
-        message("Plotting platforms...")
+        flog.info("Plotting platforms...")
         plot_platforms(swsheet)
-        message("Plotting categories...")
+        flog.info("Plotting categories...")
         plot_categories(swsheet)
     } else {
-        warning("Skipping analysis. This may be out of date.")
+        flog.warn("Skipping analysis, this may be out of date!")
     }
 
     if (sum(c(skip_shields, skip_cites, skip_packages, skip_analysis)) == 0) {
         write_footer()
-        message("All processing complete")
+        flog.info("****** All processing complete *****")
     } else {
-        warning("Some processing has been skipped. ",
-                "Last updated time will not be set.")
+        msg <- paste("Some processing has been skipped, last updated time will",
+                     "not be set!")
+        flog.warn(msg)
     }
 
-    message("Done!")
+    flog.info("**** PROCESSING FINISHED *****")
 }
 
 #### MAIN CODE ####
 
 # Show warnings
 options(warn = 1)
+
+# Setup logging
+layout <- layout.format('[~t] ~l: ~m')
+invisible(flog.layout(layout))
+invisible(flog.appender(appender.tee("processing.log")))
 
 # Setup progress bar
 pboptions(type = "timer", char = "=", style = 3)

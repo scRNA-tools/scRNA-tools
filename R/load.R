@@ -5,7 +5,7 @@
 #' @return Tibble containing table
 get_swsheet <- function() {
 
-    message("Loading 'single_cell_software.csv'...")
+    futile.logger::flog.info("Loading 'single_cell_software.csv'...")
     swsheet <- readr::read_csv("single_cell_software.csv",
                                col_types       = readr::cols(
                                    .default    = readr::col_logical(),
@@ -31,13 +31,13 @@ get_pkgs <- function() {
 
     `%>%` <- magrittr::`%>%`
 
-    message("Getting package repositories...")
+    futile.logger::flog.info("Getting package repositories...")
 
-    message("Getting Bioconductor package list...")
+    futile.logger::flog.info("Getting Bioconductor package list...")
     bioc.pkgs <- BiocInstaller::all_group()
     names(bioc.pkgs) <- stringr::str_to_lower(bioc.pkgs)
 
-    message("Getting CRAN package list...")
+    futile.logger::flog.info("Getting CRAN package list...")
     cran.url <- "https://cran.r-project.org/web/packages/available_packages_by_name.html"
     #cran.url <- "cran_packages.html"
     cran.pkgs <- xml2::read_html(cran.url) %>%
@@ -46,13 +46,13 @@ get_pkgs <- function() {
         setdiff(LETTERS) # Remove letter links at top of page
     names(cran.pkgs) <- stringr::str_to_lower(cran.pkgs)
 
-    message("Getting PyPI package list...")
+    futile.logger::flog.info("Getting PyPI package list...")
     pypi.pkgs <- xml2::read_html("https://pypi.python.org/simple/") %>%
         rvest::html_nodes("a") %>%
         rvest::html_text()
     names(pypi.pkgs) <- stringr::str_to_lower(pypi.pkgs)
 
-    message("Getting Anaconda package list...")
+    futile.logger::flog.info("Getting Anaconda package list...")
     pages <- xml2::read_html("https://anaconda.org/anaconda/repo") %>%
         rvest::html_nodes(".unavailable:nth-child(2)") %>%
         rvest::html_text() %>%
@@ -84,7 +84,7 @@ get_pkgs <- function() {
 #'
 #' @return data.frame containing categories and descriptions
 get_descriptions <- function() {
-    message("Getting category descriptions...")
+    futile.logger::flog.info("Getting category descriptions...")
     descs <- jsonlite::read_json("docs/data/descriptions.json",
                                  simplifyVector = TRUE)
 }

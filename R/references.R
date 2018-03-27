@@ -11,10 +11,11 @@ add_refs <- function(swsheet, titles_cache, skip_cites) {
 
     `%>%` <- magrittr::`%>%`
 
-    message("Adding references...")
+    futile.logger::flog.info("Adding references...")
 
     if (skip_cites) {
-        warning("Skipping downloading of citations from Crossref.")
+        msg <- "Skipping downloading of citations from Crossref"
+        futile.logger::flog.warn(msg)
     }
 
     doi_list <- swsheet %>%

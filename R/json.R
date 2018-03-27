@@ -9,7 +9,7 @@ make_tools_json <- function(tidysw) {
 
     `%>%` <- magrittr::`%>%`
 
-    message("Converting tools...")
+    futile.logger::flog.info("Converting tools...")
 
     catlist <- split(tidysw$Category, f = tidysw$Name)
 
@@ -34,7 +34,7 @@ make_cats_json <- function(tidysw, swsheet, descs) {
 
     `%>%` <- magrittr::`%>%`
 
-    message("Converting categories...")
+    futile.logger::flog.info("Converting categories...")
 
     namelist <- split(tidysw$Name, f = tidysw$Category)
     namelist <- lapply(namelist, function(x) {
