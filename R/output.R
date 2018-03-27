@@ -1,10 +1,24 @@
-#' Get tools JSON
+#' Make table JSON
+#'
+#' Create table JSON
+#'
+#' @param swsheet Tibble containing software table
+make_table_json <- function(swsheet) {
+
+    futile.logger::flog.info("Converting tools table...")
+
+    table <- jsonlite::toJSON(swsheet, pretty = TRUE)
+
+    futile.logger::flog.info("Writing 'tools-table.json'...")
+    readr::write_lines(table, "docs/data/tools-table.json")
+}
+
+
+#' Make tools JSON
 #'
 #' Create tools JSON
 #'
 #' @param tidysw Tibble containing tidy software table
-#'
-#' @return tools JSON
 make_tools_json <- function(tidysw) {
 
     `%>%` <- magrittr::`%>%`
@@ -18,18 +32,19 @@ make_tools_json <- function(tidysw) {
         unique() %>%
         dplyr::mutate(Categories = catlist[Name]) %>%
         jsonlite::toJSON(pretty = TRUE)
+
+    futile.logger::flog.info("Writing 'tools.json'...")
+    readr::write_lines(tools, "docs/data/tools.json")
 }
 
 
-#' Get categories JSON
+#' Make categories JSON
 #'
 #' Create categories JSON
 #'
 #' @param tidysw Tibble containing tidy software table
 #' @param swsheet Tibble containing software table
 #' @param descs data.frame containing category descriptions
-#'
-#' @return categories JSON
 make_cats_json <- function(tidysw, swsheet, descs) {
 
     `%>%` <- magrittr::`%>%`
@@ -51,6 +66,9 @@ make_cats_json <- function(tidysw, swsheet, descs) {
         dplyr::mutate(Tools = namelist[Category]) %>%
         dplyr::left_join(descs, by = "Category") %>%
         jsonlite::toJSON(pretty = TRUE)
+
+    futile.logger::flog.info("Writing 'categories.json'...")
+    readr::write_lines(cats, "docs/data/categories.json")
 }
 
 

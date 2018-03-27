@@ -14,7 +14,7 @@ add_refs <- function(swsheet, titles_cache, skip_cites) {
     futile.logger::flog.info("Adding references...")
 
     if (skip_cites) {
-        msg <- "Skipping downloading of citations from Crossref"
+        msg <- "Skipping downloading of citations from Crossref!"
         futile.logger::flog.warn(msg)
     }
 

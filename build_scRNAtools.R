@@ -92,18 +92,11 @@ process_csv <- function(skip_shields = FALSE, skip_cites = FALSE,
     # Convert to JSON
     flog.info("***** Converting to JSON *****")
     flog.info("Converting table...")
-    table <- toJSON(swsheet, pretty = TRUE)
-    tools <- make_tools_json(tidysw)
-    cats <- make_cats_json(tidysw, swsheet, descs)
+    make_table_json(swsheet)
+    make_tools_json(tidysw)
+    make_cats_json(tidysw, swsheet, descs)
 
-    # Output JSON
-    flog.info("Writing JSON...")
-    flog.info("Writing 'tools-table.json'...")
-    write_lines(table, "docs/data/tools-table.json")
-    flog.info("Writing 'tools.json'...")
-    write_lines(tools, "docs/data/tools.json")
-    flog.info("Writing 'categories.json'...")
-    write_lines(cats, "docs/data/categories.json")
+
 
     flog.info("***** Performing analysis *****")
     if (!skip_analysis) {
