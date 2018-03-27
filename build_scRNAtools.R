@@ -25,10 +25,10 @@ suppressPackageStartupMessages({
 
 #### SOURCE ####
 
-source("R/json.R")
 source("R/load.R")
 source("R/manipulation.R")
 source("R/misc.R")
+source("R/output.R")
 source("R/plotting.R")
 source("R/references.R")
 source("R/repositories.R")
