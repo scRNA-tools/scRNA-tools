@@ -4,13 +4,18 @@
 #'
 #' @param swsheet Tibble containing software table
 #' @param titles_cache Tibble containing titles cache
+#' @param skip_cites Logical. Whether to skip getting citations from Crossref.
 #'
 #' @return swsheet with additional columns
-add_refs <- function(swsheet, titles_cache) {
+add_refs <- function(swsheet, titles_cache, skip_cites) {
 
     `%>%` <- magrittr::`%>%`
 
     message("Adding references...")
+
+    if (skip_cites) {
+        warning("Skipping downloading of citations from Crossref.")
+    }
 
     doi_list <- swsheet %>%
         dplyr::mutate(DOIs = stringr::str_split(DOIs, ";")) %>%
@@ -33,17 +38,21 @@ add_refs <- function(swsheet, titles_cache) {
             return(NA)
         }
 
-        cites <- sapply(dois, function(doi) {
-            cite <- tryCatch({
-                rcrossref::cr_citation_count(doi)
-            }, error = function(e) {
-                NA
+        if (!skip_cites) {
+            cites <- sapply(dois, function(doi) {
+                cite <- tryCatch({
+                    rcrossref::cr_citation_count(doi)
+                }, error = function(e) {
+                    NA
+                })
+
+                Sys.sleep(sample(seq(0, 1, 0.1), 1))
+
+                return(cite)
             })
-
-            Sys.sleep(sample(seq(0, 1, 0.1), 1))
-
-            return(cite)
-        })
+        } else {
+            cites <- rep(NA, length(dois))
+        }
 
         titles <- get_titles(dois, titles_cache)
 

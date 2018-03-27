@@ -1,13 +1,15 @@
 #!/usr/bin/env Rscript
 
-"Usage: process_csv
+"Usage: process_csv [options]
 
 This utility script converts the 'single_cell_software.csv' spreadsheet to a set
 of files in 'docs/data' required for the scRNA-tools.org website including:
 
-- software.json
-- software-table.json
-- categories.json
+Options:
+-s --no-shields    Skip downloading of shields
+-c --no-citations  Skip getting Crossref citations
+-p --no-packages   Skip downloading of package lists
+-a --no-analysis   Skip plotting for analysis page
 " -> doc
 
 #### PACKAGES ####
@@ -36,13 +38,23 @@ source("R/titles.R")
 #' Process CSV
 #'
 #' Process `single_cell_software.csv` and create the various output files
-process_csv <- function() {
+process_csv <- function(skip_shields = FALSE, skip_cites = FALSE,
+                        skip_packages = FALSE, skip_analysis = FALSE) {
 
     message("Starting processing...")
 
     # Load data
     swsheet <- get_swsheet()
-    pkgs <- get_pkgs()
+    if (!skip_packages) {
+        pkgs <- get_pkgs()
+    } else {
+        warning("Skipping downloading of package lists. ",
+                "They may be out of date.")
+        pkgs <- list(BioC  = "DUMMMY",
+                     CRAN  = "DUMMY",
+                     PyPI  = "DUMMY",
+                     Conda = "DUMMY")
+    }
     descs <- get_descriptions()
     titles_cache <- get_cached_titles()
 
@@ -55,12 +67,17 @@ process_csv <- function() {
     # Process table
     message("Processing table...")
     swsheet <- swsheet %>%
-        add_refs(titles_cache) %>%
+        add_refs(titles_cache, skip_cites) %>%
         add_github() %>%
         add_repos(repos)
 
     # Get shields
-    get_shields(swsheet)
+    if (!skip_shields) {
+        get_shields(swsheet)
+    } else {
+        warning("Downloading of shields has been skipped. ",
+                "They may be out of date.")
+    }
 
     # Convert to tidy format
     tidysw <- tidy_swsheet(swsheet)
@@ -84,22 +101,32 @@ process_csv <- function() {
     message("Writing 'categories.json'...")
     write_lines(cats, "docs/data/categories.json")
 
-    # Make plots
-    message("Plotting tools over time...")
-    plot_number(swsheet)
-    message("Plotting publication status...")
-    plot_publication(swsheet)
-    message("Plotting licenses...")
-    plot_licenses(swsheet)
-    message("Plotting platforms...")
-    plot_platforms(swsheet)
-    message("Plotting categories...")
-    plot_categories(swsheet)
+    if (!skip_analysis) {
+        # Make plots
+        message("Plotting tools over time...")
+        plot_number(swsheet)
+        message("Plotting publication status...")
+        plot_publication(swsheet)
+        message("Plotting licenses...")
+        plot_licenses(swsheet)
+        message("Plotting platforms...")
+        plot_platforms(swsheet)
+        message("Plotting categories...")
+        plot_categories(swsheet)
+    } else {
+        warning("Skipping analysis. This may be out of date.")
+    }
 
-    write_footer()
+    if (sum(c(skip_shields, skip_cites, skip_packages, skip_analysis)) == 0) {
+        write_footer()
+        message("All processing complete")
+    } else {
+        warning("Some processing has been skipped. ",
+                "Last updated time will not be set.")
+    }
+
     message("Done!")
 }
-
 
 #### MAIN CODE ####
 
@@ -113,4 +140,5 @@ pboptions(type = "timer", char = "=", style = 3)
 opts <- docopt(doc)
 
 # Process table
-process_csv()
+process_csv(opts[["--no-shields"]], opts[["--no-citations"]],
+            opts[["--no-packages"]], opts[["--no-analysis"]])
