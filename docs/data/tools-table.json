@@ -48,12 +48,12 @@
           "DOI": "10.1038/nature19348",
           "PubDate": "2016-08-31",
           "Preprint": false,
-          "Citations": 62
+          "Citations": 64
         }
       ],
       "Preprints": []
     },
-    "Citations": 62,
+    "Citations": 64,
     "Publications": 1,
     "Preprints": 0,
     "Github": "nsalomonis/altanalyze",
@@ -297,12 +297,12 @@
           "DOI": "10.1126/science.aaa1934",
           "PubDate": "2015-03-06",
           "Preprint": false,
-          "Citations": 486
+          "Citations": 490
         }
       ],
       "Preprints": []
     },
-    "Citations": 486,
+    "Citations": 490,
     "Publications": 1,
     "Preprints": 0,
     "Github": "linnarsson-lab/BackSPIN",
@@ -400,13 +400,16 @@
     "Refs": {
       "Publications": [
         {
+          "Title": "BALDR: a computational pipeline for paired heavy and light chain immunoglobulin reconstruction in single-cell RNA-seq data",
           "DOI": "10.1186/s13073-018-0528-3",
           "PubDate": "2018-03-20",
-          "Preprint": false
+          "Preprint": false,
+          "Citations": 0
         }
       ],
       "Preprints": []
     },
+    "Citations": 0,
     "Publications": 1,
     "Preprints": 0,
     "Github": "BosingerLab/BALDR",
@@ -520,7 +523,7 @@
           "DOI": "10.1371/journal.pcbi.1004333",
           "PubDate": "2015-06-01",
           "Preprint": false,
-          "Citations": 42
+          "Citations": 43
         },
         {
           "Title": "Beyond comparisons of means: understanding changes in gene expression at the single-cell level",
@@ -539,7 +542,7 @@
         }
       ]
     },
-    "Citations": 69,
+    "Citations": 70,
     "Publications": 2,
     "Preprints": 1,
     "Github": "catavallejos/BASiCS",
@@ -1215,6 +1218,7 @@
     "Platform": "Python/R",
     "DOIs": "10.1038/ncomms14049",
     "PubDates": "2017-01-16",
+    "Code": "https://github.com/10XGenomics/cellranger",
     "Description": "Cell Ranger is a set of analysis pipelines that process Chromium single cell 3’ RNA-seq output to align reads, generate gene-cell matrices and perform clustering and gene expression analysis.",
     "Assembly": false,
     "Alignment": true,
@@ -1249,7 +1253,7 @@
     "Interactive": true,
     "Simulation": false,
     "Added": "2017-06-08",
-    "Updated": "2017-09-11",
+    "Updated": "2018-04-09",
     "Refs": {
       "Publications": [
         {
@@ -1257,14 +1261,15 @@
           "DOI": "10.1038/ncomms14049",
           "PubDate": "2017-01-16",
           "Preprint": false,
-          "Citations": 108
+          "Citations": 110
         }
       ],
       "Preprints": []
     },
-    "Citations": 108,
+    "Citations": 110,
     "Publications": 1,
     "Preprints": 0,
+    "Github": "10XGenomics/cellranger",
     "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Clustering", "DifferentialExpression", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
   {
@@ -2434,12 +2439,12 @@
           "DOI": "10.1126/science.aan3235",
           "PubDate": "2017-09-31",
           "Preprint": false,
-          "Citations": 8
+          "Citations": 9
         }
       ],
       "Preprints": []
     },
-    "Citations": 8,
+    "Citations": 9,
     "Publications": 1,
     "Preprints": 0,
     "Github": "rajewsky-lab/distmap",
@@ -2799,8 +2804,10 @@
     "Categories": ["Classification"]
   },
   {
-    "Name": "dropletUtils",
+    "Name": "DropletUtils",
     "Platform": "R",
+    "DOIs": "10.1101/234872",
+    "PubDates": "PREPRINT",
     "Code": "https://github.com/MarioniLab/DropletUtils",
     "Description": "Package for handling droplet-based single-cell RNA-seq data",
     "License": "GPL-3",
@@ -2837,11 +2844,21 @@
     "Interactive": false,
     "Simulation": true,
     "Added": "2018-01-19",
-    "Updated": "2018-01-19",
+    "Updated": "2018-04-09",
     "Refs": {
-      "Publications": [null],
-      "Preprints": [null]
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "Distinguishing cells from empty droplets in droplet-based single-cell RNA sequencing data",
+          "DOI": "10.1101/234872",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
     },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
     "Github": "MarioniLab/DropletUtils",
     "Categories": ["UMIs", "QualityControl", "Simulation"]
   },
@@ -4338,12 +4355,12 @@
           "DOI": "10.1126/science.1254257",
           "PubDate": "2014-06-20",
           "Preprint": false,
-          "Citations": 631
+          "Citations": 634
         }
       ],
       "Preprints": []
     },
-    "Citations": 631,
+    "Citations": 634,
     "Publications": 1,
     "Preprints": 0,
     "Github": "broadinstitute/inferCNV",
@@ -4843,11 +4860,11 @@
           "Title": "Modelling dropouts for feature selection in scRNASeq experiments",
           "DOI": "10.1101/065094",
           "Preprint": true,
-          "Citations": 1
+          "Citations": 2
         }
       ]
     },
-    "Citations": 1,
+    "Citations": 2,
     "Publications": 0,
     "Preprints": 1,
     "Github": "tallulandrews/M3Drop",
@@ -4962,12 +4979,12 @@
           "DOI": "10.1186/s13059-015-0844-5",
           "PubDate": "2015-12-10",
           "Preprint": false,
-          "Citations": 77
+          "Citations": 78
         }
       ],
       "Preprints": []
     },
-    "Citations": 77,
+    "Citations": 78,
     "Publications": 1,
     "Preprints": 0,
     "Github": "RGLab/MAST",
@@ -5317,7 +5334,7 @@
           "DOI": "10.1038/nbt.2859",
           "PubDate": "2014-04-01",
           "Preprint": false,
-          "Citations": 356
+          "Citations": 357
         },
         {
           "Title": "Single-cell mRNA quantification and differential analysis with Census",
@@ -5331,7 +5348,7 @@
           "DOI": "10.1038/nmeth.4402",
           "PubDate": "2017-08-21",
           "Preprint": false,
-          "Citations": 20
+          "Citations": 21
         }
       ],
       "Preprints": [
@@ -5339,11 +5356,11 @@
           "Title": "Reversed graph embedding resolves complex single-cell developmental trajectories",
           "DOI": "10.1101/110668",
           "Preprint": true,
-          "Citations": 4
+          "Citations": 5
         }
       ]
     },
-    "Citations": 409,
+    "Citations": 412,
     "Publications": 3,
     "Preprints": 1,
     "Github": "cole-trapnell-lab/monocle-release",
@@ -7364,7 +7381,7 @@
           "DOI": "10.1038/nmeth.4236",
           "PubDate": "2017-03-27",
           "Preprint": false,
-          "Citations": 47
+          "Citations": 49
         }
       ],
       "Preprints": [
@@ -7376,7 +7393,7 @@
         }
       ]
     },
-    "Citations": 49,
+    "Citations": 51,
     "Publications": 1,
     "Preprints": 1,
     "Github": "hemberg-lab/sc3",
@@ -7769,12 +7786,12 @@
           "DOI": "10.1101/gr.225979.117",
           "PubDate": "2018-01-09",
           "Preprint": false,
-          "Citations": 0
+          "Citations": 1
         }
       ],
       "Preprints": []
     },
-    "Citations": 0,
+    "Citations": 1,
     "Publications": 1,
     "Preprints": 0,
     "Github": "phoenixding/scdiff",
@@ -8266,12 +8283,12 @@
           "DOI": "10.1038/nbt.3102",
           "PubDate": "2015-02-01",
           "Preprint": false,
-          "Citations": 267
+          "Citations": 268
         }
       ],
       "Preprints": []
     },
-    "Citations": 267,
+    "Citations": 268,
     "Publications": 1,
     "Preprints": 0,
     "Github": "PMBio/scLVM",
@@ -8281,8 +8298,8 @@
   {
     "Name": "scmap",
     "Platform": "R",
-    "DOIs": "10.1101/150292",
-    "PubDates": "PREPRINT",
+    "DOIs": "10.1101/150292;10.1038/nmeth.4644",
+    "PubDates": "PREPRINT;2018-04-02",
     "Code": "https://github.com/hemberg-lab/scmap",
     "Description": "scmap is a method for projecting cells from a scRNA-seq experiment on to the cell-types identified in a different experiment.",
     "License": "GPL-3",
@@ -8319,9 +8336,17 @@
     "Interactive": false,
     "Simulation": false,
     "Added": "2017-06-23",
-    "Updated": "2017-06-23",
+    "Updated": "2018-04-09",
     "Refs": {
-      "Publications": [],
+      "Publications": [
+        {
+          "Title": "scmap: projection of single-cell RNA-seq data across data sets",
+          "DOI": "10.1038/nmeth.4644",
+          "PubDate": "2018-04-02",
+          "Preprint": false,
+          "Citations": 0
+        }
+      ],
       "Preprints": [
         {
           "Title": "scmap - A tool for unsupervised projection of single cell RNA-seq data",
@@ -8332,7 +8357,7 @@
       ]
     },
     "Citations": 2,
-    "Publications": 0,
+    "Publications": 1,
     "Preprints": 1,
     "Github": "hemberg-lab/scmap",
     "BioC": "scmap",
@@ -9552,7 +9577,7 @@
           "DOI": "10.1038/nbt.3192",
           "PubDate": "2015-04-13",
           "Preprint": false,
-          "Citations": 214
+          "Citations": 215
         },
         {
           "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
@@ -9571,7 +9596,7 @@
         }
       ]
     },
-    "Citations": 216,
+    "Citations": 217,
     "Publications": 2,
     "Preprints": 1,
     "Github": "satijalab/seurat",
@@ -11270,12 +11295,12 @@
           "DOI": "10.1038/nmeth.3800",
           "PubDate": "2016-03-07",
           "Preprint": false,
-          "Citations": 64
+          "Citations": 65
         }
       ],
       "Preprints": []
     },
-    "Citations": 64,
+    "Citations": 65,
     "Publications": 1,
     "Preprints": 0,
     "Github": "teichlab/tracer",
@@ -11579,7 +11604,7 @@
           "DOI": "10.1038/nmeth.4220",
           "PubDate": "2017-03-06",
           "Preprint": false,
-          "Citations": 47
+          "Citations": 48
         }
       ],
       "Preprints": [
@@ -11591,7 +11616,7 @@
         }
       ]
     },
-    "Citations": 47,
+    "Citations": 48,
     "Publications": 1,
     "Preprints": 1,
     "Github": "vals/umis",
