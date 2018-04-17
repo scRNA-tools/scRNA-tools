@@ -2,9 +2,12 @@
 
 # scRNA-tools
 
+[![Project Status](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![Lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+
 A database of software tools for the analysis of single-cell RNA-seq data. To
 make it into the database software must be available for download and public use
-somewhere (CRAN, Bioconductor, PyPI, Conda, Github, Bitbucket, a private website
+somewhere (CRAN, Bioconductor, PyPI, Conda, GitHub, Bitbucket, a private website
 etc). To view the database head to https://www.scRNA-tools.org.
 
 ## Purpose
