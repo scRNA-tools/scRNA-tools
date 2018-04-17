@@ -10,8 +10,8 @@ Tool details
 
 **Name:**
 **Platform:**
-**DOI:**
-**PubDate:**
+**DOIs:**
+**PubDates:**
 **Code:**
 **Description:**
 **License:**
