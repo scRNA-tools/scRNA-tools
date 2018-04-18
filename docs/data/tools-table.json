@@ -6630,8 +6630,8 @@
   {
     "Name": "powsimR",
     "Platform": "R",
-    "DOIs": "10.1101/117150",
-    "PubDates": "PREPRINT",
+    "DOIs": "10.1101/117150;10.1093/bioinformatics/btx435",
+    "PubDates": "PREPRINT;2017-11-01",
     "Code": "https://github.com/bvieth/powsimR",
     "Description": "Power analysis for bulk and single cell RNA-seq experiments",
     "License": "GPL",
@@ -6668,9 +6668,17 @@
     "Interactive": false,
     "Simulation": true,
     "Added": "2017-03-20",
-    "Updated": "2017-06-30",
+    "Updated": "2018-03-17",
     "Refs": {
-      "Publications": [],
+      "Publications": [
+        {
+          "Title": "powsimR: power analysis for bulk and single cell RNA-seq experiments",
+          "DOI": "10.1093/bioinformatics/btx435",
+          "PubDate": "2017-11-01",
+          "Preprint": false,
+          "Citations": 1
+        }
+      ],
       "Preprints": [
         {
           "Title": "powsimR: Power analysis for bulk and single cell RNA-seq experiments",
@@ -6680,8 +6688,8 @@
         }
       ]
     },
-    "Citations": 0,
-    "Publications": 0,
+    "Citations": 1,
+    "Publications": 1,
     "Preprints": 1,
     "Github": "bvieth/powsimR",
     "Categories": ["Visualisation", "Simulation"]
