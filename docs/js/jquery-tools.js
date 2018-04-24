@@ -56,9 +56,19 @@ $(document).ready(function () {
               return obj2.Citations - obj1.Citations
             })
             break
+          case 'refs':
+            data.sort(function(obj1, obj2) {
+              return (obj2.Publications + obj2.Preprints) - (obj1.Publications + obj1.Preprints)
+            })
+            break
           case 'pubs':
             data.sort(function(obj1, obj2) {
-              return obj2.Refs.length - obj1.Refs.length
+              return obj2.Publications - obj1.Publications
+            })
+            break
+          case 'pres':
+            data.sort(function(obj1, obj2) {
+              return obj2.Preprints - obj1.Preprints
             })
             break
           case 'added':
@@ -98,6 +108,9 @@ $(document).ready(function () {
         var bioc = value.BioC
         var pypi = value.PyPI
         var cran = value.CRAN
+        var nPubs = value.Publications
+        var nPres = value.Preprints
+        var totalRefs = nPubs + nPres
 
         var entry = ''
         entry += '<div class="panel-heading">' +
@@ -125,52 +138,65 @@ $(document).ready(function () {
                  '<ul class="list-group">' +
                  '<li class="list-group-item">' + description + '</li>'
 
-        var noRefs = refs.every(function(v) {return v === null})
-
         // Loop over references
-        if (noRefs == false) {
-
-          entry += '<li class="list-group-item">'
-          entry += '<strong>Publications:</strong> ' + refs.length  +
-                   ', <strong>Total citations:</strong> ' + citations
-          entry += '</li>'
+        if (totalRefs > 0) {
 
           entry += '<div class="panel-heading">' +
-                   '<h3 id="' + name + '_pubs" class="panel-title">' +
+                   '<p id="' + name + '_pubs" class="panel-title">' +
                    '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + name + '_pubs_c">' +
-                   'Publication details'
+                   '<strong>Publications:</strong> ' + nPubs +
+                   ', <strong>Preprints:</strong> ' + nPres +
+                   ', <strong>Total citations:</strong> ' + citations
           entry += '</a></h4></div>' +
                    '<div id="' + name + '_pubs_c" class="panel-collapse collapse">' +
                    '<ul class="list-group">'
 
-          $.each(refs, function (k, val) {
-            var title = val.Title
-            var doi = val.DOI
-            var date = val.PubDate
-            var isPre = val.Preprint
-            var cites = val.Citations
+          if (nPubs > 0) {
+            var pubs = refs.Publications
 
-            entry += '<li class="list-group-item">'
-            if (typeof title !== 'undefined') {
+            entry += '<li class="list-group-item"><strong>Publications</strong></li>'
+
+            $.each(pubs, function (k, val) {
+
+              var title = val.Title
+              var doi = val.DOI
+              var date = val.PubDate
+              var cites = val.Citations
+
+              entry += '<li class="list-group-item">'
               entry += '<em>"' + title + '"</em><br/>'
-            }
-            if (doi.includes('arxiv')) {
-              var id = doi.replace("arxiv/", "")
-              entry += '<strong>arXiv: </strong> <a href="https://arxiv.org/abs/' + id + '">' + id + '</a>'
-            } else {
               entry += '<strong>DOI: </strong> <a href="https://doi.org/' + doi + '">' + doi + '</a>'
-            }
-            if (isPre == true) {
-              entry += ', <strong>Preprint</strong>'
-            } else {
               entry += ', <strong>Published: </strong>' + date
-            }
-            if (typeof cites !== 'undefined') {
               entry += ', <strong>Citations: </strong> ' + cites
-            }
-            entry += '</li>'
-          })
+              entry += '</li>'
+            })
+          }
 
+          if (nPres > 0) {
+            var pres = refs.Preprints
+
+            entry += '<li class="list-group-item"><strong>Preprints</strong></li>'
+
+            $.each(pres, function (k, val) {
+
+              var title = val.Title
+              var doi = val.DOI
+              var cites = val.Citations
+
+              entry += '<li class="list-group-item">'
+              entry += '<em>"' + title + '"</em><br/>'
+              if (doi.includes('arxiv')) {
+                var id = doi.replace("arxiv/", "")
+                entry += '<strong>arXiv: </strong> <a href="https://arxiv.org/abs/' + id + '">' + id + '</a>'
+              } else {
+                entry += '<strong>DOI: </strong> <a href="https://doi.org/' + doi + '">' + doi + '</a>'
+              }
+              if (typeof cites !== 'undefined') {
+                entry += ', <strong>Citations: </strong> ' + cites
+              }
+              entry += '</li>'
+            })
+          }
           entry += '</ul></div>'
         }
 

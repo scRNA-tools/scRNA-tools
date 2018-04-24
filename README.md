@@ -2,9 +2,12 @@
 
 # scRNA-tools
 
+[![Project Status](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![Lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+
 A database of software tools for the analysis of single-cell RNA-seq data. To
 make it into the database software must be available for download and public use
-somewhere (CRAN, Bioconductor, PyPI, Conda, Github, Bitbucket, a private website
+somewhere (CRAN, Bioconductor, PyPI, Conda, GitHub, Bitbucket, a private website
 etc). To view the database head to https://www.scRNA-tools.org.
 
 ## Purpose
@@ -83,3 +86,29 @@ function columns ask the following questions of the software:
   make a plot using `ggplot` or `matplotlib` doesn't count)
 * **Interactive** - Does it have some kind of interactive component or a GUI?
 * **Simulation** - Does it have functions for simulating scRNA-seq data?
+
+## Contributors
+
+Thank you to everyone who has contributed to scRNA-tools! Your efforts to build
+and improve this resource for the community are greatly appreciated!
+
+The following people have made significant contributions to the scRNA-tools 
+database or website:
+
+* [@seandavi](https://github.com/seandavi) - Wrote the first processing script
+  and maintains the
+  [awesome-single-cell](https://github.com/seandavi/awesome-single-cell) page
+* [@breons](https://github.com/breons) - Helped build a prototype of the website
+  (and answered many questions)
+* [@daniel-wells](https://github.com/daniel-wells) - Added the licence field and
+  updated code URLs
+* [@katrinleinweber](https://github.com/katrinleinweber) - Switch to preferred
+  resolver for DOI links
+
+These people have added new tools or updated existing entries in the database:
+
+[@nsalomonis](https://github.com/nsalomonis),
+[@TomSmithCGAT](https://github.com/TomSmithCGAT),
+[@PeteHaitch](https://github.com/PeteHaitch),
+[@lucapinello](https://github.com/lucapinello)
+

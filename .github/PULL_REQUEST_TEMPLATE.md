@@ -11,5 +11,5 @@ Please describe your pull request below and fill out the check list:
 - [ ] Only (manually) edited `single_cell_software.csv`
 - [ ] Sorted the table alphabetically
 - [ ] Checked dates are in the right format (YYYY-MM-DD)
-- [ ] Run `process_csv.R` (optional)
+- [ ] Run `build_scRNAtools.R` (optional)
 
