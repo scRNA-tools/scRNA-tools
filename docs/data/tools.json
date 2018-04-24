@@ -1890,14 +1890,22 @@
   {
     "Name": "Granatum",
     "Platform": "Virtualbox",
-    "DOIs": "10.1101/110759",
-    "PubDates": "PREPRINT",
+    "DOIs": "10.1101/110759;10.1186/s13073-017-0492-3",
+    "PubDates": "PREPRINT;2017-12-05",
     "Code": "https://gitlab.com/uhcclxgg/granatum",
     "Description": "This is a graphical single-cell RNA-seq (scRNA-seq) analysis pipeline for genomics scientists.",
     "Added": "2017-03-01",
-    "Updated": "2017-03-01",
+    "Updated": "2018-05-24",
     "Refs": {
-      "Publications": [],
+      "Publications": [
+        {
+          "Title": "Granatum: a graphical single-cell RNA-Seq analysis pipeline for genomics scientists",
+          "DOI": "10.1186/s13073-017-0492-3",
+          "PubDate": "2017-12-05",
+          "Preprint": false,
+          "Citations": 1
+        }
+      ],
       "Preprints": [
         {
           "Title": "Granatum: a graphical single-cell RNA-Seq analysis pipeline for genomics scientists",
@@ -1907,8 +1915,8 @@
         }
       ]
     },
-    "Citations": 0,
-    "Publications": 0,
+    "Citations": 1,
+    "Publications": 1,
     "Preprints": 1,
     "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "Ordering", "DifferentialExpression", "GeneSets", "GeneNetworks", "DimensionalityReduction", "Visualisation", "Interactive"]
   },
@@ -3756,7 +3764,8 @@
           "Title": "SCENIC: single-cell regulatory network inference and clustering",
           "DOI": "10.1038/nmeth.4463",
           "PubDate": "2017-10-09",
-          "Preprint": false
+          "Preprint": false,
+          "Citations": 5
         }
       ],
       "Preprints": [
@@ -3768,6 +3777,7 @@
         }
       ]
     },
+    "Citations": 6,
     "Publications": 1,
     "Preprints": 1,
     "Github": "aertslab/SCENIC",
@@ -5217,6 +5227,33 @@
     "Publications": 1,
     "Preprints": 0,
     "Categories": ["Ordering", "Visualisation"]
+  },
+  {
+    "Name": "STREAM",
+    "Platform": "Docker/Python/R",
+    "DOIs": "10.1101/302554",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/pinellolab/stream",
+    "Description": "STREAM is an interactive computational pipeline for reconstructing complex cellular developmental trajectories from sc-qPCR, scRNA-seq or scATAC-seq data.",
+    "License": "AGPLv3",
+    "Added": "2018-05-24",
+    "Updated": "2018-05-24",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "STREAM: Single-cell Trajectories Reconstruction, Exploration And Mapping of omics data",
+          "DOI": "10.1101/302554",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "pinellolab/stream",
+    "Categories": ["Normalisation", "Ordering", "ExpressionPatterns", "Visualisation", "Interactive"]
   },
   {
     "Name": "switchde",

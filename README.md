@@ -109,6 +109,6 @@ These people have added new tools or updated existing entries in the database:
 
 [@nsalomonis](https://github.com/nsalomonis),
 [@TomSmithCGAT](https://github.com/TomSmithCGAT),
-[@PeteHaitch](https://github.com/PeteHaitch)
-
+[@PeteHaitch](https://github.com/PeteHaitch),
+[@lucapinello](https://github.com/lucapinello)
 
