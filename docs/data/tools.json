@@ -72,12 +72,12 @@
           "DOI": "10.1016/j.molcel.2017.06.003",
           "PubDate": "2017-06-29",
           "Preprint": false,
-          "Citations": 3
+          "Citations": 4
         }
       ],
       "Preprints": []
     },
-    "Citations": 3,
+    "Citations": 4,
     "Publications": 1,
     "Preprints": 0,
     "Github": "yeolab/anchor",
@@ -164,12 +164,12 @@
           "DOI": "10.1126/science.aaa1934",
           "PubDate": "2015-03-06",
           "Preprint": false,
-          "Citations": 507
+          "Citations": 510
         }
       ],
       "Preprints": []
     },
-    "Citations": 507,
+    "Citations": 510,
     "Publications": 1,
     "Preprints": 0,
     "Github": "linnarsson-lab/BackSPIN",
@@ -357,12 +357,12 @@
           "DOI": "10.1016/j.molcel.2017.06.003",
           "PubDate": "2017-06-29",
           "Preprint": false,
-          "Citations": 3
+          "Citations": 4
         }
       ],
       "Preprints": []
     },
-    "Citations": 3,
+    "Citations": 4,
     "Publications": 1,
     "Preprints": 0,
     "Github": "yeolab/bonvoyage",
@@ -386,12 +386,12 @@
           "DOI": "10.1093/bioinformatics/btw202",
           "PubDate": "2016-04-19",
           "Preprint": false,
-          "Citations": 15
+          "Citations": 16
         }
       ],
       "Preprints": []
     },
-    "Citations": 15,
+    "Citations": 16,
     "Publications": 1,
     "Preprints": 0,
     "Github": "nghiavtr/BPSC",
@@ -594,12 +594,12 @@
           "DOI": "10.1038/nmeth.4628",
           "PubDate": "2018-03-12",
           "Preprint": false,
-          "Citations": 1
+          "Citations": 2
         }
       ],
       "Preprints": []
     },
-    "Citations": 1,
+    "Citations": 2,
     "Publications": 1,
     "Preprints": 0,
     "Github": "shenorrLab/cellAlign",
@@ -650,12 +650,12 @@
           "DOI": "10.1038/ncomms14049",
           "PubDate": "2017-01-16",
           "Preprint": false,
-          "Citations": 118
+          "Citations": 119
         }
       ],
       "Preprints": []
     },
-    "Citations": 118,
+    "Citations": 119,
     "Publications": 1,
     "Preprints": 0,
     "Github": "10XGenomics/cellranger",
@@ -805,6 +805,21 @@
     "Categories": ["Normalisation"]
   },
   {
+    "Name": "clonealign",
+    "Platform": "R",
+    "Code": "https://github.com/kieranrcampbell/clonealign",
+    "Description": "clonealign assigns single-cell RNA-seq expression to cancer clones by mapping RNA-seq to clone-specific copy number profiles",
+    "License": "Apache-2.0",
+    "Added": "2018-05-01",
+    "Updated": "2018-05-01",
+    "Refs": {
+      "Publications": [null],
+      "Preprints": [null]
+    },
+    "Github": "kieranrcampbell/clonealign",
+    "Categories": ["Integration", "Variants", "Visualisation"]
+  },
+  {
     "Name": "clusterExperiment",
     "Platform": "R",
     "DOIs": "10.1101/280545",
@@ -856,6 +871,33 @@
     "Publications": 0,
     "Preprints": 1,
     "Categories": ["Clustering", "GeneSets"]
+  },
+  {
+    "Name": "CONICS",
+    "Platform": "R/Python",
+    "DOIs": "10.1093/bioinformatics/bty316",
+    "PubDates": "2018-04-20",
+    "Code": "https://github.com/diazlab/CONICS",
+    "Description": "CONICS: COpy-Number analysis In single-Cell RNA-Sequencing",
+    "Added": "2018-05-01",
+    "Updated": "2018-05-01",
+    "Refs": {
+      "Publications": [
+        {
+          "Title": "CONICS integrates scRNA-seq with DNA sequencing to map gene expression to tumor sub-clones",
+          "DOI": "10.1093/bioinformatics/bty316",
+          "PubDate": "2018-04-20",
+          "Preprint": false,
+          "Citations": 0
+        }
+      ],
+      "Preprints": []
+    },
+    "Citations": 0,
+    "Publications": 1,
+    "Preprints": 0,
+    "Github": "diazlab/CONICS",
+    "Categories": ["Integration", "Variants", "Visualisation"]
   },
   {
     "Name": "countClust",
@@ -951,6 +993,7 @@
     "Publications": 0,
     "Preprints": 1,
     "Github": "theislab/dca",
+    "PyPI": "DCA",
     "Categories": ["Imputation"]
   },
   {
@@ -1128,15 +1171,23 @@
   {
     "Name": "DEsingle",
     "Platform": "R",
-    "DOIs": "10.1101/173997",
-    "PubDates": "PREPRINT",
+    "DOIs": "10.1101/173997;10.1093/bioinformatics/bty332",
+    "PubDates": "PREPRINT;2018-04-24",
     "Code": "https://github.com/miaozhun/DEsingle",
     "Description": "DEsingle is an R package for differential expression (DE) analysis of single-cell RNA-seq (scRNA-seq) data. It will detect differentially expressed genes between two groups of cells in a scRNA-seq raw read counts matrix.",
     "License": "GPL-2",
     "Added": "2018-03-15",
-    "Updated": "2018-03-15",
+    "Updated": "2018-05-01",
     "Refs": {
-      "Publications": [],
+      "Publications": [
+        {
+          "Title": "DEsingle for detecting three types of differential expression in single-cell RNA-seq data",
+          "DOI": "10.1093/bioinformatics/bty332",
+          "PubDate": "2018-04-24",
+          "Preprint": false,
+          "Citations": 0
+        }
+      ],
       "Preprints": [
         {
           "Title": "DEsingle: A new method for single-cell differentially expressed genes detection and classification",
@@ -1147,7 +1198,7 @@
       ]
     },
     "Citations": 0,
-    "Publications": 0,
+    "Publications": 1,
     "Preprints": 1,
     "Github": "miaozhun/DEsingle",
     "Categories": ["DifferentialExpression"]
@@ -2125,12 +2176,12 @@
           "DOI": "10.1126/science.1254257",
           "PubDate": "2014-06-20",
           "Preprint": false,
-          "Citations": 648
+          "Citations": 649
         }
       ],
       "Preprints": []
     },
-    "Citations": 648,
+    "Citations": 649,
     "Publications": 1,
     "Preprints": 0,
     "Github": "broadinstitute/inferCNV",
@@ -2397,12 +2448,12 @@
           "DOI": "10.1186/s13059-015-0844-5",
           "PubDate": "2015-12-10",
           "Preprint": false,
-          "Citations": 84
+          "Citations": 85
         }
       ],
       "Preprints": []
     },
-    "Citations": 84,
+    "Citations": 85,
     "Publications": 1,
     "Preprints": 0,
     "Github": "RGLab/MAST",
@@ -2426,12 +2477,12 @@
           "DOI": "10.1186/s13059-017-1269-0",
           "PubDate": "2017-07-2017",
           "Preprint": false,
-          "Citations": 4
+          "Citations": 5
         }
       ],
       "Preprints": []
     },
-    "Citations": 4,
+    "Citations": 5,
     "Publications": 1,
     "Preprints": 0,
     "Github": "jw156605/MATCHER",
@@ -2560,7 +2611,7 @@
           "DOI": "10.1038/nbt.2859",
           "PubDate": "2014-04-01",
           "Preprint": false,
-          "Citations": 374
+          "Citations": 375
         },
         {
           "Title": "Single-cell mRNA quantification and differential analysis with Census",
@@ -2586,7 +2637,7 @@
         }
       ]
     },
-    "Citations": 438,
+    "Citations": 439,
     "Publications": 3,
     "Preprints": 1,
     "Github": "cole-trapnell-lab/monocle-release",
@@ -2830,12 +2881,12 @@
           "DOI": "10.1016/j.molcel.2017.06.003",
           "PubDate": "2017-06-29",
           "Preprint": false,
-          "Citations": 3
+          "Citations": 4
         }
       ],
       "Preprints": []
     },
-    "Citations": 3,
+    "Citations": 4,
     "Publications": 1,
     "Preprints": 0,
     "Github": "YeoLab/outrigger",
@@ -2965,12 +3016,12 @@
           "DOI": "10.1016/j.cels.2017.10.012",
           "PubDate": "2017-11-15",
           "Preprint": false,
-          "Citations": 3
+          "Citations": 5
         }
       ],
       "Preprints": []
     },
-    "Citations": 3,
+    "Citations": 5,
     "Publications": 1,
     "Preprints": 0,
     "Github": "KenLauLab/pCreode",
@@ -3479,6 +3530,34 @@
     "Categories": ["GeneNetworks"]
   },
   {
+    "Name": "SC2P",
+    "Platform": "R",
+    "DOIs": "10.1093/bioinformatics/bty329",
+    "PubDates": "2018-04-28",
+    "Code": "https://github.com/haowulab/SC2P",
+    "Description": "SC2P provides functionalities for testing DE in two phases: (1) phase transition (difference in the probabilities of being expressed); and (2) magnitude tuning (difference in the levels of expression once the gene is on).",
+    "License": "GPL",
+    "Added": "2018-05-01",
+    "Updated": "2018-05-01",
+    "Refs": {
+      "Publications": [
+        {
+          "Title": "Two-phase differential expression analysis for single cell RNA-seq",
+          "DOI": "10.1093/bioinformatics/bty329",
+          "PubDate": "2018-04-28",
+          "Preprint": false,
+          "Citations": 0
+        }
+      ],
+      "Preprints": []
+    },
+    "Citations": 0,
+    "Publications": 1,
+    "Preprints": 0,
+    "Github": "haowulab/SC2P",
+    "Categories": ["DifferentialExpression", "Visualisation"]
+  },
+  {
     "Name": "SC3",
     "Platform": "R",
     "DOIs": "10.1101/036558;10.1038/nmeth.4236",
@@ -3679,12 +3758,12 @@
           "DOI": "10.1038/nmeth.2967",
           "PubDate": "2014-07-01",
           "Preprint": false,
-          "Citations": 191
+          "Citations": 192
         }
       ],
       "Preprints": []
     },
-    "Citations": 191,
+    "Citations": 192,
     "Publications": 1,
     "Preprints": 0,
     "Github": "hms-dbmi/scde",
@@ -3872,6 +3951,34 @@
     "Categories": ["Integration"]
   },
   {
+    "Name": "scFeatureFilter",
+    "Platform": "R",
+    "DOIs": "10.1007/978-3-319-78723-7_31",
+    "PubDates": "2018-03-28",
+    "Code": "https://github.com/gdevailly/scFeatureFilter",
+    "Description": "An R package to set thresholds for feature (gene, transcript, ...) filtering in single cell RNA sequencing analyses",
+    "License": "MIT",
+    "Added": "2018-05-01",
+    "Updated": "2018-05-01",
+    "Refs": {
+      "Publications": [
+        {
+          "Title": "scFeatureFilter: Correlation-Based Feature Filtering for Single-Cell RNAseq",
+          "DOI": "10.1007/978-3-319-78723-7_31",
+          "PubDate": "2018-03-28",
+          "Preprint": false,
+          "Citations": 0
+        }
+      ],
+      "Preprints": []
+    },
+    "Citations": 0,
+    "Publications": 1,
+    "Preprints": 0,
+    "Github": "gdevailly/scFeatureFilter",
+    "Categories": ["GeneFiltering", "Visualisation"]
+  },
+  {
     "Name": "SCIMITAR",
     "Platform": "Python",
     "DOIs": "10.1101/070151",
@@ -3978,7 +4085,7 @@
           "DOI": "10.1038/nmeth.4644",
           "PubDate": "2018-04-02",
           "Preprint": false,
-          "Citations": 0
+          "Citations": 1
         }
       ],
       "Preprints": [
@@ -3990,7 +4097,7 @@
         }
       ]
     },
-    "Citations": 2,
+    "Citations": 3,
     "Publications": 1,
     "Preprints": 1,
     "Github": "hemberg-lab/scmap",
@@ -4567,7 +4674,7 @@
           "DOI": "10.1038/nbt.3192",
           "PubDate": "2015-04-13",
           "Preprint": false,
-          "Citations": 232
+          "Citations": 233
         },
         {
           "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
@@ -4586,7 +4693,7 @@
         }
       ]
     },
-    "Citations": 234,
+    "Citations": 235,
     "Publications": 2,
     "Preprints": 1,
     "Github": "satijalab/seurat",
@@ -4617,6 +4724,33 @@
     "Publications": 0,
     "Preprints": 1,
     "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Visualisation"]
+  },
+  {
+    "Name": "SigEMD",
+    "Platform": "R",
+    "DOIs": "10.1016/j.ymeth.2018.04.017",
+    "PubDates": "2018-04-24",
+    "Code": "https://github.com/NabaviLab/SigEMD",
+    "Description": "SigEMD is a novel method to identify differentially expressed genes in single cell RNA sequencing data.",
+    "Added": "2018-05-01",
+    "Updated": "2018-05-01",
+    "Refs": {
+      "Publications": [
+        {
+          "Title": "SigEMD: A powerful method for differential gene expression analysis in single-cell RNA sequencing data",
+          "DOI": "10.1016/j.ymeth.2018.04.017",
+          "PubDate": "2018-04-24",
+          "Preprint": false,
+          "Citations": 0
+        }
+      ],
+      "Preprints": []
+    },
+    "Citations": 0,
+    "Publications": 1,
+    "Preprints": 0,
+    "Github": "NabaviLab/SigEMD",
+    "Categories": ["Imputation", "DifferentialExpression", "Visualisation"]
   },
   {
     "Name": "SIMLR",
