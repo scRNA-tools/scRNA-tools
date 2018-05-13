@@ -120,7 +120,7 @@
     "Description": "AUCell is an R-package to analyze the state of gene-sets in single-cell RNA-seq data (i.e. identify cells with active gene signatures).",
     "License": "Custom",
     "Added": "2017-06-26",
-    "Updated": "2018-03-14",
+    "Updated": "2018-05-13",
     "Refs": {
       "Publications": [
         {
@@ -145,7 +145,7 @@
     "Preprints": 1,
     "Github": "aertslab/AUCell",
     "BioC": "AUCell",
-    "Categories": ["GeneNetworks", "Visualisation"]
+    "Categories": ["GeneNetworks", "Visualisation", "Interactive"]
   },
   {
     "Name": "BackSPIN",
@@ -164,12 +164,12 @@
           "DOI": "10.1126/science.aaa1934",
           "PubDate": "2015-03-06",
           "Preprint": false,
-          "Citations": 524
+          "Citations": 525
         }
       ],
       "Preprints": []
     },
-    "Citations": 524,
+    "Citations": 525,
     "Publications": 1,
     "Preprints": 0,
     "Github": "linnarsson-lab/BackSPIN",
@@ -545,6 +545,22 @@
     "Categories": ["Normalisation", "Clustering", "Ordering", "Visualisation"]
   },
   {
+    "Name": "ccfindR",
+    "Platform": "R",
+    "Code": "https://github.com/hjunwoo/ccfindR",
+    "Description": "A collection of tools for cancer single cell RNA-seq analysis.",
+    "License": "GPL (>= 2)",
+    "Added": "2018-05-13",
+    "Updated": "2018-05-13",
+    "Refs": {
+      "Publications": [null],
+      "Preprints": [null]
+    },
+    "Github": "hjunwoo/ccfindR",
+    "BioC": "ccfindR",
+    "Categories": ["QualityControl", "Normalisation", "GeneFiltering", "Clustering", "DimensionalityReduction", "Visualisation", "Simulation"]
+  },
+  {
     "Name": "ccRemover",
     "Platform": "R",
     "DOIs": "arxiv/1605.04492;10.1038/srep33892",
@@ -561,7 +577,7 @@
           "DOI": "10.1038/srep33892",
           "PubDate": "2016-05-12",
           "Preprint": false,
-          "Citations": 5
+          "Citations": 6
         }
       ],
       "Preprints": [
@@ -1295,16 +1311,31 @@
           "DOI": "10.1126/science.aan3235",
           "PubDate": "2017-09-31",
           "Preprint": false,
-          "Citations": 12
+          "Citations": 13
         }
       ],
       "Preprints": []
     },
-    "Citations": 12,
+    "Citations": 13,
     "Publications": 1,
     "Preprints": 0,
     "Github": "rajewsky-lab/distmap",
     "Categories": ["Classification", "Visualisation"]
+  },
+  {
+    "Name": "DoubletDetection",
+    "Platform": "Python",
+    "Code": "https://github.com/JonathanShor/DoubletDetection",
+    "Description": "DoubletDetection is a Python3 package to detect doublets (technical errors) in single-cell RNA-seq count matrices.",
+    "License": "MIT",
+    "Added": "2018-05-13",
+    "Updated": "2018-05-13",
+    "Refs": {
+      "Publications": [null],
+      "Preprints": [null]
+    },
+    "Github": "JonathanShor/DoubletDetection",
+    "Categories": ["QualityControl", "Visualisation"]
   },
   {
     "Name": "DPT",
@@ -2363,6 +2394,22 @@
     "Preprints": 0,
     "CRAN": "LEAP",
     "Categories": ["Ordering", "GeneNetworks"]
+  },
+  {
+    "Name": "LineagePulse",
+    "Platform": "R",
+    "Code": "https://github.com/YosefLab/LineagePulse",
+    "Description": "Differential expression analysis and model fitting for single-cell RNA-seq data in pseudotime",
+    "License": "Artistic-2.0",
+    "Added": "2018-05-13",
+    "Updated": "2018-05-13",
+    "Refs": {
+      "Publications": [null],
+      "Preprints": [null]
+    },
+    "Github": "YosefLab/LineagePulse",
+    "BioC": "LineagePulse",
+    "Categories": ["DifferentialExpression", "ExpressionPatterns", "Visualisation", "Simulation"]
   },
   {
     "Name": "Linnorm",
@@ -3606,7 +3653,7 @@
           "DOI": "10.1038/nmeth.4236",
           "PubDate": "2017-03-27",
           "Preprint": false,
-          "Citations": 57
+          "Citations": 58
         }
       ],
       "Preprints": [
@@ -3618,7 +3665,7 @@
         }
       ]
     },
-    "Citations": 59,
+    "Citations": 60,
     "Publications": 1,
     "Preprints": 1,
     "Github": "hemberg-lab/sc3",
@@ -3790,12 +3837,12 @@
           "DOI": "10.1038/nmeth.2967",
           "PubDate": "2014-07-01",
           "Preprint": false,
-          "Citations": 196
+          "Citations": 197
         }
       ],
       "Preprints": []
     },
-    "Citations": 196,
+    "Citations": 197,
     "Publications": 1,
     "Preprints": 0,
     "Github": "hms-dbmi/scde",
@@ -4089,12 +4136,12 @@
           "DOI": "10.1038/nbt.3102",
           "PubDate": "2015-02-01",
           "Preprint": false,
-          "Citations": 276
+          "Citations": 277
         }
       ],
       "Preprints": []
     },
-    "Citations": 276,
+    "Citations": 277,
     "Publications": 1,
     "Preprints": 0,
     "Github": "PMBio/scLVM",
@@ -4953,6 +5000,22 @@
     "Categories": ["Clustering", "Visualisation", "Interactive"]
   },
   {
+    "Name": "singleCellTK",
+    "Platform": "R",
+    "Code": "https://github.com/compbiomed/singleCellTK",
+    "Description": "Interactive Analysis of Single Cell RNA-Seq Data",
+    "License": "MIT",
+    "Added": "2018-05-13",
+    "Updated": "2018-05-13",
+    "Refs": {
+      "Publications": [null],
+      "Preprints": [null]
+    },
+    "Github": "compbiomed/singleCellTK",
+    "BioC": "singleCellTK",
+    "Categories": ["Alignment", "Quantification", "QualityControl", "Normalisation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "GeneSets", "DimensionalityReduction", "Visualisation", "Interactive"]
+  },
+  {
     "Name": "SingleSplice",
     "Platform": "R/Perl/C++",
     "DOIs": "10.1093/nar/gkv1525",
@@ -5187,6 +5250,33 @@
     "Preprints": 1,
     "Github": "WangShuxiong/SoptSC",
     "Categories": ["Clustering", "Ordering", "DimensionalityReduction"]
+  },
+  {
+    "Name": "SoupX",
+    "Platform": "R",
+    "DOIs": "10.1101/303727",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/constantAmateur/SoupX",
+    "Description": "An R package for the estimation and removal of cell free mRNA contamination in droplet based single cell RNA-seq data.",
+    "License": "GPL-2",
+    "Added": "2018-05-13",
+    "Updated": "2018-05-13",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "SoupX removes ambient RNA contamination from droplet based single cell RNA sequencing data",
+          "DOI": "10.1101/303727",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "constantAmateur/SoupX",
+    "Categories": ["Quantification", "Visualisation"]
   },
   {
     "Name": "SPADE",
