@@ -20,9 +20,10 @@ to add something please make a pull request or open an issue.
 ## Citation
 
 If you find the scRNA-tools database useful for your work please cite our
-preprint: "Zappia L, Phipson B, Oshlack A. [Exploring the single-cell RNA-seq
+preprint: Zappia L, Phipson B, Oshlack A. ["Exploring the single-cell RNA-seq
 analysis landscape with the scRNA-tools
-database](https://doi.org/10.1101/206573), bioRxiv (2017), DOI: 10.1101/206573"
+database"](https://doi.org/10.1371/journal.pcbi.1006245), PLOS Computational
+Biology (2018), DOI: 10.1371/journal.pcbi.1006245"
 
 ## Structure
 
@@ -92,7 +93,7 @@ function columns ask the following questions of the software:
 Thank you to everyone who has contributed to scRNA-tools! Your efforts to build
 and improve this resource for the community are greatly appreciated!
 
-The following people have made significant contributions to the scRNA-tools 
+The following people have made significant contributions to the scRNA-tools
 database or website:
 
 * [@seandavi](https://github.com/seandavi) - Wrote the first processing script
@@ -111,4 +112,3 @@ These people have added new tools or updated existing entries in the database:
 [@TomSmithCGAT](https://github.com/TomSmithCGAT),
 [@PeteHaitch](https://github.com/PeteHaitch),
 [@lucapinello](https://github.com/lucapinello)
-
