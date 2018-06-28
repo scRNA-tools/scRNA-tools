@@ -147,7 +147,8 @@ plot_licenses <- function(swsheet) {
                                      fill = License,
                                      text = paste("Percent:", Percent))) +
         ggplot2::geom_bar(width = 0.95, position = "dodge") +
-        ggplot2::geom_text(ggplot2::aes(x = License, y = Count + 4,
+        ggplot2::geom_text(ggplot2::aes(x = License,
+                                        y = Count + nrow(swsheet) * 0.05,
                                         label = Label, colour = License),
                            size = 5) +
         ggplot2::scale_fill_manual(values = c("#EC008C", "#00ADEF", "#8DC63F",
@@ -204,7 +205,8 @@ plot_platforms <- function(swsheet) {
                                      fill = Platform,
                                      text = paste("Percent:", Percent))) +
         ggplot2::geom_bar(width = 0.95, position = "dodge") +
-        ggplot2::geom_text(ggplot2::aes(x = Platform, y = Count + 4,
+        ggplot2::geom_text(ggplot2::aes(x = Platform,
+                                        y = Count + nrow(swsheet) * 0.05,
                                         label = Label, colour = Platform),
                            size = 5) +
         ggplot2::scale_fill_manual(values = c("#EC008C", "#00ADEF", "#8DC63F",
