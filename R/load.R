@@ -34,7 +34,11 @@ get_pkgs <- function() {
     futile.logger::flog.info("Getting package repositories...")
 
     futile.logger::flog.info("Getting Bioconductor package list...")
-    bioc.pkgs <- BiocInstaller::all_group()
+    bioc.url <- "https://bioconductor.org/packages/release/bioc/"
+    bioc.pkgs <- xml2::read_html(bioc.url) %>%
+        rvest::html_nodes("table") %>%
+        rvest::html_nodes("a") %>%
+        rvest::html_text()
     names(bioc.pkgs) <- stringr::str_to_lower(bioc.pkgs)
 
     futile.logger::flog.info("Getting CRAN package list...")

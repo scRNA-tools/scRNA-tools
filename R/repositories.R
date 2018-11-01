@@ -139,7 +139,7 @@ get_shields <- function(swsheet) {
             years_url <- paste0("http://bioconductor.org/shields/years-in-bioc/",
                                 repo, ".svg")
             down_url <- paste0("http://bioconductor.org/shields/downloads/",
-                               repo, ".svg")
+                               "release/", repo, ".svg")
 
             download.file(years_url,
                           paste0("docs/img/shields/BioC/", repo, "_years.svg"),

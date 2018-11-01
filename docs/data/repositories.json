@@ -244,7 +244,8 @@
     "CRAN": ["SLICER"]
   },
   "slingshot": {
-    "Ignored": ["PyPI/slingshot"]
+    "Ignored": ["PyPI/slingshot"],
+    "BioC": ["slingshot"]
   },
   "SPADE": {
     "Ignored": ["PyPI/SPADE"]
@@ -391,5 +392,17 @@
   },
   "SAVER": {
     "CRAN": ["SAVER"]
+  },
+  "scBASE": {
+    "PyPI": ["scbase"]
+  },
+  "bayNorm": {
+    "BioC": ["bayNorm"]
+  },
+  "celaref": {
+    "BioC": ["celaref"]
+  },
+  "scruff": {
+    "BioC": ["scruff"]
   }
 }
