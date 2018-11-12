@@ -55,13 +55,13 @@
   {
     "Name": "AltAnalyze",
     "Platform": "Python",
-    "DOIs": "10.1038/nature19348",
-    "PubDates": "2016-08-31",
+    "DOIs": "10.1038/nature19348;10.1101/412080",
+    "PubDates": "2016-08-31;PREPRINT",
     "Code": "https://github.com/nsalomonis/altanalyze",
     "Description": "AltAnalyze is a multi-functional and easy-to-use software package for automated single-cell and bulk gene and splicing analyses.",
     "License": "Apache-2.0",
     "Added": "2017-07-16",
-    "Updated": "2017-07-21",
+    "Updated": "2018-11-12",
     "Refs": {
       "Publications": [
         {
@@ -72,11 +72,18 @@
           "Citations": 93
         }
       ],
-      "Preprints": []
+      "Preprints": [
+        {
+          "Title": "cellHarmony: Cell-level matching and comparison of single-cell transcriptomes",
+          "DOI": "10.1101/412080",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
     },
     "Citations": 93,
     "Publications": 1,
-    "Preprints": 0,
+    "Preprints": 1,
     "Github": "nsalomonis/altanalyze",
     "PyPI": "AltAnalyze",
     "Categories": ["Quantification", "Normalisation", "GeneFiltering", "Clustering", "Classification", "DifferentialExpression", "MarkerGenes", "GeneSets", "GeneNetworks", "CellCycle", "DimensionalityReduction", "AlternativeSplicing", "Visualisation", "Interactive"]
@@ -109,6 +116,41 @@
     "Github": "yeolab/anchor",
     "PyPI": "anchor-bio",
     "Categories": ["Modality"]
+  },
+  {
+    "Name": "ASAP",
+    "Platform": "R/Python",
+    "DOIs": "10.1101/096222;10.1093/bioinformatics/btx337",
+    "PubDates": "PREPRINT;2017-10-01",
+    "Code": "https://github.com/DeplanckeLab/ASAP",
+    "Description": "ASAP : Automated Single-cell Analysis Pipeline",
+    "License": "GPL-3",
+    "Added": "2018-11-12",
+    "Updated": "2018-11-12",
+    "Refs": {
+      "Publications": [
+        {
+          "Title": "ASAP: a web-based platform for the analysis and interactive visualization of single-cell RNA-seq data",
+          "DOI": "10.1093/bioinformatics/btx337",
+          "PubDate": "2017-10-01",
+          "Preprint": false,
+          "Citations": 8
+        }
+      ],
+      "Preprints": [
+        {
+          "Title": "ASAP: a Web-based platform for the analysis and inter-active visualization of single-cell RNA-seq data",
+          "DOI": "10.1101/096222",
+          "Preprint": true,
+          "Citations": 1
+        }
+      ]
+    },
+    "Citations": 9,
+    "Publications": 1,
+    "Preprints": 1,
+    "Github": "DeplanckeLab/ASAP",
+    "Categories": ["Normalisation", "GeneFiltering", "Clustering", "DifferentialExpression", "Visualisation", "Interactive"]
   },
   {
     "Name": "ascend",
@@ -218,12 +260,12 @@
           "DOI": "10.1126/science.aaa1934",
           "PubDate": "2015-03-06",
           "Preprint": false,
-          "Citations": 678
+          "Citations": 679
         }
       ],
       "Preprints": []
     },
-    "Citations": 678,
+    "Citations": 679,
     "Publications": 1,
     "Preprints": 0,
     "Github": "linnarsson-lab/BackSPIN",
@@ -271,6 +313,31 @@
     "Preprints": 0,
     "Github": "BosingerLab/BALDR",
     "Categories": ["Assembly", "Alignment", "Immune"]
+  },
+  {
+    "Name": "BAMMSC",
+    "Platform": "R",
+    "DOIs": "10.1101/392662",
+    "PubDates": "PREPRINT",
+    "Code": "https://www.pitt.edu/~wec47/BAMMSC.html",
+    "Description": "BAMMSC is an R package for clustering droplet-based single cell transcriptomic data from multiple individuals simultaneously.",
+    "Added": "2018-11-12",
+    "Updated": "2018-11-12",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "BAMM-SC: A Bayesian mixture model for clustering droplet-based single cell transcriptomic data from population studies",
+          "DOI": "10.1101/392662",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Categories": ["Clustering"]
   },
   {
     "Name": "BASIC",
@@ -323,7 +390,7 @@
           "DOI": "10.1186/s13059-016-0930-3",
           "PubDate": "2016-04-15",
           "Preprint": false,
-          "Citations": 30
+          "Citations": 31
         },
         {
           "Title": "Correcting the Mean-Variance Dependency for Differential Variability Testing Using Single-Cell RNA Sequencing Data",
@@ -342,7 +409,7 @@
         }
       ]
     },
-    "Citations": 89,
+    "Citations": 90,
     "Publications": 3,
     "Preprints": 1,
     "Github": "catavallejos/BASiCS",
@@ -483,6 +550,33 @@
     "Preprints": 1,
     "Github": "iaconogi/bigSCale",
     "Categories": ["Normalisation", "Clustering", "DifferentialExpression", "MarkerGenes", "Visualisation"]
+  },
+  {
+    "Name": "BISCUIT",
+    "Platform": "R",
+    "DOIs": "10.18547/gcb.2017.vol3.iss1.e46",
+    "PubDates": "2017-01-26",
+    "Code": "https://github.com/sandhya212/BISCUIT_SingleCell_IMM_ICML_2016",
+    "Description": "Bayesian Inference for Single-cell Clustering and ImpuTing",
+    "Added": "2018-11-12",
+    "Updated": "2018-11-12",
+    "Refs": {
+      "Publications": [
+        {
+          "Title": "Bayesian Inference for Single-cell Clustering and Imputing",
+          "DOI": "10.18547/gcb.2017.vol3.iss1.e46",
+          "PubDate": "2017-01-26",
+          "Preprint": false,
+          "Citations": 7
+        }
+      ],
+      "Preprints": []
+    },
+    "Citations": 7,
+    "Publications": 1,
+    "Preprints": 0,
+    "Github": "sandhya212/BISCUIT_SingleCell_IMM_ICML_2016",
+    "Categories": ["Imputation", "Clustering"]
   },
   {
     "Name": "bonvoyage",
@@ -1004,6 +1098,33 @@
     "Categories": ["Visualisation", "Interactive"]
   },
   {
+    "Name": "CellFishing",
+    "Platform": "Julia",
+    "DOIs": "10.1101/374462",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/bicycle1885/CellFishing.jl",
+    "Description": "CellFishing.jl (cell finder via hashing) is a tool to find similar cells of query cells based on their transcriptome expression profiles.",
+    "License": "MIT",
+    "Added": "2018-11-12",
+    "Updated": "2018-11-12",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "CellFishing.jl: an ultrafast and scalable cell search method for single-cell RNA-sequencing",
+          "DOI": "10.1101/374462",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "bicycle1885/CellFishing.jl",
+    "Categories": ["Classification"]
+  },
+  {
     "Name": "Cellity",
     "Platform": "R",
     "DOIs": "10.1186/s13059-016-0888-1",
@@ -1048,12 +1169,12 @@
           "DOI": "10.1038/ncomms14049",
           "PubDate": "2017-01-16",
           "Preprint": false,
-          "Citations": 223
+          "Citations": 224
         }
       ],
       "Preprints": []
     },
-    "Citations": 223,
+    "Citations": 224,
     "Publications": 1,
     "Preprints": 0,
     "Github": "10XGenomics/cellranger",
@@ -1075,12 +1196,12 @@
           "DOI": "10.1038/s41467-018-03214-y",
           "PubDate": "2018-03-01",
           "Preprint": false,
-          "Citations": 2
+          "Citations": 3
         }
       ],
       "Preprints": []
     },
-    "Citations": 2,
+    "Citations": 3,
     "Publications": 1,
     "Preprints": 0,
     "Github": "edroaldo/cellrouter",
@@ -1273,6 +1394,33 @@
     "Categories": ["Clustering", "MarkerGenes", "Visualisation"]
   },
   {
+    "Name": "ClusterMap",
+    "Platform": "R",
+    "DOIs": "10.1101/331330",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/xgaoo/ClusterMap",
+    "Description": "ClusterMap is an R package to analyze and compare two or more single cell expression datasets",
+    "License": "MIT",
+    "Added": "2018-11-12",
+    "Updated": "2018-11-12",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "ClusterMap: Comparing analyses across multiple Single Cell RNA-Seq profiles",
+          "DOI": "10.1101/331330",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "xgaoo/ClusterMap",
+    "Categories": ["Integration", "Clustering", "Classification", "Visualisation"]
+  },
+  {
     "Name": "ClusterMine",
     "Platform": "R",
     "DOIs": "10.1101/255711",
@@ -1296,6 +1444,33 @@
     "Publications": 0,
     "Preprints": 1,
     "Categories": ["Clustering", "GeneSets"]
+  },
+  {
+    "Name": "CNNC",
+    "Platform": "Python",
+    "DOIs": "10.1101/365007",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/xiaoyeye/CNNC",
+    "Description": "Convolutional neural network co-expression analysis (CNNC)",
+    "License": "MIT",
+    "Added": "2018-11-12",
+    "Updated": "2018-11-12",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "CNNC: Convolutional Neural Networks for Co-Expression Analysis",
+          "DOI": "10.1101/365007",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "xiaoyeye/CNNC",
+    "Categories": ["GeneSets", "GeneNetworks"]
   },
   {
     "Name": "CONICS",
@@ -1503,6 +1678,33 @@
     "Preprints": 1,
     "Github": "cz-ye/DECENT",
     "Categories": ["Imputation", "DifferentialExpression"]
+  },
+  {
+    "Name": "DECODE",
+    "Platform": "C++/R/MATLAB",
+    "DOIs": "10.1101/241646",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/shmohammadi86/DECODE/",
+    "Description": "DECODE-ing sparsity patterns in single-cell RNA-seq",
+    "License": "GPL (>= 2)",
+    "Added": "2018-11-12",
+    "Updated": "2018-11-12",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "DECODE-ing sparsity patterns in single-cell RNA-seq",
+          "DOI": "10.1101/241646",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "shmohammadi86/DECODE/",
+    "Categories": ["Imputation"]
   },
   {
     "Name": "DeepImpute",
@@ -2908,12 +3110,12 @@
           "DOI": "10.1126/science.1254257",
           "PubDate": "2014-06-20",
           "Preprint": false,
-          "Citations": 794
+          "Citations": 795
         }
       ],
       "Preprints": []
     },
-    "Citations": 794,
+    "Citations": 795,
     "Publications": 1,
     "Preprints": 0,
     "Github": "broadinstitute/inferCNV",
@@ -3106,7 +3308,7 @@
           "DOI": "10.1038/nbt.3519",
           "PubDate": "2016-04-04",
           "Preprint": false,
-          "Citations": 557
+          "Citations": 558
         }
       ],
       "Preprints": [
@@ -3564,7 +3766,7 @@
           "DOI": "10.1038/nbt.2859",
           "PubDate": "2014-04-01",
           "Preprint": false,
-          "Citations": 493
+          "Citations": 494
         },
         {
           "Title": "Single-cell mRNA quantification and differential analysis with Census",
@@ -3590,7 +3792,7 @@
         }
       ]
     },
-    "Citations": 640,
+    "Citations": 641,
     "Publications": 3,
     "Preprints": 1,
     "Github": "cole-trapnell-lab/monocle-release",
@@ -4123,12 +4325,12 @@
           "DOI": "10.1016/j.cels.2017.10.012",
           "PubDate": "2017-11-15",
           "Preprint": false,
-          "Citations": 9
+          "Citations": 10
         }
       ],
       "Preprints": []
     },
-    "Citations": 9,
+    "Citations": 10,
     "Publications": 1,
     "Preprints": 0,
     "Github": "KenLauLab/pCreode",
@@ -4443,12 +4645,12 @@
           "DOI": "10.1038/ng.3818",
           "PubDate": "2017-03-20",
           "Preprint": false,
-          "Citations": 61
+          "Citations": 62
         }
       ],
       "Preprints": []
     },
-    "Citations": 61,
+    "Citations": 62,
     "Publications": 1,
     "Preprints": 0,
     "Github": "GIS-SP-Group/RCA",
@@ -5539,12 +5741,12 @@
           "DOI": "10.1016/j.cell.2018.02.001",
           "PubDate": "2018-02-22",
           "Preprint": false,
-          "Citations": 44
+          "Citations": 45
         }
       ],
       "Preprints": []
     },
-    "Citations": 44,
+    "Citations": 45,
     "Publications": 1,
     "Preprints": 0,
     "Github": "ggjlab/scMCA",
