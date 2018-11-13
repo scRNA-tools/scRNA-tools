@@ -260,12 +260,12 @@
           "DOI": "10.1126/science.aaa1934",
           "PubDate": "2015-03-06",
           "Preprint": false,
-          "Citations": 679
+          "Citations": 680
         }
       ],
       "Preprints": []
     },
-    "Citations": 679,
+    "Citations": 680,
     "Publications": 1,
     "Preprints": 0,
     "Github": "linnarsson-lab/BackSPIN",
@@ -383,7 +383,7 @@
           "DOI": "10.1371/journal.pcbi.1004333",
           "PubDate": "2015-06-01",
           "Preprint": false,
-          "Citations": 59
+          "Citations": 60
         },
         {
           "Title": "Beyond comparisons of means: understanding changes in gene expression at the single-cell level",
@@ -409,7 +409,7 @@
         }
       ]
     },
-    "Citations": 90,
+    "Citations": 91,
     "Publications": 3,
     "Preprints": 1,
     "Github": "catavallejos/BASiCS",
@@ -1169,12 +1169,12 @@
           "DOI": "10.1038/ncomms14049",
           "PubDate": "2017-01-16",
           "Preprint": false,
-          "Citations": 224
+          "Citations": 225
         }
       ],
       "Preprints": []
     },
-    "Citations": 224,
+    "Citations": 225,
     "Publications": 1,
     "Preprints": 0,
     "Github": "10XGenomics/cellranger",
@@ -2127,7 +2127,7 @@
           "DOI": "10.1186/s12859-018-2226-y",
           "PubDate": "2018-06-08",
           "Preprint": false,
-          "Citations": 2
+          "Citations": 3
         }
       ],
       "Preprints": [
@@ -2139,7 +2139,7 @@
         }
       ]
     },
-    "Citations": 4,
+    "Citations": 5,
     "Publications": 1,
     "Preprints": 1,
     "Github": "ikwak2/DrImpute",
@@ -2582,6 +2582,34 @@
     "Github": "dgrun/FateID",
     "CRAN": "FateID",
     "Categories": ["Classification", "DifferentialExpression", "StemCells", "Visualisation"]
+  },
+  {
+    "Name": "FiRE",
+    "Platform": "Python/C++/R",
+    "DOIs": "10.1038/s41467-018-07234-6",
+    "PubDates": "2018-11-09",
+    "Code": "https://github.com/princethewinner/FiRE",
+    "Description": "FiRE - Finder of Rare Entities",
+    "License": "GPL-3",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [
+        {
+          "Title": "Discovery of rare cells from voluminous single cell expression data",
+          "DOI": "10.1038/s41467-018-07234-6",
+          "PubDate": "2018-11-09",
+          "Preprint": false,
+          "Citations": 0
+        }
+      ],
+      "Preprints": []
+    },
+    "Citations": 0,
+    "Publications": 1,
+    "Preprints": 0,
+    "Github": "princethewinner/FiRE",
+    "Categories": ["VariableGenes", "DimensionalityReduction", "RareCells", "Visualisation"]
   },
   {
     "Name": "flotilla",
@@ -3308,7 +3336,7 @@
           "DOI": "10.1038/nbt.3519",
           "PubDate": "2016-04-04",
           "Preprint": false,
-          "Citations": 558
+          "Citations": 559
         }
       ],
       "Preprints": [
@@ -3515,7 +3543,7 @@
           "DOI": "10.1016/j.cell.2018.05.061",
           "PubDate": "2018-06-28",
           "Preprint": false,
-          "Citations": 5
+          "Citations": 7
         }
       ],
       "Preprints": [
@@ -3527,7 +3555,7 @@
         }
       ]
     },
-    "Citations": 15,
+    "Citations": 17,
     "Publications": 1,
     "Preprints": 1,
     "Github": "KrishnaswamyLab/MAGIC",
@@ -3550,12 +3578,12 @@
           "DOI": "10.1186/s13059-015-0844-5",
           "PubDate": "2015-12-10",
           "Preprint": false,
-          "Citations": 123
+          "Citations": 124
         }
       ],
       "Preprints": []
     },
-    "Citations": 123,
+    "Citations": 124,
     "Publications": 1,
     "Preprints": 0,
     "Github": "RGLab/MAST",
@@ -3723,6 +3751,33 @@
     "Categories": ["Ordering", "Visualisation", "Simulation"]
   },
   {
+    "Name": "Moana",
+    "Platform": "Python",
+    "DOIs": "10.1101/456129",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/yanailab/moana",
+    "Description": "Moana (Multi-resolution transcriptOmic ANAlysis framework): Robust cell type classification of single-cell RNA-Seq data",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "Moana: A robust and scalable cell type classification framework for single-cell RNA-Seq data",
+          "DOI": "10.1101/456129",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "yanailab/moana",
+    "PyPI": "moana",
+    "Categories": ["QualityControl", "Clustering", "Classification", "DimensionalityReduction", "Visualisation"]
+  },
+  {
     "Name": "MOFA",
     "Platform": "R/Python",
     "DOIs": "10.15252/msb.20178124",
@@ -3766,14 +3821,14 @@
           "DOI": "10.1038/nbt.2859",
           "PubDate": "2014-04-01",
           "Preprint": false,
-          "Citations": 494
+          "Citations": 496
         },
         {
           "Title": "Single-cell mRNA quantification and differential analysis with Census",
           "DOI": "10.1038/nmeth.4150",
           "PubDate": "2017-01-23",
           "Preprint": false,
-          "Citations": 63
+          "Citations": 64
         },
         {
           "Title": "Reversed graph embedding resolves complex single-cell trajectories",
@@ -3792,7 +3847,7 @@
         }
       ]
     },
-    "Citations": 641,
+    "Citations": 644,
     "Publications": 3,
     "Preprints": 1,
     "Github": "cole-trapnell-lab/monocle-release",
@@ -4035,6 +4090,35 @@
     "Categories": ["GeneNetworks"]
   },
   {
+    "Name": "nimfa",
+    "Platform": "Python/R",
+    "DOIs": "10.1093/bioinformatics/btw607",
+    "PubDates": "2017-01-15",
+    "Code": "https://github.com/ccshao/nimfa",
+    "Description": "Nimfa is a Python module that implements many algorithms for nonnegative matrix factorization",
+    "License": "BSD-3-clause",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [
+        {
+          "Title": "Robust classification of single-cell transcriptome data by nonnegative matrix factorization",
+          "DOI": "10.1093/bioinformatics/btw607",
+          "PubDate": "2017-01-15",
+          "Preprint": false,
+          "Citations": 8
+        }
+      ],
+      "Preprints": []
+    },
+    "Citations": 8,
+    "Publications": 1,
+    "Preprints": 0,
+    "Github": "ccshao/nimfa",
+    "PyPI": "nimfa",
+    "Categories": ["Clustering", "DimensionalityReduction", "Visualisation"]
+  },
+  {
     "Name": "OEFinder",
     "Platform": "R",
     "DOIs": "10.1093/bioinformatics/btw004",
@@ -4253,6 +4337,31 @@
     "Preprints": 1,
     "Github": "AllonKleinLab/PBA",
     "Categories": ["Ordering"]
+  },
+  {
+    "Name": "PBLR",
+    "Platform": "MATLAB",
+    "DOIs": "10.1101/379883",
+    "PubDates": "PREPRINT",
+    "Code": "http://page.amss.ac.cn/shihua.zhang/software.html",
+    "Description": "PBLR: an accurate single cell RNA-seq data imputation tool considering cell heterogeneity and prior expression level of dropouts",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "PBLR: an accurate single cell RNA-seq data imputation tool considering cell heterogeneity and prior expression level of dropouts",
+          "DOI": "10.1101/379883",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Categories": ["Imputation"]
   },
   {
     "Name": "pcaReduce",
@@ -4803,7 +4912,7 @@
           "DOI": "10.1038/nmeth.4197",
           "PubDate": "2017-03-06",
           "Preprint": false,
-          "Citations": 232
+          "Citations": 233
         }
       ],
       "Preprints": [
@@ -4821,7 +4930,7 @@
         }
       ]
     },
-    "Citations": 267,
+    "Citations": 268,
     "Publications": 1,
     "Preprints": 2,
     "Github": "COMBINE-lab/salmon",
@@ -4898,7 +5007,7 @@
           "DOI": "10.1038/s41592-018-0033-z",
           "PubDate": "2018-06-25",
           "Preprint": false,
-          "Citations": 3
+          "Citations": 4
         }
       ],
       "Preprints": [
@@ -4910,7 +5019,7 @@
         }
       ]
     },
-    "Citations": 7,
+    "Citations": 8,
     "Publications": 1,
     "Preprints": 1,
     "Github": "mohuangx/SAVER",
@@ -4986,7 +5095,7 @@
           "DOI": "10.1038/nmeth.4236",
           "PubDate": "2017-03-27",
           "Preprint": false,
-          "Citations": 105
+          "Citations": 106
         }
       ],
       "Preprints": [
@@ -4998,7 +5107,7 @@
         }
       ]
     },
-    "Citations": 107,
+    "Citations": 108,
     "Publications": 1,
     "Preprints": 1,
     "Github": "hemberg-lab/sc3",
@@ -5253,12 +5362,12 @@
           "DOI": "10.1038/nmeth.2967",
           "PubDate": "2014-07-01",
           "Preprint": false,
-          "Citations": 240
+          "Citations": 241
         }
       ],
       "Preprints": []
     },
-    "Citations": 240,
+    "Citations": 241,
     "Publications": 1,
     "Preprints": 0,
     "Github": "hms-dbmi/scde",
@@ -5320,6 +5429,34 @@
     "Github": "martinjzhang/single_cell_eb",
     "PyPI": "sceb",
     "Categories": ["VariableGenes"]
+  },
+  {
+    "Name": "Scedar",
+    "Platform": "Python",
+    "DOIs": "10.1101/375196",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/logstar/scedar",
+    "Description": "Scedar (Single-cell exploratory data analysis for RNA-Seq) is a reliable and easy-to-use Python package for efficient visualization, imputation of gene dropouts, detection of rare transcriptomic profiles, and clustering of large-scale single cell RNA-seq (scRNA-seq) datasets.",
+    "License": "MIT",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "Scedar: a scalable Python package for single-cell RNA-seq exploratory data analysis",
+          "DOI": "10.1101/375196",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "logstar/scedar",
+    "PyPI": "scedar",
+    "Categories": ["Imputation", "Clustering", "MarkerGenes", "DimensionalityReduction", "RareCells", "Visualisation"]
   },
   {
     "Name": "SCell",
@@ -5614,7 +5751,7 @@
           "DOI": "10.1038/s41467-018-03405-7",
           "PubDate": "2018-03-08",
           "Preprint": false,
-          "Citations": 12
+          "Citations": 13
         }
       ],
       "Preprints": [
@@ -5626,7 +5763,7 @@
         }
       ]
     },
-    "Citations": 18,
+    "Citations": 19,
     "Publications": 1,
     "Preprints": 1,
     "Github": "Vivianstats/scImpute",
@@ -5777,6 +5914,33 @@
     "Preprints": 1,
     "Github": "SydneyBioX/scMerge",
     "Categories": ["Normalisation", "Integration"]
+  },
+  {
+    "Name": "scMetric",
+    "Platform": "R",
+    "DOIs": "10.1101/456814",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/XuegongLab/scMetric",
+    "Description": "scMetric is an R package that applies a metric learning algorithm to scRNA-seq data. It allows users to give example samples to specify expected angles they would use to analyze the data, and the package learns the metric from the examples and applies the metric for downstream clustering and visualization.",
+    "License": "GPL-2",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "scMetric: An R package of metric learning and visualization for single-cell RNA-seq data",
+          "DOI": "10.1101/456814",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "XuegongLab/scMetric",
+    "Categories": ["DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "SCNorm",
@@ -6138,7 +6302,7 @@
           "DOI": "10.1186/s13059-016-0947-7",
           "PubDate": "2016-04-27",
           "Preprint": false,
-          "Citations": 84
+          "Citations": 86
         },
         {
           "Title": "Batch effects in single-cell RNA-sequencing data are corrected by matching mutual nearest neighbors",
@@ -6157,7 +6321,7 @@
         }
       ]
     },
-    "Citations": 104,
+    "Citations": 106,
     "Publications": 2,
     "Preprints": 1,
     "Github": "MarioniLab/scran",
@@ -6560,14 +6724,14 @@
           "DOI": "10.1038/nbt.3192",
           "PubDate": "2015-04-13",
           "Preprint": false,
-          "Citations": 348
+          "Citations": 350
         },
         {
           "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
           "DOI": "10.1038/nbt.4096",
           "PubDate": "2018-04-02",
           "Preprint": false,
-          "Citations": 52
+          "Citations": 53
         }
       ],
       "Preprints": [
@@ -6585,7 +6749,7 @@
         }
       ]
     },
-    "Citations": 403,
+    "Citations": 406,
     "Publications": 2,
     "Preprints": 2,
     "Github": "satijalab/seurat",
@@ -6870,15 +7034,27 @@
   {
     "Name": "singleCellTK",
     "Platform": "R",
+    "DOIs": "10.1101/329755",
+    "PubDates": "PREPRINT",
     "Code": "https://github.com/compbiomed/singleCellTK",
     "Description": "Interactive Analysis of Single Cell RNA-Seq Data",
     "License": "MIT",
     "Added": "2018-05-13",
-    "Updated": "2018-05-13",
+    "Updated": "2018-11-13",
     "Refs": {
-      "Publications": [null],
-      "Preprints": [null]
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "Interactive single cell RNA-Seq analysis with the Single Cell Toolkit (SCTK)",
+          "DOI": "10.1101/329755",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
     },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
     "Github": "compbiomed/singleCellTK",
     "BioC": "singleCellTK",
     "Categories": ["Alignment", "Quantification", "QualityControl", "Normalisation", "GeneFiltering", "Clustering", "DifferentialExpression", "MarkerGenes", "GeneSets", "DimensionalityReduction", "Visualisation", "Interactive"]
@@ -7553,6 +7729,33 @@
     "Categories": ["Ordering", "Interactive"]
   },
   {
+    "Name": "TBSP",
+    "Platform": "Python",
+    "DOIs": "10.1101/401943",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/phoenixding/tbsp",
+    "Description": "TBSP: Trajectory Inference Based on SNP information",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "Cell lineage inference from SNP and scRNA-Seq data",
+          "DOI": "10.1101/401943",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "phoenixding/tbsp",
+    "PyPI": "tbsp",
+    "Categories": ["Clustering", "Ordering", "Variants", "Visualisation"]
+  },
+  {
     "Name": "TCM",
     "Platform": "R",
     "DOIs": "10.1038/s41467-018-05112-9",
@@ -8115,12 +8318,12 @@
           "DOI": "10.1186/s13059-016-1033-x",
           "PubDate": "2016-08-17",
           "Preprint": false,
-          "Citations": 34
+          "Citations": 35
         }
       ],
       "Preprints": []
     },
-    "Citations": 34,
+    "Citations": 35,
     "Publications": 1,
     "Preprints": 0,
     "Github": "lengning/WaveCrest",
@@ -8171,12 +8374,12 @@
           "DOI": "10.1186/s13059-015-0805-z",
           "PubDate": "2015-11-02",
           "Preprint": false,
-          "Citations": 93
+          "Citations": 94
         }
       ],
       "Preprints": []
     },
-    "Citations": 93,
+    "Citations": 94,
     "Publications": 1,
     "Preprints": 0,
     "Github": "epierson9/ZIFA",
@@ -8198,14 +8401,13 @@
           "DOI": "10.1038/s41467-017-02554-5",
           "PubDate": "2018-01-18",
           "Preprint": false,
-          "Citations": 13
+          "Citations": 14
         },
         {
           "Title": "Observation weights unlock bulk RNA-seq tools for zero inflation and single-cell applications",
           "DOI": "10.1186/s13059-018-1406-4",
           "PubDate": "2018-02-26",
-          "Preprint": false,
-          "Citations": 0
+          "Preprint": false
         }
       ],
       "Preprints": [
@@ -8223,7 +8425,6 @@
         }
       ]
     },
-    "Citations": 16,
     "Publications": 2,
     "Preprints": 2,
     "Github": "drisso/zinbwave",
