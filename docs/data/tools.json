@@ -390,7 +390,7 @@
           "DOI": "10.1186/s13059-016-0930-3",
           "PubDate": "2016-04-15",
           "Preprint": false,
-          "Citations": 31
+          "Citations": 30
         },
         {
           "Title": "Correcting the Mean-Variance Dependency for Differential Variability Testing Using Single-Cell RNA Sequencing Data",
@@ -409,7 +409,7 @@
         }
       ]
     },
-    "Citations": 91,
+    "Citations": 90,
     "Publications": 3,
     "Preprints": 1,
     "Github": "catavallejos/BASiCS",
@@ -1314,15 +1314,23 @@
   {
     "Name": "Citrus",
     "Platform": "R",
-    "DOIs": "10.1101/045070",
-    "PubDates": "PREPRINT",
+    "DOIs": "10.1101/045070;10.1038/s41598-017-13665-w",
+    "PubDates": "PREPRINT;2017-10-19",
     "Code": "https://github.com/ChenMengjie/Citrus",
     "Description": "A normalization method to remove unwanted variation using both control and target genes.",
     "License": "GPL (>= 2)",
     "Added": "2016-09-09",
-    "Updated": "2017-06-05",
+    "Updated": "2018-11-13",
     "Refs": {
-      "Publications": [],
+      "Publications": [
+        {
+          "Title": "Controlling for Confounding Effects in Single Cell RNA Sequencing Studies Using both Control and Target Genes",
+          "DOI": "10.1038/s41598-017-13665-w",
+          "PubDate": "2017-10-19",
+          "Preprint": false,
+          "Citations": 1
+        }
+      ],
       "Preprints": [
         {
           "Title": "Controlling for confounding effects in single cell RNA sequencing studies using both control and target genes",
@@ -1332,8 +1340,8 @@
         }
       ]
     },
-    "Citations": 0,
-    "Publications": 0,
+    "Citations": 1,
+    "Publications": 1,
     "Preprints": 1,
     "Github": "ChenMengjie/Citrus",
     "Categories": ["Normalisation"]
@@ -1684,7 +1692,7 @@
     "Platform": "C++/R/MATLAB",
     "DOIs": "10.1101/241646",
     "PubDates": "PREPRINT",
-    "Code": "https://github.com/shmohammadi86/DECODE/",
+    "Code": "https://github.com/shmohammadi86/DECODE",
     "Description": "DECODE-ing sparsity patterns in single-cell RNA-seq",
     "License": "GPL (>= 2)",
     "Added": "2018-11-12",
@@ -1703,7 +1711,7 @@
     "Citations": 0,
     "Publications": 0,
     "Preprints": 1,
-    "Github": "shmohammadi86/DECODE/",
+    "Github": "shmohammadi86/DECODE",
     "Categories": ["Imputation"]
   },
   {
@@ -1825,6 +1833,33 @@
     "Categories": ["Normalisation", "GeneFiltering", "Clustering"]
   },
   {
+    "Name": "densityCut",
+    "Platform": "R",
+    "DOIs": "10.1093/bioinformatics/btw227",
+    "PubDates": "2016-04-23",
+    "Code": "https://bitbucket.org/jerry00/densitycut_dev",
+    "Description": "densityCut is an efficient density-based clustering algorithm to analyze large-scale biological data",
+    "License": "GPL (>=2)",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [
+        {
+          "Title": "densityCut: an efficient and versatile topological approach for automatic clustering of biological data",
+          "DOI": "10.1093/bioinformatics/btw227",
+          "PubDate": "2016-04-23",
+          "Preprint": false,
+          "Citations": 5
+        }
+      ],
+      "Preprints": []
+    },
+    "Citations": 5,
+    "Publications": 1,
+    "Preprints": 0,
+    "Categories": ["Clustering", "Visualisation"]
+  },
+  {
     "Name": "DensityPath",
     "Platform": "R/Matlab",
     "DOIs": "10.1101/276311",
@@ -1940,6 +1975,33 @@
     "Preprints": 0,
     "BioC": "destiny",
     "Categories": ["DimensionalityReduction", "Visualisation"]
+  },
+  {
+    "Name": "Dhaka",
+    "Platform": "Python",
+    "DOIs": "10.1101/183863",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/MicrosoftGenomics/Dhaka",
+    "Description": "Python module applying deep learning to improve clustering and other analysis of single-cell genomic data (gene expression and copy number variation).",
+    "License": "MIT",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "Project Dhaka: Variational Autoencoder for Unmasking Tumor Heterogeneity from Single Cell Genomic Data",
+          "DOI": "10.1101/183863",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "MicrosoftGenomics/Dhaka",
+    "Categories": ["Clustering", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "DIMMSC",
@@ -3257,6 +3319,35 @@
     "Categories": ["DifferentialExpression", "ExpressionPatterns"]
   },
   {
+    "Name": "iterClust",
+    "Platform": "R",
+    "DOIs": "10.1093/bioinformatics/bty176",
+    "PubDates": "2018-03-22",
+    "Code": "https://github.com/hd2326/iterClust",
+    "Description": "iterClust, an iterative clustering framework, which can separate more pronounced differences (e.g. A and B) in starting iterations, followed by relatively subtle differences (e.g. B1 and B2), providing a comprehensive clustering trajectory.",
+    "License": "Custom",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [
+        {
+          "Title": "iterClust: a statistical framework for iterative clustering analysis",
+          "DOI": "10.1093/bioinformatics/bty176",
+          "PubDate": "2018-03-22",
+          "Preprint": false,
+          "Citations": 0
+        }
+      ],
+      "Preprints": []
+    },
+    "Citations": 0,
+    "Publications": 1,
+    "Preprints": 0,
+    "Github": "hd2326/iterClust",
+    "BioC": "iterClust",
+    "Categories": ["Clustering"]
+  },
+  {
     "Name": "jackstraw",
     "Platform": "R",
     "DOIs": "10.1093/bioinformatics/btu674;10.1101/248633",
@@ -3336,7 +3427,7 @@
           "DOI": "10.1038/nbt.3519",
           "PubDate": "2016-04-04",
           "Preprint": false,
-          "Citations": 559
+          "Citations": 560
         }
       ],
       "Preprints": [
@@ -3685,6 +3776,31 @@
     "Preprints": 1,
     "Github": "soedinglab/merlot",
     "Categories": ["Ordering", "Visualisation"]
+  },
+  {
+    "Name": "MetaCell",
+    "Platform": "R/C++",
+    "DOIs": "10.1101/437665",
+    "PubDates": "PREPRINT",
+    "Code": "https://bitbucket.org/tanaylab/metacell",
+    "Description": "The MetaCell R package facilitates analysis of single cell RNA-seq UMI matrices by computing partitions of a cell similarity graph into small (~20-200 typically) homogeneous groups of cells which are defined as metacells (MCs).",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "MetaCell: analysis of single cell RNA-seq data using k-NN graph partitions",
+          "DOI": "10.1101/437665",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Categories": ["QualityControl", "Clustering", "MarkerGenes", "VariableGenes", "Visualisation"]
   },
   {
     "Name": "MetaNeighbour",
@@ -5709,6 +5825,49 @@
     "Categories": ["Normalisation", "GeneNetworks", "Visualisation", "Simulation"]
   },
   {
+    "Name": "scHPF",
+    "Platform": "Python",
+    "DOIs": "10.1101/367003",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/simslab/scHPF",
+    "Description": "scHPF is a tool for de novo discovery of both discrete and continuous expression patterns in single-cell RNA-sequencing (scRNA-seq) data.",
+    "License": "GPL-3",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "De novo Gene Signature Identification from Single-Cell RNA-Seq with Hierarchical Poisson Factorization",
+          "DOI": "10.1101/367003",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "simslab/scHPF",
+    "Categories": ["ExpressionPatterns"]
+  },
+  {
+    "Name": "scicast",
+    "Platform": "Python",
+    "Code": "https://github.com/iandriver/SCICAST",
+    "Description": "Single Cell Iterative Clustering and Significance Testing",
+    "License": "MIT",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [null],
+      "Preprints": [null]
+    },
+    "Github": "iandriver/SCICAST",
+    "PyPI": "scicast",
+    "Categories": ["Normalisation", "Clustering", "MarkerGenes", "DimensionalityReduction", "Visualisation", "Interactive"]
+  },
+  {
     "Name": "SCIMITAR",
     "Platform": "Python",
     "DOIs": "10.1101/070151",
@@ -6368,6 +6527,33 @@
     "Preprints": 0,
     "Github": "SuntreeLi/SCRL",
     "Categories": ["GeneNetworks", "DimensionalityReduction"]
+  },
+  {
+    "Name": "scRMD",
+    "Platform": "R",
+    "DOIs": "10.1101/459404",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/ChongC1990/scRMD",
+    "Description": "scRMD: Imputation for single cell RNA-seq data via restricted robust matrix decomposition",
+    "License": "GPL",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "scRMD: Imputation for single cell RNA-seq data via robust matrix decomposition",
+          "DOI": "10.1101/459404",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "ChongC1990/scRMD",
+    "Categories": ["Imputation", "Clustering", "DimensionalityReduction", "Simulation"]
   },
   {
     "Name": "Scrublet",
@@ -7157,6 +7343,33 @@
     "Categories": ["QualityControl"]
   },
   {
+    "Name": "SIP",
+    "Platform": "Python/R",
+    "DOIs": "10.1101/456772",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/XuegongLab/SIP",
+    "Description": "SIP is a single-cell data processing pipeline whose components are interchangeable.",
+    "License": "GPL-3",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "SIP: An Interchangeable Pipeline for scRNA-seq Data Processing",
+          "DOI": "10.1101/456772",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "XuegongLab/SIP",
+    "Categories": ["Alignment"]
+  },
+  {
     "Name": "sircel",
     "Platform": "Python",
     "DOIs": "10.1101/136242",
@@ -7295,6 +7508,32 @@
     "Github": "kstreet13/slingshot",
     "BioC": "slingshot",
     "Categories": ["Ordering"]
+  },
+  {
+    "Name": "SNN-Cliq",
+    "Platform": "MATLAB/Python",
+    "DOIs": "10.1093/bioinformatics/btv088",
+    "PubDates": "2015-02-11",
+    "Code": "http://bioinfo.uncc.edu/SNNCliq/",
+    "Description": "SNN-Cliq is a clustering method designed for high dimensional gene expression data, e.g. single-cell transcriptome data.`",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [
+        {
+          "Title": "Identification of cell types from single-cell transcriptomes using a novel clustering method",
+          "DOI": "10.1093/bioinformatics/btv088",
+          "PubDate": "2015-02-11",
+          "Preprint": false,
+          "Citations": 81
+        }
+      ],
+      "Preprints": []
+    },
+    "Citations": 81,
+    "Publications": 1,
+    "Preprints": 0,
+    "Categories": ["Clustering"]
   },
   {
     "Name": "SoptSC",
@@ -7475,6 +7714,33 @@
     "Preprints": 1,
     "Github": "AllonKleinLab/SPRING",
     "Categories": ["DimensionalityReduction", "Visualisation", "Interactive"]
+  },
+  {
+    "Name": "sscClust",
+    "Platform": "R",
+    "DOIs": "10.1101/344242",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/Japrin/sscClust",
+    "Description": "simpler single cell RNAseq data clustering (sscClust), is a package implement mutilple functionalities which are basic procedures in single cell RNAseq data analysis, including variable genes identification, dimension reduction, clustering on reduced data.",
+    "License": "GPL-3",
+    "Added": "2018-11-13",
+    "Updated": "2018-11-13",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "SSCC: a computational framework for rapid and accurate clustering of large-scale single cell RNA-seq data",
+          "DOI": "10.1101/344242",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "Japrin/sscClust",
+    "Categories": ["Clustering", "VariableGenes", "DimensionalityReduction", "Visualisation"]
   },
   {
     "Name": "SSrGE",
@@ -8407,7 +8673,8 @@
           "Title": "Observation weights unlock bulk RNA-seq tools for zero inflation and single-cell applications",
           "DOI": "10.1186/s13059-018-1406-4",
           "PubDate": "2018-02-26",
-          "Preprint": false
+          "Preprint": false,
+          "Citations": 0
         }
       ],
       "Preprints": [
@@ -8425,6 +8692,7 @@
         }
       ]
     },
+    "Citations": 17,
     "Publications": 2,
     "Preprints": 2,
     "Github": "drisso/zinbwave",
