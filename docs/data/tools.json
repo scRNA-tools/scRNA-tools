@@ -390,7 +390,7 @@
           "DOI": "10.1186/s13059-016-0930-3",
           "PubDate": "2016-04-15",
           "Preprint": false,
-          "Citations": 30
+          "Citations": 31
         },
         {
           "Title": "Correcting the Mean-Variance Dependency for Differential Variability Testing Using Single-Cell RNA Sequencing Data",
@@ -409,7 +409,7 @@
         }
       ]
     },
-    "Citations": 90,
+    "Citations": 91,
     "Publications": 3,
     "Preprints": 1,
     "Github": "catavallejos/BASiCS",
@@ -1141,12 +1141,12 @@
           "DOI": "10.1186/s13059-016-0888-1",
           "PubDate": "2016-02-17",
           "Preprint": false,
-          "Citations": 63
+          "Citations": 64
         }
       ],
       "Preprints": []
     },
-    "Citations": 63,
+    "Citations": 64,
     "Publications": 1,
     "Preprints": 0,
     "Github": "teichlab/cellity",
@@ -1251,11 +1251,11 @@
           "Title": "CellView: Interactive Exploration Of High Dimensional Single Cell RNA-Seq Data",
           "DOI": "10.1101/123810",
           "Preprint": true,
-          "Citations": 1
+          "Citations": 2
         }
       ]
     },
-    "Citations": 1,
+    "Citations": 2,
     "Publications": 0,
     "Preprints": 1,
     "Github": "mohanbolisetty/CellView",
@@ -1805,6 +1805,33 @@
     "Categories": ["UMIs", "QualityControl", "Variants"]
   },
   {
+    "Name": "DENDRO",
+    "Platform": "R",
+    "DOIs": "10.1101/457622",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/zhouzilu/DENDRO",
+    "Description": "DENDRO, stands for Dna based EvolutioNary tree preDiction by scRna-seq technOlogy, is an R package, which takes scRNA-seq data for a tumor (or related somatic tissues) and accurately reconstructs its phylogeny, assigning each single cell from the single cell RNA sequencing (scRNA-seq) data to a subclone.",
+    "License": "GPL-3",
+    "Added": "2018-11-14",
+    "Updated": "2018-11-14",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "Genetic Heterogeneity Profiling by Single Cell RNA Sequencing",
+          "DOI": "10.1101/457622",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "zhouzilu/DENDRO",
+    "Categories": ["Clustering", "Variants", "Visualisation", "Simulation"]
+  },
+  {
     "Name": "DendroSplit",
     "Platform": "Python",
     "DOIs": "10.1101/191254",
@@ -1886,6 +1913,33 @@
     "Categories": ["Clustering", "Ordering", "DimensionalityReduction"]
   },
   {
+    "Name": "DepecheR",
+    "Platform": "R",
+    "DOIs": "10.1101/396135",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/Theorell/DepecheR",
+    "Description": "DepecheR is an R package for clustering cytometry and single-cell RNA sequencing data according to a minimal set of biological markers",
+    "License": "MIT",
+    "Added": "2018-11-14",
+    "Updated": "2018-11-14",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "Determination of essential phenotypic elements of clusters in high-dimensional entities - DEPECHE",
+          "DOI": "10.1101/396135",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "Theorell/DepecheR",
+    "Categories": ["Clustering", "MarkerGenes", "Visualisation"]
+  },
+  {
     "Name": "DESCEND",
     "Platform": "R",
     "DOIs": "10.1101/227033",
@@ -1965,12 +2019,12 @@
           "DOI": "10.1093/bioinformatics/btv715",
           "PubDate": "2016-04-15",
           "Preprint": false,
-          "Citations": 62
+          "Citations": 63
         }
       ],
       "Preprints": []
     },
-    "Citations": 62,
+    "Citations": 63,
     "Publications": 1,
     "Preprints": 0,
     "BioC": "destiny",
@@ -2052,7 +2106,7 @@
     "Name": "DistMap",
     "Platform": "R",
     "DOIs": "10.1126/science.aan3235",
-    "PubDates": "2017-09-31",
+    "PubDates": "2017-10-31",
     "Code": "https://github.com/rajewsky-lab/distmap",
     "Description": "DistMap can be used to spatially map single cell RNA sequencing data by using an existing reference database of in situs.",
     "License": "MIT",
@@ -2063,7 +2117,7 @@
         {
           "Title": "TheDrosophilaembryo at single-cell transcriptome resolution",
           "DOI": "10.1126/science.aan3235",
-          "PubDate": "2017-09-31",
+          "PubDate": "2017-10-31",
           "Preprint": false,
           "Citations": 36
         }
@@ -3200,12 +3254,12 @@
           "DOI": "10.1126/science.1254257",
           "PubDate": "2014-06-20",
           "Preprint": false,
-          "Citations": 795
+          "Citations": 798
         }
       ],
       "Preprints": []
     },
-    "Citations": 795,
+    "Citations": 798,
     "Publications": 1,
     "Preprints": 0,
     "Github": "broadinstitute/inferCNV",
@@ -3669,12 +3723,12 @@
           "DOI": "10.1186/s13059-015-0844-5",
           "PubDate": "2015-12-10",
           "Preprint": false,
-          "Citations": 124
+          "Citations": 125
         }
       ],
       "Preprints": []
     },
-    "Citations": 124,
+    "Citations": 125,
     "Publications": 1,
     "Preprints": 0,
     "Github": "RGLab/MAST",
@@ -4194,12 +4248,12 @@
           "DOI": "10.1016/j.cels.2017.08.014",
           "PubDate": "2017-09-27",
           "Preprint": false,
-          "Citations": 15
+          "Citations": 16
         }
       ],
       "Preprints": []
     },
-    "Citations": 15,
+    "Citations": 16,
     "Publications": 1,
     "Preprints": 0,
     "Github": "Tchanders/NetworkInference.jl",
@@ -4882,6 +4936,33 @@
     "Categories": ["Clustering", "Visualisation"]
   },
   {
+    "Name": "rCASC",
+    "Platform": "R/Docker",
+    "DOIs": "10.1101/430967",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/kendomaniac/rCASC",
+    "Description": "rCASC, Cluster Analysis of Single Cells",
+    "License": "GPL-3",
+    "Added": "2018-11-14",
+    "Updated": "2018-11-14",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "rCASC: reproducible Classification Analysis of Single Cell sequencing data",
+          "DOI": "10.1101/430967",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "kendomaniac/rCASC",
+    "Categories": ["Alignment", "UMIs", "Quantification", "QualityControl", "Normalisation", "GeneFiltering", "Clustering", "MarkerGenes", "CellCycle", "DimensionalityReduction", "Visualisation"]
+  },
+  {
     "Name": "reCAT",
     "Platform": "R",
     "DOIs": "10.1038/s41467-017-00039-z",
@@ -5028,7 +5109,7 @@
           "DOI": "10.1038/nmeth.4197",
           "PubDate": "2017-03-06",
           "Preprint": false,
-          "Citations": 233
+          "Citations": 235
         }
       ],
       "Preprints": [
@@ -5046,7 +5127,7 @@
         }
       ]
     },
-    "Citations": 268,
+    "Citations": 270,
     "Publications": 1,
     "Preprints": 2,
     "Github": "COMBINE-lab/salmon",
@@ -5211,7 +5292,7 @@
           "DOI": "10.1038/nmeth.4236",
           "PubDate": "2017-03-27",
           "Preprint": false,
-          "Citations": 106
+          "Citations": 107
         }
       ],
       "Preprints": [
@@ -5223,7 +5304,7 @@
         }
       ]
     },
-    "Citations": 108,
+    "Citations": 109,
     "Publications": 1,
     "Preprints": 1,
     "Github": "hemberg-lab/sc3",
@@ -5264,6 +5345,34 @@
     "Preprints": 1,
     "Github": "yuchaojiang/SCALE",
     "Categories": ["AlleleSpecific"]
+  },
+  {
+    "Name": "scanorama",
+    "Platform": "Python",
+    "DOIs": "10.1101/371179",
+    "PubDates": "PREPRINT",
+    "Code": "https://github.com/brianhie/scanorama",
+    "Description": "Scanorama enables batch-correction and integration of heterogeneous scRNA-seq datasets",
+    "License": "MIT",
+    "Added": "2018-07-21",
+    "Updated": "2018-07-21",
+    "Refs": {
+      "Publications": [],
+      "Preprints": [
+        {
+          "Title": "Panoramic stitching of heterogeneous single-cell transcriptomic data",
+          "DOI": "10.1101/371179",
+          "Preprint": true,
+          "Citations": 0
+        }
+      ]
+    },
+    "Citations": 0,
+    "Publications": 0,
+    "Preprints": 1,
+    "Github": "brianhie/scanorama",
+    "PyPI": "scanorama",
+    "Categories": ["Integration"]
   },
   {
     "Name": "Scanpy",
@@ -5478,12 +5587,12 @@
           "DOI": "10.1038/nmeth.2967",
           "PubDate": "2014-07-01",
           "Preprint": false,
-          "Citations": 241
+          "Citations": 242
         }
       ],
       "Preprints": []
     },
-    "Citations": 241,
+    "Citations": 242,
     "Publications": 1,
     "Preprints": 0,
     "Github": "hms-dbmi/scde",
@@ -5945,12 +6054,12 @@
           "DOI": "10.1038/nbt.3102",
           "PubDate": "2015-02-01",
           "Preprint": false,
-          "Citations": 324
+          "Citations": 325
         }
       ],
       "Preprints": []
     },
-    "Citations": 324,
+    "Citations": 325,
     "Publications": 1,
     "Preprints": 0,
     "Github": "PMBio/scLVM",
@@ -6118,7 +6227,7 @@
           "DOI": "10.1038/nmeth.4263",
           "PubDate": "2017-04-17",
           "Preprint": false,
-          "Citations": 24
+          "Citations": 25
         }
       ],
       "Preprints": [
@@ -6130,7 +6239,7 @@
         }
       ]
     },
-    "Citations": 24,
+    "Citations": 25,
     "Publications": 1,
     "Preprints": 1,
     "Github": "rhondabacher/SCnorm",
@@ -6468,7 +6577,7 @@
           "DOI": "10.1038/nbt.4091",
           "PubDate": "2018-04-02",
           "Preprint": false,
-          "Citations": 17
+          "Citations": 18
         }
       ],
       "Preprints": [
@@ -6480,7 +6589,7 @@
         }
       ]
     },
-    "Citations": 106,
+    "Citations": 107,
     "Publications": 2,
     "Preprints": 1,
     "Github": "MarioniLab/scran",
@@ -7606,7 +7715,7 @@
           "DOI": "10.1038/nbt.1991",
           "PubDate": "2011-11-02",
           "Preprint": false,
-          "Citations": 363
+          "Citations": 364
         },
         {
           "Title": "Visualization and cellular hierarchy inference of single-cell data using SPADE",
@@ -7618,7 +7727,7 @@
       ],
       "Preprints": []
     },
-    "Citations": 395,
+    "Citations": 396,
     "Publications": 2,
     "Preprints": 0,
     "Github": "nolanlab/spade",
@@ -8667,7 +8776,7 @@
           "DOI": "10.1038/s41467-017-02554-5",
           "PubDate": "2018-01-18",
           "Preprint": false,
-          "Citations": 14
+          "Citations": 15
         },
         {
           "Title": "Observation weights unlock bulk RNA-seq tools for zero inflation and single-cell applications",
@@ -8692,7 +8801,7 @@
         }
       ]
     },
-    "Citations": 17,
+    "Citations": 18,
     "Publications": 2,
     "Preprints": 2,
     "Github": "drisso/zinbwave",

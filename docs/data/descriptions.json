@@ -1,130 +1,162 @@
 [
   {
     "Category": "Alignment",
-    "Description": "Alignment of reads to a reference"
-  },
-  {
-    "Category": "AlleleSpecific",
-    "Description": "Detection of allele-specific expression"
-  },
-  {
-    "Category": "AlternativeSplicing",
-    "Description": "Detection of alternative splicing"
+    "Phase": "Phase 1",
+    "Description": "Alignment of sequencing reads to a reference"
   },
   {
     "Category": "Assembly",
+    "Phase": "Phase 1",
     "Description": "Tools that perform assembly of scRNA-seq reads"
   },
   {
+    "Category": "UMIs",
+    "Phase": "Phase 1",
+    "Description": "Processing of Unique Molecular Identifiers"
+  },
+  {
+    "Category": "Quantification",
+    "Phase": "Phase 1",
+    "Description": "Quantification of expression from reads"
+  },
+  {
+    "Category": "QualityControl",
+    "Phase": "Phase 2",
+    "Description": "Removal of low-quality cells"
+  },
+  {
+    "Category": "GeneFiltering",
+    "Phase": "Phase 2",
+    "Description": "Removal of lowly expressed or otherwise uninformative genes"
+  },
+  {
+    "Category": "Imputation",
+    "Phase": "Phase 2",
+    "Description": "Estimation of expression where zeros have been observed"
+  },
+  {
+    "Category": "Normalisation",
+    "Phase": "Phase 2",
+    "Description": "Removal of unwanted variation that may affect results"
+  },
+  {
     "Category": "CellCycle",
-    "Description": "Assignment or correction of stages of the cell cycle, or other uses of cell cycle (or similar) genes"
+    "Phase": "Phase 2",
+    "Description": "Assignment or correction of stages of the cell cycle, or other uses of cell cycle genes, or genes associated with similar processes"
   },
   {
     "Category": "Classification",
+    "Phase": "Phase 3",
     "Description": "Assignment of cell types based on a reference dataset"
   },
   {
     "Category": "Clustering",
+    "Phase": "Phase 3",
     "Description": "Unsupervised grouping of cells based on expression profiles"
   },
   {
+    "Category": "Ordering",
+    "Phase": "Phase 3",
+    "Description": "Ordering of cells along a trajectory"
+  },
+  {
+    "Category": "RareCells",
+    "Phase": "Phase 3",
+    "Description": "Identification of rare cell populations"
+  },
+  {
+    "Category": "StemCells",
+    "Phase": "Phase 3",
+    "Description": "Identification of cells with stem-like characteristics"
+  },
+  {
     "Category": "DifferentialExpression",
+    "Phase": "Phase 4",
     "Description": "Testing of differential expression across groups of cells"
   },
   {
-    "Category": "DimensionalityReduction",
-    "Description": "Projection of cells into a lower dimensional space"
-  },
-  {
     "Category": "ExpressionPatterns",
-    "Description": "Detection of genes that change over a trajectory"
-  },
-  {
-    "Category": "GeneFiltering",
-    "Description": "Removal of lowly expressed or otherwise uninformative genes"
+    "Phase": "Phase 4",
+    "Description": "Detection of genes that change expression across a trajectory"
   },
   {
     "Category": "GeneNetworks",
-    "Description": "Identification of co-regulated gene networks"
+    "Phase": "Phase 4",
+    "Description": "Identification or use of co-regulated gene networks"
   },
   {
     "Category": "GeneSets",
-    "Description": "Testing or other uses of annotated gene sets"
+    "Phase": "Phase 4",
+    "Description": "Testing for over representation or other uses of annotated gene sets"
+  },
+  {
+    "Category": "MarkerGenes",
+    "Phase": "Phase 4",
+    "Description": "Identification or use of genes that mark cell populations"
+  },
+  {
+    "Category": "DimensionalityReduction",
+    "Phase": "Multiple",
+    "Description": "Projection of cells into a lower dimensional space"
+  },
+  {
+    "Category": "Interactive",
+    "Phase": "Multiple",
+    "Description": "Tools with an interactive component or a graphical user interface"
+  },
+  {
+    "Category": "VariableGenes",
+    "Phase": "Multiple",
+    "Description": "Identifcation or use of highly (or lowly) variable genes"
+  },
+  {
+    "Category": "Visualisation",
+    "Phase": "Multiple",
+    "Description": "Functions for visualising some aspect of scRNA-seq data or analysis"
+  },
+  {
+    "Category": "AlleleSpecific",
+    "Phase": "Other",
+    "Description": "Detection of allele-specific expression"
+  },
+  {
+    "Category": "AlternativeSplicing",
+    "Phase": "Other",
+    "Description": "Detection of alternative splicing"
   },
   {
     "Category": "Haplotypes",
+    "Phase": "Other",
     "Description": "Use or assignment of haplotypes"
   },
   {
     "Category": "Immune",
+    "Phase": "Other",
     "Description": "Assignment of receptor sequences and immune cell clonality"
   },
   {
-    "Category": "Imputation",
-    "Description": "Estimation of expression where zeros have been observed"
-  },
-  {
     "Category": "Integration",
-    "Description": "Combining scRNA-seq datasets or integrating scRNA-seq data with other single-cell data types"
-  },
-  {
-    "Category": "Interactive",
-    "Description": "Tools with an interactive component or a graphical user interface"
-  },
-  {
-    "Category": "MarkerGenes",
-    "Description": "Identification or use of genes that mark cell populations"
+    "Phase": "Phase 2",
+    "Description": "Combining of scRNA-seq datasets or integration with other single-cell data types"
   },
   {
     "Category": "Modality",
+    "Phase": "Other",
     "Description": "Identification or use of modality in gene expression"
   },
   {
-    "Category": "Normalisation",
-    "Description": "Removal of unwanted variation that may affect results"
-  },
-  {
-    "Category": "Ordering",
-    "Description": "Ordering of cells along a trajectory"
-  },
-  {
-    "Category": "QualityControl",
-    "Description": "Removal of low-quality cells"
-  },
-  {
-    "Category": "Quantification",
-    "Description": "Quantification of expression from reads"
-  },
-  {
-    "Category": "RareCells",
-    "Description": "Identification of rare cell populations"
-  },
-  {
     "Category": "Simulation",
+    "Phase": "Other",
     "Description": "Generation of synthetic scRNA-seq datasets"
   },
   {
-    "Category": "StemCells",
-    "Description": "Identification of cells with stem-like characteristics"
-  },
-  {
     "Category": "Transformation",
+    "Phase": "Other",
     "Description": "Transformation between expression levels and some other measure"
   },
   {
-    "Category": "UMIs",
-    "Description": "Processing of Unique Molecular Identifiers"
-  },
-  {
-    "Category": "VariableGenes",
-    "Description": "Identifcation or use of highly (or lowly) variable genes"
-  },
-  {
     "Category": "Variants",
-    "Description": "Detection or use of variants"
-  },
-  {
-    "Category": "Visualisation",
-    "Description": "Functions for visualising some aspect of scRNA-seq data or analysis"
+    "Phase": "Other",
+    "Description": "Detection or use of nucleotide variants"
   }
 ]
