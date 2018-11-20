@@ -214,18 +214,27 @@ get_shields <- function(swsheet) {
                                  repo, ".svg")
 
             repo_clean <- stringr::str_replace(repo, "/", "_")
-            download.file(stars_url,
-                          paste0("docs/img/shields/GitHub/", repo_clean,
-                                 "_stars.svg"),
-                          quiet = TRUE)
-            download.file(forks_url,
-                          paste0("docs/img/shields/GitHub/", repo_clean,
-                                 "_forks.svg"),
-                          quiet = TRUE)
-            download.file(commit_url,
-                          paste0("docs/img/shields/GitHub/", repo_clean,
-                                 "_commit.svg"),
-                          quiet = TRUE)
+            for (i in 1:10) {
+                tryCatch({
+                    download.file(stars_url,
+                                  paste0("docs/img/shields/GitHub/", repo_clean,
+                                         "_stars.svg"),
+                                  quiet = TRUE)
+                    download.file(forks_url,
+                                  paste0("docs/img/shields/GitHub/", repo_clean,
+                                         "_forks.svg"),
+                                  quiet = TRUE)
+                    download.file(commit_url,
+                                  paste0("docs/img/shields/GitHub/", repo_clean,
+                                         "_commit.svg"),
+                                  quiet = TRUE)
+                    break()
+                }, error = function(e) {
+                    futile.logger::flog.error(
+                        paste(repo_clean, "attempt", i, "failed")
+                    )
+                })
+            }
         }
     }
 }
