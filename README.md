@@ -66,7 +66,7 @@ function columns ask the following questions of the software:
 * **DifferentialExpression** - Does it do some kind of differential expression?
 * **MarkerGenes** - Does it identify or mark use of cell type markers?
 * **ExpressionPatterns** - Can it find genes with interesting patterns over
-  (psuedo) time?
+  (pseudo) time?
 * **VariableGenes** - Does it identify highly variable genes?
 * **GeneSets** - Does it test or make use of annotated gene sets?
 * **GeneNetworks** - Does it find co-regulated gene networks?
