@@ -40,20 +40,12 @@ add_refs <- function(swsheet, titles_cache, skip_cites) {
         }
 
         if (!skip_cites) {
-            cites <- sapply(dois, function(doi) {
-                cite <- tryCatch({
-                    rcrossref::cr_citation_count(doi)
-                }, error = function(e) {
-                    NA
-                })
-
-                Sys.sleep(sample(seq(0, 1, 0.1), 1))
-
-                return(cite)
-            })
+            cites <- suppressWarnings(rcrossref::cr_citation_count(dois)$count)
         } else {
             cites <- rep(NA, length(dois))
         }
+
+        Sys.sleep(sample(seq(0, 1, 0.1), 1))
 
         titles <- get_titles(dois, titles_cache)
 
