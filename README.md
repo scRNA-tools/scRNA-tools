@@ -106,9 +106,14 @@ database or website:
 * [@katrinleinweber](https://github.com/katrinleinweber) - Switch to preferred
   resolver for DOI links
 
-These people have added new tools or updated existing entries in the database:
+These people have added new tools or updated existing entries in the database
+(via GitHub):
 
 [@nsalomonis](https://github.com/nsalomonis),
 [@TomSmithCGAT](https://github.com/TomSmithCGAT),
 [@PeteHaitch](https://github.com/PeteHaitch),
 [@lucapinello](https://github.com/lucapinello)
+[@vibbits](https://github.com/vibbits)
+[@shaniAmare](https://github.com/shaniAmare)
+[@agitter](https://github.com/agitter)
+
