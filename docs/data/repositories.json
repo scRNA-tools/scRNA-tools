@@ -364,7 +364,8 @@
     "CRAN": ["jackstraw"]
   },
   "MOFA": {
-    "Ignored": ["PyPI/mofa"]
+    "Ignored": ["PyPI/mofa"],
+    "BioC": ["MOFA"]
   },
   "MuSiC": {
     "Ignored": ["PyPI/music", "CRAN/music"]
@@ -532,5 +533,41 @@
   },
   "sleepwalk": {
     "CRAN": ["sleepwalk"]
+  },
+  "celda": {
+    "BioC": ["celda"]
+  },
+  "CHETAH": {
+    "BioC": ["CHETAH"]
+  },
+  "DepecheR": {
+    "BioC": ["DepecheR"]
+  },
+  "fishpond": {
+    "BioC": ["fishpond"]
+  },
+  "inferCNV": {
+    "BioC": ["infercnv"]
+  },
+  "robustSingleCell": {
+    "CRAN": ["robustSingleCell"]
+  },
+  "scAlign": {
+    "BioC": ["scAlign"]
+  },
+  "scds": {
+    "BioC": ["scds"]
+  },
+  "scMerge": {
+    "BioC": ["scMerge"]
+  },
+  "Scrublet": {
+    "PyPI": ["scrublet"]
+  },
+  "scTensor": {
+    "BioC": ["scTensor"]
+  },
+  "rpca": {
+    "CRAN": ["rpca"]
   }
 }

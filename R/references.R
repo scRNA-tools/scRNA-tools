@@ -40,7 +40,18 @@ add_refs <- function(swsheet, titles_cache, skip_cites) {
         }
 
         if (!skip_cites) {
-            cites <- suppressWarnings(rcrossref::cr_citation_count(dois)$count)
+            for (i in 1:10) {
+                tryCatch({
+                    cites <- suppressWarnings(
+                        rcrossref::cr_citation_count(dois)$count
+                    )
+                    break()
+                }, error = function(e) {
+                    futile.logger::flog.error(
+                        paste(x, "attempt", i, "failed")
+                    )
+                })
+            }
         } else {
             cites <- rep(NA, length(dois))
         }
