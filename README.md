@@ -77,7 +77,7 @@ function columns ask the following questions of the software:
 * **Transformation** - Does it transform between expression values and some over
   measure?
 * **Modality** - Does it identify or make use of modality in expression?
-* **AlternativeSplicing** - Does it identify alternatice splicing?
+* **AlternativeSplicing** - Does it identify alternative splicing?
 * **RareCells** - Does it identify rare cells types?
 * **StemCells** - Does it identify stem cells in a population?
 * **Variants** - Does it detect or make use of variants?
