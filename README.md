@@ -112,9 +112,10 @@ These people have added new tools, updated existing entries in the database
 [@nsalomonis](https://github.com/nsalomonis),
 [@TomSmithCGAT](https://github.com/TomSmithCGAT),
 [@PeteHaitch](https://github.com/PeteHaitch),
-[@lucapinello](https://github.com/lucapinello)
-[@vibbits](https://github.com/vibbits)
-[@shaniAmare](https://github.com/shaniAmare)
-[@agitter](https://github.com/agitter)
-[@kant](https://github.com/kant)
+[@lucapinello](https://github.com/lucapinello),
+[@vibbits](https://github.com/vibbits),
+[@shaniAmare](https://github.com/shaniAmare),
+[@agitter](https://github.com/agitter),
+[@kant](https://github.com/kant),
+[@amcdavid](https://github.com/amcdavid),
 
