@@ -24,109 +24,109 @@ article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video,input, textarea, button
 {
-    background:transparent;
-    border:0;
-    font-size:100%;
+	background:transparent;
+	border:0;
+	font-size:100%;
 	list-style:none;
-    margin:0;
-    outline:0;
-    padding:0;
-    vertical-align:baseline;
+	margin:0;
+	outline:0;
+	padding:0;
+	vertical-align:baseline;
 }
 
 article,aside,canvas,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section,summary
 {
-    display:block;
+	display:block;
 }
 
 /*body
 {
-    padding-top: 50px;
+	padding-top: 50px;
 }*/
 
 nav ul
 {
-    list-style:none;
+	list-style:none;
 }
 
 blockquote, q
 {
-    quotes:none;
+	quotes:none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after
 {
-    content:'';
-    content:none;
+	content:'';
+	content:none;
 }
 
 a
 {
-    background:transparent;
-    border:0;
-    font-size:100%;
-    margin:0;
-    padding:0;
-    vertical-align:baseline;
+	background:transparent;
+	border:0;
+	font-size:100%;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
 }
 
 ins
 {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
 }
 
 mark
 {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+	background-color:#ff9;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
 }
 
 del
 {
-    text-decoration: line-through;
+	text-decoration: line-through;
 }
 
 abbr[title], dfn[title]
 {
-    border-bottom:1px dotted #000;
-    cursor:help;
+	border-bottom:1px dotted #000;
+	cursor:help;
 }
 
 table
 {
-    border-collapse:collapse;
-    border-spacing:0;
+	border-collapse:collapse;
+	border-spacing:0;
 }
 
 hr
 {
-    border:0;
+	border:0;
 }
 
 .clear
 {
-    clear:both;
+	clear:both;
 }
 
 .float-left
 {
-    float:left;
+	float:left;
 }
 
 .float-right
 {
-    float:right;
+	float:right;
 }
 
 .bottomless
 {
-    border-bottom:none !important;
+	border-bottom:none !important;
 }
 
 /*-----------------------------------------------------------------------
@@ -135,17 +135,17 @@ Control Panel
 
 .float-left
 {
-    float:left;
+	float:left;
 }
 
 .float-right
 {
-    float:right;
+	float:right;
 }
 
 .clear
 {
-    clear:both;
+	clear:both;
 }
 
 /*-----------------------------------------------------------------------
@@ -154,21 +154,21 @@ Big Table Page
 
 #table-filter
 {
-    background:#efefef;
-    border:1px solid #cccccc;
-    padding:20px;
-    margin:20px 0;
+	background:#efefef;
+	border:1px solid #cccccc;
+	padding:20px;
+	margin:20px 0;
 }
 
 #table-filter .form-check
 {
-    display:inline;
-    margin:5px 5px 5px 0;
+	display:inline;
+	margin:5px 5px 5px 0;
 }
 
 #table-filter .form-check input
 {
-    margin:0 5px 0 0;
+	margin:0 5px 0 0;
 }
 
 .panel-title {
@@ -215,50 +215,93 @@ Big Table Page
 .panel-heading .accordion-toggle:after { top: 10px; }
 
 .page-header {
-    font-size: 250%;
-    margin-top: 0;
+	font-size: 250%;
+	margin-top: 0;
 }
 
 .page-header h2 {
-    font-size: 70%;
-    margin-top: 50px;
-    display: inline-block;
+	font-size: 70%;
+	margin-top: 50px;
+	display: inline-block;
 }
 
 .sortbox {
-    font-size: 70%;
+	font-size: 70%;
 }
 
 #logo-image {
-    height: 35px;
+	height: 35px;
 }
 
 .container .text-muted {
-    margin: 10px 0;
+	margin: 10px 0;
 }
 .text-muted {
-    color: #b3b3b3;
-    text-align: right;
+	color: #b3b3b3;
+	text-align: right;
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background-color: #f5f5f5;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #f5f5f5;
 }
 
 .footer .container {
-    width: 100%;
+	width: 100%;
 }
 
 html {
-    position: relative;
-    min-height: 100%;
+	position: relative;
+	min-height: 100%;
 }
 
 body {
-    /* Margin bottom by footer height */
-    margin-bottom: 40px;
+	/* Margin bottom by footer height */
+	margin-bottom: 40px;
+}
+
+/*-- Badges ----*/
+
+.github-badge
+{
+	background: rgb(95,95,95);
+	background: linear-gradient(0deg, rgba(95,95,95,1) 0%, rgba(77,77,77,1) 100%);
+	border-radius: 2px;
+	display:inline-block;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	font-size:8px;
+	color:#ffffff;
+	text-shadow: -0.5px 0.5px 1px #333333;
+}
+
+.github-badge span
+{
+	float:left;
+	padding:2px 4px;
+}
+
+.github-badge span.blue,
+.github-badge span.blue
+{
+	background: rgb(35,131,195);
+	background: linear-gradient(0deg, rgba(35,131,195,1) 0%, rgba(5,116,180,1) 100%);
+	border-radius: 0px 2px 2px 0px;
+}
+
+.github-badge span.green,
+.github-badge span.green
+{
+	background: rgb(140,178,77);
+	background: linear-gradient(0deg, rgba(124,162,58,1) 100%, rgba(140,178,77,1) 0%);
+	border-radius: 0px 2px 2px 0px;
+}
+
+.list-group-item .github-badge
+{
+	display: inline-block;
+    margin: 0px 0 0 3px;
 }
