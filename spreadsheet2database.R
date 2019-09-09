@@ -200,7 +200,7 @@ descs <- jsonlite::read_json("docs/data/descriptions.json",
 write_tsv(tools,        "database/tools.tsv")
 write_tsv(pubs,         "database/publications.tsv")
 write_tsv(preprints,    "database/preprints.tsv")
-write_tsv(dois,         "database/dois-idx.tsv")
+write_tsv(dois,         "database/doi-idx.tsv")
 write_tsv(citations,    "database/citations.tsv")
 write_tsv(categories,   "database/categories-idx.tsv")
 write_tsv(repositories, "database/repositories.tsv")
