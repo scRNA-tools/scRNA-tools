@@ -19,7 +19,7 @@ swsheet <- read_csv(
 tools <- swsheet %>%
     select(Tool = Name, Platform, Code, Description, Added, Updated)
 
-categories <- swsheet %>%
+cat_idx <- swsheet %>%
     gather(key = 'Category', value = 'Val',
            -Description, -Name, -Platform, -DOIs, -PubDates, -Updated,
            -Added, -Code) %>%
@@ -66,17 +66,17 @@ arxiv_refs2 <- arxiv_refs %>%
 
 refs <- bind_rows(cr_refs2, arxiv_refs2)
 
-pubs <- papers %>%
-    filter(!Preprint) %>%
-    left_join(refs, by = "DOI") %>%
-    select(DOI, Date, Title) %>%
-    distinct()
-
-preprints <- papers %>%
-    filter(Preprint) %>%
-    left_join(refs, by = "DOI") %>%
-    select(DOI, Title) %>%
-    distinct()
+# pubs <- papers %>%
+#     filter(!Preprint) %>%
+#     left_join(refs, by = "DOI") %>%
+#     select(DOI, Date, Title) %>%
+#     distinct()
+#
+# preprints <- papers %>%
+#     filter(Preprint) %>%
+#     left_join(refs, by = "DOI") %>%
+#     select(DOI, Title) %>%
+#     distinct()
 
 citations <- dois %>%
     distinct(DOI) %>%
@@ -85,6 +85,12 @@ citations <- dois %>%
     rcrossref::cr_citation_count() %>%
     rename(DOI = doi, Count = count) %>%
     mutate(Timestamp = lubridate::now("UTC"))
+
+references <- papers %>%
+    left_join(refs, by = "DOI") %>%
+    left_join(citations, by = "DOI") %>%
+    select(DOI, arXiv, Preprint, Date, Title, Citations = Count, Timestamp) %>%
+    distinct()
 
 bioc_url <- "https://bioconductor.org/packages/release/bioc/"
 bioc_pkgs <- xml2::read_html(bioc_url) %>%
@@ -187,23 +193,34 @@ github <- tools %>%
 repositories <- repos %>%
     bind_rows(ignored) %>%
     bind_rows(github) %>%
-    mutate(Repository = paste(Type, Name, sep = "_"))
+    mutate(Repository = paste(Name, Type, sep = "@"))
 
 repo_idx <- repositories %>%
-    select(Tool, Repository)
+    filter(Status == "Real") %>%
+    select(Tool, Repository) %>%
+    distinct()
 
-repositories <- select(repositories, Repository, Type, Name, Status)
+ignored_idx <- repositories %>%
+    filter(Status == "Ignored") %>%
+    select(Tool, Repository) %>%
+    distinct()
 
-descs <- jsonlite::read_json("docs/data/descriptions.json",
-                             simplifyVector = TRUE)
+repositories <- repositories %>%
+    select(Repository, Type, Name) %>%
+    distinct()
+
+categories <- jsonlite::read_json("docs/data/descriptions.json",
+                                  simplifyVector = TRUE)
 
 write_tsv(tools,        "database/tools.tsv")
-write_tsv(pubs,         "database/publications.tsv")
-write_tsv(preprints,    "database/preprints.tsv")
+# write_tsv(pubs,         "database/publications.tsv")
+# write_tsv(preprints,    "database/preprints.tsv")
+write_tsv(references,   "database/references.tsv")
 write_tsv(dois,         "database/doi-idx.tsv")
-write_tsv(citations,    "database/citations.tsv")
-write_tsv(categories,   "database/categories-idx.tsv")
+#write_tsv(citations,    "database/citations.tsv")
+write_tsv(cat_idx,      "database/categories-idx.tsv")
 write_tsv(repositories, "database/repositories.tsv")
 write_tsv(repo_idx,     "database/repositories-idx.tsv")
+write_tsv(ignored_idx,  "database/ignored-idx.tsv")
 write_tsv(pkgs_cache,   "database/packages-cache.tsv")
-write_tsv(descs,        "database/category-descriptions.tsv")
+write_tsv(categories,   "database/categories.tsv")
