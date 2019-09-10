@@ -132,3 +132,29 @@ create_tools_list <- function(tools, doi_idx, repo_idx, ignored_idx, cat_idx) {
 
     return(tools_list)
 }
+
+load_pkgs_cache <- function(dir) {
+
+    path <- fs::path(dir, "packages-cache.tsv")
+    mod_time <- fs::file_info(path)$modification_time
+    mod_diff <- difftime(lubridate::now(), mod_time, units = "days")
+
+    if (!is.na(mod_diff) && (mod_diff < 7)) {
+        pkgs_cache <- readr::read_tsv(
+            path,
+            col_types = readr::cols(
+                Name       = readr::col_character(),
+                Type       = readr::col_character(),
+                Repository = readr::col_character()
+            )
+        )
+    } else {
+        usethis::ui_info(paste(
+            "Packages cache is out of date or does not exist.",
+            "Updating packages cache..."
+        ))
+        pkgs_cache <- create_pkgs_cache(dir)
+    }
+
+    return(pkgs_cache)
+}

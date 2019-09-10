@@ -130,14 +130,14 @@ conda_pkgs <- unlist(conda_pkgs)
 
 pkgs_cache <- tibble(
     Name = c(bioc_pkgs, cran_pkgs, pypi_pkgs, conda_pkgs),
-    Repository = c(
+    Type = c(
         rep("Bioc",  length(bioc_pkgs)),
         rep("CRAN",  length(cran_pkgs)),
         rep("PyPI",  length(pypi_pkgs)),
         rep("Conda", length(conda_pkgs))
     )
 ) %>%
-    mutate(ID = paste(Repository, Name, sep = "/"))
+    mutate(Repository = paste(Name, Type, sep = "@"))
 
 repos_list <- jsonlite::fromJSON("docs/data/repositories.json")
 
