@@ -12,12 +12,18 @@ load_database <- function(dir = "database") {
     tools_list <- create_tools_list(tools, doi_idx, repo_idx, ignored_idx,
                                     cat_idx)
 
-    list(
+    database <- list(
         Tools        = tools_list,
         References   = references,
         Repositories = repositories,
         Categories   = categories
     )
+
+    usethis::ui_done(glue::glue(
+        "Database loaded from {usethis::ui_path(dir)}"
+    ))
+
+    return(database)
 }
 
 load_tools <- function(dir) {
@@ -148,12 +154,19 @@ load_pkgs_cache <- function(dir) {
                 Repository = readr::col_character()
             )
         )
+
+        usethis::ui_done(glue::glue(
+            "Loaded packages cache from {usethis::ui_path(dir)}"
+        ))
+
     } else {
         usethis::ui_info(paste(
             "Packages cache is out of date or does not exist.",
             "Updating packages cache..."
         ))
         pkgs_cache <- create_pkgs_cache(dir)
+
+        usethis::ui_done("Packages cache updated")
     }
 
     return(pkgs_cache)

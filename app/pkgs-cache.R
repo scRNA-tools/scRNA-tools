@@ -86,6 +86,8 @@ get_conda_pkgs <- function() {
 
 check_pkgs_cache <- function(name, pkgs_cache, current = c(), ignored = c()) {
 
+    `%>%` <- dplyr::`%>%`
+
     matched_name <- tolower(pkgs_cache$Name) == tolower(name)
     matches <- pkgs_cache$Repository[matched_name]
     matches <- matches[!(matches %in% current)]
@@ -97,7 +99,7 @@ check_pkgs_cache <- function(name, pkgs_cache, current = c(), ignored = c()) {
         for (repo in matches) {
             is_real <- prompt_yn(glue::glue(
                 "Is {usethis::ui_value(repo)} a matching package for ",
-                "{usethis::ui_value(name)} (y/n)?"
+                "{usethis::ui_value(name)} (y/n)?:"
             ))
 
             if (is_real) {
@@ -106,5 +108,17 @@ check_pkgs_cache <- function(name, pkgs_cache, current = c(), ignored = c()) {
         }
     }
 
-    list(Real = matches[real], Ignored = matches[!real])
+    repositories <- tibble::tibble(
+        Repository = c(current, ignored, matches)
+    ) %>%
+        dplyr::mutate(
+            Type = stringr::str_remove(Repository, "^.*@"),
+            Name = stringr::str_remove(Repository, "@.*$")
+        )
+
+    list(
+        Real         = c(current, matches[real]),
+        Ignored      = c(ignored, matches[!real]),
+        Repositories = repositories
+    )
 }

@@ -90,6 +90,7 @@ references <- papers %>%
     left_join(refs, by = "DOI") %>%
     left_join(citations, by = "DOI") %>%
     select(DOI, arXiv, Preprint, Date, Title, Citations = Count, Timestamp) %>%
+    mutate(Title = str_squish(Title)) %>%
     distinct()
 
 bioc_url <- "https://bioconductor.org/packages/release/bioc/"
