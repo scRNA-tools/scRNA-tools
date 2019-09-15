@@ -171,6 +171,8 @@ save_tools_json <- function(database, data_dir) {
         Categories   = purrr::map(database$Tools, ~ .x$Categories),
         Publications = unname(pubs_list[Tool]),
         Preprints    = unname(preprints_list[Tool]),
+        Citations    = purrr::map_dbl(Publications, ~ sum(.x$Citations)) +
+            purrr::map_dbl(Preprints, ~ sum(.x$Citations, na.rm = TRUE)),
         NumPubs      = purrr::map_dbl(Publications, nrow),
         NumPreprints = purrr::map_dbl(Preprints, nrow),
         Bioc         = purrr::map_chr(database$Tools,
@@ -190,6 +192,8 @@ save_tools_json <- function(database, data_dir) {
 
 save_categories_json <- function(database, data_dir) {
 
+    `%>%` <- magrittr::`%>%`
+
     cat_idx <- get_cat_idx(database$Tools)
 
     cat_idx <- dplyr::mutate(
@@ -205,10 +209,10 @@ save_categories_json <- function(database, data_dir) {
     )
 
     categories <- tidyr::nest(cat_idx, Tool, Bioc, CRAN, PyPI, Conda,
-                              .key = Tools)
-    categories <- dplyr::left_join(categories, database$Categories,
-                                   by = "Category")
-    categories <- dplyr::select(categories, Category, Description, Tools)
+                              .key = Tools) %>%
+        dplyr::left_join(database$Categories, by = "Category") %>%
+        dplyr::select(Category, Description, Tools) %>%
+        dplyr::arrange(Category)
 
     jsonlite::write_json(categories, fs::path(data_dir, "categories.json"),
                          pretty = TRUE)
