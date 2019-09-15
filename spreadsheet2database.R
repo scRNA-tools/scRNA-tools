@@ -17,12 +17,12 @@ swsheet <- read_csv(
 )
 
 tools <- swsheet %>%
-    select(Tool = Name, Platform, Code, Description, Added, Updated)
+    select(Tool = Name, Platform, Code, Description, License, Added, Updated)
 
 cat_idx <- swsheet %>%
-    gather(key = 'Category', value = 'Val',
-           -Description, -Name, -Platform, -DOIs, -PubDates, -Updated,
-           -Added, -Code) %>%
+    gather(key = "Category", value = "Val",
+           -Name, -Platform, -DOIs, -PubDates, -Code, -Description, -License,
+           -Added, -Updated) %>%
     filter(Val == TRUE) %>%
     select(Tool = Name, Category)
 
@@ -84,7 +84,8 @@ citations <- dois %>%
     pull(DOI) %>%
     rcrossref::cr_citation_count() %>%
     rename(DOI = doi, Count = count) %>%
-    mutate(Timestamp = lubridate::now("UTC"))
+    mutate(Timestamp = lubridate::now("UTC")) %>%
+    mutate(Delay = 0)
 
 references <- papers %>%
     left_join(refs, by = "DOI") %>%
@@ -136,11 +137,33 @@ pkgs_cache <- tibble(
         rep("CRAN",  length(cran_pkgs)),
         rep("PyPI",  length(pypi_pkgs)),
         rep("Conda", length(conda_pkgs))
-    )
+    ),
+    Added = lubridate::today("UTC")
 ) %>%
-    mutate(Repository = paste(Name, Type, sep = "@"))
+    mutate(Repository = paste(Name, Type, sep = "@")) %>%
+    select(Repository, Name, Type, Added)
 
 repos_list <- jsonlite::fromJSON("docs/data/repositories.json")
+
+# repos <- names(repos_list) %>%
+#     map_dfr(function(tool) {
+#         bioc  <- repos_list[[tool]]$BioC
+#         cran  <- repos_list[[tool]]$CRAN
+#         pypi  <- repos_list[[tool]]$PyPI
+#         conda <- repos_list[[tool]]$Conda
+#         tibble(
+#             Tool  = tool,
+#             Bioc  = if_else(is_null(bioc),  NA_character_,  bioc),
+#             CRAN  = if_else(is_null(cran),  NA_character_,  cran),
+#             PyPI  = if_else(is_null(pypi),  NA_character_,  pypi),
+#             Conda = if_else(is_null(conda), NA_character_, conda),
+#         )
+#     }) %>%
+#     gather(key = "Type", value = "Name", -Tool) %>%
+#     filter(!is.na(Name)) %>%
+#     mutate(
+#         Status     = "Real"
+#     )
 
 repos <- names(repos_list) %>%
     map_dfr(function(tool) {
@@ -155,12 +178,7 @@ repos <- names(repos_list) %>%
             PyPI  = if_else(is_null(pypi),  NA_character_,  pypi),
             Conda = if_else(is_null(conda), NA_character_, conda),
         )
-    }) %>%
-    gather(key = "Type", value = "Name", -Tool) %>%
-    filter(!is.na(Name)) %>%
-    mutate(
-        Status     = "Real"
-    )
+    })
 
 ignored <- names(repos_list) %>%
     map_dfr(function(tool) {
@@ -177,38 +195,44 @@ ignored <- names(repos_list) %>%
             Tool   = tool,
             Type   = ignore_df[, 1],
             Name   = ignore_df[, 2],
-            Status = "Ignored"
+            # Status = "Ignored"
         )
     }) %>%
-    mutate(Type = if_else(Type == "BioC", "Bioc", Type))
+    mutate(Type = if_else(Type == "BioC", "Bioc", Type)) %>%
+    arrange(Tool, Type, Name)
 
 github <- tools %>%
     filter(str_detect(Code, "github.com")) %>%
     mutate(
-        Name   = str_remove(Code, "https://github.com/"),
-        Type   = "GitHub",
-        Status = "Real"
+        GitHub = str_remove(Code, "https://github.com/")
+        # Name   = str_remove(Code, "https://github.com/"),
+        # Type   = "GitHub",
+        # Status = "Real"
     ) %>%
-    select(Tool, Type, Name, Status)
+    select(Tool, GitHub)
 
 repositories <- repos %>%
-    bind_rows(ignored) %>%
-    bind_rows(github) %>%
-    mutate(Repository = paste(Name, Type, sep = "@"))
+    left_join(github, by = "Tool")
 
-repo_idx <- repositories %>%
-    filter(Status == "Real") %>%
-    select(Tool, Repository) %>%
-    distinct()
+# repositories <- repos %>%
+#     bind_rows(ignored) %>%
+#     bind_rows(github) %>%
+#     mutate(Repository = paste(Name, Type, sep = "@"))
 
-ignored_idx <- repositories %>%
-    filter(Status == "Ignored") %>%
-    select(Tool, Repository) %>%
-    distinct()
+# repo_idx <- repositories %>%
+#     filter(Status == "Real") %>%
+#     select(Tool, Repository) %>%
+#     distinct()
 
-repositories <- repositories %>%
-    select(Repository, Type, Name) %>%
-    distinct()
+# ignored_idx <- repositories %>%
+#     filter(Status == "Ignored") %>%
+#     select(Tool, Repository) %>%
+#     distinct()
+#
+# repositories <- repositories %>%
+#     select(Tool, Type, Name) %>%
+#     distinct() %>%
+#     spread()
 
 categories <- jsonlite::read_json("docs/data/descriptions.json",
                                   simplifyVector = TRUE)
@@ -218,10 +242,11 @@ write_tsv(tools,        "database/tools.tsv")
 # write_tsv(preprints,    "database/preprints.tsv")
 write_tsv(references,   "database/references.tsv")
 write_tsv(dois,         "database/doi-idx.tsv")
-#write_tsv(citations,    "database/citations.tsv")
+# write_tsv(citations,    "database/citations.tsv")
 write_tsv(cat_idx,      "database/categories-idx.tsv")
 write_tsv(repositories, "database/repositories.tsv")
-write_tsv(repo_idx,     "database/repositories-idx.tsv")
-write_tsv(ignored_idx,  "database/ignored-idx.tsv")
+# write_tsv(repo_idx,     "database/repositories-idx.tsv")
+write_tsv(ignored,      "database/ignored.tsv")
+# write_tsv(ignored_idx,  "database/ignored-idx.tsv")
 write_tsv(pkgs_cache,   "database/packages-cache.tsv")
 write_tsv(categories,   "database/categories.tsv")

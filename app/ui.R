@@ -23,6 +23,10 @@ prompt_string <- function(prompt, ...) {
         success <- check_string(string, ...)
     }
 
+    if (string == "") {
+        string <- NA
+    }
+
     return(string)
 }
 
@@ -118,6 +122,11 @@ prompt_code <- function() {
     code <- prompt_string("Code URL (including protocol):", exact = url_re(),
                           empty = FALSE)
     stringr::str_remove(code, "/$")
+}
+
+prompt_license <- function() {
+    prompt_string("License:", allowed = "-A-Za-z0-9>=.() ", empty = FALSE,
+                  whitespace = FALSE)
 }
 
 prompt_description <- function() {

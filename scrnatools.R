@@ -6,6 +6,7 @@
 Usage:
     scrnatools add
     scrnatools update [<name>]
+    scrnatools build
     scrnatools -h | --help
     scrnatools --version
 
@@ -29,14 +30,16 @@ source("app/regex.R")
 source("app/load.R")
 source("app/add.R")
 source("app/update.R")
+source("app/build.R")
 source("app/pkgs-cache.R")
 source("app/references.R")
 source("app/save.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.0.0.9000")
-dir <- "TEST"
+opts <- docopt(DOCOPT, version = "0.0.0.9003")
+dir <- "database"
+data_dir <- "docs/data"
 
 database <- load_database(dir)
 pkgs_cache <- load_pkgs_cache(dir)
@@ -47,6 +50,10 @@ if (opts$add) {
 
 if (opts$update) {
     database <- update_tool(database, pkgs_cache, opts$name)
+}
+
+if (opts$build) {
+    database <- build(database, pkgs_cache, data_dir)
 }
 
 save_database(database, dir)

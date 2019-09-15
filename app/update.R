@@ -28,8 +28,8 @@ update_tool <- function(database, pkgs_cache, name) {
 
         field <- prompt_menu(
             "What would you like to update?",
-            c("Name", "Platform", "Description", "Code", "DOIs", "Repositories",
-              "Ignored", "Categories")
+            c("Name", "Platform", "Description", "Code", "License", "DOIs",
+              "Repositories", "Ignored", "Categories")
         )
 
         database <- switch(field,
@@ -37,6 +37,7 @@ update_tool <- function(database, pkgs_cache, name) {
             Platform     = update_platform(name, database),
             Description  = update_description(name, database),
             Code         = update_code(name, database),
+            License      = update_license(name, database),
             DOIs         = update_dois(name, database),
             Repositories = update_repositories(name, database, pkgs_cache),
             Ignored      = update_ignored(name, database, pkgs_cache),
@@ -48,7 +49,6 @@ update_tool <- function(database, pkgs_cache, name) {
             database <- database$Database
         }
 
-        database$Tools[[name]]$Updated <- lubridate::today()
         usethis::ui_done(glue::glue("Updated {usethis::ui_field(field)}"))
 
         cat("\n")
@@ -63,6 +63,8 @@ update_tool <- function(database, pkgs_cache, name) {
             "Are you finished updating {usethis::ui_value(name)}?:"
         ))
     }
+
+    database <- update_repositories(name, database, pkgs_cache, prompt = FALSE)
 
     usethis::ui_done(glue::glue(
         "Successfully updated {usethis::ui_value(name)}"
@@ -82,6 +84,7 @@ update_name <- function(name, database) {
 
     new_name <- prompt_name(database)
     tool$Tool <- new_name
+    tool$Updated <- lubridate::today("UTC")
 
     database$Tools[[old_name]] <- NULL
     database$Tools[[new_name]] <- tool
@@ -99,6 +102,7 @@ update_platform <- function(name, database) {
     ))
 
     tool$Platform <- prompt_platform()
+    tool$Updated <- lubridate::today("UTC")
 
     database$Tools[[name]] <- tool
 
@@ -115,28 +119,49 @@ update_code <- function(name, database) {
 
     code <- prompt_code()
 
-    is_gh_repo <- stringr::str_detect(tool$Repositories, "@GitHub")
-    if (sum(is_gh_repo) > 0) {
-        old_gh_repo <- tool$Repositories[is_gh_repo]
-        tool$Repositories <- tool$Repositories[!is_gh_repo]
-        usethis::ui_done("Removed old GitHub repository")
-    }
+    if (!is.na(code)) {
+        is_gh_repo <- stringr::str_detect(tool$Repositories, "@GitHub")
+        if (sum(is_gh_repo) > 0) {
+            old_gh_repo <- tool$Repositories[is_gh_repo]
+            tool$Repositories <- tool$Repositories[!is_gh_repo]
+            usethis::ui_done("Removed old GitHub repository")
+        }
 
-    if (stringr::str_detect(code, "github.com")) {
-        gh_name <- stringr::str_remove(code, "https://github.com/")
-        gh_repo <- paste(gh_name, "GitHub", sep = "@")
-        tool$Repositories <- c(tool$Repositories, gh_repo)
-        database$Repositories <- dplyr::bind_rows(
-            database$Repositories,
-            tibble::tibble(
-                Repository = gh_repo,
-                Type = "GitHub",
-                Name = gh_name)
-        )
-        usethis::ui_done("Found new GitHub repository")
+        if (stringr::str_detect(code, "github.com")) {
+            gh_name <- stringr::str_remove(code, "https://github.com/")
+            gh_repo <- paste(gh_name, "GitHub", sep = "@")
+            tool$Repositories <- c(tool$Repositories, gh_repo)
+            database$Repositories <- dplyr::bind_rows(
+                database$Repositories,
+                tibble::tibble(
+                    Repository = gh_repo,
+                    Type = "GitHub",
+                    Name = gh_name)
+            )
+            usethis::ui_done("Found new GitHub repository")
+        }
     }
 
     tool$Code <- code
+    tool$Updated <- lubridate::today("UTC")
+
+    database$Tools[[name]] <- tool
+
+    return(database)
+}
+
+update_license <- function(name, database) {
+
+    tool <- database$Tools[[name]]
+
+    usethis::ui_todo(glue::glue(
+        "Enter new license. ",
+        "Current license is {usethis::ui_value(tool$License)}."
+    ))
+
+    tool$License <- prompt_license()
+    tool$Updated <- lubridate::today("UTC")
+
     database$Tools[[name]] <- tool
 
     return(database)
@@ -156,6 +181,8 @@ update_dois <- function(name, database) {
     dois <- refs$DOI
 
     tool$DOIs <- dois
+    tool$Updated <- lubridate::today("UTC")
+
     database$Tools[[name]] <- tool
     database$References <- dplyr::bind_rows(database$References, refs)
 
@@ -172,68 +199,102 @@ update_description <- function(name, database) {
     ))
 
     tool$Description <- prompt_description()
+    tool$Updated <- lubridate::today("UTC")
 
     database$Tools[[name]] <- tool
 
     return(database)
 }
 
-update_repositories <- function(name, database, pkgs_cache) {
+update_repositories <- function(name, database, pkgs_cache, prompt = TRUE) {
+
+    `%>%` <- magrittr::`%>%`
 
     tool <- database$Tools[[name]]
-    repo_str <- paste(tool$Repositories, collapse = ", ")
 
-    usethis::ui_todo(glue::glue(
-        "Enter new repositories. ",
-        "Current repositories are {usethis::ui_value(repo_str)}."
-    ))
+    if (prompt) {
+        type <- prompt_menu(
+            "Which repository do you want to update?:",
+            c("Bioc", "CRAN", "PyPI", "Conda")
+        )
 
-    tool$Repositories <- prompt_vec("Repositories:",
-                                    values = pkgs_cache$Repository)
+        usethis::ui_todo(glue::glue(
+            "Enter new repository. ",
+            "Current {usethis::ui_value(type)} repository is ",
+            "{usethis::ui_value(tool$Repositories[type])}."
+        ))
 
-    pkgs_matches <- check_pkgs_cache(tool$Tool, pkgs_cache,
-                                     current = tool$Repositories,
-                                     ignored = tool$Ignored)
-    tool$Repositories <- pkgs_matches$Real
-    tool$Ignored      <- pkgs_matches$Ignored
-    tool$Ignored      <- setdiff(tool$Ignored, tool$Repositories)
-    repositories      <- pkgs_matches$Repositories
+        repo <- prompt_string(paste(type, "repository:"),
+                              allowed = "A-Za-z0-9_-")
+        tool$Repositories[type] <- repo
+    }
+
+    matches <- tolower(pkgs_cache$Name) == tolower(tool$Tool)
+    matches <- matches & !(pkgs_cache$Repository %in% tool$Ignored)
+
+    if (length(matches) > 0) {
+        pkg_matches <- pkgs_cache[matches, ]
+
+        for (idx in seq_len(nrow(pkg_matches))) {
+            pkg_name <- pkg_matches$Name[idx]
+            pkg_type <- pkg_matches$Type[idx]
+            current  <- tool$Repositories[pkg_type]
+
+            if (!is.na(current) && pkg_name == current) {
+                next
+            }
+
+            cat("\n")
+            is_real <- prompt_yn(glue::glue(
+                "Is {usethis::ui_value(pkg_name)} a matching ",
+                "{usethis::ui_value(pkg_type)} package for ",
+                "{usethis::ui_value(name)} (y/n)?:"
+            ))
+
+            if (is_real) {
+                tool$Repositories[pkg_type] <- pkg_name
+            } else {
+                tool$Ignored <- c(tool$Ignored, pkg_matches$Repository[idx])
+            }
+        }
+    }
 
     database$Tools[[name]] <- tool
-    database$Repositories <- dplyr::bind_rows(
-        database$Repositories, repositories
-    )
 
     return(database)
 }
 
-update_ignored <- function(name, database, pkgs_cache) {
-
-    tool <- database$Tools[[name]]
-    ignored_str <- paste(tool$Ignored, collapse = ", ")
-
-    usethis::ui_todo(glue::glue(
-        "Enter new ignored repositories. ",
-        "Current ignored repositories are {usethis::ui_value(ignored_str)}."
-    ))
-
-    tool$Ignored <- prompt_vec("Ignored:", values = pkgs_cache$Repository)
-
-    pkgs_matches <- check_pkgs_cache(tool$Tool, pkgs_cache,
-                                     current = tool$Ignored,
-                                     ignored = tool$Repositories)
-    tool$Ignored      <- pkgs_matches$Real
-    tool$Repositories <- pkgs_matches$Ignored
-    tool$Repositories <- setdiff(tool$Repositories, tool$Ignored)
-    repositories      <- pkgs_matches$Repositories
-
-    database$Tools[[name]] <- tool
-    database$Repositories <- dplyr::bind_rows(
-        database$Repositories, repositories
-    )
-
-    return(database)
-}
+# update_ignored <- function(name, database, pkgs_cache) {
+#
+#     tool <- database$Tools[[name]]
+#     old_repos <- sort(tool$Repositories)
+#
+#     ignored_str <- paste(tool$Ignored, collapse = ", ")
+#     usethis::ui_todo(glue::glue(
+#         "Enter new ignored repositories. ",
+#         "Current ignored repositories are {usethis::ui_value(ignored_str)}."
+#     ))
+#
+#     tool$Ignored <- prompt_vec("Ignored:", values = pkgs_cache$Repository)
+#
+#     pkgs_matches <- check_pkgs_cache(tool$Tool, pkgs_cache,
+#                                      current = tool$Ignored,
+#                                      ignored = tool$Repositories)
+#     tool$Ignored      <- pkgs_matches$Real
+#     tool$Repositories <- pkgs_matches$Ignored
+#     tool$Repositories <- setdiff(tool$Repositories, tool$Ignored)
+#
+#     if (!identical(sort(tool$Repositories), old_repos)) {
+#         tool$Updated <- lubridate::today()
+#     }
+#
+#     database$Tools[[name]] <- tool
+#     database$Repositories <- dplyr::bind_rows(
+#         database$Repositories, pkgs_matches$Repositories
+#     )
+#
+#     return(database)
+# }
 
 update_categories <- function(name, database) {
 
@@ -246,6 +307,7 @@ update_categories <- function(name, database) {
     ))
 
     tool$Categories <- prompt_categories(database)
+    tool$Updated <- lubridate::today("UTC")
 
     database$Tools[[name]] <- tool
 

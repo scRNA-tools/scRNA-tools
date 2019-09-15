@@ -7,19 +7,19 @@ add_tool <- function(database, pkgs_cache) {
     name         <- prompt_name(database)
     platform     <- prompt_platform()
     code         <- prompt_code()
+    license      <- prompt_license()
     description  <- prompt_description()
     dois         <- prompt_dois()
     refs         <- get_references(dois)
     dois         <- refs$DOI
     categories   <- prompt_categories(database)
-    pkgs_matches <- check_pkgs_cache(name, pkgs_cache)
-    repos        <- pkgs_matches$Real
-    ignored      <- pkgs_matches$Ignored
-    repositories <- pkgs_matches$Repositories
-    added        <- lubridate::today()
-    updated      <- lubridate::today()
+    added        <- lubridate::today("UTC")
+    updated      <- lubridate::today("UTC")
 
-    if (stringr::str_detect(code, "github.com")) {
+    tool <- new_sctool(name, platform, code, license, description, dois,
+                       NA, NA, NA, NA, NA, NA, categories, added, updated)
+
+    if (!is.na(code) && stringr::str_detect(code, "github.com")) {
         gh_name <- stringr::str_remove(code, "https://github.com/")
         gh_repo <- paste(gh_name, "GitHub", sep = "@")
         repos <- c(repos, gh_repo)
@@ -33,13 +33,11 @@ add_tool <- function(database, pkgs_cache) {
         usethis::ui_done("Found GitHub repository")
     }
 
-    tool <- new_sctool(name, platform, code, description, dois, repos,
-                       ignored, categories, added, updated)
-
     database$Tools[[name]] <- tool
+    database <- update_repositories(name, database, pkgs_cache, prompt = FALSE)
+
     database$References <- dplyr::bind_rows(database$References, refs)
-    database$Repositories <- dplyr::bind_rows(database$Repositories,
-                                              repositories)
+
     usethis::ui_done(glue::glue(
         "Added {usethis::ui_value(name)} to database"
     ))

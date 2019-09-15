@@ -4,28 +4,22 @@ save_database <- function(database, dir = "database") {
 
     fs::dir_create(dir)
 
-    tools       <- get_tools(database$Tools)
-    doi_idx     <- get_doi_idx(database$Tools)
-    repo_idx    <- get_repo_idx(database$Tools)
-    ignored_idx <- get_ignored_idx(database$Tools)
-    cat_idx     <- get_cat_idx(database$Tools)
+    tools        <- get_tools(database$Tools)
+    doi_idx      <- get_doi_idx(database$Tools)
+    ignored      <- get_ignored(database$Tools)
+    cat_idx      <- get_cat_idx(database$Tools)
+    repositories <- get_repositories(database$Tools)
 
     references <- database$References %>%
         dplyr::group_by(DOI) %>%
-        dplyr::filter(dplyr::row_number(dplyr::desc(Timestamp)) == 1) %>%
+        dplyr::top_n(1, Timestamp) %>%
         dplyr::arrange(DOI)
-
-    repositories <- database$Repositories %>%
-        dplyr::distinct() %>%
-        dplyr::arrange(Repository)
 
     readr::write_tsv(tools,                 fs::path(dir, "tools.tsv"))
     readr::write_tsv(database$References,   fs::path(dir, "references.tsv"))
     readr::write_tsv(doi_idx,               fs::path(dir, "doi-idx.tsv"))
-    readr::write_tsv(database$Repositories, fs::path(dir, "repositories.tsv"))
-    readr::write_tsv(repo_idx,
-                     fs::path(dir, "repositories-idx.tsv"))
-    readr::write_tsv(ignored_idx,           fs::path(dir, "ignored-idx.tsv"))
+    readr::write_tsv(repositories,          fs::path(dir, "repositories.tsv"))
+    readr::write_tsv(ignored,               fs::path(dir, "ignored.tsv"))
     readr::write_tsv(database$Categories,   fs::path(dir, "categories.tsv"))
     readr::write_tsv(cat_idx,               fs::path(dir, "categories-idx.tsv"))
 
@@ -41,6 +35,7 @@ get_tools <- function(tools_list) {
             Platform    = .tool$Platform,
             Code        = .tool$Code,
             Description = .tool$Description,
+            License     = .tool$License,
             Added       = .tool$Added,
             Updated     = .tool$Updated
         )
@@ -64,27 +59,34 @@ get_doi_idx <- function(tools_list) {
     return(doi_idx)
 }
 
-get_repo_idx <- function(tools_list) {
-    repo_idx <- purrr::map_dfr(tools_list, function(.tool) {
+get_repositories <- function(tools_list) {
+    repositories <- purrr::map_dfr(tools_list, function(.tool) {
         tibble::tibble(
-            Tool       = .tool$Tool,
-            Repository = .tool$Repositories
+            Tool   = .tool$Tool,
+            Bioc   = .tool$Repositories["Bioc"],
+            CRAN   = .tool$Repositories["CRAN"],
+            PyPI   = .tool$Repositories["PyPI"],
+            Conda  = .tool$Repositories["Conda"],
+            GitHub = .tool$Repositories["GitHub"]
         )
     })
 
-    repo_idx <- dplyr::distinct(dplyr::arrange(repo_idx, Tool, Repository))
+    repositories <- dplyr::arrange(repositories, Tool)
+
+    return(repositories)
 }
 
-get_ignored_idx <- function(tools_list) {
-    ignored_idx <- purrr::map_dfr(tools_list, function(.tool) {
+get_ignored <- function(tools_list) {
+    ignored <- purrr::map_dfr(tools_list, function(.tool) {
         tibble::tibble(
-            Tool       = .tool$Tool,
-            Repository = .tool$Ignored
+            Tool = .tool$Tool,
+            Type = stringr::str_remove(.tool$Ignored, "^.+@"),
+            Name = stringr::str_remove(.tool$Ignored, "@.+$")
         )
     })
 
-    ignored_idx <- dplyr::distinct(
-        dplyr::arrange(ignored_idx, Tool, Repository)
+    ignored <- dplyr::distinct(
+        dplyr::arrange(ignored, Tool, Type, Name)
     )
 }
 

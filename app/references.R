@@ -7,7 +7,8 @@ get_references <- function(dois) {
         Date       = character(),
         Title      = character(),
         Citations  = double(),
-        Timestamp  = lubridate::ydm_hms()
+        Timestamp  = lubridate::ydm_hms(),
+        Delay      = double()
     )
 
     if (length(dois) == 0) {
@@ -63,7 +64,7 @@ get_references <- function(dois) {
             if (arxiv) {
                 timestamp <- NA
             } else {
-                timestamp <- lubridate::now()
+                timestamp <- lubridate::now("UTC")
             }
 
             ref <- tibble::tibble(
@@ -73,7 +74,8 @@ get_references <- function(dois) {
                 Date       = date,
                 Title      = title,
                 Citations  = citations,
-                Timestamp  = timestamp
+                Timestamp  = timestamp,
+                Delay      = 0
             )
         } else {
             ref <- dummy
@@ -83,4 +85,28 @@ get_references <- function(dois) {
     usethis::ui_done("Checking references complete")
 
     return(references)
+}
+
+get_pubs_list <- function(database) {
+
+    pubs <- dplyr::filter(database$References, !Preprint)
+
+    purrr::map(database$Tools, function(.tool) {
+        dplyr::select(
+            dplyr::filter(pubs, DOI %in% .tool$DOIs),
+            Title, DOI, Date, Citations
+        )
+    })
+}
+
+get_preprints_list <- function(database) {
+
+    preprints <- dplyr::filter(database$References, Preprint)
+
+    purrr::map(database$Tools, function(.tool) {
+        dplyr::select(
+            dplyr::filter(preprints, DOI %in% .tool$DOIs),
+            Title, DOI, Citations
+        )
+    })
 }
