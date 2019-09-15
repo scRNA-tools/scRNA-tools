@@ -31,6 +31,7 @@ source("app/load.R")
 source("app/add.R")
 source("app/update.R")
 source("app/build.R")
+source("app/analysis.R")
 source("app/pkgs-cache.R")
 source("app/references.R")
 source("app/save.R")
@@ -40,6 +41,7 @@ source("app/save.R")
 opts <- docopt(DOCOPT, version = "0.0.0.9003")
 dir <- "database"
 data_dir <- "docs/data"
+plot_dir <- "docs/plots"
 
 database <- load_database(dir)
 pkgs_cache <- load_pkgs_cache(dir)
@@ -53,7 +55,7 @@ if (opts$update) {
 }
 
 if (opts$build) {
-    database <- build(database, pkgs_cache, data_dir)
+    database <- build(database, pkgs_cache, data_dir, plot_dir)
 }
 
 save_database(database, dir)

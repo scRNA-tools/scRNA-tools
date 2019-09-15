@@ -1,4 +1,4 @@
-build <- function(database, pkgs_cache, data_dir) {
+build <- function(database, pkgs_cache, data_dir, plot_dir) {
 
     usethis::ui_todo("Building website...")
 
@@ -97,9 +97,10 @@ build <- function(database, pkgs_cache, data_dir) {
         "updated {usethis::ui_value(n_updated)}"
     ))
 
-    # Get shields
+    # !!!!!!!!!!!! Get shields !!!!!!!!!!!!!
 
     # Output JSON
+    usethis::ui_todo("Creating data files...")
     fs::dir_create(data_dir)
     save_table_json(database, data_dir)
     save_tools_json(database, data_dir)
@@ -109,12 +110,20 @@ build <- function(database, pkgs_cache, data_dir) {
     ))
 
     # Make plots
+    usethis::ui_todo("Analysing database...")
+    save_number_plot(database, plot_dir)
+    save_pub_plot(database, plot_dir)
+    save_platform_plot(database, plot_dir)
+    save_licenses_plot(database, plot_dir)
+    save_categories_plot(database, plot_dir)
+    usethis::ui_done(glue::glue(
+        "Plot files written to {usethis::ui_path(plot_dir)}"
+    ))
 
-    # Write footer
+    # !!!!!!!!!  Write footer !!!!!!!!!
 
     build_time <- lubridate::now("UTC")
-    readr::write_lines(lubridate::now("UTC"),
-                       fs::path(data_dir, "build-timestamp.txt"))
+    readr::write_lines(build_time, fs::path(data_dir, "build-timestamp.txt"))
     usethis::ui_done(glue::glue(
         "Build finished at {usethis::ui_value(build_time)}"
     ))
