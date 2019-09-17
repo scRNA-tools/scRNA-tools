@@ -1,3 +1,10 @@
+#' Load database
+#'
+#' Load the scRNA-tools database from disk
+#'
+#' @param dir Path to directory containg the database
+#'
+#' @return Database object
 load_database <- function(dir = "database") {
 
     tools        <- load_tools(dir)
@@ -24,6 +31,13 @@ load_database <- function(dir = "database") {
     return(database)
 }
 
+#' Load tools
+#'
+#' Load the tools table from the database
+#'
+#' @param dir Path to the directory containing the database
+#'
+#' @return tibble
 load_tools <- function(dir) {
     readr::read_tsv(
         fs::path(dir, "tools.tsv"),
@@ -39,6 +53,13 @@ load_tools <- function(dir) {
     )
 }
 
+#' Load DOI index
+#'
+#' Load the DOI index table from the database
+#'
+#' @param dir Path to the directory containing the database
+#'
+#' @return tibble
 load_doi_idx <- function(dir) {
     readr::read_tsv(
         fs::path(dir, "doi-idx.tsv"),
@@ -49,6 +70,13 @@ load_doi_idx <- function(dir) {
     )
 }
 
+#' Load ignored
+#'
+#' Load the ignored repositories table from the database
+#'
+#' @param dir Path to the directory containing the database
+#'
+#' @return tibble
 load_ignored <- function(dir) {
     ignored <- readr::read_tsv(
         fs::path(dir, "ignored.tsv"),
@@ -62,6 +90,13 @@ load_ignored <- function(dir) {
     ignored <- dplyr::mutate(ignored, Repository = paste(Name, Type, sep = "@"))
 }
 
+#' Load categories index
+#'
+#' Load the categories index table from the database
+#'
+#' @param dir Path to the directory containing the database
+#'
+#' @return tibble
 load_cat_idx <- function(dir) {
     readr::read_tsv(
         fs::path(dir, "categories-idx.tsv"),
@@ -72,6 +107,13 @@ load_cat_idx <- function(dir) {
     )
 }
 
+#' Load references
+#'
+#' Load the references table from the database
+#'
+#' @param dir Path to the directory containing the database
+#'
+#' @return tibble
 load_references <- function(dir) {
     readr::read_tsv(
         fs::path(dir, "references.tsv"),
@@ -88,6 +130,13 @@ load_references <- function(dir) {
     )
 }
 
+#' Load repositories
+#'
+#' Load the repositories table from the database
+#'
+#' @param dir Path to the directory containing the database
+#'
+#' @return tibble
 load_repositories <- function(dir) {
     readr::read_tsv(
         fs::path(dir, "repositories.tsv"),
@@ -101,6 +150,13 @@ load_repositories <- function(dir) {
     )
 }
 
+#' Load categories
+#'
+#' Load the categories table from the database
+#'
+#' @param dir Path to the directory containing the database
+#'
+#' @return tibble
 load_categories <- function(dir) {
     readr::read_tsv(
         fs::path(dir, "categories.tsv"),
@@ -112,6 +168,17 @@ load_categories <- function(dir) {
     )
 }
 
+#' Create tools list
+#'
+#' Convert the database tables into a list of `sctool` objects
+#'
+#' @param tools Tools table
+#' @param doi_idx DOI index table
+#' @param repositories Repositories table
+#' @param ignored Ignored table
+#' @param cat_idx Categories index table
+#'
+#' @return List of `sctool` objects
 create_tools_list <- function(tools, doi_idx, repositories, ignored, cat_idx) {
 
     tools_list <- purrr::pmap(
@@ -123,13 +190,13 @@ create_tools_list <- function(tools, doi_idx, repositories, ignored, cat_idx) {
             description  = ..4,
             license      = ..5,
             dois         = dplyr::filter(doi_idx,      Tool == ..1)$DOI,
+            categories   = dplyr::filter(cat_idx,      Tool == ..1)$Category,
             bioc         = dplyr::filter(repositories, Tool == ..1)$Bioc,
             cran         = dplyr::filter(repositories, Tool == ..1)$CRAN,
             pypi         = dplyr::filter(repositories, Tool == ..1)$PyPI,
             conda        = dplyr::filter(repositories, Tool == ..1)$Conda,
             github       = dplyr::filter(repositories, Tool == ..1)$GitHub,
             ignored      = dplyr::filter(ignored,      Tool == ..1)$Repository,
-            categories   = dplyr::filter(cat_idx,      Tool == ..1)$Category,
             added        = ..6,
             updated      = ..7
         )
@@ -139,6 +206,14 @@ create_tools_list <- function(tools, doi_idx, repositories, ignored, cat_idx) {
     return(tools_list)
 }
 
+#' Load packages cache
+#'
+#' Load the packages cache If the cache is out of date (or does not exist) then
+#' `get_pkgs_cache()` is called and the results cached to disk.
+#'
+#' @param dir Path to the directory containing the database
+#'
+#' @return tibble
 load_pkgs_cache <- function(dir) {
 
     `%>%` <- magrittr::`%>%`

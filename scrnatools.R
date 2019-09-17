@@ -1,8 +1,17 @@
 #!/usr/bin/env Rscript
 
+################################################################################
+#                                                                              #
+#                                scRNA-tools app                               #
+#    command line application for interacting with the scRNA-tools database    #
+#                                                                              #
+################################################################################
+
 #### DOCOPT ####
 
 "
+scRNA-tools command line application
+
 Usage:
     scrnatools add
     scrnatools update [<name>]
@@ -38,7 +47,7 @@ source("app/save.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.0.0.9003")
+opts <- docopt(DOCOPT, version = "0.0.0.9004")
 dir <- "database"
 data_dir <- "docs/data"
 plot_dir <- "docs/plots"

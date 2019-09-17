@@ -1,3 +1,12 @@
+#' Get references
+#'
+#' Searches Crossref and arXiv for a list of DOIs and checks that the references
+#' are correct. Details are returned for the references that were confirmed by
+#' the user.
+#'
+#' @param dois Vector of DOIs
+#'
+#' @return tibble
 get_references <- function(dois) {
 
     dummy <- tibble::tibble(
@@ -87,6 +96,13 @@ get_references <- function(dois) {
     return(references)
 }
 
+#' Get publications list
+#'
+#' Get a list of publications associated with each tool in the database
+#'
+#' @param database Database object
+#'
+#' @return list of tibbles
 get_pubs_list <- function(database) {
 
     pubs <- dplyr::filter(database$References, !Preprint)
@@ -99,6 +115,13 @@ get_pubs_list <- function(database) {
     })
 }
 
+#' Get preprints list
+#'
+#' Get a list of preprints associated with each tool in the database
+#'
+#' @param database Database object
+#'
+#' @return list of tibbles
 get_preprints_list <- function(database) {
 
     preprints <- dplyr::filter(database$References, Preprint)

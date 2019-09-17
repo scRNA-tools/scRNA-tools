@@ -1,3 +1,9 @@
+#' URL regular expression
+#'
+#' Regular expression for matching a website URL. Must include a protocol
+#' (http/https).
+#'
+#' @return regex object
 url_re <- function() {
 
     valid_chars <- rex::rex(except_some_of(".", "/", " ", "-"))
@@ -5,7 +11,7 @@ url_re <- function() {
     rex::rex(
         start,
 
-        # protocol identifier (optional) + //
+        # protocol identifier + //
         rex:::group(list("http", rex:::maybe("s")), "://"),
 
         # host name
@@ -31,6 +37,12 @@ url_re <- function() {
     )
 }
 
+#' DOI regular expression
+#'
+#' Regular expression for matching a DOI. Also matches arXiv identifiers
+#' (arxiv/ID_STRING).
+#'
+#' @return regex object
 doi_re <- function() {
     rex::rex(
         start,

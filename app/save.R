@@ -1,3 +1,9 @@
+#' Save database
+#'
+#' Save the scRNA-tools database to disk
+#'
+#' @param database Database object
+#' @param dir Path to directory containing the database
 save_database <- function(database, dir = "database") {
 
     `%>%` <- magrittr::`%>%`
@@ -28,6 +34,13 @@ save_database <- function(database, dir = "database") {
     ))
 }
 
+#' Get tools
+#'
+#' Get the tools table from a list of `sctool` objects
+#'
+#' @param tools_list List of `sctool` objects
+#'
+#' @return tibble
 get_tools <- function(tools_list) {
     tools <- purrr::map_dfr(tools_list, function(.tool) {
         tibble::tibble(
@@ -46,6 +59,13 @@ get_tools <- function(tools_list) {
     return(tools)
 }
 
+#' Get DOI index
+#'
+#' Get the DOI index table from a list of `sctool` objects
+#'
+#' @param tools_list List of `sctool` objects
+#'
+#' @return tibble
 get_doi_idx <- function(tools_list) {
     doi_idx <- purrr::map_dfr(tools_list, function(.tool) {
         tibble::tibble(
@@ -59,6 +79,13 @@ get_doi_idx <- function(tools_list) {
     return(doi_idx)
 }
 
+#' Get repositories
+#'
+#' Get the repositories table from a list of `sctool` objects
+#'
+#' @param tools_list List of `sctool` objects
+#'
+#' @return tibble
 get_repositories <- function(tools_list) {
     repositories <- purrr::map_dfr(tools_list, function(.tool) {
         tibble::tibble(
@@ -76,6 +103,13 @@ get_repositories <- function(tools_list) {
     return(repositories)
 }
 
+#' Get ignored
+#'
+#' Get the ignored repositories table from a list of `sctool` objects
+#'
+#' @param tools_list List of `sctool` objects
+#'
+#' @return tibble
 get_ignored <- function(tools_list) {
     ignored <- purrr::map_dfr(tools_list, function(.tool) {
         tibble::tibble(
@@ -90,6 +124,13 @@ get_ignored <- function(tools_list) {
     )
 }
 
+#' Get categories index
+#'
+#' Get the categories index table from a list of `sctool` objects
+#'
+#' @param tools_list List of `sctool` objects
+#'
+#' @return tibble
 get_cat_idx <- function(tools_list) {
     cat_idx <- purrr::map_dfr(tools_list, function(.tool) {
         tibble::tibble(

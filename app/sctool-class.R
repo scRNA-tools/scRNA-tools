@@ -1,6 +1,29 @@
+#' New sctool
+#'
+#' Create a new `sctool` object for storing a tool in the scRNA-tools database
+#'
+#' @param name Name of the tool
+#' @param platform Platforms used by the tool (e.g. "R/Python")
+#' @param code URL to where the tool code can be found
+#' @param license Software license for the tool
+#' @param description Description of the tool
+#' @param dois Vector of DOIs associated with the tool
+#' @param categories Analysis categories for the tool
+#' @param bioc Repository for the tool on Bioconductor
+#' @param cran Repository for the tool on CRAN
+#' @param pypi Repository for the tool on PyPI
+#' @param conda Repository for the tool on Conda
+#' @param github Repository for the tool on GitHub
+#' @param ignored Vector of ignored repositories for the tool
+#' @param added Date the tool was added to the database
+#' @param updated Date the tool entry was last updated
+#'
+#' @return `sctool` S3 object
 new_sctool <- function(name, platform, code, license, description, dois,
-                       bioc, cran, pypi, conda, github, ignored, categories,
-                       added, updated) {
+                       categories,  bioc = NA, cran = NA, pypi = NA, conda = NA,
+                       github = NA, ignored = NA,
+                       added = lubridate::today("UTC"),
+                       updated = lubridate::today("UTC")) {
 
     tool <- list(
         Tool         = name,

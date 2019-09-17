@@ -1,3 +1,9 @@
+#' Get packages cache
+#'
+#' Get a list of the packages that are available in various software
+#' repositories
+#'
+#' @return tibble
 get_pkgs_cache <- function() {
 
     `%>%` <- magrittr::`%>%`
@@ -28,6 +34,11 @@ get_pkgs_cache <- function() {
     return(pkgs_cache)
 }
 
+#' Get Bioconductor packages
+#'
+#' Get a list of the packages that are available in Bioconductor
+#'
+#' @return character vector
 get_bioc_pkgs <- function() {
 
     `%>%` <- magrittr::`%>%`
@@ -40,6 +51,11 @@ get_bioc_pkgs <- function() {
         rvest::html_text()
 }
 
+#' Get CRAN packages
+#'
+#' Get a list of the packages that are available in CRAN
+#'
+#' @return character vector
 get_cran_pkgs <- function() {
 
     `%>%` <- magrittr::`%>%`
@@ -52,6 +68,11 @@ get_cran_pkgs <- function() {
         setdiff(LETTERS) # Remove letter links at top of page
 }
 
+#' Get PyPI packages
+#'
+#' Get a list of the packages that are available in PyPI
+#'
+#' @return character vector
 get_pypi_pkgs <- function() {
 
     `%>%` <- magrittr::`%>%`
@@ -61,6 +82,11 @@ get_pypi_pkgs <- function() {
         rvest::html_text()
 }
 
+#' Get Conda packages
+#'
+#' Get a list of the packages that are available in Conda
+#'
+#' @return character vector
 get_conda_pkgs <- function() {
 
     `%>%` <- magrittr::`%>%`

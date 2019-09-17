@@ -1,3 +1,11 @@
+# This script was used to convert the scRNA-tools database from the old format
+# (which was a single CSV file) to the new format which consists of multiple
+# TSV files. It is included in this repository for reference purposes and in
+# case there are any issues in the future.
+#
+# Luke Zappia
+# 2019-09-17
+
 library("tidyverse")
 
 swsheet <- read_csv(
@@ -66,18 +74,6 @@ arxiv_refs2 <- arxiv_refs %>%
 
 refs <- bind_rows(cr_refs2, arxiv_refs2)
 
-# pubs <- papers %>%
-#     filter(!Preprint) %>%
-#     left_join(refs, by = "DOI") %>%
-#     select(DOI, Date, Title) %>%
-#     distinct()
-#
-# preprints <- papers %>%
-#     filter(Preprint) %>%
-#     left_join(refs, by = "DOI") %>%
-#     select(DOI, Title) %>%
-#     distinct()
-
 citations <- dois %>%
     distinct(DOI) %>%
     filter(!str_detect(DOI, "arxiv/")) %>%
@@ -145,26 +141,6 @@ pkgs_cache <- tibble(
 
 repos_list <- jsonlite::fromJSON("docs/data/repositories.json")
 
-# repos <- names(repos_list) %>%
-#     map_dfr(function(tool) {
-#         bioc  <- repos_list[[tool]]$BioC
-#         cran  <- repos_list[[tool]]$CRAN
-#         pypi  <- repos_list[[tool]]$PyPI
-#         conda <- repos_list[[tool]]$Conda
-#         tibble(
-#             Tool  = tool,
-#             Bioc  = if_else(is_null(bioc),  NA_character_,  bioc),
-#             CRAN  = if_else(is_null(cran),  NA_character_,  cran),
-#             PyPI  = if_else(is_null(pypi),  NA_character_,  pypi),
-#             Conda = if_else(is_null(conda), NA_character_, conda),
-#         )
-#     }) %>%
-#     gather(key = "Type", value = "Name", -Tool) %>%
-#     filter(!is.na(Name)) %>%
-#     mutate(
-#         Status     = "Real"
-#     )
-
 repos <- names(repos_list) %>%
     map_dfr(function(tool) {
         bioc  <- repos_list[[tool]]$BioC
@@ -195,7 +171,6 @@ ignored <- names(repos_list) %>%
             Tool   = tool,
             Type   = ignore_df[, 1],
             Name   = ignore_df[, 2],
-            # Status = "Ignored"
         )
     }) %>%
     mutate(Type = if_else(Type == "BioC", "Bioc", Type)) %>%
@@ -205,48 +180,20 @@ github <- tools %>%
     filter(str_detect(Code, "github.com")) %>%
     mutate(
         GitHub = str_remove(Code, "https://github.com/")
-        # Name   = str_remove(Code, "https://github.com/"),
-        # Type   = "GitHub",
-        # Status = "Real"
     ) %>%
     select(Tool, GitHub)
 
 repositories <- repos %>%
     left_join(github, by = "Tool")
 
-# repositories <- repos %>%
-#     bind_rows(ignored) %>%
-#     bind_rows(github) %>%
-#     mutate(Repository = paste(Name, Type, sep = "@"))
-
-# repo_idx <- repositories %>%
-#     filter(Status == "Real") %>%
-#     select(Tool, Repository) %>%
-#     distinct()
-
-# ignored_idx <- repositories %>%
-#     filter(Status == "Ignored") %>%
-#     select(Tool, Repository) %>%
-#     distinct()
-#
-# repositories <- repositories %>%
-#     select(Tool, Type, Name) %>%
-#     distinct() %>%
-#     spread()
-
 categories <- jsonlite::read_json("docs/data/descriptions.json",
                                   simplifyVector = TRUE)
 
 write_tsv(tools,        "database/tools.tsv")
-# write_tsv(pubs,         "database/publications.tsv")
-# write_tsv(preprints,    "database/preprints.tsv")
 write_tsv(references,   "database/references.tsv")
 write_tsv(dois,         "database/doi-idx.tsv")
-# write_tsv(citations,    "database/citations.tsv")
 write_tsv(cat_idx,      "database/categories-idx.tsv")
 write_tsv(repositories, "database/repositories.tsv")
-# write_tsv(repo_idx,     "database/repositories-idx.tsv")
 write_tsv(ignored,      "database/ignored.tsv")
-# write_tsv(ignored_idx,  "database/ignored-idx.tsv")
 write_tsv(pkgs_cache,   "database/packages-cache.tsv")
 write_tsv(categories,   "database/categories.tsv")

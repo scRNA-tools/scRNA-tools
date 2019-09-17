@@ -1,3 +1,10 @@
+#' Save number plot
+#'
+#' Save a JSON file with the details needed to create a Plotly plot of the
+#' number of tools over time
+#'
+#' @param database Database object
+#' @param plot_dir Path to directory to save plot JSON
 save_number_plot <- function(database, plot_dir) {
 
     `%>%` <- magrittr::`%>%`
@@ -38,6 +45,13 @@ save_number_plot <- function(database, plot_dir) {
     readr::write_lines(json, fs::path(plot_dir, "number.json"))
 }
 
+#' Save publications plot
+#'
+#' Save a JSON file with the details needed to create a Plotly plot of the
+#' publication status of tools
+#'
+#' @param database Database object
+#' @param plot_dir Path to directory to save plot JSON
 save_pub_plot <- function(database, plot_dir) {
 
     `%>%` <- magrittr::`%>%`
@@ -95,6 +109,13 @@ save_pub_plot <- function(database, plot_dir) {
     readr::write_lines(json, fs::path(plot_dir, "publication.json"))
 }
 
+#' Save platform plot
+#'
+#' Save a JSON file with the details needed to create a Plotly plot of the
+#' platforms used by tools
+#'
+#' @param database Database object
+#' @param plot_dir Path to directory to save plot JSON
 save_platform_plot <- function(database, plot_dir) {
 
     `%>%` <- magrittr::`%>%`
@@ -161,6 +182,13 @@ save_platform_plot <- function(database, plot_dir) {
     readr::write_lines(json, fs::path(plot_dir, "platforms.json"))
 }
 
+#' Save licenses plot
+#'
+#' Save a JSON file with the details needed to create a Plotly plot of the
+#' tool software licenses
+#'
+#' @param database Database object
+#' @param plot_dir Path to directory to save plot JSON
 save_licenses_plot <- function(database, plot_dir) {
 
     `%>%` <- magrittr::`%>%`
@@ -231,6 +259,13 @@ save_licenses_plot <- function(database, plot_dir) {
     readr::write_lines(json, fs::path(plot_dir, "licenses.json"))
 }
 
+#' Save categories plot
+#'
+#' Save a JSON file with the details needed to create a Plotly plot of the
+#' analysis categories
+#'
+#' @param database Database object
+#' @param plot_dir Path to directory to save plot JSON
 save_categories_plot <- function(database, data_dir) {
 
     `%>%` <- magrittr::`%>%`

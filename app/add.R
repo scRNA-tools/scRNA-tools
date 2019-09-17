@@ -1,3 +1,11 @@
+#' Add tool
+#'
+#' Add a tool to the scRNA-tools database
+#'
+#' @param database Database object
+#' @param pkgs_cache Packages cached object
+#'
+#' @return Database with added tool
 add_tool <- function(database, pkgs_cache) {
 
     cat("\n")
@@ -13,11 +21,9 @@ add_tool <- function(database, pkgs_cache) {
     refs         <- get_references(dois)
     dois         <- refs$DOI
     categories   <- prompt_categories(database)
-    added        <- lubridate::today("UTC")
-    updated      <- lubridate::today("UTC")
 
     tool <- new_sctool(name, platform, code, license, description, dois,
-                       NA, NA, NA, NA, NA, NA, categories, added, updated)
+                       categories)
 
     if (!is.na(code) && stringr::str_detect(code, "github.com")) {
         gh_name <- stringr::str_remove(code, "https://github.com/")

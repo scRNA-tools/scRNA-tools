@@ -1,9 +1,21 @@
+#' Build website
+#'
+#' Build the scRNA-tools website from the database
+#'
+#' @param database Database object
+#' @param pkgs_cache Packages cache object
+#' @param data_dir Path to save JSON data files
+#' @param plot_dir Path to save JSON plot files
+#'
+#' @return Updated database object
 build <- function(database, pkgs_cache, data_dir, plot_dir) {
 
     usethis::ui_todo("Building website...")
 
     if (fs::file_exists(fs::path(data_dir, "build-timestamp.txt"))) {
-        last_build <- readr::read_lines(fs::path(data_dir, "build-timestamp.txt"))
+        last_build <- readr::read_lines(
+            fs::path(data_dir, "build-timestamp.txt")
+        )
         last_build <- lubridate::as_datetime(last_build)
 
         usethis::ui_info(glue::glue(
@@ -64,6 +76,7 @@ build <- function(database, pkgs_cache, data_dir, plot_dir) {
 
         diff <- difftime(lubridate::now("UTC"), references$Timestamp[idx],
                          units = "days")
+        diff <- as.numeric(diff)
 
         if (diff > references$Delay[idx]) {
             n_checked <- n_checked + 1
@@ -83,8 +96,13 @@ build <- function(database, pkgs_cache, data_dir, plot_dir) {
             if (cites > references$Citations[idx]) {
                 n_updated <- n_updated + 1
                 references$Citations[idx] <- cites
-                references$Delay[idx] <- 1 / 24 # 1 hour
+                # Start with random delay between 0.5 and 1.5 hours
+                references$Delay[idx] <- runif(1, 0.5, 1.5) / 24
             } else {
+                # Increase delay by the amount since the last update (+ noise)
+                new_delay <- references$Delay[idx] + diff + rnorm(1)
+                # New delay cannot be more than 30 days
+                new_delay <- min(new_delay, 30)
                 references$Delay[idx] <- min(
                     as.numeric(references$Delay[idx] + diff), 30
                 )
@@ -131,6 +149,12 @@ build <- function(database, pkgs_cache, data_dir, plot_dir) {
     return(database)
 }
 
+#' Save table JSON
+#'
+#' Save JSON file with data for the tools table
+#'
+#' @param database Database object
+#' @param data_dir Path to the data directory
 save_table_json <- function(database, data_dir) {
 
     `%>%` <- magrittr::`%>%`
@@ -169,6 +193,12 @@ save_table_json <- function(database, data_dir) {
                          pretty = TRUE)
 }
 
+#' Save tools JSON
+#'
+#' Save JSON file with data for the tools page
+#'
+#' @param database Database object
+#' @param data_dir Path to the data directory
 save_tools_json <- function(database, data_dir) {
 
     tools <- get_tools(database$Tools)
@@ -199,6 +229,12 @@ save_tools_json <- function(database, data_dir) {
     jsonlite::write_json(tools, fs::path(data_dir, "tools.json"), pretty = TRUE)
 }
 
+#' Save categories JSON
+#'
+#' Save JSON file with data for the categories page
+#'
+#' @param database Database object
+#' @param data_dir Path to the data directory
 save_categories_json <- function(database, data_dir) {
 
     `%>%` <- magrittr::`%>%`

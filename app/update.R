@@ -1,4 +1,13 @@
-update_tool <- function(database, pkgs_cache, name) {
+#' Update tool
+#'
+#' Update a tool entry in the scRNA-tools databse
+#'
+#' @param database Database object
+#' @param pkgs_cache Packages cache table
+#' @param name Name of the tool to update
+#'
+#' @return Updated database object
+update_tool <- function(database, pkgs_cache, name = NULL) {
 
     cat("\n")
     if (!is.null(name) && !(name %in% names(database$Tools))) {
@@ -73,6 +82,14 @@ update_tool <- function(database, pkgs_cache, name) {
     return(database)
 }
 
+#' Update name
+#'
+#' Update the name of a tool
+#'
+#' @param name Name of the tool to update
+#' @param database Database object
+#'
+#' @return Updated database object
 update_name <- function(name, database) {
 
     tool <- database$Tools[[name]]
@@ -92,6 +109,14 @@ update_name <- function(name, database) {
     return(list(Name = new_name, Database = database))
 }
 
+#' Update platform
+#'
+#' Update the platform of a tool
+#'
+#' @param name Name of the tool to update
+#' @param database Database object
+#'
+#' @return Updated database object
 update_platform <- function(name, database) {
 
     tool <- database$Tools[[name]]
@@ -109,6 +134,14 @@ update_platform <- function(name, database) {
     return(database)
 }
 
+#' Update code URL
+#'
+#' Update the code URL of a tool
+#'
+#' @param name Name of the tool to update
+#' @param database Database object
+#'
+#' @return Updated database object
 update_code <- function(name, database) {
 
     tool <- database$Tools[[name]]
@@ -150,6 +183,14 @@ update_code <- function(name, database) {
     return(database)
 }
 
+#' Update license
+#'
+#' Update the software license of a tool
+#'
+#' @param name Name of the tool to update
+#' @param database Database object
+#'
+#' @return Updated database object
 update_license <- function(name, database) {
 
     tool <- database$Tools[[name]]
@@ -167,6 +208,14 @@ update_license <- function(name, database) {
     return(database)
 }
 
+#' Update DOIs
+#'
+#' Update the DOIs assoiciated of a tool
+#'
+#' @param name Name of the tool to update
+#' @param database Database object
+#'
+#' @return Updated database object
 update_dois <- function(name, database) {
 
     tool <- database$Tools[[name]]
@@ -189,6 +238,14 @@ update_dois <- function(name, database) {
     return(database)
 }
 
+#' Update description
+#'
+#' Update the description of a tool
+#'
+#' @param name Name of the tool to update
+#' @param database Database object
+#'
+#' @return Updated database object
 update_description <- function(name, database) {
 
     tool <- database$Tools[[name]]
@@ -206,6 +263,21 @@ update_description <- function(name, database) {
     return(database)
 }
 
+#' Update repositories
+#'
+#' Update the repositories of a tool.
+#'
+#' @param name Name of the tool to update
+#' @param database Database object
+#' @param pkgs_cache Packages cache table
+#' @param prompt Whether to prompt the user
+#'
+#' @details
+#' If `prompt` is `TRUE` the user can select which repository they want to
+#' update. If `prompt` is `FALSE` only automatic checks against names in the
+#' packages cache are performed.
+#'
+#' @return Updated database object
 update_repositories <- function(name, database, pkgs_cache, prompt = TRUE) {
 
     `%>%` <- magrittr::`%>%`
@@ -296,6 +368,14 @@ update_repositories <- function(name, database, pkgs_cache, prompt = TRUE) {
 #     return(database)
 # }
 
+#' Update categories
+#'
+#' Update the categories for a tool
+#'
+#' @param name Name of the tool to update
+#' @param database Database object
+#'
+#' @return Updated database object
 update_categories <- function(name, database) {
 
     tool <- database$Tools[[name]]
