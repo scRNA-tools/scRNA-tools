@@ -349,37 +349,31 @@ update_repositories <- function(name, database, pkgs_cache, prompt = TRUE) {
     return(database)
 }
 
-# update_ignored <- function(name, database, pkgs_cache) {
-#
-#     tool <- database$Tools[[name]]
-#     old_repos <- sort(tool$Repositories)
-#
-#     ignored_str <- paste(tool$Ignored, collapse = ", ")
-#     usethis::ui_todo(glue::glue(
-#         "Enter new ignored repositories. ",
-#         "Current ignored repositories are {usethis::ui_value(ignored_str)}."
-#     ))
-#
-#     tool$Ignored <- prompt_vec("Ignored:", values = pkgs_cache$Repository)
-#
-#     pkgs_matches <- check_pkgs_cache(tool$Tool, pkgs_cache,
-#                                      current = tool$Ignored,
-#                                      ignored = tool$Repositories)
-#     tool$Ignored      <- pkgs_matches$Real
-#     tool$Repositories <- pkgs_matches$Ignored
-#     tool$Repositories <- setdiff(tool$Repositories, tool$Ignored)
-#
-#     if (!identical(sort(tool$Repositories), old_repos)) {
-#         tool$Updated <- lubridate::today()
-#     }
-#
-#     database$Tools[[name]] <- tool
-#     database$Repositories <- dplyr::bind_rows(
-#         database$Repositories, pkgs_matches$Repositories
-#     )
-#
-#     return(database)
-# }
+update_ignored <- function(name, database, pkgs_cache) {
+
+    tool <- database$Tools[[name]]
+    ignored <- tool$Ignored
+
+    if (length(ignored) == 0) {
+        usethis::ui_done(glue::glue(
+            "There are no repositories in the ignored list for ",
+            "{usethis::ui_value(name)}"
+        ))
+
+        return(database)
+    }
+
+    remove <- prompt_menu(
+        "Which repository should be removed from the ignore list?:",
+        ignored
+    )
+
+    tool$Ignored <- ignored[ignored != remove]
+
+    database$Tools[[name]] <- tool
+
+    return(database)
+}
 
 #' Update categories
 #'
