@@ -152,35 +152,48 @@ update_code <- function(name, database) {
 
     code <- prompt_code()
 
-    if (!is.na(code)) {
-        is_gh_repo <- stringr::str_detect(tool$Repositories, "@GitHub")
-        if (sum(is_gh_repo) > 0) {
-            old_gh_repo <- tool$Repositories[is_gh_repo]
-            tool$Repositories <- tool$Repositories[!is_gh_repo]
-            usethis::ui_done("Removed old GitHub repository")
-        }
-
-        if (stringr::str_detect(code, "github.com")) {
-            gh_name <- stringr::str_remove(code, "https://github.com/")
-            gh_repo <- paste(gh_name, "GitHub", sep = "@")
-            tool$Repositories <- c(tool$Repositories, gh_repo)
-            database$Repositories <- dplyr::bind_rows(
-                database$Repositories,
-                tibble::tibble(
-                    Repository = gh_repo,
-                    Type = "GitHub",
-                    Name = gh_name)
-            )
-            usethis::ui_done("Found new GitHub repository")
-        }
-    }
-
     tool$Code <- code
     tool$Updated <- lubridate::today("UTC")
+    tool <- update_github(tool)
 
     database$Tools[[name]] <- tool
 
     return(database)
+}
+
+update_github <- function(tool) {
+
+    code <- tool$Code
+    old_gh <- tool$Repositories["GitHub"]
+    has_old_gh <- !is.na(old_gh)
+
+    new_gh <- NA
+    has_new_gh <- FALSE
+    if (!is.na(code) && stringr::str_detect(code, "github.com")) {
+        new_gh <- stringr::str_remove(code, "https://github.com/")
+        has_new_gh <- TRUE
+    }
+
+    same_gh <- FALSE
+    if (has_old_gh && has_new_gh) {
+        same_gh <- new_gh == old_gh
+    }
+
+    if (has_old_gh && !same_gh) {
+        tool$Repositories["GitHub"] <- NA
+        usethis::ui_done(
+            "Removed old GitHub repository {usethis::ui_field(old_gh)}"
+        )
+    }
+
+    if (has_new_gh && !same_gh) {
+        tool$Repositories["GitHub"] <- new_gh
+        usethis::ui_done(
+            "Found new GitHub repository {usethis::ui_field(new_gh)}"
+        )
+    }
+
+    return(tool)
 }
 
 #' Update license

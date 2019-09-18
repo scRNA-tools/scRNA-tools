@@ -21,7 +21,7 @@
 #' @return `sctool` S3 object
 new_sctool <- function(name, platform, code, license, description, dois,
                        categories,  bioc = NA, cran = NA, pypi = NA, conda = NA,
-                       github = NA, ignored = NA,
+                       github = NA, ignored = character(),
                        added = lubridate::today("UTC"),
                        updated = lubridate::today("UTC")) {
 

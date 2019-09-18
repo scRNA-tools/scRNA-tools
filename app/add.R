@@ -24,20 +24,7 @@ add_tool <- function(database, pkgs_cache) {
 
     tool <- new_sctool(name, platform, code, license, description, dois,
                        categories)
-
-    if (!is.na(code) && stringr::str_detect(code, "github.com")) {
-        gh_name <- stringr::str_remove(code, "https://github.com/")
-        gh_repo <- paste(gh_name, "GitHub", sep = "@")
-        repos <- c(repos, gh_repo)
-        repositories <- dplyr::bind_rows(
-            repositories,
-            tibble::tibble(
-                Repository = gh_repo,
-                Type = "GitHub",
-                Name = gh_name)
-        )
-        usethis::ui_done("Found GitHub repository")
-    }
+    tool <- update_github(tool)
 
     database$Tools[[name]] <- tool
     database <- update_repositories(name, database, pkgs_cache, prompt = FALSE)
