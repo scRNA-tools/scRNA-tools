@@ -96,6 +96,7 @@ build <- function(database, pkgs_cache, data_dir, plot_dir) {
             if (cites > references$Citations[idx]) {
                 n_updated <- n_updated + 1
                 references$Citations[idx] <- cites
+                references$Timestamp[idx] <- lubridate::now("UTC")
                 # Start with random delay between 0.5 and 1.5 hours
                 references$Delay[idx] <- runif(1, 0.5, 1.5) / 24
             } else {

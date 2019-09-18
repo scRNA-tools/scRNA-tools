@@ -246,9 +246,13 @@ load_pkgs_cache <- function(dir) {
         )
     )
 
-    usethis::ui_done(glue::glue(
+    usethis::ui_done(
         "Loaded packages cache from {usethis::ui_path(dir)}"
-    ))
+    )
+
+    usethis::ui_info(
+        "Packages cache last modified at {usethis::ui_value(mod_time)}"
+    )
 
     if (mod_diff > 7) {
         usethis::ui_info(paste(
