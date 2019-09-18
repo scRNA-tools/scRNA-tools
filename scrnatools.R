@@ -33,6 +33,7 @@ suppressPackageStartupMessages({
 
 #### SOURCE ####
 
+source("app/logo.R")
 source("app/ui.R")
 source("app/sctool-class.R")
 source("app/regex.R")
@@ -47,7 +48,11 @@ source("app/save.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.0.0.9004")
+opts <- docopt(DOCOPT, version = "0.0.0.9005")
+
+logo <- get_logo()
+cat(logo, "\n")
+
 dir <- "database"
 data_dir <- "docs/data"
 plot_dir <- "docs/plots"
