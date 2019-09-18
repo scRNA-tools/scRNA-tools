@@ -100,7 +100,7 @@ $(document).ready(function () {
         var updated = value.Updated
         var license = value.License
         var cats = value.Categories
-        var bioc = value.BioC
+        var bioc = value.Bioc
         var pypi = value.PyPI
         var cran = value.CRAN
         var nPubs = value.NumPubs

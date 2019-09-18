@@ -96,7 +96,7 @@ $(document).ready(function () {
         // Loop over tools
         $.each(tools, function (k, val) {
           var name = val.Tool
-          var bioc = val.BioC
+          var bioc = val.Bioc
           var pypi = val.PyPI
           var cran = val.CRAN
 

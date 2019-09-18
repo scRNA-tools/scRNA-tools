@@ -19,9 +19,9 @@ load_database <- function(dir = "database") {
                                     cat_idx)
 
     database <- list(
-        Tools        = tools_list,
-        References   = references,
-        Categories   = categories
+        Tools      = tools_list,
+        References = references,
+        Categories = categories
     )
 
     usethis::ui_done(glue::glue(

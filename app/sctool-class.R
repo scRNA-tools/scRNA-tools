@@ -51,7 +51,6 @@ new_sctool <- function(name, platform, code, license, description, dois,
 print.sctool <- function(x) {
 
     repos <- x$Repositories[!is.na(x$Repositories)]
-    print(repos)
 
     cat(usethis::ui_field(x$Tool), "\n\n")
     cat(usethis::ui_value(x$Description), "\n\n")

@@ -253,8 +253,12 @@ save_categories_json <- function(database, data_dir) {
                                ~ database$Tools[[.x]]$Repositories["Conda"])
     )
 
-    categories <- tidyr::nest(cat_idx, Tool, Bioc, CRAN, PyPI, Conda,
-                              .key = Tools) %>%
+    categories <- tidyr::nest(
+        cat_idx,
+        Tools = c(Tool, Bioc, CRAN, PyPI, Conda)
+    ) %>%
+        # Convert from vctrs_list to list for compatibility with jsonlite
+        dplyr::mutate(Tools = as.list(Tools)) %>%
         dplyr::left_join(database$Categories, by = "Category") %>%
         dplyr::select(Category, Description, Tools) %>%
         dplyr::arrange(Category)
