@@ -17,17 +17,18 @@ save_database <- function(database, dir = "database") {
     repositories <- get_repositories(database$Tools)
 
     references <- database$References %>%
+        dplyr::filter(DOI %in% doi_idx$DOI) %>%
         dplyr::group_by(DOI) %>%
         dplyr::top_n(1, Timestamp) %>%
         dplyr::arrange(DOI)
 
-    readr::write_tsv(tools,                 fs::path(dir, "tools.tsv"))
-    readr::write_tsv(database$References,   fs::path(dir, "references.tsv"))
-    readr::write_tsv(doi_idx,               fs::path(dir, "doi-idx.tsv"))
-    readr::write_tsv(repositories,          fs::path(dir, "repositories.tsv"))
-    readr::write_tsv(ignored,               fs::path(dir, "ignored.tsv"))
-    readr::write_tsv(database$Categories,   fs::path(dir, "categories.tsv"))
-    readr::write_tsv(cat_idx,               fs::path(dir, "categories-idx.tsv"))
+    readr::write_tsv(tools,               fs::path(dir, "tools.tsv"))
+    readr::write_tsv(database$References, fs::path(dir, "references.tsv"))
+    readr::write_tsv(doi_idx,             fs::path(dir, "doi-idx.tsv"))
+    readr::write_tsv(repositories,        fs::path(dir, "repositories.tsv"))
+    readr::write_tsv(ignored,             fs::path(dir, "ignored.tsv"))
+    readr::write_tsv(database$Categories, fs::path(dir, "categories.tsv"))
+    readr::write_tsv(cat_idx,             fs::path(dir, "categories-idx.tsv"))
 
     usethis::ui_done(glue::glue(
         "Database written to {usethis::ui_path(dir)}"

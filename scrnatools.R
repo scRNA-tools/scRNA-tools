@@ -16,11 +16,14 @@ Usage:
     scrnatools add
     scrnatools update [<name>]
     scrnatools build
+    scrnatools archive [<name>]
+    scrnatools restore [<arc>]
     scrnatools -h | --help
     scrnatools --version
 
 Options:
   name          Name of a tool in the database
+  arc           Name of an archive in the database
   -h --help     Show this help message.
   --version     Show version.
 " -> DOCOPT
@@ -44,6 +47,7 @@ source("app/build.R")
 source("app/analysis.R")
 source("app/pkgs-cache.R")
 source("app/references.R")
+source("app/archive.R")
 source("app/save.R")
 
 #### MAIN CODE ####
@@ -70,6 +74,14 @@ if (opts$update) {
 
 if (opts$build) {
     database <- build(database, pkgs_cache, data_dir, plot_dir)
+}
+
+if (opts$archive) {
+    database <- archive_tool(database, dir, opts$name)
+}
+
+if (opts$restore) {
+    database <- restore_archive(database, dir, opts$arc)
 }
 
 save_database(database, dir)
