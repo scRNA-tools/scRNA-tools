@@ -49,13 +49,16 @@ source("app/pkgs-cache.R")
 source("app/references.R")
 source("app/archive.R")
 source("app/save.R")
+source("app/git.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.0.0.9006")
+opts <- docopt(DOCOPT, version = "0.0.0.9007")
 
 logo <- get_logo()
 cat(logo, "\n")
+
+check_status()
 
 dir <- "database"
 data_dir <- "docs/data"
