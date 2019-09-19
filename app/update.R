@@ -311,13 +311,47 @@ update_repositories <- function(name, database, pkgs_cache, prompt = TRUE) {
 
         repo <- prompt_string(paste(type, "repository:"),
                               allowed = "A-Za-z0-9_-")
+
         tool$Repositories[type] <- repo
+        tool$Updated <- lubridate::today("UTC")
     }
 
-    matches <- tolower(pkgs_cache$Name) == tolower(tool$Tool)
+    # Avoid checking packages that aren't relevant or are already set
+    if (!stringr::str_detect(tool$Platform, "Python")) {
+        pkgs_cache <- dplyr::filter(pkgs_cache, Type != "PyPI")
+    }
+
+    if (!is.na(tool$Repositories["PyPI"])) {
+        pkgs_cache <- dplyr::filter(pkgs_cache, Type != "PyPI")
+    }
+
+    if (!stringr::str_detect(tool$Platform, "R")) {
+        pkgs_cache <- dplyr::filter(pkgs_cache, !(Type %in% c("Bioc", "CRAN")))
+    }
+
+    if (!is.na(tool$Repositories["Bioc"])) {
+        pkgs_cache <- dplyr::filter(pkgs_cache, Type != "Bioc")
+    }
+
+    if (!is.na(tool$Repositories["CRAN"])) {
+        pkgs_cache <- dplyr::filter(pkgs_cache, Type != "CRAN")
+    }
+
+    matches <- stringdist::stringsim(
+        tolower(tool$Tool),
+        tolower(pkgs_cache$Name),
+        method = "jw", p = 0.1
+    ) > 0.9
     matches <- matches & !(pkgs_cache$Repository %in% tool$Ignored)
 
-    if (length(matches) > 0) {
+    if (sum(matches) > 0) {
+
+        cat("\n")
+        usethis::ui_todo(glue::glue(
+            "{usethis::ui_value(sum(matches))} ",
+            "potential packages found for {usethis::ui_value(tool$Tool)}"
+        ))
+
         pkg_matches <- pkgs_cache[matches, ]
 
         for (idx in seq_len(nrow(pkg_matches))) {
@@ -338,6 +372,7 @@ update_repositories <- function(name, database, pkgs_cache, prompt = TRUE) {
 
             if (is_real) {
                 tool$Repositories[pkg_type] <- pkg_name
+                tool$Updated <- lubridate::today("UTC")
             } else {
                 tool$Ignored <- c(tool$Ignored, pkg_matches$Repository[idx])
             }

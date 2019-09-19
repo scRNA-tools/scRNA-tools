@@ -52,7 +52,7 @@ source("app/save.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.0.0.9005")
+opts <- docopt(DOCOPT, version = "0.0.0.9006")
 
 logo <- get_logo()
 cat(logo, "\n")

@@ -26,7 +26,7 @@ get_pkgs_cache <- function() {
             rep("PyPI",  length(pypi_pkgs)),
             rep("Conda", length(conda_pkgs))
         ),
-        Added = lubridate::today("UTC")
+        Added = lubridate::now("UTC")
     ) %>%
         dplyr::mutate(Repository = paste(Name, Type, sep = "@")) %>%
         dplyr::select(Repository, Name, Type, Added)

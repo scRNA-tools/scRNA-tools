@@ -88,7 +88,10 @@ build <- function(database, pkgs_cache, data_dir, plot_dir) {
                     )$count
                     break
                 }, error = function(e) {
-                    usethis::ui_info(paste(x, "attempt", i, "failed"))
+                    cat("\n")
+                    usethis::ui_info(glue::glue(
+                        "{usethis::ui_value(names(database$Tools)[idx])} ",
+                        "attempt {usethis::ui_value(i)} failed"))
                 })
             }
             Sys.sleep(sample(seq(0, 1, 0.1), 1))
@@ -96,7 +99,6 @@ build <- function(database, pkgs_cache, data_dir, plot_dir) {
             if (cites > references$Citations[idx]) {
                 n_updated <- n_updated + 1
                 references$Citations[idx] <- cites
-                references$Timestamp[idx] <- lubridate::now("UTC")
                 # Start with random delay between 0.5 and 1.5 hours
                 references$Delay[idx] <- runif(1, 0.5, 1.5) / 24
             } else {
@@ -108,6 +110,9 @@ build <- function(database, pkgs_cache, data_dir, plot_dir) {
                     as.numeric(references$Delay[idx] + diff), 30
                 )
             }
+
+            # Set check timestamp
+            references$Timestamp[idx] <- lubridate::now("UTC")
         }
     }
     database$References <- references
@@ -130,6 +135,7 @@ build <- function(database, pkgs_cache, data_dir, plot_dir) {
 
     # Make plots
     usethis::ui_todo("Analysing database...")
+    fs::dir_create(plot_dir)
     save_number_plot(database, plot_dir)
     save_pub_plot(database, plot_dir)
     save_platform_plot(database, plot_dir)
