@@ -249,17 +249,12 @@ $(document).ready(function () {
 				/* -- Assign returned data -- */
 
 				var tool_information = {
-					"name" : value.Name,
-					"doi" : value.DOIs,
-					"doiURL" : value.DOIURL,
-					"pubDate" : value.PubDates,
-					"preprint" : value.Preprint,
+					"name" : value.Tool,
 					"citations" : value.Citations,
-					"refs" : value.Refs,
 					"description" : value.Description,
 					"platform" : value.Platform,
 					"code" : value.Code,
-					"github" : value.Github,
+					"github" : value.GitHub,
 					"added" : value.Added,
 					"updated" : value.Updated,
 					"license" : value.License,
@@ -267,10 +262,11 @@ $(document).ready(function () {
 					"bioc" : value.BioC,
 					"pypi" : value.PyPI,
 					"cran" : value.CRAN,
-					"nPubs" : value.Publications,
-					"nPres" : value.Preprints,
-					"totalRefs" : value.Publications + value.Preprints,
-					"cats": value.Categories
+					"pubs" : value.Publications,
+					"pres" : value.Preprints,
+					"nPubs" : value.NumPubs,
+					"nPres" : value.NumPreprints,
+					"totalRefs" : value.NumPubs + value.NumPreprints
 				}
 
 				entry = toolItem(tool_information)

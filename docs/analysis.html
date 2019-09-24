@@ -126,11 +126,21 @@
             </div>
 
             <script>
-                var p1 = new pym.Parent('number', 'plots/number.html', {})
-                var p2 = new pym.Parent('publication', 'plots/publication.html', {})
-                var p3 = new pym.Parent('platforms', 'plots/platforms.html', {})
-                var p4 = new pym.Parent('licenses', 'plots/licenses.html', {})
-                var p5 = new pym.Parent('categories', 'plots/categories.html', {})
+                jQuery.getJSON('plots/number.json', function(data) {
+                    Plotly.newPlot('number', data.data, data.layout, data.config)
+                })
+                jQuery.getJSON('plots/publication.json', function(data) {
+                    Plotly.newPlot('publication', data.data, data.layout, data.config)
+                })
+                jQuery.getJSON('plots/platforms.json', function(data) {
+                    Plotly.newPlot('platforms', data.data, data.layout, data.config)
+                })
+                jQuery.getJSON('plots/licenses.json', function(data) {
+                    Plotly.newPlot('licenses', data.data, data.layout, data.config)
+                })
+                jQuery.getJSON('plots/categories.json', function(data) {
+                    Plotly.newPlot('categories', data.data, data.layout, data.config)
+                })
             </script>
 
         </div>

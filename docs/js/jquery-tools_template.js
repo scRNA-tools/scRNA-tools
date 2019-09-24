@@ -13,7 +13,7 @@ function linkCats (cats) {
 
 function toolItem(tool_information){
 
-	/* Probably should look into a frontend templating system, i.e. moustache. 
+	/* Probably should look into a frontend templating system, i.e. moustache.
 	   Otherwise, upgrade hosting to allow server-side programming */
 
 	var entry = '' // String that reprsents markup of individual tool
@@ -42,7 +42,7 @@ function toolItem(tool_information){
 			$.each(shields, function(index, shield){
 				entry += ' <img border="0" height="15" src="img/shields/' + folder + '/' + repo_name + '_' + shield + '.svg">'
 			})
-		}		
+		}
 
 	})
 
@@ -73,7 +73,7 @@ function toolItem(tool_information){
 					'</a></h4></div>';
 
 
-		// Loop through Publications and/or pre-prints						
+		// Loop through Publications and/or pre-prints
 
 		entry += '<div id="' + tool_information["name"] + '_pubs_c" class="panel-collapse collapse">' +
 				 '<ul class="list-group">';
@@ -81,18 +81,18 @@ function toolItem(tool_information){
 		published_set = {}
 
 		if (tool_information["nPubs"] > 0) {
-			published_set.Publications = tool_information["refs"].Publications
-		} 
+			published_set.Publications = tool_information["pubs"]
+		}
 
 		if (tool_information["nPres"] > 0) {
-			published_set.Preprints = tool_information["refs"].Preprints
-		} 
+			published_set.Preprints = tool_information["pres"]
+		}
 
 		$.each(published_set, function(published_key, published_list){
 
 			entry += '<li class="list-group-item list-title"><h5>' + published_key + '</h5></li>'
 
-			// Loop through publications 
+			// Loop through publications
 			$.each(published_list, function(index, publication){
 
 				entry += '<li class="list-group-item"><em>"' + publication.Title + '"</em><br/>';
@@ -103,13 +103,13 @@ function toolItem(tool_information){
 				} else {
 					entry += '<strong>DOI: </strong> <a href="https://doi.org/' + publication.DOI + '">' + publication.DOI + '</a>' + ', ';
 				}
-				
-				if(published_key == "Publications"){entry += '<strong>Published: </strong>' + publication.PubDate + ', '}
 
-				if (typeof cites !== 'undefined') {
+				if(published_key == "Publications"){entry += '<strong>Published: </strong>' + publication.Date + ', '}
+
+				if (typeof publication.Citations !== 'undefined') {
 					entry += '<strong>Citations: </strong> ' + publication.Citations;
 				}
-					
+
 				entry += '</li>';
 
 			})
