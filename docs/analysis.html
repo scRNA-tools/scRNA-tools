@@ -22,6 +22,8 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
         <!-- Open Graph data -->
         <meta property="og:title" content="scRNA-tools" />
@@ -70,42 +72,36 @@
 
     </head>
 
-    <body>
+    <body id="page-analysis">
 
         <!--// NavBar ------------------------------------------------------ -->
 
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img id="logo-image" alt="scRNA-tools" src="img/banner.svg" />
-                    </a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Table</a></li>
-                    <li><a href="tools.html">Tools</a></li>
-                    <li><a href="categories.html">Categories</a></li>
-                    <li class="active"><a href="#">Analysis</a></li>
-                    <li><a href="updates.html">Updates</a></li>
-                    <li><a href="submit.html">Submit</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter" style="font-size:28px"></i></a></li>
-                    <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github" style="font-size:28px"></i></a></li>
-                </ul>
-            </div>
-        </nav>
+        <div id="frame-header" class="container-fluid">
+            <a id="navbar-brand" href="index.html">
+                <img id="logo-image" class="hidden-sm hidden-xs" alt="scRNA-tools" src="img/banner.svg" />
+                <img id="logo-image" class="hidden-lg hidden-md" alt="scRNA-tools" src="img/banner-symbol.svg" />
+            </a>
+            <ul id="navbar-main">
+                <li><a href="index.html">Table</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li class="active"><a href="#">Analysis</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="submit.html">Submit</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+            <ul id="navbar-util">
+                <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
 
-        <div class="container-fluid">
-
-            <!--// Intro --------------------------------------------------- -->
-
-            <div class="page-header">
+        <div id="page-title" class="container-fluid">
+            <div class="col-lg-12">
                 <h1>Analysis</h1>
             </div>
+        </div>
 
-            <!--// Plots --------------------------------------------------- -->
+        <div id="frame-content" class="container-fluid">
 
             <div class="row">
                 <div class="plot col-xs-12 col-md-6">
@@ -114,33 +110,27 @@
                 <div class="plot col-xs-12 col-md-6">
                     <div id="publication"></div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="plot col-xs-12 col-md-6">
                     <div id="platforms"></div>
                 </div>
                 <div class="plot col-xs-12 col-md-6">
                     <div id="licenses"></div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="plot col-xs-12">
                     <div id="categories"></div>
                 </div>
             </div>
 
             <script>
-                jQuery.getJSON('plots/number.json', function(data) {
-                    Plotly.newPlot('number', data.data, data.layout, data.config)
-                })
-                jQuery.getJSON('plots/publication.json', function(data) {
-                    Plotly.newPlot('publication', data.data, data.layout, data.config)
-                })
-                jQuery.getJSON('plots/platforms.json', function(data) {
-                    Plotly.newPlot('platforms', data.data, data.layout, data.config)
-                })
-                jQuery.getJSON('plots/licenses.json', function(data) {
-                    Plotly.newPlot('licenses', data.data, data.layout, data.config)
-                })
-                jQuery.getJSON('plots/categories.json', function(data) {
-                    Plotly.newPlot('categories', data.data, data.layout, data.config)
-                })
+                var p1 = new pym.Parent('number', 'plots/number.html', {})
+                var p2 = new pym.Parent('publication', 'plots/publication.html', {})
+                var p3 = new pym.Parent('platforms', 'plots/platforms.html', {})
+                var p4 = new pym.Parent('licenses', 'plots/licenses.html', {})
+                var p5 = new pym.Parent('categories', 'plots/categories.html', {})
             </script>
 
         </div>

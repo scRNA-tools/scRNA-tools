@@ -22,6 +22,8 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
         <!-- Open Graph data -->
         <meta property="og:title" content="scRNA-tools" />
@@ -69,50 +71,49 @@
 
     </head>
 
-    <body>
+    <body id="page-updates">
 
-        <!--// NavBar ------------------------------------------------------ -->
+        <!--// Header --------------------------------------------------------->
 
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img id="logo-image" alt="scRNA-tools" src="img/banner.svg" />
-                    </a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Table</a></li>
-                    <li><a href="tools.html">Tools</a></li>
-                    <li><a href="categories.html">Categories</a></li>
-                    <li><a href="analysis.html">Analysis</a></li>
-                    <li class="active"><a href="#">Updates</a></li>
-                    <li><a href="submit.html">Submit</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter" style="font-size:28px"></i></a></li>
-                    <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github" style="font-size:28px"></i></a></li>
-                </ul>
-            </div>
-        </nav>
+        <div id="frame-header" class="container-fluid">
+            <a id="navbar-brand" href="index.html">
+                <img id="logo-image" class="hidden-sm hidden-xs" alt="scRNA-tools" src="img/banner.svg" />
+                <img id="logo-image" class="hidden-lg hidden-md" alt="scRNA-tools" src="img/banner-symbol.svg" />
+            </a>
 
-        <div class="container-fluid">
+            <ul id="navbar-main">
+                <li><a href="index.html">Table</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                <li class="active"><a href="#">Updates</a></li>
+                <li><a href="submit.html">Submit</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+            <ul id="navbar-util">
+                <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
 
-            <!--// Intro --------------------------------------------------- -->
-
-            <div class="page-header">
+        <div id="page-title" class="container-fluid">
+            <div class="col-lg-12">
                 <h1>Updates</h1>
             </div>
+        </div>
 
-            <!--// JSON Table ---------------------------------------------- -->
+        <!--// Content --------------------------------------------------------->
 
-            <a class="twitter-timeline" data-link-color="#984ea3" href="https://twitter.com/scRNAtools">Tweets by scRNAtools</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+        <div id="frame-content" class="container-fluid">
+            <div id="twitter-container">
+                <a class="twitter-timeline" data-link-color="#984ea3" href="https://twitter.com/scRNAtools">Tweets by scRNAtools</a>
+            </div>
         </div>
 
         <footer class="footer">
             <div id="footerContent" class="container"></div>
         </footer>
+
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     </body>
 </html>

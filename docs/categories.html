@@ -70,55 +70,66 @@
 
     </head>
 
-    <body>
+    <body id="page-categories">
 
-        <!--// NavBar ------------------------------------------------------ -->
+        <!--// Header --------------------------------------------------------->
 
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img id="logo-image" alt="scRNA-tools" src="img/banner.svg" />
-                    </a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Table</a></li>
-                    <li><a href="tools.html">Tools</a></li>
-                    <li class="active"><a href="#">Categories</a></li>
-                    <li><a href="analysis.html">Analysis</a></li>
-                    <li><a href="updates.html">Updates</a></li>
-                    <li><a href="submit.html">Submit</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter" style="font-size:28px"></i></a></li>
-                    <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github" style="font-size:28px"></i></a></li>
-                </ul>
+        <div id="frame-header" class="container-fluid">
+            <a id="navbar-brand" href="index.html">
+                <img id="logo-image" class="hidden-sm hidden-xs" alt="scRNA-tools" src="img/banner.svg" />
+                <img id="logo-image" class="hidden-lg hidden-md" alt="scRNA-tools" src="img/banner-symbol.svg" />
+            </a>
+            <ul id="navbar-main">
+                <li><a href="index.html">Table</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li class="active"><a href="categories.html">Categories</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="submit.html">Submit</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+            <ul id="navbar-util">
+                <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+
+        <div id="page-title" class="container-fluid">
+            <div class="col-lg-12">
+                <h1>Categories</h1>
             </div>
-        </nav>
+        </div>
 
         <div class="container-fluid">
 
-            <!--// Intro --------------------------------------------------- -->
+            <div class="col-lg-3">
+                <div id="manipulators">
+                    
+                    <h2>Sorting &amp; Filters</h2>
 
-            <div class="page-header">
-                <h1>Categories</h1>
+                    <!-- Sorting -->
+                    <ul>
+                        <li>
+                            <select name="selectsort", class="sortbox">
+                                <option value="name">Name</option>
+                                <option value="refs">References</option>
+                                <option value="pubs">Publications</option>
+                                <option value="pres">Preprints</option>
+                                <option value="cites">Citations</option>
+                                <option value="added">Added</option>
+                                <option value="updated">Updated</option>
+                            </select>
+                        </li>
+                    </ul>
 
-                <h2>Sort by:</h2>
-                <select name="selectsort", class="sortbox">
-                    <option value="name">Name</option>
-                    <option value="refs">References</option>
-                    <option value="pubs">Publications</option>
-                    <option value="pres">Preprints</option>
-                    <option value="cites">Citations</option>
-                    <option value="added">Added</option>
-                    <option value="updated">Updated</option>
-                </select>
+                    <!-- Filters -->
+
+                </div>
             </div>
 
             <!--// JSON Table ---------------------------------------------- -->
 
-            <div class="panel-group">
+            <div class="panel-group col-lg-9"">
                 <div class="panel panel-default" id="categories-list">
                 </div>
             </div>
@@ -128,6 +139,10 @@
         <footer class="footer">
             <div id="footerContent" class="container"></div>
         </footer>
+
+        <script type="application/javascript">
+            window.location.href = "/tools.html";
+        </script>
 
     </body>
 </html>
