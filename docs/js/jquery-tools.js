@@ -58,7 +58,7 @@ $(document).ready(function () {
             break
           case 'refs':
             data.sort(function(obj1, obj2) {
-              return (obj2.Publications + obj2.Preprints) - (obj1.Publications + obj1.Preprints)
+              return (obj2.NumPubs + obj2.NumPreprints) - (obj1.NumPubs + obj1.NumPreprints)
             })
             break
           case 'pubs':
@@ -90,13 +90,8 @@ $(document).ready(function () {
 
       $.each(data, function (key, value) {
         /* -- Assign returned data -- */
-        var name = value.Name
-        var doi = value.DOIs
-        var doiURL = value.DOIURL
-        var pubDate = value.PubDates
-        var preprint = value.Preprint
+        var name = value.Tool
         var citations = value.Citations
-        var refs = value.Refs
         var description = value.Description
         var platform = value.Platform
         var code = value.Code
@@ -105,11 +100,11 @@ $(document).ready(function () {
         var updated = value.Updated
         var license = value.License
         var cats = value.Categories
-        var bioc = value.BioC
+        var bioc = value.Bioc
         var pypi = value.PyPI
         var cran = value.CRAN
-        var nPubs = value.Publications
-        var nPres = value.Preprints
+        var nPubs = value.NumPubs
+        var nPres = value.NumPreprints
         var totalRefs = nPubs + nPres
 
         var entry = ''
@@ -152,7 +147,7 @@ $(document).ready(function () {
                    '<ul class="list-group">'
 
           if (nPubs > 0) {
-            var pubs = refs.Publications
+            var pubs = value.Publications
 
             entry += '<li class="list-group-item"><strong>Publications</strong></li>'
 
@@ -160,7 +155,7 @@ $(document).ready(function () {
 
               var title = val.Title
               var doi = val.DOI
-              var date = val.PubDate
+              var date = val.Date
               var cites = val.Citations
 
               entry += '<li class="list-group-item">'
@@ -173,7 +168,7 @@ $(document).ready(function () {
           }
 
           if (nPres > 0) {
-            var pres = refs.Preprints
+            var pres = value.Preprints
 
             entry += '<li class="list-group-item"><strong>Preprints</strong></li>'
 

@@ -137,12 +137,12 @@
                 data-url="data/tools-table.json">
                 <thead>
                     <tr>
-                        <th data-field="Name" data-sortable="true" data-switchable="false" data-formatter="nameFormatter">Name</th>
+                        <th data-field="Tool" data-sortable="true" data-switchable="false" data-formatter="nameFormatter">Name</th>
                         <th data-field="Platform" data-sortable="true" data-filter-control="select">Platform</th>
                         <th data-field="DOIs" data-sortable="true" data-visible="true">DOIs</th>
-                        <th data-field="PubDates" data-sortable="true" data-visible="false">Pub Dates</th>
+                        <th data-field="Dates" data-sortable="true" data-visible="false">Pub Dates</th>
                         <th data-field="Citations" data-sortable="true" data-visible="true">Citations</th>
-                        <th data-field="Code" data-sortable="true" data-visible="false">Code</th>
+                        <th data-field="Code" data-sortable="true" data-visible="false" data-formatter="codeFormatter">Code</th>
                         <th data-field="Description" data-sortable="true" data-visible="false">Description</th>
                         <th data-field="License" data-sortable="true" data-visible="true" data-filter-control="select">License</th>
                         <th data-field="Categories" data-sortable="true" data-visible="true" data-formatter="catsFormatter">Categories</th>
@@ -155,6 +155,7 @@
                         <th data-field="Imputation" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Imputation</th>
                         <th data-field="GeneFiltering" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Gene Filtering</th>
                         <th data-field="Clustering" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Clustering</th>
+                        <th data-field="Classification" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Classification</th>
                         <th data-field="Ordering" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Ordering</th>
                         <th data-field="DifferentialExpression" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Differential Expression</th>
                         <th data-field="MarkerGenes" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Marker Genes</th>
@@ -199,6 +200,10 @@
 
         function nameFormatter (value) {
           return '<a href="tools.html#' + value + '">' + value + '</a>'
+        }
+
+        function codeFormatter (value) {
+          return '<a href="' + value + '">' + value + '</a>'
         }
 
         function catsFormatter (value) {

@@ -1,0 +1,311 @@
+{
+  "data": [
+    {
+      "orientation": "v",
+      "width": 0.9,
+      "base": 207,
+      "x": [1],
+      "y": [277],
+      "text": "Count: 277<br />Type: Published",
+      "type": "bar",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(236,0,140,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "transparent"
+        }
+      },
+      "name": "Published",
+      "legendgroup": "Published",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": 0.9,
+      "base": 50,
+      "x": [1],
+      "y": [157],
+      "text": "Count: 157<br />Type: Preprint",
+      "type": "bar",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,173,239,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "transparent"
+        }
+      },
+      "name": "Preprint",
+      "legendgroup": "Preprint",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": 0.9,
+      "base": 0,
+      "x": [1],
+      "y": [50],
+      "text": "Count:  50<br />Type: Not published",
+      "type": "bar",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(141,198,63,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "transparent"
+        }
+      },
+      "name": "Not published",
+      "legendgroup": "Not published",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1],
+      "y": [345.5],
+      "text": "Published 57.2%",
+      "hovertext": "Midpoint: 345.5<br />Count: 345.5<br />Type: Published",
+      "textfont": {
+        "size": 22.6771653543307,
+        "color": "rgba(255,255,255,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "name": "Published",
+      "legendgroup": "Published",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1],
+      "y": [128.5],
+      "text": "Preprint 32.4%",
+      "hovertext": "Midpoint: 128.5<br />Count: 128.5<br />Type: Preprint",
+      "textfont": {
+        "size": 22.6771653543307,
+        "color": "rgba(255,255,255,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "name": "Preprint",
+      "legendgroup": "Preprint",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1],
+      "y": [25],
+      "text": "Not published 10.3%",
+      "hovertext": "Midpoint:  25.0<br />Count:  25.0<br />Type: Not published",
+      "textfont": {
+        "size": 22.6771653543307,
+        "color": "rgba(255,255,255,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "name": "Not published",
+      "legendgroup": "Not published",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  "layout": {
+    "margin": {
+      "t": 50,
+      "r": 100,
+      "b": 20,
+      "l": 100
+    },
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 18.5969281859693
+    },
+    "title": {
+      "text": "<b> Publication status <\/b>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 26.5670402656704
+      },
+      "x": 0.5,
+      "xref": "paper"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0.505, 1.495],
+      "tickmode": "array",
+      "ticktext": ["0.75", "1.00", "1.25"],
+      "tickvals": [0.75, 1, 1.25],
+      "categoryorder": "array",
+      "categoryarray": ["0.75", "1.00", "1.25"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 0,
+      "tickwidth": 0,
+      "showticklabels": false,
+      "tickfont": {
+        "color": null,
+        "family": null,
+        "size": 0
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": false,
+      "gridcolor": null,
+      "gridwidth": 0,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "",
+        "font": {
+          "color": null,
+          "family": null,
+          "size": 0
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-24.2, 508.2],
+      "tickmode": "array",
+      "ticktext": ["0", "100", "200", "300", "400", "500"],
+      "tickvals": [0, 100, 200, 300, 400, 500],
+      "categoryorder": "array",
+      "categoryarray": ["0", "100", "200", "300", "400", "500"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 0,
+      "tickwidth": 0,
+      "showticklabels": false,
+      "tickfont": {
+        "color": null,
+        "family": null,
+        "size": 0
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": false,
+      "gridcolor": null,
+      "gridwidth": 0,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "",
+        "font": {
+          "color": null,
+          "family": null,
+          "size": 0
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": null,
+      "bordercolor": null,
+      "borderwidth": 0,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 15.9402241594022
+      }
+    },
+    "hovermode": "closest",
+    "height": 600,
+    "barmode": "relative"
+  },
+  "config": {
+    "doubleClick": "reset",
+    "showSendToCloud": false,
+    "responsive": true
+  },
+  "source": "A",
+  "attrs": {
+    "1a3e18575cb7": {
+      "x": {},
+      "y": {},
+      "fill": {},
+      "type": "bar"
+    },
+    "1a3ef87fedd": {
+      "y": {},
+      "label": {},
+      "x": {},
+      "y.1": {},
+      "fill": {}
+    }
+  },
+  "cur_data": "1a3e18575cb7",
+  "visdat": {
+    "1a3e18575cb7": ["function (y) ", "x"],
+    "1a3ef87fedd": ["function (y) ", "x"]
+  },
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot"],
+  "base_url": "https://plot.ly"
+}

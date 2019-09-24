@@ -95,11 +95,10 @@ $(document).ready(function () {
 
         // Loop over tools
         $.each(tools, function (k, val) {
-          var name = val.Name
-          var bioc = val.BioC
+          var name = val.Tool
+          var bioc = val.Bioc
           var pypi = val.PyPI
           var cran = val.CRAN
-          var github = val.Github
 
           entry += '<li class="list-group-item"><a href="tools.html#' + name + '">' + name + '</a>'
 
