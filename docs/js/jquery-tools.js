@@ -273,6 +273,8 @@ $(document).ready(function () {
 					"cats": value.Categories
 				}
 
+				console.log(value.Citations)
+
 				entry = toolItem(tool_information)
 
 				// If any categories are selected for filtering, pass non-matches.
@@ -418,9 +420,14 @@ $(document).ready(function () {
 
 	$(function(){
 		$("[name=selectsort]").change(function(){
+			$("[name=category_filter]").val("");
 			pushURL();
 		})
 		$("#category_submit").click(function(){
+			pushURL();
+		});
+		$("#category_reset").click(function(){
+			$("[name=category_filter]").val("");
 			pushURL();
 		});
 	})
