@@ -36,6 +36,8 @@
         <meta name="twitter:title" content="scRNA-tools table page" />
         <meta name="twitter:description" content="Filter and sort scRNA-seq analysis tools" />
         <meta name="twitter:image" content="https://cdn.rawgit.com/Oshlack/scRNA-tools/f45942d5/docs/img/square.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
         <meta name="description" content="A catalogue of single-cell RNA-sequencing analysis tools">
     	<title>scRNA-tools</title>
@@ -82,45 +84,41 @@
 
     </head>
 
-    <body>
+    <body id="page-table">
 
-        <!--// NavBar ------------------------------------------------------ -->
+         <!--// Header --------------------------------------------------------->
 
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img id="logo-image" alt="scRNA-tools" src="img/banner.svg" />
-                    </a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Table</a></li>
-                    <li><a href="tools.html">Tools</a></li>
-                    <li><a href="categories.html">Categories</a></li>
-                    <li><a href="analysis.html">Analysis</a></li>
-                    <li><a href="updates.html">Updates</a></li>
-                    <li><a href="submit.html">Submit</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter" style="font-size:28px"></i></a></li>
-                    <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github" style="font-size:28px"></i></a></li>
-                </ul>
+        <div id="frame-header" class="container-fluid">
+            <a id="navbar-brand" href="index.html">
+                <img id="logo-image" class="hidden-sm hidden-xs" alt="scRNA-tools" src="img/banner.svg" />
+                <img id="logo-image" class="hidden-lg hidden-md" alt="scRNA-tools" src="img/banner-symbol.svg" />
+            </a>
+            <ul id="navbar-main">
+                <li class="active"><a href="#">Table</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="submit.html">Submit</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+            <ul id="navbar-util">
+                <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+
+        <div id="page-title" class="container-fluid">
+            <div class="col-lg-12">
+                <h1>Tools Table</h1>
+                <h2>A table of tools for the analysis of single-cell RNA-seq data</h2>
             </div>
-        </nav>
-
-        <div class="container-fluid">
-
-            <!--// Intro --------------------------------------------------- -->
-
-            <div class="page-header">
-                <h1>Tools table</h1>
-                <h2>A table of tools for the analysis of single-cell RNA-seq data<h2>
-            </div>
+        </div>
+        <div id="frame-content" class="container-fluid">
 
             <!--// Table --------------------------------------------------- -->
             <!--data-advanced-search="true"-->
-            <table
+            <table class="table-dark"
+                data-page-size=30 
                 data-toggle="table"
                 data-pagination="true"
                 data-show-pagination-switch="true"

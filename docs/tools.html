@@ -22,6 +22,8 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
         <!-- Open Graph data -->
         <meta property="og:title" content="scRNA-tools" />
@@ -36,7 +38,6 @@
         <meta name="twitter:title" content="scRNA-tools tools page" />
         <meta name="twitter:description" content="Catalogue of scRNA-seq analysis tools" />
         <meta name="twitter:image" content="https://cdn.rawgit.com/Oshlack/scRNA-tools/f45942d5/docs/img/square.png" />
-
         <meta name="description" content="A catalogue of single-cell RNA-sequencing analysis tools">
         <title>scRNA-tools</title>
 
@@ -51,19 +52,117 @@
 
     </head>
 
-    <body>
+    <body id="page-tools">
 
         <!--// Header --------------------------------------------------------->
 
-        <div id="header"></div>
+        <div id="frame-header" class="container-fluid">
+            <a id="navbar-brand" href="index.html">
+                <img id="logo-image" class="hidden-sm hidden-xs" alt="scRNA-tools" src="img/banner.svg" />
+                <img id="logo-image" class="hidden-lg hidden-md" alt="scRNA-tools" src="img/banner-symbol.svg" />
+            </a>
+            <ul id="navbar-main">
+                <li><a href="index.html">Table</a></li>
+                <li class="active"><a href="#">Tools</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="submit.html">Submit</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+            <ul id="navbar-util">
+                <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+
+        <div id="page-title" class="container-fluid">
+            <div class="col-lg-12">
+                <h1>Tools</h1>
+            </div>
+        </div>
 
         <!--// Content--------------------------------------------------------->
 
-        <div class="container-fluid">
+        <div id="frame-content" class="container-fluid">
+
+            <!-- Filtering sidebar -->
+
+            <div class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+
+                <div id="manipulators">
+
+                    <h2>Sorting &amp; Filters</h2>
+
+                    <!-- Sorting -->
+                    <ul>
+                        <li>
+                            <label for="selectsort">Sort by</label>
+                            <select id="selectsort" name="selectsort" class="sortbox">
+                                <option value="name">Name</option>
+                                <option value="refs">References</option>
+                                <option value="pubs">Publications</option>
+                                <option value="pres">Preprints</option>
+                                <option value="cites">Citations</option>
+                                <option value="added">Added</option>
+                                <option value="updated">Updated</option>
+                            </select>
+                        </li>
+                    </ul>
+
+                    <!-- Filters -->
+
+                    <ul>
+                        <li>
+                            <label for="category_filter">Filter by Category <span>Select multiple and click the go button below.</span></label>
+                            <select id="category_filter" name="category_filter" multiple="multiple">
+                                <option value="Alignment">Alignment</option>
+                                <option value="AlleleSpecific">Allele Specific</option>
+                                <option value="AlternativeSplicing">Alternative Splicing</option>
+                                <option value="Assembly">Assembly</option>
+                                <option value="CellCycle">Cell Cycle</option>
+                                <option value="Classification">Classification</option>
+                                <option value="Clustering">Clustering</option>
+                                <option value="DifferentialExpression">Differential Expression</option>
+                                <option value="DimensionalityReduction">Dimensionality Reduction</option>
+                                <option value="GeneFiltering">Gene Filtering</option>
+                                <option value="GeneNetworks">Gene Networks</option>
+                                <option value="GeneSets">Gene Sets</option>
+                                <option value="Haplotypes">Haplotypes</option>
+                                <option value="Immune">Immune</option>
+                                <option value="Imputation">Imputation</option>
+                                <option value="Integration">Integration</option>
+                                <option value="Interactive">Interactive</option>
+                                <option value="MarkerGenes">MarkerGenes</option>
+                                <option value="Modality">Modality</option>
+                                <option value="Normalisation">Normalisation</option>
+                                <option value="Ordering">Ordering</option>
+                                <option value="QualityControl">Quality Control</option>
+                                <option value="Quantification">Quantification</option>
+                                <option value="RareCells">Rare Cells</option>
+                                <option value="Simulation">Simulation</option>
+                                <option value="StemCells">Stem Cells</option>
+                                <option value="Transformation">Transformation</option>
+                                <option value="UMIs">UMIs</option>
+                                <option value="VariableGenes">Variable Genes</option>
+                                <option value="Variants">Variants</option>
+                                <option value="Visualisation">Visualisation</option> 
+                            </select>
+                            <button id="category_submit">Filter</button>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
 
             <!-- JSON Table -->
-            <div class="panel-group">
-                <div class="panel panel-default" id="tools-list"></div>
+
+            <div id="tools-bg" class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                <div class="panel-group">
+                    <ul id="name-bookmarks"></ul>
+                    <div class="panel panel-default" id="tools-list"></div>
+                </div>
             </div>
 
         </div>
@@ -79,6 +178,9 @@
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+        <script type="application/javascript" src="js/jquery-tools_template.js"></script>
         <script type="application/javascript" src="js/jquery-tools.js"></script>
         <script type="application/javascript" src="js/jquery-config.js"></script>
 
