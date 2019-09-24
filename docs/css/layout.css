@@ -570,7 +570,7 @@ Table Layout
 {
 	border-right:1px solid #3d4972;
 	border-bottom:none !important;
-	padding:5px 150px 5px 10px !important;
+	padding:5px 10px!important;
 	background-color:#2A3356;
 	background-image:url("../img/icon-sort.svg");
 	background-repeat:no-repeat;
@@ -581,6 +581,12 @@ Table Layout
 	text-transform: uppercase;
 	white-space:nowrap;
 	min-width:100%;
+	position:relative;
+}
+
+.fixed-table-container thead th .both
+{
+	padding-right:150px;
 }
 
 .fixed-table-container .table-dark thead th .both
@@ -591,7 +597,10 @@ Table Layout
 }
 
 .fixed-table-container .table-dark thead th .fht-cell {
-	display:inline-block;
+    position: absolute;
+    right: 30px;
+    width: 120px;
+    top: 6px;
 }
 
 .fixed-table-container .table-dark thead th .fht-cell .filter-control{
@@ -819,6 +828,7 @@ Tools Layout
 
 #manipulators button
 {
+	border:1px solid #2A3255;
 	background:#2A3255;
 	color:#FFFFFF;
 	font-size:12px;
@@ -834,7 +844,6 @@ Tools Layout
 	background:#ffffff;
 	border:1px solid #2A3255;
 	color:#2A3255;
-	padding:6px 12px;
 }
 
 #name-bookmarks

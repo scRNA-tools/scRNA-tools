@@ -20,7 +20,7 @@ function toolItem(tool_information){
 
 
 	//  Tool Title ========================================================
-
+	entry += '<div class="tool-container">'
 	entry += '<div class="tool">' +
 			 '<h4 id="' + tool_information["name"] + '" class="panel-title">' +
 			 '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + tool_information["name"] + '_c">' + tool_information["name"] + "<span>";
@@ -141,7 +141,7 @@ function toolItem(tool_information){
 			 '<li class="list-group-item">' +
 			 '<strong>Added: </strong> ' + tool_information["added"] + ', ' +
 			 '<strong>Updated: </strong>' + tool_information["updated"] +
-			 '</li></ul></div>';
+			 '</li></ul></div></div>';
 
 
 	return(entry)
