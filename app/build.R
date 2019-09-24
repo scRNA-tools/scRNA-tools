@@ -50,8 +50,9 @@ build <- function(database, pkgs_cache, data_dir, plot_dir) {
                                             prompt = FALSE)
         }
         usethis::ui_done("Repositories updated")
+    } else {
+        usethis::ui_done("Repositories up to date")
     }
-    usethis::ui_done("Repositories up to date")
 
     # Update citations
     usethis::ui_todo("Updating citations...")
@@ -96,7 +97,7 @@ build <- function(database, pkgs_cache, data_dir, plot_dir) {
             }
             Sys.sleep(sample(seq(0, 1, 0.1), 1))
 
-            if (cites > references$Citations[idx]) {
+            if (!is.na(cites) && cites > references$Citations[idx]) {
                 n_updated <- n_updated + 1
                 references$Citations[idx] <- cites
                 # Start with random delay between 0.5 and 1.5 hours

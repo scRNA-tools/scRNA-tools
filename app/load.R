@@ -242,7 +242,7 @@ load_pkgs_cache <- function(dir) {
             Name       = readr::col_character(),
             Type       = readr::col_character(),
             Repository = readr::col_character(),
-            Added      = readr::col_date(format = "")
+            Added      = readr::col_datetime()
         )
     )
 

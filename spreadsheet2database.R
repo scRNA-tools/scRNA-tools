@@ -6,7 +6,15 @@
 # Luke Zappia
 # 2019-09-17
 
-library("tidyverse")
+library("dplyr")
+library("tidyr")
+library("readr")
+library("stringr")
+library("purrr")
+library("tibble")
+library("lubridate")
+library("rcrossref")
+library("aRxiv")
 
 swsheet <- read_csv(
     "single_cell_software.csv",
@@ -50,11 +58,22 @@ papers <- dois %>%
     ) %>%
     select(-Tool)
 
-cr_refs <- papers %>%
+cr_dois <- papers %>%
     filter(!arXiv) %>%
-    pull(DOI) %>%
-    rcrossref::cr_works(cr_dois, .progress = "text") %>%
-    magrittr::extract2("data")
+    pull(DOI)
+
+cr_refs <- map_dfr(cr_dois, function(x) {
+    message(x)
+    for (i in 1:10) {
+        tryCatch({
+            ref <- rcrossref::cr_works(x)
+            break
+        }, error = function(e) {
+            message("Failed ", i)
+        })
+    }
+    ref$data
+})
 
 cr_refs2 <- cr_refs %>%
     select(DOI = doi, Date = issued, Title = title)
@@ -78,7 +97,18 @@ citations <- dois %>%
     distinct(DOI) %>%
     filter(!str_detect(DOI, "arxiv/")) %>%
     pull(DOI) %>%
-    rcrossref::cr_citation_count() %>%
+    map_dfr(function(x) {
+        message(x)
+        for (i in 1:10) {
+            tryCatch({
+                cites <- rcrossref::cr_citation_count(x)
+                break
+            }, error = function(e) {
+                message("Failed ", i)
+            })
+        }
+        cites
+    }) %>%
     rename(DOI = doi, Count = count) %>%
     mutate(Timestamp = lubridate::now("UTC")) %>%
     mutate(Delay = 0)
@@ -86,7 +116,8 @@ citations <- dois %>%
 references <- papers %>%
     left_join(refs, by = "DOI") %>%
     left_join(citations, by = "DOI") %>%
-    select(DOI, arXiv, Preprint, Date, Title, Citations = Count, Timestamp) %>%
+    select(DOI, arXiv, Preprint, Date, Title, Citations = Count,
+           Timestamp, Delay) %>%
     mutate(Title = str_squish(Title)) %>%
     distinct()
 
@@ -134,7 +165,7 @@ pkgs_cache <- tibble(
         rep("PyPI",  length(pypi_pkgs)),
         rep("Conda", length(conda_pkgs))
     ),
-    Added = lubridate::today("UTC")
+    Added = lubridate::now("UTC")
 ) %>%
     mutate(Repository = paste(Name, Type, sep = "@")) %>%
     select(Repository, Name, Type, Added)

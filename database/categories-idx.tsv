@@ -446,11 +446,14 @@ HoneyBADGER	Variants
 HoneyBADGER	Visualisation
 HopLand	Ordering
 HopLand	Visualisation
+hscScore	Classification
+hscScore	StemCells
 HurdleNormal	GeneNetworks
-IA-SVA	MarkerGenes
-IA-SVA	Normalisation
+I-Impute	DimensionalityReduction
+I-Impute	Imputation
 iasva	DimensionalityReduction
 iasva	MarkerGenes
+iasva	Normalisation
 indeXplorer	Interactive
 indeXplorer	Visualisation
 inferCNV	Variants
@@ -563,10 +566,10 @@ MetaCell	MarkerGenes
 MetaCell	QualityControl
 MetaCell	VariableGenes
 MetaCell	Visualisation
-MetaNeighbour	Classification
-MetaNeighbour	Clustering
-MetaNeighbour	GeneSets
-MetaNeighbour	VariableGenes
+MetaNeighbor	Classification
+MetaNeighbor	Clustering
+MetaNeighbor	GeneSets
+MetaNeighbor	VariableGenes
 MFA	Ordering
 MFA	Simulation
 MFA	Visualisation
@@ -597,6 +600,8 @@ Monocle	Visualisation
 Mpath	Ordering
 mpCMF	DimensionalityReduction
 MPSSC	Clustering
+MTGO-SC	GeneNetworks
+MTGO-SC	GeneSets
 MUDAN	Clustering
 MUDAN	DifferentialExpression
 MUDAN	DimensionalityReduction
@@ -664,6 +669,7 @@ Palantir	Ordering
 Palantir	QualityControl
 Palantir	Visualisation
 ParaDPMM	Classification
+PARC	Clustering
 PBA	Ordering
 PBLR	Imputation
 pcaReduce	Clustering
@@ -695,6 +701,7 @@ polyApipe	Quantification
 polyApipe	UMIs
 powsimR	Simulation
 powsimR	Visualisation
+Pre-Phaser	CellCycle
 PROSSTT	Simulation
 pseudodynamics	Ordering
 pseudogp	Ordering
@@ -706,6 +713,7 @@ PyMINEr	GeneNetworks
 PyMINEr	GeneSets
 PyMINEr	Visualisation
 pyNVR	VariableGenes
+QUBIC2	Clustering
 RaceID2	RareCells
 RAFSIL	Clustering
 RAFSIL	DimensionalityReduction
@@ -783,6 +791,7 @@ Scanpy	QualityControl
 Scanpy	Simulation
 Scanpy	VariableGenes
 Scanpy	Visualisation
+scAPA	AlternativeSplicing
 Scater	DimensionalityReduction
 Scater	Interactive
 Scater	Normalisation
@@ -799,6 +808,8 @@ scclusteval	Clustering
 scclusteval	Visualisation
 scClustViz	Interactive
 scClustViz	Visualisation
+scDAPA	AlternativeSplicing
+scDAPA	Visualisation
 scDD	DifferentialExpression
 scDD	Simulation
 scDDboost	DifferentialExpression
@@ -921,8 +932,11 @@ scMatch	Classification
 scMatch	GeneSets
 scMCA	Classification
 scMCA	Visualisation
+scMerge	Clustering
+scMerge	DimensionalityReduction
 scMerge	Integration
 scMerge	Normalisation
+scMerge	VariableGenes
 scMetric	DimensionalityReduction
 scMetric	Visualisation
 scModels	Simulation
@@ -957,6 +971,10 @@ SCORPIUS	Ordering
 SCORPIUS	Visualisation
 SCOUP	Ordering
 SCOUT	Ordering
+scPanoView	Clustering
+scPanoView	DimensionalityReduction
+scPanoView	VariableGenes
+scPanoView	Visualisation
 SCPattern	DifferentialExpression
 SCPattern	ExpressionPatterns
 SCPattern	Interactive
@@ -1072,6 +1090,7 @@ SEPA	ExpressionPatterns
 SEPA	GeneSets
 SEPA	Interactive
 SEPIRA	GeneNetworks
+seqgendiff	Simulation
 Seurat	Clustering
 Seurat	DifferentialExpression
 Seurat	DimensionalityReduction
@@ -1248,7 +1267,6 @@ TBSP	Visualisation
 TCM	DimensionalityReduction
 TCM	Visualisation
 tn_test	DifferentialExpression
-tn_test	Simulation
 tn_test	Visualisation
 TooManyCells	Clustering
 TooManyCells	DifferentialExpression
