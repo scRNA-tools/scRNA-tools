@@ -27,24 +27,39 @@ function toolItem(tool_information){
 
 	// Loop through title badges -------------
 
-	panel_shields = {
-		"BioC": ["years", "downloads"],
-		"CRAN": ["version", "downloads"],
-		"PyPI": ["version", "python", "status"]
-	}
+	// panel_shields = {
+	// 	"Bioc": ["years", "downloads"],
+	// 	"CRAN": ["version", "downloads"],
+	// 	"PyPI": ["version", "python", "status"]
+	// }
 
-	$.each(panel_shields, function(folder, shields){
+	// $.each(panel_shields, function(folder, shields){
 
-		svg_name = folder.toLowerCase();
-		repo_name = tool_information[svg_name];
+	// 	svg_name = folder.toLowerCase();
+	// 	repo_name = tool_information[svg_name];
 
-		if (typeof tool_information[svg_name] !== 'undefined') {
-			$.each(shields, function(index, shield){
-				entry += ' <img border="0" height="15" src="img/shields/' + folder + '/' + repo_name + '_' + shield + '.svg">'
-			})
-		}
+	// 	if (typeof tool_information[svg_name] !== 'undefined') {
+	// 		$.each(shields, function(index, shield){
+	// 			entry += ' <img border="0" height="15" src="img/shields/' + folder + '/' + repo_name + '_' + shield + '.svg">'
+	// 		})
+	// 	}
+	// })
 
-	})
+	if (typeof tool_information["bioc"] !== 'undefined') {
+		entry += ' <img border="0" height="15" src="http://bioconductor.org/shields/years-in-bioc/' + tool_information["bioc"] + '.svg">' +
+				 ' <img border="0" height="15" src="http://bioconductor.org/shields/downloads/release/' + tool_information["bioc"] + '.svg">'
+	  }
+
+	  if (typeof tool_information["cran"] !== 'undefined') {
+		entry += ' <img border="0" height="15" src="http://www.r-pkg.org/badges/version/' + tool_information["cran"] + '">' +
+				 ' <img border="0" height="15" src="http://cranlogs.r-pkg.org/badges/grand-total/' + tool_information["cran"] + '">'
+	  }
+
+	  if (typeof tool_information["pypi"] !== 'undefined') {
+		entry += ' <img border="0" height="15" src="https://img.shields.io/pypi/v/' + tool_information["pypi"] + '.svg">' +
+				 ' <img border="0" height="15" src="https://img.shields.io/pypi/pyversions/' + tool_information["pypi"] + '.svg">' +
+				 ' <img border="0" height="15" src="https://img.shields.io/pypi/status/' + tool_information["pypi"] + '.svg">'
+	  }
 
 	// Close --------------------------------
 

@@ -259,7 +259,7 @@ $(document).ready(function () {
 					"updated" : value.Updated,
 					"license" : value.License,
 					"cats" : value.Categories,
-					"bioc" : value.BioC,
+					"bioc" : value.Bioc,
 					"pypi" : value.PyPI,
 					"cran" : value.CRAN,
 					"pubs" : value.Publications,
@@ -268,8 +268,6 @@ $(document).ready(function () {
 					"nPres" : value.NumPreprints,
 					"totalRefs" : value.NumPubs + value.NumPreprints
 				}
-
-				console.log(value.Citations)
 
 				entry = toolItem(tool_information)
 
