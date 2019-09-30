@@ -3,8 +3,8 @@
 *   G L O B A L  C S S
 *
 *   Author:  Luke Zappia
-*   Date:    22 May 2017
-*   Version: 1.0
+*   Date:    25 September 2019
+*   Version: 1.1
 *
 *************************************************************************/
 
@@ -425,6 +425,7 @@ body {
 .github-shields
 {
 	display:block;
+	margin:6px 0 0;
 }
 
 .github-badge
@@ -435,9 +436,9 @@ body {
 	display:inline-block;
 	text-align: left;
 	font-family: 'Roboto', sans-serif;
-	font-size:8px;
+	font-size:10px;
 	color:#ffffff;
-	text-shadow: -0.5px 0.5px 1px #333333;
+	text-shadow: -0.5px 0.5px 1px #555555;
 }
 
 .github-badge span
@@ -587,6 +588,7 @@ Table Layout
 .fixed-table-container thead th .both
 {
 	padding-right:150px;
+	width: 100%;
 }
 
 .fixed-table-container .table-dark thead th .both

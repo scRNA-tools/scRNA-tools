@@ -128,7 +128,7 @@ function toolItem(tool_information){
 
 		  entry += '<div class="github-shields"><div class="github-badge stars"><span>stars</span><span class="blue">N/A</span></div>';
 		  entry += '<div class="github-badge forks"><span>forks</span><span class="blue">N/A</span></div>';
-		  entry += '<div class="github-badge commits"><span>commit</span><span class="green">Unknown</span></div></div>';
+		  entry += '<div class="github-badge commits"><span>last commit</span><span class="green">Unknown</span></div></div>';
 
 		}
 		entry += '</li>'
