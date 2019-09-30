@@ -37,7 +37,7 @@ save_number_plot <- function(database, plot_dir) {
         )
 
     plot <- plotly::ggplotly(plot, dynamicTicks = TRUE, height = 600) %>%
-        plotly::layout(margin = list(l = 70, r = 40, b = 90, t = 50)) %>%
+        plotly::layout(autosize = TRUE) %>%
         plotly::config(responsive = TRUE)
 
     json <- plotly::plotly_json(plot, jsonedit = FALSE)
@@ -101,7 +101,7 @@ save_pub_plot <- function(database, plot_dir) {
 
     plot <- plotly::ggplotly(plot, tooltip = c("fill", "y", "text"),
                              height = 600) %>%
-        plotly::layout(margin = list(l = 100, r = 100, b = 20, t = 50)) %>%
+        plotly::layout(autosize = TRUE) %>%
         plotly::config(responsive = TRUE)
 
     json <- plotly::plotly_json(plot, jsonedit = FALSE)
@@ -174,7 +174,7 @@ save_platform_plot <- function(database, plot_dir) {
 
     plot <- plotly::ggplotly(plot, tooltip = c("x", "y", "text"),
                              height = 600) %>%
-        plotly::layout(margin = list(l = 10, r = 10, b = 20, t = 80)) %>%
+        plotly::layout(autosize = TRUE) %>%
         plotly::config(responsive = TRUE)
 
     json <- plotly::plotly_json(plot, jsonedit = FALSE)
@@ -251,7 +251,7 @@ save_licenses_plot <- function(database, plot_dir) {
 
     plot <- plotly::ggplotly(plot, tooltip = c("x", "y", "text"),
                              height = 600) %>%
-        plotly::layout(margin = list(l = 10, r = 10, b = 20, t = 80)) %>%
+        plotly::layout(autosize = TRUE) %>%
         plotly::config(responsive = TRUE)
 
     json <- plotly::plotly_json(plot, jsonedit = FALSE)
@@ -313,7 +313,7 @@ save_categories_plot <- function(database, data_dir) {
 
     plot <- plotly::ggplotly(plot, tooltip = c("x", "text"),
                              height = 600) %>%
-        plotly::layout(margin = list(l = 80, r = 10, b = 20, t = 50)) %>%
+        plotly::layout(autosize = TRUE) %>%
         plotly::config(responsive = TRUE)
 
     json <- plotly::plotly_json(plot, jsonedit = FALSE)

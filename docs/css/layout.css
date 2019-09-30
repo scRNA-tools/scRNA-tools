@@ -149,7 +149,7 @@ h2
 	font-size:22px;
 }
 
-a 
+a
 {
 	color:#0091D0;
 	cursor: pointer;
@@ -224,7 +224,7 @@ body {
 	display:inline-block;
 }
 
-#navbar-main 
+#navbar-main
 {
 	margin:26px 0 0 40px;
 }
@@ -285,7 +285,7 @@ body {
 	{
 		margin:0 auto 10px;
 		text-align:center;
-	}	
+	}
 
 	#navbar-main li a
 	{
@@ -331,7 +331,7 @@ body {
 
 /* Page specific */
 
-#page-table #page-title, 
+#page-table #page-title,
 #page-table #navbar-main li.active a
 {
 	background:#4DAF4A;
@@ -342,7 +342,7 @@ body {
 	color:#4DAF4A;
 }
 
-#page-tools #page-title, 
+#page-tools #page-title,
 #page-tools #navbar-main li.active a
 {
 	background:#e21b49;
@@ -353,7 +353,7 @@ body {
 	color:#e21b49;
 }
 
-#page-categories #page-title, 
+#page-categories #page-title,
 #page-categories #navbar-main li.active a
 {
 	background:#367EB8;
@@ -364,7 +364,7 @@ body {
 	color:#367EB8;
 }
 
-#page-analysis #page-title, 
+#page-analysis #page-title,
 #page-analysis #navbar-main li.active a
 {
 	background:#377EB8;
@@ -373,14 +373,14 @@ body {
 #page-analysis #navbar-main li a:hover
 {
 	color:#377EB8;
-}  
+}
 
 #navbar-main li.active a:hover
 {
 	color:#ffffff !important;
 }
 
-#page-faqs #page-title, 
+#page-faqs #page-title,
 #page-faqs #navbar-main li.active a
 {
 	background:#FF7E01;
@@ -391,7 +391,7 @@ body {
 	color:#FF7E01;
 }
 
-#page-updates #page-title, 
+#page-updates #page-title,
 #page-updates #navbar-main li.active a
 {
 	background:#F781BF;
@@ -575,7 +575,7 @@ Table Layout
 	background-color:#2A3356;
 	background-image:url("../img/icon-sort.svg");
 	background-repeat:no-repeat;
- 	background-size: 15px 15px; 
+ 	background-size: 15px 15px;
  	background-position: center right 10px;
 	color:#ffffff;
 	font-size:14px;
@@ -670,29 +670,29 @@ Table Layout
 	box-shadow:none !important;
 	border-left:none !important;
 	border-top:none !important;
-	border-bottom:none !important;	
+	border-bottom:none !important;
 	border-right:1px solid #39acdd !important;
 	margin:0 !important;
 }
 
-.fixed-table-toolbar .pagination>.active>a, 
-.fixed-table-toolbar .pagination>.active>a:focus, 
-.fixed-table-toolbar .pagination>.active>a:hover, 
-.fixed-table-toolbar .pagination>.active>span, 
-.fixed-table-toolbar .pagination>.active>span:focus, 
+.fixed-table-toolbar .pagination>.active>a,
+.fixed-table-toolbar .pagination>.active>a:focus,
+.fixed-table-toolbar .pagination>.active>a:hover,
+.fixed-table-toolbar .pagination>.active>span,
+.fixed-table-toolbar .pagination>.active>span:focus,
 .fixed-table-toolbar .pagination>.active>span:hover
 {
 	background:#0091D0;
 }
 
-.fixed-table-toolbar .btn-default.active.focus, 
-.fixed-table-toolbar .btn-default.active:focus, 
-.fixed-table-toolbar .btn-default.active:hover, 
-.fixed-table-toolbar .btn-default:active.focus, 
-.fixed-table-toolbar .btn-default:active:focus, 
-.fixed-table-toolbar .btn-default:active:hover, 
-.fixed-table-toolbar .open>.dropdown-toggle.btn-default.focus, 
-.fixed-table-toolbar .open>.dropdown-toggle.btn-default:focus, 
+.fixed-table-toolbar .btn-default.active.focus,
+.fixed-table-toolbar .btn-default.active:focus,
+.fixed-table-toolbar .btn-default.active:hover,
+.fixed-table-toolbar .btn-default:active.focus,
+.fixed-table-toolbar .btn-default:active:focus,
+.fixed-table-toolbar .btn-default:active:hover,
+.fixed-table-toolbar .open>.dropdown-toggle.btn-default.focus,
+.fixed-table-toolbar .open>.dropdown-toggle.btn-default:focus,
 .fixed-table-toolbar .open>.dropdown-toggle.btn-default:hover
 {
 	background:#2A3356 !important;
@@ -1026,7 +1026,7 @@ Tools Layout
 	border:none;
 }
 
-.list-group 
+.list-group
 {
 	border-radius:unset;
 }
@@ -1071,23 +1071,22 @@ Analysis Layout
 }
 
 #number,
-#publication, 
-#platforms, 
-#licenses, 
+#publication,
+#platforms,
+#licenses,
 #categories
 {
 	border-bottom:2px solid #d7e0e5;
 	background:#ffffff;
 	border-radius: 3px;
-	padding:60px 40px 40px;
 }
 
 @media (max-width:600px) {
 
 	#number,
-	#publication, 
-	#platforms, 
-	#licenses, 
+	#publication,
+	#platforms,
+	#licenses,
 	#categories
 	{
 		padding:20px 10px 10px;
@@ -1118,7 +1117,7 @@ Submit Layout
 }
 
 #page-submit form button
-{   
+{
 	border:1px solid #2A3255;
 	background: #2A3255;
     color: #FFFFFF;
@@ -1154,7 +1153,7 @@ FAQs Layout
 	margin:40px 0;
 }
 
-#logo-square 
+#logo-square
 {
     height: 200px;
     display: block;
@@ -1185,3 +1184,15 @@ FAQs Layout
 
 }
 
+.svg-container
+{
+	position:relative !important;
+}
+
+.js-plotly-plot .plotly .main-svg
+{
+	position:relative;
+	width:100%  !important;
+	max-width:100%  !important;
+	height: auto !important;
+}
