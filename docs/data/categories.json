@@ -296,6 +296,9 @@
         "Tool": "ParaDPMM"
       },
       {
+        "Tool": "scClassify"
+      },
+      {
         "Tool": "scdney"
       },
       {
@@ -327,6 +330,9 @@
       },
       {
         "Tool": "SingleR"
+      },
+      {
+        "Tool": "VISION"
       }
     ]
   },
@@ -348,7 +354,8 @@
         "Tool": "ascend"
       },
       {
-        "Tool": "BackSPIN"
+        "Tool": "BackSPIN",
+        "PyPI": "backspinpy"
       },
       {
         "Tool": "BAMMSC"
@@ -479,7 +486,8 @@
         "Tool": "FORKS"
       },
       {
-        "Tool": "GenePattern"
+        "Tool": "GenePattern",
+        "PyPI": "genepattern-python"
       },
       {
         "Tool": "gficf"
@@ -489,6 +497,10 @@
       },
       {
         "Tool": "GiniClust2"
+      },
+      {
+        "Tool": "GiniClust3",
+        "PyPI": "giniclust3"
       },
       {
         "Tool": "Granatum"
@@ -559,7 +571,8 @@
         "Tool": "pagoda2"
       },
       {
-        "Tool": "PARC"
+        "Tool": "PARC",
+        "PyPI": "parc"
       },
       {
         "Tool": "pcaReduce"
@@ -757,7 +770,8 @@
         "PyPI": "tbsp"
       },
       {
-        "Tool": "TooManyCells"
+        "Tool": "TooManyCells",
+        "CRAN": "TooManyCellsR"
       },
       {
         "Tool": "TSCAN",
@@ -974,10 +988,12 @@
         "Tool": "TASC"
       },
       {
-        "Tool": "tn_test"
+        "Tool": "tn_test",
+        "PyPI": "truncated_normal"
       },
       {
-        "Tool": "TooManyCells"
+        "Tool": "TooManyCells",
+        "CRAN": "TooManyCellsR"
       },
       {
         "Tool": "tradeSeq"
@@ -1086,13 +1102,18 @@
         "PyPI": "flotilla"
       },
       {
-        "Tool": "GenePattern"
+        "Tool": "GenePattern",
+        "PyPI": "genepattern-python"
       },
       {
         "Tool": "gficf"
       },
       {
         "Tool": "GiniClust"
+      },
+      {
+        "Tool": "GiniClust3",
+        "PyPI": "giniclust3"
       },
       {
         "Tool": "Granatum"
@@ -1132,7 +1153,9 @@
         "Tool": "LIGER"
       },
       {
-        "Tool": "MAGIC"
+        "Tool": "MAGIC",
+        "CRAN": "Rmagic",
+        "PyPI": "magic-impute"
       },
       {
         "Tool": "MCXpress"
@@ -1147,7 +1170,8 @@
       },
       {
         "Tool": "MOFA",
-        "Bioc": "MOFA"
+        "Bioc": "MOFA",
+        "PyPI": "mofapy"
       },
       {
         "Tool": "Monocle",
@@ -1160,7 +1184,8 @@
         "Tool": "MUDAN"
       },
       {
-        "Tool": "netNMF-sc"
+        "Tool": "netNMF-sc",
+        "PyPI": "netNMFsc"
       },
       {
         "Tool": "netSmooth",
@@ -1194,6 +1219,7 @@
       },
       {
         "Tool": "PHATE",
+        "CRAN": "phateR",
         "PyPI": "phate"
       },
       {
@@ -1400,7 +1426,8 @@
         "Tool": "ZIFA"
       },
       {
-        "Tool": "ZINB-WaVE"
+        "Tool": "ZINB-WaVE",
+        "Bioc": "zinbwave"
       }
     ]
   },
@@ -1435,7 +1462,8 @@
         "Bioc": "LineagePulse"
       },
       {
-        "Tool": "MATCHER"
+        "Tool": "MATCHER",
+        "PyPI": "pymatcher"
       },
       {
         "Tool": "Monocle",
@@ -1513,7 +1541,8 @@
         "Tool": "ascend"
       },
       {
-        "Tool": "BackSPIN"
+        "Tool": "BackSPIN",
+        "PyPI": "backspinpy"
       },
       {
         "Tool": "ccfindR",
@@ -1707,7 +1736,8 @@
         "Tool": "MTGO-SC"
       },
       {
-        "Tool": "netNMF-sc"
+        "Tool": "netNMF-sc",
+        "PyPI": "netNMFsc"
       },
       {
         "Tool": "netSmooth",
@@ -2011,13 +2041,16 @@
         "Bioc": "Linnorm"
       },
       {
-        "Tool": "MAGIC"
+        "Tool": "MAGIC",
+        "CRAN": "Rmagic",
+        "PyPI": "magic-impute"
       },
       {
         "Tool": "McImpute"
       },
       {
-        "Tool": "netNMF-sc"
+        "Tool": "netNMF-sc",
+        "PyPI": "netNMFsc"
       },
       {
         "Tool": "netSmooth",
@@ -2099,10 +2132,14 @@
         "PyPI": "bbknn"
       },
       {
+        "Tool": "BEER"
+      },
+      {
         "Tool": "BIRD"
       },
       {
-        "Tool": "Bisque"
+        "Tool": "Bisque",
+        "CRAN": "BisqueRNA"
       },
       {
         "Tool": "bseqsc"
@@ -2111,7 +2148,8 @@
         "Tool": "BUSseq"
       },
       {
-        "Tool": "CITEseqCount"
+        "Tool": "CITEseqCount",
+        "PyPI": "CITE-seq-Count"
       },
       {
         "Tool": "clonealign"
@@ -2149,7 +2187,8 @@
         "Tool": "LIGER"
       },
       {
-        "Tool": "MATCHER"
+        "Tool": "MATCHER",
+        "PyPI": "pymatcher"
       },
       {
         "Tool": "matchSCore"
@@ -2166,7 +2205,8 @@
       },
       {
         "Tool": "MOFA",
-        "Bioc": "MOFA"
+        "Bioc": "MOFA",
+        "PyPI": "mofapy"
       },
       {
         "Tool": "MuSiC"
@@ -2306,7 +2346,8 @@
         "PyPI": "flotilla"
       },
       {
-        "Tool": "GenePattern"
+        "Tool": "GenePattern",
+        "PyPI": "genepattern-python"
       },
       {
         "Tool": "GiniClust"
@@ -2328,7 +2369,9 @@
         "Bioc": "iSEE"
       },
       {
-        "Tool": "MAGIC"
+        "Tool": "MAGIC",
+        "CRAN": "Rmagic",
+        "PyPI": "magic-impute"
       },
       {
         "Tool": "MCXpress"
@@ -2472,7 +2515,8 @@
         "Tool": "bigSCale2"
       },
       {
-        "Tool": "Bisque"
+        "Tool": "Bisque",
+        "CRAN": "BisqueRNA"
       },
       {
         "Tool": "BUSseq"
@@ -2488,7 +2532,8 @@
         "Bioc": "clusterExperiment"
       },
       {
-        "Tool": "COMET"
+        "Tool": "COMET",
+        "PyPI": "COMETSC"
       },
       {
         "Tool": "Conos"
@@ -2501,7 +2546,8 @@
         "Tool": "Garnett"
       },
       {
-        "Tool": "GenePattern"
+        "Tool": "GenePattern",
+        "PyPI": "genepattern-python"
       },
       {
         "Tool": "genesorteR"
@@ -2726,7 +2772,8 @@
         "Tool": "FORKS"
       },
       {
-        "Tool": "GenePattern"
+        "Tool": "GenePattern",
+        "PyPI": "genepattern-python"
       },
       {
         "Tool": "gficf"
@@ -2765,7 +2812,8 @@
         "Tool": "MUDAN"
       },
       {
-        "Tool": "netNMF-sc"
+        "Tool": "netNMF-sc",
+        "PyPI": "netNMFsc"
       },
       {
         "Tool": "OEFinder"
@@ -2910,7 +2958,8 @@
         "Tool": "visnormsc"
       },
       {
-        "Tool": "ZINB-WaVE"
+        "Tool": "ZINB-WaVE",
+        "Bioc": "zinbwave"
       }
     ]
   },
@@ -3002,7 +3051,8 @@
         "CRAN": "LEAP"
       },
       {
-        "Tool": "MATCHER"
+        "Tool": "MATCHER",
+        "PyPI": "pymatcher"
       },
       {
         "Tool": "MERLoT"
@@ -3246,7 +3296,8 @@
         "PyPI": "flotilla"
       },
       {
-        "Tool": "GenePattern"
+        "Tool": "GenePattern",
+        "PyPI": "genepattern-python"
       },
       {
         "Tool": "Granatum"
@@ -3255,7 +3306,9 @@
         "Tool": "iS-CellR"
       },
       {
-        "Tool": "MAGIC"
+        "Tool": "MAGIC",
+        "CRAN": "Rmagic",
+        "PyPI": "magic-impute"
       },
       {
         "Tool": "MAST",
@@ -3398,7 +3451,8 @@
         "Tool": "CellRanger"
       },
       {
-        "Tool": "CITEseqCount"
+        "Tool": "CITEseqCount",
+        "PyPI": "CITE-seq-Count"
       },
       {
         "Tool": "dropEst"
@@ -3506,6 +3560,10 @@
         "Tool": "GiniClust"
       },
       {
+        "Tool": "GiniClust3",
+        "PyPI": "giniclust3"
+      },
+      {
         "Tool": "RaceID2"
       },
       {
@@ -3517,7 +3575,8 @@
         "PyPI": "scedar"
       },
       {
-        "Tool": "TooManyCells"
+        "Tool": "TooManyCells",
+        "CRAN": "TooManyCellsR"
       }
     ]
   },
@@ -3538,7 +3597,8 @@
         "Bioc": "BEARscc"
       },
       {
-        "Tool": "Bisque"
+        "Tool": "Bisque",
+        "CRAN": "BisqueRNA"
       },
       {
         "Tool": "CancerInSilico",
@@ -3668,7 +3728,8 @@
         "Tool": "trendsceek"
       },
       {
-        "Tool": "ZINB-WaVE"
+        "Tool": "ZINB-WaVE",
+        "Bioc": "zinbwave"
       },
       {
         "Tool": "zingeR"
@@ -3722,7 +3783,8 @@
         "Tool": "CellRanger"
       },
       {
-        "Tool": "CITEseqCount"
+        "Tool": "CITEseqCount",
+        "PyPI": "CITE-seq-Count"
       },
       {
         "Tool": "ddSeeker"
@@ -3958,8 +4020,7 @@
     "Description": "Detection or use of nucleotide variants",
     "Tools": [
       {
-        "Tool": "badger",
-        "PyPI": "badger"
+        "Tool": "badger"
       },
       {
         "Tool": "cardelino"
@@ -4037,8 +4098,7 @@
         "Bioc": "AUCell"
       },
       {
-        "Tool": "badger",
-        "PyPI": "badger"
+        "Tool": "badger"
       },
       {
         "Tool": "bbknn",
@@ -4139,7 +4199,8 @@
         "Tool": "ClusterMap"
       },
       {
-        "Tool": "COMET"
+        "Tool": "COMET",
+        "PyPI": "COMETSC"
       },
       {
         "Tool": "CONICS"
@@ -4250,13 +4311,18 @@
         "Tool": "Garnett"
       },
       {
-        "Tool": "GenePattern"
+        "Tool": "GenePattern",
+        "PyPI": "genepattern-python"
       },
       {
         "Tool": "genesorteR"
       },
       {
         "Tool": "gficf"
+      },
+      {
+        "Tool": "GiniClust3",
+        "PyPI": "giniclust3"
       },
       {
         "Tool": "GPfates"
@@ -4315,10 +4381,13 @@
         "Bioc": "M3Drop"
       },
       {
-        "Tool": "MAGIC"
+        "Tool": "MAGIC",
+        "CRAN": "Rmagic",
+        "PyPI": "magic-impute"
       },
       {
-        "Tool": "MATCHER"
+        "Tool": "MATCHER",
+        "PyPI": "pymatcher"
       },
       {
         "Tool": "matchSCore2"
@@ -4347,7 +4416,8 @@
       },
       {
         "Tool": "MOFA",
-        "Bioc": "MOFA"
+        "Bioc": "MOFA",
+        "PyPI": "mofapy"
       },
       {
         "Tool": "Monocle",
@@ -4394,6 +4464,7 @@
       },
       {
         "Tool": "PHATE",
+        "CRAN": "phateR",
         "PyPI": "phate"
       },
       {
@@ -4443,6 +4514,9 @@
       {
         "Tool": "Scater",
         "Bioc": "scater"
+      },
+      {
+        "Tool": "scClassify"
       },
       {
         "Tool": "scClustBench"
@@ -4708,10 +4782,12 @@
         "Tool": "TCM"
       },
       {
-        "Tool": "tn_test"
+        "Tool": "tn_test",
+        "PyPI": "truncated_normal"
       },
       {
-        "Tool": "TooManyCells"
+        "Tool": "TooManyCells",
+        "CRAN": "TooManyCellsR"
       },
       {
         "Tool": "TraCeR"
