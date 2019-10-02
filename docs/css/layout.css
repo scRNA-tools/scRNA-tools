@@ -165,33 +165,68 @@ html {
 	min-height: 100%;
 }
 
-body {
-	/* Margin bottom by footer height */
-	margin-bottom: 40px;
-}
-
 .bottomless
 {
 	border-bottom:none !important;
 }
 
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 40px;
-	background: #555555;
+
+#frame-footer,
+#frame-footer .container
+{
+	background:#333333;
+	padding:30px 0;
 }
 
-.footer .container
+#frame-footer p
 {
-	width: 100%;
+	color:#999999;
+	font-size:14px;
+	line-height:18px;
+	margin:0 0 20px;
+}
+
+#frame-footer p a
+{
+	color:#DB4140;
+
+}
+
+#frame-footer h2
+{
+	color:#cccccc;
+	font-size:16px;
+	display:block;
+	margin: 0 0 5px;
+	font-weight: bolder;
 }
 
 #page-table #frame-content
 {
 	padding-top:40px;
 	padding-bottom:40px;
+}
+
+#frame-footer #footer-menu
+{
+	border-top:1px solid #cccccc;
+	margin:30px 0;
+	padding:10px 0;
+	float:left;
+	clear:both;
+	width:100%;
+}
+
+#frame-footer #footer-menu li
+{
+	display:inline-block;
+	padding:0 10px;
+	font-size:12px;
+}
+
+#frame-footer #footer-menu li a
+{
+	color:#cccccc;
 }
 
 /*-- Nav ---------------------------------------------------------------*/
@@ -255,9 +290,9 @@ body {
 {
 	color:#555555;
 }
-
-/*-- Page styles ------------------------------------------------------------*/
-
+/*-----------------------------------------------------------------------
+Page Styles
+------------------------------------------------------------------------*/
 /* Defaults - Can convert this to LESS to get vars...*/
 
 #frame-header
@@ -349,6 +384,16 @@ body {
 }
 
 #page-tools #navbar-main li a:hover
+{
+	color:#e21b49;
+}
+
+#page-home #navbar-main li.active a
+{
+	background:#e21b49;
+}
+
+#page-home #navbar-main li a:hover
 {
 	color:#e21b49;
 }
@@ -468,6 +513,248 @@ body {
 	display: inline-block;
     margin: 0px 0 0 3px;
 }
+
+/*-----------------------------------------------------------------------
+Homepage
+------------------------------------------------------------------------*/
+
+
+#frame-splash
+{
+	background:#403184;
+	height:400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#frame-splash .container
+{
+	position:relatie;
+}
+
+#frame-splash h1
+{
+	color:#ffffff;
+	font-size:42px;
+}
+
+#frame-splash p
+{
+	color:#dddddd;
+	font-size:20px;
+	line-height:24px;
+	margin:10px 0;
+}
+
+
+#frame-splash a
+{
+	border:1px solid #DB4140;
+	background:#DB4140;
+	color:#ffffff;
+	font-size:16px;
+	text-transform: uppercase;
+	padding:12px 24px;
+	margin:15px 0 0;
+	font-weight:bold;
+	display: inline-block;
+	transition:0.1s;
+	text-decoration: none;
+}
+
+#frame-splash a:hover
+{
+	background:#ffffff;
+	border:1px solid #ffffff;
+	color:#DB4140;
+}
+
+#frame-splash .rna,
+#frame-splash .mac
+{
+	position:absolute;
+	right:20px;
+}
+
+#frame-splash .mac
+{
+	top:-160px;
+}
+
+#frame-splash .rna
+{
+    z-index: 2;
+    right: 179px;
+    top: -36px;
+}
+
+#frame-splash .rna img
+{
+	width:170px;
+}
+
+#frame-splash .mac img
+{
+	width:500px;
+}
+
+#frame-splash .splash-image
+{
+	float:right;
+	position:relative;
+}
+
+#page-home #frame-content
+{
+	padding:60px 0;
+}
+
+#intro
+{
+	padding:20px 0 0;
+	margin:0 0 30px;
+	font-weight:normal;
+	text-align: center;
+}
+
+#intro h2
+{
+	color:#333333;
+	font-size:24px;
+	line-height: 32px;
+	width:80%;
+	margin:0 auto 20px;
+}
+
+#current_size
+{
+	float:left;
+	border-top:2px solid #eaeaea;
+	border-bottom:2px solid #eaeaea;
+	margin:0 0 40px;
+	padding:50px 0;
+	width:100%;
+}
+
+#current_size h3
+{
+	font-size:24px;
+	line-height: 28px;
+	color:#444444;
+	font-weight: bolder;
+	text-align: center;
+}
+
+#current_size a
+{
+	color:#403184;
+	font-size:28px;
+	font-weight: bold;
+}
+
+.number-container
+{
+	text-align: center;
+	margin:0 auto;
+	width:400px;
+}
+
+
+.cta img
+{
+	display:block;
+	margin:0 auto;
+	width:40%;
+}
+
+.cta h3
+{
+	font-size:18px;
+	font-weight:bold;
+	color:#333333;
+	margin:20px 0 10px;
+}
+
+.cta p
+{
+	color:#666666;
+}
+
+.cta a
+{
+	border:1px solid #DB4140;
+	background:#DB4140;
+	color:#ffffff;
+	font-size:12px;
+	text-transform: uppercase;
+	padding:8px 12px;
+	display:inline-block;
+	margin:20px 0 0;
+	font-weight:bold;
+	text-decoration: none;
+	transition:0.1s;
+}
+
+.cta a:hover
+{
+	background:#ffffff;
+	border:1px solid #DB4140;
+	color:#DB4140;
+}
+
+@media (max-width:991px){
+
+	.cta
+	{
+		text-align:center;
+		margin:0 auto 20px;
+	}
+
+	.cta h3
+	{
+		font-size:30px;
+		text-align: center;
+	}
+
+	.cta p
+	{
+		font-size:18px;
+		margin:0 auto;
+		max-width:60%;
+	}
+
+	.cta img
+	{
+		width:20%;
+	}
+
+	.cta a
+	{
+		font-size:18px;
+		padding:14px 18px;
+		margin:20px auto;
+		text-align:center;
+	}
+
+
+}
+
+@media (max-width:500px){
+
+	.cta img
+	{
+		width:50%;
+	}
+
+	.cta p
+	{
+		max-width:100%;
+	}
+
+
+}
+
 
 /*-----------------------------------------------------------------------
 Big Table Layout
@@ -1070,28 +1357,33 @@ Analysis Layout
 	height:auto;
 }
 
-#number,
-#publication,
-#platforms,
-#licenses,
-#categories
+#page-analysis #number,
+#page-analysis #publication,
+#page-analysis #platforms,
+#page-analysis #licenses,
+#page-analysis #categories
 {
-	border-bottom:2px solid #d7e0e5;
-	background:#ffffff;
 	border-radius: 3px;
 }
 
-@media (max-width:600px) {
-
-	#number,
-	#publication,
-	#platforms,
-	#licenses,
-	#categories
-	{
-		padding:20px 10px 10px;
-	}
+.plot-module
+{
+	border-bottom:2px solid #d7e0e5;
+	background:#ffffff;
+	text-align: center;
 }
+
+.plot-module h2
+{
+	font-size:14px;
+	text-transform: uppercase;
+	text-align: left;
+	padding:12px 20px 10px;
+	color:#ffffff;
+	background:#2A3356;
+	font-weight:bold;
+}
+
 /*-----------------------------------------------------------------------
 Twitter Layout
 ------------------------------------------------------------------------*/
