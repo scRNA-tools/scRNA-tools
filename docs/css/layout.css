@@ -171,11 +171,16 @@ html {
 }
 
 
-#frame-footer,
+#frame-footer
+{
+	background:#333333;
+	padding:0 0;
+}
+
 #frame-footer .container
 {
 	background:#333333;
-	padding:30px 0;
+	padding:20px 0;
 }
 
 #frame-footer p
@@ -210,7 +215,7 @@ html {
 #frame-footer #footer-menu
 {
 	border-top:1px solid #cccccc;
-	margin:30px 0;
+	margin:10px 0;
 	padding:10px 0;
 	float:left;
 	clear:both;
@@ -390,12 +395,12 @@ Page Styles
 
 #page-home #navbar-main li.active a
 {
-	background:#e21b49;
+	background:#3f3184;
 }
 
 #page-home #navbar-main li a:hover
 {
-	color:#e21b49;
+	color:#3f3184;
 }
 
 #page-categories #page-title,
@@ -571,6 +576,7 @@ Homepage
 }
 
 #frame-splash .rna,
+#frame-splash .cells,
 #frame-splash .mac
 {
 	position:absolute;
@@ -584,14 +590,26 @@ Homepage
 
 #frame-splash .rna
 {
-    z-index: 2;
+    z-index: 3;
     right: 179px;
-    top: -36px;
+    top: -45px;
+}
+
+#frame-splash .cells
+{
+    z-index: 2;
+    right: 92px;
+    top: -58px;
 }
 
 #frame-splash .rna img
 {
 	width:170px;
+}
+
+#frame-splash .cells img
+{
+	width:355px;
 }
 
 #frame-splash .mac img

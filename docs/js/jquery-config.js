@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 	// Yes yes, I know there's a better way. But golly!
 
 	var jsonPathTools = 'data/tools.json'
@@ -25,9 +24,8 @@ $(document).ready(function(){
 			no_cats += 1;
 		})
 
+		no_cats = Math.floor(no_cats / 10) * 10
+
 		$(".cat-no").html(no_cats);
 	})
-
-
-
 })
