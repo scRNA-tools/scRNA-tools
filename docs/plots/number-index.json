@@ -7,7 +7,7 @@
       "type": "scatter",
       "mode": "lines",
       "line": {
-        "width": 7.55905511811024,
+        "width": 2,
         "color": "rgba(122,82,199,1)",
         "dash": "solid"
       },
@@ -21,16 +21,17 @@
   ],
   "layout": {
     "margin": {
-      "t": 40,
-      "r": 40,
-      "b": 100,
-      "l": 100
+      "t": 0,
+      "r": 9.29846409298464,
+      "b": 0.5078179050782,
+      "l": 56.4549605645496
     },
     "font": {
-      "color": "rgba(33,33,33,1)",
+      "color": "rgba(0,0,0,1)",
       "family": "",
       "size": 18.5969281859693
     },
+
     "xaxis": {
       "domain": [0, 1],
       "automargin": true,
@@ -51,12 +52,12 @@
       "tickfont": {
         "color": "rgba(0,0,0,1)",
         "family": "",
-        "size": 15.9402241594022
+        "size": 7
       },
       "tickangle": -60,
       "showline": true,
-      "linecolor": "rgba(0,0,0,1)",
-      "linewidth": 0.66417600664176,
+      "linecolor": "rgba(33,33,33,1)",
+      "linewidth": 0.5,
       "showgrid": false,
       "gridcolor": null,
       "gridwidth": 0,
@@ -85,14 +86,14 @@
       "categoryarray": ["100", "200", "300", "400", "500"],
       "nticks": null,
       "ticks": "outside",
-      "tickcolor": "rgba(0,0,0,1)",
+      "tickcolor": "rgba(33,33,33,1)",
       "ticklen": 4.64923204649232,
       "tickwidth": 0.66417600664176,
       "showticklabels": true,
       "tickfont": {
-        "color": "rgba(0,0,0,1)",
+        "color": "rgba(33,33,33,1)",
         "family": "",
-        "size": 15.9402241594022
+        "size": 7
       },
       "tickangle": -0,
       "showline": true,
@@ -108,7 +109,7 @@
         "font": {
           "color": "rgba(0,0,0,1)",
           "family": "",
-          "size": 18.5969281859693
+          "size": 9
         }
       },
       "hoverformat": ".2f"
@@ -142,14 +143,16 @@
       }
     },
     "hovermode": "closest",
-    "height": 600,
+    "height": 250,
+    "width": 400,
     "barmode": "relative",
-    "autosize": true
+    "autosize": false
   },
   "config": {
     "doubleClick": "reset",
     "showSendToCloud": false,
-    "responsive": true
+    "responsive": true,
+    "displayModeBar": false
   },
   "source": "A",
   "attrs": {
