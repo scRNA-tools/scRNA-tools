@@ -215,7 +215,7 @@ github <- tools %>%
     select(Tool, GitHub)
 
 repositories <- repos %>%
-    left_join(github, by = "Tool")
+    full_join(github, by = "Tool")
 
 categories <- jsonlite::read_json("docs/data/descriptions.json",
                                   simplifyVector = TRUE)
