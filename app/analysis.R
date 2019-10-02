@@ -19,7 +19,7 @@ save_number_plot <- function(database, plot_dir) {
                         fill = list(Count = 0)) %>%
         dplyr::mutate(Total = cumsum(Count))
 
-    plot <- ggplot2::ggplot(datecount, ggplot2::aes(x = Date, y = Total)) +
+    gg <- ggplot2::ggplot(datecount, ggplot2::aes(x = Date, y = Total)) +
         ggplot2::geom_line(size = 2, colour = "#7A52C7") +
         ggplot2::xlab("Date") +
         ggplot2::ylab("Number of tools") +
@@ -27,7 +27,7 @@ save_number_plot <- function(database, plot_dir) {
             breaks = scales::pretty_breaks(10),
             labels = scales::date_format("%b %Y")
         ) +
-        ggplot2::ggtitle("Number of tools over time") +
+        # ggplot2::ggtitle("Number of tools over time") +
         cowplot::theme_cowplot() +
         ggplot2::theme(
             plot.title   = ggplot2::element_text(size = 20, hjust = 0.5),
@@ -36,13 +36,28 @@ save_number_plot <- function(database, plot_dir) {
             axis.text.x  = ggplot2::element_text(angle = 60, vjust = 0.5)
         )
 
-    plot <- plotly::ggplotly(plot, dynamicTicks = TRUE, height = 600) %>%
-        plotly::layout(autosize = TRUE) %>%
+    plot <- plotly::ggplotly(gg, dynamicTicks = TRUE, height = 600) %>%
+        plotly::layout(margin = list(t = 40, r = 40, b = 100, l = 100),
+                       autosize = TRUE) %>%
         plotly::config(responsive = TRUE)
 
     json <- plotly::plotly_json(plot, jsonedit = FALSE)
 
     readr::write_lines(json, fs::path(plot_dir, "number.json"))
+
+    plot <- plotly::ggplotly(gg, height = 250, width = 400) %>%
+        plotly::layout(margin = list(t = 0, r = 10, b = 0, l = 55),
+                       xaxis = list(title = list(font = list(size = 9)),
+                                    tickfont = list(size = 7),
+                                    fixedrange = TRUE),
+                       yaxis = list(title = list(font = list(size = 9)),
+                                    tickfont = list(size = 7),
+                                    fixedrange = TRUE)) %>%
+        plotly::config(displayModeBar = FALSE)
+
+    json <- plotly::plotly_json(plot, jsonedit = FALSE)
+
+    readr::write_lines(json, fs::path(plot_dir, "number-index.json"))
 }
 
 #' Save publications plot
@@ -92,7 +107,7 @@ save_pub_plot <- function(database, plot_dir) {
         ggplot2::scale_fill_manual(
             values = c("#EC008C", "#00ADEF", "#8DC63F")
         ) +
-        ggplot2::ggtitle("Publication status") +
+        # ggplot2::ggtitle("Publication status") +
         cowplot::theme_nothing() +
         ggplot2::theme(
             plot.title = ggplot2::element_text(size = 20, face = "bold"),
@@ -101,7 +116,8 @@ save_pub_plot <- function(database, plot_dir) {
 
     plot <- plotly::ggplotly(plot, tooltip = c("fill", "y", "text"),
                              height = 600) %>%
-        plotly::layout(autosize = TRUE) %>%
+        plotly::layout(margin = list(t = 50, r = 30, b = 50, l = 30),
+                       autosize = TRUE) %>%
         plotly::config(responsive = TRUE)
 
     json <- plotly::plotly_json(plot, jsonedit = FALSE)
@@ -165,7 +181,7 @@ save_platform_plot <- function(database, plot_dir) {
             values = c("white", "#00ADEF", "#8DC63F", "#00B7C6", "#F47920",
                        "#7A52C7", "#999999")
         ) +
-        ggplot2::ggtitle("Platforms") +
+        # ggplot2::ggtitle("Platforms") +
         cowplot::theme_nothing() +
         ggplot2::theme(
             plot.title      = ggplot2::element_text(size = 20, face = "bold"),
@@ -174,7 +190,8 @@ save_platform_plot <- function(database, plot_dir) {
 
     plot <- plotly::ggplotly(plot, tooltip = c("x", "y", "text"),
                              height = 600) %>%
-        plotly::layout(autosize = TRUE) %>%
+        plotly::layout(margin = list(t = 50, r = 30, b = 50, l = 30),
+                       autosize = TRUE) %>%
         plotly::config(responsive = TRUE)
 
     json <- plotly::plotly_json(plot, jsonedit = FALSE)
@@ -242,7 +259,7 @@ save_licenses_plot <- function(database, plot_dir) {
             values = c("white", "#00ADEF", "#8DC63F", "#00B7C6", "#F47920",
                        "#7A52C7", "#999999")
         ) +
-        ggplot2::ggtitle("Software licenses") +
+        # ggplot2::ggtitle("Software licenses") +
         cowplot::theme_nothing() +
         ggplot2::theme(
             plot.title = ggplot2::element_text(size = 20, face = "bold"),
@@ -251,7 +268,8 @@ save_licenses_plot <- function(database, plot_dir) {
 
     plot <- plotly::ggplotly(plot, tooltip = c("x", "y", "text"),
                              height = 600) %>%
-        plotly::layout(autosize = TRUE) %>%
+        plotly::layout(margin = list(t = 50, r = 30, b = 50, l = 30),
+                       autosize = TRUE) %>%
         plotly::config(responsive = TRUE)
 
     json <- plotly::plotly_json(plot, jsonedit = FALSE)
@@ -286,7 +304,7 @@ save_categories_plot <- function(database, data_dir) {
             Percent  = round(Count / length(database$Tools) * 100, 1)
         )
 
-    plot <- ggplot2::ggplot(
+    gg <- ggplot2::ggplot(
             cats,
             ggplot2::aes(
                 x = Category, y = Prop,
@@ -296,7 +314,7 @@ save_categories_plot <- function(database, data_dir) {
         ggplot2::geom_col(width = 0.95, fill = "#7A52C7") +
         ggplot2::scale_y_continuous(labels = scales::percent) +
         ggplot2::ylab("Percentage of tools") +
-        ggplot2::ggtitle("Categories") +
+        # ggplot2::ggtitle("Categories") +
         cowplot::theme_cowplot() +
         ggplot2::theme(
             plot.title      = ggplot2::element_text(size = 20, face = "bold",
@@ -311,12 +329,27 @@ save_categories_plot <- function(database, data_dir) {
             )
         )
 
-    plot <- plotly::ggplotly(plot, tooltip = c("x", "text"),
+    plot <- plotly::ggplotly(gg, tooltip = c("x", "text"),
                              height = 600) %>%
-        plotly::layout(autosize = TRUE) %>%
+        plotly::layout(margin = list(t = 50, r = 30, b = 50, l = 70),
+                       autosize = TRUE) %>%
         plotly::config(responsive = TRUE)
 
     json <- plotly::plotly_json(plot, jsonedit = FALSE)
 
     readr::write_lines(json, fs::path(plot_dir, "categories.json"))
+
+    plot <- plotly::ggplotly(gg, height = 250, width = 500) %>%
+        plotly::layout(margin = list(t = 0, r = 10, b = 0, l = 55),
+                       xaxis = list(title = list(font = list(size = 9)),
+                                    tickfont = list(size = 7),
+                                    fixedrange = TRUE),
+                       yaxis = list(title = list(font = list(size = 9)),
+                                    tickfont = list(size = 7),
+                                    fixedrange = TRUE)) %>%
+        plotly::config(displayModeBar = FALSE)
+
+    json <- plotly::plotly_json(plot, jsonedit = FALSE)
+
+    readr::write_lines(json, fs::path(plot_dir, "categories-index.json"))
 }
