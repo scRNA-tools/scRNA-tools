@@ -22,6 +22,8 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
         <!-- Open Graph data -->
         <meta property="og:title" content="scRNA-tools" />
@@ -69,229 +71,245 @@
 
     </head>
 
-    <body>
+    <body id="page-submit">
 
-        <!--// NavBar ------------------------------------------------------ -->
+        <!--// Header --------------------------------------------------------->
 
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img id="logo-image" alt="scRNA-tools" src="img/banner.svg" />
-                    </a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Table</a></li>
-                    <li><a href="tools.html">Tools</a></li>
-                    <li><a href="categories.html">Categories</a></li>
-                    <li><a href="analysis.html">Analysis</a></li>
-                    <li><a href="updates.html">Updates</a></li>
-                    <li class="active"><a href="#">Submit</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter" style="font-size:28px"></i></a></li>
-                    <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github" style="font-size:28px"></i></a></li>
-                </ul>
-            </div>
-        </nav>
+        <div id="frame-header" class="container-fluid">
+            <a id="navbar-brand" href="index.html">
+                <img id="logo-image" class="hidden-sm hidden-xs" alt="scRNA-tools" src="img/banner.svg" />
+                <img id="logo-image" class="hidden-lg hidden-md" alt="scRNA-tools" src="img/banner-symbol.svg" />
+            </a>
+            <ul id="navbar-main">
+                <li><a href="table.html">Table</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li class="active"><a href="submit.html">Submit</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+            <ul id="navbar-util">
+                <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
 
-        <div class="container-fluid">
-
-            <!--// Intro --------------------------------------------------- -->
-
-            <div class="page-header">
+        <div id="page-title" class="container-fluid">
+            <div class="col-lg-12">
                 <h1>Submit</h1>
+                <h2>Suggest additions or updates to the database</h2>
             </div>
+        </div>
+
+        <div id="frame-content" class="container-fluid">
 
             <!--// Submission form ----------------------------------------- -->
 
             <img id="logo-square" alt="scRNA-tools" src="img/square.svg" />
 
-            <div class="form-group">
-                <p>
-                    We would love to hear your suggestions for the scRNA-tools
-                    database! To contact us please fill in the form below or
-                    open an issue or pull request via
-                    <a href="https://github.com/Oshlack/scRNA-tools">GitHub</a>.
-                </p>
-            </div>
-
             <form action="https://formspree.io/scrna.tools@gmail.com" method="POST">
-                <div class="form-group">
-                  <label for="name">Name:</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Tool name">
-                </div>
-                <div class="form-group">
+                <legend>We would love to hear your suggestions for the scRNA-tools database! To contact us please fill in the form below or open an issue or pull request via <a href="https://github.com/Oshlack/scRNA-tools">GitHub</a>.</legend>
+                <fieldset>
+                    <div class="form-group">
+                      <label for="name">Tool name:</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Tool name">
+                    </div>
+                    <div class="form-group">
                         <label for="platform">Platform(s):</label>
                         <input type="text" class="form-control" id="platform" name="platform" placeholder="Available platforms (eg. R/Python)">
-                </div>
-                <div class="form-group">
+                    </div>
+                    <div class="form-group">
                         <label for="doi">DOI(s):</label>
                         <input type="text" class="form-control" id="doi" name="doi" placeholder="DOIs for associated publications/preprints">
-                </div>
-                <div class="form-group">
+                    </div>
+                    <div class="form-group">
                         <label for="code">Code:</label>
                         <input type="text" class="form-control" id="code" name="code" placeholder="Link to code repository (eg. GitHub)">
-                </div>
-                <div class="form-group">
+                    </div>
+                    <div class="form-group">
                         <label for="license">License:</label>
                         <input type="text" class="form-control" id="license" name="license" placeholder="Associated software license">
-                </div>
-                <div class="form-group">
+                    </div>
+                    <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your email in case we have questions">
+                    </div>
+                    <div class="full-group form-group">
                         <label for="description">Description:</label>
                         <textarea type="text" class="form-control" id="description" name="description" placeholder="Short description of the tool and what it does"></textarea>
-                </div>
-                <div class="form-group" id="categories">
-                    <label for="categories">Categories:</label>
-                    <ul class="checkboxes">
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="ALignment" id="alignment" name="categories">
-                        <label class="form-check-label" for="alignment">Alignment</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Allele Specific" id="allele_specific" name="categories">
-                        <label class="form-check-label" for="allele_specific">Allele Specific</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Alternative Splicing" id="alt_splicing" name="categories">
-                        <label class="form-check-label" for="alt_splicing">Alternative Splicing</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Assembly" id="assembly" name="categories">
-                        <label class="form-check-label" for="assembly">Assembly</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Cell Cycle" id="cell_cycle" name="categories">
-                        <label class="form-check-label" for="cell_cycle">Cell Cycle</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Classification" id="classification" name="categories">
-                        <label class="form-check-label" for="classification">Classification</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Clustering" id="clustering" name="categories">
-                        <label class="form-check-label" for="clustering">Clustering</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Differential Expression" id="diff_exp" name="categories">
-                        <label class="form-check-label" for="diff_exp">Differential Expression</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Dimensionality Reduction" id="dim_red" name="categories">
-                        <label class="form-check-label" for="dim_red">Dimensionality Reduction</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Expression Patterns" id="exp_patterns" name="categories">
-                        <label class="form-check-label" for="exp_patterns">Expression Patterns</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Gene Filtering" id="gene_filt" name="categories">
-                        <label class="form-check-label" for="gene_filt">Gene Filtering</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Gene Networks" id="gene_networks" name="categories">
-                        <label class="form-check-label" for="gene_networks">Gene Networks</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Gene Sets" id="gene_sets" name="categories">
-                        <label class="form-check-label" for="gene_sets">Gene Sets</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Haplotypes" id="haplotypes" name="categories">
-                        <label class="form-check-label" for="assembly">Haplotypes</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Immune" id="immune" name="categories">
-                        <label class="form-check-label" for="immune">Immune</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Imputation" id="imputation" name="categories">
-                        <label class="form-check-label" for="imputation">Imputation</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Integration" id="integration" name="categories">
-                        <label class="form-check-label" for="integration">Integration</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Interactive" id="interactive" name="categories">
-                        <label class="form-check-label" for="interactive">Interactive</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Marker Genes" id="markers" name="categories">
-                        <label class="form-check-label" for="markers">Marker Genes</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Modality" id="modality" name="categories">
-                        <label class="form-check-label" for="modality">Modality</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Normalisation" id="normalisation" name="categories">
-                        <label class="form-check-label" for="normalisation">Normalisation</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Ordering" id="ordering" name="categories">
-                        <label class="form-check-label" for="ordering">Ordering</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Quality Control" id="qc" name="categories">
-                        <label class="form-check-label" for="qc">Quality Control</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Quantification" id="quantification" name="categories">
-                        <label class="form-check-label" for="quantification">Quantification</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Rare Cells" id="rare" name="categories">
-                        <label class="form-check-label" for="rare">Rare Cells</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Simulation" id="simulation" name="categories">
-                        <label class="form-check-label" for="simulation">Simulation</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Stem Cells" id="stem_cells" name="categories">
-                        <label class="form-check-label" for="stem_cells">Stem Cells</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Transformation" id="transformation" name="categories">
-                        <label class="form-check-label" for="transformation">Transformation</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="UMIs" id="umis" name="categories">
-                        <label class="form-check-label" for="umis">UMIs</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Variable Genes" id="var_genes" name="categories">
-                        <label class="form-check-label" for="assembly">Variable Genes</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Variants" id="variants" name="categories">
-                        <label class="form-check-label" for="variants">Variants</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="Visualisation" id="visualisation" name="categories">
-                        <label class="form-check-label" for="visualisation">Visualisation</label>
-                    </li>
-                    </ul>
-                </div>
-                <div class="form-group">
-                        <label for="notes">Notes:</label>
-                        <textarea type="text" class="form-control" id="notes" name="notes" placeholder="Anything else you would like to tell us about the tool?"></textarea>
-                </div>
-                <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your email in case we have questions">
-                </div>
-                <div class="form-group text-center">
+                    </div>
+                    <div class="form-group" id="checkbox-categories">
+                        <label for="categories">Categories:</label>
+                        <ul class="checkboxes">
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="ALignment" id="alignment" name="categories">
+                            <label class="form-check-label" for="alignment">Alignment</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Allele Specific" id="allele_specific" name="categories">
+                            <label class="form-check-label" for="allele_specific">Allele Specific</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Alternative Splicing" id="alt_splicing" name="categories">
+                            <label class="form-check-label" for="alt_splicing">Alternative Splicing</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Assembly" id="assembly" name="categories">
+                            <label class="form-check-label" for="assembly">Assembly</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Cell Cycle" id="cell_cycle" name="categories">
+                            <label class="form-check-label" for="cell_cycle">Cell Cycle</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Classification" id="classification" name="categories">
+                            <label class="form-check-label" for="classification">Classification</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Clustering" id="clustering" name="categories">
+                            <label class="form-check-label" for="clustering">Clustering</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Differential Expression" id="diff_exp" name="categories">
+                            <label class="form-check-label" for="diff_exp">Differential Expression</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Dimensionality Reduction" id="dim_red" name="categories">
+                            <label class="form-check-label" for="dim_red">Dimensionality Reduction</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Expression Patterns" id="exp_patterns" name="categories">
+                            <label class="form-check-label" for="exp_patterns">Expression Patterns</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Gene Filtering" id="gene_filt" name="categories">
+                            <label class="form-check-label" for="gene_filt">Gene Filtering</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Gene Networks" id="gene_networks" name="categories">
+                            <label class="form-check-label" for="gene_networks">Gene Networks</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Gene Sets" id="gene_sets" name="categories">
+                            <label class="form-check-label" for="gene_sets">Gene Sets</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Haplotypes" id="haplotypes" name="categories">
+                            <label class="form-check-label" for="assembly">Haplotypes</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Immune" id="immune" name="categories">
+                            <label class="form-check-label" for="immune">Immune</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Imputation" id="imputation" name="categories">
+                            <label class="form-check-label" for="imputation">Imputation</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Integration" id="integration" name="categories">
+                            <label class="form-check-label" for="integration">Integration</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Interactive" id="interactive" name="categories">
+                            <label class="form-check-label" for="interactive">Interactive</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Marker Genes" id="markers" name="categories">
+                            <label class="form-check-label" for="markers">Marker Genes</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Modality" id="modality" name="categories">
+                            <label class="form-check-label" for="modality">Modality</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Normalisation" id="normalisation" name="categories">
+                            <label class="form-check-label" for="normalisation">Normalisation</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Ordering" id="ordering" name="categories">
+                            <label class="form-check-label" for="ordering">Ordering</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Quality Control" id="qc" name="categories">
+                            <label class="form-check-label" for="qc">Quality Control</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Quantification" id="quantification" name="categories">
+                            <label class="form-check-label" for="quantification">Quantification</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Rare Cells" id="rare" name="categories">
+                            <label class="form-check-label" for="rare">Rare Cells</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Simulation" id="simulation" name="categories">
+                            <label class="form-check-label" for="simulation">Simulation</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Stem Cells" id="stem_cells" name="categories">
+                            <label class="form-check-label" for="stem_cells">Stem Cells</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Transformation" id="transformation" name="categories">
+                            <label class="form-check-label" for="transformation">Transformation</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="UMIs" id="umis" name="categories">
+                            <label class="form-check-label" for="umis">UMIs</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Variable Genes" id="var_genes" name="categories">
+                            <label class="form-check-label" for="assembly">Variable Genes</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Variants" id="variants" name="categories">
+                            <label class="form-check-label" for="variants">Variants</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" value="Visualisation" id="visualisation" name="categories">
+                            <label class="form-check-label" for="visualisation">Visualisation</label>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="full-group form-group">
+                            <label for="notes">Notes:</label>
+                            <textarea type="text" class="form-control" id="notes" name="notes" placeholder="Anything else you would like to tell us about the tool?"></textarea>
+                    </div>
+
                     <button type="submit" class="btn btn-default">Submit</button>
-                </div>
+                    <div class="clear"></div>
+                </fieldset>
             </form>
 
         </div>
 
-        <footer class="footer">
-            <div id="footerContent" class="container"></div>
+        <footer id="frame-footer">
+            <div class="container">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h2>Cite us</h2>
+                    <p>Zappia L, Phipson B, Oshlack A. "Exploring the single-cell RNA-seq analysis landscape with the scRNA-tools database", PLOS Computational Biology (2018), DOI: <a href="https://doi.org/10.1371/journal.pcbi.1006245">10.1371/journal.pcbi.1006245</a></p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h2>About scRNA-tools</h2>
+                    <p>
+                        The scRNA-tools database is a catalogue of software
+                        packages for analysing single-cell RNA sequencing data.
+                        It is maintained by the Oshlack Lab, a bioinformatics
+                        research group based in Melbourne, Australia.
+                    </p>
+                    <p><a href="http://oshlacklab.com/">More about the Oshlack Lab</a></p>
+                </div>
+                <div id="footer-menu" class="col-lg-12">
+                    <ul>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="analysis.html">Analysis</a></li>
+                        <li><a href="updates.html">Updates</a></li>
+                        <li><a href="submit.html">Submit</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
 
     </body>

@@ -63,7 +63,6 @@
         <script src="https://cdn.rawgit.com/wenzhixin/bootstrap-table/6350315f/src/extensions/filter-control/bootstrap-table-filter-control.js"></script>
         <script src="https://cdn.rawgit.com/wenzhixin/bootstrap-table/6350315f/src/extensions/export/bootstrap-table-export.js"></script>
         <script src="https://cdn.rawgit.com/hhurz/tableExport.jquery.plugin/475fb511/tableExport.min.js"></script>
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
         <!--<script src="https://cdn.rawgit.com/wenzhixin/bootstrap-table/6350315f/src/extensions/resizable/bootstrap-table-resizable.js"></script>-->
         <!--<script src="https://cdn.rawgit.com/wenzhixin/colResizable/a1e34695/colResizable-1.5.min.js"></script>-->
 
@@ -85,7 +84,7 @@
 
     </head>
 
-    <body id="page-home">
+    <body id="page-table">
 
          <!--// Header --------------------------------------------------------->
 
@@ -95,7 +94,7 @@
                 <img id="logo-image" class="hidden-lg hidden-md" alt="scRNA-tools" src="img/banner-symbol.svg" />
             </a>
             <ul id="navbar-main">
-                <li><a href="table.html">Table</a></li>
+                <li class="active"><a href="#">Table</a></li>
                 <li><a href="tools.html">Tools</a></li>
                 <li><a href="analysis.html">Analysis</a></li>
                 <li><a href="updates.html">Updates</a></li>
@@ -108,72 +107,80 @@
             </ul>
         </div>
 
-        <!--// Splash --------------------------------------------------------->
-
-        <div id="frame-splash">
-            <div class="container">
-                <div class="col-lg-12">
-                    <div class="float-left">
-                        <h1>Welcome to scRNA-tools!</h1>
-                        <p>The scRNA-tools database is a catalogue of tools for
-                           <br/>analysing single-cell RNA sequencing data.
-                        </p>
-                        <a href="tools.html">View Tools</a>
-                    </div>
-                    <div class="splash-image hidden-sm hidden-xs">
-                        <div class="rna"><img src="img/icons/rna.png"/></div>
-                        <div class="cells"><img src="img/icons/cells.jpg" /></div>
-                        <div class="mac"><img src="img/icons/mac.svg" /></div>
-                    </div>
-                </div>
+        <div id="page-title" class="container-fluid">
+            <div class="col-lg-12">
+                <h1>Tools Table</h1>
+                <h2>Sort, filter and download the database</h2>
             </div>
         </div>
+        <div id="frame-content" class="container-fluid">
 
-        <!--// Content --------------------------------------------------------->
-
-        <div id="frame-content" class="container">
-            <div id="intro" class="col-lg-12">
-                <h2>
-                    The scRNA-tools database records details of software tools
-                    designed for analysing scRNA-seq data. Each tool is
-                    categorised according to the analysis tasks it can be used
-                    for.
-                </h2>
-            </div>
-
-            <div id="current_size">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="number-container hidden-sm hidden-xs">
-                        <div id="number"></div>
-                    </div>
-                    <h3>We currently track <a href="tools.html" class="tool-no">12345</a> tools...</h3>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="hidden-sm hidden-xs">
-                        <div id="categories"></div>
-                    </div>
-                    <h3>...in over <a href="tools.html" class="cat-no">32</a> categories</h3>
-                </div>
-            </div>
-
-            <div class="col-lg-4 cta col-md-4 col-sm-12 col-xs-12">
-                <img src="img/icons/tests.svg" />
-                <h3>Browse the table</h3>
-                <p>Sort, filter and download the database</p>
-                <a href="table.html">Table</a>
-            </div>
-            <div class="col-lg-4 cta col-md-4 col-sm-12 col-xs-12">
-                <img src="img/icons/network.svg" />
-                <h3>Look at the stats</h3>
-                <p>See an overview of the tools in the database</p>
-                <a href="analysis.html">Analysis</a>
-            </div>
-            <div class="col-lg-4 cta col-md-4 col-sm-12 col-xs-12">
-                <img src="img/icons/cell.svg" />
-                <h3>Submit a tool!</h3>
-                <p>Let us know if you have a new tool or update</p>
-                <a href="submit.html">Submit</a>
-            </div>
+            <!--// Table --------------------------------------------------- -->
+            <!--data-advanced-search="true"-->
+            <table class="table-dark"
+                data-page-size=30
+                data-toggle="table"
+                data-pagination="true"
+                data-show-pagination-switch="true"
+                data-search="true"
+                data-show-toggle="true"
+                data-show-columns="true"
+                data-striped="true"
+                data-reorderable-columns="true"
+                data-filter-show-clear="true"
+                data-show-export="true"
+                data-export-data-type="all"
+                data-id-table="tools-table"
+                data-filter-control="true"
+                data-url="data/tools-table.json">
+                <thead>
+                    <tr>
+                        <th data-field="Tool" data-sortable="true" data-switchable="false" data-formatter="nameFormatter">Name</th>
+                        <th data-field="Platform" data-sortable="true" data-filter-control="select">Platform</th>
+                        <th data-field="DOIs" data-sortable="true" data-visible="true">DOIs</th>
+                        <th data-field="Dates" data-sortable="true" data-visible="false">Pub Dates</th>
+                        <th data-field="Citations" data-sortable="true" data-visible="true">Citations</th>
+                        <th data-field="Code" data-sortable="true" data-visible="false" data-formatter="codeFormatter">Code</th>
+                        <th data-field="Description" data-sortable="true" data-visible="false">Description</th>
+                        <th data-field="License" data-sortable="true" data-visible="true" data-filter-control="select">License</th>
+                        <th data-field="Categories" data-sortable="true" data-visible="true" data-formatter="catsFormatter">Categories</th>
+                        <th data-field="Assembly" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Assembly</th>
+                        <th data-field="Alignment" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Alignment</th>
+                        <th data-field="UMIs" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">UMIs</th>
+                        <th data-field="Quantification" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Quantification</th>
+                        <th data-field="QualityControl" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Quality Control</th>
+                        <th data-field="Normalisation" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Normalisation</th>
+                        <th data-field="Imputation" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Imputation</th>
+                        <th data-field="GeneFiltering" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Gene Filtering</th>
+                        <th data-field="Clustering" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Clustering</th>
+                        <th data-field="Classification" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Classification</th>
+                        <th data-field="Classification" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Classification</th>
+                        <th data-field="Ordering" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Ordering</th>
+                        <th data-field="DifferentialExpression" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Differential Expression</th>
+                        <th data-field="MarkerGenes" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Marker Genes</th>
+                        <th data-field="ExpressionPatterns" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Expression Patterns</th>
+                        <th data-field="VariableGenes" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Variable Genes</th>
+                        <th data-field="GeneSets" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Gene Sets</th>
+                        <th data-field="GeneNetworks" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Gene Networks</th>
+                        <th data-field="CellCycle" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Cell Cycle</th>
+                        <th data-field="DimensionalityReduction" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Dimensionality Reduction</th>
+                        <th data-field="Transformation" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Transformation</th>
+                        <th data-field="Modality" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Modality</th>
+                        <th data-field="AlternativeSplicing" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Alternative Splicing</th>
+                        <th data-field="RareCells" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Rare Cells</th>
+                        <th data-field="StemCells" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Stem Cells</th>
+                        <th data-field="Immune" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Immune</th>
+                        <th data-field="Variants" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Variants</th>
+                        <th data-field="Haplotypes" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Haplotypes</th>
+                        <th data-field="AlleleSpecific" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Allele Specific</th>
+                        <th data-field="Visualisation" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Visualisation</th>
+                        <th data-field="Interactive" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Interactive</th>
+                        <th data-field="Simulation" data-sortable="true" data-visible="false" data-formatter="logicalFormatter" data-filter-control="select">Simulation</th>
+                        <th data-field="Added" data-sortable="true" data-visible="false">Added</th>
+                        <th data-field="Updated" data-sortable="true" data-visible="false">Updated</th>
+                    </tr>
+                </thead>
+            </table>
         </div>
 
         <footer id="frame-footer">
@@ -205,17 +212,37 @@
             </div>
         </footer>
 
-        <script>
-            jQuery.getJSON('plots/number-index.json', function(data) {
-                Plotly.newPlot('number', data.data, data.layout, data.config)
-            })
-            jQuery.getJSON('plots/categories-index.json', function(data) {
-                Plotly.newPlot('categories', data.data, data.layout, data.config)
-            })
-        </script>
+    <script>
+        function logicalFormatter (value) {
+          var colour = '#ff9999'
+          if (value) {
+            colour = '#009933'
+          }
 
-        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <script type="application/javascript" src="js/jquery-config.js"></script>
+          return '<span  style="color: ' + colour + '">' + value + '</div>'
+        }
+
+        function nameFormatter (value) {
+          return '<a href="tools.html#' + value + '">' + value + '</a>'
+        }
+
+        function codeFormatter (value) {
+          return '<a href="' + value + '">' + value + '</a>'
+        }
+
+        function catsFormatter (value) {
+          var values = value.toString().split(',')
+          var formatted = []
+
+          for (var i = 0; i < values.length; i++) {
+            var cat = values[i]
+            formatted.push('<a href="tools.html?cats=' + cat + '">' +
+                    cat.replace(/([a-z])([A-Z])/g, '$1 $2') + '</a>')
+          }
+
+          return formatted.join(', ')
+        }
+    </script>
 
     </body>
 </html>

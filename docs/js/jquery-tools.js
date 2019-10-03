@@ -1,272 +1,432 @@
 $(document).ready(function () {
-  /* --Variables------------------------------------------------------------- */
 
-  var toolsContainer = $('#tools-list')
-  var jsonPath = 'data/tools.json'
+	/* --Variables------------------------------------------------------------- */
 
-  /* --Functions------------------------------------------------------------- */
+	var toolsContainer = $('#tools-list')
+	var jsonPath = 'data/tools.json'
+	var fixed_height = 200;
+	var first_time = true;
 
-  function expandLinked () {
-    var url = document.location.toString()
-    var hash = url.split('#')[1]
+	/* --Functions------------------------------------------------------------- */
 
-    if (typeof hash !== 'undefined') {
-      var title = '#' + hash
-      var panel = title + '_c'
+	function panelInteractions(){
 
-      // collapse the expanded panel
-      var allPanels = $('#accordion .accordion-collapse')
+		function prettyGitDate(date_time){
 
-      allPanels.removeClass('in')
-      allPanels.find('.accordion-toggle').addClass('collapsed')
+			months = ["January", "February", "March", "April",
+					  "May", "June", "July", "August",
+					  "September", "October", "November", "December"];
 
-      // expand the requested panel, change the title
-      $(panel).addClass('in')
-      $(title).find('.accordion-toggle').removeClass('collapsed')
+			date = date_time.split("T")[0];
+			date_elements = date.split("-");
 
-      location.href = title
-    }
-  }
+			year = parseInt(date_elements[0]);
+			month = parseInt(date_elements[1]);
 
-  function linkCats (cats) {
-    var linked = []
+			current_year = new Date().getFullYear();
 
-    for (var i = 0; i < cats.length; i++) {
-      var cat = cats[i]
-      linked.push('<a href="categories.html#' + cat + '">' + cat.replace(/([a-z])([A-Z])/g, '$1 $2') + '</a>')
-    }
+			// Can make this more fancy if required, i.e. "last week, today!"
+			if(current_year !== year){
+				return(String(months[month-1]) + " " + String(year))
+			} else {
+				return(String(months[month-1]))
+			}
 
-    return linked.join(', ')
-  }
+		}
 
-  function printList (urlParams) {
-    /* -- Open JSON file, parse the contents, loop through & print markup -- */
+		function githubShields(panel, url){
 
-    $.ajaxSetup({
-      cache: false
-    })
+			// split by forward slash, get username and package name
 
-    $.getJSON(jsonPath, function (data) {
+			url_split = url.split("/");
+			username = url_split.slice(-2)[0];
+			package_name = url_split.slice(-1)[0];
 
-      /* -- Sort data -- */
-      if (urlParams.has('sort')) {
-        switch(urlParams.get('sort')) {
-          case 'cites':
-            data.sort(function(obj1, obj2) {
-              return obj2.Citations - obj1.Citations
-            })
-            break
-          case 'refs':
-            data.sort(function(obj1, obj2) {
-              return (obj2.Publications + obj2.Preprints) - (obj1.Publications + obj1.Preprints)
-            })
-            break
-          case 'pubs':
-            data.sort(function(obj1, obj2) {
-              return obj2.Publications - obj1.Publications
-            })
-            break
-          case 'pres':
-            data.sort(function(obj1, obj2) {
-              return obj2.Preprints - obj1.Preprints
-            })
-            break
-          case 'added':
-            data.sort(function(obj1, obj2) {
-              var x = new Date(obj1.Added);
-              var y = new Date(obj2.Added);
-              return (y > x) - (y < x)
-            })
-            break
-          case 'updated':
-            data.sort(function(obj1, obj2) {
-              var x = new Date(obj1.Updated);
-              var y = new Date(obj2.Updated);
-              return (y > x) - (y < x)
-            })
-            break
-        }
-      }
+			json_location = "https://api.github.com/search/repositories?q=repo:" + username + "/" + package_name;
 
-      $.each(data, function (key, value) {
-        /* -- Assign returned data -- */
-        var name = value.Name
-        var doi = value.DOIs
-        var doiURL = value.DOIURL
-        var pubDate = value.PubDates
-        var preprint = value.Preprint
-        var citations = value.Citations
-        var refs = value.Refs
-        var description = value.Description
-        var platform = value.Platform
-        var code = value.Code
-        var github = value.Github
-        var added = value.Added
-        var updated = value.Updated
-        var license = value.License
-        var cats = value.Categories
-        var bioc = value.BioC
-        var pypi = value.PyPI
-        var cran = value.CRAN
-        var nPubs = value.Publications
-        var nPres = value.Preprints
-        var totalRefs = nPubs + nPres
+			// Fetch Lassy, then update the required fields
 
-        var entry = ''
-        entry += '<div class="panel-heading">' +
-                 '<h4 id="' + name + '" class="panel-title">' +
-                 '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + name + '_c">' + name
+			console.log(json_location)
 
-        if (typeof bioc !== 'undefined') {
-          entry += ' <img border="0" height="15" src="img/shields/BioC/' + bioc + '_years.svg">' +
-                   ' <img border="0" height="15" src="img/shields/BioC/' + bioc + '_downloads.svg">'
-        }
+			$.getJSON(json_location).done(function(json) {
+				forks = json.items[0].forks;
+				stargazers = json.items[0].stargazers_count;
+				last_commit = prettyGitDate(json.items[0].pushed_at);
 
-        if (typeof cran !== 'undefined') {
-          entry += ' <img border="0" height="15" src="img/shields/CRAN/' + cran + '_version.svg">' +
-                   ' <img border="0" height="15" src="img/shields/CRAN/' + cran + '_downloads.svg">'
-        }
+				// Update panel to reflect requested information
+				panel.find(".stars span.blue").text(stargazers)
+				panel.find(".forks span.blue").text(forks)
+				panel.find(".commits span.green").text(last_commit)
 
-        if (typeof pypi !== 'undefined') {
-          entry += ' <img border="0" height="15" src="img/shields/PyPI/' + pypi + '_version.svg">' +
-                   ' <img border="0" height="15" src="img/shields/PyPI/' + pypi + '_python.svg">' +
-                   ' <img border="0" height="15" src="img/shields/PyPI/' + pypi + '_status.svg">'
-        }
+			}).fail(function( jqxhr, textStatus, error ) {
+				var err = textStatus + ", " + error;
+				console.log( "Request Failed: " + err );
+			})
 
-        entry += '</a></h4></div>' +
-                 '<div id="' + name + '_c" class="panel-collapse collapse">' +
-                 '<ul class="list-group">' +
-                 '<li class="list-group-item">' + description + '</li>'
+		}
 
-        // Loop over references
-        if (totalRefs > 0) {
+		$(".tool").click(function(){
 
-          entry += '<div class="panel-heading">' +
-                   '<p id="' + name + '_pubs" class="panel-title">' +
-                   '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + name + '_pubs_c">' +
-                   '<strong>Publications:</strong> ' + nPubs +
-                   ', <strong>Preprints:</strong> ' + nPres +
-                   ', <strong>Total citations:</strong> ' + citations
-          entry += '</a></h4></div>' +
-                   '<div id="' + name + '_pubs_c" class="panel-collapse collapse">' +
-                   '<ul class="list-group">'
+			package_name = $(this).find("h4").attr("id");
 
-          if (nPubs > 0) {
-            var pubs = refs.Publications
+			panel_name = package_name + "_c";
+			panel = $("#" + panel_name);
+			package_last_commit = panel.find(".commits span.green");
 
-            entry += '<li class="list-group-item"><strong>Publications</strong></li>'
+			// Check to see whether this has been populated already... otherwise ping Github
+			if(package_last_commit.text() == "Unknown"){
+				codebase = panel.find(".codebase_url").text();
+				githubShields(panel, codebase)
+			}
 
-            $.each(pubs, function (k, val) {
+			letterPositions();
+		})
 
-              var title = val.Title
-              var doi = val.DOI
-              var date = val.PubDate
-              var cites = val.Citations
+	}
 
-              entry += '<li class="list-group-item">'
-              entry += '<em>"' + title + '"</em><br/>'
-              entry += '<strong>DOI: </strong> <a href="https://doi.org/' + doi + '">' + doi + '</a>'
-              entry += ', <strong>Published: </strong>' + date
-              entry += ', <strong>Citations: </strong> ' + cites
-              entry += '</li>'
-            })
-          }
 
-          if (nPres > 0) {
-            var pres = refs.Preprints
+	function expandLinked () {
 
-            entry += '<li class="list-group-item"><strong>Preprints</strong></li>'
+		var url = document.location.toString()
+		var hash = url.split('#')[1]
 
-            $.each(pres, function (k, val) {
+		if (typeof hash !== 'undefined') {
+			var title = '#' + hash
+			var panel = title + '_c'
 
-              var title = val.Title
-              var doi = val.DOI
-              var cites = val.Citations
+			// collapse the expanded panel
+			var allPanels = $('#accordion .accordion-collapse')
 
-              entry += '<li class="list-group-item">'
-              entry += '<em>"' + title + '"</em><br/>'
-              if (doi.includes('arxiv')) {
-                var id = doi.replace("arxiv/", "")
-                entry += '<strong>arXiv: </strong> <a href="https://arxiv.org/abs/' + id + '">' + id + '</a>'
-              } else {
-                entry += '<strong>DOI: </strong> <a href="https://doi.org/' + doi + '">' + doi + '</a>'
-              }
-              if (typeof cites !== 'undefined') {
-                entry += ', <strong>Citations: </strong> ' + cites
-              }
-              entry += '</li>'
-            })
-          }
-          entry += '</ul></div>'
-        }
+			allPanels.removeClass('in')
+			allPanels.find('.accordion-toggle').addClass('collapsed')
 
-        entry += '<li class="list-group-item"><strong>Platform: </strong> ' + platform + '</li>'
-        if (typeof code !== 'undefined') {
-            entry += '<li class="list-group-item"><strong>Code: </strong> <a href="' + code + '">' + code + '</a>'
-            if (typeof github !== 'undefined') {
-              var github_clean = github.replace("/", "_")
+			// expand the requested panel, change the title
+			$(panel).addClass('in')
+			$(title).find('.accordion-toggle').removeClass('collapsed')
 
-              entry += ' <img border="0" height="15" src="img/shields/GitHub/' + github_clean + '_stars.svg">' +
-              ' <img border="0" height="15" src="img/shields/GitHub/' + github_clean + '_forks.svg">' +
-              ' <img border="0" height="15" src="img/shields/GitHub/' + github_clean + '_commit.svg">'
-            }
-            entry += '</li>'
-        }
-        if (typeof license !== 'undefined') {
-          entry += '<li class="list-group-item"><strong>License: </strong> ' + license + '</li>'
-        }
+			location.href = title
+		}
+	}
 
-        entry += '<li class="list-group-item"><strong>Categories: </strong> ' + linkCats(cats) + '</li>' +
-                 '<li class="list-group-item">' +
-                 '<strong>Added: </strong> ' + added +
-                 ', <strong>Updated: </strong>' + updated +
-                 '</li>' +
-                 '</ul>' +
-                 '</div>'
 
-        /* -- Add it to the list! -- */
-        toolsContainer.append(entry)
-      })
+	function checkFixed(from_top){
 
-      expandLinked()
-    })
-  }
+		current_fixed = toolsContainer.hasClass("fixed_state");
 
-  /* --Calls----------------------------------------------------------------- */
+		if(from_top > 200 && current_fixed != true){
 
-  var urlParams = new URLSearchParams(window.location.search);
+			$("#manipulators").addClass("fixed");
+			if($("#selectsort").val() == "name"){
+				$("#name-bookmarks").addClass("fixed");
+			}
+			toolsContainer.addClass("fixed_state");
 
-  if (urlParams.has('sort')) {
-    $("[name=selectsort]").val(urlParams.get('sort')).change()
-  }
+			// Now, find the current letter position
 
-  $(function(){
-    $("[name=selectsort]").change(function(){
-        var val = $(this).val()
-        var sorter
-        if (typeof val !== 'undefined') {
-            sorter = val
-        }
+		} else if(from_top < 200 &&  current_fixed != false) {
+			$("#manipulators").removeClass("fixed");
+			$("#name-bookmarks").removeClass("fixed");
+			toolsContainer.removeClass("fixed_state");
+		}
 
-        var url = document.location.toString()
+	}
 
-        var hash
-        if (url.includes('#')) {
-          hash = url.split('#')[1]
-          url = url.split('#')[0]
-        }
+	function letterPositions(){
 
-        url = url.split('?')[0]
+		alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+		window.alpha_positions = {}
 
-        if (hash !== undefined) {
-          window.location.href = url + '?sort=' + sorter + '#' + hash
-        } else {
-          window.location.href = url + '?sort=' + sorter
-        }
+		$.each(alphabet, function(index, letter){
+			if($('#anchor' + letter).length > 0){
+				window.alpha_positions[letter] = $('#anchor' + letter).offset().top;
+			}
+		})
 
-        return true
-    })
-  })
+	}
 
-  printList(urlParams)
+	function trackLetters(from_top){
+
+		if(from_top + 10 < fixed_height){
+			$("#name-bookmarks li").removeClass("active");
+
+		} else {
+
+			current_letter = false;
+
+			$.each(window.alpha_positions, function(letter, position){
+				if(from_top + 10 > position){
+					current_letter = letter;
+				}
+			})
+
+			$("#name-bookmarks li").removeClass("active");
+			$(".letter-menu"+current_letter).addClass("active");
+
+		}
+	}
+
+	$(window).scroll(function(){
+
+		from_top = $(window).scrollTop();
+		checkFixed(from_top);
+
+		if($("#selectsort").val() == "name"){
+			trackLetters(from_top);
+		}
+
+	})
+
+	function printList (urlParams) {
+
+		/* -- Open JSON file, parse the contents, loop through & print markup -- */
+
+		$.ajaxSetup({
+		  cache: false
+		})
+
+		$.getJSON(jsonPath, function(data) {
+
+			/* -- Sort data -- */
+
+			if (urlParams.has('sort')) {
+				switch(urlParams.get('sort')) {
+					case 'cites':
+					data.sort(function(obj1, obj2) {
+						return obj2.Citations - obj1.Citations
+					})
+					break
+					case 'refs':
+					data.sort(function(obj1, obj2) {
+						return (obj2.Publications + obj2.Preprints) - (obj1.Publications + obj1.Preprints)
+					})
+					break
+					case 'pubs':
+					data.sort(function(obj1, obj2) {
+						return obj2.Publications - obj1.Publications
+					})
+					break
+					case 'pres':
+					data.sort(function(obj1, obj2) {
+						return obj2.Preprints - obj1.Preprints
+					})
+					break
+					case 'added':
+					data.sort(function(obj1, obj2) {
+						var x = new Date(obj1.Added);
+						var y = new Date(obj2.Added);
+						return (y > x) - (y < x)
+					})
+					break
+					case 'updated':
+					data.sort(function(obj1, obj2) {
+						var x = new Date(obj1.Updated);
+						var y = new Date(obj2.Updated);
+						return (y > x) - (y < x)
+					})
+					break
+				}
+			}
+
+			// Setup tools columns ----------------
+
+			tool_index = 1
+			sort_method = $("#selectsort").val();
+
+			if(sort_method == "name"){
+
+				current_letter = false;
+				$("#name-bookmarks").show();
+				toolsContainer.addClass("name-sort");
+
+			} else {
+				$("#name-bookmarks").hide();
+				toolsContainer.append('<div class="first-tools col-lg-6 col-md-12 col-sm-12 col-xs-12"></div>');
+				toolsContainer.append('<div class="second-tools col-lg-6 col-md-12 col-sm-12 col-xs-12"></div>');
+			}
+
+			$.each(data, function (key, value) {
+
+				/* -- Assign returned data -- */
+
+				var tool_information = {
+					"name" : value.Tool,
+					"citations" : value.Citations,
+					"description" : value.Description,
+					"platform" : value.Platform,
+					"code" : value.Code,
+					"github" : value.GitHub,
+					"added" : value.Added,
+					"updated" : value.Updated,
+					"license" : value.License,
+					"cats" : value.Categories,
+					"bioc" : value.Bioc,
+					"pypi" : value.PyPI,
+					"cran" : value.CRAN,
+					"pubs" : value.Publications,
+					"pres" : value.Preprints,
+					"nPubs" : value.NumPubs,
+					"nPres" : value.NumPreprints,
+					"totalRefs" : value.NumPubs + value.NumPreprints
+				}
+
+				entry = toolItem(tool_information)
+
+				// If any categories are selected for filtering, pass non-matches.
+
+				keep = false;
+
+				selected_categories = $("[name=category_filter]").val();
+
+				if($("[name=category_filter]").val().length > 0){
+					$.each(selected_categories, function(index, cat){
+						if(value.Categories.indexOf(cat) > -1){
+							keep = true;
+							return false;
+						}
+					})
+
+					if(!keep){
+						return;
+					}
+				}
+
+
+
+				// Add it to the list
+
+				if(sort_method == "name"){
+
+					first_letter = tool_information["name"][0].toUpperCase()
+					if(first_letter != current_letter){
+						toolsContainer.append('<h3 id="anchor' + first_letter + '" class="tools-list">'+first_letter+'</h3>')
+						toolsContainer.append('<div id="alpha' + first_letter + '-left" class="first-tools col-lg-6"></div>');
+						toolsContainer.append('<div id="alpha' + first_letter + '-right" class="second-tools col-lg-6"></div>');
+
+						current_letter = first_letter;
+						tool_index = 1;
+					}
+
+					if(tool_index%2 == 0) {
+						$('#alpha' + first_letter + '-right').append(entry)
+					} else {
+						$('#alpha' + first_letter + '-left').append(entry)
+					}
+				} else {
+					if(tool_index%2 == 0) {
+						$('.second-tools').append(entry);
+					} else {
+						$('.first-tools').append(entry)
+					}
+				}
+
+				tool_index = tool_index + 1
+
+			})
+
+			if(sort_method == "name"){
+				// Tool headings
+
+				headings = $(".tools-list");
+				//alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+				$.each(headings, function (index, heading) {
+					letter = $(heading).html();
+					$("#name-bookmarks").append('<li class="letter-menu' + letter + '"><a href="#anchor' + letter + '">' + letter + '</a></li>');
+				})
+
+			}
+
+			expandLinked();
+			panelInteractions();
+			letterPositions();
+
+		})
+	}
+
+
+	/* --Calls----------------------------------------------------------------- */
+
+
+	// Check URL for queryies
+
+	var urlParams = new URLSearchParams(window.location.search);
+
+	if (urlParams.has('sort')) {
+		$("[name=selectsort]").val(urlParams.get('sort')).change()
+	}
+
+	if (urlParams.has('cats')){
+
+		cat_url = urlParams.get('cats').split(",");
+		cats = [];
+
+		$.each(cat_url, function(index, cat){
+			cats.push(cat);
+		})
+
+		$("[name=category_filter]").val(cats);
+	}
+
+	// Refresh page on change on select or filter button
+
+	function pushURL(){
+
+		select_item = $("[name=selectsort]");
+
+		// Sort Select
+		var val = select_item.val()
+		var sorter
+
+		if (typeof val !== 'undefined') {
+			sorter = val
+		}
+
+		// Check for cats
+		selected_cats = $("[name=category_filter]").val();
+		selected_cats = selected_cats.toString();
+
+		// Check for anchors
+		var url = document.location.toString();
+
+		var hash
+		if (url.includes('#')) {
+			hash = url.split('#')[1]
+			url = url.split('#')[0]
+		}
+
+		url = url.split('?')[0];
+
+		if (hash !== undefined) {
+			if(selected_cats.length > 0){
+				window.location.href = url + '?sort=' + sorter + "&cats=" + selected_cats + '#' + hash
+			} else {
+				window.location.href = url + '?sort=' + sorter + '#' + hash
+			}
+		} else {
+			if(selected_cats.length > 0){
+				window.location.href = url + '?sort=' + sorter + "&cats=" + selected_cats
+			} else {
+				window.location.href = url + '?sort=' + sorter
+			}
+		}
+
+		return true;
+	}
+
+	$(function(){
+		$("[name=selectsort]").change(function(){
+			$("[name=category_filter]").val("");
+			pushURL();
+		})
+		$("#category_submit").click(function(){
+			pushURL();
+		});
+		$("#category_reset").click(function(){
+			$("[name=category_filter]").val("");
+			pushURL();
+		});
+	})
+
+	// Refresh
+
+	printList(urlParams)
 })
