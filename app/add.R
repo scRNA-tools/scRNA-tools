@@ -12,7 +12,21 @@ add_tool <- function(database, pkgs_cache) {
     usethis::ui_todo("Please enter the details of the new tool to add")
     cat("\n")
 
-    name         <- prompt_name(database)
+    name <- prompt_name(database)
+    matches <- search_name(database, name)
+
+    if (length(matches) > 1) {
+        usethis::ui_info(glue::glue(
+            "These tools with similar names already exist in the database: ",
+            "{usethis::ui_value(matches)}"
+        ))
+        continue <- prompt_yn("Do you want to continue (y/n)?:")
+
+        if (!continue) {
+            return(database)
+        }
+    }
+
     platform     <- prompt_platform()
     code         <- prompt_code()
     license      <- prompt_license()

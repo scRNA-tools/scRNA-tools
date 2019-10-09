@@ -15,6 +15,7 @@ scRNA-tools command line application
 Usage:
     scrnatools add
     scrnatools update [<name>]
+    scrnatools search [<name>]
     scrnatools build
     scrnatools archive [<name>]
     scrnatools restore [<arc>]
@@ -43,6 +44,7 @@ source("app/regex.R")
 source("app/load.R")
 source("app/add.R")
 source("app/update.R")
+source("app/search.R")
 source("app/build.R")
 source("app/analysis.R")
 source("app/pkgs-cache.R")
@@ -53,7 +55,7 @@ source("app/git.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.0.0.9007")
+opts <- docopt(DOCOPT, version = "0.1.1")
 
 logo <- get_logo()
 cat(logo, "\n")
@@ -75,6 +77,10 @@ if (opts$update) {
     database <- update_tool(database, pkgs_cache, opts$name)
 }
 
+if (opts$search) {
+    search(database, opts$name)
+}
+
 if (opts$build) {
     database <- build(database, pkgs_cache, data_dir, plot_dir)
 }
@@ -87,4 +93,6 @@ if (opts$restore) {
     database <- restore_archive(database, dir, opts$arc)
 }
 
-save_database(database, dir)
+if (!opts$search) {
+    save_database(database, dir)
+}
