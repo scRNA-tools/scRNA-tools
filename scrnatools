@@ -55,7 +55,7 @@ source("app/git.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.1.1")
+opts <- docopt(DOCOPT, version = "0.1.2")
 
 logo <- get_logo()
 cat(logo, "\n")

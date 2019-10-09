@@ -30,10 +30,10 @@ add_tool <- function(database, pkgs_cache) {
     platform     <- prompt_platform()
     code         <- prompt_code()
     license      <- prompt_license()
-    description  <- prompt_description()
     dois         <- prompt_dois()
     refs         <- get_references(dois)
     dois         <- refs$DOI
+    description  <- prompt_description()
     categories   <- prompt_categories(database)
 
     tool <- new_sctool(name, platform, code, license, description, dois,
