@@ -19,12 +19,14 @@ Usage:
     scrnatools build
     scrnatools archive [<name>]
     scrnatools restore [<arc>]
+    scrnatools stats [--plot]
     scrnatools -h | --help
     scrnatools --version
 
 Options:
   name          Name of a tool in the database
   arc           Name of an archive in the database
+  -p, --plot    Whether to show plots
   -h --help     Show this help message.
   --version     Show version.
 " -> DOCOPT
@@ -52,10 +54,11 @@ source("app/references.R")
 source("app/archive.R")
 source("app/save.R")
 source("app/git.R")
+source("app/stats.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.1.2")
+opts <- docopt(DOCOPT, version = "0.1.3")
 
 logo <- get_logo()
 cat(logo, "\n")
@@ -93,6 +96,10 @@ if (opts$restore) {
     database <- restore_archive(database, dir, opts$arc)
 }
 
-if (!opts$search) {
+if (opts$stats) {
+   show_stats(database, opts$plot)
+}
+
+if (!opts$search && !opts$stats) {
     save_database(database, dir)
 }

@@ -3,21 +3,13 @@
 #' Save a JSON file with the details needed to create a Plotly plot of the
 #' number of tools over time
 #'
-#' @param database Database object
+#' @param tools Tools tibble
 #' @param plot_dir Path to directory to save plot JSON
-save_number_plot <- function(database, plot_dir) {
+save_number_plot <- function(tools, plot_dir) {
 
     `%>%` <- magrittr::`%>%`
 
-    tools <- get_tools(database$Tools)
-
-    datecount <- tools %>%
-        dplyr::select(Date = Added) %>%
-        dplyr::group_by(Date) %>%
-        dplyr::summarise(Count = dplyr::n()) %>%
-        tidyr::complete(Date = tidyr::full_seq(Date, 1),
-                        fill = list(Count = 0)) %>%
-        dplyr::mutate(Total = cumsum(Count))
+    datecount <- get_datecount(tools)
 
     gg <- ggplot2::ggplot(datecount, ggplot2::aes(x = Date, y = Total)) +
         ggplot2::geom_line(size = 2, colour = "#7A52C7") +
@@ -67,37 +59,11 @@ save_number_plot <- function(database, plot_dir) {
 #'
 #' @param database Database object
 #' @param plot_dir Path to directory to save plot JSON
-save_pub_plot <- function(database, plot_dir) {
+save_pub_plot <- function(tools, plot_dir) {
 
     `%>%` <- magrittr::`%>%`
 
-    pub_status <- get_doi_idx(database$Tools) %>%
-        dplyr::left_join(database$References, by = "DOI") %>%
-        dplyr::group_by(Tool) %>%
-        dplyr::summarise(
-            Published = any(!Preprint),
-            Preprint  = any(Preprint)
-        )
-
-    pub_data <- tibble::tibble(Tool = names(database$Tools)) %>%
-        dplyr::left_join(pub_status, by = "Tool") %>%
-        tidyr::replace_na(list(Preprint = FALSE, Published = FALSE)) %>%
-        dplyr::mutate(Preprint = Preprint & !Published) %>%
-        dplyr::mutate(None = !Preprint & !Published) %>%
-        dplyr::summarise_if(is.logical, sum) %>%
-        tidyr::gather(Type, Count) %>%
-        dplyr::mutate(
-            Type = factor(
-                Type,
-                levels = c("Published", "Preprint", "None"),
-                labels = c("Published", "Preprint", "Not published"))) %>%
-        dplyr::arrange(Type) %>%
-        dplyr::mutate(
-            Cumulative = cumsum(Count),
-            Midpoint   = max(Cumulative) - (Cumulative - (Count / 2)),
-            Percent    = round(Count / sum(Count) * 100, 1),
-            Label      = paste0(Type, " ", Percent, "%")
-        )
+    pub_data <- get_pub_data(database)
 
     plot <- ggplot2::ggplot(pub_data,
                             ggplot2::aes(x = 1, y = Count, fill = Type)) +
@@ -130,32 +96,13 @@ save_pub_plot <- function(database, plot_dir) {
 #' Save a JSON file with the details needed to create a Plotly plot of the
 #' platforms used by tools
 #'
-#' @param database Database object
+#' @param tools Tools tibble
 #' @param plot_dir Path to directory to save plot JSON
-save_platform_plot <- function(database, plot_dir) {
+save_platform_plot <- function(tools, plot_dir) {
 
     `%>%` <- magrittr::`%>%`
 
-    platforms <- get_tools(database$Tools) %>%
-        dplyr::mutate(
-            R      = stringr::str_detect(Platform, "R"),
-            Python = stringr::str_detect(Platform, "Python"),
-            MATLAB = stringr::str_detect(Platform, "MATLAB"),
-            CPP    = stringr::str_detect(Platform, "C++"),
-            Other  = !(R | Python | MATLAB | CPP)
-        ) %>%
-        dplyr::summarise_if(is.logical, sum) %>%
-        tidyr::gather(Platform, Count) %>%
-        dplyr::mutate(
-            Platform = factor(
-                Platform,
-                levels = c("R", "Python", "MATLAB", "CPP", "Other"),
-                labels = c("R", "Python", "MATLAB", "C++", "Other")
-            ),
-            Platform = forcats::fct_reorder(Platform, -Count),
-            Percent  = round(Count / sum(Count) * 100, 1),
-            Label    = paste0(Platform, "\n", Percent, "%")
-        )
+    platforms <- get_platforms_data(tools)
 
     plot <- ggplot2::ggplot(
         platforms,
@@ -204,36 +151,13 @@ save_platform_plot <- function(database, plot_dir) {
 #' Save a JSON file with the details needed to create a Plotly plot of the
 #' tool software licenses
 #'
-#' @param database Database object
+#' @param tools Tools tibble
 #' @param plot_dir Path to directory to save plot JSON
-save_licenses_plot <- function(database, plot_dir) {
+save_licenses_plot <- function(tools, plot_dir) {
 
     `%>%` <- magrittr::`%>%`
 
-    licenses <- get_tools(database$Tools) %>%
-        dplyr::mutate(
-            GPL      = stringr::str_detect(License, "GPL"),
-            BSD      = stringr::str_detect(License, "BSD"),
-            MIT      = stringr::str_detect(License, "MIT"),
-            Apache   = stringr::str_detect(License, "Apache"),
-            Artistic = stringr::str_detect(License, "Artistic"),
-            Unknown  = is.na(License),
-            Other    = !(GPL | BSD | MIT | Apache | Artistic | Unknown)
-        ) %>%
-        dplyr::summarise_if(is.logical, sum, na.rm = TRUE) %>%
-        tidyr::gather(License, Count) %>%
-        dplyr::mutate(
-            License = factor(
-                License,
-                levels = c("Apache", "Artistic", "BSD", "GPL", "MIT", "Other",
-                           "Unknown")
-            ),
-            License = forcats::fct_reorder(License, -Count),
-            License = forcats::fct_relevel(License, "Other", after = Inf),
-            License = forcats::fct_relevel(License, "Unknown", after = Inf),
-            Percent = round(Count / sum(Count) * 100, 1),
-            Label   = paste0(License, "\n", Percent, "%")
-        )
+    licenses <- get_licenses_data(tools)
 
     plot <- ggplot2::ggplot(
             licenses,
@@ -288,21 +212,7 @@ save_categories_plot <- function(database, data_dir) {
 
     `%>%` <- magrittr::`%>%`
 
-    cats <- get_cat_idx(database$Tools) %>%
-        dplyr::group_by(Category) %>%
-        dplyr::tally(sort = TRUE, name = "Count") %>%
-        dplyr::mutate(
-            Category = stringr::str_replace_all(
-                Category, "([[:upper:]])", " \\1"
-            ),
-            Category = stringr::str_trim(Category),
-            Category = dplyr::if_else(
-                Category == "U M Is", "UMIs", Category
-            ),
-            Category = factor(Category, levels = Category),
-            Prop     = Count / length(database$Tools),
-            Percent  = round(Count / length(database$Tools) * 100, 1)
-        )
+    cats <- get_cats_data(database)
 
     gg <- ggplot2::ggplot(
             cats,
@@ -352,4 +262,172 @@ save_categories_plot <- function(database, data_dir) {
     json <- plotly::plotly_json(plot, jsonedit = FALSE)
 
     readr::write_lines(json, fs::path(plot_dir, "categories-index.json"))
+}
+
+#' Get date count table
+#'
+#' Get a table of the count of tools in the database for each date
+#'
+#' @param tools Tools tibble
+#'
+#' @return Date count tibble
+get_datecount <- function(tools) {
+
+    `%>%` <- magrittr::`%>%`
+
+    datecount <- tools %>%
+        dplyr::select(Date = Added) %>%
+        dplyr::group_by(Date) %>%
+        dplyr::summarise(Count = dplyr::n()) %>%
+        tidyr::complete(Date = tidyr::full_seq(Date, 1),
+                        fill = list(Count = 0)) %>%
+        dplyr::mutate(Total = cumsum(Count))
+
+    return(datecount)
+}
+
+#' Get publication data
+#'
+#' Get a table of publication data for plotting
+#'
+#' @param database Database object
+#'
+#' @return Publication data tibble
+get_pub_data <- function(database) {
+
+    `%>%` <- magrittr::`%>%`
+
+    pub_status <- get_doi_idx(database$Tools) %>%
+        dplyr::left_join(database$References, by = "DOI") %>%
+        dplyr::group_by(Tool) %>%
+        dplyr::summarise(
+            Published = any(!Preprint),
+            Preprint  = any(Preprint)
+        )
+
+    pub_data <- tibble::tibble(Tool = names(database$Tools)) %>%
+        dplyr::left_join(pub_status, by = "Tool") %>%
+        tidyr::replace_na(list(Preprint = FALSE, Published = FALSE)) %>%
+        dplyr::mutate(Preprint = Preprint & !Published) %>%
+        dplyr::mutate(None = !Preprint & !Published) %>%
+        dplyr::summarise_if(is.logical, sum) %>%
+        tidyr::gather(Type, Count) %>%
+        dplyr::mutate(
+            Type = factor(
+                Type,
+                levels = c("Published", "Preprint", "None"),
+                labels = c("Published", "Preprint", "Not published"))) %>%
+        dplyr::arrange(Type) %>%
+        dplyr::mutate(
+            Cumulative = cumsum(Count),
+            Midpoint   = max(Cumulative) - (Cumulative - (Count / 2)),
+            Percent    = round(Count / sum(Count) * 100, 1),
+            Label      = paste0(Type, " ", Percent, "%")
+        )
+
+    return(pub_data)
+}
+
+#' Get platforms data
+#'
+#' Get a table of platforms data for plotting
+#'
+#' @param tools Tools tibble
+#'
+#' @return Platforms data tibble
+get_platforms_data <- function(tools) {
+
+    `%>%` <- magrittr::`%>%`
+
+    platforms <- tools %>%
+        dplyr::mutate(
+            R      = stringr::str_detect(Platform, "R"),
+            Python = stringr::str_detect(Platform, "Python"),
+            MATLAB = stringr::str_detect(Platform, "MATLAB"),
+            CPP    = stringr::str_detect(Platform, "C++"),
+            Other  = !(R | Python | MATLAB | CPP)
+        ) %>%
+        dplyr::summarise_if(is.logical, sum) %>%
+        tidyr::gather(Platform, Count) %>%
+        dplyr::mutate(
+            Platform = factor(
+                Platform,
+                levels = c("R", "Python", "MATLAB", "CPP", "Other"),
+                labels = c("R", "Python", "MATLAB", "C++", "Other")
+            ),
+            Platform = forcats::fct_reorder(Platform, -Count),
+            Percent  = round(Count / sum(Count) * 100, 1),
+            Label    = paste0(Platform, "\n", Percent, "%")
+        )
+
+    return(platforms)
+}
+
+#' Get licenses data
+#'
+#' Get a table of licenses data for plotting
+#'
+#' @param tools Tools tibble
+#'
+#' @return Licenses data tibble
+get_licenses_data <- function(tools) {
+
+    `%>%` <- magrittr::`%>%`
+
+    licenses <- tools %>%
+        dplyr::mutate(
+            GPL      = stringr::str_detect(License, "GPL"),
+            BSD      = stringr::str_detect(License, "BSD"),
+            MIT      = stringr::str_detect(License, "MIT"),
+            Apache   = stringr::str_detect(License, "Apache"),
+            Artistic = stringr::str_detect(License, "Artistic"),
+            Unknown  = is.na(License),
+            Other    = !(GPL | BSD | MIT | Apache | Artistic | Unknown)
+        ) %>%
+        dplyr::summarise_if(is.logical, sum, na.rm = TRUE) %>%
+        tidyr::gather(License, Count) %>%
+        dplyr::mutate(
+            License = factor(
+                License,
+                levels = c("Apache", "Artistic", "BSD", "GPL", "MIT", "Other",
+                           "Unknown")
+            ),
+            License = forcats::fct_reorder(License, -Count),
+            License = forcats::fct_relevel(License, "Other", after = Inf),
+            License = forcats::fct_relevel(License, "Unknown", after = Inf),
+            Percent = round(Count / sum(Count) * 100, 1),
+            Label   = paste0(License, "\n", Percent, "%")
+        )
+
+    return(licenses)
+}
+
+#' Get categories data
+#'
+#' Get a table of categories data for plotting
+#'
+#' @param tools Tools tibble
+#'
+#' @return Categories data tibble
+get_cats_data <- function(database) {
+
+    `%>%` <- magrittr::`%>%`
+
+    cats <- get_cat_idx(database$Tools) %>%
+        dplyr::group_by(Category) %>%
+        dplyr::tally(sort = TRUE, name = "Count") %>%
+        dplyr::mutate(
+            Category = stringr::str_replace_all(
+                Category, "([[:upper:]])", " \\1"
+            ),
+            Category = stringr::str_trim(Category),
+            Category = dplyr::if_else(
+                Category == "U M Is", "UMIs", Category
+            ),
+            Category = factor(Category, levels = Category),
+            Prop     = Count / length(database$Tools),
+            Percent  = round(Count / length(database$Tools) * 100, 1)
+        )
+
+    return(cats)
 }

@@ -22,6 +22,52 @@ ui_prompt <- function(prompt) {
     return(response)
 }
 
+#' UI pair
+#'
+#' Print a field-value pair with padding between
+#'
+#' @param field Field string
+#' @param value Field string
+#' @param width Minimum width of the field plus padding. Padding is adjusted
+#' based on the length of the value so that values are right aligned.
+ui_pair <- function(field, value, width) {
+
+    value_len <- nchar(as.character(value))
+    width <- width - value_len
+    field <- glue::glue(field, ":")
+    field <- stringr::str_pad(field, width, side = "right")
+
+    usethis::ui_line(glue::glue(
+        usethis::ui_field(field),
+        usethis::ui_value(value)
+    ))
+}
+
+#' UI pairs list
+#'
+#' Print a (nested) list of field value pairs
+#'
+#' @param pairs_list List of field-value pairs. Names are fields and items are
+#' values. Nested lists are called recursively with indenting.
+#' @param indent Number of tabs to indent list.
+ui_pairs_list <- function(pairs_list, indent = 0) {
+
+    is_sublist <- purrr::map_lgl(pairs_list, is.list)
+
+    max_field_len <- max(nchar(names(pairs_list[!is_sublist])))
+    max_value_len <- max(nchar(pairs_list[!is_sublist]))
+    width <- max_field_len + 2 + max_value_len
+
+    purrr::iwalk(pairs_list, function(value, field) {
+        if (is.list(value)) {
+            usethis::ui_line(usethis::ui_field(glue::glue(field, ":")))
+            ui_pairs_list(value, indent + 1)
+        } else {
+            ui_pair(glue::glue(strrep("\t", indent), field), value, width)
+        }
+    })
+}
+
 #' Prompt string
 #'
 #' Prompt the user for a single string response. User will continue to be

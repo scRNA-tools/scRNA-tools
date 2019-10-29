@@ -137,10 +137,11 @@ build <- function(database, pkgs_cache, data_dir, plot_dir) {
     # Make plots
     usethis::ui_todo("Analysing database...")
     fs::dir_create(plot_dir)
-    save_number_plot(database, plot_dir)
+    tools <- get_tools(database$Tools)
+    save_number_plot(tools, plot_dir)
     save_pub_plot(database, plot_dir)
-    save_platform_plot(database, plot_dir)
-    save_licenses_plot(database, plot_dir)
+    save_platform_plot(tools, plot_dir)
+    save_licenses_plot(tools, plot_dir)
     save_categories_plot(database, plot_dir)
     usethis::ui_done(glue::glue(
         "Plot files written to {usethis::ui_path(plot_dir)}"
