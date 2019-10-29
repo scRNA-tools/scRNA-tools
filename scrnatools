@@ -58,7 +58,7 @@ source("app/stats.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.2.0")
+opts <- docopt(DOCOPT, version = "0.2.1")
 
 logo <- get_logo()
 cat(logo, "\n")
