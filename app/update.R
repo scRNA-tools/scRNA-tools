@@ -49,7 +49,7 @@ update_tool <- function(database, pkgs_cache, name = NULL) {
             License      = update_license(name, database),
             DOIs         = update_dois(name, database),
             Repositories = update_repositories(name, database, pkgs_cache),
-            Ignored      = update_ignored(name, database, pkgs_cache),
+            Ignored      = update_ignored(name, database),
             Categories   = update_categories(name, database)
         )
 
@@ -384,7 +384,15 @@ update_repositories <- function(name, database, pkgs_cache, prompt = TRUE) {
     return(database)
 }
 
-update_ignored <- function(name, database, pkgs_cache) {
+#' Update ignored
+#'
+#' Update the ignored repositories for a tool
+#'
+#' @param name Name of the tool to update
+#' @param database Database object
+#'
+#' @return Updated database object
+update_ignored <- function(name, database) {
 
     tool <- database$Tools[[name]]
     ignored <- tool$Ignored

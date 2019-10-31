@@ -22,8 +22,12 @@ save_database <- function(database, dir = "database") {
         dplyr::top_n(1, Timestamp) %>%
         dplyr::arrange(DOI)
 
+    citations  <- dplyr::select(references, DOI, Citations, Timestamp, Delay)
+    references <- dplyr::select(references, DOI, arXiv, Preprint, Date, Title)
+
     readr::write_tsv(tools,               fs::path(dir, "tools.tsv"))
-    readr::write_tsv(database$References, fs::path(dir, "references.tsv"))
+    readr::write_tsv(references,          fs::path(dir, "references.tsv"))
+    readr::write_tsv(citations,           fs::path(dir, "citations-cache.tsv"))
     readr::write_tsv(doi_idx,             fs::path(dir, "doi-idx.tsv"))
     readr::write_tsv(repositories,        fs::path(dir, "repositories.tsv"))
     readr::write_tsv(ignored,             fs::path(dir, "ignored.tsv"))

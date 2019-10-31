@@ -3,12 +3,11 @@
 #' Build the scRNA-tools website from the database
 #'
 #' @param database Database object
-#' @param pkgs_cache Packages cache object
 #' @param data_dir Path to save JSON data files
 #' @param plot_dir Path to save JSON plot files
 #'
 #' @return Updated database object
-build <- function(database, pkgs_cache, data_dir, plot_dir) {
+build <- function(database, data_dir, plot_dir) {
 
     usethis::ui_todo("Building website...")
 
@@ -23,35 +22,6 @@ build <- function(database, pkgs_cache, data_dir, plot_dir) {
         )
     } else {
         last_build <- lubridate::ydm_hms("2000-01-01 00:00:00")
-    }
-
-    # Check repositories
-    if (any(pkgs_cache$Added > last_build)) {
-
-        new_pkgs_cache <- dplyr::filter(pkgs_cache, Added > last_build)
-
-        usethis::ui_todo(glue::glue(
-            "Checking {usethis::ui_value(nrow(new_pkgs_cache))} ",
-            "new repositories..."
-        ))
-
-        pb <- progress::progress_bar$new(
-            format = paste(
-                "[:bar] :current/:total :percent",
-                "Elapsed: :elapsedfull ETA: :eta"
-            ),
-            total = length(database$Tools),
-            clear = FALSE
-        )
-        pb$tick(0)
-        for (name in names(database$Tools)) {
-            pb$tick()
-            database <- update_repositories(name, database, new_pkgs_cache,
-                                            prompt = FALSE)
-        }
-        usethis::ui_done("Repositories updated")
-    } else {
-        usethis::ui_done("Repositories up to date")
     }
 
     # Update citations

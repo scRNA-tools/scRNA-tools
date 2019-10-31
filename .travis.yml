@@ -1,0 +1,32 @@
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
+language: R
+sudo: true
+
+cache:
+  directories:
+    - $TRAVIS_BUILD_DIR/packrat/src
+    - $TRAVIS_BUILD_DIR/packrat/lib
+  packages: true
+
+install:
+  - R -e "0" --args --bootstrap-packrat
+  - R -e "packrat::restore(restart = FALSE)"
+
+script:
+  - ./scrnatools build
+  - ./scrnatools stats
+
+deploy:
+  provider: pages:git
+  token: $GITHUB_TOKEN
+  local-dir: docs
+  target_branch: website
+  on:
+    branch: master
+  edge: true # opt in to dpl v2
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
