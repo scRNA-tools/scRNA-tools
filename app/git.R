@@ -19,3 +19,64 @@ check_status <- function() {
         }
     }
 }
+
+#' Set add git message
+#'
+#' Set the template git commit message for adding a new tool
+#'
+#' @param name Name of the new tool
+#' @param description Description of the new tool
+set_gitmessage_add <- function(name, description) {
+
+    msg <- glue::glue(
+        "New tool: {name}",
+        "\n\n",
+        "# Edit the description so it is suitable for Twitter\n",
+        "{description}",
+        "\n\n",
+        "https://www.scrna-tools.org/tools#{name}"
+    )
+
+    readr::write_lines(msg, ".gitmessage")
+}
+
+#' Set update git message
+#'
+#' Set the template git commit message for udating a tool
+#'
+#' @param name Name of the updated tool
+set_gitmessage_update <- function(name) {
+
+    msg <- msg <- glue::glue(
+        "# Describe the update you have made, for example:\n",
+        "# Update: New TOOL publication\n",
+        "Update: DESCRIPTION OF UPDATE TO {name}",
+        "\n\n",
+        "https://www.scrna-tools.org/tools#{name}"
+    )
+
+    readr::write_lines(msg, ".gitmessage")
+}
+
+#' Commit database
+#'
+#' Commit the database directory using the template commit message
+#'
+#' @param dir Database directory
+commit_database <- function(dir) {
+
+    git2r::add(path = dir)
+
+    err_code <- system2("git",  c("commit",  "--template", ".gitmessage"))
+
+    if (err_code == 0) {
+        usethis::ui_done("Successfully commited database!")
+    } else {
+        usethis::ui_oops(glue::glue(
+            "Database commit failed with status code ",
+            "{usethis::ui_value(err_code)}"
+        ))
+    }
+
+    fs::file_delete(".gitmessage")
+}

@@ -58,10 +58,14 @@ source("app/stats.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.2.3")
+opts <- docopt(DOCOPT, version = "0.2.4")
 
 logo <- get_logo()
 cat(logo, "\n")
+
+if (any(c(opts$add, opts$update, opts$build, opts$archive, opts$restore))) {
+  check_status()
+}
 
 dir <- "database"
 data_dir <- "docs/data"
@@ -69,18 +73,17 @@ plot_dir <- "docs/plots"
 
 database <- load_database(dir)
 
+if (any(c(opts$add, opts$update))) {
+  pkgs_cache <- load_pkgs_cache(dir)
+  database <- check_pkgs(database, pkgs_cache)
+}
+
 if (opts$add) {
-    check_status()
-    pkgs_cache <- load_pkgs_cache(dir)
-    database   <- check_pkgs(database, pkgs_cache)
-    database   <- add_tool(database, pkgs_cache)
+    database <- add_tool(database, pkgs_cache)
 }
 
 if (opts$update) {
-    check_status()
-    pkgs_cache <- load_pkgs_cache(dir)
-    database   <- check_pkgs(database, pkgs_cache)
-    database   <- update_tool(database, pkgs_cache, opts$name)
+    database <- update_tool(database, pkgs_cache, opts$name)
 }
 
 if (opts$search) {
@@ -88,17 +91,14 @@ if (opts$search) {
 }
 
 if (opts$build) {
-    check_status()
     database <- build(database, data_dir, plot_dir)
 }
 
 if (opts$archive) {
-    check_status()
     database <- archive_tool(database, dir, opts$name)
 }
 
 if (opts$restore) {
-    check_status()
     database <- restore_archive(database, dir, opts$arc)
 }
 
@@ -106,6 +106,7 @@ if (opts$stats) {
    show_stats(database, opts$plot)
 }
 
-if (!opts$search && !opts$stats) {
+if (!any(c(opts$search, opts$stats, opts$build))) {
     save_database(database, dir)
+    commit_database(dir)
 }

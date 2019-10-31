@@ -79,6 +79,8 @@ update_tool <- function(database, pkgs_cache, name = NULL) {
         "Successfully updated {usethis::ui_value(name)}"
     ))
 
+    set_gitmessage_update(name)
+
     return(database)
 }
 

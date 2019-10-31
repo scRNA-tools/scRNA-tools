@@ -60,5 +60,7 @@ add_tool <- function(database, pkgs_cache) {
         database <- update_tool(database, pkgs_cache, name)
     }
 
+    set_gitmessage_add(tool$Tool, tool$Description)
+
     return(database)
 }
