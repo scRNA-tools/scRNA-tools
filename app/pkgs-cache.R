@@ -114,3 +114,48 @@ get_conda_pkgs <- function() {
 
     return(conda_pkgs)
 }
+
+#' Check repositories
+#'
+#' Check for package repositories that match tools in the database.
+#'
+#' @param database Database object
+#' @param pkgs_cache Packages cache table
+#' @param new Whether to only check new packages
+#'
+#' @return character vector
+check_pkgs <- function(database, pkgs_cache, new = TRUE) {
+
+    if (new) {
+        last_week <- lubridate::today("UTC") - 7
+
+        pkgs_cache <- dplyr::filter(pkgs_cache, Added > last_week)
+
+        if (nrow(pkgs_cache) == 0) {
+            usethis::ui_done("Repositories up to date")
+            return(database)
+        }
+    }
+
+    usethis::ui_todo(glue::glue(
+        "Checking {usethis::ui_value(nrow(pkgs_cache))} repositories..."
+    ))
+
+    pb <- progress::progress_bar$new(
+        format = paste(
+            "[:bar] :current/:total :percent",
+            "Elapsed: :elapsedfull ETA: :eta"
+        ),
+        total = length(database$Tools),
+        clear = FALSE
+    )
+    pb$tick(0)
+    for (name in names(database$Tools)) {
+        pb$tick()
+        database <- update_repositories(name, database, pkgs_cache,
+                                        prompt = FALSE)
+    }
+    usethis::ui_done("Repositories updated")
+
+    return(database)
+}
