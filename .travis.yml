@@ -14,6 +14,7 @@ install:
   - R -e "packrat::restore(restart = FALSE)"
 
 script:
+  - ./scrnatools build
   - ./scrnatools stats
 
 # deploy:
