@@ -26,6 +26,13 @@ script:
 #     branch: develop
 #   verbose: true
 
+deploy:
+  provider: pages:git
+  token: <encrypted token>
+  local-dir: docs
+  verbose: true
+  edge: true # opt in to dpl v2
+
 notifications:
   email:
     on_success: change
