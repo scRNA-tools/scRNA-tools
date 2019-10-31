@@ -28,8 +28,11 @@ script:
 
 deploy:
   provider: pages:git
-  token: <encrypted token>
+  token: $GITHUB_TOKEN
   local-dir: docs
+  target_branch: website
+  on:
+    branch: ci
   verbose: true
   edge: true # opt in to dpl v2
 
