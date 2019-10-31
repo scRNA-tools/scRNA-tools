@@ -4272,7 +4272,7 @@
         "Title": "Near-optimal probabilistic RNA-seq quantification",
         "DOI": "10.1038/nbt.3519",
         "Date": "2016-04-04",
-        "Citations": 1502
+        "Citations": 1503
       }
     ],
     "Preprints": [
@@ -4291,7 +4291,7 @@
         "Citations": 5
       }
     ],
-    "Citations": 1509,
+    "Citations": 1510,
     "NumPubs": 1,
     "NumPreprints": 3,
     "GitHub": "pachterlab/kallisto"
@@ -6478,7 +6478,7 @@
         "Title": "Salmon provides fast and bias-aware quantification of transcript expression",
         "DOI": "10.1038/nmeth.4197",
         "Date": "2017-03-06",
-        "Citations": 867
+        "Citations": 869
       },
       {
         "Title": "Alevin efficiently estimates accurate gene abundances from dscRNA-seq data",
@@ -6499,7 +6499,7 @@
         "Citations": 0
       }
     ],
-    "Citations": 936,
+    "Citations": 938,
     "NumPubs": 2,
     "NumPreprints": 2,
     "GitHub": "COMBINE-lab/salmon"
@@ -6951,6 +6951,28 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "CRAN": "scBio"
+  },
+  {
+    "Tool": "scCancer",
+    "Platform": "R",
+    "Code": "https://github.com/wguo-research/scCancer",
+    "Description": "The scCancer package focuses on processing and analyzing droplet-based scRNA-seq data for cancer research. Except basic data processing steps, this package takes several special considerations for cancer-specific features.",
+    "License": "GPL-3",
+    "Added": "2019-10-30",
+    "Updated": "2019-10-30",
+    "Categories": ["CellCycle", "Classification", "Clustering", "DifferentialExpression", "GeneNetworks", "QualityControl", "StemCells"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "scCancer: a package for automated processing of single cell RNA-seq data in cancer",
+        "DOI": "10.1101/800490",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "wguo-research/scCancer"
   },
   {
     "Tool": "scClassify",
@@ -10532,11 +10554,11 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 7013
+        "Citations": 7014
       }
     ],
     "Preprints": [],
-    "Citations": 7013,
+    "Citations": 7014,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "alexdobin/STAR"
@@ -11091,6 +11113,23 @@
     "GitHub": "sandberg-lab/txburst"
   },
   {
+    "Tool": "UMI_analysis",
+    "Platform": "Perl/C",
+    "Code": "https://github.com/ncgr/UMI-analysis",
+    "Description": "The software identifies instances of sequence reads originating from the same mRNA molecule (sharing a UMI) but which map to a series of adjacent coordinates on the reference.",
+    "License": "BSD-3-clause",
+    "Added": "2018-12-01",
+    "Updated": "2018-12-01",
+    "Categories": ["Quantification", "UMIs"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "PyPI": "umi-tools",
+    "GitHub": "CGATOxford/UMI-tools"
+  },
+  {
     "Tool": "UMI-tools",
     "Platform": "Python",
     "Code": "https://github.com/CGATOxford/UMI-tools",
@@ -11116,23 +11155,6 @@
     "NumPubs": 0,
     "NumPreprints": 2,
     "GitHub": "ncgr/UMI-analysis"
-  },
-  {
-    "Tool": "UMI_analysis",
-    "Platform": "Perl/C",
-    "Code": "https://github.com/ncgr/UMI-analysis",
-    "Description": "The software identifies instances of sequence reads originating from the same mRNA molecule (sharing a UMI) but which map to a series of adjacent coordinates on the reference.",
-    "License": "BSD-3-clause",
-    "Added": "2018-12-01",
-    "Updated": "2018-12-01",
-    "Categories": ["Quantification", "UMIs"],
-    "Publications": [],
-    "Preprints": [],
-    "Citations": 0,
-    "NumPubs": 0,
-    "NumPreprints": 0,
-    "PyPI": "umi-tools",
-    "GitHub": "CGATOxford/UMI-tools"
   },
   {
     "Tool": "UMICollapse",
