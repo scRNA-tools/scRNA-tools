@@ -115,19 +115,42 @@ load_cat_idx <- function(dir) {
 #'
 #' @return tibble
 load_references <- function(dir) {
-    readr::read_tsv(
+
+    references <- readr::read_tsv(
         fs::path(dir, "references.tsv"),
         col_types = readr::cols(
             DOI       = readr::col_character(),
             arXiv     = readr::col_logical(),
             Preprint  = readr::col_logical(),
             Date      = readr::col_character(),
-            Title     = readr::col_character(),
-            Citations = readr::col_double(),
-            Timestamp = readr::col_datetime(format = ""),
-            Delay     = readr::col_double()
+            Title     = readr::col_character()
         )
     )
+
+    citations_path <- fs::path(dir, "citations-cache.tsv")
+    if (fs::file_exists(citations_path)) {
+        citations <- readr::read_tsv(
+            citations_path,
+            col_types = readr::cols(
+                DOI       = readr::col_character(),
+                Citations = readr::col_double(),
+                Timestamp = readr::col_datetime(format = ""),
+                Delay     = readr::col_double()
+            )
+        )
+    } else {
+        usethis::ui_info("Creating new citations cache")
+        citations <- tibble::tibble(
+            DOI       = references$DOI,
+            Citations = 0,
+            Timestamp = lubridate::as_datetime(0),
+            Delay     = 0
+        )
+    }
+
+    references <- dplyr::left_join(references, citations, by = "DOI")
+
+    return(references)
 }
 
 #' Load repositories

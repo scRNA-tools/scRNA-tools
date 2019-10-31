@@ -58,12 +58,10 @@ source("app/stats.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.2.2")
+opts <- docopt(DOCOPT, version = "0.2.3")
 
 logo <- get_logo()
 cat(logo, "\n")
-
-check_status()
 
 dir <- "database"
 data_dir <- "docs/data"
@@ -72,12 +70,14 @@ plot_dir <- "docs/plots"
 database <- load_database(dir)
 
 if (opts$add) {
+    check_status()
     pkgs_cache <- load_pkgs_cache(dir)
     database   <- check_pkgs(database, pkgs_cache)
     database   <- add_tool(database, pkgs_cache)
 }
 
 if (opts$update) {
+    check_status()
     pkgs_cache <- load_pkgs_cache(dir)
     database   <- check_pkgs(database, pkgs_cache)
     database   <- update_tool(database, pkgs_cache, opts$name)
@@ -88,14 +88,17 @@ if (opts$search) {
 }
 
 if (opts$build) {
+    check_status()
     database <- build(database, data_dir, plot_dir)
 }
 
 if (opts$archive) {
+    check_status()
     database <- archive_tool(database, dir, opts$name)
 }
 
 if (opts$restore) {
+    check_status()
     database <- restore_archive(database, dir, opts$arc)
 }
 
