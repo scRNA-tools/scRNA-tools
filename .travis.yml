@@ -17,23 +17,13 @@ script:
   - ./scrnatools build
   - ./scrnatools stats
 
-# deploy:
-#   provider: pages
-#   skip-cleanup: true
-#   github-token: $GITHUB_PAT
-#   local-dir: docs
-#   on:
-#     branch: develop
-#   verbose: true
-
 deploy:
   provider: pages:git
   token: $GITHUB_TOKEN
   local-dir: docs
   target_branch: website
   on:
-    branch: ci
-  verbose: true
+    branch: master
   edge: true # opt in to dpl v2
 
 notifications:
