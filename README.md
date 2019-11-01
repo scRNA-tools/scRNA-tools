@@ -19,10 +19,10 @@ updated as new software becomes available.
 ## Contributing
 
 We welcome contributions from the scRNA-seq community! If you would like to
-contribute please follow the instructions in the wiki or fill in the submission
+contribute please follow the have a look at
+[the wiki](https://github.com/Oshlack/scRNA-tools/wiki) or fill in the submission
 form on our website (https://www.scrna-tools.org/submit). Please be aware that
-by contributing you are agreeing to abide by the =
-[code of conduct](CODE_OF_CONDUCT.md).
+by contributing you are agreeing to abide by the [code of conduct](CODE_OF_CONDUCT.md).
 
 ## Citation
 
