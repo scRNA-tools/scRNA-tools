@@ -1,19 +1,4 @@
 Thanks for taking the time to submit an issue. To tell us about a new tool
-please fill in the template below. If you would like us to update the entry for
-an existing tool just fill in the relevant sections. If you have another issue
-just delete the template and let us know.
-
-Tool details
-------------
-
-(Descriptions of the sections and categories are given in our README)
-
-**Name:**
-**Platform:**
-**DOIs:**
-**PubDates:**
-**Code:**
-**Description:**
-**License:**
-**Categories:**
-
+(or updates to existing entries) please fill in the submission form on
+our website (https://www.scrna-tools.org/submit). If you have another issue
+please let us know below!

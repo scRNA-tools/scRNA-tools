@@ -1,15 +1,5 @@
-The following instructions are for pull requests related to tool entries. If
-your pull request is about something else they can be ignored.
+If your pull request if related to a tool entry please make sure you have
+followed the instructions in the wiki (and thank you for contributing!).
 
-Please describe your pull request below and fill out the check list:
-
-**Description**:
-
-**Have you:**
-
-- [ ] Read the contribution guidelines
-- [ ] Only (manually) edited `single_cell_software.csv`
-- [ ] Sorted the table alphabetically
-- [ ] Checked dates are in the right format (YYYY-MM-DD)
-- [ ] Run `build_scRNAtools.R` (optional)
-
+Other contributions are more than welcome, just let us know what you
+have done below!
