@@ -7,6 +7,16 @@
 #                                                                              #
 ################################################################################
 
+#### PACKRAT ####
+
+suppressMessages(
+    packrat::restore(
+        overwrite.dirty = TRUE,
+        prompt          = FALSE,
+        restart         = FALSE
+    )
+)
+
 #### DOCOPT ####
 
 "
