@@ -300,7 +300,12 @@
         "PyPI": "moana"
       },
       {
-        "Tool": "OnClass"
+        "Tool": "northstar",
+        "PyPI": "northstar"
+      },
+      {
+        "Tool": "OnClass",
+        "PyPI": "OnClass"
       },
       {
         "Tool": "ParaDPMM"
@@ -339,14 +344,22 @@
         "Tool": "scPred"
       },
       {
+        "Tool": "scTGIF",
+        "Bioc": "scTGIF"
+      },
+      {
         "Tool": "scVI",
         "PyPI": "scvi"
+      },
+      {
+        "Tool": "SINC"
       },
       {
         "Tool": "SingleCellNet"
       },
       {
-        "Tool": "SingleR"
+        "Tool": "SingleR",
+        "Bioc": "SingleR"
       },
       {
         "Tool": "VISION"
@@ -629,6 +642,9 @@
         "CRAN": "robustSingleCell"
       },
       {
+        "Tool": "ROGUE"
+      },
+      {
         "Tool": "RSCORE"
       },
       {
@@ -639,6 +655,10 @@
       },
       {
         "Tool": "sake"
+      },
+      {
+        "Tool": "SAM",
+        "PyPI": "sam-algorithm"
       },
       {
         "Tool": "SAUCIE"
@@ -681,7 +701,8 @@
         "Tool": "scEpath"
       },
       {
-        "Tool": "scGPS"
+        "Tool": "scGPS",
+        "Bioc": "scGPS"
       },
       {
         "Tool": "scicast",
@@ -928,7 +949,8 @@
         "Tool": "MUDAN"
       },
       {
-        "Tool": "muscat"
+        "Tool": "muscat",
+        "Bioc": "muscat"
       },
       {
         "Tool": "NBID"
@@ -1031,7 +1053,8 @@
         "CRAN": "TooManyCellsR"
       },
       {
-        "Tool": "tradeSeq"
+        "Tool": "tradeSeq",
+        "Bioc": "tradeSeq"
       },
       {
         "Tool": "URD"
@@ -1088,6 +1111,10 @@
       },
       {
         "Tool": "Conos"
+      },
+      {
+        "Tool": "countClust",
+        "Bioc": "CountClust"
       },
       {
         "Tool": "CSMF"
@@ -1284,7 +1311,14 @@
         "Tool": "sake"
       },
       {
+        "Tool": "SAM",
+        "PyPI": "sam-algorithm"
+      },
+      {
         "Tool": "SAUCIE"
+      },
+      {
+        "Tool": "SAVER-X"
       },
       {
         "Tool": "scAEspy"
@@ -1363,6 +1397,10 @@
         "Tool": "scSVA"
       },
       {
+        "Tool": "scTGIF",
+        "Bioc": "scTGIF"
+      },
+      {
         "Tool": "scUnifrac"
       },
       {
@@ -1434,6 +1472,10 @@
       },
       {
         "Tool": "TCM"
+      },
+      {
+        "Tool": "trVAE",
+        "PyPI": "trvae"
       },
       {
         "Tool": "TSEE"
@@ -1548,7 +1590,8 @@
         "Bioc": "switchde"
       },
       {
-        "Tool": "tradeSeq"
+        "Tool": "tradeSeq",
+        "Bioc": "tradeSeq"
       },
       {
         "Tool": "trendsceek"
@@ -1637,7 +1680,14 @@
         "Tool": "rCASC"
       },
       {
+        "Tool": "ROGUE"
+      },
+      {
         "Tool": "sake"
+      },
+      {
+        "Tool": "SAM",
+        "PyPI": "sam-algorithm"
       },
       {
         "Tool": "Scanpy",
@@ -1658,10 +1708,18 @@
         "Bioc": "scone"
       },
       {
+        "Tool": "scprep",
+        "PyPI": "scprep"
+      },
+      {
         "Tool": "SCQC"
       },
       {
         "Tool": "scSeqR"
+      },
+      {
+        "Tool": "scVelo",
+        "PyPI": "scvelo"
       },
       {
         "Tool": "SEGtool"
@@ -1735,6 +1793,10 @@
       },
       {
         "Tool": "CSN"
+      },
+      {
+        "Tool": "fcoex",
+        "Bioc": "fcoex"
       },
       {
         "Tool": "flotilla",
@@ -1926,7 +1988,8 @@
         "Tool": "MTGO-SC"
       },
       {
-        "Tool": "OnClass"
+        "Tool": "OnClass",
+        "PyPI": "OnClass"
       },
       {
         "Tool": "pagoda2"
@@ -1964,7 +2027,15 @@
         "Tool": "SCope"
       },
       {
+        "Tool": "scprep",
+        "PyPI": "scprep"
+      },
+      {
         "Tool": "scSeqR"
+      },
+      {
+        "Tool": "scTGIF",
+        "Bioc": "scTGIF"
       },
       {
         "Tool": "SEPA",
@@ -2123,6 +2194,9 @@
         "CRAN": "SAVER"
       },
       {
+        "Tool": "SAVER-X"
+      },
+      {
         "Tool": "Scedar",
         "PyPI": "scedar"
       },
@@ -2268,11 +2342,15 @@
         "Tool": "MuSiC"
       },
       {
-        "Tool": "OnClass"
+        "Tool": "OnClass",
+        "PyPI": "OnClass"
       },
       {
         "Tool": "robustSingleCell",
         "CRAN": "robustSingleCell"
+      },
+      {
+        "Tool": "SAUCIE"
       },
       {
         "Tool": "scAEspy"
@@ -2448,6 +2526,10 @@
         "Tool": "sake"
       },
       {
+        "Tool": "SAM",
+        "PyPI": "sam-algorithm"
+      },
+      {
         "Tool": "SC3",
         "Bioc": "SC3"
       },
@@ -2501,6 +2583,10 @@
       },
       {
         "Tool": "SCPattern"
+      },
+      {
+        "Tool": "scPlot",
+        "PyPI": "scplot"
       },
       {
         "Tool": "scran",
@@ -2656,10 +2742,12 @@
         "Tool": "MUDAN"
       },
       {
-        "Tool": "muscat"
+        "Tool": "muscat",
+        "Bioc": "muscat"
       },
       {
-        "Tool": "OnClass"
+        "Tool": "OnClass",
+        "PyPI": "OnClass"
       },
       {
         "Tool": "Ouija"
@@ -2670,6 +2758,10 @@
       },
       {
         "Tool": "rCASC"
+      },
+      {
+        "Tool": "SAM",
+        "PyPI": "sam-algorithm"
       },
       {
         "Tool": "Scedar",
@@ -2683,7 +2775,8 @@
         "Tool": "scGeneFit"
       },
       {
-        "Tool": "scGPS"
+        "Tool": "scGPS",
+        "Bioc": "scGPS"
       },
       {
         "Tool": "scicast",
@@ -2914,6 +3007,10 @@
         "Tool": "sake"
       },
       {
+        "Tool": "SAM",
+        "PyPI": "sam-algorithm"
+      },
+      {
         "Tool": "SAMstrt"
       },
       {
@@ -2970,6 +3067,10 @@
         "PyPI": "scpopcorn"
       },
       {
+        "Tool": "scprep",
+        "PyPI": "scprep"
+      },
+      {
         "Tool": "scran",
         "Bioc": "scran"
       },
@@ -2990,6 +3091,10 @@
       {
         "Tool": "sctransform",
         "CRAN": "sctransform"
+      },
+      {
+        "Tool": "scVelo",
+        "PyPI": "scvelo"
       },
       {
         "Tool": "Seurat",
@@ -3230,6 +3335,10 @@
         "PyPI": "PySCUBA"
       },
       {
+        "Tool": "scVelo",
+        "PyPI": "scvelo"
+      },
+      {
         "Tool": "sincell",
         "Bioc": "sincell"
       },
@@ -3426,6 +3535,9 @@
         "Tool": "rCASC"
       },
       {
+        "Tool": "ROGUE"
+      },
+      {
         "Tool": "Scanpy",
         "PyPI": "scanpy"
       },
@@ -3459,6 +3571,10 @@
       {
         "Tool": "scPipe",
         "Bioc": "scPipe"
+      },
+      {
+        "Tool": "scprep",
+        "PyPI": "scprep"
       },
       {
         "Tool": "SCQC"
@@ -3742,7 +3858,8 @@
         "Tool": "minnow"
       },
       {
-        "Tool": "muscat"
+        "Tool": "muscat",
+        "Bioc": "muscat"
       },
       {
         "Tool": "MuSiC"
@@ -4050,7 +4167,8 @@
         "Tool": "scGEApp"
       },
       {
-        "Tool": "scGPS"
+        "Tool": "scGPS",
+        "Bioc": "scGPS"
       },
       {
         "Tool": "scLVM",
@@ -4089,6 +4207,9 @@
       },
       {
         "Tool": "SeuratWizard"
+      },
+      {
+        "Tool": "SINC"
       },
       {
         "Tool": "slalom",
@@ -4401,6 +4522,10 @@
         "CRAN": "FateID"
       },
       {
+        "Tool": "fcoex",
+        "Bioc": "fcoex"
+      },
+      {
         "Tool": "FiRE",
         "CRAN": "FiRE"
       },
@@ -4534,7 +4659,8 @@
         "Tool": "MUDAN"
       },
       {
-        "Tool": "muscat"
+        "Tool": "muscat",
+        "Bioc": "muscat"
       },
       {
         "Tool": "MuSiC"
@@ -4606,10 +4732,20 @@
         "CRAN": "robustSingleCell"
       },
       {
+        "Tool": "ROGUE"
+      },
+      {
         "Tool": "RSCORE"
       },
       {
         "Tool": "sake"
+      },
+      {
+        "Tool": "SAM",
+        "PyPI": "sam-algorithm"
+      },
+      {
+        "Tool": "SAUCIE"
       },
       {
         "Tool": "SC2P"
@@ -4677,10 +4813,12 @@
         "Tool": "scGESTALT"
       },
       {
-        "Tool": "scGPS"
+        "Tool": "scGPS",
+        "Bioc": "scGPS"
       },
       {
-        "Tool": "schex"
+        "Tool": "schex",
+        "Bioc": "schex"
       },
       {
         "Tool": "SCHiRM"
@@ -4734,8 +4872,16 @@
         "Tool": "scploid"
       },
       {
+        "Tool": "scPlot",
+        "PyPI": "scplot"
+      },
+      {
         "Tool": "scPopCorn",
         "PyPI": "scpopcorn"
+      },
+      {
+        "Tool": "scprep",
+        "PyPI": "scprep"
       },
       {
         "Tool": "SCRABBLE",
@@ -4777,11 +4923,19 @@
         "Bioc": "scTensor"
       },
       {
+        "Tool": "scTGIF",
+        "Bioc": "scTGIF"
+      },
+      {
         "Tool": "sctransform",
         "CRAN": "sctransform"
       },
       {
         "Tool": "scUnifrac"
+      },
+      {
+        "Tool": "scVelo",
+        "PyPI": "scvelo"
       },
       {
         "Tool": "Seurat",
@@ -4825,7 +4979,8 @@
         "Bioc": "singleCellTK"
       },
       {
-        "Tool": "SingleR"
+        "Tool": "SingleR",
+        "Bioc": "SingleR"
       },
       {
         "Tool": "singlet",
@@ -4900,7 +5055,8 @@
         "Tool": "TraCeR"
       },
       {
-        "Tool": "tradeSeq"
+        "Tool": "tradeSeq",
+        "Bioc": "tradeSeq"
       },
       {
         "Tool": "Trajan"
