@@ -240,7 +240,7 @@ save_categories_json <- function(database, data_dir) {
         dplyr::mutate(Tools = as.list(Tools)) %>%
         dplyr::left_join(database$Categories, by = "Category") %>%
         dplyr::select(Category, Description, Tools) %>%
-        dplyr::arrange(Category)
+        arrange_str(Category)
 
     jsonlite::write_json(categories, fs::path(data_dir, "categories.json"),
                          pretty = TRUE)

@@ -149,6 +149,16 @@ load_references <- function(dir) {
     }
 
     references <- dplyr::left_join(references, citations, by = "DOI")
+    
+    # If references were missing from the citations cache replace NAs
+    references <- tidyr::replace_na(
+        references,
+        list(
+            Citations = 0,
+            Timestamp = lubridate::as_datetime(0),
+            Delay     = 0
+        )
+    )
 
     return(references)
 }

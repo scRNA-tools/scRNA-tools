@@ -20,7 +20,7 @@ save_database <- function(database, dir = "database") {
         dplyr::filter(DOI %in% doi_idx$DOI) %>%
         dplyr::group_by(DOI) %>%
         dplyr::top_n(1, Timestamp) %>%
-        dplyr::arrange(DOI)
+        arrange_str(DOI)
 
     citations  <- dplyr::select(references, DOI, Citations, Timestamp, Delay)
     references <- dplyr::select(references, DOI, arXiv, Preprint, Date, Title)
@@ -59,7 +59,7 @@ get_tools <- function(tools_list) {
         )
     })
 
-    tools <- dplyr::distinct(dplyr::arrange(tools, Tool))
+    tools <- dplyr::distinct(arrange_str(tools, Tool))
 
     return(tools)
 }
@@ -79,7 +79,7 @@ get_doi_idx <- function(tools_list) {
         )
     })
 
-    doi_idx <- dplyr::distinct(dplyr::arrange(doi_idx, Tool, DOI))
+    doi_idx <- dplyr::distinct(arrange_str(doi_idx, Tool, DOI))
 
     return(doi_idx)
 }
@@ -103,7 +103,7 @@ get_repositories <- function(tools_list) {
         )
     })
 
-    repositories <- dplyr::arrange(repositories, Tool)
+    repositories <- arrange_str(repositories, Tool)
 
     return(repositories)
 }
@@ -125,7 +125,7 @@ get_ignored <- function(tools_list) {
     })
 
     ignored <- dplyr::distinct(
-        dplyr::arrange(ignored, Tool, Type, Name)
+        arrange_str(ignored, Tool, Type, Name)
     )
 }
 
@@ -144,5 +144,5 @@ get_cat_idx <- function(tools_list) {
         )
     })
 
-    cat_idx <- dplyr::distinct(dplyr::arrange(cat_idx, Tool, Category))
+    cat_idx <- dplyr::distinct(arrange_str(cat_idx, Tool, Category))
 }
