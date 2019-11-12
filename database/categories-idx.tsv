@@ -304,6 +304,10 @@ GenePattern	MarkerGenes
 GenePattern	Normalisation
 GenePattern	QualityControl
 GenePattern	Visualisation
+GeneSwitches	ExpressionPatterns
+GeneSwitches	GeneSets
+GeneSwitches	Transformation
+GeneSwitches	Visualisation
 GiniClust	Clustering
 GiniClust	DimensionalityReduction
 GiniClust	Interactive
@@ -336,6 +340,7 @@ HoneyBADGER	Variants
 HoneyBADGER	Visualisation
 HopLand	Ordering
 HopLand	Visualisation
+Hopper	ExpressionPatterns
 HurdleNormal	GeneNetworks
 I-Impute	DimensionalityReduction
 I-Impute	Imputation
@@ -803,6 +808,7 @@ TBSP	Variants
 TBSP	Visualisation
 TCM	DimensionalityReduction
 TCM	Visualisation
+TENET	GeneNetworks
 TILPRED	Classification
 TILPRED	Immune
 TRAPeS	Immune
@@ -1158,6 +1164,7 @@ scAlleleCount	AlleleSpecific
 scBASE	AlleleSpecific
 scBatch	Integration
 scBio	Integration
+scCB2	QualityControl
 scCancer	CellCycle
 scCancer	Classification
 scCancer	Clustering
@@ -1251,6 +1258,7 @@ scNCA	Simulation
 scNPF	GeneNetworks
 scNPF	Imputation
 scNPF	Integration
+scPCA	DimensionalityReduction
 scPanoView	Clustering
 scPanoView	DimensionalityReduction
 scPanoView	VariableGenes
