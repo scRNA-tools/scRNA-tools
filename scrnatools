@@ -68,6 +68,9 @@ source("app/stats.R")
 
 #### MAIN CODE ####
 
+# Set locale for consistent sorting on different platforms
+invisible(Sys.setlocale("LC_COLLATE", "C"))
+
 opts <- docopt(DOCOPT, version = "0.2.4")
 
 logo <- get_logo()
