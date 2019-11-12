@@ -804,9 +804,16 @@
     "Description": "COMET: Identifying candidate marker panels from single-cell transcriptomic data",
     "License": "BSD-3-clause",
     "Added": "2019-05-31",
-    "Updated": "2019-10-02",
+    "Updated": "2019-11-12",
     "Categories": ["MarkerGenes", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Combinatorial prediction of marker panels from single‐cell transcriptomic data",
+        "DOI": "10.15252/msb.20199005",
+        "Date": "2019-10",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Combinatorial prediction of marker panels from single-cell transcriptomic data",
@@ -815,7 +822,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "COMETSC",
     "GitHub": "MSingerLab/COMETSC"
@@ -2678,6 +2685,27 @@
     "NumPreprints": 0,
     "PyPI": "genepattern-python",
     "GitHub": "genepattern/single_cell_clustering_notebook"
+  },
+  {
+    "Tool": "GeneSwitches",
+    "Platform": "R",
+    "Code": "https://github.com/SGDDNB/GeneSwitches",
+    "Description": "The goal of GeneSwitches is to discover the order of gene-expression and functional events during cell state transitions at a single-cell resolution.",
+    "Added": "2019-11-12",
+    "Updated": "2019-11-12",
+    "Categories": ["ExpressionPatterns", "GeneSets", "Transformation", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "GeneSwitches : Ordering gene-expression and functional events in single-cell experiments",
+        "DOI": "10.1101/832626",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "SGDDNB/GeneSwitches"
   },
   {
     "Tool": "GiniClust",
@@ -6745,6 +6773,21 @@
     "GitHub": "gongx030/tcm"
   },
   {
+    "Tool": "TENET",
+    "Platform": "Python",
+    "Code": "https://github.com/neocaleb/TENET",
+    "Description": "A tool for reconstructing Transfer Entropy-based causal gene NETwork from pseudo-time ordered single cell transcriptomic data",
+    "Added": "2019-11-12",
+    "Updated": "2019-11-12",
+    "Categories": ["GeneNetworks"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "GitHub": "neocaleb/TENET"
+  },
+  {
     "Tool": "TILPRED",
     "Platform": "R",
     "Code": "https://github.com/carmonalab/TILPRED",
@@ -9457,7 +9500,7 @@
         "Title": "Salmon provides fast and bias-aware quantification of transcript expression",
         "DOI": "10.1038/nmeth.4197",
         "Date": "2017-03-06",
-        "Citations": 889
+        "Citations": 890
       },
       {
         "Title": "Alevin efficiently estimates accurate gene abundances from dscRNA-seq data",
@@ -9478,7 +9521,7 @@
         "Citations": 0
       }
     ],
-    "Citations": 959,
+    "Citations": 960,
     "NumPubs": 2,
     "NumPreprints": 2,
     "GitHub": "COMBINE-lab/salmon"
@@ -9638,6 +9681,28 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "CRAN": "scBio"
+  },
+  {
+    "Tool": "scCB2",
+    "Platform": "R",
+    "Code": "https://github.com/zijianni/scCB2",
+    "Description": "CB2 is a cluster-based approach for distinguishing true cells from background barcodes in droplet-based single cell RNA-seq experiments",
+    "License": "GPL-3",
+    "Added": "2019-11-12",
+    "Updated": "2019-11-12",
+    "Categories": ["QualityControl"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "CB2 distinguishes cells from background barcodes in 10x Genomics data",
+        "DOI": "10.1101/832535",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "zijianni/scCB2"
   },
   {
     "Tool": "scCancer",
