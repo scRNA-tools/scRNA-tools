@@ -7,21 +7,13 @@
         "Tool": "BALDR"
       },
       {
-        "Tool": "bcbio",
-        "PyPI": "bcbio"
+        "Tool": "BRAPeS"
       },
       {
         "Tool": "BraCeR"
       },
       {
-        "Tool": "BRAPeS"
-      },
-      {
         "Tool": "CellRanger"
-      },
-      {
-        "Tool": "dropSeqPipe",
-        "PyPI": "dropSeqPipe"
       },
       {
         "Tool": "DrSeq2"
@@ -31,6 +23,32 @@
       },
       {
         "Tool": "NanoPARE"
+      },
+      {
+        "Tool": "SIP"
+      },
+      {
+        "Tool": "STAR"
+      },
+      {
+        "Tool": "Sharq"
+      },
+      {
+        "Tool": "TraCeR"
+      },
+      {
+        "Tool": "VDJPuzzle"
+      },
+      {
+        "Tool": "VarTrix"
+      },
+      {
+        "Tool": "bcbio",
+        "PyPI": "bcbio"
+      },
+      {
+        "Tool": "dropSeqPipe",
+        "PyPI": "dropSeqPipe"
       },
       {
         "Tool": "rCASC"
@@ -50,26 +68,8 @@
         "Tool": "scumi"
       },
       {
-        "Tool": "Sharq"
-      },
-      {
         "Tool": "singleCellTK",
         "Bioc": "singleCellTK"
-      },
-      {
-        "Tool": "SIP"
-      },
-      {
-        "Tool": "STAR"
-      },
-      {
-        "Tool": "TraCeR"
-      },
-      {
-        "Tool": "VarTrix"
-      },
-      {
-        "Tool": "VDJPuzzle"
       },
       {
         "Tool": "zUMIs"
@@ -118,19 +118,19 @@
         "PyPI": "outrigger"
       },
       {
+        "Tool": "SCATS"
+      },
+      {
+        "Tool": "SingleSplice"
+      },
+      {
         "Tool": "polyApipe"
       },
       {
         "Tool": "scAPA"
       },
       {
-        "Tool": "SCATS"
-      },
-      {
         "Tool": "scDAPA"
-      },
-      {
-        "Tool": "SingleSplice"
       },
       {
         "Tool": "velocyto",
@@ -152,13 +152,13 @@
         "Tool": "BraCeR"
       },
       {
-        "Tool": "scRNAss"
-      },
-      {
         "Tool": "TraCeR"
       },
       {
         "Tool": "VDJPuzzle"
+      },
+      {
+        "Tool": "scRNAss"
       }
     ]
   },
@@ -171,15 +171,8 @@
         "PyPI": "AltAnalyze"
       },
       {
-        "Tool": "ascend"
-      },
-      {
         "Tool": "CancerInSilico",
         "Bioc": "CancerInSilico"
-      },
-      {
-        "Tool": "ccRemover",
-        "CRAN": "ccRemover"
       },
       {
         "Tool": "Cyclum"
@@ -192,10 +185,20 @@
         "Bioc": "Oscope"
       },
       {
-        "Tool": "peco"
+        "Tool": "Pre-Phaser"
       },
       {
-        "Tool": "Pre-Phaser"
+        "Tool": "SCRAT"
+      },
+      {
+        "Tool": "ascend"
+      },
+      {
+        "Tool": "ccRemover",
+        "CRAN": "ccRemover"
+      },
+      {
+        "Tool": "peco"
       },
       {
         "Tool": "rCASC"
@@ -213,9 +216,6 @@
       {
         "Tool": "scran",
         "Bioc": "scran"
-      },
-      {
-        "Tool": "SCRAT"
       }
     ]
   },
@@ -231,24 +231,15 @@
         "PyPI": "AltAnalyze"
       },
       {
-        "Tool": "bigSCale2"
-      },
-      {
-        "Tool": "cardelino"
+        "Tool": "CHETAH",
+        "Bioc": "CHETAH"
       },
       {
         "Tool": "CaSTLe"
       },
       {
-        "Tool": "celaref",
-        "Bioc": "celaref"
-      },
-      {
         "Tool": "Cell-BLAST",
         "PyPI": "Cell-BLAST"
-      },
-      {
-        "Tool": "cellassign"
       },
       {
         "Tool": "CellFishing"
@@ -257,15 +248,11 @@
         "Tool": "CellO"
       },
       {
-        "Tool": "CHETAH",
-        "Bioc": "CHETAH"
+        "Tool": "ClusterMap"
       },
       {
         "Tool": "Clustergrammer2",
         "PyPI": "clustergrammer2"
-      },
-      {
-        "Tool": "ClusterMap"
       },
       {
         "Tool": "DigitalCellSorter",
@@ -285,31 +272,21 @@
         "Tool": "Garnett"
       },
       {
-        "Tool": "hscScore"
-      },
-      {
         "Tool": "KPNN"
       },
       {
         "Tool": "LAmbDA"
       },
       {
-        "Tool": "matchSCore2"
+        "Tool": "MIMOSCA"
       },
       {
         "Tool": "MetaNeighbor",
         "Bioc": "MetaNeighbor"
       },
       {
-        "Tool": "MIMOSCA"
-      },
-      {
         "Tool": "Moana",
         "PyPI": "moana"
-      },
-      {
-        "Tool": "northstar",
-        "PyPI": "northstar"
       },
       {
         "Tool": "OnClass",
@@ -319,45 +296,8 @@
         "Tool": "ParaDPMM"
       },
       {
-        "Tool": "scCancer"
-      },
-      {
-        "Tool": "scClassify"
-      },
-      {
-        "Tool": "scdney"
-      },
-      {
-        "Tool": "scfind",
-        "Bioc": "scfind"
-      },
-      {
-        "Tool": "scID"
-      },
-      {
         "Tool": "SCINA",
         "CRAN": "SCINA"
-      },
-      {
-        "Tool": "scmap",
-        "Bioc": "scmap"
-      },
-      {
-        "Tool": "scMatch"
-      },
-      {
-        "Tool": "scMCA"
-      },
-      {
-        "Tool": "scPred"
-      },
-      {
-        "Tool": "scTGIF",
-        "Bioc": "scTGIF"
-      },
-      {
-        "Tool": "scVI",
-        "PyPI": "scvi"
       },
       {
         "Tool": "SINC"
@@ -374,6 +314,66 @@
       },
       {
         "Tool": "VISION"
+      },
+      {
+        "Tool": "bigSCale2"
+      },
+      {
+        "Tool": "cardelino"
+      },
+      {
+        "Tool": "celaref",
+        "Bioc": "celaref"
+      },
+      {
+        "Tool": "cellassign"
+      },
+      {
+        "Tool": "hscScore"
+      },
+      {
+        "Tool": "matchSCore2"
+      },
+      {
+        "Tool": "northstar",
+        "PyPI": "northstar"
+      },
+      {
+        "Tool": "scCancer"
+      },
+      {
+        "Tool": "scClassify"
+      },
+      {
+        "Tool": "scID"
+      },
+      {
+        "Tool": "scMCA"
+      },
+      {
+        "Tool": "scMatch"
+      },
+      {
+        "Tool": "scPred"
+      },
+      {
+        "Tool": "scTGIF",
+        "Bioc": "scTGIF"
+      },
+      {
+        "Tool": "scVI",
+        "PyPI": "scvi"
+      },
+      {
+        "Tool": "scdney"
+      },
+      {
+        "Tool": "scfind",
+        "Bioc": "scfind"
+      },
+      {
+        "Tool": "scmap",
+        "Bioc": "scmap"
       }
     ]
   },
@@ -385,18 +385,11 @@
         "Tool": "ACTION"
       },
       {
-        "Tool": "AltAnalyze",
-        "PyPI": "AltAnalyze"
-      },
-      {
         "Tool": "ASAP"
       },
       {
-        "Tool": "ascend"
-      },
-      {
-        "Tool": "BackSPIN",
-        "PyPI": "backspinpy"
+        "Tool": "AltAnalyze",
+        "PyPI": "AltAnalyze"
       },
       {
         "Tool": "BAMMSC"
@@ -406,27 +399,26 @@
         "Bioc": "BEARscc"
       },
       {
-        "Tool": "bigSCale"
-      },
-      {
-        "Tool": "bigSCale2"
-      },
-      {
         "Tool": "BISCUIT"
       },
       {
         "Tool": "BUSseq"
       },
       {
+        "Tool": "BackSPIN",
+        "PyPI": "backspinpy"
+      },
+      {
         "Tool": "CALISTA"
       },
       {
-        "Tool": "ccfindR",
-        "Bioc": "ccfindR"
+        "Tool": "CIDR"
       },
       {
-        "Tool": "celda",
-        "Bioc": "celda"
+        "Tool": "COAC"
+      },
+      {
+        "Tool": "CSMF"
       },
       {
         "Tool": "CellBIC"
@@ -438,41 +430,17 @@
         "Tool": "CellRouter"
       },
       {
-        "Tool": "CIDR"
-      },
-      {
-        "Tool": "clusterExperiment",
-        "Bioc": "clusterExperiment"
-      },
-      {
-        "Tool": "Clustergrammer2",
-        "PyPI": "clustergrammer2"
-      },
-      {
         "Tool": "ClusterMap"
       },
       {
         "Tool": "ClusterMine"
       },
       {
-        "Tool": "cNMF"
-      },
-      {
-        "Tool": "COAC"
+        "Tool": "Clustergrammer2",
+        "PyPI": "clustergrammer2"
       },
       {
         "Tool": "Conos"
-      },
-      {
-        "Tool": "constclust",
-        "PyPI": "constclust"
-      },
-      {
-        "Tool": "countClust",
-        "Bioc": "CountClust"
-      },
-      {
-        "Tool": "CSMF"
       },
       {
         "Tool": "DC3"
@@ -481,11 +449,21 @@
         "Tool": "DENDRO"
       },
       {
-        "Tool": "DendroSplit",
-        "PyPI": "dendrosplit"
+        "Tool": "DESC",
+        "PyPI": "desc"
       },
       {
-        "Tool": "densityCut"
+        "Tool": "DIEM"
+      },
+      {
+        "Tool": "DIMMSC"
+      },
+      {
+        "Tool": "DUSC"
+      },
+      {
+        "Tool": "DendroSplit",
+        "PyPI": "dendrosplit"
       },
       {
         "Tool": "DensityPath"
@@ -495,29 +473,13 @@
         "Bioc": "DepecheR"
       },
       {
-        "Tool": "DESC",
-        "PyPI": "desc"
-      },
-      {
         "Tool": "Dhaka"
-      },
-      {
-        "Tool": "DIEM"
-      },
-      {
-        "Tool": "DIMMSC"
       },
       {
         "Tool": "DoubletFinder"
       },
       {
-        "Tool": "dropClust"
-      },
-      {
         "Tool": "DrSeq2"
-      },
-      {
-        "Tool": "DUSC"
       },
       {
         "Tool": "ECLAIR",
@@ -530,18 +492,11 @@
         "Tool": "ESAT"
       },
       {
-        "Tool": "flotilla",
-        "PyPI": "flotilla"
-      },
-      {
         "Tool": "FORKS"
       },
       {
         "Tool": "GenePattern",
         "PyPI": "genepattern-python"
-      },
-      {
-        "Tool": "gficf"
       },
       {
         "Tool": "GiniClust"
@@ -560,26 +515,8 @@
         "Tool": "IKAP"
       },
       {
-        "Tool": "iS-CellR"
-      },
-      {
-        "Tool": "iterClust",
-        "Bioc": "iterClust"
-      },
-      {
-        "Tool": "jackstraw",
-        "CRAN": "jackstraw"
-      },
-      {
         "Tool": "Linnorm",
         "Bioc": "Linnorm"
-      },
-      {
-        "Tool": "mbkmeans",
-        "Bioc": "mbkmeans"
-      },
-      {
-        "Tool": "mcap"
       },
       {
         "Tool": "MCXpress"
@@ -587,6 +524,15 @@
       {
         "Tool": "MELD",
         "PyPI": "meld"
+      },
+      {
+        "Tool": "MPSSC"
+      },
+      {
+        "Tool": "MUDAN"
+      },
+      {
+        "Tool": "MUSIC"
       },
       {
         "Tool": "MetaCell",
@@ -605,31 +551,8 @@
         "Bioc": "monocle"
       },
       {
-        "Tool": "MPSSC"
-      },
-      {
-        "Tool": "MUDAN"
-      },
-      {
-        "Tool": "MUSIC"
-      },
-      {
-        "Tool": "netSmooth",
-        "Bioc": "netSmooth"
-      },
-      {
-        "Tool": "nimfa",
-        "PyPI": "nimfa"
-      },
-      {
-        "Tool": "pagoda2"
-      },
-      {
         "Tool": "PARC",
         "PyPI": "parc"
-      },
-      {
-        "Tool": "pcaReduce"
       },
       {
         "Tool": "PIVOT"
@@ -647,16 +570,6 @@
         "Tool": "RCA"
       },
       {
-        "Tool": "rCASC"
-      },
-      {
-        "Tool": "reCAT"
-      },
-      {
-        "Tool": "robustSingleCell",
-        "CRAN": "robustSingleCell"
-      },
-      {
         "Tool": "ROGUE"
       },
       {
@@ -667,9 +580,6 @@
       },
       {
         "Tool": "SAIC"
-      },
-      {
-        "Tool": "sake"
       },
       {
         "Tool": "SAM",
@@ -683,8 +593,187 @@
         "Bioc": "SC3"
       },
       {
+        "Tool": "SCENIC",
+        "PyPI": "pyscenic"
+      },
+      {
+        "Tool": "SCRAT"
+      },
+      {
+        "Tool": "SCell"
+      },
+      {
+        "Tool": "SCope"
+      },
+      {
+        "Tool": "SHARP"
+      },
+      {
+        "Tool": "SIMLR",
+        "Bioc": "SIMLR",
+        "PyPI": "SIMLR"
+      },
+      {
+        "Tool": "SINCERA"
+      },
+      {
+        "Tool": "SNN-Cliq"
+      },
+      {
+        "Tool": "SOUP"
+      },
+      {
+        "Tool": "SPADE"
+      },
+      {
+        "Tool": "SSrGE"
+      },
+      {
         "Tool": "Scanpy",
         "PyPI": "scanpy"
+      },
+      {
+        "Tool": "Scedar",
+        "PyPI": "scedar"
+      },
+      {
+        "Tool": "Seurat",
+        "CRAN": "Seurat"
+      },
+      {
+        "Tool": "SeuratV3Wizard"
+      },
+      {
+        "Tool": "SeuratWizard"
+      },
+      {
+        "Tool": "SinCHet"
+      },
+      {
+        "Tool": "SinNLRR"
+      },
+      {
+        "Tool": "SoptSC"
+      },
+      {
+        "Tool": "SparseDC",
+        "CRAN": "SparseDC"
+      },
+      {
+        "Tool": "Spectrum",
+        "CRAN": "Spectrum"
+      },
+      {
+        "Tool": "TBSP",
+        "PyPI": "tbsp"
+      },
+      {
+        "Tool": "TSCAN",
+        "Bioc": "TSCAN"
+      },
+      {
+        "Tool": "TooManyCells",
+        "CRAN": "TooManyCellsR"
+      },
+      {
+        "Tool": "UNCURL",
+        "PyPI": "uncurl-seq"
+      },
+      {
+        "Tool": "URD"
+      },
+      {
+        "Tool": "VPAC"
+      },
+      {
+        "Tool": "ascend"
+      },
+      {
+        "Tool": "bigSCale"
+      },
+      {
+        "Tool": "bigSCale2"
+      },
+      {
+        "Tool": "cNMF"
+      },
+      {
+        "Tool": "ccfindR",
+        "Bioc": "ccfindR"
+      },
+      {
+        "Tool": "celda",
+        "Bioc": "celda"
+      },
+      {
+        "Tool": "clusterExperiment",
+        "Bioc": "clusterExperiment"
+      },
+      {
+        "Tool": "constclust",
+        "PyPI": "constclust"
+      },
+      {
+        "Tool": "countClust",
+        "Bioc": "CountClust"
+      },
+      {
+        "Tool": "densityCut"
+      },
+      {
+        "Tool": "dropClust"
+      },
+      {
+        "Tool": "flotilla",
+        "PyPI": "flotilla"
+      },
+      {
+        "Tool": "gficf"
+      },
+      {
+        "Tool": "iS-CellR"
+      },
+      {
+        "Tool": "iterClust",
+        "Bioc": "iterClust"
+      },
+      {
+        "Tool": "jackstraw",
+        "CRAN": "jackstraw"
+      },
+      {
+        "Tool": "mbkmeans",
+        "Bioc": "mbkmeans"
+      },
+      {
+        "Tool": "mcap"
+      },
+      {
+        "Tool": "netSmooth",
+        "Bioc": "netSmooth"
+      },
+      {
+        "Tool": "nimfa",
+        "PyPI": "nimfa"
+      },
+      {
+        "Tool": "pagoda2"
+      },
+      {
+        "Tool": "pcaReduce"
+      },
+      {
+        "Tool": "rCASC"
+      },
+      {
+        "Tool": "reCAT"
+      },
+      {
+        "Tool": "robustSingleCell",
+        "CRAN": "robustSingleCell"
+      },
+      {
+        "Tool": "sake"
       },
       {
         "Tool": "scCancer"
@@ -693,24 +782,7 @@
         "Tool": "scClustBench"
       },
       {
-        "Tool": "scclusteval"
-      },
-      {
         "Tool": "scDeepCluster"
-      },
-      {
-        "Tool": "scdney"
-      },
-      {
-        "Tool": "Scedar",
-        "PyPI": "scedar"
-      },
-      {
-        "Tool": "SCell"
-      },
-      {
-        "Tool": "SCENIC",
-        "PyPI": "pyscenic"
       },
       {
         "Tool": "scEpath"
@@ -720,10 +792,6 @@
         "Bioc": "scGPS"
       },
       {
-        "Tool": "scicast",
-        "PyPI": "scicast"
-      },
-      {
         "Tool": "scLCA"
       },
       {
@@ -731,17 +799,11 @@
         "Bioc": "scMerge"
       },
       {
-        "Tool": "SCope"
-      },
-      {
         "Tool": "scPanoView"
       },
       {
         "Tool": "scPopCorn",
         "PyPI": "scpopcorn"
-      },
-      {
-        "Tool": "SCRAT"
       },
       {
         "Tool": "scRCMF"
@@ -766,32 +828,18 @@
         "Tool": "scVDMC"
       },
       {
-        "Tool": "Seurat",
-        "CRAN": "Seurat"
+        "Tool": "scclusteval"
       },
       {
-        "Tool": "SeuratV3Wizard"
+        "Tool": "scdney"
       },
       {
-        "Tool": "SeuratWizard"
-      },
-      {
-        "Tool": "SHARP"
-      },
-      {
-        "Tool": "SIMLR",
-        "Bioc": "SIMLR",
-        "PyPI": "SIMLR"
+        "Tool": "scicast",
+        "PyPI": "scicast"
       },
       {
         "Tool": "sincell",
         "Bioc": "sincell"
-      },
-      {
-        "Tool": "SINCERA"
-      },
-      {
-        "Tool": "SinCHet"
       },
       {
         "Tool": "singleCellTK",
@@ -802,58 +850,10 @@
         "PyPI": "singlet"
       },
       {
-        "Tool": "SinNLRR"
-      },
-      {
-        "Tool": "SNN-Cliq"
-      },
-      {
-        "Tool": "SoptSC"
-      },
-      {
-        "Tool": "SOUP"
-      },
-      {
         "Tool": "souporcell"
       },
       {
-        "Tool": "SPADE"
-      },
-      {
-        "Tool": "SparseDC",
-        "CRAN": "SparseDC"
-      },
-      {
-        "Tool": "Spectrum",
-        "CRAN": "Spectrum"
-      },
-      {
         "Tool": "sscClust"
-      },
-      {
-        "Tool": "SSrGE"
-      },
-      {
-        "Tool": "TBSP",
-        "PyPI": "tbsp"
-      },
-      {
-        "Tool": "TooManyCells",
-        "CRAN": "TooManyCellsR"
-      },
-      {
-        "Tool": "TSCAN",
-        "Bioc": "TSCAN"
-      },
-      {
-        "Tool": "UNCURL",
-        "PyPI": "uncurl-seq"
-      },
-      {
-        "Tool": "URD"
-      },
-      {
-        "Tool": "VPAC"
       }
     ]
   },
@@ -862,41 +862,24 @@
     "Description": "Testing of differential expression across groups of cells",
     "Tools": [
       {
-        "Tool": "AltAnalyze",
-        "PyPI": "AltAnalyze"
-      },
-      {
         "Tool": "ASAP"
       },
       {
-        "Tool": "ascend"
+        "Tool": "AltAnalyze",
+        "PyPI": "AltAnalyze"
       },
       {
         "Tool": "BASiCS",
         "Bioc": "BASiCS"
       },
       {
-        "Tool": "bigSCale"
-      },
-      {
         "Tool": "BPSC"
-      },
-      {
-        "Tool": "bseqsc"
-      },
-      {
-        "Tool": "celda",
-        "Bioc": "celda"
       },
       {
         "Tool": "CellRanger"
       },
       {
         "Tool": "Conos"
-      },
-      {
-        "Tool": "countClust",
-        "Bioc": "CountClust"
       },
       {
         "Tool": "D3E"
@@ -912,9 +895,6 @@
         "Bioc": "DEsingle"
       },
       {
-        "Tool": "dropClust"
-      },
-      {
         "Tool": "DTWScore"
       },
       {
@@ -922,20 +902,13 @@
         "CRAN": "FateID"
       },
       {
-        "Tool": "fishpond",
-        "Bioc": "fishpond"
-      },
-      {
         "Tool": "Granatum"
-      },
-      {
-        "Tool": "iS-CellR"
       },
       {
         "Tool": "ISOP"
       },
       {
-        "Tool": "iTALK"
+        "Tool": "LTMGSCA"
       },
       {
         "Tool": "LineagePulse",
@@ -946,9 +919,6 @@
         "Bioc": "Linnorm"
       },
       {
-        "Tool": "LTMGSCA"
-      },
-      {
         "Tool": "M3Drop",
         "Bioc": "M3Drop"
       },
@@ -957,15 +927,11 @@
         "Bioc": "MAST"
       },
       {
-        "Tool": "Monocle",
-        "Bioc": "monocle"
-      },
-      {
         "Tool": "MUDAN"
       },
       {
-        "Tool": "muscat",
-        "Bioc": "muscat"
+        "Tool": "Monocle",
+        "Bioc": "monocle"
       },
       {
         "Tool": "NBID"
@@ -974,19 +940,13 @@
         "Tool": "ODEGRfinder"
       },
       {
-        "Tool": "pagoda2"
-      },
-      {
         "Tool": "PIVOT"
-      },
-      {
-        "Tool": "RayleighSelection"
       },
       {
         "Tool": "ROSeq"
       },
       {
-        "Tool": "sake"
+        "Tool": "RayleighSelection"
       },
       {
         "Tool": "SAMstrt"
@@ -995,8 +955,81 @@
         "Tool": "SC2P"
       },
       {
+        "Tool": "SCDE",
+        "Bioc": "scde"
+      },
+      {
+        "Tool": "SCHNAPPs"
+      },
+      {
+        "Tool": "SCPattern"
+      },
+      {
+        "Tool": "SCell"
+      },
+      {
+        "Tool": "SINCERA"
+      },
+      {
         "Tool": "Scanpy",
         "PyPI": "scanpy"
+      },
+      {
+        "Tool": "Seurat",
+        "CRAN": "Seurat"
+      },
+      {
+        "Tool": "SigEMD"
+      },
+      {
+        "Tool": "TASC"
+      },
+      {
+        "Tool": "TooManyCells",
+        "CRAN": "TooManyCellsR"
+      },
+      {
+        "Tool": "URD"
+      },
+      {
+        "Tool": "ascend"
+      },
+      {
+        "Tool": "bigSCale"
+      },
+      {
+        "Tool": "bseqsc"
+      },
+      {
+        "Tool": "celda",
+        "Bioc": "celda"
+      },
+      {
+        "Tool": "countClust",
+        "Bioc": "CountClust"
+      },
+      {
+        "Tool": "dropClust"
+      },
+      {
+        "Tool": "fishpond",
+        "Bioc": "fishpond"
+      },
+      {
+        "Tool": "iS-CellR"
+      },
+      {
+        "Tool": "iTALK"
+      },
+      {
+        "Tool": "muscat",
+        "Bioc": "muscat"
+      },
+      {
+        "Tool": "pagoda2"
+      },
+      {
+        "Tool": "sake"
       },
       {
         "Tool": "scCancer"
@@ -1009,21 +1042,8 @@
         "Tool": "scDDboost"
       },
       {
-        "Tool": "SCDE",
-        "Bioc": "scde"
-      },
-      {
-        "Tool": "SCell"
-      },
-      {
         "Tool": "scGen",
         "PyPI": "scgen"
-      },
-      {
-        "Tool": "SCHNAPPs"
-      },
-      {
-        "Tool": "SCPattern"
       },
       {
         "Tool": "scREhurdle"
@@ -1036,17 +1056,7 @@
         "CRAN": "sctransform"
       },
       {
-        "Tool": "Seurat",
-        "CRAN": "Seurat"
-      },
-      {
-        "Tool": "SigEMD"
-      },
-      {
         "Tool": "signac"
-      },
-      {
-        "Tool": "SINCERA"
       },
       {
         "Tool": "singleCellTK",
@@ -1057,22 +1067,12 @@
         "Bioc": "switchde"
       },
       {
-        "Tool": "TASC"
-      },
-      {
         "Tool": "tn_test",
         "PyPI": "truncated_normal"
       },
       {
-        "Tool": "TooManyCells",
-        "CRAN": "TooManyCellsR"
-      },
-      {
         "Tool": "tradeSeq",
         "Bioc": "tradeSeq"
-      },
-      {
-        "Tool": "URD"
       },
       {
         "Tool": "uSORT",
@@ -1095,18 +1095,10 @@
         "PyPI": "AltAnalyze"
       },
       {
-        "Tool": "ascend"
+        "Tool": "CIDR"
       },
       {
-        "Tool": "bigSCale2"
-      },
-      {
-        "Tool": "ccfindR",
-        "Bioc": "ccfindR"
-      },
-      {
-        "Tool": "celda",
-        "Bioc": "celda"
+        "Tool": "CSMF"
       },
       {
         "Tool": "CellRanger"
@@ -1119,20 +1111,7 @@
         "Bioc": "CellTrails"
       },
       {
-        "Tool": "CIDR"
-      },
-      {
-        "Tool": "cNMF"
-      },
-      {
         "Tool": "Conos"
-      },
-      {
-        "Tool": "countClust",
-        "Bioc": "CountClust"
-      },
-      {
-        "Tool": "CSMF"
       },
       {
         "Tool": "Cyclum"
@@ -1145,17 +1124,10 @@
         "Tool": "DensityPath"
       },
       {
-        "Tool": "destiny",
-        "Bioc": "destiny"
-      },
-      {
         "Tool": "Dhaka"
       },
       {
         "Tool": "DoubletFinder"
-      },
-      {
-        "Tool": "dropClust"
       },
       {
         "Tool": "DrSeq2"
@@ -1178,15 +1150,8 @@
         "CRAN": "FiRE"
       },
       {
-        "Tool": "flotilla",
-        "PyPI": "flotilla"
-      },
-      {
         "Tool": "GenePattern",
         "PyPI": "genepattern-python"
-      },
-      {
-        "Tool": "gficf"
       },
       {
         "Tool": "GiniClust"
@@ -1212,25 +1177,10 @@
         "PyPI": "i-impute"
       },
       {
-        "Tool": "iasva",
-        "Bioc": "iasva"
-      },
-      {
-        "Tool": "iS-CellR"
-      },
-      {
-        "Tool": "ivis",
-        "PyPI": "ivis"
-      },
-      {
-        "Tool": "jackstraw",
-        "CRAN": "jackstraw"
+        "Tool": "LIGER"
       },
       {
         "Tool": "LandSCENT"
-      },
-      {
-        "Tool": "LIGER"
       },
       {
         "Tool": "MAGIC",
@@ -1245,57 +1195,26 @@
         "PyPI": "meld"
       },
       {
-        "Tool": "Moana",
-        "PyPI": "moana"
-      },
-      {
         "Tool": "MOFA",
         "Bioc": "MOFA",
         "PyPI": "mofapy"
+      },
+      {
+        "Tool": "MUDAN"
+      },
+      {
+        "Tool": "Moana",
+        "PyPI": "moana"
       },
       {
         "Tool": "Monocle",
         "Bioc": "monocle"
       },
       {
-        "Tool": "mpCMF"
-      },
-      {
-        "Tool": "MUDAN"
-      },
-      {
-        "Tool": "netNMF-sc",
-        "PyPI": "netNMFsc"
-      },
-      {
-        "Tool": "netSmooth",
-        "Bioc": "netSmooth"
-      },
-      {
-        "Tool": "netsne"
-      },
-      {
-        "Tool": "nimfa",
-        "PyPI": "nimfa"
-      },
-      {
         "Tool": "ODEGRfinder"
       },
       {
         "Tool": "OnlinePCA"
-      },
-      {
-        "Tool": "pagoda2"
-      },
-      {
-        "Tool": "Palantir"
-      },
-      {
-        "Tool": "pCMF"
-      },
-      {
-        "Tool": "pCreode",
-        "PyPI": "pcreode"
       },
       {
         "Tool": "PHATE",
@@ -1306,6 +1225,9 @@
         "Tool": "PIVOT"
       },
       {
+        "Tool": "Palantir"
+      },
+      {
         "Tool": "PyMINEr"
       },
       {
@@ -1313,20 +1235,6 @@
       },
       {
         "Tool": "RayleighSelection"
-      },
-      {
-        "Tool": "rCASC"
-      },
-      {
-        "Tool": "robustSingleCell",
-        "CRAN": "robustSingleCell"
-      },
-      {
-        "Tool": "rpca",
-        "CRAN": "rpca"
-      },
-      {
-        "Tool": "sake"
       },
       {
         "Tool": "SAM",
@@ -1339,11 +1247,37 @@
         "Tool": "SAVER-X"
       },
       {
-        "Tool": "scAEspy"
+        "Tool": "SCHNAPPs"
       },
       {
-        "Tool": "scAlign",
-        "Bioc": "scAlign"
+        "Tool": "SCORPIUS",
+        "CRAN": "SCORPIUS"
+      },
+      {
+        "Tool": "SCRAT"
+      },
+      {
+        "Tool": "SCRL"
+      },
+      {
+        "Tool": "SCell"
+      },
+      {
+        "Tool": "SHARP"
+      },
+      {
+        "Tool": "SIMLR",
+        "Bioc": "SIMLR",
+        "PyPI": "SIMLR"
+      },
+      {
+        "Tool": "SPADE"
+      },
+      {
+        "Tool": "SPRING"
+      },
+      {
+        "Tool": "SWNE"
       },
       {
         "Tool": "Scanpy",
@@ -1354,79 +1288,8 @@
         "Bioc": "scater"
       },
       {
-        "Tool": "scDeepCluster"
-      },
-      {
         "Tool": "Scedar",
         "PyPI": "scedar"
-      },
-      {
-        "Tool": "SCell"
-      },
-      {
-        "Tool": "scEpath"
-      },
-      {
-        "Tool": "scGEApp"
-      },
-      {
-        "Tool": "SCHNAPPs"
-      },
-      {
-        "Tool": "scicast",
-        "PyPI": "scicast"
-      },
-      {
-        "Tool": "scMerge",
-        "Bioc": "scMerge"
-      },
-      {
-        "Tool": "scMetric"
-      },
-      {
-        "Tool": "scNBMF"
-      },
-      {
-        "Tool": "SCORPIUS",
-        "CRAN": "SCORPIUS"
-      },
-      {
-        "Tool": "scPanoView"
-      },
-      {
-        "Tool": "scPred"
-      },
-      {
-        "Tool": "SCRAT"
-      },
-      {
-        "Tool": "scRCMF"
-      },
-      {
-        "Tool": "SCRL"
-      },
-      {
-        "Tool": "scRMD"
-      },
-      {
-        "Tool": "scSeqR"
-      },
-      {
-        "Tool": "scSVA"
-      },
-      {
-        "Tool": "scTGIF",
-        "Bioc": "scTGIF"
-      },
-      {
-        "Tool": "scUnifrac"
-      },
-      {
-        "Tool": "scVI",
-        "PyPI": "scvi"
-      },
-      {
-        "Tool": "scvis"
       },
       {
         "Tool": "Seurat",
@@ -1439,61 +1302,13 @@
         "Tool": "SeuratWizard"
       },
       {
-        "Tool": "SHARP"
-      },
-      {
-        "Tool": "SIMLR",
-        "Bioc": "SIMLR",
-        "PyPI": "SIMLR"
-      },
-      {
-        "Tool": "sincell",
-        "Bioc": "sincell"
-      },
-      {
-        "Tool": "singleCellTK",
-        "Bioc": "singleCellTK"
-      },
-      {
-        "Tool": "singlet",
-        "PyPI": "singlet"
-      },
-      {
         "Tool": "SinNLRR"
-      },
-      {
-        "Tool": "slalom",
-        "Bioc": "slalom"
-      },
-      {
-        "Tool": "sleepwalk",
-        "CRAN": "sleepwalk"
-      },
-      {
-        "Tool": "slingshot",
-        "Bioc": "slingshot"
       },
       {
         "Tool": "SoptSC"
       },
       {
-        "Tool": "SPADE"
-      },
-      {
-        "Tool": "SPRING"
-      },
-      {
-        "Tool": "sscClust"
-      },
-      {
-        "Tool": "SWNE"
-      },
-      {
         "Tool": "TCM"
-      },
-      {
-        "Tool": "trVAE",
-        "PyPI": "trvae"
       },
       {
         "Tool": "TSEE"
@@ -1523,6 +1338,191 @@
       {
         "Tool": "ZINB-WaVE",
         "Bioc": "zinbwave"
+      },
+      {
+        "Tool": "ascend"
+      },
+      {
+        "Tool": "bigSCale2"
+      },
+      {
+        "Tool": "cNMF"
+      },
+      {
+        "Tool": "ccfindR",
+        "Bioc": "ccfindR"
+      },
+      {
+        "Tool": "celda",
+        "Bioc": "celda"
+      },
+      {
+        "Tool": "countClust",
+        "Bioc": "CountClust"
+      },
+      {
+        "Tool": "destiny",
+        "Bioc": "destiny"
+      },
+      {
+        "Tool": "dropClust"
+      },
+      {
+        "Tool": "flotilla",
+        "PyPI": "flotilla"
+      },
+      {
+        "Tool": "gficf"
+      },
+      {
+        "Tool": "iS-CellR"
+      },
+      {
+        "Tool": "iasva",
+        "Bioc": "iasva"
+      },
+      {
+        "Tool": "ivis",
+        "PyPI": "ivis"
+      },
+      {
+        "Tool": "jackstraw",
+        "CRAN": "jackstraw"
+      },
+      {
+        "Tool": "mpCMF"
+      },
+      {
+        "Tool": "netNMF-sc",
+        "PyPI": "netNMFsc"
+      },
+      {
+        "Tool": "netSmooth",
+        "Bioc": "netSmooth"
+      },
+      {
+        "Tool": "netsne"
+      },
+      {
+        "Tool": "nimfa",
+        "PyPI": "nimfa"
+      },
+      {
+        "Tool": "pCMF"
+      },
+      {
+        "Tool": "pCreode",
+        "PyPI": "pcreode"
+      },
+      {
+        "Tool": "pagoda2"
+      },
+      {
+        "Tool": "rCASC"
+      },
+      {
+        "Tool": "robustSingleCell",
+        "CRAN": "robustSingleCell"
+      },
+      {
+        "Tool": "rpca",
+        "CRAN": "rpca"
+      },
+      {
+        "Tool": "sake"
+      },
+      {
+        "Tool": "scAEspy"
+      },
+      {
+        "Tool": "scAlign",
+        "Bioc": "scAlign"
+      },
+      {
+        "Tool": "scDeepCluster"
+      },
+      {
+        "Tool": "scEpath"
+      },
+      {
+        "Tool": "scGEApp"
+      },
+      {
+        "Tool": "scMerge",
+        "Bioc": "scMerge"
+      },
+      {
+        "Tool": "scMetric"
+      },
+      {
+        "Tool": "scNBMF"
+      },
+      {
+        "Tool": "scPanoView"
+      },
+      {
+        "Tool": "scPred"
+      },
+      {
+        "Tool": "scRCMF"
+      },
+      {
+        "Tool": "scRMD"
+      },
+      {
+        "Tool": "scSVA"
+      },
+      {
+        "Tool": "scSeqR"
+      },
+      {
+        "Tool": "scTGIF",
+        "Bioc": "scTGIF"
+      },
+      {
+        "Tool": "scUnifrac"
+      },
+      {
+        "Tool": "scVI",
+        "PyPI": "scvi"
+      },
+      {
+        "Tool": "scicast",
+        "PyPI": "scicast"
+      },
+      {
+        "Tool": "scvis"
+      },
+      {
+        "Tool": "sincell",
+        "Bioc": "sincell"
+      },
+      {
+        "Tool": "singleCellTK",
+        "Bioc": "singleCellTK"
+      },
+      {
+        "Tool": "singlet",
+        "PyPI": "singlet"
+      },
+      {
+        "Tool": "slalom",
+        "Bioc": "slalom"
+      },
+      {
+        "Tool": "sleepwalk",
+        "CRAN": "sleepwalk"
+      },
+      {
+        "Tool": "slingshot",
+        "Bioc": "slingshot"
+      },
+      {
+        "Tool": "sscClust"
+      },
+      {
+        "Tool": "trVAE",
+        "PyPI": "trvae"
       }
     ]
   },
@@ -1534,17 +1534,14 @@
         "Tool": "BranchedGP"
       },
       {
-        "Tool": "cellAlign"
+        "Tool": "CellRouter"
       },
       {
-        "Tool": "CellRouter"
+        "Tool": "DPT"
       },
       {
         "Tool": "DeLorean",
         "CRAN": "DeLorean"
-      },
-      {
-        "Tool": "DPT"
       },
       {
         "Tool": "GPseudoClust"
@@ -1568,16 +1565,7 @@
         "Tool": "Ouija"
       },
       {
-        "Tool": "ouijaflow"
-      },
-      {
         "Tool": "Palantir"
-      },
-      {
-        "Tool": "scEpath"
-      },
-      {
-        "Tool": "scHPF"
       },
       {
         "Tool": "SCIMITAR"
@@ -1598,10 +1586,28 @@
         "Bioc": "SEPA"
       },
       {
-        "Tool": "signac"
+        "Tool": "STREAM"
       },
       {
-        "Tool": "STREAM"
+        "Tool": "WaveCrest"
+      },
+      {
+        "Tool": "Wishbone"
+      },
+      {
+        "Tool": "cellAlign"
+      },
+      {
+        "Tool": "ouijaflow"
+      },
+      {
+        "Tool": "scEpath"
+      },
+      {
+        "Tool": "scHPF"
+      },
+      {
+        "Tool": "signac"
       },
       {
         "Tool": "switchde",
@@ -1613,12 +1619,6 @@
       },
       {
         "Tool": "trendsceek"
-      },
-      {
-        "Tool": "WaveCrest"
-      },
-      {
-        "Tool": "Wishbone"
       }
     ]
   },
@@ -1627,22 +1627,22 @@
     "Description": "Removal of lowly expressed or otherwise uninformative genes",
     "Tools": [
       {
-        "Tool": "AltAnalyze",
-        "PyPI": "AltAnalyze"
-      },
-      {
         "Tool": "ASAP"
       },
       {
-        "Tool": "ascend"
+        "Tool": "AltAnalyze",
+        "PyPI": "AltAnalyze"
       },
       {
         "Tool": "BackSPIN",
         "PyPI": "backspinpy"
       },
       {
-        "Tool": "ccfindR",
-        "Bioc": "ccfindR"
+        "Tool": "DESC",
+        "PyPI": "desc"
+      },
+      {
+        "Tool": "DIEM"
       },
       {
         "Tool": "DeLorean",
@@ -1653,17 +1653,66 @@
         "PyPI": "dendrosplit"
       },
       {
-        "Tool": "DESC",
-        "PyPI": "desc"
-      },
-      {
-        "Tool": "DIEM"
-      },
-      {
         "Tool": "FORKS"
       },
       {
         "Tool": "Granatum"
+      },
+      {
+        "Tool": "Linnorm",
+        "Bioc": "Linnorm"
+      },
+      {
+        "Tool": "MCXpress"
+      },
+      {
+        "Tool": "MUDAN"
+      },
+      {
+        "Tool": "McImpute"
+      },
+      {
+        "Tool": "OGFSC"
+      },
+      {
+        "Tool": "PIVOT"
+      },
+      {
+        "Tool": "ROGUE"
+      },
+      {
+        "Tool": "SAM",
+        "PyPI": "sam-algorithm"
+      },
+      {
+        "Tool": "SCQC"
+      },
+      {
+        "Tool": "SCell"
+      },
+      {
+        "Tool": "SEGtool"
+      },
+      {
+        "Tool": "SHARP"
+      },
+      {
+        "Tool": "SINCERA"
+      },
+      {
+        "Tool": "Scanpy",
+        "PyPI": "scanpy"
+      },
+      {
+        "Tool": "Seurat",
+        "CRAN": "Seurat"
+      },
+      {
+        "Tool": "ascend"
+      },
+      {
+        "Tool": "ccfindR",
+        "Bioc": "ccfindR"
       },
       {
         "Tool": "iS-CellR"
@@ -1673,46 +1722,13 @@
         "CRAN": "jackstraw"
       },
       {
-        "Tool": "Linnorm",
-        "Bioc": "Linnorm"
-      },
-      {
-        "Tool": "McImpute"
-      },
-      {
-        "Tool": "MCXpress"
-      },
-      {
-        "Tool": "MUDAN"
-      },
-      {
-        "Tool": "OGFSC"
-      },
-      {
         "Tool": "pagoda2"
-      },
-      {
-        "Tool": "PIVOT"
       },
       {
         "Tool": "rCASC"
       },
       {
-        "Tool": "ROGUE"
-      },
-      {
         "Tool": "sake"
-      },
-      {
-        "Tool": "SAM",
-        "PyPI": "sam-algorithm"
-      },
-      {
-        "Tool": "Scanpy",
-        "PyPI": "scanpy"
-      },
-      {
-        "Tool": "SCell"
       },
       {
         "Tool": "scFeatureFilter",
@@ -1722,17 +1738,6 @@
         "Tool": "scGEApp"
       },
       {
-        "Tool": "scone",
-        "Bioc": "scone"
-      },
-      {
-        "Tool": "scprep",
-        "PyPI": "scprep"
-      },
-      {
-        "Tool": "SCQC"
-      },
-      {
         "Tool": "scSeqR"
       },
       {
@@ -1740,17 +1745,12 @@
         "PyPI": "scvelo"
       },
       {
-        "Tool": "SEGtool"
+        "Tool": "scone",
+        "Bioc": "scone"
       },
       {
-        "Tool": "Seurat",
-        "CRAN": "Seurat"
-      },
-      {
-        "Tool": "SHARP"
-      },
-      {
-        "Tool": "SINCERA"
+        "Tool": "scprep",
+        "PyPI": "scprep"
       },
       {
         "Tool": "singleCellTK",
@@ -1774,34 +1774,19 @@
         "Tool": "ACTION"
       },
       {
-        "Tool": "AltAnalyze",
-        "PyPI": "AltAnalyze"
-      },
-      {
         "Tool": "AUCell",
         "Bioc": "AUCell"
+      },
+      {
+        "Tool": "AltAnalyze",
+        "PyPI": "AltAnalyze"
       },
       {
         "Tool": "BEELINE"
       },
       {
-        "Tool": "bigSCale2"
-      },
-      {
         "Tool": "BTR",
         "CRAN": "BTR"
-      },
-      {
-        "Tool": "CancerInSilico",
-        "Bioc": "CancerInSilico"
-      },
-      {
-        "Tool": "celda",
-        "Bioc": "celda"
-      },
-      {
-        "Tool": "CellPhoneDB",
-        "PyPI": "CellPhoneDB"
       },
       {
         "Tool": "CNNC"
@@ -1813,15 +1798,12 @@
         "Tool": "CSN"
       },
       {
-        "Tool": "fcoex",
-        "Bioc": "fcoex"
+        "Tool": "CancerInSilico",
+        "Bioc": "CancerInSilico"
       },
       {
-        "Tool": "flotilla",
-        "PyPI": "flotilla"
-      },
-      {
-        "Tool": "Granatum"
+        "Tool": "CellPhoneDB",
+        "PyPI": "CellPhoneDB"
       },
       {
         "Tool": "GRISLI"
@@ -1830,20 +1812,20 @@
         "Tool": "GRNVBEM"
       },
       {
-        "Tool": "HurdleNormal"
+        "Tool": "Granatum"
       },
       {
-        "Tool": "iTALK"
+        "Tool": "HurdleNormal"
       },
       {
         "Tool": "KPNN"
       },
       {
-        "Tool": "LandSCENT"
-      },
-      {
         "Tool": "LEAP",
         "CRAN": "LEAP"
+      },
+      {
+        "Tool": "LandSCENT"
       },
       {
         "Tool": "Linnorm",
@@ -1855,14 +1837,6 @@
       },
       {
         "Tool": "MTGO-SC"
-      },
-      {
-        "Tool": "netNMF-sc",
-        "PyPI": "netNMFsc"
-      },
-      {
-        "Tool": "netSmooth",
-        "Bioc": "netSmooth"
       },
       {
         "Tool": "NetworkInference"
@@ -1877,39 +1851,17 @@
         "Tool": "RSCORE"
       },
       {
-        "Tool": "sake"
-      },
-      {
         "Tool": "SBDN"
-      },
-      {
-        "Tool": "scCancer"
-      },
-      {
-        "Tool": "scdiff",
-        "PyPI": "scdiff"
-      },
-      {
-        "Tool": "scdNet"
       },
       {
         "Tool": "SCENIC",
         "PyPI": "pyscenic"
       },
       {
-        "Tool": "scEpath"
-      },
-      {
-        "Tool": "scFBA"
-      },
-      {
         "Tool": "SCHiRM"
       },
       {
         "Tool": "SCIMITAR"
-      },
-      {
-        "Tool": "scNPF"
       },
       {
         "Tool": "SCNS"
@@ -1925,18 +1877,7 @@
         "Tool": "SCRAT"
       },
       {
-        "Tool": "Scribe"
-      },
-      {
         "Tool": "SCRL"
-      },
-      {
-        "Tool": "scRutiNy",
-        "PyPI": "RNAscrutiny"
-      },
-      {
-        "Tool": "scTensor",
-        "Bioc": "scTensor"
       },
       {
         "Tool": "SEPIRA",
@@ -1956,7 +1897,66 @@
         "Tool": "SINGE"
       },
       {
+        "Tool": "Scribe"
+      },
+      {
         "Tool": "SynergisticCore"
+      },
+      {
+        "Tool": "bigSCale2"
+      },
+      {
+        "Tool": "celda",
+        "Bioc": "celda"
+      },
+      {
+        "Tool": "fcoex",
+        "Bioc": "fcoex"
+      },
+      {
+        "Tool": "flotilla",
+        "PyPI": "flotilla"
+      },
+      {
+        "Tool": "iTALK"
+      },
+      {
+        "Tool": "netNMF-sc",
+        "PyPI": "netNMFsc"
+      },
+      {
+        "Tool": "netSmooth",
+        "Bioc": "netSmooth"
+      },
+      {
+        "Tool": "sake"
+      },
+      {
+        "Tool": "scCancer"
+      },
+      {
+        "Tool": "scEpath"
+      },
+      {
+        "Tool": "scFBA"
+      },
+      {
+        "Tool": "scNPF"
+      },
+      {
+        "Tool": "scRutiNy",
+        "PyPI": "RNAscrutiny"
+      },
+      {
+        "Tool": "scTensor",
+        "Bioc": "scTensor"
+      },
+      {
+        "Tool": "scdNet"
+      },
+      {
+        "Tool": "scdiff",
+        "PyPI": "scdiff"
       }
     ]
   },
@@ -1969,6 +1969,9 @@
         "PyPI": "AltAnalyze"
       },
       {
+        "Tool": "CNNC"
+      },
+      {
         "Tool": "CellTree",
         "Bioc": "cellTree"
       },
@@ -1976,14 +1979,11 @@
         "Tool": "Cerebro"
       },
       {
-        "Tool": "Clustergrammer2",
-        "PyPI": "clustergrammer2"
-      },
-      {
         "Tool": "ClusterMine"
       },
       {
-        "Tool": "CNNC"
+        "Tool": "Clustergrammer2",
+        "PyPI": "clustergrammer2"
       },
       {
         "Tool": "DPre"
@@ -1991,9 +1991,6 @@
       {
         "Tool": "FastProject",
         "PyPI": "FastProject"
-      },
-      {
-        "Tool": "gficf"
       },
       {
         "Tool": "Granatum"
@@ -2006,18 +2003,15 @@
         "Tool": "MCXpress"
       },
       {
+        "Tool": "MTGO-SC"
+      },
+      {
         "Tool": "MetaNeighbor",
         "Bioc": "MetaNeighbor"
       },
       {
-        "Tool": "MTGO-SC"
-      },
-      {
         "Tool": "OnClass",
         "PyPI": "OnClass"
-      },
-      {
-        "Tool": "pagoda2"
       },
       {
         "Tool": "PIVOT"
@@ -2026,41 +2020,15 @@
         "Tool": "PyMINEr"
       },
       {
-        "Tool": "sake"
-      },
-      {
         "Tool": "SCDE",
         "Bioc": "scde"
-      },
-      {
-        "Tool": "scdNet"
-      },
-      {
-        "Tool": "scID"
       },
       {
         "Tool": "SCINA",
         "CRAN": "SCINA"
       },
       {
-        "Tool": "scIVA"
-      },
-      {
-        "Tool": "scMatch"
-      },
-      {
         "Tool": "SCope"
-      },
-      {
-        "Tool": "scprep",
-        "PyPI": "scprep"
-      },
-      {
-        "Tool": "scSeqR"
-      },
-      {
-        "Tool": "scTGIF",
-        "Bioc": "scTGIF"
       },
       {
         "Tool": "SEPA",
@@ -2070,15 +2038,47 @@
         "Tool": "SingleCellSignatureExplorer"
       },
       {
+        "Tool": "VISION"
+      },
+      {
+        "Tool": "gficf"
+      },
+      {
+        "Tool": "pagoda2"
+      },
+      {
+        "Tool": "sake"
+      },
+      {
+        "Tool": "scID"
+      },
+      {
+        "Tool": "scIVA"
+      },
+      {
+        "Tool": "scMatch"
+      },
+      {
+        "Tool": "scSeqR"
+      },
+      {
+        "Tool": "scTGIF",
+        "Bioc": "scTGIF"
+      },
+      {
+        "Tool": "scdNet"
+      },
+      {
+        "Tool": "scprep",
+        "PyPI": "scprep"
+      },
+      {
         "Tool": "singleCellTK",
         "Bioc": "singleCellTK"
       },
       {
         "Tool": "slalom",
         "Bioc": "slalom"
-      },
-      {
-        "Tool": "VISION"
       }
     ]
   },
@@ -2105,10 +2105,23 @@
         "Tool": "BASIC"
       },
       {
+        "Tool": "BRAPeS"
+      },
+      {
         "Tool": "BraCeR"
       },
       {
-        "Tool": "BRAPeS"
+        "Tool": "TILPRED"
+      },
+      {
+        "Tool": "TRAPeS",
+        "PyPI": "trapes"
+      },
+      {
+        "Tool": "TraCeR"
+      },
+      {
+        "Tool": "VDJPuzzle"
       },
       {
         "Tool": "iTALK"
@@ -2118,19 +2131,6 @@
       },
       {
         "Tool": "scTCRseq"
-      },
-      {
-        "Tool": "TILPRED"
-      },
-      {
-        "Tool": "TraCeR"
-      },
-      {
-        "Tool": "TRAPeS",
-        "PyPI": "trapes"
-      },
-      {
-        "Tool": "VDJPuzzle"
       }
     ]
   },
@@ -2145,10 +2145,6 @@
         "Tool": "AutoImpute"
       },
       {
-        "Tool": "bayNorm",
-        "Bioc": "bayNorm"
-      },
-      {
         "Tool": "BISCUIT"
       },
       {
@@ -2156,10 +2152,6 @@
       },
       {
         "Tool": "CIDR"
-      },
-      {
-        "Tool": "cTPnet",
-        "PyPI": "cTPnet"
       },
       {
         "Tool": "DCA",
@@ -2189,9 +2181,6 @@
         "PyPI": "i-impute"
       },
       {
-        "Tool": "knn_smooth"
-      },
-      {
         "Tool": "Linnorm",
         "Bioc": "Linnorm"
       },
@@ -2202,14 +2191,6 @@
       },
       {
         "Tool": "McImpute"
-      },
-      {
-        "Tool": "netNMF-sc",
-        "PyPI": "netNMFsc"
-      },
-      {
-        "Tool": "netSmooth",
-        "Bioc": "netSmooth"
       },
       {
         "Tool": "PBLR"
@@ -2228,8 +2209,41 @@
         "Tool": "SAVER-X"
       },
       {
+        "Tool": "SCRABBLE",
+        "CRAN": "SCRABBLE"
+      },
+      {
         "Tool": "Scedar",
         "PyPI": "scedar"
+      },
+      {
+        "Tool": "Seurat",
+        "CRAN": "Seurat"
+      },
+      {
+        "Tool": "SigEMD"
+      },
+      {
+        "Tool": "VIPER"
+      },
+      {
+        "Tool": "bayNorm",
+        "Bioc": "bayNorm"
+      },
+      {
+        "Tool": "cTPnet",
+        "PyPI": "cTPnet"
+      },
+      {
+        "Tool": "knn_smooth"
+      },
+      {
+        "Tool": "netNMF-sc",
+        "PyPI": "netNMFsc"
+      },
+      {
+        "Tool": "netSmooth",
+        "Bioc": "netSmooth"
       },
       {
         "Tool": "scGEApp"
@@ -2244,33 +2258,19 @@
         "Tool": "scNPF"
       },
       {
-        "Tool": "scone",
-        "Bioc": "scone"
-      },
-      {
-        "Tool": "SCRABBLE",
-        "CRAN": "SCRABBLE"
+        "Tool": "scRMD"
       },
       {
         "Tool": "scRecover",
         "Bioc": "scRecover"
       },
       {
-        "Tool": "scRMD"
-      },
-      {
         "Tool": "scScope",
         "PyPI": "scScope"
       },
       {
-        "Tool": "Seurat",
-        "CRAN": "Seurat"
-      },
-      {
-        "Tool": "SigEMD"
-      },
-      {
-        "Tool": "VIPER"
+        "Tool": "scone",
+        "Bioc": "scone"
       }
     ]
   },
@@ -2282,48 +2282,30 @@
         "Tool": "BAMMSC"
       },
       {
-        "Tool": "batchelor",
-        "Bioc": "batchelor"
-      },
-      {
-        "Tool": "bbknn",
-        "PyPI": "bbknn"
-      },
-      {
         "Tool": "BEER"
       },
       {
         "Tool": "BIRD"
       },
       {
+        "Tool": "BUSseq"
+      },
+      {
         "Tool": "Bisque",
         "CRAN": "BisqueRNA"
-      },
-      {
-        "Tool": "bseqsc"
-      },
-      {
-        "Tool": "BUSseq"
       },
       {
         "Tool": "CITEseqCount",
         "PyPI": "CITE-seq-Count"
       },
       {
-        "Tool": "clonealign"
+        "Tool": "CONICS"
       },
       {
         "Tool": "ClusterMap"
       },
       {
-        "Tool": "CONICS"
-      },
-      {
         "Tool": "Conos"
-      },
-      {
-        "Tool": "cTPnet",
-        "PyPI": "cTPnet"
       },
       {
         "Tool": "DC3"
@@ -2339,9 +2321,6 @@
         "Tool": "Harmony"
       },
       {
-        "Tool": "kBET"
-      },
-      {
         "Tool": "LAmbDA"
       },
       {
@@ -2350,12 +2329,6 @@
       {
         "Tool": "MATCHER",
         "PyPI": "pymatcher"
-      },
-      {
-        "Tool": "matchSCore"
-      },
-      {
-        "Tool": "matchSCore2"
       },
       {
         "Tool": "MELD",
@@ -2377,11 +2350,51 @@
         "PyPI": "OnClass"
       },
       {
-        "Tool": "robustSingleCell",
-        "CRAN": "robustSingleCell"
+        "Tool": "SAUCIE"
       },
       {
-        "Tool": "SAUCIE"
+        "Tool": "SMNN"
+      },
+      {
+        "Tool": "SSrGE"
+      },
+      {
+        "Tool": "Seurat",
+        "CRAN": "Seurat"
+      },
+      {
+        "Tool": "Trajan"
+      },
+      {
+        "Tool": "batchelor",
+        "Bioc": "batchelor"
+      },
+      {
+        "Tool": "bbknn",
+        "PyPI": "bbknn"
+      },
+      {
+        "Tool": "bseqsc"
+      },
+      {
+        "Tool": "cTPnet",
+        "PyPI": "cTPnet"
+      },
+      {
+        "Tool": "clonealign"
+      },
+      {
+        "Tool": "kBET"
+      },
+      {
+        "Tool": "matchSCore"
+      },
+      {
+        "Tool": "matchSCore2"
+      },
+      {
+        "Tool": "robustSingleCell",
+        "CRAN": "robustSingleCell"
       },
       {
         "Tool": "scAEspy"
@@ -2389,10 +2402,6 @@
       {
         "Tool": "scAlign",
         "Bioc": "scAlign"
-      },
-      {
-        "Tool": "scanorama",
-        "PyPI": "scanorama"
       },
       {
         "Tool": "scBatch"
@@ -2426,18 +2435,10 @@
         "PyPI": "scpopcorn"
       },
       {
-        "Tool": "scran",
-        "Bioc": "scran"
-      },
-      {
         "Tool": "scRNABatchQC"
       },
       {
         "Tool": "scSeqR"
-      },
-      {
-        "Tool": "sctransform",
-        "CRAN": "sctransform"
       },
       {
         "Tool": "scUnifrac"
@@ -2447,20 +2448,19 @@
         "PyPI": "scvi"
       },
       {
-        "Tool": "Seurat",
-        "CRAN": "Seurat"
+        "Tool": "scanorama",
+        "PyPI": "scanorama"
       },
       {
-        "Tool": "SMNN"
+        "Tool": "scran",
+        "Bioc": "scran"
+      },
+      {
+        "Tool": "sctransform",
+        "CRAN": "sctransform"
       },
       {
         "Tool": "sscClust"
-      },
-      {
-        "Tool": "SSrGE"
-      },
-      {
-        "Tool": "Trajan"
       }
     ]
   },
@@ -2469,14 +2469,6 @@
     "Description": "Tools with an interactive component or a graphical user interface",
     "Tools": [
       {
-        "Tool": "alevinQC",
-        "Bioc": "alevinQC"
-      },
-      {
-        "Tool": "AltAnalyze",
-        "PyPI": "AltAnalyze"
-      },
-      {
         "Tool": "ASAP"
       },
       {
@@ -2484,12 +2476,16 @@
         "Bioc": "AUCell"
       },
       {
-        "Tool": "CancerInSilico",
-        "Bioc": "CancerInSilico"
+        "Tool": "AltAnalyze",
+        "PyPI": "AltAnalyze"
       },
       {
-        "Tool": "cellBrowser",
-        "PyPI": "cellbrowser"
+        "Tool": "CHETAH",
+        "Bioc": "CHETAH"
+      },
+      {
+        "Tool": "CancerInSilico",
+        "Bioc": "CancerInSilico"
       },
       {
         "Tool": "CellRanger"
@@ -2498,15 +2494,7 @@
         "Tool": "CellView"
       },
       {
-        "Tool": "cellxgene",
-        "PyPI": "cellxgene"
-      },
-      {
         "Tool": "Cerebro"
-      },
-      {
-        "Tool": "CHETAH",
-        "Bioc": "CHETAH"
       },
       {
         "Tool": "Clustergrammer2",
@@ -2517,10 +2505,6 @@
         "PyPI": "FastProject"
       },
       {
-        "Tool": "flotilla",
-        "PyPI": "flotilla"
-      },
-      {
         "Tool": "GenePattern",
         "PyPI": "genepattern-python"
       },
@@ -2529,19 +2513,6 @@
       },
       {
         "Tool": "Granatum"
-      },
-      {
-        "Tool": "indeXplorer"
-      },
-      {
-        "Tool": "iS-CellR"
-      },
-      {
-        "Tool": "iscandar"
-      },
-      {
-        "Tool": "iSEE",
-        "Bioc": "iSEE"
       },
       {
         "Tool": "MAGIC",
@@ -2555,13 +2526,7 @@
         "Tool": "OEFinder"
       },
       {
-        "Tool": "pagoda2"
-      },
-      {
         "Tool": "PIVOT"
-      },
-      {
-        "Tool": "sake"
       },
       {
         "Tool": "SAM",
@@ -2572,73 +2537,37 @@
         "Bioc": "SC3"
       },
       {
-        "Tool": "Scater",
-        "Bioc": "scater"
+        "Tool": "SCHNAPPs"
       },
       {
-        "Tool": "scClustViz"
+        "Tool": "SCNS"
       },
       {
-        "Tool": "scdiff",
-        "PyPI": "scdiff"
-      },
-      {
-        "Tool": "SCell"
+        "Tool": "SCPattern"
       },
       {
         "Tool": "SCelVis",
         "PyPI": "scelvis"
       },
       {
-        "Tool": "scfind",
-        "Bioc": "scfind"
-      },
-      {
-        "Tool": "scGEApp"
-      },
-      {
-        "Tool": "scGESTALT"
-      },
-      {
-        "Tool": "SCHNAPPs"
-      },
-      {
-        "Tool": "scicast",
-        "PyPI": "scicast"
-      },
-      {
-        "Tool": "scIVA"
-      },
-      {
-        "Tool": "SCNS"
-      },
-      {
-        "Tool": "scone",
-        "Bioc": "scone"
+        "Tool": "SCell"
       },
       {
         "Tool": "SCope"
       },
       {
-        "Tool": "SCPattern"
-      },
-      {
-        "Tool": "scPlot",
-        "PyPI": "scplot"
-      },
-      {
-        "Tool": "scran",
-        "Bioc": "scran"
-      },
-      {
-        "Tool": "scSeqR"
-      },
-      {
-        "Tool": "scSVA"
-      },
-      {
         "Tool": "SEPA",
         "Bioc": "SEPA"
+      },
+      {
+        "Tool": "SPRING"
+      },
+      {
+        "Tool": "STREAM"
+      },
+      {
+        "Tool": "Scater",
+        "Bioc": "scater"
       },
       {
         "Tool": "SeuratV3Wizard"
@@ -2653,16 +2582,6 @@
         "Tool": "SingleCellExplorer"
       },
       {
-        "Tool": "singleCellTK",
-        "Bioc": "singleCellTK"
-      },
-      {
-        "Tool": "SPRING"
-      },
-      {
-        "Tool": "STREAM"
-      },
-      {
         "Tool": "TASIC"
       },
       {
@@ -2670,20 +2589,101 @@
         "Bioc": "TSCAN"
       },
       {
-        "Tool": "uSORT",
-        "Bioc": "uSORT"
-      },
-      {
         "Tool": "VISION"
-      },
-      {
-        "Tool": "visnormsc"
       },
       {
         "Tool": "WaveCrest"
       },
       {
         "Tool": "Wishbone"
+      },
+      {
+        "Tool": "alevinQC",
+        "Bioc": "alevinQC"
+      },
+      {
+        "Tool": "cellBrowser",
+        "PyPI": "cellbrowser"
+      },
+      {
+        "Tool": "cellxgene",
+        "PyPI": "cellxgene"
+      },
+      {
+        "Tool": "flotilla",
+        "PyPI": "flotilla"
+      },
+      {
+        "Tool": "iS-CellR"
+      },
+      {
+        "Tool": "iSEE",
+        "Bioc": "iSEE"
+      },
+      {
+        "Tool": "indeXplorer"
+      },
+      {
+        "Tool": "iscandar"
+      },
+      {
+        "Tool": "pagoda2"
+      },
+      {
+        "Tool": "sake"
+      },
+      {
+        "Tool": "scClustViz"
+      },
+      {
+        "Tool": "scGEApp"
+      },
+      {
+        "Tool": "scGESTALT"
+      },
+      {
+        "Tool": "scIVA"
+      },
+      {
+        "Tool": "scPlot",
+        "PyPI": "scplot"
+      },
+      {
+        "Tool": "scSVA"
+      },
+      {
+        "Tool": "scSeqR"
+      },
+      {
+        "Tool": "scdiff",
+        "PyPI": "scdiff"
+      },
+      {
+        "Tool": "scfind",
+        "Bioc": "scfind"
+      },
+      {
+        "Tool": "scicast",
+        "PyPI": "scicast"
+      },
+      {
+        "Tool": "scone",
+        "Bioc": "scone"
+      },
+      {
+        "Tool": "scran",
+        "Bioc": "scran"
+      },
+      {
+        "Tool": "singleCellTK",
+        "Bioc": "singleCellTK"
+      },
+      {
+        "Tool": "uSORT",
+        "Bioc": "uSORT"
+      },
+      {
+        "Tool": "visnormsc"
       }
     ]
   },
@@ -2696,17 +2696,15 @@
         "PyPI": "AltAnalyze"
       },
       {
-        "Tool": "bigSCale"
-      },
-      {
-        "Tool": "bigSCale2"
+        "Tool": "BUSseq"
       },
       {
         "Tool": "Bisque",
         "CRAN": "BisqueRNA"
       },
       {
-        "Tool": "BUSseq"
+        "Tool": "COMET",
+        "PyPI": "COMETSC"
       },
       {
         "Tool": "CellRanger"
@@ -2715,22 +2713,14 @@
         "Tool": "CellRouter"
       },
       {
-        "Tool": "clusterExperiment",
-        "Bioc": "clusterExperiment"
-      },
-      {
-        "Tool": "COMET",
-        "PyPI": "COMETSC"
-      },
-      {
         "Tool": "Conos"
+      },
+      {
+        "Tool": "DPre"
       },
       {
         "Tool": "DepecheR",
         "Bioc": "DepecheR"
-      },
-      {
-        "Tool": "DPre"
       },
       {
         "Tool": "Garnett"
@@ -2740,18 +2730,7 @@
         "PyPI": "genepattern-python"
       },
       {
-        "Tool": "genesorteR"
-      },
-      {
-        "Tool": "iasva",
-        "Bioc": "iasva"
-      },
-      {
         "Tool": "IKAP"
-      },
-      {
-        "Tool": "jackstraw",
-        "CRAN": "jackstraw"
       },
       {
         "Tool": "LIGER"
@@ -2759,10 +2738,6 @@
       {
         "Tool": "M3Drop",
         "Bioc": "M3Drop"
-      },
-      {
-        "Tool": "MetaCell",
-        "PyPI": "metacell"
       },
       {
         "Tool": "MGFR",
@@ -2773,15 +2748,15 @@
         "PyPI": "MICTI"
       },
       {
-        "Tool": "Monocle",
-        "Bioc": "monocle"
-      },
-      {
         "Tool": "MUDAN"
       },
       {
-        "Tool": "muscat",
-        "Bioc": "muscat"
+        "Tool": "MetaCell",
+        "PyPI": "metacell"
+      },
+      {
+        "Tool": "Monocle",
+        "Bioc": "monocle"
       },
       {
         "Tool": "OnClass",
@@ -2791,46 +2766,24 @@
         "Tool": "Ouija"
       },
       {
-        "Tool": "pyHSICLasso",
-        "PyPI": "pyHSICLasso"
-      },
-      {
-        "Tool": "rCASC"
-      },
-      {
         "Tool": "SAM",
         "PyPI": "sam-algorithm"
       },
       {
+        "Tool": "SEGtool"
+      },
+      {
+        "Tool": "SHARP"
+      },
+      {
+        "Tool": "SINCERA"
+      },
+      {
+        "Tool": "SPADE"
+      },
+      {
         "Tool": "Scedar",
         "PyPI": "scedar"
-      },
-      {
-        "Tool": "scfind",
-        "Bioc": "scfind"
-      },
-      {
-        "Tool": "scGeneFit"
-      },
-      {
-        "Tool": "scGPS",
-        "Bioc": "scGPS"
-      },
-      {
-        "Tool": "scicast",
-        "PyPI": "scicast"
-      },
-      {
-        "Tool": "scID"
-      },
-      {
-        "Tool": "scIVA"
-      },
-      {
-        "Tool": "scSeqR"
-      },
-      {
-        "Tool": "SEGtool"
       },
       {
         "Tool": "Seurat",
@@ -2841,25 +2794,6 @@
       },
       {
         "Tool": "SeuratWizard"
-      },
-      {
-        "Tool": "SHARP"
-      },
-      {
-        "Tool": "signac"
-      },
-      {
-        "Tool": "SINCERA"
-      },
-      {
-        "Tool": "singleCellHaystack"
-      },
-      {
-        "Tool": "singleCellTK",
-        "Bioc": "singleCellTK"
-      },
-      {
-        "Tool": "SPADE"
       },
       {
         "Tool": "SparseDC",
@@ -2877,6 +2811,72 @@
       },
       {
         "Tool": "Wx"
+      },
+      {
+        "Tool": "bigSCale"
+      },
+      {
+        "Tool": "bigSCale2"
+      },
+      {
+        "Tool": "clusterExperiment",
+        "Bioc": "clusterExperiment"
+      },
+      {
+        "Tool": "genesorteR"
+      },
+      {
+        "Tool": "iasva",
+        "Bioc": "iasva"
+      },
+      {
+        "Tool": "jackstraw",
+        "CRAN": "jackstraw"
+      },
+      {
+        "Tool": "muscat",
+        "Bioc": "muscat"
+      },
+      {
+        "Tool": "pyHSICLasso",
+        "PyPI": "pyHSICLasso"
+      },
+      {
+        "Tool": "rCASC"
+      },
+      {
+        "Tool": "scGPS",
+        "Bioc": "scGPS"
+      },
+      {
+        "Tool": "scGeneFit"
+      },
+      {
+        "Tool": "scID"
+      },
+      {
+        "Tool": "scIVA"
+      },
+      {
+        "Tool": "scSeqR"
+      },
+      {
+        "Tool": "scfind",
+        "Bioc": "scfind"
+      },
+      {
+        "Tool": "scicast",
+        "PyPI": "scicast"
+      },
+      {
+        "Tool": "signac"
+      },
+      {
+        "Tool": "singleCellHaystack"
+      },
+      {
+        "Tool": "singleCellTK",
+        "Bioc": "singleCellTK"
       }
     ]
   },
@@ -2885,14 +2885,14 @@
     "Description": "Identification or use of modality in gene expression",
     "Tools": [
       {
-        "Tool": "anchor",
-        "PyPI": "anchor-bio"
-      },
-      {
         "Tool": "DESCEND"
       },
       {
         "Tool": "LTMGSCA"
+      },
+      {
+        "Tool": "anchor",
+        "PyPI": "anchor-bio"
       }
     ]
   },
@@ -2901,14 +2901,11 @@
     "Description": "Removal of unwanted variation that may affect results",
     "Tools": [
       {
-        "Tool": "AltAnalyze",
-        "PyPI": "AltAnalyze"
-      },
-      {
         "Tool": "ASAP"
       },
       {
-        "Tool": "ascend"
+        "Tool": "AltAnalyze",
+        "PyPI": "AltAnalyze"
       },
       {
         "Tool": "AutoImpute"
@@ -2918,88 +2915,44 @@
         "Bioc": "BASiCS"
       },
       {
-        "Tool": "bayNorm",
-        "Bioc": "bayNorm"
-      },
-      {
-        "Tool": "bigSCale"
-      },
-      {
-        "Tool": "bigSCale2"
-      },
-      {
         "Tool": "CALISTA"
-      },
-      {
-        "Tool": "ccfindR",
-        "Bioc": "ccfindR"
-      },
-      {
-        "Tool": "celda",
-        "Bioc": "celda"
-      },
-      {
-        "Tool": "cellAlign"
-      },
-      {
-        "Tool": "CellRouter"
       },
       {
         "Tool": "CHETAH",
         "Bioc": "CHETAH"
       },
       {
-        "Tool": "Citrus"
+        "Tool": "CellRouter"
       },
       {
-        "Tool": "DendroSplit",
-        "PyPI": "dendrosplit"
+        "Tool": "Citrus"
       },
       {
         "Tool": "DESC",
         "PyPI": "desc"
       },
       {
-        "Tool": "dropClust"
-      },
-      {
-        "Tool": "dropsim"
+        "Tool": "DendroSplit",
+        "PyPI": "dendrosplit"
       },
       {
         "Tool": "DrSeq2"
       },
       {
-        "Tool": "dynverse"
-      },
-      {
-        "Tool": "fishpond",
-        "Bioc": "fishpond"
-      },
-      {
         "Tool": "FORKS"
+      },
+      {
+        "Tool": "GRM"
       },
       {
         "Tool": "GenePattern",
         "PyPI": "genepattern-python"
       },
       {
-        "Tool": "gficf"
-      },
-      {
         "Tool": "GiniClust"
       },
       {
         "Tool": "Granatum"
-      },
-      {
-        "Tool": "GRM"
-      },
-      {
-        "Tool": "iasva",
-        "Bioc": "iasva"
-      },
-      {
-        "Tool": "iS-CellR"
       },
       {
         "Tool": "LIGER"
@@ -3013,36 +2966,19 @@
         "Bioc": "MAST"
       },
       {
-        "Tool": "McImpute"
-      },
-      {
         "Tool": "MUDAN"
       },
       {
-        "Tool": "netNMF-sc",
-        "PyPI": "netNMFsc"
+        "Tool": "McImpute"
       },
       {
         "Tool": "OEFinder"
       },
       {
-        "Tool": "pagoda2"
-      },
-      {
-        "Tool": "Palantir"
-      },
-      {
         "Tool": "PIVOT"
       },
       {
-        "Tool": "rCASC"
-      },
-      {
-        "Tool": "robustSingleCell",
-        "CRAN": "robustSingleCell"
-      },
-      {
-        "Tool": "sake"
+        "Tool": "Palantir"
       },
       {
         "Tool": "SAM",
@@ -3055,6 +2991,31 @@
         "Tool": "SAUCIE"
       },
       {
+        "Tool": "SCHiRM"
+      },
+      {
+        "Tool": "SCNorm",
+        "Bioc": "SCnorm"
+      },
+      {
+        "Tool": "SCRAT"
+      },
+      {
+        "Tool": "SCell"
+      },
+      {
+        "Tool": "SHARP"
+      },
+      {
+        "Tool": "SINCERA"
+      },
+      {
+        "Tool": "STREAM"
+      },
+      {
+        "Tool": "SWNE"
+      },
+      {
         "Tool": "Scanpy",
         "PyPI": "scanpy"
       },
@@ -3063,7 +3024,91 @@
         "Bioc": "scater"
       },
       {
-        "Tool": "SCell"
+        "Tool": "Seurat",
+        "CRAN": "Seurat"
+      },
+      {
+        "Tool": "SeuratV3Wizard"
+      },
+      {
+        "Tool": "SeuratWizard"
+      },
+      {
+        "Tool": "SinNLRR"
+      },
+      {
+        "Tool": "TASC"
+      },
+      {
+        "Tool": "URD"
+      },
+      {
+        "Tool": "ZINB-WaVE",
+        "Bioc": "zinbwave"
+      },
+      {
+        "Tool": "ascend"
+      },
+      {
+        "Tool": "bayNorm",
+        "Bioc": "bayNorm"
+      },
+      {
+        "Tool": "bigSCale"
+      },
+      {
+        "Tool": "bigSCale2"
+      },
+      {
+        "Tool": "ccfindR",
+        "Bioc": "ccfindR"
+      },
+      {
+        "Tool": "celda",
+        "Bioc": "celda"
+      },
+      {
+        "Tool": "cellAlign"
+      },
+      {
+        "Tool": "dropClust"
+      },
+      {
+        "Tool": "dropsim"
+      },
+      {
+        "Tool": "dynverse"
+      },
+      {
+        "Tool": "fishpond",
+        "Bioc": "fishpond"
+      },
+      {
+        "Tool": "gficf"
+      },
+      {
+        "Tool": "iS-CellR"
+      },
+      {
+        "Tool": "iasva",
+        "Bioc": "iasva"
+      },
+      {
+        "Tool": "netNMF-sc",
+        "PyPI": "netNMFsc"
+      },
+      {
+        "Tool": "pagoda2"
+      },
+      {
+        "Tool": "rCASC"
+      },
+      {
+        "Tool": "robustSingleCell",
+        "CRAN": "robustSingleCell"
+      },
+      {
+        "Tool": "sake"
       },
       {
         "Tool": "scEpath"
@@ -3073,13 +3118,6 @@
       },
       {
         "Tool": "scHinter"
-      },
-      {
-        "Tool": "SCHiRM"
-      },
-      {
-        "Tool": "scicast",
-        "PyPI": "scicast"
       },
       {
         "Tool": "scID"
@@ -3093,27 +3131,8 @@
         "Bioc": "scMerge"
       },
       {
-        "Tool": "SCNorm",
-        "Bioc": "SCnorm"
-      },
-      {
-        "Tool": "scone",
-        "Bioc": "scone"
-      },
-      {
         "Tool": "scPopCorn",
         "PyPI": "scpopcorn"
-      },
-      {
-        "Tool": "scprep",
-        "PyPI": "scprep"
-      },
-      {
-        "Tool": "scran",
-        "Bioc": "scran"
-      },
-      {
-        "Tool": "SCRAT"
       },
       {
         "Tool": "scRecover",
@@ -3127,28 +3146,28 @@
         "Tool": "scSeqR"
       },
       {
-        "Tool": "sctransform",
-        "CRAN": "sctransform"
-      },
-      {
         "Tool": "scVelo",
         "PyPI": "scvelo"
       },
       {
-        "Tool": "Seurat",
-        "CRAN": "Seurat"
+        "Tool": "scicast",
+        "PyPI": "scicast"
       },
       {
-        "Tool": "SeuratV3Wizard"
+        "Tool": "scone",
+        "Bioc": "scone"
       },
       {
-        "Tool": "SeuratWizard"
+        "Tool": "scprep",
+        "PyPI": "scprep"
       },
       {
-        "Tool": "SHARP"
+        "Tool": "scran",
+        "Bioc": "scran"
       },
       {
-        "Tool": "SINCERA"
+        "Tool": "sctransform",
+        "CRAN": "sctransform"
       },
       {
         "Tool": "singleCellTK",
@@ -3159,26 +3178,7 @@
         "PyPI": "singlet"
       },
       {
-        "Tool": "SinNLRR"
-      },
-      {
-        "Tool": "STREAM"
-      },
-      {
-        "Tool": "SWNE"
-      },
-      {
-        "Tool": "TASC"
-      },
-      {
-        "Tool": "URD"
-      },
-      {
         "Tool": "visnormsc"
-      },
-      {
-        "Tool": "ZINB-WaVE",
-        "Bioc": "zinbwave"
       }
     ]
   },
@@ -3187,13 +3187,10 @@
     "Description": "Ordering of cells along a trajectory",
     "Tools": [
       {
-        "Tool": "bigSCale2"
-      },
-      {
         "Tool": "CALISTA"
       },
       {
-        "Tool": "cellAlign"
+        "Tool": "CSHMM"
       },
       {
         "Tool": "CellRouter"
@@ -3207,7 +3204,10 @@
         "Bioc": "cellTree"
       },
       {
-        "Tool": "CSHMM"
+        "Tool": "DPT"
+      },
+      {
+        "Tool": "DTWScore"
       },
       {
         "Tool": "DeLorean",
@@ -3217,23 +3217,11 @@
         "Tool": "DensityPath"
       },
       {
-        "Tool": "DPT"
-      },
-      {
-        "Tool": "DTWScore"
-      },
-      {
         "Tool": "Dynamo"
-      },
-      {
-        "Tool": "dynverse"
       },
       {
         "Tool": "ECLAIR",
         "PyPI": "ECLAIR"
-      },
-      {
-        "Tool": "embeddr"
       },
       {
         "Tool": "ESAT"
@@ -3260,14 +3248,11 @@
         "Tool": "HopLand"
       },
       {
-        "Tool": "k-branches"
+        "Tool": "LEAP",
+        "CRAN": "LEAP"
       },
       {
         "Tool": "LandSCENT"
-      },
-      {
-        "Tool": "LEAP",
-        "CRAN": "LEAP"
       },
       {
         "Tool": "MATCHER",
@@ -3294,53 +3279,20 @@
         "Tool": "Ouija"
       },
       {
-        "Tool": "ouijaflow"
-      },
-      {
-        "Tool": "Palantir"
-      },
-      {
         "Tool": "PBA"
       },
       {
-        "Tool": "pCreode",
-        "PyPI": "pcreode"
+        "Tool": "PIVOT"
+      },
+      {
+        "Tool": "Palantir"
       },
       {
         "Tool": "PhenoPath",
         "Bioc": "phenopath"
       },
       {
-        "Tool": "PIVOT"
-      },
-      {
-        "Tool": "pseudodynamics"
-      },
-      {
-        "Tool": "pseudogp"
-      },
-      {
-        "Tool": "reCAT"
-      },
-      {
-        "Tool": "Scanpy",
-        "PyPI": "scanpy"
-      },
-      {
-        "Tool": "scdiff",
-        "PyPI": "scdiff"
-      },
-      {
-        "Tool": "SCell"
-      },
-      {
         "Tool": "SCENT"
-      },
-      {
-        "Tool": "scEpath"
-      },
-      {
-        "Tool": "scGESTALT"
       },
       {
         "Tool": "SCIMITAR"
@@ -3365,20 +3317,11 @@
         "Tool": "SCRAT"
       },
       {
-        "Tool": "scTDA",
-        "PyPI": "scTDA"
-      },
-      {
         "Tool": "SCUBA",
         "PyPI": "PySCUBA"
       },
       {
-        "Tool": "scVelo",
-        "PyPI": "scvelo"
-      },
-      {
-        "Tool": "sincell",
-        "Bioc": "sincell"
+        "Tool": "SCell"
       },
       {
         "Tool": "SLICE"
@@ -3388,20 +3331,10 @@
         "CRAN": "SLICER"
       },
       {
-        "Tool": "slingshot",
-        "Bioc": "slingshot"
-      },
-      {
-        "Tool": "SoptSC"
-      },
-      {
         "Tool": "SOUP"
       },
       {
         "Tool": "SPADE"
-      },
-      {
-        "Tool": "StemID"
       },
       {
         "Tool": "STEMNET"
@@ -3410,14 +3343,21 @@
         "Tool": "STREAM"
       },
       {
+        "Tool": "Scanpy",
+        "PyPI": "scanpy"
+      },
+      {
+        "Tool": "SoptSC"
+      },
+      {
+        "Tool": "StemID"
+      },
+      {
         "Tool": "TASIC"
       },
       {
         "Tool": "TBSP",
         "PyPI": "tbsp"
-      },
-      {
-        "Tool": "topslam"
       },
       {
         "Tool": "TSCAN",
@@ -3431,18 +3371,78 @@
         "Tool": "URD"
       },
       {
+        "Tool": "WaveCrest"
+      },
+      {
+        "Tool": "Wishbone"
+      },
+      {
+        "Tool": "bigSCale2"
+      },
+      {
+        "Tool": "cellAlign"
+      },
+      {
+        "Tool": "dynverse"
+      },
+      {
+        "Tool": "embeddr"
+      },
+      {
+        "Tool": "k-branches"
+      },
+      {
+        "Tool": "ouijaflow"
+      },
+      {
+        "Tool": "pCreode",
+        "PyPI": "pcreode"
+      },
+      {
+        "Tool": "pseudodynamics"
+      },
+      {
+        "Tool": "pseudogp"
+      },
+      {
+        "Tool": "reCAT"
+      },
+      {
+        "Tool": "scEpath"
+      },
+      {
+        "Tool": "scGESTALT"
+      },
+      {
+        "Tool": "scTDA",
+        "PyPI": "scTDA"
+      },
+      {
+        "Tool": "scVelo",
+        "PyPI": "scvelo"
+      },
+      {
+        "Tool": "scdiff",
+        "PyPI": "scdiff"
+      },
+      {
+        "Tool": "sincell",
+        "Bioc": "sincell"
+      },
+      {
+        "Tool": "slingshot",
+        "Bioc": "slingshot"
+      },
+      {
+        "Tool": "topslam"
+      },
+      {
         "Tool": "uSORT",
         "Bioc": "uSORT"
       },
       {
         "Tool": "velocyto",
         "PyPI": "velocyto"
-      },
-      {
-        "Tool": "WaveCrest"
-      },
-      {
-        "Tool": "Wishbone"
       },
       {
         "Tool": "wot",
@@ -3454,6 +3454,133 @@
     "Category": "QualityControl",
     "Description": "Removal of low-quality cells",
     "Tools": [
+      {
+        "Tool": "CellBender"
+      },
+      {
+        "Tool": "CellRanger"
+      },
+      {
+        "Tool": "CellRouter"
+      },
+      {
+        "Tool": "Cellity",
+        "Bioc": "cellity"
+      },
+      {
+        "Tool": "DESC",
+        "PyPI": "desc"
+      },
+      {
+        "Tool": "DIEM"
+      },
+      {
+        "Tool": "DoubletDecon"
+      },
+      {
+        "Tool": "DoubletDetection"
+      },
+      {
+        "Tool": "DoubletFinder"
+      },
+      {
+        "Tool": "DrSeq2"
+      },
+      {
+        "Tool": "DropletUtils",
+        "Bioc": "DropletUtils"
+      },
+      {
+        "Tool": "EnsembleKQC"
+      },
+      {
+        "Tool": "GMM-Demux",
+        "PyPI": "GMM-Demux"
+      },
+      {
+        "Tool": "GenePattern",
+        "PyPI": "genepattern-python"
+      },
+      {
+        "Tool": "Granatum"
+      },
+      {
+        "Tool": "MAGIC",
+        "CRAN": "Rmagic",
+        "PyPI": "magic-impute"
+      },
+      {
+        "Tool": "MAST",
+        "Bioc": "MAST"
+      },
+      {
+        "Tool": "MUDAN"
+      },
+      {
+        "Tool": "MUSIC"
+      },
+      {
+        "Tool": "MetaCell",
+        "PyPI": "metacell"
+      },
+      {
+        "Tool": "Moana",
+        "PyPI": "moana"
+      },
+      {
+        "Tool": "OEFinder"
+      },
+      {
+        "Tool": "PIVOT"
+      },
+      {
+        "Tool": "Palantir"
+      },
+      {
+        "Tool": "ROGUE"
+      },
+      {
+        "Tool": "SCHNAPPs"
+      },
+      {
+        "Tool": "SCQC"
+      },
+      {
+        "Tool": "SCRAT"
+      },
+      {
+        "Tool": "SCell"
+      },
+      {
+        "Tool": "SINCERA"
+      },
+      {
+        "Tool": "Scanpy",
+        "PyPI": "scanpy"
+      },
+      {
+        "Tool": "Scater",
+        "Bioc": "scater"
+      },
+      {
+        "Tool": "Scrublet",
+        "PyPI": "scrublet"
+      },
+      {
+        "Tool": "SeuratV3Wizard"
+      },
+      {
+        "Tool": "SeuratWizard"
+      },
+      {
+        "Tool": "Sharq"
+      },
+      {
+        "Tool": "SinQC"
+      },
+      {
+        "Tool": "XenoCell"
+      },
       {
         "Tool": "ascend"
       },
@@ -3473,170 +3600,49 @@
         "Bioc": "celda"
       },
       {
-        "Tool": "CellBender"
-      },
-      {
-        "Tool": "Cellity",
-        "Bioc": "cellity"
-      },
-      {
-        "Tool": "CellRanger"
-      },
-      {
-        "Tool": "CellRouter"
-      },
-      {
         "Tool": "ddSeeker"
       },
       {
         "Tool": "demuxlet"
       },
       {
-        "Tool": "DESC",
-        "PyPI": "desc"
-      },
-      {
-        "Tool": "DIEM"
-      },
-      {
-        "Tool": "DoubletDecon"
-      },
-      {
-        "Tool": "DoubletDetection"
-      },
-      {
-        "Tool": "DoubletFinder"
-      },
-      {
-        "Tool": "dropbead"
-      },
-      {
         "Tool": "dropEst"
-      },
-      {
-        "Tool": "DropletUtils",
-        "Bioc": "DropletUtils"
       },
       {
         "Tool": "dropSeqPipe",
         "PyPI": "dropSeqPipe"
       },
       {
-        "Tool": "DrSeq2"
-      },
-      {
-        "Tool": "EnsembleKQC"
+        "Tool": "dropbead"
       },
       {
         "Tool": "flotilla",
         "PyPI": "flotilla"
       },
       {
-        "Tool": "GenePattern",
-        "PyPI": "genepattern-python"
-      },
-      {
-        "Tool": "GMM-Demux",
-        "PyPI": "GMM-Demux"
-      },
-      {
-        "Tool": "Granatum"
-      },
-      {
         "Tool": "iS-CellR"
-      },
-      {
-        "Tool": "MAGIC",
-        "CRAN": "Rmagic",
-        "PyPI": "magic-impute"
-      },
-      {
-        "Tool": "MAST",
-        "Bioc": "MAST"
-      },
-      {
-        "Tool": "MetaCell",
-        "PyPI": "metacell"
-      },
-      {
-        "Tool": "Moana",
-        "PyPI": "moana"
-      },
-      {
-        "Tool": "MUDAN"
-      },
-      {
-        "Tool": "MUSIC"
-      },
-      {
-        "Tool": "OEFinder"
       },
       {
         "Tool": "pagoda2"
       },
       {
-        "Tool": "Palantir"
-      },
-      {
-        "Tool": "PIVOT"
-      },
-      {
         "Tool": "rCASC"
-      },
-      {
-        "Tool": "ROGUE"
-      },
-      {
-        "Tool": "Scanpy",
-        "PyPI": "scanpy"
-      },
-      {
-        "Tool": "Scater",
-        "Bioc": "scater"
       },
       {
         "Tool": "scCancer"
       },
       {
-        "Tool": "scds",
-        "Bioc": "scds"
-      },
-      {
-        "Tool": "SCell"
-      },
-      {
         "Tool": "scEpath"
       },
       {
-        "Tool": "SCHNAPPs"
-      },
-      {
         "Tool": "scIVA"
-      },
-      {
-        "Tool": "scone",
-        "Bioc": "scone"
       },
       {
         "Tool": "scPipe",
         "Bioc": "scPipe"
       },
       {
-        "Tool": "scprep",
-        "PyPI": "scprep"
-      },
-      {
-        "Tool": "SCQC"
-      },
-      {
-        "Tool": "SCRAT"
-      },
-      {
         "Tool": "scRNABatchQC"
-      },
-      {
-        "Tool": "Scrublet",
-        "PyPI": "scrublet"
       },
       {
         "Tool": "scSeqR"
@@ -3646,23 +3652,20 @@
         "PyPI": "scTDA"
       },
       {
-        "Tool": "SeuratV3Wizard"
+        "Tool": "scds",
+        "Bioc": "scds"
       },
       {
-        "Tool": "SeuratWizard"
+        "Tool": "scone",
+        "Bioc": "scone"
       },
       {
-        "Tool": "Sharq"
-      },
-      {
-        "Tool": "SINCERA"
+        "Tool": "scprep",
+        "PyPI": "scprep"
       },
       {
         "Tool": "singleCellTK",
         "Bioc": "singleCellTK"
-      },
-      {
-        "Tool": "SinQC"
       },
       {
         "Tool": "souporcell"
@@ -3670,9 +3673,6 @@
       {
         "Tool": "uSORT",
         "Bioc": "uSORT"
-      },
-      {
-        "Tool": "XenoCell"
       }
     ]
   },
@@ -3688,28 +3688,18 @@
         "Tool": "BCseq"
       },
       {
-        "Tool": "BraCeR"
-      },
-      {
         "Tool": "BRIE",
         "PyPI": "brie"
       },
       {
-        "Tool": "bustools"
-      },
-      {
-        "Tool": "CellRanger"
+        "Tool": "BraCeR"
       },
       {
         "Tool": "CITEseqCount",
         "PyPI": "CITE-seq-Count"
       },
       {
-        "Tool": "dropEst"
-      },
-      {
-        "Tool": "dropSeqPipe",
-        "PyPI": "dropSeqPipe"
+        "Tool": "CellRanger"
       },
       {
         "Tool": "DrSeq2"
@@ -3724,6 +3714,55 @@
         "Tool": "ImSpectR"
       },
       {
+        "Tool": "STAR"
+      },
+      {
+        "Tool": "Scater",
+        "Bioc": "scater"
+      },
+      {
+        "Tool": "Sharq"
+      },
+      {
+        "Tool": "SoupX"
+      },
+      {
+        "Tool": "TASC"
+      },
+      {
+        "Tool": "TRAPeS",
+        "PyPI": "trapes"
+      },
+      {
+        "Tool": "TRUmiCount"
+      },
+      {
+        "Tool": "TraCeR"
+      },
+      {
+        "Tool": "UMI-tools",
+        "PyPI": "umi-tools"
+      },
+      {
+        "Tool": "UMI_analysis"
+      },
+      {
+        "Tool": "VDJPuzzle"
+      },
+      {
+        "Tool": "XenoCell"
+      },
+      {
+        "Tool": "bustools"
+      },
+      {
+        "Tool": "dropEst"
+      },
+      {
+        "Tool": "dropSeqPipe",
+        "PyPI": "dropSeqPipe"
+      },
+      {
         "Tool": "kallisto"
       },
       {
@@ -3734,10 +3773,6 @@
       },
       {
         "Tool": "salmon"
-      },
-      {
-        "Tool": "Scater",
-        "Bioc": "scater"
       },
       {
         "Tool": "scPipe",
@@ -3751,9 +3786,6 @@
         "Tool": "scumi"
       },
       {
-        "Tool": "Sharq"
-      },
-      {
         "Tool": "singleCellTK",
         "Bioc": "singleCellTK"
       },
@@ -3761,40 +3793,8 @@
         "Tool": "sircel"
       },
       {
-        "Tool": "SoupX"
-      },
-      {
-        "Tool": "STAR"
-      },
-      {
-        "Tool": "TASC"
-      },
-      {
-        "Tool": "TraCeR"
-      },
-      {
-        "Tool": "TRAPeS",
-        "PyPI": "trapes"
-      },
-      {
-        "Tool": "TRUmiCount"
-      },
-      {
-        "Tool": "UMI_analysis"
-      },
-      {
-        "Tool": "UMI-tools",
-        "PyPI": "umi-tools"
-      },
-      {
         "Tool": "umis",
         "PyPI": "umis"
-      },
-      {
-        "Tool": "VDJPuzzle"
-      },
-      {
-        "Tool": "XenoCell"
       },
       {
         "Tool": "zUMIs"
@@ -3820,16 +3820,16 @@
         "Tool": "RaceID2"
       },
       {
-        "Tool": "scAlign",
-        "Bioc": "scAlign"
-      },
-      {
         "Tool": "Scedar",
         "PyPI": "scedar"
       },
       {
         "Tool": "TooManyCells",
         "CRAN": "TooManyCellsR"
+      },
+      {
+        "Tool": "scAlign",
+        "Bioc": "scAlign"
       }
     ]
   },
@@ -3842,10 +3842,6 @@
         "Bioc": "BASiCS"
       },
       {
-        "Tool": "bayNorm",
-        "Bioc": "bayNorm"
-      },
-      {
         "Tool": "BEARscc",
         "Bioc": "BEARscc"
       },
@@ -3854,25 +3850,11 @@
         "CRAN": "BisqueRNA"
       },
       {
+        "Tool": "CIDR"
+      },
+      {
         "Tool": "CancerInSilico",
         "Bioc": "CancerInSilico"
-      },
-      {
-        "Tool": "cardelino"
-      },
-      {
-        "Tool": "ccfindR",
-        "Bioc": "ccfindR"
-      },
-      {
-        "Tool": "celda",
-        "Bioc": "celda"
-      },
-      {
-        "Tool": "cellassign"
-      },
-      {
-        "Tool": "CIDR"
       },
       {
         "Tool": "DENDRO"
@@ -3882,13 +3864,7 @@
         "Bioc": "DropletUtils"
       },
       {
-        "Tool": "dropsim"
-      },
-      {
         "Tool": "Dynamo"
-      },
-      {
-        "Tool": "dynverse"
       },
       {
         "Tool": "LineagePulse",
@@ -3907,6 +3883,67 @@
         "Bioc": "mfa"
       },
       {
+        "Tool": "MuSiC"
+      },
+      {
+        "Tool": "PROSSTT"
+      },
+      {
+        "Tool": "PhenoPath",
+        "Bioc": "phenopath"
+      },
+      {
+        "Tool": "SCHiRM"
+      },
+      {
+        "Tool": "SERGIO"
+      },
+      {
+        "Tool": "SPARSim"
+      },
+      {
+        "Tool": "SPsimSeq"
+      },
+      {
+        "Tool": "Scanpy",
+        "PyPI": "scanpy"
+      },
+      {
+        "Tool": "Splatter",
+        "Bioc": "splatter"
+      },
+      {
+        "Tool": "SymSim"
+      },
+      {
+        "Tool": "ZINB-WaVE",
+        "Bioc": "zinbwave"
+      },
+      {
+        "Tool": "bayNorm",
+        "Bioc": "bayNorm"
+      },
+      {
+        "Tool": "cardelino"
+      },
+      {
+        "Tool": "ccfindR",
+        "Bioc": "ccfindR"
+      },
+      {
+        "Tool": "celda",
+        "Bioc": "celda"
+      },
+      {
+        "Tool": "cellassign"
+      },
+      {
+        "Tool": "dropsim"
+      },
+      {
+        "Tool": "dynverse"
+      },
+      {
         "Tool": "minnow"
       },
       {
@@ -3914,21 +3951,7 @@
         "Bioc": "muscat"
       },
       {
-        "Tool": "MuSiC"
-      },
-      {
-        "Tool": "PhenoPath",
-        "Bioc": "phenopath"
-      },
-      {
         "Tool": "powsimR"
-      },
-      {
-        "Tool": "PROSSTT"
-      },
-      {
-        "Tool": "Scanpy",
-        "PyPI": "scanpy"
       },
       {
         "Tool": "scDD",
@@ -3939,9 +3962,6 @@
       },
       {
         "Tool": "scGAN"
-      },
-      {
-        "Tool": "SCHiRM"
       },
       {
         "Tool": "scModels",
@@ -3969,27 +3989,7 @@
         "CRAN": "seqgendiff"
       },
       {
-        "Tool": "SERGIO"
-      },
-      {
-        "Tool": "SPARSim"
-      },
-      {
-        "Tool": "Splatter",
-        "Bioc": "splatter"
-      },
-      {
-        "Tool": "SPsimSeq"
-      },
-      {
-        "Tool": "SymSim"
-      },
-      {
         "Tool": "trendsceek"
-      },
-      {
-        "Tool": "ZINB-WaVE",
-        "Bioc": "zinbwave"
       },
       {
         "Tool": "zingeR"
@@ -4005,16 +4005,16 @@
         "CRAN": "FateID"
       },
       {
-        "Tool": "hscScore"
-      },
-      {
         "Tool": "LandSCENT"
       },
       {
-        "Tool": "scCancer"
+        "Tool": "StemID"
       },
       {
-        "Tool": "StemID"
+        "Tool": "hscScore"
+      },
+      {
+        "Tool": "scCancer"
       }
     ]
   },
@@ -4023,11 +4023,11 @@
     "Description": "Transformation between expression levels and some other measure",
     "Tools": [
       {
-        "Tool": "bonvoyage",
-        "PyPI": "bonvoyage"
+        "Tool": "LTMGSCA"
       },
       {
-        "Tool": "LTMGSCA"
+        "Tool": "bonvoyage",
+        "PyPI": "bonvoyage"
       },
       {
         "Tool": "sctransform",
@@ -4040,6 +4040,45 @@
     "Description": "Processing of Unique Molecular Identifiers",
     "Tools": [
       {
+        "Tool": "CITEseqCount",
+        "PyPI": "CITE-seq-Count"
+      },
+      {
+        "Tool": "CellRanger"
+      },
+      {
+        "Tool": "DrSeq2"
+      },
+      {
+        "Tool": "DropletUtils",
+        "Bioc": "DropletUtils"
+      },
+      {
+        "Tool": "IronThrone-GoT"
+      },
+      {
+        "Tool": "PoissonUMIs"
+      },
+      {
+        "Tool": "STAR"
+      },
+      {
+        "Tool": "Sharq"
+      },
+      {
+        "Tool": "TRUmiCount"
+      },
+      {
+        "Tool": "UMI-tools",
+        "PyPI": "umi-tools"
+      },
+      {
+        "Tool": "UMICollapse"
+      },
+      {
+        "Tool": "UMI_analysis"
+      },
+      {
         "Tool": "bcbio",
         "PyPI": "bcbio"
       },
@@ -4048,13 +4087,6 @@
       },
       {
         "Tool": "bustools"
-      },
-      {
-        "Tool": "CellRanger"
-      },
-      {
-        "Tool": "CITEseqCount",
-        "PyPI": "CITE-seq-Count"
       },
       {
         "Tool": "ddSeeker"
@@ -4066,27 +4098,14 @@
         "Tool": "dropEst"
       },
       {
-        "Tool": "DropletUtils",
-        "Bioc": "DropletUtils"
-      },
-      {
         "Tool": "dropSeqPipe",
         "PyPI": "dropSeqPipe"
-      },
-      {
-        "Tool": "DrSeq2"
-      },
-      {
-        "Tool": "IronThrone-GoT"
       },
       {
         "Tool": "kallisto"
       },
       {
         "Tool": "minnow"
-      },
-      {
-        "Tool": "PoissonUMIs"
       },
       {
         "Tool": "polyApipe"
@@ -4112,26 +4131,7 @@
         "Tool": "scumi"
       },
       {
-        "Tool": "Sharq"
-      },
-      {
         "Tool": "sircel"
-      },
-      {
-        "Tool": "STAR"
-      },
-      {
-        "Tool": "TRUmiCount"
-      },
-      {
-        "Tool": "UMI_analysis"
-      },
-      {
-        "Tool": "UMI-tools",
-        "PyPI": "umi-tools"
-      },
-      {
-        "Tool": "UMICollapse"
       },
       {
         "Tool": "umis",
@@ -4154,13 +4154,6 @@
         "Bioc": "BASiCS"
       },
       {
-        "Tool": "bigSCale2"
-      },
-      {
-        "Tool": "countClust",
-        "Bioc": "CountClust"
-      },
-      {
         "Tool": "DESC",
         "PyPI": "desc"
       },
@@ -4168,24 +4161,14 @@
         "Tool": "DESCEND"
       },
       {
-        "Tool": "dropClust"
+        "Tool": "DTWScore"
       },
       {
         "Tool": "DrSeq2"
       },
       {
-        "Tool": "DTWScore"
-      },
-      {
         "Tool": "FiRE",
         "CRAN": "FiRE"
-      },
-      {
-        "Tool": "iS-CellR"
-      },
-      {
-        "Tool": "jackstraw",
-        "CRAN": "jackstraw"
       },
       {
         "Tool": "LAmbDA"
@@ -4201,6 +4184,9 @@
         "Tool": "MCXpress"
       },
       {
+        "Tool": "MUDAN"
+      },
+      {
         "Tool": "MetaCell",
         "PyPI": "metacell"
       },
@@ -4209,18 +4195,50 @@
         "Bioc": "MetaNeighbor"
       },
       {
-        "Tool": "MUDAN"
+        "Tool": "SCMarker"
       },
       {
-        "Tool": "pyNVR"
+        "Tool": "SINC"
+      },
+      {
+        "Tool": "SOUP"
       },
       {
         "Tool": "Scanpy",
         "PyPI": "scanpy"
       },
       {
-        "Tool": "sceb",
-        "PyPI": "sceb"
+        "Tool": "Seurat",
+        "CRAN": "Seurat"
+      },
+      {
+        "Tool": "SeuratV3Wizard"
+      },
+      {
+        "Tool": "SeuratWizard"
+      },
+      {
+        "Tool": "URD"
+      },
+      {
+        "Tool": "bigSCale2"
+      },
+      {
+        "Tool": "countClust",
+        "Bioc": "CountClust"
+      },
+      {
+        "Tool": "dropClust"
+      },
+      {
+        "Tool": "iS-CellR"
+      },
+      {
+        "Tool": "jackstraw",
+        "CRAN": "jackstraw"
+      },
+      {
+        "Tool": "pyNVR"
       },
       {
         "Tool": "scGEApp"
@@ -4234,9 +4252,6 @@
         "PyPI": "scLVM"
       },
       {
-        "Tool": "SCMarker"
-      },
-      {
         "Tool": "scMerge",
         "Bioc": "scMerge"
       },
@@ -4248,40 +4263,25 @@
         "PyPI": "scpopcorn"
       },
       {
-        "Tool": "scran",
-        "Bioc": "scran"
-      },
-      {
         "Tool": "scUnifrac"
       },
       {
         "Tool": "scVEGs"
       },
       {
-        "Tool": "Seurat",
-        "CRAN": "Seurat"
+        "Tool": "sceb",
+        "PyPI": "sceb"
       },
       {
-        "Tool": "SeuratV3Wizard"
-      },
-      {
-        "Tool": "SeuratWizard"
-      },
-      {
-        "Tool": "SINC"
+        "Tool": "scran",
+        "Bioc": "scran"
       },
       {
         "Tool": "slalom",
         "Bioc": "slalom"
       },
       {
-        "Tool": "SOUP"
-      },
-      {
         "Tool": "sscClust"
-      },
-      {
-        "Tool": "URD"
       },
       {
         "Tool": "uSORT",
@@ -4293,6 +4293,31 @@
     "Category": "Variants",
     "Description": "Detection or use of nucleotide variants",
     "Tools": [
+      {
+        "Tool": "CONICS"
+      },
+      {
+        "Tool": "DENDRO"
+      },
+      {
+        "Tool": "HoneyBADGER"
+      },
+      {
+        "Tool": "IronThrone-GoT"
+      },
+      {
+        "Tool": "SCmut"
+      },
+      {
+        "Tool": "SSrGE"
+      },
+      {
+        "Tool": "TBSP",
+        "PyPI": "tbsp"
+      },
+      {
+        "Tool": "VarTrix"
+      },
       {
         "Tool": "badger"
       },
@@ -4306,46 +4331,21 @@
         "Tool": "clonealign"
       },
       {
-        "Tool": "CONICS"
-      },
-      {
         "Tool": "demuxlet"
-      },
-      {
-        "Tool": "DENDRO"
-      },
-      {
-        "Tool": "HoneyBADGER"
       },
       {
         "Tool": "inferCNV",
         "Bioc": "infercnv"
       },
       {
-        "Tool": "IronThrone-GoT"
-      },
-      {
-        "Tool": "SCmut"
+        "Tool": "scSplit",
+        "PyPI": "scSplit"
       },
       {
         "Tool": "scploid"
       },
       {
-        "Tool": "scSplit",
-        "PyPI": "scSplit"
-      },
-      {
         "Tool": "souporcell"
-      },
-      {
-        "Tool": "SSrGE"
-      },
-      {
-        "Tool": "TBSP",
-        "PyPI": "tbsp"
-      },
-      {
-        "Tool": "VarTrix"
       }
     ]
   },
@@ -4354,47 +4354,15 @@
     "Description": "Functions for visualising some aspect of scRNA-seq data or analysis",
     "Tools": [
       {
-        "Tool": "alevinQC",
-        "Bioc": "alevinQC"
-      },
-      {
-        "Tool": "AltAnalyze",
-        "PyPI": "AltAnalyze"
-      },
-      {
         "Tool": "ASAP"
-      },
-      {
-        "Tool": "ascend"
       },
       {
         "Tool": "AUCell",
         "Bioc": "AUCell"
       },
       {
-        "Tool": "badger"
-      },
-      {
-        "Tool": "bbknn",
-        "PyPI": "bbknn"
-      },
-      {
-        "Tool": "bcbioSingleCell"
-      },
-      {
-        "Tool": "bigSCale"
-      },
-      {
-        "Tool": "bigSCale2"
-      },
-      {
-        "Tool": "BraCeR"
-      },
-      {
-        "Tool": "BranchedGP"
-      },
-      {
-        "Tool": "bseqsc"
+        "Tool": "AltAnalyze",
+        "PyPI": "AltAnalyze"
       },
       {
         "Tool": "BTR",
@@ -4404,29 +4372,28 @@
         "Tool": "BUSseq"
       },
       {
+        "Tool": "BraCeR"
+      },
+      {
+        "Tool": "BranchedGP"
+      },
+      {
         "Tool": "CALISTA"
+      },
+      {
+        "Tool": "CHETAH",
+        "Bioc": "CHETAH"
+      },
+      {
+        "Tool": "COMET",
+        "PyPI": "COMETSC"
+      },
+      {
+        "Tool": "CONICS"
       },
       {
         "Tool": "CancerInSilico",
         "Bioc": "CancerInSilico"
-      },
-      {
-        "Tool": "cardelino"
-      },
-      {
-        "Tool": "ccfindR",
-        "Bioc": "ccfindR"
-      },
-      {
-        "Tool": "celaref",
-        "Bioc": "celaref"
-      },
-      {
-        "Tool": "celda",
-        "Bioc": "celda"
-      },
-      {
-        "Tool": "cellAlign"
       },
       {
         "Tool": "CellBench",
@@ -4434,10 +4401,6 @@
       },
       {
         "Tool": "CellBender"
-      },
-      {
-        "Tool": "cellBrowser",
-        "PyPI": "cellbrowser"
       },
       {
         "Tool": "CellPhoneDB",
@@ -4461,61 +4424,20 @@
         "Tool": "CellView"
       },
       {
-        "Tool": "cellxgene",
-        "PyPI": "cellxgene"
-      },
-      {
         "Tool": "Cerebro"
       },
       {
-        "Tool": "CHETAH",
-        "Bioc": "CHETAH"
-      },
-      {
-        "Tool": "clonealign"
-      },
-      {
-        "Tool": "clusterExperiment",
-        "Bioc": "clusterExperiment"
+        "Tool": "ClusterMap"
       },
       {
         "Tool": "Clustergrammer2",
         "PyPI": "clustergrammer2"
       },
       {
-        "Tool": "ClusterMap"
-      },
-      {
-        "Tool": "COMET",
-        "PyPI": "COMETSC"
-      },
-      {
-        "Tool": "CONICS"
-      },
-      {
         "Tool": "Conos"
       },
       {
-        "Tool": "constclust",
-        "PyPI": "constclust"
-      },
-      {
-        "Tool": "countClust",
-        "Bioc": "CountClust"
-      },
-      {
-        "Tool": "DeLorean",
-        "CRAN": "DeLorean"
-      },
-      {
         "Tool": "DENDRO"
-      },
-      {
-        "Tool": "densityCut"
-      },
-      {
-        "Tool": "DepecheR",
-        "Bioc": "DepecheR"
       },
       {
         "Tool": "DESC",
@@ -4525,21 +4447,31 @@
         "Tool": "DESCEND"
       },
       {
-        "Tool": "destiny",
-        "Bioc": "destiny"
+        "Tool": "DIEM"
+      },
+      {
+        "Tool": "DIMMSC"
+      },
+      {
+        "Tool": "DPT"
+      },
+      {
+        "Tool": "DPre"
+      },
+      {
+        "Tool": "DeLorean",
+        "CRAN": "DeLorean"
+      },
+      {
+        "Tool": "DepecheR",
+        "Bioc": "DepecheR"
       },
       {
         "Tool": "Dhaka"
       },
       {
-        "Tool": "DIEM"
-      },
-      {
         "Tool": "DigitalCellSorter",
         "PyPI": "DigitalCellSorter"
-      },
-      {
-        "Tool": "DIMMSC"
       },
       {
         "Tool": "DistMap"
@@ -4551,36 +4483,14 @@
         "Tool": "DoubletDetection"
       },
       {
-        "Tool": "DPre"
-      },
-      {
-        "Tool": "DPT"
-      },
-      {
-        "Tool": "dropbead"
-      },
-      {
-        "Tool": "dropClust"
-      },
-      {
-        "Tool": "dropEst"
-      },
-      {
-        "Tool": "dropSeqPipe",
-        "PyPI": "dropSeqPipe"
-      },
-      {
-        "Tool": "dropsim"
-      },
-      {
         "Tool": "Dynamo"
-      },
-      {
-        "Tool": "dynverse"
       },
       {
         "Tool": "ECLAIR",
         "PyPI": "ECLAIR"
+      },
+      {
+        "Tool": "FORKS"
       },
       {
         "Tool": "FastProject",
@@ -4591,19 +4501,11 @@
         "CRAN": "FateID"
       },
       {
-        "Tool": "fcoex",
-        "Bioc": "fcoex"
-      },
-      {
         "Tool": "FiRE",
         "CRAN": "FiRE"
       },
       {
-        "Tool": "fishpond",
-        "Bioc": "fishpond"
-      },
-      {
-        "Tool": "FORKS"
+        "Tool": "GPfates"
       },
       {
         "Tool": "Garnett"
@@ -4613,17 +4515,8 @@
         "PyPI": "genepattern-python"
       },
       {
-        "Tool": "genesorteR"
-      },
-      {
-        "Tool": "gficf"
-      },
-      {
         "Tool": "GiniClust3",
         "PyPI": "giniclust3"
-      },
-      {
-        "Tool": "GPfates"
       },
       {
         "Tool": "Granatum"
@@ -4647,30 +4540,10 @@
         "Tool": "ImSpectR"
       },
       {
-        "Tool": "indeXplorer"
-      },
-      {
-        "Tool": "inferCNV",
-        "Bioc": "infercnv"
-      },
-      {
-        "Tool": "iS-CellR"
-      },
-      {
-        "Tool": "iscandar"
-      },
-      {
-        "Tool": "iSEE",
-        "Bioc": "iSEE"
-      },
-      {
-        "Tool": "iTALK"
+        "Tool": "LIGER"
       },
       {
         "Tool": "LandSCENT"
-      },
-      {
-        "Tool": "LIGER"
       },
       {
         "Tool": "LineagePulse",
@@ -4694,14 +4567,7 @@
         "PyPI": "pymatcher"
       },
       {
-        "Tool": "matchSCore2"
-      },
-      {
         "Tool": "MERLoT"
-      },
-      {
-        "Tool": "MetaCell",
-        "PyPI": "metacell"
       },
       {
         "Tool": "MFA",
@@ -4712,6 +4578,21 @@
         "PyPI": "MICTI"
       },
       {
+        "Tool": "MOFA",
+        "Bioc": "MOFA",
+        "PyPI": "mofapy"
+      },
+      {
+        "Tool": "MUDAN"
+      },
+      {
+        "Tool": "MUSIC"
+      },
+      {
+        "Tool": "MetaCell",
+        "PyPI": "metacell"
+      },
+      {
         "Tool": "Millefy"
       },
       {
@@ -4719,53 +4600,17 @@
         "PyPI": "moana"
       },
       {
-        "Tool": "MOFA",
-        "Bioc": "MOFA",
-        "PyPI": "mofapy"
-      },
-      {
         "Tool": "Monocle",
         "Bioc": "monocle"
       },
       {
-        "Tool": "MUDAN"
-      },
-      {
-        "Tool": "muscat",
-        "Bioc": "muscat"
-      },
-      {
         "Tool": "MuSiC"
-      },
-      {
-        "Tool": "MUSIC"
-      },
-      {
-        "Tool": "netSmooth",
-        "Bioc": "netSmooth"
-      },
-      {
-        "Tool": "nimfa",
-        "PyPI": "nimfa"
       },
       {
         "Tool": "OnlinePCA"
       },
       {
         "Tool": "Ouija"
-      },
-      {
-        "Tool": "pagoda2"
-      },
-      {
-        "Tool": "Palantir"
-      },
-      {
-        "Tool": "pCMF"
-      },
-      {
-        "Tool": "pCreode",
-        "PyPI": "pcreode"
       },
       {
         "Tool": "PHATE",
@@ -4776,32 +4621,16 @@
         "Tool": "PIVOT"
       },
       {
+        "Tool": "Palantir"
+      },
+      {
         "Tool": "PoissonUMIs"
-      },
-      {
-        "Tool": "powsimR"
-      },
-      {
-        "Tool": "pseudogp"
       },
       {
         "Tool": "PyMINEr"
       },
       {
-        "Tool": "RayleighSelection"
-      },
-      {
         "Tool": "RCA"
-      },
-      {
-        "Tool": "rCASC"
-      },
-      {
-        "Tool": "reCAT"
-      },
-      {
-        "Tool": "robustSingleCell",
-        "CRAN": "robustSingleCell"
       },
       {
         "Tool": "ROGUE"
@@ -4810,7 +4639,7 @@
         "Tool": "RSCORE"
       },
       {
-        "Tool": "sake"
+        "Tool": "RayleighSelection"
       },
       {
         "Tool": "SAM",
@@ -4823,6 +4652,74 @@
         "Tool": "SC2P"
       },
       {
+        "Tool": "SCDE",
+        "Bioc": "scde"
+      },
+      {
+        "Tool": "SCENIC",
+        "PyPI": "pyscenic"
+      },
+      {
+        "Tool": "SCHNAPPs"
+      },
+      {
+        "Tool": "SCHiRM"
+      },
+      {
+        "Tool": "SCINA",
+        "CRAN": "SCINA"
+      },
+      {
+        "Tool": "SCNS"
+      },
+      {
+        "Tool": "SCORPIUS",
+        "CRAN": "SCORPIUS"
+      },
+      {
+        "Tool": "SCRABBLE",
+        "CRAN": "SCRABBLE"
+      },
+      {
+        "Tool": "SCRAT"
+      },
+      {
+        "Tool": "SCelVis",
+        "PyPI": "scelvis"
+      },
+      {
+        "Tool": "SCell"
+      },
+      {
+        "Tool": "SCope"
+      },
+      {
+        "Tool": "SHARP"
+      },
+      {
+        "Tool": "SIMLR",
+        "Bioc": "SIMLR",
+        "PyPI": "SIMLR"
+      },
+      {
+        "Tool": "SOUP"
+      },
+      {
+        "Tool": "SPADE"
+      },
+      {
+        "Tool": "SPRING"
+      },
+      {
+        "Tool": "STEMNET"
+      },
+      {
+        "Tool": "STREAM"
+      },
+      {
+        "Tool": "SWNE"
+      },
+      {
         "Tool": "Scanpy",
         "PyPI": "scanpy"
       },
@@ -4831,45 +4728,280 @@
         "Bioc": "scater"
       },
       {
+        "Tool": "Scedar",
+        "PyPI": "scedar"
+      },
+      {
+        "Tool": "Scribe"
+      },
+      {
+        "Tool": "Seurat",
+        "CRAN": "Seurat"
+      },
+      {
+        "Tool": "Sharq"
+      },
+      {
+        "Tool": "SigEMD"
+      },
+      {
+        "Tool": "SinCHet"
+      },
+      {
+        "Tool": "SingleCellExplorer"
+      },
+      {
+        "Tool": "SingleCellNet"
+      },
+      {
+        "Tool": "SingleCellSignatureExplorer"
+      },
+      {
+        "Tool": "SingleR",
+        "Bioc": "SingleR"
+      },
+      {
+        "Tool": "SoptSC"
+      },
+      {
+        "Tool": "SoupX"
+      },
+      {
+        "Tool": "Spectrum",
+        "CRAN": "Spectrum"
+      },
+      {
+        "Tool": "Splatter",
+        "Bioc": "splatter"
+      },
+      {
+        "Tool": "SymSim"
+      },
+      {
+        "Tool": "TBSP",
+        "PyPI": "tbsp"
+      },
+      {
+        "Tool": "TCM"
+      },
+      {
+        "Tool": "TSCAN",
+        "Bioc": "TSCAN"
+      },
+      {
+        "Tool": "TooManyCells",
+        "CRAN": "TooManyCellsR"
+      },
+      {
+        "Tool": "TraCeR"
+      },
+      {
+        "Tool": "Trajan"
+      },
+      {
+        "Tool": "UNCURL",
+        "PyPI": "uncurl-seq"
+      },
+      {
+        "Tool": "URD"
+      },
+      {
+        "Tool": "VASC"
+      },
+      {
+        "Tool": "VDJPuzzle"
+      },
+      {
+        "Tool": "VIPER"
+      },
+      {
+        "Tool": "VISION"
+      },
+      {
+        "Tool": "Wishbone"
+      },
+      {
+        "Tool": "alevinQC",
+        "Bioc": "alevinQC"
+      },
+      {
+        "Tool": "ascend"
+      },
+      {
+        "Tool": "badger"
+      },
+      {
+        "Tool": "bbknn",
+        "PyPI": "bbknn"
+      },
+      {
+        "Tool": "bcbioSingleCell"
+      },
+      {
+        "Tool": "bigSCale"
+      },
+      {
+        "Tool": "bigSCale2"
+      },
+      {
+        "Tool": "bseqsc"
+      },
+      {
+        "Tool": "cardelino"
+      },
+      {
+        "Tool": "ccfindR",
+        "Bioc": "ccfindR"
+      },
+      {
+        "Tool": "celaref",
+        "Bioc": "celaref"
+      },
+      {
+        "Tool": "celda",
+        "Bioc": "celda"
+      },
+      {
+        "Tool": "cellAlign"
+      },
+      {
+        "Tool": "cellBrowser",
+        "PyPI": "cellbrowser"
+      },
+      {
+        "Tool": "cellxgene",
+        "PyPI": "cellxgene"
+      },
+      {
+        "Tool": "clonealign"
+      },
+      {
+        "Tool": "clusterExperiment",
+        "Bioc": "clusterExperiment"
+      },
+      {
+        "Tool": "constclust",
+        "PyPI": "constclust"
+      },
+      {
+        "Tool": "countClust",
+        "Bioc": "CountClust"
+      },
+      {
+        "Tool": "densityCut"
+      },
+      {
+        "Tool": "destiny",
+        "Bioc": "destiny"
+      },
+      {
+        "Tool": "dropClust"
+      },
+      {
+        "Tool": "dropEst"
+      },
+      {
+        "Tool": "dropSeqPipe",
+        "PyPI": "dropSeqPipe"
+      },
+      {
+        "Tool": "dropbead"
+      },
+      {
+        "Tool": "dropsim"
+      },
+      {
+        "Tool": "dynverse"
+      },
+      {
+        "Tool": "fcoex",
+        "Bioc": "fcoex"
+      },
+      {
+        "Tool": "fishpond",
+        "Bioc": "fishpond"
+      },
+      {
+        "Tool": "genesorteR"
+      },
+      {
+        "Tool": "gficf"
+      },
+      {
+        "Tool": "iS-CellR"
+      },
+      {
+        "Tool": "iSEE",
+        "Bioc": "iSEE"
+      },
+      {
+        "Tool": "iTALK"
+      },
+      {
+        "Tool": "indeXplorer"
+      },
+      {
+        "Tool": "inferCNV",
+        "Bioc": "infercnv"
+      },
+      {
+        "Tool": "iscandar"
+      },
+      {
+        "Tool": "matchSCore2"
+      },
+      {
+        "Tool": "muscat",
+        "Bioc": "muscat"
+      },
+      {
+        "Tool": "netSmooth",
+        "Bioc": "netSmooth"
+      },
+      {
+        "Tool": "nimfa",
+        "PyPI": "nimfa"
+      },
+      {
+        "Tool": "pCMF"
+      },
+      {
+        "Tool": "pCreode",
+        "PyPI": "pcreode"
+      },
+      {
+        "Tool": "pagoda2"
+      },
+      {
+        "Tool": "powsimR"
+      },
+      {
+        "Tool": "pseudogp"
+      },
+      {
+        "Tool": "rCASC"
+      },
+      {
+        "Tool": "reCAT"
+      },
+      {
+        "Tool": "robustSingleCell",
+        "CRAN": "robustSingleCell"
+      },
+      {
+        "Tool": "sake"
+      },
+      {
         "Tool": "scClassify"
       },
       {
         "Tool": "scClustBench"
       },
       {
-        "Tool": "scclusteval"
-      },
-      {
         "Tool": "scClustViz"
       },
       {
         "Tool": "scDAPA"
-      },
-      {
-        "Tool": "SCDE",
-        "Bioc": "scde"
-      },
-      {
-        "Tool": "scdiff",
-        "PyPI": "scdiff"
-      },
-      {
-        "Tool": "scdney"
-      },
-      {
-        "Tool": "Scedar",
-        "PyPI": "scedar"
-      },
-      {
-        "Tool": "SCell"
-      },
-      {
-        "Tool": "SCelVis",
-        "PyPI": "scelvis"
-      },
-      {
-        "Tool": "SCENIC",
-        "PyPI": "pyscenic"
       },
       {
         "Tool": "scEpath"
@@ -4889,24 +5021,6 @@
         "Bioc": "scGPS"
       },
       {
-        "Tool": "schex",
-        "Bioc": "schex"
-      },
-      {
-        "Tool": "SCHiRM"
-      },
-      {
-        "Tool": "SCHNAPPs"
-      },
-      {
-        "Tool": "scicast",
-        "PyPI": "scicast"
-      },
-      {
-        "Tool": "SCINA",
-        "CRAN": "SCINA"
-      },
-      {
         "Tool": "scIVA"
       },
       {
@@ -4920,28 +5034,11 @@
         "Tool": "scMetric"
       },
       {
-        "Tool": "SCNS"
-      },
-      {
-        "Tool": "scone",
-        "Bioc": "scone"
-      },
-      {
-        "Tool": "SCope"
-      },
-      {
-        "Tool": "SCORPIUS",
-        "CRAN": "SCORPIUS"
-      },
-      {
         "Tool": "scPanoView"
       },
       {
         "Tool": "scPipe",
         "Bioc": "scPipe"
-      },
-      {
-        "Tool": "scploid"
       },
       {
         "Tool": "scPlot",
@@ -4952,55 +5049,29 @@
         "PyPI": "scpopcorn"
       },
       {
-        "Tool": "scprep",
-        "PyPI": "scprep"
-      },
-      {
-        "Tool": "SCRABBLE",
-        "CRAN": "SCRABBLE"
-      },
-      {
-        "Tool": "scran",
-        "Bioc": "scran"
-      },
-      {
-        "Tool": "SCRAT"
-      },
-      {
-        "Tool": "Scribe"
-      },
-      {
         "Tool": "scRNABatchQC"
-      },
-      {
-        "Tool": "scruff",
-        "Bioc": "scruff"
       },
       {
         "Tool": "scRutiNy",
         "PyPI": "RNAscrutiny"
       },
       {
-        "Tool": "scSeqR"
+        "Tool": "scSVA"
       },
       {
-        "Tool": "scSVA"
+        "Tool": "scSeqR"
       },
       {
         "Tool": "scTDA",
         "PyPI": "scTDA"
       },
       {
-        "Tool": "scTensor",
-        "Bioc": "scTensor"
-      },
-      {
         "Tool": "scTGIF",
         "Bioc": "scTGIF"
       },
       {
-        "Tool": "sctransform",
-        "CRAN": "sctransform"
+        "Tool": "scTensor",
+        "Bioc": "scTensor"
       },
       {
         "Tool": "scUnifrac"
@@ -5010,49 +5081,56 @@
         "PyPI": "scvelo"
       },
       {
-        "Tool": "Seurat",
-        "CRAN": "Seurat"
+        "Tool": "scclusteval"
       },
       {
-        "Tool": "SHARP"
+        "Tool": "scdiff",
+        "PyPI": "scdiff"
       },
       {
-        "Tool": "Sharq"
+        "Tool": "scdney"
       },
       {
-        "Tool": "SigEMD"
+        "Tool": "schex",
+        "Bioc": "schex"
       },
       {
-        "Tool": "SIMLR",
-        "Bioc": "SIMLR",
-        "PyPI": "SIMLR"
+        "Tool": "scicast",
+        "PyPI": "scicast"
+      },
+      {
+        "Tool": "scone",
+        "Bioc": "scone"
+      },
+      {
+        "Tool": "scploid"
+      },
+      {
+        "Tool": "scprep",
+        "PyPI": "scprep"
+      },
+      {
+        "Tool": "scran",
+        "Bioc": "scran"
+      },
+      {
+        "Tool": "scruff",
+        "Bioc": "scruff"
+      },
+      {
+        "Tool": "sctransform",
+        "CRAN": "sctransform"
       },
       {
         "Tool": "sincell",
         "Bioc": "sincell"
       },
       {
-        "Tool": "SinCHet"
-      },
-      {
-        "Tool": "SingleCellExplorer"
-      },
-      {
         "Tool": "singleCellHaystack"
-      },
-      {
-        "Tool": "SingleCellNet"
-      },
-      {
-        "Tool": "SingleCellSignatureExplorer"
       },
       {
         "Tool": "singleCellTK",
         "Bioc": "singleCellTK"
-      },
-      {
-        "Tool": "SingleR",
-        "Bioc": "SingleR"
       },
       {
         "Tool": "singlet",
@@ -5071,103 +5149,25 @@
         "Bioc": "slingshot"
       },
       {
-        "Tool": "SoptSC"
-      },
-      {
-        "Tool": "SOUP"
-      },
-      {
-        "Tool": "SoupX"
-      },
-      {
-        "Tool": "SPADE"
-      },
-      {
-        "Tool": "Spectrum",
-        "CRAN": "Spectrum"
-      },
-      {
-        "Tool": "Splatter",
-        "Bioc": "splatter"
-      },
-      {
-        "Tool": "SPRING"
-      },
-      {
         "Tool": "sscClust"
-      },
-      {
-        "Tool": "STEMNET"
-      },
-      {
-        "Tool": "STREAM"
-      },
-      {
-        "Tool": "SWNE"
-      },
-      {
-        "Tool": "SymSim"
-      },
-      {
-        "Tool": "TBSP",
-        "PyPI": "tbsp"
-      },
-      {
-        "Tool": "TCM"
       },
       {
         "Tool": "tn_test",
         "PyPI": "truncated_normal"
       },
       {
-        "Tool": "TooManyCells",
-        "CRAN": "TooManyCellsR"
-      },
-      {
-        "Tool": "TraCeR"
-      },
-      {
         "Tool": "tradeSeq",
         "Bioc": "tradeSeq"
       },
       {
-        "Tool": "Trajan"
-      },
-      {
         "Tool": "trendsceek"
-      },
-      {
-        "Tool": "TSCAN",
-        "Bioc": "TSCAN"
-      },
-      {
-        "Tool": "UNCURL",
-        "PyPI": "uncurl-seq"
-      },
-      {
-        "Tool": "URD"
-      },
-      {
-        "Tool": "VASC"
-      },
-      {
-        "Tool": "VDJPuzzle"
       },
       {
         "Tool": "velocyto",
         "PyPI": "velocyto"
       },
       {
-        "Tool": "VIPER"
-      },
-      {
-        "Tool": "VISION"
-      },
-      {
         "Tool": "visnormsc"
-      },
-      {
-        "Tool": "Wishbone"
       },
       {
         "Tool": "wot",
