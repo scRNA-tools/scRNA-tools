@@ -13,6 +13,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1016/j.cell.2019.05.031	FALSE	FALSE	2019-06	Comprehensive Integration of Single-Cell Data
 10.1016/j.celrep.2018.05.002	FALSE	FALSE	2018-06	Transcriptional Dynamics of Hair-Bundle Morphogenesis Revealed with CellTrails
 10.1016/j.celrep.2019.01.063	FALSE	FALSE	2019-02	PyMINEr Finds Gene and Autocrine-Paracrine Networks from Human Islet scRNA-Seq
+10.1016/j.celrep.2019.09.082	FALSE	FALSE	2019-11	DoubletDecon: Deconvoluting Doublets from Single-Cell RNA-Sequencing Data
 10.1016/j.cels.2016.08.011	FALSE	FALSE	2016-10	A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure
 10.1016/j.cels.2017.08.014	FALSE	FALSE	2017-09	Gene Regulatory Network Inference from Single-Cell Data Using Multivariate Information Measures
 10.1016/j.cels.2017.10.012	FALSE	FALSE	2018-01	Unsupervised Trajectory Analysis of Single-Cell RNA-Seq and Imaging Data Reveals Alternative Tuft Cell Origins in the Gut
@@ -191,6 +192,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1093/bioinformatics/btz752	FALSE	FALSE	2019-10-09	SPARSim Single Cell: a count data simulator for scRNA-seq data
 10.1093/bioinformatics/btz789	FALSE	FALSE	2019-10-17	DPre: Computational identification of differentiation bias and genes underlying cell type conversions
 10.1093/bioinformatics/btz801	FALSE	FALSE	2019-10-24	SINC: a scale-invariant deep-neural-network classifier for bulk and single-cell RNA-seq data
+10.1093/bioinformatics/btz823	FALSE	FALSE	2019-11-06	Improved dropClust R package with integrative analysis support for scRNA-seq data
 10.1093/gigascience/giy059	FALSE	FALSE	2018-05-26	zUMIs - A fast and flexible pipeline to process RNA sequencing data with UMIs
 10.1093/gigascience/giz087	FALSE	FALSE	2019-08-01	ascend: R package for analysis of single-cell RNA-seq data
 10.1093/gigascience/giz106	FALSE	FALSE	2019-09-01	Evaluating stably expressed genes in single cells
@@ -274,7 +276,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/166868	FALSE	TRUE	2017-07-21	BGP: Branched Gaussian processes for identifying gene-specific branching dynamics in single cell data
 10.1101/168922	FALSE	TRUE	2017-07-26	Cell Lineage and Communication Network Inference via Optimization for Single-cell Transcriptomics
 10.1101/170118	FALSE	TRUE	2017-07-30	Fundamental limits on dynamic inference from single cell snapshots
-10.1101/170308	FALSE	TRUE	2017-07-31	dropClust: Efficient clustering of ultra-large scRNA-seq data
+10.1101/170308	FALSE	TRUE	NA	dropClust: Efficient clustering of ultra-large scRNA-seq data
 10.1101/171496	FALSE	TRUE	2017-08-02	Accurate estimation of molecular counts in droplet-based single-cell RNA-seq experiments
 10.1101/173997	FALSE	TRUE	2017-08-09	DEsingle for detecting three types of differential expression in single-cell RNA-seq data
 10.1101/174029	FALSE	TRUE	2017-08-09	Scanpy for analysis of large-scale single-cell gene expression data
@@ -348,7 +350,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/356634	FALSE	TRUE	2018-06-27	SCMarker: ab initio marker selection for single cell transcriptome profiling
 10.1101/357368	FALSE	TRUE	2018-07-09	Scrublet: computational identification of cell doublets in single-cell transcriptomic data
 10.1101/361980	FALSE	TRUE	2018-07-05	McImpute: Matrix completion based imputation for single cell RNA-seq data
-10.1101/364810	FALSE	TRUE	2018-07-08	DoubletDecon: Cell-State Aware Removal of Single-Cell RNA-Seq Doublets
+10.1101/364810	FALSE	TRUE	NA	DoubletDecon: Cell-State Aware Removal of Single-Cell RNA-Seq Doublets
 10.1101/365007	FALSE	TRUE	2018-07-08	Deep learning for inferring gene relationships from single-cell expression data
 10.1101/367003	FALSE	TRUE	2018-07-11	De novo Gene Signature Identification from Single-Cell RNA-Seq with Hierarchical Poisson Factorization
 10.1101/369538	FALSE	TRUE	2018-07-15	scPred: Cell type prediction at single-cell resolution
@@ -434,7 +436,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/576827	FALSE	TRUE	2019-03-14	Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression
 10.1101/587360	FALSE	TRUE	2019-03-24	Cell BLAST: Searching large-scale scRNA-seq databases via unbiased cell embedding
 10.1101/596817	FALSE	TRUE	NA	IKAP - Identifying K mAjor cell Population groups in single-cell RNA-seq analysis
-10.1101/596924	FALSE	TRUE	2019-04-03	dropClust2: An R package for resource efficient analysis of large scale single cell RNA-Seq data
+10.1101/596924	FALSE	TRUE	NA	dropClust2: An R package for resource efficient analysis of large scale single cell RNA-Seq data
 10.1101/599654	FALSE	TRUE	2019-04-04	Optimal marker gene selection for cell type discrimination in single cell analyses
 10.1101/603589	FALSE	TRUE	2019-04-12	Exploring dimension-reduced embeddings with Sleepwalk
 10.1101/621805	FALSE	TRUE	2019-04-29	Single-Cell Signature Explorer for comprehensive visualization of single cell signatures across scRNA-seq data sets
@@ -481,13 +483,14 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/791699	FALSE	TRUE	NA	CellBender remove-background: a deep generative model for unsupervised removal of background noise from scRNA-seq datasets
 10.1101/794503	FALSE	TRUE	NA	Knowledge-primed neural networks enable biologically interpretable deep learning on single-cell sequencing data
 10.1101/800490	FALSE	TRUE	NA	scCancer: a package for automated processing of single cell RNA-seq data in cancer
-10.1101/800847	FALSE	TRUE	NA	Deciphering the transcriptomic landscape of tumor-infiltrating CD8 lymphocytes in B16 melanoma tumors with single-cell RNA-Seq
 10.1101/810234	FALSE	TRUE	NA	Unifying single-cell annotations based on the Cell Ontology
 10.1101/819581	FALSE	TRUE	NA	ROGUE: an entropy-based universal metric for assessing the purity of single cell population
 10.1101/820928	FALSE	TRUE	NA	northstar: leveraging cell atlases to identify healthy and neoplastic cells in transcriptomes from human tumors
 10.1101/820936	FALSE	TRUE	NA	Generalizing RNA velocity to transient cell states through dynamical modeling
 10.1101/823682	FALSE	TRUE	NA	Cumulus: a cloud-based data analysis framework for large-scale single-cell and single-nucleus RNA-seq
 10.1101/828483	FALSE	TRUE	NA	Sample demultiplexing, multiplet detection, experiment planning and novel cell type verification in single cell sequencing
+10.1101/836650	FALSE	TRUE	NA	Exploring High-Dimensional Biological Data with Sparse Contrastive Principal Component Analysis
+10.1101/837104	FALSE	TRUE	NA	MOFA+: a probabilistic framework for comprehensive integration of structured single-cell data
 10.1101/832535	FALSE	TRUE	NA	CB2 distinguishes cells from background barcodes in 10x Genomics data
 10.1101/832626	FALSE	TRUE	NA	GeneSwitches : Ordering gene-expression and functional events in single-cell experiments
 10.1101/gr.207902.116	FALSE	TRUE	2016-07-28	End Sequence Analysis Toolkit (ESAT) expands the extractable information from single-cell RNA-seq data
