@@ -4,6 +4,8 @@
 
 [![Project Status](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![Build Status](https://travis-ci.com/Oshlack/scRNA-tools.svg?branch=master)](https://travis-ci.com/Oshlack/scRNA-tools)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e1fce3cd-d1e6-439d-8751-83360c631b5d/deploy-status)](https://app.netlify.com/sites/scrna-tools/deploys)
 
 A database of software tools for the analysis of single-cell RNA-seq data. To
 make it into the database software must be available for download and public use
