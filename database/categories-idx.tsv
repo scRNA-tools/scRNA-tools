@@ -3,6 +3,13 @@ ACTINN	Classification
 ACTION	Clustering
 ACTION	DimensionalityReduction
 ACTION	GeneNetworks
+ACTIONet	Classification
+ACTIONet	Clustering
+ACTIONet	DimensionalityReduction
+ACTIONet	GeneSets
+ACTIONet	Integration
+ACTIONet	Normalisation
+ACTIONet	Visualisation
 alevinQC	Interactive
 alevinQC	Visualisation
 ALRA	Imputation
@@ -127,6 +134,7 @@ CancerInSilico	GeneNetworks
 CancerInSilico	Interactive
 CancerInSilico	Simulation
 CancerInSilico	Visualisation
+CAPITAL	Ordering
 cardelino	Classification
 cardelino	Simulation
 cardelino	Variants
@@ -208,6 +216,11 @@ CIDR	Clustering
 CIDR	DimensionalityReduction
 CIDR	Imputation
 CIDR	Simulation
+CiteFuse	Clustering
+CiteFuse	DifferentialExpression
+CiteFuse	Interactive
+CiteFuse	QualityControl
+CiteFuse	Visualisation
 CITEseqCount	Integration
 CITEseqCount	Quantification
 CITEseqCount	UMIs
@@ -229,6 +242,9 @@ ClusterMap	Integration
 ClusterMap	Visualisation
 ClusterMine	Clustering
 ClusterMine	GeneSets
+clustifyr	Classification
+clustifyr	VariableGenes
+clustifyr	Visualisation
 cNMF	Clustering
 cNMF	DimensionalityReduction
 CNNC	GeneNetworks
@@ -237,6 +253,12 @@ COAC	Clustering
 COAC	GeneNetworks
 COMET	MarkerGenes
 COMET	Visualisation
+CONCLUS	Clustering
+CONCLUS	DimensionalityReduction
+CONCLUS	MarkerGenes
+CONCLUS	Normalisation
+CONCLUS	RareCells
+CONCLUS	Visualisation
 CONICS	Integration
 CONICS	Variants
 CONICS	Visualisation
@@ -337,6 +359,9 @@ DPT	ExpressionPatterns
 DPT	Ordering
 DPT	Visualisation
 DrImpute	Imputation
+DrivAER	DimensionalityReduction
+DrivAER	GeneSets
+DrivAER	Visualisation
 dropbead	QualityControl
 dropbead	Visualisation
 dropClust	Clustering
@@ -682,6 +707,8 @@ netSmooth	Imputation
 netSmooth	Visualisation
 netsne	DimensionalityReduction
 NetworkInference	GeneNetworks
+nichenetr	GeneNetworks
+nichenetr	Visualisation
 nimfa	Clustering
 nimfa	DimensionalityReduction
 nimfa	Visualisation
@@ -998,6 +1025,7 @@ scImpute	Imputation
 SCINA	Classification
 SCINA	GeneSets
 SCINA	Visualisation
+SCINET	GeneNetworks
 scIVA	GeneSets
 scIVA	Interactive
 scIVA	MarkerGenes
@@ -1062,6 +1090,10 @@ SCPattern	ExpressionPatterns
 SCPattern	Interactive
 scPCA	DimensionalityReduction
 scphaser	Haplotypes
+scPhere	DimensionalityReduction
+scPhere	Interactive
+scPhere	Ordering
+scPhere	Visualisation
 scPipe	Alignment
 scPipe	QualityControl
 scPipe	Quantification
@@ -1181,6 +1213,8 @@ scVelo	Visualisation
 scVI	Classification
 scVI	DimensionalityReduction
 scVI	Integration
+scVirtualCyto	Interactive
+scVirtualCyto	Visualisation
 scvis	DimensionalityReduction
 SEGtool	GeneFiltering
 SEGtool	MarkerGenes
@@ -1226,9 +1260,15 @@ Sharq	QualityControl
 Sharq	Quantification
 Sharq	UMIs
 Sharq	Visualisation
+Sierra	AlternativeSplicing
+Sierra	Visualisation
 SigEMD	DifferentialExpression
 SigEMD	Imputation
 SigEMD	Visualisation
+SigHotSpotter	GeneNetworks
+SigHotSpotter	GeneSets
+SigHotSpotter	Interactive
+SigHotSpotter	Visualisation
 signac	DifferentialExpression
 signac	ExpressionPatterns
 signac	MarkerGenes
@@ -1288,6 +1328,7 @@ SinQC	QualityControl
 SIP	Alignment
 sircel	Quantification
 sircel	UMIs
+SISUA	DimensionalityReduction
 slalom	DimensionalityReduction
 slalom	GeneSets
 slalom	VariableGenes
@@ -1301,6 +1342,8 @@ slingshot	Ordering
 slingshot	Visualisation
 SMNN	Integration
 SNN-Cliq	Clustering
+solo	QualityControl
+solo	Visualisation
 SoptSC	Clustering
 SoptSC	DimensionalityReduction
 SoptSC	Ordering
@@ -1369,6 +1412,10 @@ TBSP	Variants
 TBSP	Visualisation
 TCM	DimensionalityReduction
 TCM	Visualisation
+Tempora	DimensionalityReduction
+Tempora	GeneSets
+Tempora	Ordering
+Tempora	Visualisation
 TENET	GeneNetworks
 TILPRED	Classification
 TILPRED	Immune
@@ -1458,6 +1505,8 @@ WaveCrest	ExpressionPatterns
 WaveCrest	Interactive
 WaveCrest	MarkerGenes
 WaveCrest	Ordering
+WEDGE	Imputation
+WEDGE	Interactive
 Wishbone	ExpressionPatterns
 Wishbone	Interactive
 Wishbone	Ordering
