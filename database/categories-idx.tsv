@@ -663,6 +663,11 @@ Moana	Visualisation
 MOFA	DimensionalityReduction
 MOFA	Integration
 MOFA	Visualisation
+MOFA2	Clustering
+MOFA2	DimensionalityReduction
+MOFA2	Imputation
+MOFA2	Integration
+MOFA2	Visualisation
 Monocle	Clustering
 Monocle	DifferentialExpression
 Monocle	DimensionalityReduction
@@ -794,7 +799,17 @@ PyMINEr	GeneSets
 PyMINEr	Visualisation
 pyNVR	VariableGenes
 QUBIC2	Clustering
-RaceID2	RareCells
+RaceID	Clustering
+RaceID	DifferentialExpression
+RaceID	DimensionalityReduction
+RaceID	ExpressionPatterns
+RaceID	Imputation
+RaceID	Integration
+RaceID	MarkerGenes
+RaceID	Ordering
+RaceID	RareCells
+RaceID	StemCells
+RaceID	Visualisation
 RAFSIL	Clustering
 RAFSIL	DimensionalityReduction
 RayleighSelection	DifferentialExpression
@@ -1111,6 +1126,7 @@ scPopCorn	VariableGenes
 scPopCorn	Visualisation
 scPred	Classification
 scPred	DimensionalityReduction
+scPred	Visualisation
 scprep	GeneFiltering
 scprep	GeneSets
 scprep	Normalisation
@@ -1390,8 +1406,6 @@ SSrGE	Variants
 STAR	Alignment
 STAR	Quantification
 STAR	UMIs
-StemID	Ordering
-StemID	StemCells
 STEMNET	Ordering
 STEMNET	Visualisation
 STREAM	ExpressionPatterns
