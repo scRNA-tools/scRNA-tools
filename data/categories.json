@@ -361,6 +361,12 @@
         "Tool": "scPred"
       },
       {
+        "Tool": "scReClassify"
+      },
+      {
+        "Tool": "SCSA"
+      },
+      {
         "Tool": "scTGIF",
         "Bioc": "scTGIF"
       },
@@ -523,7 +529,8 @@
         "Tool": "Dhaka"
       },
       {
-        "Tool": "DIEM"
+        "Tool": "DIEM",
+        "CRAN": "diem"
       },
       {
         "Tool": "DIMMSC"
@@ -1247,13 +1254,18 @@
         "PyPI": "giniclust3"
       },
       {
+        "Tool": "GLM-PCA",
+        "CRAN": "glmpca"
+      },
+      {
         "Tool": "Granatum"
       },
       {
         "Tool": "GrandPrix"
       },
       {
-        "Tool": "GraphEmbed"
+        "Tool": "GraphEmbed",
+        "PyPI": "graphembed"
       },
       {
         "Tool": "Harmony"
@@ -1453,7 +1465,8 @@
         "Tool": "scPanoView"
       },
       {
-        "Tool": "scPCA"
+        "Tool": "scPCA",
+        "Bioc": "scPCA"
       },
       {
         "Tool": "scPhere"
@@ -1740,7 +1753,8 @@
         "PyPI": "desc"
       },
       {
-        "Tool": "DIEM"
+        "Tool": "DIEM",
+        "CRAN": "diem"
       },
       {
         "Tool": "FORKS"
@@ -2163,6 +2177,9 @@
         "PyPI": "scprep"
       },
       {
+        "Tool": "SCSA"
+      },
+      {
         "Tool": "scSeqR"
       },
       {
@@ -2306,6 +2323,9 @@
       },
       {
         "Tool": "knn_smooth"
+      },
+      {
+        "Tool": "LATE"
       },
       {
         "Tool": "Linnorm",
@@ -2993,6 +3013,10 @@
         "Tool": "scSeqR"
       },
       {
+        "Tool": "scTIM",
+        "PyPI": "sc_tim"
+      },
+      {
         "Tool": "SEGtool"
       },
       {
@@ -3059,6 +3083,9 @@
       },
       {
         "Tool": "LTMGSCA"
+      },
+      {
+        "Tool": "M3S"
       }
     ]
   },
@@ -3222,6 +3249,9 @@
       },
       {
         "Tool": "SAMstrt"
+      },
+      {
+        "Tool": "Sanity"
       },
       {
         "Tool": "SAUCIE"
@@ -3528,6 +3558,9 @@
         "Tool": "SCIMITAR"
       },
       {
+        "Tool": "SClineager"
+      },
+      {
         "Tool": "SCNS"
       },
       {
@@ -3687,7 +3720,8 @@
         "PyPI": "desc"
       },
       {
-        "Tool": "DIEM"
+        "Tool": "DIEM",
+        "CRAN": "diem"
       },
       {
         "Tool": "DoubletDecon"
@@ -4039,6 +4073,9 @@
     "Description": "Generation of synthetic scRNA-seq datasets",
     "Tools": [
       {
+        "Tool": "Augur"
+      },
+      {
         "Tool": "BASiCS",
         "Bioc": "BASiCS"
       },
@@ -4352,6 +4389,9 @@
     "Description": "Identifcation or use of highly (or lowly) variable genes",
     "Tools": [
       {
+        "Tool": "Augur"
+      },
+      {
         "Tool": "AutoImpute"
       },
       {
@@ -4511,6 +4551,10 @@
         "Tool": "cb_sniffer"
       },
       {
+        "Tool": "cellSNP",
+        "PyPI": "cellSNP"
+      },
+      {
         "Tool": "clonealign"
       },
       {
@@ -4531,6 +4575,9 @@
       },
       {
         "Tool": "IronThrone-GoT"
+      },
+      {
+        "Tool": "SClineager"
       },
       {
         "Tool": "SCmut"
@@ -4554,6 +4601,10 @@
       },
       {
         "Tool": "VarTrix"
+      },
+      {
+        "Tool": "Vireo",
+        "PyPI": "vireoSNP"
       }
     ]
   },
@@ -4752,7 +4803,8 @@
         "Tool": "Dhaka"
       },
       {
-        "Tool": "DIEM"
+        "Tool": "DIEM",
+        "CRAN": "diem"
       },
       {
         "Tool": "DigitalCellSorter",
@@ -4855,7 +4907,8 @@
         "Tool": "Granatum"
       },
       {
-        "Tool": "GraphEmbed"
+        "Tool": "GraphEmbed",
+        "PyPI": "graphembed"
       },
       {
         "Tool": "HocusPocus"
