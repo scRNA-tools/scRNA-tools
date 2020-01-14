@@ -293,7 +293,8 @@ load_pkgs_cache <- function(dir) {
         ))
         new_pkgs_cache <- get_pkgs_cache()
 
-        pkgs_cache <- dplyr::bind_rows(pkgs_cache) %>%
+        pkgs_cache <- pkgs_cache %>%
+            dplyr::bind_rows(new_pkgs_cache) %>%
             dplyr::group_by(Repository) %>%
             dplyr::top_n(1, dplyr::desc(Added)) %>%
             dplyr::arrange(Repository)
