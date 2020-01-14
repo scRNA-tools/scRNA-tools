@@ -17,7 +17,7 @@ check <- function(database, pkgs_cache, dir, all) {
         
         if (nrow(pkgs_cache) == 0) {
             usethis::ui_done("No new repositories to check")
-            return(invisible())
+            quit()
         }
     }
     
