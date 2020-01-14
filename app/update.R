@@ -73,8 +73,6 @@ update_tool <- function(database, pkgs_cache, name = NULL) {
         ))
     }
 
-    database <- update_repositories(name, database, pkgs_cache, prompt = FALSE)
-
     usethis::ui_done(glue::glue(
         "Successfully updated {usethis::ui_value(name)}"
     ))
