@@ -42,12 +42,12 @@ set_gitmessage_add <- function(name, description) {
 
 #' Set update git message
 #'
-#' Set the template git commit message for udating a tool
+#' Set the template git commit message for updating a tool
 #'
 #' @param name Name of the updated tool
 set_gitmessage_update <- function(name) {
 
-    msg <- msg <- glue::glue(
+    msg <- glue::glue(
         "# Describe the update you have made, for example:\n",
         "# Update: New TOOL publication\n",
         "Update: DESCRIPTION OF UPDATE TO {name}",
@@ -55,6 +55,34 @@ set_gitmessage_update <- function(name) {
         "https://www.scrna-tools.org/tools#{name}"
     )
 
+    readr::write_lines(msg, ".gitmessage")
+}
+
+#' Set check git message
+#'
+#' Set the template git commit message for checking tool repositories
+#'
+#' @param name Name of the updated tool
+set_gitmessage_check <- function(name) {
+    
+    msg <- glue::glue(
+        "# Enter the name of the repository (e.g. CRAN) you have updated\n",
+        "Update: New REPO repository for {name}",
+        "\n\n",
+        "https://www.scrna-tools.org/tools#{name}"
+    )
+    
+    readr::write_lines(msg, ".gitmessage")
+}
+
+#' Set check done git message
+#'
+#' Set the template git commit message for completing repository checking (to
+#' capture additional ignored repositories)
+set_gitmessage_checkdone <- function(name) {
+    
+    msg <- paste("Completed repository checks at", lubridate::now("UTC"))
+    
     readr::write_lines(msg, ".gitmessage")
 }
 

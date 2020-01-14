@@ -123,7 +123,7 @@ get_conda_pkgs <- function() {
 #' @param pkgs_cache Packages cache table
 #' @param new Whether to only check new packages
 #'
-#' @return character vector
+#' @return Update database object
 check_pkgs <- function(database, pkgs_cache, new = TRUE) {
 
     if (new) {
