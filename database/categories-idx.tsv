@@ -141,6 +141,8 @@ cardelino	Classification
 cardelino	Simulation
 cardelino	Variants
 cardelino	Visualisation
+CaSpER	Variants
+CaSpER	Visualisation
 CaSTLe	Classification
 cb_sniffer	Variants
 ccfindR	Clustering
@@ -197,6 +199,7 @@ CellRouter	Normalisation
 CellRouter	Ordering
 CellRouter	QualityControl
 CellRouter	Visualisation
+cellSNP	Variants
 CellTrails	DimensionalityReduction
 CellTrails	Ordering
 CellTrails	Visualisation
@@ -347,6 +350,9 @@ DISCO	AlternativeSplicing
 DistMap	Classification
 DistMap	Visualisation
 DittoSeq	Visualisation
+dmatch	DimensionalityReduction
+dmatch	Integration
+dmatch	Visualisation
 DoubletDecon	CellCycle
 DoubletDecon	QualityControl
 DoubletDetection	QualityControl
@@ -482,6 +488,7 @@ GiniClust3	Clustering
 GiniClust3	DimensionalityReduction
 GiniClust3	RareCells
 GiniClust3	Visualisation
+GLM-PCA	DimensionalityReduction
 GMM-Demux	QualityControl
 GPfates	Ordering
 GPfates	Visualisation
@@ -603,6 +610,7 @@ M3Drop	DifferentialExpression
 M3Drop	MarkerGenes
 M3Drop	Simulation
 M3Drop	Visualisation
+M3S	Modality
 MAGIC	DimensionalityReduction
 MAGIC	Imputation
 MAGIC	Interactive
@@ -872,6 +880,7 @@ SAM	Normalisation
 SAM	Visualisation
 SAMstrt	DifferentialExpression
 SAMstrt	Normalisation
+Sanity	Normalisation
 SAUCIE	Clustering
 SAUCIE	DimensionalityReduction
 SAUCIE	Imputation
@@ -1050,6 +1059,8 @@ scIVA	MarkerGenes
 scIVA	QualityControl
 scIVA	Visualisation
 scLCA	Clustering
+SClineager	Ordering
+SClineager	Variants
 scLVM	CellCycle
 scLVM	Normalisation
 scLVM	VariableGenes
@@ -1155,6 +1166,7 @@ SCRAT	QualityControl
 SCRAT	Visualisation
 scRCMF	Clustering
 scRCMF	DimensionalityReduction
+scReClassify	Classification
 scRecover	Imputation
 scRecover	Normalisation
 scREhurdle	DifferentialExpression
@@ -1166,6 +1178,8 @@ scRMD	Clustering
 scRMD	DimensionalityReduction
 scRMD	Imputation
 scRMD	Simulation
+scRNA	Clustering
+scRNA	DimensionalityReduction
 scRNABatchQC	Integration
 scRNABatchQC	QualityControl
 scRNABatchQC	Visualisation
@@ -1521,6 +1535,7 @@ velocyto	Ordering
 velocyto	Visualisation
 VIPER	Imputation
 VIPER	Visualisation
+Vireo	Variants
 VISION	Classification
 VISION	DimensionalityReduction
 VISION	GeneSets
