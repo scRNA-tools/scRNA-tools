@@ -81,7 +81,10 @@ set_gitmessage_check <- function(name) {
 #' capture additional ignored repositories)
 set_gitmessage_checkdone <- function(name) {
     
-    msg <- paste("Completed repository checks at", lubridate::now("UTC"))
+    msg <- paste(
+        "# Delete time before commiting\n",
+        "Completed repository checks ", lubridate::now("UTC")
+    )
     
     readr::write_lines(msg, ".gitmessage")
 }

@@ -26,6 +26,7 @@ Usage:
     scrnatools add
     scrnatools update [<name>]
     scrnatools search [<name>]
+    scrnatools check [--all]
     scrnatools build
     scrnatools archive [<name>]
     scrnatools restore [<arc>]
@@ -36,6 +37,7 @@ Usage:
 Options:
   name          Name of a tool in the database
   arc           Name of an archive in the database
+  -a, --all     Whether to check all repositories (not just new ones)
   -p, --plot    Whether to show plots
   -h --help     Show this help message.
   --version     Show version.
@@ -56,6 +58,7 @@ source("app/regex.R")
 source("app/load.R")
 source("app/add.R")
 source("app/update.R")
+source("app/check.R")
 source("app/search.R")
 source("app/build.R")
 source("app/analysis.R")
@@ -69,13 +72,13 @@ source("app/utils.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.2.5")
+opts <- docopt(DOCOPT, version = "0.3.0")
 
 logo <- get_logo()
 cat(logo, "\n")
 
 if (any(c(opts$add, opts$update, opts$build, opts$archive, opts$restore))) {
-  check_status()
+    check_status()
 }
 
 dir <- "database"
@@ -84,9 +87,8 @@ plot_dir <- "docs/plots"
 
 database <- load_database(dir)
 
-if (any(c(opts$add, opts$update))) {
-  pkgs_cache <- load_pkgs_cache(dir)
-  database <- check_pkgs(database, pkgs_cache)
+if (any(c(opts$add, opts$update, opts$check))) {
+    pkgs_cache <- load_pkgs_cache(dir)
 }
 
 if (opts$add) {
@@ -95,6 +97,10 @@ if (opts$add) {
 
 if (opts$update) {
     database <- update_tool(database, pkgs_cache, opts$name)
+}
+
+if (opts$check) {
+    database <- check(database, pkgs_cache, dir, opts$all)
 }
 
 if (opts$search) {
