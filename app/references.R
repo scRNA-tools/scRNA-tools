@@ -28,8 +28,9 @@ get_references <- function(dois) {
 
         biorxiv  <- stringr::str_detect(.doi, "^10.1101/")
         arxiv    <- stringr::str_detect(.doi, "arxiv")
-        peerj    <- stringr::str_detect(.doi, "10.7287/")
-        preprint <- biorxiv || arxiv || peerj
+        peerj    <- stringr::str_detect(.doi, "^10.7287/")
+        square   <- stringr::str_detect(.doi, "^10.21203/")
+        preprint <- biorxiv || arxiv || peerj || square
 
         if (!arxiv) {
             cr_data <- rcrossref::cr_works(.doi, .progress = "text")$data
