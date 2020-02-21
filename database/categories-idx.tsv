@@ -66,6 +66,7 @@ BASiCS	Normalisation
 BASiCS	Simulation
 BASiCS	VariableGenes
 batchelor	Integration
+BATMAN	Integration
 bayNorm	Imputation
 bayNorm	Normalisation
 bayNorm	Simulation
@@ -113,6 +114,8 @@ BranchedGP	ExpressionPatterns
 BranchedGP	Visualisation
 BRAPeS	Alignment
 BRAPeS	Immune
+BREM-SC	Clustering
+BREM-SC	Integration
 BRIE	AlternativeSplicing
 BRIE	Quantification
 bseqsc	DifferentialExpression
@@ -152,7 +155,13 @@ ccfindR	Normalisation
 ccfindR	QualityControl
 ccfindR	Simulation
 ccfindR	Visualisation
+CCNMF	Clustering
+CCNMF	DifferentialExpression
+CCNMF	DimensionalityReduction
+CCNMF	Integration
+CCNMF	Visualisation
 ccRemover	CellCycle
+CCSN	GeneNetworks
 celaref	Classification
 celaref	Visualisation
 celda	Clustering
@@ -247,6 +256,8 @@ ClusterMap	Integration
 ClusterMap	Visualisation
 ClusterMine	Clustering
 ClusterMine	GeneSets
+clustermole	Classification
+clustermole	MarkerGenes
 clustifyr	Classification
 clustifyr	VariableGenes
 clustifyr	Visualisation
@@ -410,6 +421,8 @@ DUSC	Clustering
 Dynamo	Ordering
 Dynamo	Simulation
 Dynamo	Visualisation
+dyngen	Simulation
+dyngen	Visualisation
 dynverse	Normalisation
 dynverse	Ordering
 dynverse	Simulation
@@ -452,6 +465,8 @@ flotilla	DimensionalityReduction
 flotilla	GeneNetworks
 flotilla	Interactive
 flotilla	QualityControl
+FLOWMAPR	Interactive
+FLOWMAPR	Visualisation
 FORKS	Clustering
 FORKS	GeneFiltering
 FORKS	Normalisation
@@ -510,6 +525,7 @@ GrandPrix	DimensionalityReduction
 GrandPrix	Ordering
 GraphEmbed	DimensionalityReduction
 GraphEmbed	Visualisation
+GraphSCI	Imputation
 GRISLI	GeneNetworks
 GRM	Normalisation
 GRNVBEM	GeneNetworks
@@ -521,9 +537,14 @@ HoneyBADGER	Visualisation
 HopLand	Ordering
 HopLand	Visualisation
 Hopper	ExpressionPatterns
+Hotspot	GeneSets
+Hotspot	MarkerGenes
+Hotspot	Visualisation
 hscScore	Classification
 hscScore	StemCells
 HurdleNormal	GeneNetworks
+hypercluster	Clustering
+hypercluster	Visualisation
 I-Impute	DimensionalityReduction
 I-Impute	Imputation
 iasva	DimensionalityReduction
@@ -532,6 +553,8 @@ iasva	Normalisation
 IKAP	Clustering
 IKAP	MarkerGenes
 IKAP	Visualisation
+ILoReg	Clustering
+ILoReg	RareCells
 ImSpectR	Quantification
 ImSpectR	Visualisation
 indeXplorer	Interactive
@@ -559,6 +582,8 @@ iTALK	DifferentialExpression
 iTALK	GeneNetworks
 iTALK	Immune
 iTALK	Visualisation
+ItClust	Classification
+ItClust	Clustering
 iterClust	Clustering
 ivis	DimensionalityReduction
 jackstraw	Clustering
@@ -725,6 +750,7 @@ netsne	DimensionalityReduction
 NetworkInference	GeneNetworks
 nichenetr	GeneNetworks
 nichenetr	Visualisation
+NIFA	DimensionalityReduction
 nimfa	Clustering
 nimfa	DimensionalityReduction
 nimfa	Visualisation
@@ -779,6 +805,7 @@ PHATE	DimensionalityReduction
 PHATE	Visualisation
 PhenoPath	Ordering
 PhenoPath	Simulation
+pipeComp	Visualisation
 PIVOT	Clustering
 PIVOT	DifferentialExpression
 PIVOT	DimensionalityReduction
@@ -843,6 +870,7 @@ reCAT	CellCycle
 reCAT	Clustering
 reCAT	Ordering
 reCAT	Visualisation
+Red_Panda	Variants
 RESCUE	Imputation
 robustSingleCell	Clustering
 robustSingleCell	DimensionalityReduction
@@ -897,6 +925,11 @@ SC3	Clustering
 SC3	Interactive
 scAEspy	DimensionalityReduction
 scAEspy	Integration
+scAI	Clustering
+scAI	DimensionalityReduction
+scAI	Integration
+scAI	MarkerGenes
+scAI	Visualisation
 SCALE	AlleleSpecific
 scAlign	DimensionalityReduction
 scAlign	Integration
@@ -962,6 +995,7 @@ scdNet	GeneSets
 scdney	Classification
 scdney	Clustering
 scdney	Visualisation
+scDoc	Imputation
 scds	QualityControl
 sceb	VariableGenes
 Scedar	Clustering
@@ -1047,6 +1081,7 @@ scID	Classification
 scID	GeneSets
 scID	MarkerGenes
 scID	Normalisation
+scIGANs	Imputation
 SCIMITAR	ExpressionPatterns
 SCIMITAR	GeneNetworks
 SCIMITAR	Ordering
@@ -1067,6 +1102,8 @@ scLVM	CellCycle
 scLVM	Normalisation
 scLVM	VariableGenes
 scLVM	Visualisation
+scMAGeCK	Quantification
+scMAGeCK	Variants
 scmap	Classification
 SCMarker	VariableGenes
 scMatch	Classification
@@ -1314,6 +1351,7 @@ SILGGM	GeneNetworks
 SIMLR	Clustering
 SIMLR	DimensionalityReduction
 SIMLR	Visualisation
+SIMPLEs	Imputation
 SINC	Classification
 SINC	VariableGenes
 sincell	Clustering
@@ -1443,6 +1481,8 @@ SWNE	Visualisation
 SymSim	Simulation
 SymSim	Visualisation
 SynergisticCore	GeneNetworks
+talklr	GeneNetworks
+talklr	Visualisation
 TASC	DifferentialExpression
 TASC	Normalisation
 TASC	Quantification
@@ -1506,6 +1546,7 @@ UNCURL	Clustering
 UNCURL	DimensionalityReduction
 UNCURL	Ordering
 UNCURL	Visualisation
+UnionCom	Integration
 UniPath	Clustering
 UniPath	GeneSets
 UniPath	Imputation
@@ -1548,6 +1589,7 @@ VISION	Visualisation
 visnormsc	Interactive
 visnormsc	Normalisation
 visnormsc	Visualisation
+VoxHunt	Visualisation
 VPAC	Clustering
 VPAC	DimensionalityReduction
 WaveCrest	ExpressionPatterns
