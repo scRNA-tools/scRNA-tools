@@ -209,6 +209,10 @@ CellRouter	Ordering
 CellRouter	QualityControl
 CellRouter	Visualisation
 cellSNP	Variants
+CellTagR	QualityControl
+CellTagR	Quantification
+CellTagR	UMIs
+CellTagR	Visualisation
 CellTrails	DimensionalityReduction
 CellTrails	Ordering
 CellTrails	Visualisation
@@ -295,6 +299,7 @@ CSHMM	Ordering
 CSMF	Clustering
 CSMF	DimensionalityReduction
 CSN	GeneNetworks
+CSOmap	GeneNetworks
 cTPnet	Imputation
 cTPnet	Integration
 Cyclum	CellCycle
@@ -805,6 +810,8 @@ PHATE	DimensionalityReduction
 PHATE	Visualisation
 PhenoPath	Ordering
 PhenoPath	Simulation
+PIMseq	DifferentialExpression
+PIMseq	Visualisation
 pipeComp	Visualisation
 PIVOT	Clustering
 PIVOT	DifferentialExpression
@@ -956,7 +963,9 @@ Scater	Visualisation
 SCATS	AlternativeSplicing
 scBASE	AlleleSpecific
 scBatch	Integration
+scBatch	Normalisation
 scBio	Integration
+SCC	Imputation
 scCancer	CellCycle
 scCancer	Classification
 scCancer	Clustering
@@ -975,6 +984,11 @@ scClustViz	Interactive
 scClustViz	Visualisation
 scDAPA	AlternativeSplicing
 scDAPA	Visualisation
+scDataviz	Clustering
+scDataviz	DimensionalityReduction
+scDataviz	GeneSets
+scDataviz	MarkerGenes
+scDataviz	Visualisation
 scDD	DifferentialExpression
 scDD	Simulation
 scDDboost	DifferentialExpression
@@ -1081,6 +1095,7 @@ scID	Classification
 scID	GeneSets
 scID	MarkerGenes
 scID	Normalisation
+scID	Visualisation
 scIGANs	Imputation
 SCIMITAR	ExpressionPatterns
 SCIMITAR	GeneNetworks
@@ -1256,6 +1271,10 @@ scTCRseq	Immune
 scTDA	Ordering
 scTDA	QualityControl
 scTDA	Visualisation
+scTenifoldNet	DimensionalityReduction
+scTenifoldNet	GeneNetworks
+scTenifoldNet	Normalisation
+scTenifoldNet	QualityControl
 scTensor	GeneNetworks
 scTensor	Visualisation
 scTGIF	Classification
@@ -1522,6 +1541,8 @@ Trajan	Integration
 Trajan	Visualisation
 TRAPeS	Immune
 TRAPeS	Quantification
+Tree-SNE	Clustering
+Tree-SNE	Visualisation
 trendsceek	ExpressionPatterns
 trendsceek	Simulation
 trendsceek	Visualisation
@@ -1607,6 +1628,7 @@ wot	Visualisation
 Wx	MarkerGenes
 XenoCell	QualityControl
 XenoCell	Quantification
+ZIAQ	DifferentialExpression
 ZIFA	DimensionalityReduction
 ZINB-WaVE	DimensionalityReduction
 ZINB-WaVE	Normalisation
