@@ -678,6 +678,29 @@
     "GitHub": "jumphone/BEER"
   },
   {
+    "Tool": "BERMUDA",
+    "Platform": "Python/R",
+    "Code": "https://github.com/txWang/BERMUDA",
+    "Description": "A novel transfer-learning-based method for batch-effect correction in single cell RNA sequencing (scRNA-seq) data",
+    "License": "MIT",
+    "Added": "2020-03-03",
+    "Updated": "2020-03-03",
+    "Categories": ["Integration"],
+    "Publications": [
+      {
+        "Title": "BERMUDA: a novel deep transfer learning method for single-cell RNA sequencing batch correction reveals hidden high-resolution cellular subtypes",
+        "DOI": "10.1186/s13059-019-1764-6",
+        "Date": "2019-08-12",
+        "Citations": 6
+      }
+    ],
+    "Preprints": [],
+    "Citations": 6,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "txWang/BERMUDA"
+  },
+  {
     "Tool": "bigSCale",
     "Platform": "MATLAB",
     "Code": "https://github.com/iaconogi/bigSCale",
@@ -5870,6 +5893,23 @@
     "GitHub": "COMBINE-lab/minnow"
   },
   {
+    "Tool": "mnnpy",
+    "Platform": "Python",
+    "Code": "https://github.com/chriscainx/mnnpy",
+    "Description": "Python implementation of the MNN batch correction algorithm",
+    "License": "BSD-3-Clause",
+    "Added": "2020-03-03",
+    "Updated": "2020-03-03",
+    "Categories": ["Integration"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "PyPI": "mnnpy",
+    "GitHub": "chriscainx/mnnpy"
+  },
+  {
     "Tool": "Moana",
     "Platform": "Python",
     "Code": "https://github.com/yanailab/moana",
@@ -10121,7 +10161,7 @@
     "Description": "A python tool to do comparative analysis of mulitple single cell RNA-seq datasets.",
     "License": "GPL-3",
     "Added": "2019-06-28",
-    "Updated": "2019-06-28",
+    "Updated": "2020-03-03",
     "Categories": ["Clustering", "Integration", "Normalisation", "VariableGenes", "Visualisation"],
     "Publications": [
       {
@@ -10131,10 +10171,16 @@
         "Citations": 2
       }
     ],
-    "Preprints": [],
+    "Preprints": [
+      {
+        "Title": "Accurate sub-population detection and mapping across single cell experiments with PopCorn",
+        "DOI": "10.1101/485979",
+        "Citations": 0
+      }
+    ],
     "Citations": 2,
     "NumPubs": 1,
-    "NumPreprints": 0,
+    "NumPreprints": 1,
     "PyPI": "scpopcorn",
     "GitHub": "ncbi/scPopCorn"
   },
