@@ -122,12 +122,14 @@ DOI	arXiv	Preprint	Date	Title
 10.1038/s41596-018-0058-x	FALSE	FALSE	2018-10-23	Large-scale reconstruction of cell lineages using single-cell readout of transcriptomes and CRISPR–Cas9 barcodes by scGESTALT
 10.1038/s41596-019-0246-3	FALSE	FALSE	2020-01-13	FLOW-MAP: a graph-based, force-directed layout algorithm for trajectory mapping in single-cell time course datasets
 10.1038/s41596-019-0247-2	FALSE	FALSE	2020-02-12	CellTagging: combinatorial indexing to simultaneously map lineage and identity at single-cell resolution
+10.1038/s41596-020-0292-x	FALSE	FALSE	2020-02-26	CellPhoneDB: inferring cell–cell communication from combined expression of multi-subunit ligand–receptor complexes
 10.1038/s41598-017-13665-w	FALSE	FALSE	2017-10-19	Controlling for Confounding Effects in Single Cell RNA Sequencing Studies Using both Control and Target Genes
 10.1038/s41598-018-34688-x	FALSE	FALSE	2018-11-05	AutoImpute: Autoencoder based imputation of single-cell RNA-seq data
 10.1038/s41598-018-35365-9	FALSE	FALSE	2018-11-19	Detection of correlated hidden factors from single cell transcriptomes using Iteratively Adjusted-SVA (IA-SVA)
 10.1038/s41598-019-45301-0	FALSE	FALSE	2019-06-20	Structure-preserving visualisation of high dimensional single-cell datasets
 10.1038/s41598-019-47016-8	FALSE	FALSE	2019-07-19	Wx: a neural network-based feature selection algorithm for transcriptomic data
 10.1038/s41598-019-56911-z	FALSE	FALSE	2019-12	Using transfer learning from prior reference knowledge to improve the clustering of single-cell RNA-Seq data
+10.1038/s41598-020-60400-z	FALSE	FALSE	2020-02-27	Reconstructing temporal and spatial dynamics from single-cell pseudotime using prior knowledge of real scale cell densities
 10.1038/s42256-019-0037-0	FALSE	FALSE	2019-04	Clustering single-cell RNA-seq data with a model-based deep learning approach
 10.1038/srep33892	FALSE	FALSE	2016-09-27	Identifying and removing the cell-cycle effect from single-cell RNA-Sequencing data
 10.1073/pnas.1408993111	FALSE	FALSE	2014-12-15	Bifurcation analysis of single-cell gene expression data reveals epigenetic landscape
@@ -141,6 +143,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1093/bioinformatics/btaa098	FALSE	FALSE	2020-02-13	ZIAQ: A quantile regression method for differential expression analysis of single-cell RNA-seq data
 10.1093/bioinformatics/btaa108	FALSE	FALSE	2020-02-19	scTSSR: gene expression recovery for single-cell RNA sequencing using two-side sparse self-representation
 10.1093/bioinformatics/btaa109	FALSE	FALSE	2020-02-19	CMF-Impute: An accurate imputation tool for single cell RNA-seq data
+10.1093/bioinformatics/btaa137	FALSE	FALSE	2020-02-27	Ensemble learning for classifying single-cell data and projection across reference atlases
 10.1093/bioinformatics/bts635	FALSE	FALSE	2012-10-25	STAR: ultrafast universal RNA-seq aligner
 10.1093/bioinformatics/btt511	FALSE	FALSE	2013-08-31	SAMstrt: statistical test for differential expression in single-cell transcriptome with spike-in normalization
 10.1093/bioinformatics/btu674	FALSE	FALSE	2014-10-21	Statistical significance of variables driving systematic variation in high-dimensional data
@@ -341,6 +344,8 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2020.02.12.931469	FALSE	TRUE	NA	scTenifoldNet: a machine learning workflow for constructing and comparing transcriptome-wide gene regulatory networks from single-cell data
 10.1101/2020.02.13.948521	FALSE	TRUE	NA	Reconstruction of cell spatial organization based on ligand-receptor mediated self-assembly
 10.1101/2020.02.17.947390	FALSE	TRUE	NA	Capybara: A computational tool to measure cell identity and fate transitions
+10.1101/2020.02.25.960302	FALSE	TRUE	NA	Discovering Novel Cell Types across Heterogeneous Single-cell Experiments
+10.1101/2020.02.27.968560	FALSE	TRUE	NA	Cluster similarity spectrum integration of single-cell genomics data
 10.1101/206052	FALSE	TRUE	2017-10-19	RNA velocity in single cells
 10.1101/207704	FALSE	TRUE	2017-10-23	ascend: R package for analysis of single cell RNA-seq data
 10.1101/208819	FALSE	TRUE	2017-10-25	Graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells
@@ -518,7 +523,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/676379	FALSE	TRUE	2019-06-25	genesorteR: Feature Ranking in Clustered Single Cell Data
 10.1101/677740	FALSE	TRUE	2019-06-21	SPsimSeq: semi-parametric simulation of bulk and single cell RNA sequencing data
 10.1101/679183	FALSE	TRUE	2019-06-21	XenoCell: classification of cellular barcodes in single cell experiments from xenograft samples
-10.1101/680926	FALSE	TRUE	2019-06-24	CellPhoneDB v2.0: Inferring cell-cell communication from combined expression of multi-subunit receptor-ligand complexes
+10.1101/680926	FALSE	TRUE	NA	CellPhoneDB v2.0: Inferring cell-cell communication from combined expression of multi-subunit receptor-ligand complexes
 10.1101/686659	FALSE	TRUE	2019-06-28	Feature extraction approach in single-cell gene expression profiling for cell-type marker identification
 10.1101/696724	FALSE	TRUE	2019-07-09	Mapping Vector Field of Single Cells
 10.1101/699637	FALSE	TRUE	2019-07-14	souporcell: Robust clustering of single cell RNAseq by genotype and ambient RNA inference without reference genotypes
@@ -666,6 +671,7 @@ DOI	arXiv	Preprint	Date	Title
 10.15252/msb.20178124	FALSE	FALSE	2018-06	Multi‐Omics Factor Analysis—a framework for unsupervised integration of multi‐omics data sets
 10.15252/msb.20199005	FALSE	FALSE	2019-10	Combinatorial prediction of marker panels from single‐cell transcriptomic data
 10.18547/gcb.2017.vol3.iss1.e46	FALSE	FALSE	2017-01-26	Bayesian Inference for Single-cell Clustering and Imputing
+10.21105/joss.02079	FALSE	FALSE	2020-02-25	scPCA: A toolbox for sparse contrastive principal component analysis in R
 10.21203/rs.2.22114/v1	FALSE	TRUE	NA	SCC: An accurate modification method for scRNA-seq dropouts based on mixture model
 10.26508/lsa.201900443	FALSE	FALSE	2019-07-02	De novo prediction of cell-type complexity in single-cell RNA-seq and tumor microenvironments
 10.3389/fbioe.2020.00018	FALSE	FALSE	2020-02-04	CALISTA: Clustering and LINEAGE Inference in Single-Cell Transcriptional Analysis
