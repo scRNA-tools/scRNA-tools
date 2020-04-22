@@ -148,8 +148,8 @@
                     <tr>
                         <th data-field="Tool" data-sortable="true" data-switchable="false" data-formatter="nameFormatter">Name</th>
                         <th data-field="Platform" data-sortable="true" data-filter-control="select">Platform</th>
-                        <th data-field="DOIs" data-sortable="true" data-visible="true">DOIs</th>
-                        <th data-field="Dates" data-sortable="true" data-visible="false">Pub Dates</th>
+                        <th data-field="DOIs" data-sortable="true" data-visible="true" data-formatter="doisFormatter">DOIs</th>
+                        <th data-field="Dates" data-sortable="true" data-visible="false" data-formatter="listFormatter">Pub Dates</th>
                         <th data-field="Citations" data-sortable="true" data-visible="true">Citations</th>
                         <th data-field="Code" data-sortable="true" data-visible="false" data-formatter="codeFormatter">Code</th>
                         <th data-field="Description" data-sortable="true" data-visible="false">Description</th>
@@ -233,12 +233,24 @@
           return '<span  style="color: ' + colour + '">' + value + '</div>'
         }
 
+        function listFormatter (value) {
+            if (value === undefined) {
+              return ''
+            } else {
+              return String(value).split(';').join(', ')
+            }
+        }
+
         function nameFormatter (value) {
           return '<a href="tools.html#' + value + '">' + value + '</a>'
         }
 
         function codeFormatter (value) {
-          return '<a href="' + value + '">' + value + '</a>'
+          if (value === undefined) {
+            return ''
+          } else {
+            return '<a href="' + value + '">' + value + '</a>'
+          }
         }
 
         function catsFormatter (value) {
@@ -252,6 +264,31 @@
           }
 
           return formatted.join(', ')
+        }
+
+        function doisFormatter (value) {
+            if (value === undefined) {
+                return ''
+            }
+
+            var values = String(value).split(';')
+
+            var formatted = []
+
+            for (var i = 0; i < values.length; i++) {
+              var doi = values[i]
+
+              if (doi.includes('arxiv')) {
+                  doi = doi.replace('arxiv/', '')
+                  formatted.push('<a href="https://arxiv.org/abs/' + doi + '">' +
+                    'arxiv/' + doi + '</a>')
+              } else {
+                  formatted.push('<a href="https://www.doi.org/' + doi + '">' +
+                    doi + '</a>')
+              }
+            }
+
+            return formatted.join(', ')
         }
     </script>
 
