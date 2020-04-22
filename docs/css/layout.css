@@ -878,10 +878,10 @@ Table Layout
 	border-bottom:none !important;
 	padding:5px 10px!important;
 	background-color:#2A3356;
-	background-image:url("../img/icon-sort.svg");
+	/* background-image:url("../img/icon-sort.svg");
 	background-repeat:no-repeat;
  	background-size: 15px 15px;
- 	background-position: center right 10px;
+ 	background-position: center right 10px; */
 	color:#ffffff;
 	font-size:14px;
 	text-transform: uppercase;
@@ -890,9 +890,9 @@ Table Layout
 	position:relative;
 }
 
-.fixed-table-container thead th .both
+.fixed-table-container thead th
 {
-	padding-right:150px;
+	padding-right:150px !important;
 	width: 100%;
 }
 
@@ -905,8 +905,8 @@ Table Layout
 
 .fixed-table-container .table-dark thead th .fht-cell {
     position: absolute;
-    right: 30px;
-    width: 120px;
+    right: 10px;
+    width: 135px;
     top: 6px;
 }
 

@@ -28,14 +28,14 @@
         <meta property="og:url" content="https://www.scrna-tools.org/" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="A catalogue of single-cell RNA-sequencing analysis tools" />
-        <meta property="og:image" content="https://cdn.rawgit.com/Oshlack/scRNA-tools/f45942d5/docs/img/square.png" />
+        <meta property="og:image" content="https://www.scrna-tools.org/img/square.png" />
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@scRNAtools" />
         <meta name="twitter:title" content="scRNA-tools table page" />
         <meta name="twitter:description" content="Filter and sort scRNA-seq analysis tools" />
-        <meta name="twitter:image" content="https://cdn.rawgit.com/Oshlack/scRNA-tools/f45942d5/docs/img/square.png" />
+        <meta name="twitter:image" content="https://www.scrna-tools.org/img/square.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -45,9 +45,9 @@
         <!--// Styles ------------------------------------------------------ -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
-        <link rel="stylesheet" href="https://cdn.rawgit.com/akottr/dragtable/e9162640/dragtable.css">
-        <link rel="stylesheet" href="https://cdn.rawgit.com/wenzhixin/bootstrap-table/6350315f/src/extensions/filter-control/bootstrap-table-filter-control.css">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
+        <!-- <link rel="stylesheet" href="https://rawcdn.githack.com/akottr/dragtable/e9162640/dragtable.css"> -->
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/filter-control/bootstrap-table-filter-control.css">
         <link rel="stylesheet" type="text/css" href="css/layout.css"/>
         <link rel="stylesheet" type="text/css" href="css/index.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -55,14 +55,14 @@
         <!--// Scripts ----------------------------------------------------- -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-        <script src="https://cdn.rawgit.com/akottr/dragtable/e9162640/jquery.dragtable.js"></script>
-        <script src="https://cdn.rawgit.com/wenzhixin/bootstrap-table/6350315f/src/extensions/reorder-columns/bootstrap-table-reorder-columns.js"></script>
+        <!-- <script src="https://rawcdn.githack.com/akottr/dragtable/e9162640/jquery.dragtable.js"></script> -->
+        <!-- <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js"></script> -->
         <!--<script src="https://cdn.rawgit.com/wenzhixin/bootstrap-table/6350315f/src/extensions/toolbar/bootstrap-table-toolbar.js"></script>-->
-        <script src="https://cdn.rawgit.com/wenzhixin/bootstrap-table/6350315f/src/extensions/filter-control/bootstrap-table-filter-control.js"></script>
-        <script src="https://cdn.rawgit.com/wenzhixin/bootstrap-table/6350315f/src/extensions/export/bootstrap-table-export.js"></script>
-        <script src="https://cdn.rawgit.com/hhurz/tableExport.jquery.plugin/475fb511/tableExport.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/export/bootstrap-table-export.min.js"></script>
+        <script src="https://unpkg.com/tableexport.jquery.plugin@1.10.17/tableExport.min.js"></script>
         <!--<script src="https://cdn.rawgit.com/wenzhixin/bootstrap-table/6350315f/src/extensions/resizable/bootstrap-table-resizable.js"></script>-->
         <!--<script src="https://cdn.rawgit.com/wenzhixin/colResizable/a1e34695/colResizable-1.5.min.js"></script>-->
 
@@ -116,23 +116,27 @@
         <div id="frame-content" class="container-fluid">
 
             <!--// Table --------------------------------------------------- -->
-            <!--data-advanced-search="true"-->
-            <table class="table-dark"
-                data-page-size=30
-                data-toggle="table"
+            <!--data-advanced-search="true"
+        data-striped="true"
+                    data-id-table="tools-table"
+                    data-reorderable-columns="true"
+-->
+            <table class="table-dark table-striped"
+                data-url="data/tools-table.json"
                 data-pagination="true"
+                data-page-size=30
                 data-show-pagination-switch="true"
-                data-search="true"
+                data-show-extended-pagination="true"
+                data-toggle="table"
                 data-show-toggle="true"
                 data-show-columns="true"
-                data-striped="true"
-                data-reorderable-columns="true"
-                data-filter-show-clear="true"
                 data-show-export="true"
                 data-export-data-type="all"
-                data-id-table="tools-table"
                 data-filter-control="true"
-                data-url="data/tools-table.json">
+                data-total-not-filtered-field="totalNotFiltered"
+                data-search="true"
+                data-show-search-clear-button="true"
+            >
                 <thead>
                     <tr>
                         <th data-field="Tool" data-sortable="true" data-switchable="false" data-formatter="nameFormatter">Name</th>
