@@ -501,16 +501,49 @@ Page Styles
 .github-badge span.blue
 {
 	background: rgb(35,131,195);
-	background: linear-gradient(0deg, rgba(35,131,195,1) 0%, rgba(5,116,180,1) 100%);
 	border-radius: 0px 2px 2px 0px;
 }
 
-.github-badge span.green,
-.github-badge span.green
+.github-badge span.commit-date,
+.github-badge span.commit-date
 {
-	background: rgb(140,178,77);
-	background: linear-gradient(0deg, rgba(124,162,58,1) 100%, rgba(140,178,77,1) 0%);
 	border-radius: 0px 2px 2px 0px;
+}
+
+.github-badge span.bright-green,
+.github-badge span.bright-green
+{
+	background: rgb(68,204,17);
+}
+
+.github-badge span.light-green,
+.github-badge span.light-green
+{
+	background: rgb(151,202,0);
+}
+
+.github-badge span.citron,
+.github-badge span.citron
+{
+	background: rgb(164,166,29);
+}
+
+.github-badge span.yellow,
+.github-badge span.yellow
+{
+	background: rgb(223,179,23);
+}
+
+.github-badge span.orange,
+.github-badge span.orange
+{
+	background: rgb(254,125,55);
+}
+
+.github-badge span.red,
+.github-badge span.red
+{
+	background: rgb(224,93,68);
 }
 
 .list-group-item .github-badge

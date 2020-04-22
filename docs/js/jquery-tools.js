@@ -5,7 +5,6 @@ $(document).ready(function () {
 	var toolsContainer = $('#tools-list')
 	var jsonPath = 'data/tools.json'
 	var fixed_height = 200;
-	var first_time = true;
 
 	/* --Functions------------------------------------------------------------- */
 
@@ -17,21 +16,60 @@ $(document).ready(function () {
 					  "May", "June", "July", "August",
 					  "September", "October", "November", "December"];
 
-			date = date_time.split("T")[0];
-			date_elements = date.split("-");
+			// date = date_time.split("T")[0];
+			// date_elements = date.split("-");
 
-			year = parseInt(date_elements[0]);
-			month = parseInt(date_elements[1]);
+			// year = parseInt(date_elements[0]);
+			// month = parseInt(date_elements[1]);
 
-			current_year = new Date().getFullYear();
+			date = new Date(date_time)
+			month = date.getMonth()
+			year = date.getFullYear()
 
-			// Can make this more fancy if required, i.e. "last week, today!"
-			if(current_year !== year){
-				return(String(months[month-1]) + " " + String(year))
-			} else {
-				return(String(months[month-1]))
+			today = new Date()
+			current_month = today.getMonth()
+			current_year = today.getFullYear()
+
+			const date_utc = Date.UTC(year, month, date.getDate())
+			const today_utc = Date.UTC(current_year, current_month,
+				                       today.getDate())
+			const diff_days = Math.floor((today_utc - date_utc) / (1000 * 60 * 60 * 24))
+
+			var date_str = months[month]
+			var colour = "red"
+			switch (true) {
+			  case diff_days == 0:
+				date_str = "today"
+				colour = "bright-green"
+				break
+			  case diff_days == 1:
+				date_str = "yesterday"
+				colour = "bright-green"
+				break
+			  case diff_days <= 7:
+				date_str = "this week"
+				colour = "bright-green"
+				break
+			  case diff_days <= 30:
+				colour = "light-green"
+				break
+			  case diff_days < 183:
+				colour = "citron"
+				break
+			  case diff_days < 365:
+				colour = "yellow"
+				break
+			  case diff_days < 548:
+				colour = "orange"
+				break
 			}
 
+			// Can make this more fancy if required, i.e. "last week, today!"
+			if(months.includes(date_str) && current_year !== year){
+				date_str = date_str + " " + year
+			}
+
+			return [date_str, colour]
 		}
 
 		function githubShields(panel, url){
@@ -46,7 +84,7 @@ $(document).ready(function () {
 
 			// Fetch Lassy, then update the required fields
 
-			console.log(json_location)
+			// console.log(json_location)
 
 			$.getJSON(json_location).done(function(json) {
 				forks = json.items[0].forks;
@@ -56,7 +94,9 @@ $(document).ready(function () {
 				// Update panel to reflect requested information
 				panel.find(".stars span.blue").text(stargazers)
 				panel.find(".forks span.blue").text(forks)
-				panel.find(".commits span.green").text(last_commit)
+				panel.find(".commits span.commit-date").text(last_commit[0])
+				panel.find(".commits span.commit-date").removeClass('blue')
+				panel.find(".commits span.commit-date").addClass(last_commit[1])
 
 			}).fail(function( jqxhr, textStatus, error ) {
 				var err = textStatus + ", " + error;
@@ -71,7 +111,7 @@ $(document).ready(function () {
 
 			panel_name = package_name + "_c";
 			panel = $("#" + panel_name);
-			package_last_commit = panel.find(".commits span.green");
+			package_last_commit = panel.find(".commits span.commit-date");
 
 			// Check to see whether this has been populated already... otherwise ping Github
 			if(package_last_commit.text() == "Unknown"){
