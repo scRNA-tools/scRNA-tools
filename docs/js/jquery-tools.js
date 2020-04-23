@@ -302,6 +302,9 @@ $(document).ready(function () {
 				toolsContainer.append('<div class="second-tools col-lg-6 col-md-12 col-sm-12 col-xs-12"></div>');
 			}
 
+			const n_tools = Object.keys(data).length
+			const half_tools = Math.ceil(n_tools / 2)
+			var letter_tools = []
 			$.each(data, function (key, value) {
 
 				/* -- Assign returned data -- */
@@ -327,19 +330,17 @@ $(document).ready(function () {
 					"totalRefs" : value.NumPubs + value.NumPreprints
 				}
 
-				entry = toolItem(tool_information)
-
 				// If any categories are selected for filtering, pass non-matches.
 
-				keep = false;
+				keep = false
 
-				selected_categories = $("[name=category_filter]").val();
+				selected_categories = $("[name=category_filter]").val()
 
 				if($("[name=category_filter]").val().length > 0){
 					$.each(selected_categories, function(index, cat){
 						if(value.Categories.indexOf(cat) > -1){
-							keep = true;
-							return false;
+							keep = true
+							return false
 						}
 					})
 
@@ -348,30 +349,41 @@ $(document).ready(function () {
 					}
 				}
 
-
-
 				// Add it to the list
 
-				if(sort_method == "name"){
+				if (sort_method == "name") {
 
 					first_letter = tool_information["name"][0].toUpperCase()
-					if(first_letter != current_letter){
+
+					if (first_letter != current_letter) {
+
+						console.log(letter_tools)
+						half_letter = Math.ceil(letter_tools.length / 2)
+						$.each(letter_tools, function(idx, tool) {
+							entry = toolItem(tool)
+							if (idx > half_letter) {
+								$('#alpha' + current_letter + '-right').append(entry)
+							} else {
+								$('#alpha' + current_letter + '-left').append(entry)
+							}
+						})
+
 						toolsContainer.append('<h3 id="anchor' + first_letter + '" class="tools-list">'+first_letter+'</h3>')
 						toolsContainer.append('<div id="alpha' + first_letter + '-left" class="first-tools col-lg-6"></div>');
 						toolsContainer.append('<div id="alpha' + first_letter + '-right" class="second-tools col-lg-6"></div>');
 
-						current_letter = first_letter;
-						tool_index = 1;
+						current_letter = first_letter
+						letter_tools = []
 					}
 
-					if(tool_index%2 == 0) {
-						$('#alpha' + first_letter + '-right').append(entry)
-					} else {
-						$('#alpha' + first_letter + '-left').append(entry)
-					}
+					letter_tools.push(tool_information)
+
 				} else {
-					if(tool_index%2 == 0) {
-						$('.second-tools').append(entry);
+
+					entry = toolItem(tool_information, tool_index)
+
+					if(tool_index > half_tools) {
+						$('.second-tools').append(entry)
 					} else {
 						$('.first-tools').append(entry)
 					}

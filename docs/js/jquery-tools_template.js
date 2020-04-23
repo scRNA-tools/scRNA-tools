@@ -11,19 +11,22 @@ function linkCats (cats) {
 
 
 
-function toolItem(tool_information){
+function toolItem(tool_information, idx='') {
 
 	/* Probably should look into a frontend templating system, i.e. moustache.
 	   Otherwise, upgrade hosting to allow server-side programming */
 
-	var entry = '' // String that reprsents markup of individual tool
+	var entry = '' // String that represents markup of individual tool
 
+	var idx_tag = (idx) ? '<strong>' + idx + '. </strong>' : ''
 
 	//  Tool Title ========================================================
 	entry += '<div class="tool-container">'
 	entry += '<div class="tool">' +
 			 '<h4 id="' + tool_information["name"] + '" class="panel-title">' +
-			 '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + tool_information["name"] + '_c">' + tool_information["name"] + "<span>";
+			 '<a data-toggle="collapse" class="accordion-toggle collapsed" href="#' + tool_information["name"] + '_c">' +
+			 idx_tag + tool_information["name"] +
+			 '<span>'
 
 	// Loop through title badges -------------
 
