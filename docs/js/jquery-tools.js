@@ -10,101 +10,6 @@ $(document).ready(function () {
 
 	function panelInteractions(){
 
-		function prettyGitDate(date_time){
-
-			months = ["January", "February", "March", "April",
-					  "May", "June", "July", "August",
-					  "September", "October", "November", "December"];
-
-			// date = date_time.split("T")[0];
-			// date_elements = date.split("-");
-
-			// year = parseInt(date_elements[0]);
-			// month = parseInt(date_elements[1]);
-
-			date = new Date(date_time)
-			month = date.getMonth()
-			year = date.getFullYear()
-
-			today = new Date()
-			current_month = today.getMonth()
-			current_year = today.getFullYear()
-
-			const date_utc = Date.UTC(year, month, date.getDate())
-			const today_utc = Date.UTC(current_year, current_month,
-				                       today.getDate())
-			const diff_days = Math.floor((today_utc - date_utc) / (1000 * 60 * 60 * 24))
-
-			var date_str = months[month]
-			var colour = "red"
-			switch (true) {
-			  case diff_days == 0:
-				date_str = "today"
-				colour = "bright-green"
-				break
-			  case diff_days == 1:
-				date_str = "yesterday"
-				colour = "bright-green"
-				break
-			  case diff_days <= 7:
-				date_str = "this week"
-				colour = "bright-green"
-				break
-			  case diff_days <= 30:
-				colour = "light-green"
-				break
-			  case diff_days < 183:
-				colour = "citron"
-				break
-			  case diff_days < 365:
-				colour = "yellow"
-				break
-			  case diff_days < 548:
-				colour = "orange"
-				break
-			}
-
-			// Can make this more fancy if required, i.e. "last week, today!"
-			if(months.includes(date_str) && current_year !== year){
-				date_str = date_str + " " + year
-			}
-
-			return [date_str, colour]
-		}
-
-		function githubShields(panel, url){
-
-			// split by forward slash, get username and package name
-
-			url_split = url.split("/");
-			username = url_split.slice(-2)[0];
-			package_name = url_split.slice(-1)[0];
-
-			json_location = "https://api.github.com/search/repositories?q=repo:" + username + "/" + package_name;
-
-			// Fetch Lassy, then update the required fields
-
-			// console.log(json_location)
-
-			$.getJSON(json_location).done(function(json) {
-				forks = json.items[0].forks;
-				stargazers = json.items[0].stargazers_count;
-				last_commit = prettyGitDate(json.items[0].pushed_at);
-
-				// Update panel to reflect requested information
-				panel.find(".stars span.blue").text(stargazers)
-				panel.find(".forks span.blue").text(forks)
-				panel.find(".commits span.commit-date").text(last_commit[0])
-				panel.find(".commits span.commit-date").removeClass('blue')
-				panel.find(".commits span.commit-date").addClass(last_commit[1])
-
-			}).fail(function( jqxhr, textStatus, error ) {
-				var err = textStatus + ", " + error;
-				console.log( "Request Failed: " + err );
-			})
-
-		}
-
 		$(".tool").click(function(){
 
 			package_name = $(this).find("h4").attr("id");
@@ -124,6 +29,94 @@ $(document).ready(function () {
 
 	}
 
+	function prettyGitDate(date_time){
+
+		months = ["January", "February", "March", "April",
+				  "May", "June", "July", "August",
+				  "September", "October", "November", "December"];
+
+		date = new Date(date_time)
+		month = date.getMonth()
+		year = date.getFullYear()
+
+		today = new Date()
+		current_month = today.getMonth()
+		current_year = today.getFullYear()
+
+		const date_utc = Date.UTC(year, month, date.getDate())
+		const today_utc = Date.UTC(current_year, current_month,
+								   today.getDate())
+		const diff_days = Math.floor((today_utc - date_utc) / (1000 * 60 * 60 * 24))
+
+		var date_str = months[month]
+		var colour = "red"
+		switch (true) {
+		  case diff_days == 0:
+			date_str = "today"
+			colour = "bright-green"
+			break
+		  case diff_days == 1:
+			date_str = "yesterday"
+			colour = "bright-green"
+			break
+		  case diff_days <= 7:
+			date_str = "this week"
+			colour = "bright-green"
+			break
+		  case diff_days <= 30:
+			colour = "light-green"
+			break
+		  case diff_days < 183:
+			colour = "citron"
+			break
+		  case diff_days < 365:
+			colour = "yellow"
+			break
+		  case diff_days < 548:
+			colour = "orange"
+			break
+		}
+
+		// Add year if not a special label and not the current year
+		if(months.includes(date_str) && current_year !== year){
+			date_str = date_str + " " + year
+		}
+
+		return [date_str, colour]
+	}
+
+	function githubShields(panel, url){
+
+		// split by forward slash, get username and package name
+
+		url_split = url.split("/");
+		username = url_split.slice(-2)[0];
+		package_name = url_split.slice(-1)[0];
+
+		json_location = "https://api.github.com/search/repositories?q=repo:" + username + "/" + package_name;
+
+		// Fetch Lassy, then update the required fields
+
+		// console.log(json_location)
+
+		$.getJSON(json_location).done(function(json) {
+			forks = json.items[0].forks;
+			stargazers = json.items[0].stargazers_count;
+			last_commit = prettyGitDate(json.items[0].pushed_at);
+
+			// Update panel to reflect requested information
+			panel.find(".stars span.blue").text(stargazers)
+			panel.find(".forks span.blue").text(forks)
+			panel.find(".commits span.commit-date").text(last_commit[0])
+			panel.find(".commits span.commit-date").removeClass('blue')
+			panel.find(".commits span.commit-date").addClass(last_commit[1])
+
+		}).fail(function( jqxhr, textStatus, error ) {
+			var err = textStatus + ", " + error;
+			console.log( "Request Failed: " + err );
+		})
+
+	}
 
 	function expandLinked () {
 
@@ -134,7 +127,7 @@ $(document).ready(function () {
 			var title = '#' + hash
 			var panel = title + '_c'
 
-			// collapse the expanded panel
+			// collapse expanded panels
 			var allPanels = $('#accordion .accordion-collapse')
 
 			allPanels.removeClass('in')
@@ -145,9 +138,34 @@ $(document).ready(function () {
 			$(title).find('.accordion-toggle').removeClass('collapsed')
 
 			location.href = title
+
+			package_last_commit = $(panel).find(".commits span.commit-date")
+
+			// Check to see whether this has been populated already... otherwise ping Github
+			if(package_last_commit.text() == "Unknown"){
+				codebase = $(panel).find(".codebase_url").text()
+				githubShields($(panel), codebase)
+			}
 		}
 	}
 
+
+	$(".tool").click(function(){
+
+		package_name = $(this).find("h4").attr("id");
+
+		panel_name = package_name + "_c";
+		panel = $("#" + panel_name);
+		package_last_commit = panel.find(".commits span.commit-date");
+
+		// Check to see whether this has been populated already... otherwise ping Github
+		if(package_last_commit.text() == "Unknown"){
+			codebase = panel.find(".codebase_url").text();
+			githubShields(panel, codebase)
+		}
+
+		letterPositions();
+	})
 
 	function checkFixed(from_top){
 
@@ -386,7 +404,7 @@ $(document).ready(function () {
 	/* --Calls----------------------------------------------------------------- */
 
 
-	// Check URL for queryies
+	// Check URL for queries
 
 	var urlParams = new URLSearchParams(window.location.search);
 
