@@ -452,6 +452,16 @@ Page Styles
 	color:#F781BF;
 }
 
+#page-c #navbar-main li.active a
+{
+	background:#3f3184;
+}
+
+#page-home #navbar-main li a:hover
+{
+	color:#3f3184;
+}
+
 #page-title h1
 {
 	color:#ffffff;
@@ -676,6 +686,17 @@ Homepage
 	line-height: 32px;
 	width:80%;
 	margin:0 auto 20px;
+}
+
+#intro h3
+{
+	color:#333333;
+	font-size:18px;
+	font-weight: normal;
+	line-height: 24px;
+	max-width:700px;
+	margin:0 auto 20px;
+	text-align: left;
 }
 
 #current_size
