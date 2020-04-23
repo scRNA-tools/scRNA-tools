@@ -396,6 +396,17 @@ $(document).ready(function () {
 			if(sort_method == "name"){
 				// Tool headings
 
+				// Add tools for final letter
+				half_letter = Math.ceil(letter_tools.length / 2)
+				$.each(letter_tools, function(idx, tool) {
+					entry = toolItem(tool)
+					if (idx > half_letter) {
+						$('#alpha' + current_letter + '-right').append(entry)
+					} else {
+						$('#alpha' + current_letter + '-left').append(entry)
+					}
+				})
+
 				headings = $(".tools-list");
 				//alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 				$.each(headings, function (index, heading) {
