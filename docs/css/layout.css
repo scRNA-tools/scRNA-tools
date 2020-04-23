@@ -1539,3 +1539,100 @@ FAQs Layout
 	max-width:100%  !important;
 	height: auto !important;
 }
+
+/*-----------------------------------------------------------------------
+Alert banner
+------------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+.alert-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem .5rem;
+    background: #ff910e;
+    z-index: 1030;
+    color: #000;
+    font-size: 14px;
+    margin: 0;
+    display: none;
+}
+
+.banner-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.alert-banner p {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.alert-banner .banner-wrapper p {
+    padding-right: 3rem;
+}
+
+.alert-banner a {
+    text-decoration: none;
+    margin: 20px auto 0 auto;
+    display: block;
+    max-width: 150px;
+    color: rgb(196, 1, 255);
+}
+
+.alert-banner a:hover {
+    text-decoration: underline;
+}
+
+.alert-banner button {
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 12.5px);
+    color: #fff;
+    outline: 0;
+    height: 25px;
+    width: 25px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    font-weight: 700;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+    line-height: 1;
+    background: ff910e;
+    cursor: pointer;
+}
+
+.banner-learn {
+    color: #000;
+}
+
+.banner-accept {
+    padding: 7px 15px;
+    color: #fff;
+    border-radius: 5px;
+    background: #000;
+}
+
+@media (min-width: 768px) {
+    .alert-banner {
+    padding: 1.5rem .5rem;
+    }
+    .alert-banner a {
+    display: inline-block;
+    margin: 0 10px;
+    }
+}
