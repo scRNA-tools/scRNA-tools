@@ -55,13 +55,14 @@ function toolItem(tool_information, idx='') {
 
 	  if (typeof tool_information["cran"] !== 'undefined') {
 		entry += ' <img border="0" height="15" src="http://www.r-pkg.org/badges/version/' + tool_information["cran"] + '">' +
-				 ' <img border="0" height="15" src="http://cranlogs.r-pkg.org/badges/grand-total/' + tool_information["cran"] + '">'
+				 ' <img border="0" height="15" src="http://cranlogs.r-pkg.org/badges/' + tool_information["cran"] + '">'
 	  }
 
 	  if (typeof tool_information["pypi"] !== 'undefined') {
-		entry += ' <img border="0" height="15" src="https://img.shields.io/pypi/v/' + tool_information["pypi"] + '.svg">' +
-				 ' <img border="0" height="15" src="https://img.shields.io/pypi/pyversions/' + tool_information["pypi"] + '.svg">' +
-				 ' <img border="0" height="15" src="https://img.shields.io/pypi/status/' + tool_information["pypi"] + '.svg">'
+		entry += ' <img border="0" height="15" src="https://badge.fury.io/py/' + tool_information["pypi"] + '.svg">' +
+				 // ' <img border="0" height="15" src="https://img.shields.io/pypi/pyversions/' + tool_information["pypi"] + '.svg">' +
+				 // ' <img border="0" height="15" src="https://img.shields.io/pypi/status/' + tool_information["pypi"] + '.svg">'
+				 ' <img border="0" height="15" src="https://static.pepy.tech/badge/' + tool_information["pypi"] + '/month">'
 	  }
 
 	// Close --------------------------------
