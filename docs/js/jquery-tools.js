@@ -249,39 +249,40 @@ $(document).ready(function () {
 			if (urlParams.has('sort')) {
 				switch(urlParams.get('sort')) {
 					case 'cites':
-					data.sort(function(obj1, obj2) {
-						return obj2.Citations - obj1.Citations
-					})
-					break
+						data.sort(function(obj1, obj2) {
+							return obj2.Citations - obj1.Citations
+						})
+						break
 					case 'refs':
-					data.sort(function(obj1, obj2) {
-						return (obj2.Publications + obj2.Preprints) - (obj1.Publications + obj1.Preprints)
-					})
-					break
+						data.sort(function(obj1, obj2) {
+							return (obj2.NumPubs + obj2.NumPreprints) -
+										(obj1.NumPubs + obj1.NumPreprints)
+						})
+						break
 					case 'pubs':
-					data.sort(function(obj1, obj2) {
-						return obj2.Publications - obj1.Publications
-					})
-					break
+						data.sort(function(obj1, obj2) {
+							return obj2.NumPubs - obj1.NumPubs
+						})
+						break
 					case 'pres':
-					data.sort(function(obj1, obj2) {
-						return obj2.Preprints - obj1.Preprints
-					})
-					break
+						data.sort(function(obj1, obj2) {
+							return obj2.NumPreprints - obj1.NumPreprints
+						})
+						break
 					case 'added':
-					data.sort(function(obj1, obj2) {
-						var x = new Date(obj1.Added);
-						var y = new Date(obj2.Added);
-						return (y > x) - (y < x)
-					})
-					break
+						data.sort(function(obj1, obj2) {
+							var x = new Date(obj1.Added);
+							var y = new Date(obj2.Added);
+							return (y > x) - (y < x)
+						})
+						break
 					case 'updated':
-					data.sort(function(obj1, obj2) {
-						var x = new Date(obj1.Updated);
-						var y = new Date(obj2.Updated);
-						return (y > x) - (y < x)
-					})
-					break
+						data.sort(function(obj1, obj2) {
+							var x = new Date(obj1.Updated);
+							var y = new Date(obj2.Updated);
+							return (y > x) - (y < x)
+						})
+						break
 				}
 			}
 
@@ -357,7 +358,6 @@ $(document).ready(function () {
 
 					if (first_letter != current_letter) {
 
-						console.log(letter_tools)
 						half_letter = Math.ceil(letter_tools.length / 2)
 						$.each(letter_tools, function(idx, tool) {
 							entry = toolItem(tool)
