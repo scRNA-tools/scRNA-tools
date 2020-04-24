@@ -41,20 +41,20 @@ function toolItem(tool_information, idx = '') {
 
   if (typeof tool_information['bioc'] !== 'undefined') {
     entry +=
-      ' <img border="0" height="15" src="http://bioconductor.org/shields/years-in-bioc/' +
+      ' <img border="0" height="15" src="https://bioconductor.org/shields/years-in-bioc/' +
       tool_information['bioc'] +
       '.svg">' +
-      ' <img border="0" height="15" src="http://bioconductor.org/shields/downloads/release/' +
+      ' <img border="0" height="15" src="https://bioconductor.org/shields/downloads/release/' +
       tool_information['bioc'] +
       '.svg">'
   }
 
   if (typeof tool_information['cran'] !== 'undefined') {
     entry +=
-      ' <img border="0" height="15" src="http://www.r-pkg.org/badges/version/' +
+      ' <img border="0" height="15" src="https://www.r-pkg.org/badges/version/' +
       tool_information['cran'] +
       '">' +
-      ' <img border="0" height="15" src="http://cranlogs.r-pkg.org/badges/' +
+      ' <img border="0" height="15" src="https://cranlogs.r-pkg.org/badges/' +
       tool_information['cran'] +
       '">'
   }
