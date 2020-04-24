@@ -26,6 +26,9 @@ contribute please follow the have a look at
 form on our website (https://www.scrna-tools.org/submit). Please be aware that
 by contributing you are agreeing to abide by the [code of conduct](CODE_OF_CONDUCT.md).
 
+If you are interested in joining the scRNA-tools team please
+[contact us](https://www.scRNA-tools.org/contact.html).
+
 ## Citation
 
 If you find the scRNA-tools database useful for your work please cite our
