@@ -1,194 +1,249 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en-US">
+  <head>
+    <!--// Metadata ---------------------------------------------------- -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
-        <!--// Metadata ---------------------------------------------------- -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta charset="UTF-8" />
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="img/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="scRNA-tools" />
+    <meta property="og:url" content="https://www.scrna-tools.org/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="A catalogue of single-cell RNA-sequencing analysis tools"
+    />
+    <meta property="og:image" content="https://www.scrna-tools.org/img/square.png" />
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@scRNAtools" />
+    <meta name="twitter:title" content="scRNA-tools analysis page" />
+    <meta name="twitter:description" content="Analysis of tools in the scRNA-tools database" />
+    <meta name="twitter:image" content="https://www.scrna-tools.org/img/square.png" />
 
-        <!-- Open Graph data -->
-        <meta property="og:title" content="scRNA-tools" />
-        <meta property="og:url" content="https://www.scrna-tools.org/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:description" content="A catalogue of single-cell RNA-sequencing analysis tools" />
-        <meta property="og:image" content="https://cdn.rawgit.com/Oshlack/scRNA-tools/f45942d5/docs/img/square.png" />
+    <meta name="description" content="A catalogue of single-cell RNA-sequencing analysis tools" />
+    <title>scRNA-tools</title>
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@scRNAtools" />
-        <meta name="twitter:title" content="scRNA-tools analysis page" />
-        <meta name="twitter:description" content="Analysis of tools in the scRNA-tools database" />
-        <meta name="twitter:image" content="https://cdn.rawgit.com/Oshlack/scRNA-tools/f45942d5/docs/img/square.png" />
+    <!--// Styles ------------------------------------------------------ -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/analysis.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-        <meta name="description" content="A catalogue of single-cell RNA-sequencing analysis tools">
-        <title>scRNA-tools</title>
+    <!--// Scripts ----------------------------------------------------- -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-        <!--// Styles ------------------------------------------------------ -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/layout.css"/>
-        <link rel="stylesheet" type="text/css" href="css/analysis.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      ;(function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r
+        ;(i[r] =
+          i[r] ||
+          function () {
+            ;(i[r].q = i[r].q || []).push(arguments)
+          }),
+          (i[r].l = 1 * new Date())
+        ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+        a.async = 1
+        a.src = g
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
 
-        <!--// Scripts ----------------------------------------------------- -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      ga('create', 'UA-52309538-3', 'auto')
+      ga('send', 'pageview')
+    </script>
 
-        <script>
-        (function (i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script>
+      $(function () {
+        $('#footerContent').load('footer_content.html')
+      })
+    </script>
+  </head>
 
-        ga('create', 'UA-52309538-3', 'auto');
-        ga('send', 'pageview')
-        </script>
+  <body id="page-analysis">
+    <!--// NavBar ------------------------------------------------------ -->
 
-        <script>
-        $(function(){
-          $("#footerContent").load("footer_content.html")
+    <div id="frame-header" class="container-fluid">
+      <a id="navbar-brand" href="index.html">
+        <img id="logo-image" class="hidden-sm hidden-xs" alt="scRNA-tools" src="img/banner.svg" />
+        <img
+          id="logo-image"
+          class="hidden-lg hidden-md"
+          alt="scRNA-tools"
+          src="img/banner-symbol.svg"
+        />
+      </a>
+      <ul id="navbar-main">
+        <li><a href="table.html">Table</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li class="active"><a href="#">Analysis</a></li>
+        <li><a href="updates.html">Updates</a></li>
+        <li><a href="submit.html">Submit</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+      </ul>
+      <ul id="navbar-util">
+        <li>
+          <a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="page-title" class="container-fluid">
+      <div class="col-lg-12">
+        <h1>Analysis</h1>
+        <h2>See an overview of the database</h2>
+      </div>
+    </div>
+
+    <div id="frame-content" class="container-fluid">
+      <div class="row">
+        <div class="plot col-xs-12 col-md-6">
+          <div class="plot-module">
+            <h2>Number of tools over time</h2>
+            <div id="number"></div>
+          </div>
+        </div>
+        <div class="plot col-xs-12 col-md-6">
+          <div class="plot-module">
+            <h2>Publication status</h2>
+            <div id="publication"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="plot col-xs-12 col-md-6">
+          <div class="plot-module">
+            <h2>Platforms</h2>
+            <div id="platforms"></div>
+          </div>
+        </div>
+        <div class="plot col-xs-12 col-md-6">
+          <div class="plot-module">
+            <h2>Software licenses</h2>
+            <div id="licenses"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="plot col-xs-12">
+          <div class="plot-module">
+            <h2>Categories</h2>
+            <div id="categories"></div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        jQuery.getJSON('plots/number.json', function (data) {
+          Plotly.newPlot('number', data.data, data.layout, data.config)
         })
-        </script>
+        jQuery.getJSON('plots/publication.json', function (data) {
+          Plotly.newPlot('publication', data.data, data.layout, data.config)
+        })
+        jQuery.getJSON('plots/platforms.json', function (data) {
+          Plotly.newPlot('platforms', data.data, data.layout, data.config)
+        })
+        jQuery.getJSON('plots/licenses.json', function (data) {
+          Plotly.newPlot('licenses', data.data, data.layout, data.config)
+        })
+        jQuery.getJSON('plots/categories.json', function (data) {
+          Plotly.newPlot('categories', data.data, data.layout, data.config)
+        })
+      </script>
+    </div>
 
-    </head>
-
-    <body id="page-analysis">
-
-        <!--// NavBar ------------------------------------------------------ -->
-
-        <div id="frame-header" class="container-fluid">
-            <a id="navbar-brand" href="index.html">
-                <img id="logo-image" class="hidden-sm hidden-xs" alt="scRNA-tools" src="img/banner.svg" />
-                <img id="logo-image" class="hidden-lg hidden-md" alt="scRNA-tools" src="img/banner-symbol.svg" />
-            </a>
-            <ul id="navbar-main">
-                <li><a href="table.html">Table</a></li>
-                <li><a href="tools.html">Tools</a></li>
-                <li class="active"><a href="#">Analysis</a></li>
-                <li><a href="updates.html">Updates</a></li>
-                <li><a href="submit.html">Submit</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-            </ul>
-            <ul id="navbar-util">
-                <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github"></i></a></li>
-            </ul>
+    <footer id="frame-footer">
+      <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h2>Cite us</h2>
+          <p>
+            Zappia L, Phipson B, Oshlack A. "Exploring the single-cell RNA-seq analysis landscape
+            with the scRNA-tools database", PLOS Computational Biology (2018), DOI:
+            <a href="https://doi.org/10.1371/journal.pcbi.1006245">10.1371/journal.pcbi.1006245</a>
+          </p>
         </div>
-
-        <div id="page-title" class="container-fluid">
-            <div class="col-lg-12">
-                <h1>Analysis</h1>
-                <h2>See an overview of the database</h2>
-            </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h2>About scRNA-tools</h2>
+          <p>
+            The scRNA-tools database is a catalogue of software packages for analysing single-cell
+            RNA sequencing data. It was created by the
+            <a href="http://oshlacklab.com/">Oshlack Lab</a>, a bioinformatics research group based
+            in Melbourne, Australia and is now maintained by a team of volunteers around the world.
+            <a href="contact.html">Contact us here</a>.
+          </p>
         </div>
-
-        <div id="frame-content" class="container-fluid">
-
-            <div class="row">
-                <div class="plot col-xs-12 col-md-6">
-                    <div class="plot-module">
-                        <h2>Number of tools over time</h2>
-                        <div id="number"></div>
-                    </div>
-                </div>
-                <div class="plot col-xs-12 col-md-6">
-                    <div class="plot-module">
-                        <h2>Publication status</h2>
-                        <div id="publication"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="plot col-xs-12 col-md-6">
-                    <div class="plot-module">
-                        <h2>Platforms</h2>
-                        <div id="platforms"></div>
-                    </div>
-                </div>
-                <div class="plot col-xs-12 col-md-6">
-                    <div class="plot-module">
-                        <h2>Software licenses</h2>
-                        <div id="licenses"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="plot col-xs-12">
-                    <div class="plot-module">
-                        <h2>Categories</h2>
-                        <div id="categories"></div>
-                    </div>
-                </div>
-            </div>
-
-            <script>
-                jQuery.getJSON('plots/number.json', function(data) {
-                    Plotly.newPlot('number', data.data, data.layout, data.config)
-                })
-                jQuery.getJSON('plots/publication.json', function(data) {
-                    Plotly.newPlot('publication', data.data, data.layout, data.config)
-                })
-                jQuery.getJSON('plots/platforms.json', function(data) {
-                    Plotly.newPlot('platforms', data.data, data.layout, data.config)
-                })
-                jQuery.getJSON('plots/licenses.json', function(data) {
-                    Plotly.newPlot('licenses', data.data, data.layout, data.config)
-                })
-                jQuery.getJSON('plots/categories.json', function(data) {
-                    Plotly.newPlot('categories', data.data, data.layout, data.config)
-                })
-            </script>
-
+        <div id="footer-menu" class="col-lg-12">
+          <ul>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="submit.html">Submit</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+      </div>
+    </footer>
 
-        <footer id="frame-footer">
-            <div class="container">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h2>Cite us</h2>
-                    <p>Zappia L, Phipson B, Oshlack A. "Exploring the single-cell RNA-seq analysis landscape with the scRNA-tools database", PLOS Computational Biology (2018), DOI: <a href="https://doi.org/10.1371/journal.pcbi.1006245">10.1371/journal.pcbi.1006245</a></p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h2>About scRNA-tools</h2>
-                    <p>
-                        The scRNA-tools database is a catalogue of software
-                        packages for analysing single-cell RNA sequencing data.
-                        It is maintained by the Oshlack Lab, a bioinformatics
-                        research group based in Melbourne, Australia.
-                    </p>
-                    <p><a href="http://oshlacklab.com/">More about the Oshlack Lab</a></p>
-                </div>
-                <div id="footer-menu" class="col-lg-12">
-                    <ul>
-                        <li><a href="table.html">Table</a></li>
-                        <li><a href="tools.html">Tools</a></li>
-                        <li><a href="analysis.html">Analysis</a></li>
-                        <li><a href="updates.html">Updates</a></li>
-                        <li><a href="submit.html">Submit</a></li>
-                        <li><a href="faqs.html">FAQs</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+    <div class="alert-banner" style="display: none;">
+      <div class="banner-wrapper">
+        <p>
+          We are currently looking for people to join the scRNA-tools team.<a href="faqs.html"
+            >Learn more here.</a
+          >
+        </p>
+        <button aria-label="Close" type="button">
+          <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+        </button>
+      </div>
+    </div>
 
-    </body>
+    <script type="application/javascript" src="js/jquery-banner.js"></script>
+  </body>
 </html>

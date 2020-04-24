@@ -1,316 +1,611 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en-US">
+  <head>
+    <!--// Metadata ---------------------------------------------------- -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
-        <!--// Metadata ---------------------------------------------------- -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta charset="UTF-8" />
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="img/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="scRNA-tools" />
+    <meta property="og:url" content="https://www.scrna-tools.org/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="A catalogue of single-cell RNA-sequencing analysis tools"
+    />
+    <meta property="og:image" content="https://www.scrna-tools.org/img/square.png" />
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@scRNAtools" />
+    <meta name="twitter:title" content="scRNA-tools submission page" />
+    <meta name="twitter:description" content="Submit a new tool to scRNA-tools.org!" />
+    <meta name="twitter:image" content="https://www.scrna-tools.org/img/square.png" />
 
-        <!-- Open Graph data -->
-        <meta property="og:title" content="scRNA-tools" />
-        <meta property="og:url" content="https://www.scrna-tools.org/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:description" content="A catalogue of single-cell RNA-sequencing analysis tools" />
-        <meta property="og:image" content="https://cdn.rawgit.com/Oshlack/scRNA-tools/f45942d5/docs/img/square.png" />
+    <meta name="description" content="A catalogue of single-cell RNA-sequencing analysis tools" />
+    <title>scRNA-tools</title>
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@scRNAtools" />
-        <meta name="twitter:title" content="scRNA-tools submission page" />
-        <meta name="twitter:description" content="Submit a new tool to scRNA-tools.org!" />
-        <meta name="twitter:image" content="https://cdn.rawgit.com/Oshlack/scRNA-tools/f45942d5/docs/img/square.png" />
+    <!--// Styles ------------------------------------------------------ -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/submit.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-        <meta name="description" content="A catalogue of single-cell RNA-sequencing analysis tools">
-        <title>scRNA-tools</title>
+    <!--// Scripts ----------------------------------------------------- -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
 
-        <!--// Styles ------------------------------------------------------ -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/layout.css"/>
-        <link rel="stylesheet" type="text/css" href="css/submit.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="application/javascript" src="js/jquery-banner.js"></script>
 
-        <!--// Scripts ----------------------------------------------------- -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+      ;(function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r
+        ;(i[r] =
+          i[r] ||
+          function () {
+            ;(i[r].q = i[r].q || []).push(arguments)
+          }),
+          (i[r].l = 1 * new Date())
+        ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+        a.async = 1
+        a.src = g
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
 
-        <script>
-        (function (i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-52309538-3', 'auto')
+      ga('send', 'pageview')
+    </script>
 
-        ga('create', 'UA-52309538-3', 'auto');
-        ga('send', 'pageview')
-        </script>
+    <script>
+      $(function () {
+        $('#footerContent').load('footer_content.html')
+      })
+    </script>
+  </head>
 
-        <script>
-        $(function(){
-          $("#footerContent").load("footer_content.html")
-        })
-        </script>
+  <body id="page-submit">
+    <!--// Header --------------------------------------------------------->
 
-    </head>
+    <div id="frame-header" class="container-fluid">
+      <a id="navbar-brand" href="index.html">
+        <img id="logo-image" class="hidden-sm hidden-xs" alt="scRNA-tools" src="img/banner.svg" />
+        <img
+          id="logo-image"
+          class="hidden-lg hidden-md"
+          alt="scRNA-tools"
+          src="img/banner-symbol.svg"
+        />
+      </a>
+      <ul id="navbar-main">
+        <li><a href="table.html">Table</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="analysis.html">Analysis</a></li>
+        <li><a href="updates.html">Updates</a></li>
+        <li class="active"><a href="submit.html">Submit</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+      </ul>
+      <ul id="navbar-util">
+        <li>
+          <a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github"></i></a>
+        </li>
+      </ul>
+    </div>
 
-    <body id="page-submit">
+    <div id="page-title" class="container-fluid">
+      <div class="col-lg-12">
+        <h1>Submit</h1>
+        <h2>Suggest additions or updates to the database</h2>
+      </div>
+    </div>
 
-        <!--// Header --------------------------------------------------------->
+    <div id="frame-content" class="container-fluid">
+      <!--// Submission form ----------------------------------------- -->
 
-        <div id="frame-header" class="container-fluid">
-            <a id="navbar-brand" href="index.html">
-                <img id="logo-image" class="hidden-sm hidden-xs" alt="scRNA-tools" src="img/banner.svg" />
-                <img id="logo-image" class="hidden-lg hidden-md" alt="scRNA-tools" src="img/banner-symbol.svg" />
-            </a>
-            <ul id="navbar-main">
-                <li><a href="table.html">Table</a></li>
-                <li><a href="tools.html">Tools</a></li>
-                <li><a href="analysis.html">Analysis</a></li>
-                <li><a href="updates.html">Updates</a></li>
-                <li class="active"><a href="submit.html">Submit</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
+      <img id="logo-square" alt="scRNA-tools" src="img/square.svg" />
+
+      <form action="https://formspree.io/scrna.tools@gmail.com" method="POST">
+        <legend>
+          We would love to hear your suggestions for the scRNA-tools database! To contact us please
+          fill in the form below or open an issue or pull request via
+          <a href="https://github.com/Oshlack/scRNA-tools">GitHub</a>.
+        </legend>
+        <fieldset>
+          <div class="form-group">
+            <label for="name">Tool name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Tool name" />
+          </div>
+          <div class="form-group">
+            <label for="platform">Platform(s):</label>
+            <input
+              type="text"
+              class="form-control"
+              id="platform"
+              name="platform"
+              placeholder="Available platforms (eg. R/Python)"
+            />
+          </div>
+          <div class="form-group">
+            <label for="doi">DOI(s):</label>
+            <input
+              type="text"
+              class="form-control"
+              id="doi"
+              name="doi"
+              placeholder="DOIs for associated publications/preprints"
+            />
+          </div>
+          <div class="form-group">
+            <label for="code">Code:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="code"
+              name="code"
+              placeholder="Link to code repository (eg. GitHub)"
+            />
+          </div>
+          <div class="form-group">
+            <label for="license">License:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="license"
+              name="license"
+              placeholder="Associated software license"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="_replyto"
+              placeholder="Your email in case we have questions"
+            />
+          </div>
+          <div class="full-group form-group">
+            <label for="description">Description:</label>
+            <textarea
+              type="text"
+              class="form-control"
+              id="description"
+              name="description"
+              placeholder="Short description of the tool and what it does"
+            ></textarea>
+          </div>
+          <div class="form-group" id="checkbox-categories">
+            <label for="categories">Categories:</label>
+            <ul class="checkboxes">
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="ALignment"
+                  id="alignment"
+                  name="categories"
+                />
+                <label class="form-check-label" for="alignment">Alignment</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Allele Specific"
+                  id="allele_specific"
+                  name="categories"
+                />
+                <label class="form-check-label" for="allele_specific">Allele Specific</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Alternative Splicing"
+                  id="alt_splicing"
+                  name="categories"
+                />
+                <label class="form-check-label" for="alt_splicing">Alternative Splicing</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Assembly"
+                  id="assembly"
+                  name="categories"
+                />
+                <label class="form-check-label" for="assembly">Assembly</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Cell Cycle"
+                  id="cell_cycle"
+                  name="categories"
+                />
+                <label class="form-check-label" for="cell_cycle">Cell Cycle</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Classification"
+                  id="classification"
+                  name="categories"
+                />
+                <label class="form-check-label" for="classification">Classification</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Clustering"
+                  id="clustering"
+                  name="categories"
+                />
+                <label class="form-check-label" for="clustering">Clustering</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Differential Expression"
+                  id="diff_exp"
+                  name="categories"
+                />
+                <label class="form-check-label" for="diff_exp">Differential Expression</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Dimensionality Reduction"
+                  id="dim_red"
+                  name="categories"
+                />
+                <label class="form-check-label" for="dim_red">Dimensionality Reduction</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Expression Patterns"
+                  id="exp_patterns"
+                  name="categories"
+                />
+                <label class="form-check-label" for="exp_patterns">Expression Patterns</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Gene Filtering"
+                  id="gene_filt"
+                  name="categories"
+                />
+                <label class="form-check-label" for="gene_filt">Gene Filtering</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Gene Networks"
+                  id="gene_networks"
+                  name="categories"
+                />
+                <label class="form-check-label" for="gene_networks">Gene Networks</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Gene Sets"
+                  id="gene_sets"
+                  name="categories"
+                />
+                <label class="form-check-label" for="gene_sets">Gene Sets</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Haplotypes"
+                  id="haplotypes"
+                  name="categories"
+                />
+                <label class="form-check-label" for="assembly">Haplotypes</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Immune"
+                  id="immune"
+                  name="categories"
+                />
+                <label class="form-check-label" for="immune">Immune</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Imputation"
+                  id="imputation"
+                  name="categories"
+                />
+                <label class="form-check-label" for="imputation">Imputation</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Integration"
+                  id="integration"
+                  name="categories"
+                />
+                <label class="form-check-label" for="integration">Integration</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Interactive"
+                  id="interactive"
+                  name="categories"
+                />
+                <label class="form-check-label" for="interactive">Interactive</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Marker Genes"
+                  id="markers"
+                  name="categories"
+                />
+                <label class="form-check-label" for="markers">Marker Genes</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Modality"
+                  id="modality"
+                  name="categories"
+                />
+                <label class="form-check-label" for="modality">Modality</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Normalisation"
+                  id="normalisation"
+                  name="categories"
+                />
+                <label class="form-check-label" for="normalisation">Normalisation</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Ordering"
+                  id="ordering"
+                  name="categories"
+                />
+                <label class="form-check-label" for="ordering">Ordering</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Quality Control"
+                  id="qc"
+                  name="categories"
+                />
+                <label class="form-check-label" for="qc">Quality Control</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Quantification"
+                  id="quantification"
+                  name="categories"
+                />
+                <label class="form-check-label" for="quantification">Quantification</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Rare Cells"
+                  id="rare"
+                  name="categories"
+                />
+                <label class="form-check-label" for="rare">Rare Cells</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Simulation"
+                  id="simulation"
+                  name="categories"
+                />
+                <label class="form-check-label" for="simulation">Simulation</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Stem Cells"
+                  id="stem_cells"
+                  name="categories"
+                />
+                <label class="form-check-label" for="stem_cells">Stem Cells</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Transformation"
+                  id="transformation"
+                  name="categories"
+                />
+                <label class="form-check-label" for="transformation">Transformation</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="UMIs"
+                  id="umis"
+                  name="categories"
+                />
+                <label class="form-check-label" for="umis">UMIs</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Variable Genes"
+                  id="var_genes"
+                  name="categories"
+                />
+                <label class="form-check-label" for="assembly">Variable Genes</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Variants"
+                  id="variants"
+                  name="categories"
+                />
+                <label class="form-check-label" for="variants">Variants</label>
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Visualisation"
+                  id="visualisation"
+                  name="categories"
+                />
+                <label class="form-check-label" for="visualisation">Visualisation</label>
+              </li>
             </ul>
-            <ul id="navbar-util">
-                <li><a href="https://twitter.com/scRNAtools"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://github.com/Oshlack/scRNA-tools"><i class="fa fa-github"></i></a></li>
-            </ul>
+          </div>
+          <div class="full-group form-group">
+            <label for="notes">Notes:</label>
+            <textarea
+              type="text"
+              class="form-control"
+              id="notes"
+              name="notes"
+              placeholder="Anything else you would like to tell us about the tool?"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-default">Submit</button>
+          <div class="clear"></div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="alert-banner" style="display: none;">
+      <div class="banner-wrapper">
+        <p>
+          We are currently looking for people to join the scRNA-tools team.<a href="faqs.html"
+            >Learn more here.</a
+          >
+        </p>
+        <button aria-label="Close" type="button">
+          <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+        </button>
+      </div>
+    </div>
+
+    <footer id="frame-footer">
+      <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h2>Cite us</h2>
+          <p>
+            Zappia L, Phipson B, Oshlack A. "Exploring the single-cell RNA-seq analysis landscape
+            with the scRNA-tools database", PLOS Computational Biology (2018), DOI:
+            <a href="https://doi.org/10.1371/journal.pcbi.1006245">10.1371/journal.pcbi.1006245</a>
+          </p>
         </div>
-
-        <div id="page-title" class="container-fluid">
-            <div class="col-lg-12">
-                <h1>Submit</h1>
-                <h2>Suggest additions or updates to the database</h2>
-            </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h2>About scRNA-tools</h2>
+          <p>
+            The scRNA-tools database is a catalogue of software packages for analysing single-cell
+            RNA sequencing data. It was created by the
+            <a href="http://oshlacklab.com/">Oshlack Lab</a>, a bioinformatics research group based
+            in Melbourne, Australia and is now maintained by a team of volunteers around the world.
+            <a href="contact.html">Contact us here</a>.
+          </p>
         </div>
-
-        <div id="frame-content" class="container-fluid">
-
-            <!--// Submission form ----------------------------------------- -->
-
-            <img id="logo-square" alt="scRNA-tools" src="img/square.svg" />
-
-            <form action="https://formspree.io/scrna.tools@gmail.com" method="POST">
-                <legend>We would love to hear your suggestions for the scRNA-tools database! To contact us please fill in the form below or open an issue or pull request via <a href="https://github.com/Oshlack/scRNA-tools">GitHub</a>.</legend>
-                <fieldset>
-                    <div class="form-group">
-                      <label for="name">Tool name:</label>
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Tool name">
-                    </div>
-                    <div class="form-group">
-                        <label for="platform">Platform(s):</label>
-                        <input type="text" class="form-control" id="platform" name="platform" placeholder="Available platforms (eg. R/Python)">
-                    </div>
-                    <div class="form-group">
-                        <label for="doi">DOI(s):</label>
-                        <input type="text" class="form-control" id="doi" name="doi" placeholder="DOIs for associated publications/preprints">
-                    </div>
-                    <div class="form-group">
-                        <label for="code">Code:</label>
-                        <input type="text" class="form-control" id="code" name="code" placeholder="Link to code repository (eg. GitHub)">
-                    </div>
-                    <div class="form-group">
-                        <label for="license">License:</label>
-                        <input type="text" class="form-control" id="license" name="license" placeholder="Associated software license">
-                    </div>
-                    <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your email in case we have questions">
-                    </div>
-                    <div class="full-group form-group">
-                        <label for="description">Description:</label>
-                        <textarea type="text" class="form-control" id="description" name="description" placeholder="Short description of the tool and what it does"></textarea>
-                    </div>
-                    <div class="form-group" id="checkbox-categories">
-                        <label for="categories">Categories:</label>
-                        <ul class="checkboxes">
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="ALignment" id="alignment" name="categories">
-                            <label class="form-check-label" for="alignment">Alignment</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Allele Specific" id="allele_specific" name="categories">
-                            <label class="form-check-label" for="allele_specific">Allele Specific</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Alternative Splicing" id="alt_splicing" name="categories">
-                            <label class="form-check-label" for="alt_splicing">Alternative Splicing</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Assembly" id="assembly" name="categories">
-                            <label class="form-check-label" for="assembly">Assembly</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Cell Cycle" id="cell_cycle" name="categories">
-                            <label class="form-check-label" for="cell_cycle">Cell Cycle</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Classification" id="classification" name="categories">
-                            <label class="form-check-label" for="classification">Classification</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Clustering" id="clustering" name="categories">
-                            <label class="form-check-label" for="clustering">Clustering</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Differential Expression" id="diff_exp" name="categories">
-                            <label class="form-check-label" for="diff_exp">Differential Expression</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Dimensionality Reduction" id="dim_red" name="categories">
-                            <label class="form-check-label" for="dim_red">Dimensionality Reduction</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Expression Patterns" id="exp_patterns" name="categories">
-                            <label class="form-check-label" for="exp_patterns">Expression Patterns</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Gene Filtering" id="gene_filt" name="categories">
-                            <label class="form-check-label" for="gene_filt">Gene Filtering</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Gene Networks" id="gene_networks" name="categories">
-                            <label class="form-check-label" for="gene_networks">Gene Networks</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Gene Sets" id="gene_sets" name="categories">
-                            <label class="form-check-label" for="gene_sets">Gene Sets</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Haplotypes" id="haplotypes" name="categories">
-                            <label class="form-check-label" for="assembly">Haplotypes</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Immune" id="immune" name="categories">
-                            <label class="form-check-label" for="immune">Immune</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Imputation" id="imputation" name="categories">
-                            <label class="form-check-label" for="imputation">Imputation</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Integration" id="integration" name="categories">
-                            <label class="form-check-label" for="integration">Integration</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Interactive" id="interactive" name="categories">
-                            <label class="form-check-label" for="interactive">Interactive</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Marker Genes" id="markers" name="categories">
-                            <label class="form-check-label" for="markers">Marker Genes</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Modality" id="modality" name="categories">
-                            <label class="form-check-label" for="modality">Modality</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Normalisation" id="normalisation" name="categories">
-                            <label class="form-check-label" for="normalisation">Normalisation</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Ordering" id="ordering" name="categories">
-                            <label class="form-check-label" for="ordering">Ordering</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Quality Control" id="qc" name="categories">
-                            <label class="form-check-label" for="qc">Quality Control</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Quantification" id="quantification" name="categories">
-                            <label class="form-check-label" for="quantification">Quantification</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Rare Cells" id="rare" name="categories">
-                            <label class="form-check-label" for="rare">Rare Cells</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Simulation" id="simulation" name="categories">
-                            <label class="form-check-label" for="simulation">Simulation</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Stem Cells" id="stem_cells" name="categories">
-                            <label class="form-check-label" for="stem_cells">Stem Cells</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Transformation" id="transformation" name="categories">
-                            <label class="form-check-label" for="transformation">Transformation</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="UMIs" id="umis" name="categories">
-                            <label class="form-check-label" for="umis">UMIs</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Variable Genes" id="var_genes" name="categories">
-                            <label class="form-check-label" for="assembly">Variable Genes</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Variants" id="variants" name="categories">
-                            <label class="form-check-label" for="variants">Variants</label>
-                        </li>
-                        <li>
-                            <input class="form-check-input" type="checkbox" value="Visualisation" id="visualisation" name="categories">
-                            <label class="form-check-label" for="visualisation">Visualisation</label>
-                        </li>
-                        </ul>
-                    </div>
-                    <div class="full-group form-group">
-                            <label for="notes">Notes:</label>
-                            <textarea type="text" class="form-control" id="notes" name="notes" placeholder="Anything else you would like to tell us about the tool?"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-default">Submit</button>
-                    <div class="clear"></div>
-                </fieldset>
-            </form>
-
+        <div id="footer-menu" class="col-lg-12">
+          <ul>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="submit.html">Submit</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+      </div>
+    </footer>
 
-        <footer id="frame-footer">
-            <div class="container">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h2>Cite us</h2>
-                    <p>Zappia L, Phipson B, Oshlack A. "Exploring the single-cell RNA-seq analysis landscape with the scRNA-tools database", PLOS Computational Biology (2018), DOI: <a href="https://doi.org/10.1371/journal.pcbi.1006245">10.1371/journal.pcbi.1006245</a></p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h2>About scRNA-tools</h2>
-                    <p>
-                        The scRNA-tools database is a catalogue of software
-                        packages for analysing single-cell RNA sequencing data.
-                        It is maintained by the Oshlack Lab, a bioinformatics
-                        research group based in Melbourne, Australia.
-                    </p>
-                    <p><a href="http://oshlacklab.com/">More about the Oshlack Lab</a></p>
-                </div>
-                <div id="footer-menu" class="col-lg-12">
-                    <ul>
-                        <li><a href="table.html">Table</a></li>
-                        <li><a href="tools.html">Tools</a></li>
-                        <li><a href="analysis.html">Analysis</a></li>
-                        <li><a href="updates.html">Updates</a></li>
-                        <li><a href="submit.html">Submit</a></li>
-                        <li><a href="faqs.html">FAQs</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-
-    </body>
+    <script type="application/javascript" src="js/jquery-banner.js"></script>
+  </body>
 </html>
