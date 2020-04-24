@@ -149,7 +149,7 @@ load_references <- function(dir) {
     }
 
     references <- dplyr::left_join(references, citations, by = "DOI")
-    
+
     # If references were missing from the citations cache replace NAs
     references <- tidyr::replace_na(
         references,
@@ -294,6 +294,7 @@ load_pkgs_cache <- function(dir) {
         new_pkgs_cache <- get_pkgs_cache()
 
         pkgs_cache <- pkgs_cache %>%
+            dplyr::filter(Repository %in% new_pkgs_cache$Repository) %>%
             dplyr::bind_rows(new_pkgs_cache) %>%
             dplyr::group_by(Repository) %>%
             dplyr::top_n(1, dplyr::desc(Added)) %>%

@@ -64,14 +64,29 @@ set_gitmessage_update <- function(name) {
 #'
 #' @param name Name of the updated tool
 set_gitmessage_check <- function(name) {
-    
+
     msg <- glue::glue(
         "# Enter the name of the repository (e.g. CRAN) you have updated\n",
         "Update: New REPO repository for {name}",
         "\n\n",
         "https://www.scrna-tools.org/tools#{name}"
     )
-    
+
+    readr::write_lines(msg, ".gitmessage")
+}
+
+#' Set check removal git message
+#'
+#' Set the template git commit message for removing tool repositories
+#'
+#' @param name Name of the updated tool
+set_gitmessage_checkremove <- function(name) {
+
+    msg <- glue::glue(
+        "# Enter the name of the repository (e.g. CRAN) you have removed\n",
+        "Remove deprecated REPO repository for {name}",
+    )
+
     readr::write_lines(msg, ".gitmessage")
 }
 
@@ -80,12 +95,12 @@ set_gitmessage_check <- function(name) {
 #' Set the template git commit message for completing repository checking (to
 #' capture additional ignored repositories)
 set_gitmessage_checkdone <- function(name) {
-    
+
     msg <- paste(
         "# Delete time before commiting\n",
         "Completed repository checks ", lubridate::now("UTC")
     )
-    
+
     readr::write_lines(msg, ".gitmessage")
 }
 
