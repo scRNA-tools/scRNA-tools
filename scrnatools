@@ -72,7 +72,7 @@ source("app/utils.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.3.2")
+opts <- docopt(DOCOPT, version = "0.3.3")
 
 logo <- get_logo()
 cat(logo, "\n")

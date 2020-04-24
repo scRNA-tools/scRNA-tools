@@ -21,9 +21,12 @@ search <- function(database, name = NULL) {
         database$Tools[[matches]]
     } else if (length(matches) > 1) {
         usethis::ui_done(glue::glue(
-            "Found {usethis::ui_value(length(matches))} possible tools:"
+            "Found {usethis::ui_value(length(matches))} possible tools: ",
+            "{usethis::ui_value(matches)}"
         ))
-        usethis::ui_value(matches)
+        match <- prompt_menu("Which tool would you like to display?", matches)
+        cat("\n")
+        database$Tools[[match]]
     } else {
         usethis::ui_done("No matches found!")
     }
