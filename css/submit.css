@@ -1,98 +1,90 @@
-.panel-heading h4 { background: #a65628; }
+.panel-heading h4 {
+  background: #a65628;
+}
 
 .page-header {
-    color: #a65628;
+  color: #a65628;
 }
 
-#page-submit fieldset
-{
-    max-width:820px;
-    width:100%;
-    margin:0 auto;
+#page-submit fieldset {
+  max-width: 820px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-#page-submit legend
-{
-    font-size:16px;
-    color:#333333;
-    width:600px;
-    margin:0 auto 40px;
-    text-align: center;
-    padding:0 0 30px;
-    border-bottom:1px solid #efefef;
+#page-submit legend {
+  font-size: 16px;
+  color: #333333;
+  width: 600px;
+  margin: 0 auto 40px;
+  text-align: center;
+  padding: 0 0 30px;
+  border-bottom: 1px solid #efefef;
 }
 
-#page-submit fieldset label
-{
-    font-size:14px;
-    margin: 0 0 5px;
-    text-transform: uppercase;
-    color:#333333;
+#page-submit fieldset label {
+  font-size: 14px;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  color: #333333;
 }
 
 .form-group {
-    max-width: 400px;
-    width:100%;
-    float:left;
-    margin:0 20px 20px 0;
+  max-width: 400px;
+  width: 100%;
+  float: left;
+  margin: 0 20px 20px 0;
 }
 
-@media (max-width: 850px){
-    .form-group {
-        max-width:100%;
-    }
-}
-
-.form-group:nth-child(2n){
-    margin-right:0;
-}
-
-
-#page-submit .full-group
-{
-    width:100%;
-    clear:both;
+@media (max-width: 850px) {
+  .form-group {
     max-width: 100%;
+  }
 }
 
-#page-submit .full-group textarea
-{
-    min-height:200px;
-    width:100%;
+.form-group:nth-child(2n) {
+  margin-right: 0;
+}
+
+#page-submit .full-group {
+  width: 100%;
+  clear: both;
+  max-width: 100%;
+}
+
+#page-submit .full-group textarea {
+  min-height: 200px;
+  width: 100%;
 }
 
 .form-check {
-    margin: 20px auto;
-    max-width: 600px;
+  margin: 20px auto;
+  max-width: 600px;
 }
 
 .checkboxes {
-    columns: 4 20px;
+  columns: 4 20px;
 }
 
-@media (max-width: 850px)
-{
-    .checkboxes {
-        columns: 3 20px;
-    }  
+@media (max-width: 850px) {
+  .checkboxes {
+    columns: 3 20px;
+  }
 }
 
-@media (max-width: 600px)
-{
-    .checkboxes {
-        columns: 2 20px;
-    }  
+@media (max-width: 600px) {
+  .checkboxes {
+    columns: 2 20px;
+  }
 }
 
-#checkbox-categories
-{
-    max-width: none;
-    width:100%;
+#checkbox-categories {
+  max-width: none;
+  width: 100%;
 }
 
-#checkbox-categories .checkboxes label
-{
-    font-weight:normal;
-    text-transform: none;
-    font-size:12px;
+#checkbox-categories .checkboxes label {
+  font-weight: normal;
+  text-transform: none;
+  font-size: 12px;
 }

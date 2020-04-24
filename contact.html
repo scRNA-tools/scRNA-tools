@@ -36,8 +36,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@scRNAtools" />
-    <meta name="twitter:title" content="scRNA-tools updates page" />
-    <meta name="twitter:description" content="Recent updates to scRNA-tools.org" />
+    <meta name="twitter:title" content="scRNA-tools contact page" />
+    <meta name="twitter:description" content="Contact the scRNA-tools team" />
     <meta name="twitter:image" content="https://www.scrna-tools.org/img/square.png" />
 
     <meta name="description" content="A catalogue of single-cell RNA-sequencing analysis tools" />
@@ -57,7 +57,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="css/updates.css" />
+    <link rel="stylesheet" type="text/css" href="css/submit.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -74,6 +74,8 @@
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"
     ></script>
+
+    <script type="application/javascript" src="js/jquery-banner.js"></script>
 
     <script>
       ;(function (i, s, o, g, r, a, m) {
@@ -101,7 +103,7 @@
     </script>
   </head>
 
-  <body id="page-updates">
+  <body id="page-submit">
     <!--// Header --------------------------------------------------------->
 
     <div id="frame-header" class="container-fluid">
@@ -114,12 +116,11 @@
           src="img/banner-symbol.svg"
         />
       </a>
-
       <ul id="navbar-main">
         <li><a href="table.html">Table</a></li>
         <li><a href="tools.html">Tools</a></li>
         <li><a href="analysis.html">Analysis</a></li>
-        <li class="active"><a href="#">Updates</a></li>
+        <li><a href="updates.html">Updates</a></li>
         <li><a href="submit.html">Submit</a></li>
         <li><a href="faqs.html">FAQs</a></li>
       </ul>
@@ -135,18 +136,78 @@
 
     <div id="page-title" class="container-fluid">
       <div class="col-lg-12">
-        <h1>Updates</h1>
-        <h2>Follow @scRNAtools on Twitter to see when we make updates</h2>
+        <h1>Contact</h1>
+        <h2>Get in touch with the scRNA-tools team</h2>
       </div>
     </div>
 
-    <!--// Content --------------------------------------------------------->
-
     <div id="frame-content" class="container-fluid">
-      <div id="twitter-container">
-        <a class="twitter-timeline" data-link-color="#984ea3" href="https://twitter.com/scRNAtools"
-          >Tweets by scRNAtools</a
-        >
+      <div id="intro" class="col-lg-12">
+        <h2>Join the scRNA-tools team!</h2>
+        <h3>
+          scRNA-tools aims to be a comprehensive resource for the single-cell RNA-seq analysis
+          community but to make it as good possible we need your help. This may be by submitting new
+          tools or updates via our <a href="submit.html">submission form</a> but if you would like
+          to contribute further please consider joining the scRNA-tools team.
+        </h3>
+        <br />
+        <h3>
+          No matter your skill set or the time you can commit there is sure to be some way you can
+          contribute and we would love to have you on board!
+        </h3>
+      </div>
+
+      <!--// Submission form ----------------------------------------- -->
+
+      <img id="logo-square" alt="scRNA-tools" src="img/square.svg" />
+
+      <form action="https://formspree.io/scrna.tools@gmail.com" method="POST">
+        <legend>
+          Please use this form if you are interested in joining the scRNA-tools team or want to
+          contact us for any other reason.
+        </legend>
+        <fieldset>
+          <div class="form-group">
+            <label for="name">Your name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="_replyto"
+              placeholder="Your email"
+            />
+          </div>
+          <div class="full-group form-group">
+            <label for="notes">Message:</label>
+            <textarea
+              type="text"
+              class="form-control"
+              id="message"
+              name="message"
+              placeholder="Your message for the scRNA-tools team"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-default">Submit</button>
+          <div class="clear"></div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="alert-banner" style="display: none;">
+      <div class="banner-wrapper">
+        <p>
+          We are currently looking for people to join the scRNA-tools team.<a href="faqs.html"
+            >Learn more here.</a
+          >
+        </p>
+        <button aria-label="Close" type="button">
+          <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+        </button>
       </div>
     </div>
 
@@ -184,20 +245,6 @@
       </div>
     </footer>
 
-    <div class="alert-banner" style="display: none;">
-      <div class="banner-wrapper">
-        <p>
-          We are currently looking for people to join the scRNA-tools team.<a href="faqs.html"
-            >Learn more here.</a
-          >
-        </p>
-        <button aria-label="Close" type="button">
-          <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
-        </button>
-      </div>
-    </div>
-
     <script type="application/javascript" src="js/jquery-banner.js"></script>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>
