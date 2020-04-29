@@ -2617,6 +2617,23 @@
     "NumPreprints": 1
   },
   {
+    "Tool": "ctgGEM",
+    "Platform": "R",
+    "Code": "https://github.com/bicbioeng/ctgGEM",
+    "Description": "ctgGEM is an R package that combines a variety of visualization packages for single cell RNA tree hierarchies",
+    "License": "GPL (>=2)",
+    "Added": "2020-04-29",
+    "Updated": "2020-04-29",
+    "Categories": ["Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "ctgGEM",
+    "GitHub": "bicbioeng/ctgGEM"
+  },
+  {
     "Tool": "cTPnet",
     "Platform": "R",
     "Code": "https://github.com/zhouzilu/cTPnet",
@@ -3295,6 +3312,23 @@
     "Citations": 0,
     "NumPubs": 0,
     "NumPreprints": 0
+  },
+  {
+    "Tool": "distinct",
+    "Platform": "R/C++",
+    "Code": "https://github.com/SimoneTiberi/distinct",
+    "Description": "distinct is a statistical method to perform differential testing between two or more groups of distributions",
+    "License": "GPL (>=3)",
+    "Added": "2020-04-29",
+    "Updated": "2020-04-29",
+    "Categories": ["DifferentialExpression"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "distinct",
+    "GitHub": "SimoneTiberi/distinct"
   },
   {
     "Tool": "DistMap",
@@ -6379,6 +6413,23 @@
     "GitHub": "COMBINE-lab/minnow"
   },
   {
+    "Tool": "mitch",
+    "Platform": "R",
+    "Code": "https://github.com/markziemann/mitch",
+    "Description": "mitch is an R package for multi-dimensional enrichment analysis",
+    "License": "CC BY-SA 4.0",
+    "Added": "2020-04-29",
+    "Updated": "2020-04-29",
+    "Categories": ["GeneSets", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "mitch",
+    "GitHub": "markziemann/mitch"
+  },
+  {
     "Tool": "mnnpy",
     "Platform": "Python",
     "Code": "https://github.com/chriscainx/mnnpy",
@@ -8093,6 +8144,28 @@
     "GitHub": "wycwycpku/RSCORE"
   },
   {
+    "Tool": "Rsubread",
+    "Platform": "R",
+    "Description": "Alignment, quantification and analysis of second and third generation sequencing data",
+    "License": "GPL-3",
+    "Added": "2020-04-29",
+    "Updated": "2020-04-29",
+    "Categories": ["Alignment", "Quantification"],
+    "Publications": [
+      {
+        "Title": "The R package Rsubread is easier, faster, cheaper and better for alignment and quantification of RNA sequencing reads",
+        "DOI": "10.1093/nar/gkz114",
+        "Date": "2019-02-20",
+        "Citations": 86
+      }
+    ],
+    "Preprints": [],
+    "Citations": 86,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "Bioc": "Rsubread"
+  },
+  {
     "Tool": "SAFE",
     "Platform": "R",
     "Code": "https://github.com/yycunc/SAFEclustering",
@@ -8898,6 +8971,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "zijianni/scCB2"
+  },
+  {
+    "Tool": "scCCESS",
+    "Platform": "R",
+    "Code": "https://github.com/gedcom/scCCESS",
+    "Description": "single-cell Consensus Clusters of Encoded Subspaces",
+    "Added": "2020-04-29",
+    "Updated": "2020-04-29",
+    "Categories": ["Clustering", "DimensionalityReduction"],
+    "Publications": [
+      {
+        "Title": "Autoencoder-based cluster ensembles for single-cell RNA-seq data analysis",
+        "DOI": "10.1186/s12859-019-3179-5",
+        "Date": "2019-12",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "gedcom/scCCESS"
   },
   {
     "Tool": "scClassify",
@@ -9843,6 +9938,23 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "paulderaadt/HSNE-clustering"
+  },
+  {
+    "Tool": "scHOT",
+    "Platform": "R",
+    "Code": "https://github.com/shazanfar/scHOT",
+    "Description": "Single cell Higher Order Testing (scHOT) is an R package that facilitates testing changes in higher order structure of gene expression along either a developmental trajectory or across space",
+    "License": "GPL-3",
+    "Added": "2020-04-29",
+    "Updated": "2020-04-29",
+    "Categories": ["ExpressionPatterns", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "scHOT",
+    "GitHub": "shazanfar/scHOT"
   },
   {
     "Tool": "scHPF",
@@ -11347,6 +11459,23 @@
     "PyPI": "RNAscrutiny"
   },
   {
+    "Tool": "scry",
+    "Platform": "R",
+    "Code": "https://github.com/kstreet13/scry",
+    "Description": "A collection of methods for the analysis of small-count data, such as single-cell RNA-seq",
+    "License": "Artistic-2.0",
+    "Added": "2020-04-29",
+    "Updated": "2020-04-29",
+    "Categories": ["DimensionalityReduction", "GeneFiltering"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "scry",
+    "GitHub": "kstreet13/scry"
+  },
+  {
     "Tool": "SCSA",
     "Platform": "Python",
     "Code": "https://github.com/bioinfo-ibms-pumc/SCSA",
@@ -11572,6 +11701,23 @@
     "NumPreprints": 0,
     "Bioc": "scTGIF",
     "GitHub": "rikenbit/scTGIF"
+  },
+  {
+    "Tool": "scTHI",
+    "Platform": "R",
+    "Code": "https://github.com/miccec/scTHI",
+    "Description": "Indentification of  significantly activated ligand-receptor interactions across clusters of cells from single-cell RNA sequencing data",
+    "License": "GPL-2",
+    "Added": "2020-04-29",
+    "Updated": "2020-04-29",
+    "Categories": ["Classification", "DimensionalityReduction", "GeneNetworks", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "scTHI",
+    "GitHub": "miccec/scTHI"
   },
   {
     "Tool": "scTIM",
@@ -14417,7 +14563,7 @@
         "Title": "Functional interpretation of single cell similarity maps",
         "DOI": "10.1038/s41467-019-12235-0",
         "Date": "2019-09-26",
-        "Citations": 8
+        "Citations": 7
       }
     ],
     "Preprints": [
@@ -14427,7 +14573,7 @@
         "Citations": 3
       }
     ],
-    "Citations": 11,
+    "Citations": 10,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "YosefLab/VISION"
