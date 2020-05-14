@@ -1789,11 +1789,11 @@
         "Title": "Massively parallel digital transcriptional profiling of single cells",
         "DOI": "10.1038/ncomms14049",
         "Date": "2017-01-16",
-        "Citations": 1112
+        "Citations": 1113
       }
     ],
     "Preprints": [],
-    "Citations": 1112,
+    "Citations": 1113,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "10XGenomics/cellranger"
@@ -4937,6 +4937,22 @@
     "GitHub": "immunogenomics/harmony"
   },
   {
+    "Tool": "HieRFIT",
+    "Platform": "R",
+    "Code": "https://github.com/yasinkaymaz/HieRFIT",
+    "Description": "Hierarchical Random Forest for Information Transfer",
+    "License": "GPL-3",
+    "Added": "2020-05-14",
+    "Updated": "2020-05-14",
+    "Categories": ["Classification", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "GitHub": "yasinkaymaz/HieRFIT"
+  },
+  {
     "Tool": "HIPPO",
     "Platform": "R",
     "Code": "https://github.com/tk382/HIPPO",
@@ -5845,7 +5861,7 @@
         "Title": "Single-Cell Multi-omic Integration Compares and Contrasts Features of Brain Cell Identity",
         "DOI": "10.1016/j.cell.2019.05.006",
         "Date": "2019-06",
-        "Citations": 78
+        "Citations": 79
       }
     ],
     "Preprints": [
@@ -5860,7 +5876,7 @@
         "Citations": 6
       }
     ],
-    "Citations": 84,
+    "Citations": 85,
     "NumPubs": 1,
     "NumPreprints": 2,
     "GitHub": "MacoskoLab/liger"
@@ -6822,11 +6838,11 @@
         "Title": "UMI-count modeling and differential expression analysis for single-cell RNA sequencing",
         "DOI": "10.1186/s13059-018-1438-9",
         "Date": "2018-05-31",
-        "Citations": 21
+        "Citations": 22
       }
     ],
     "Preprints": [],
-    "Citations": 21,
+    "Citations": 22,
     "NumPubs": 1,
     "NumPreprints": 0
   },
@@ -7935,6 +7951,36 @@
     "NumPreprints": 1
   },
   {
+    "Tool": "Randomly",
+    "Platform": "Python",
+    "Code": "https://github.com/RabadanLab/randomly",
+    "Description": "A Python package for denoising single-cell data using Random Matrix Theory",
+    "License": "MIT",
+    "Added": "2020-05-14",
+    "Updated": "2020-05-14",
+    "Categories": ["Clustering", "DimensionalityReduction", "GeneFiltering", "Imputation", "QualityControl", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "A Random Matrix Theory Approach to Denoise Single-Cell Data",
+        "DOI": "10.1016/j.patter.2020.100035",
+        "Date": "2020-05",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "Quasi-universality in single-cell sequencing data",
+        "DOI": "10.1101/426239",
+        "Citations": 2
+      }
+    ],
+    "Citations": 2,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "PyPI": "randomly",
+    "GitHub": "RabadanLab/randomly"
+  },
+  {
     "Tool": "RayleighSelection",
     "Platform": "R/C++",
     "Code": "https://github.com/CamaraLab/RayleighSelection",
@@ -8736,7 +8782,7 @@
         "Title": "SCANPY: large-scale single-cell gene expression data analysis",
         "DOI": "10.1186/s13059-017-1382-0",
         "Date": "2018-02-06",
-        "Citations": 351
+        "Citations": 352
       },
       {
         "Title": "PAGA: graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells",
@@ -8757,7 +8803,7 @@
         "Citations": 21
       }
     ],
-    "Citations": 453,
+    "Citations": 454,
     "NumPubs": 2,
     "NumPreprints": 2,
     "PyPI": "scanpy",
@@ -10744,7 +10790,7 @@
         "Title": "A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain",
         "DOI": "10.1016/j.cell.2018.05.057",
         "Date": "2018-08",
-        "Citations": 128
+        "Citations": 127
       }
     ],
     "Preprints": [
@@ -10754,7 +10800,7 @@
         "Citations": 4
       }
     ],
-    "Citations": 132,
+    "Citations": 131,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "aertslab/SCope"
@@ -12019,31 +12065,36 @@
     "Description": "Bayesian Inference for a Generative Model of Transcriptome Profiles from Single-cell RNA Sequencing",
     "License": "MIT",
     "Added": "2018-04-04",
-    "Updated": "2019-02-01",
+    "Updated": "2020-05-14",
     "Categories": ["Classification", "DimensionalityReduction", "Integration"],
     "Publications": [
       {
         "Title": "Deep generative modeling for single-cell transcriptomics",
         "DOI": "10.1038/s41592-018-0229-2",
         "Date": "2018-11-30",
-        "Citations": 149
+        "Citations": 150
       }
     ],
     "Preprints": [
+      {
+        "Title": "Joint probabilistic modeling of paired transcriptome and proteome measurements in single cells",
+        "DOI": "10.1101/2020.05.08.083337",
+        "Citations": 0
+      },
       {
         "Title": "Bayesian Inference for a Generative Model of Transcriptome Profiles from Single-cell RNA Sequencing",
         "DOI": "10.1101/292037",
         "Citations": 15
       },
       {
-        "Title": "Harmonization and Annotation of Single-cell Transcriptomics data with Deep Generative Models",
+        "Title": "Probabilistic Harmonization and Annotation of Single-cell Transcriptomics Data with Deep Generative Models",
         "DOI": "10.1101/532895",
         "Citations": 6
       }
     ],
-    "Citations": 170,
+    "Citations": 171,
     "NumPubs": 1,
-    "NumPreprints": 2,
+    "NumPreprints": 3,
     "PyPI": "scvi",
     "GitHub": "YosefLab/scVI"
   },
@@ -12054,9 +12105,16 @@
     "Description": "Single-Cell Virtual Cytometer is an open source software for straightforward visualization and exploration of multimodal single cell datasets as in flow cytometry.",
     "License": "AGPL-3.0",
     "Added": "2019-11-21",
-    "Updated": "2019-11-21",
+    "Updated": "2020-05-14",
     "Categories": ["Interactive", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Single-Cell Virtual Cytometer allows user-friendly and versatile analysis and visualization of multimodal single cell RNAseq datasets",
+        "DOI": "10.1093/nargab/lqaa025",
+        "Date": "2020-04-20",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Single-Cell Virtual Cytometer allows user-friendly and versatile analysis and visualization of multimodal single cell RNAseq datasets",
@@ -12065,7 +12123,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "FredPont/single-cell-virtual-cytometer"
   },
@@ -12209,7 +12267,7 @@
         "Title": "Comprehensive Integration of Single-Cell Data",
         "DOI": "10.1016/j.cell.2019.05.031",
         "Date": "2019-06",
-        "Citations": 464
+        "Citations": 465
       },
       {
         "Title": "Spatial reconstruction of single-cell gene expression data",
@@ -12221,7 +12279,7 @@
         "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
         "DOI": "10.1038/nbt.4096",
         "Date": "2018-04-02",
-        "Citations": 1486
+        "Citations": 1487
       }
     ],
     "Preprints": [
@@ -12241,7 +12299,7 @@
         "Citations": 43
       }
     ],
-    "Citations": 3179,
+    "Citations": 3181,
     "NumPubs": 3,
     "NumPreprints": 3,
     "CRAN": "Seurat",
@@ -13280,9 +13338,16 @@
     "Description": "souporcell is a method for clustering mixed-genotype scRNAseq experiments by individual.",
     "License": "MIT",
     "Added": "2019-07-15",
-    "Updated": "2019-07-15",
+    "Updated": "2020-05-14",
     "Categories": ["Clustering", "QualityControl", "Variants"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Souporcell: robust clustering of single-cell RNA-seq data by genotype without reference genotypes",
+        "DOI": "10.1038/s41592-020-0820-1",
+        "Date": "2020-05-04",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "souporcell: Robust clustering of single cell RNAseq by genotype and ambient RNA inference without reference genotypes",
@@ -13291,7 +13356,7 @@
       }
     ],
     "Citations": 5,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "wheaton5/souporcell"
   },
@@ -13583,11 +13648,11 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 9327
+        "Citations": 9328
       }
     ],
     "Preprints": [],
-    "Citations": 9327,
+    "Citations": 9328,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "alexdobin/STAR"
