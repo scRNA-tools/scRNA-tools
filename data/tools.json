@@ -334,11 +334,11 @@
         "Title": "Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq",
         "DOI": "10.1126/science.aaa1934",
         "Date": "2015-02-19",
-        "Citations": 1323
+        "Citations": 1324
       }
     ],
     "Preprints": [],
-    "Citations": 1323,
+    "Citations": 1324,
     "NumPubs": 1,
     "NumPreprints": 0,
     "PyPI": "backspinpy",
@@ -1709,11 +1709,11 @@
         "Title": "Classification of low quality cells from single-cell RNA-seq data",
         "DOI": "10.1186/s13059-016-0888-1",
         "Date": "2016-02-17",
-        "Citations": 187
+        "Citations": 188
       }
     ],
     "Preprints": [],
-    "Citations": 187,
+    "Citations": 188,
     "NumPubs": 1,
     "NumPreprints": 0,
     "Bioc": "cellity",
@@ -2940,6 +2940,28 @@
     "GitHub": "lanagarmire/DeepImpute"
   },
   {
+    "Tool": "DeepSort",
+    "Platform": "Python",
+    "Code": "https://github.com/ZJUFanLab/DeepSort",
+    "Description": "Reference-free Cell-type Annotation for Single-cell Transcriptomics using Deep Learning with a Weighted Graph Neural Network",
+    "License": "GPL-3.0",
+    "Added": "2020-05-18",
+    "Updated": "2020-05-18",
+    "Categories": ["Classification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Reference-free Cell-type Annotation for Single-cell Transcriptomics using Deep Learning with a Weighted Graph Neural Network",
+        "DOI": "10.1101/2020.05.13.094953",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "ZJUFanLab/DeepSort"
+  },
+  {
     "Tool": "DeLorean",
     "Platform": "R",
     "Code": "https://github.com/JohnReid/DeLorean",
@@ -3093,6 +3115,28 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "ucasdp/DensityPath"
+  },
+  {
+    "Tool": "densVis",
+    "Platform": "Python/MATLAB/C++",
+    "Code": "https://github.com/hhcho/densvis",
+    "Description": "Density-preserving data visualization tools den-SNE and densMAP, augmenting the tools t-SNE and UMAP respectively",
+    "License": "MIT",
+    "Added": "2020-05-18",
+    "Updated": "2020-05-18",
+    "Categories": ["DimensionalityReduction"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Density-Preserving Data Visualization Unveils Dynamic Patterns of Single-Cell Transcriptomic Variability",
+        "DOI": "10.1101/2020.05.12.077776",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "hhcho/densvis"
   },
   {
     "Tool": "DepecheR",
@@ -6470,11 +6514,11 @@
         "Title": "Minnow: a principled framework for rapid simulation of dscRNA-seq data at the read level",
         "DOI": "10.1093/bioinformatics/btz351",
         "Date": "2019-07",
-        "Citations": 1
+        "Citations": 2
       }
     ],
     "Preprints": [],
-    "Citations": 1,
+    "Citations": 2,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "COMBINE-lab/minnow"
@@ -6548,7 +6592,7 @@
         "Title": "Multi‐Omics Factor Analysis—a framework for unsupervised integration of multi‐omics data sets",
         "DOI": "10.15252/msb.20178124",
         "Date": "2018-06",
-        "Citations": 90
+        "Citations": 91
       }
     ],
     "Preprints": [
@@ -6558,7 +6602,7 @@
         "Citations": 3
       }
     ],
-    "Citations": 93,
+    "Citations": 94,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "MOFA",
@@ -6572,9 +6616,16 @@
     "Description": "MOFA is a factor analysis model that provides a general framework for the integration of multi-omic data sets in an unsupervised fashion.",
     "License": "LGPL-3.0",
     "Added": "2019-12-20",
-    "Updated": "2019-12-20",
+    "Updated": "2020-05-18",
     "Categories": ["Clustering", "DimensionalityReduction", "Imputation", "Integration", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "MOFA+: a statistical framework for comprehensive integration of multi-modal single-cell data",
+        "DOI": "10.1186/s13059-020-02015-1",
+        "Date": "2020-05-11",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "MOFA+: a probabilistic framework for comprehensive integration of structured single-cell data",
@@ -6583,7 +6634,7 @@
       }
     ],
     "Citations": 3,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "mofapy2",
     "GitHub": "bioFAM/MOFA2"
@@ -6614,7 +6665,7 @@
         "Title": "Reversed graph embedding resolves complex single-cell trajectories",
         "DOI": "10.1038/nmeth.4402",
         "Date": "2017-08-21",
-        "Citations": 513
+        "Citations": 514
       }
     ],
     "Preprints": [
@@ -6624,7 +6675,7 @@
         "Citations": 33
       }
     ],
-    "Citations": 2239,
+    "Citations": 2240,
     "NumPubs": 3,
     "NumPreprints": 1,
     "Bioc": "monocle",
@@ -7684,10 +7735,10 @@
       {
         "Title": "PROSSTT: probabilistic simulation of single-cell RNA-seq data for complex differentiation processes",
         "DOI": "10.1101/256941",
-        "Citations": 1
+        "Citations": 2
       }
     ],
-    "Citations": 6,
+    "Citations": 7,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "soedinglab/prosstt"
@@ -8343,7 +8394,7 @@
         "Title": "Salmon provides fast and bias-aware quantification of transcript expression",
         "DOI": "10.1038/nmeth.4197",
         "Date": "2017-03-06",
-        "Citations": 1320
+        "Citations": 1321
       },
       {
         "Title": "Alevin efficiently estimates accurate gene abundances from dscRNA-seq data",
@@ -8369,7 +8420,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 1404,
+    "Citations": 1405,
     "NumPubs": 2,
     "NumPreprints": 3,
     "GitHub": "COMBINE-lab/salmon"
@@ -8581,7 +8632,7 @@
         "Title": "SC3: consensus clustering of single-cell RNA-seq data",
         "DOI": "10.1038/nmeth.4236",
         "Date": "2017-03-27",
-        "Citations": 412
+        "Citations": 413
       }
     ],
     "Preprints": [
@@ -8591,7 +8642,7 @@
         "Citations": 29
       }
     ],
-    "Citations": 441,
+    "Citations": 442,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "SC3",
@@ -9127,11 +9178,11 @@
         "Title": "Impact of similarity metrics on single-cell RNA-seq data clustering",
         "DOI": "10.1093/bib/bby076",
         "Date": "2018-08-22",
-        "Citations": 17
+        "Citations": 18
       }
     ],
     "Preprints": [],
-    "Citations": 17,
+    "Citations": 18,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "taiyunkim/scClustBench"
@@ -9455,7 +9506,7 @@
         "Title": "Impact of similarity metrics on single-cell RNA-seq data clustering",
         "DOI": "10.1093/bib/bby076",
         "Date": "2018-08-22",
-        "Citations": 17
+        "Citations": 18
       },
       {
         "Title": "scDC: single cell differential composition analysis",
@@ -9465,7 +9516,7 @@
       }
     ],
     "Preprints": [],
-    "Citations": 17,
+    "Citations": 18,
     "NumPubs": 2,
     "NumPreprints": 0,
     "GitHub": "sydneybiox/scdney"
@@ -10252,6 +10303,29 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "shmohammadi86/SCINET"
+  },
+  {
+    "Tool": "scipr",
+    "Platform": "Python",
+    "Code": "https://github.com/AmirAlavi/scipr",
+    "Description": "Single Cell Iterative Point set Registration",
+    "License": "BSD-3-Clause",
+    "Added": "2020-05-18",
+    "Updated": "2020-05-18",
+    "Categories": ["Integration"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Iterative point set registration for aligning scRNA-seq data",
+        "DOI": "10.1101/2020.05.13.093948",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "PyPI": "scipr",
+    "GitHub": "AmirAlavi/scipr"
   },
   {
     "Tool": "scirpy",
@@ -11616,6 +11690,28 @@
     "NumPreprints": 0,
     "PyPI": "scScope",
     "GitHub": "AltschulerWu-Lab/scScope"
+  },
+  {
+    "Tool": "scSDAE",
+    "Platform": "Python",
+    "Code": "https://github.com/klovbe/scSDAE",
+    "Description": "Sparsity-penalized stacked denoising autoencoders for imputing single-cell RNA-seq data",
+    "Added": "2020-05-18",
+    "Updated": "2020-05-18",
+    "Categories": ["Imputation"],
+    "Publications": [
+      {
+        "Title": "Sparsity-Penalized Stacked Denoising Autoencoders for Imputing Single-Cell RNA-Seq Data",
+        "DOI": "10.3390/genes11050532",
+        "Date": "2020-05-11",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "klovbe/scSDAE"
   },
   {
     "Tool": "scSeqR",
@@ -13648,11 +13744,11 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 9350
+        "Citations": 9352
       }
     ],
     "Preprints": [],
-    "Citations": 9350,
+    "Citations": 9352,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "alexdobin/STAR"

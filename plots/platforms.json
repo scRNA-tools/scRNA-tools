@@ -6,7 +6,7 @@
       "base": 0,
       "x": [1],
       "y": [392],
-      "text": "Platform: R<br />Count: 392<br />Percent: 52.1",
+      "text": "Platform: R<br />Count: 392<br />Percent: 51.6",
       "type": "bar",
       "marker": {
         "autocolorscale": false,
@@ -29,8 +29,8 @@
       "width": 0.95,
       "base": 0,
       "x": [2],
-      "y": [220],
-      "text": "Platform: Python<br />Count: 220<br />Percent: 29.2",
+      "y": [224],
+      "text": "Platform: Python<br />Count: 224<br />Percent: 29.5",
       "type": "bar",
       "marker": {
         "autocolorscale": false,
@@ -53,8 +53,8 @@
       "width": 0.95,
       "base": 0,
       "x": [3],
-      "y": [67],
-      "text": "Platform: C++<br />Count:  67<br />Percent: 8.9",
+      "y": [68],
+      "text": "Platform: C++<br />Count:  68<br />Percent: 9",
       "type": "bar",
       "marker": {
         "autocolorscale": false,
@@ -77,8 +77,8 @@
       "width": 0.95,
       "base": 0,
       "x": [4],
-      "y": [53],
-      "text": "Platform: MATLAB<br />Count:  53<br />Percent: 7",
+      "y": [54],
+      "text": "Platform: MATLAB<br />Count:  54<br />Percent: 7.1",
       "type": "bar",
       "marker": {
         "autocolorscale": false,
@@ -122,9 +122,9 @@
     },
     {
       "x": [1],
-      "y": [354.35],
-      "text": "R<br />52.1%",
-      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 354.35<br />Platform: R<br />Count: 354.35<br />Percent: 52.1",
+      "y": [354.05],
+      "text": "R<br />51.6%",
+      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 354.05<br />Platform: R<br />Count: 354.05<br />Percent: 51.6",
       "textfont": {
         "size": 18.8976377952756,
         "color": "rgba(255,255,255,1)"
@@ -142,9 +142,9 @@
     },
     {
       "x": [2],
-      "y": [257.65],
-      "text": "Python<br />29.2%",
-      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 257.65<br />Platform: Python<br />Count: 257.65<br />Percent: 29.2",
+      "y": [261.95],
+      "text": "Python<br />29.5%",
+      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 261.95<br />Platform: Python<br />Count: 261.95<br />Percent: 29.5",
       "textfont": {
         "size": 18.8976377952756,
         "color": "rgba(0,173,239,1)"
@@ -162,9 +162,9 @@
     },
     {
       "x": [3],
-      "y": [104.65],
-      "text": "C++<br />8.9%",
-      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 104.65<br />Platform: C++<br />Count: 104.65<br />Percent: 8.9",
+      "y": [105.95],
+      "text": "C++<br />9%",
+      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 105.95<br />Platform: C++<br />Count: 105.95<br />Percent: 9",
       "textfont": {
         "size": 18.8976377952756,
         "color": "rgba(141,198,63,1)"
@@ -182,9 +182,9 @@
     },
     {
       "x": [4],
-      "y": [90.65],
-      "text": "MATLAB<br />7%",
-      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...:  90.65<br />Platform: MATLAB<br />Count:  90.65<br />Percent: 7",
+      "y": [91.95],
+      "text": "MATLAB<br />7.1%",
+      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...:  91.95<br />Platform: MATLAB<br />Count:  91.95<br />Percent: 7.1",
       "textfont": {
         "size": 18.8976377952756,
         "color": "rgba(0,183,198,1)"
@@ -202,9 +202,9 @@
     },
     {
       "x": [5],
-      "y": [58.65],
+      "y": [58.95],
       "text": "Other<br />2.8%",
-      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...:  58.65<br />Platform: Other<br />Count:  58.65<br />Percent: 2.8",
+      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...:  58.95<br />Platform: Other<br />Count:  58.95<br />Percent: 2.8",
       "textfont": {
         "size": 18.8976377952756,
         "color": "rgba(244,121,32,1)"
@@ -355,7 +355,7 @@
   },
   "source": "A",
   "attrs": {
-    "31cc2f4f23bb": {
+    "31cb75001ff9": {
       "x": {},
       "y": {},
       "fill": {},
@@ -363,7 +363,7 @@
       "text": {},
       "type": "bar"
     },
-    "31cc4ea5b4b0": {
+    "31cb42885ca4": {
       "y": {},
       "label": {},
       "x": {},
@@ -373,10 +373,10 @@
       "text": {}
     }
   },
-  "cur_data": "31cc2f4f23bb",
+  "cur_data": "31cb75001ff9",
   "visdat": {
-    "31cc2f4f23bb": ["function (y) ", "x"],
-    "31cc4ea5b4b0": ["function (y) ", "x"]
+    "31cb75001ff9": ["function (y) ", "x"],
+    "31cb42885ca4": ["function (y) ", "x"]
   },
   "highlight": {
     "on": "plotly_click",
