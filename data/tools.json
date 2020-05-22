@@ -1351,6 +1351,29 @@
     "GitHub": "yuvallb/CaSTLe"
   },
   {
+    "Tool": "CausalDAG",
+    "Platform": "Python",
+    "Code": "https://github.com/uhlerlab/causaldag",
+    "Description": "Includes the DCI algorithm for inferring changes between two causal graphs given gene expression data from the two conditions",
+    "License": "BSB-3-Clause",
+    "Added": "2020-05-22",
+    "Updated": "2020-05-22",
+    "Categories": ["GeneNetworks"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "DCI: Learning Causal Differences between Gene Regulatory Networks",
+        "DOI": "10.1101/2020.05.13.093765",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "PyPI": "causaldag",
+    "GitHub": "uhlerlab/causaldag"
+  },
+  {
     "Tool": "cb_sniffer",
     "Platform": "Python",
     "Code": "https://github.com/sridnona/cb_sniffer",
@@ -2024,6 +2047,29 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "VCCRI/CIDR"
+  },
+  {
+    "Tool": "CIPR",
+    "Platform": "R",
+    "Code": "https://github.com/atakanekiz/CIPR-Package",
+    "Description": "Cluster Identity PRedictor (CIPR) provides a graphical user interface to quickly score gene expression profiles of unknown cell clusters against mouse or human references",
+    "License": "GPL-3",
+    "Added": "2020-05-22",
+    "Updated": "2020-05-22",
+    "Categories": ["Classification", "Interactive", "MarkerGenes", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "CIPR: a web-based R/shiny app and R package to annotate cell clusters in single cell RNA sequencing experiments",
+        "DOI": "10.1186/s12859-020-3538-2",
+        "Date": "2020-05-15",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "atakanekiz/CIPR-Package"
   },
   {
     "Tool": "CiteFuse",
@@ -5440,6 +5486,27 @@
     "GitHub": "broadinstitute/inferCNV"
   },
   {
+    "Tool": "INSCT",
+    "Platform": "Python",
+    "Code": "https://github.com/lkmklsmn/insct",
+    "Description": "INtegration of millions of Single Cells using batch-aware Triplet networks",
+    "Added": "2020-05-22",
+    "Updated": "2020-05-22",
+    "Categories": ["Integration"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "INSCT: Integrating millions of single cells using batch-aware triplet neural networks",
+        "DOI": "10.1101/2020.05.16.100024",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "lkmklsmn/insct"
+  },
+  {
     "Tool": "IronThrone-GoT",
     "Platform": "Perl",
     "Code": "https://github.com/landau-lab/IronThrone-GoT",
@@ -7728,14 +7795,14 @@
         "Title": "PROSSTT: probabilistic simulation of single-cell RNA-seq data for complex differentiation processes",
         "DOI": "10.1093/bioinformatics/btz078",
         "Date": "2019-02-01",
-        "Citations": 5
+        "Citations": 6
       }
     ],
     "Preprints": [
       {
         "Title": "PROSSTT: probabilistic simulation of single-cell RNA-seq data for complex differentiation processes",
         "DOI": "10.1101/256941",
-        "Citations": 2
+        "Citations": 1
       }
     ],
     "Citations": 7,
@@ -9164,6 +9231,28 @@
     "NumPreprints": 1,
     "Bioc": "scClassify",
     "GitHub": "SydneyBioX/scClassify"
+  },
+  {
+    "Tool": "scCLUE",
+    "Platform": "R",
+    "Code": "https://github.com/jeonglab/scCLUE",
+    "Description": "single cell CLUstering through Ensemble feature selection and similarity measurements",
+    "Added": "2020-05-22",
+    "Updated": "2020-05-22",
+    "Categories": ["Clustering"],
+    "Publications": [
+      {
+        "Title": "Effective single-cell clustering through ensemble feature selection and similarity measurements",
+        "DOI": "10.1016/j.compbiolchem.2020.107283",
+        "Date": "2020-05",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "jeonglab/scCLUE"
   },
   {
     "Tool": "scClustBench",
@@ -13124,6 +13213,23 @@
     "Citations": 21,
     "NumPubs": 1,
     "NumPreprints": 0
+  },
+  {
+    "Tool": "Sinto",
+    "Platform": "Python",
+    "Code": "https://github.com/timoast/sinto",
+    "Description": "Sinto is a toolkit for processing aligned single-cell data",
+    "License": "MIT",
+    "Added": "2020-05-22",
+    "Updated": "2020-05-22",
+    "Categories": ["UMIs"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "PyPI": "sinto",
+    "GitHub": "timoast/sinto"
   },
   {
     "Tool": "SIP",
