@@ -492,6 +492,28 @@
     "GitHub": "kasparmartens/BasisVAE"
   },
   {
+    "Tool": "BatchBench",
+    "Platform": "Nextflow",
+    "Code": "https://github.com/cellgeni/batchbench",
+    "Description": "BatchBench is a Nextflow workflow for running and comparing scRNA-seq batch effect correction methods",
+    "License": "GPL-3.0",
+    "Added": "2020-05-29",
+    "Updated": "2020-05-29",
+    "Categories": ["Integration", "QualityControl", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Flexible comparison of batch correction methods for single-cell RNA-seq using BatchBench",
+        "DOI": "10.1101/2020.05.22.111211",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "cellgeni/batchbench"
+  },
+  {
     "Tool": "batchelor",
     "Platform": "R",
     "Code": "https://github.com/LTLA/batchelor",
@@ -1888,6 +1910,29 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "morris-lab/CellTagR"
+  },
+  {
+    "Tool": "celltalker",
+    "Platform": "R",
+    "Code": "https://github.com/arc85/celltalker",
+    "Description": "The goal of celltalker is to infer putative ligand and receptor interactions from single-cell RNAseq data",
+    "License": "MIT",
+    "Added": "2020-05-29",
+    "Updated": "2020-05-29",
+    "Categories": ["GeneNetworks", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "Immune Landscape of Viral- and Carcinogen-Driven Head and Neck Cancer",
+        "DOI": "10.1016/j.immuni.2019.11.014",
+        "Date": "2020-01",
+        "Citations": 3
+      }
+    ],
+    "Preprints": [],
+    "Citations": 3,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "arc85/celltalker"
   },
   {
     "Tool": "CellTrails",
@@ -3646,6 +3691,29 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "eugenelin1/DRA"
+  },
+  {
+    "Tool": "dragonsc",
+    "Platform": "R",
+    "Code": "https://github.com/arc85/dragonsc",
+    "Description": "DeteRministic Annealing Gaussian mixture mOdels for clusteriNg Single-Cell data",
+    "License": "CC0",
+    "Added": "2020-05-29",
+    "Updated": "2020-05-29",
+    "Categories": ["Clustering"],
+    "Publications": [
+      {
+        "Title": "Immune Landscape of Viral- and Carcinogen-Driven Head and Neck Cancer",
+        "DOI": "10.1016/j.immuni.2019.11.014",
+        "Date": "2020-01",
+        "Citations": 3
+      }
+    ],
+    "Preprints": [],
+    "Citations": 3,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "arc85/dragonsc"
   },
   {
     "Tool": "DrImpute",
@@ -6274,13 +6342,19 @@
     "Description": "Implements the mini-batch k-means algorithm for large datasets, including support for on-disk data representation.",
     "License": "MIT",
     "Added": "2019-06-28",
-    "Updated": "2019-06-28",
+    "Updated": "2020-05-29",
     "Categories": ["Clustering"],
     "Publications": [],
-    "Preprints": [],
+    "Preprints": [
+      {
+        "Title": "mbkmeans: fast clustering for single cell data using mini-batch k-means",
+        "DOI": "10.1101/2020.05.27.119438",
+        "Citations": 0
+      }
+    ],
     "Citations": 0,
     "NumPubs": 0,
-    "NumPreprints": 0,
+    "NumPreprints": 1,
     "Bioc": "mbkmeans",
     "GitHub": "drisso/mbkmeans"
   },
@@ -6920,6 +6994,23 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "bm2-lab/MUSIC"
+  },
+  {
+    "Tool": "NaiveDE",
+    "Platform": "Python",
+    "Code": "https://github.com/Teichlab/NaiveDE",
+    "Description": "This package implements the simplest form of a Differential Expression test",
+    "License": "MIT",
+    "Added": "2020-05-29",
+    "Updated": "2020-05-29",
+    "Categories": ["DifferentialExpression", "Simulation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "PyPI": "NaiveDE",
+    "GitHub": "Teichlab/NaiveDE"
   },
   {
     "Tool": "NanoPARE",
@@ -9110,12 +9201,19 @@
     "Description": "Single Cell Clustering Assessment Framework (SCCAF) is a novel method for automated identification of putative cell types from single cell RNA-seq (scRNA-seq) data",
     "License": "MIT",
     "Added": "2020-04-28",
-    "Updated": "2020-04-28",
+    "Updated": "2020-05-29",
     "Categories": ["Clustering", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Putative cell type discovery from single-cell gene expression data",
+        "DOI": "10.1038/s41592-020-0825-9",
+        "Date": "2020-05-18",
+        "Citations": 0
+      }
+    ],
     "Preprints": [],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 0,
     "PyPI": "SCCAF",
     "GitHub": "SCCAF/sccaf"
@@ -10221,6 +10319,28 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "simslab/scHPF"
+  },
+  {
+    "Tool": "scIB",
+    "Platform": "Python",
+    "Code": "https://github.com/theislab/scib",
+    "Description": "A Python pipeline for benchmarking scRNA-seq integration methods",
+    "License": "MIT",
+    "Added": "2020-05-29",
+    "Updated": "2020-05-29",
+    "Categories": ["Integration"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Benchmarking atlas-level data integration in single-cell genomics",
+        "DOI": "10.1101/2020.05.22.111161",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "theislab/scib"
   },
   {
     "Tool": "scicast",
@@ -13132,6 +13252,29 @@
     "GitHub": "dviraran/SingleR"
   },
   {
+    "Tool": "singleseqgset",
+    "Platform": "R",
+    "Code": "https://github.com/arc85/singleseqgset",
+    "Description": "singleseqgset is a package for gene set enrichment analysis for single-cell RNAseq data",
+    "License": "CC0",
+    "Added": "2020-05-29",
+    "Updated": "2020-05-29",
+    "Categories": ["GeneSets"],
+    "Publications": [
+      {
+        "Title": "Immune Landscape of Viral- and Carcinogen-Driven Head and Neck Cancer",
+        "DOI": "10.1016/j.immuni.2019.11.014",
+        "Date": "2020-01",
+        "Citations": 3
+      }
+    ],
+    "Preprints": [],
+    "Citations": 3,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "arc85/singleseqgset"
+  },
+  {
     "Tool": "SingleSplice",
     "Platform": "R/Perl/C++",
     "Code": "https://github.com/jw156605/SingleSplice",
@@ -13569,7 +13712,7 @@
     "Description": "An R package for the estimation and removal of cell free mRNA contamination in droplet based single cell RNA-seq data.",
     "License": "GPL-2",
     "Added": "2018-05-13",
-    "Updated": "2018-05-13",
+    "Updated": "2020-05-29",
     "Categories": ["Quantification", "Visualisation"],
     "Publications": [],
     "Preprints": [
@@ -13582,6 +13725,7 @@
     "Citations": 38,
     "NumPubs": 0,
     "NumPreprints": 1,
+    "CRAN": "SoupX",
     "GitHub": "constantAmateur/SoupX"
   },
   {
@@ -14247,9 +14391,16 @@
     "Description": "Cluster single cells and analyze cell clade relationships with colorful visualizations.",
     "License": "GPL-3",
     "Added": "2019-01-18",
-    "Updated": "2019-10-02",
+    "Updated": "2020-05-29",
     "Categories": ["Clustering", "DifferentialExpression", "RareCells", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "TooManyCells identifies and visualizes relationships of single-cell clades",
+        "DOI": "10.1038/s41592-020-0748-5",
+        "Date": "2020-03-02",
+        "Citations": 2
+      }
+    ],
     "Preprints": [
       {
         "Title": "TooManyCells identifies and visualizes relationships of single-cell clades",
@@ -14257,8 +14408,8 @@
         "Citations": 0
       }
     ],
-    "Citations": 0,
-    "NumPubs": 0,
+    "Citations": 2,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "CRAN": "TooManyCellsR",
     "GitHub": "faryabiLab/too-many-cells"
@@ -14927,7 +15078,7 @@
         "Title": "Functional interpretation of single cell similarity maps",
         "DOI": "10.1038/s41467-019-12235-0",
         "Date": "2019-09-26",
-        "Citations": 8
+        "Citations": 7
       }
     ],
     "Preprints": [
@@ -14937,7 +15088,7 @@
         "Citations": 4
       }
     ],
-    "Citations": 12,
+    "Citations": 11,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "YosefLab/VISION"
