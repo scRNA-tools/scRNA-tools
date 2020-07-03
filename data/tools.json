@@ -8106,6 +8106,28 @@
     "GitHub": "ayurovsky/Pre-Phaser"
   },
   {
+    "Tool": "ProjecTILs",
+    "Platform": "R",
+    "Code": "https://github.com/carmonalab/ProjecTILs",
+    "Description": "Computational tool to project new scRNA-seq data into a reference map of T cells, allowing their direct comparison in a stable, annotated system of coordinates.",
+    "License": "GPL-3",
+    "Added": "2020-07-03",
+    "Updated": "2020-07-03",
+    "Categories": ["Classification", "DimensionalityReduction", "Immune", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Projecting single-cell transcriptomics data onto a reference T cell atlas to interpret immune responses",
+        "DOI": "10.1101/2020.06.23.166546",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "carmonalab/ProjecTILs"
+  },
+  {
     "Tool": "PROSSTT",
     "Platform": "Python",
     "Code": "https://github.com/soedinglab/prosstt",
@@ -8163,6 +8185,28 @@
     "NumPreprints": 1,
     "PyPI": "protaccel",
     "GitHub": "pachterlab/GSP_2019"
+  },
+  {
+    "Tool": "Pseudocell_Tracer",
+    "Platform": "Python",
+    "Code": "https://github.com/akds/pseudocell",
+    "Description": "Infers trajectories in pseudospace rather than in pseudotime",
+    "License": "MIT",
+    "Added": "2020-07-03",
+    "Updated": "2020-07-03",
+    "Categories": ["DimensionalityReduction", "Ordering", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Inferring cellular trajectories from scRNA-seq using Pseudocell Tracer",
+        "DOI": "10.1101/2020.06.26.173179",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "akds/pseudocell"
   },
   {
     "Tool": "pseudodynamics",
@@ -8613,9 +8657,16 @@
     "Description": "ROGUE: an entropy-based universal metric for assessing the purity of single cell population",
     "License": "BSD-3-Clause",
     "Added": "2019-11-03",
-    "Updated": "2019-11-03",
+    "Updated": "2020-07-03",
     "Categories": ["Clustering", "GeneFiltering", "QualityControl", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "An entropy-based metric for assessing the purity of single cell populations",
+        "DOI": "10.1038/s41467-020-16904-3",
+        "Date": "2020-06-22",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "ROGUE: an entropy-based universal metric for assessing the purity of single cell population",
@@ -8624,7 +8675,7 @@
       }
     ],
     "Citations": 2,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "PaulingLiu/ROGUE"
   },
@@ -9594,9 +9645,16 @@
     "Description": "Single cell classification via cell-type hierarchies based on ensemble learning and sample size estimation.",
     "License": "GPL-3",
     "Added": "2019-09-30",
-    "Updated": "2020-04-29",
+    "Updated": "2020-07-03",
     "Categories": ["Classification", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "scClassify: sample size estimation and multiscale classification of cells using single and multiple reference",
+        "DOI": "10.15252/msb.20199389",
+        "Date": "2020-06",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "scClassify: hierarchical classification of cells",
@@ -9605,7 +9663,7 @@
       }
     ],
     "Citations": 5,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "scClassify",
     "GitHub": "SydneyBioX/scClassify"
@@ -12847,6 +12905,29 @@
     "NumPreprints": 0
   },
   {
+    "Tool": "SelfE",
+    "Platform": "R",
+    "Code": "https://github.com/Priyadarshini-Rai/SelfE",
+    "Description": "SelfE is a feature selection technique offering transparency for the user. It is based on L2-minimization to determine an optimal subset of feature vectors enabling sub-space structures preservation as in the observed data.",
+    "License": "Artistic-2.0",
+    "Added": "2020-07-03",
+    "Updated": "2020-07-03",
+    "Categories": ["VariableGenes"],
+    "Publications": [
+      {
+        "Title": "SelfE: Gene Selection via Self-Expression for Single-Cell Data",
+        "DOI": "10.1109/TCBB.2020.2997326",
+        "Date": "2020",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "Priyadarshini-Rai/SelfE"
+  },
+  {
     "Tool": "SEPA",
     "Platform": "R",
     "Code": "https://github.com/zji90/SEPA",
@@ -13482,7 +13563,7 @@
     "Description": "singleCellHaystack is a package for finding surprising needles (=genes) in haystacks (=multi-dimensional representations of single cell transcriptome data)",
     "License": "MIT",
     "Added": "2019-02-25",
-    "Updated": "2019-05-07",
+    "Updated": "2020-07-03",
     "Categories": ["MarkerGenes", "Visualisation"],
     "Publications": [],
     "Preprints": [
@@ -13495,6 +13576,7 @@
     "Citations": 0,
     "NumPubs": 0,
     "NumPreprints": 1,
+    "CRAN": "singleCellHaystack",
     "GitHub": "alexisvdb/singleCellHaystack"
   },
   {
@@ -13987,9 +14069,16 @@
     "Description": "solo is a neural network framework to classify doublets, so that you can remove them from your data and clean your single cell profile.",
     "License": "MIT",
     "Added": "2019-11-21",
-    "Updated": "2020-01-18",
+    "Updated": "2020-07-03",
     "Categories": ["QualityControl", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Solo: Doublet Identification in Single-Cell RNA-Seq via Semi-Supervised Deep Learning",
+        "DOI": "10.1016/j.cels.2020.05.010",
+        "Date": "2020-06",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Solo: doublet identification via semi-supervised deep learning",
@@ -13998,7 +14087,7 @@
       }
     ],
     "Citations": 1,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "solo-sc",
     "GitHub": "calico/Solo"
