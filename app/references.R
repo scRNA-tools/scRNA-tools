@@ -26,21 +26,25 @@ get_references <- function(dois) {
 
     references <- purrr::map_dfr(dois, function(.doi) {
 
-        biorxiv  <- stringr::str_detect(.doi, "^10.1101/")
         arxiv    <- stringr::str_detect(.doi, "arxiv")
-        peerj    <- stringr::str_detect(.doi, "^10.7287/")
-        square   <- stringr::str_detect(.doi, "^10.21203/")
-        preprint <- biorxiv || arxiv || peerj || square
 
         if (!arxiv) {
             cr_data <- rcrossref::cr_works(.doi, .progress = "text")$data
             title <- cr_data$title
+            
+            peerj    <- stringr::str_detect(.doi, "^10.7287/")
+            square   <- stringr::str_detect(.doi, "^10.21203/")
+            biorxiv  <- stringr::str_detect(.doi, "^10.1101/")
+            biorxiv  <- biorxiv && !("container.title" %in% colnames(cr_data))
+            preprint <- biorxiv || arxiv || peerj || square
+            
             date <- dplyr::if_else(preprint, NA_character_, cr_data$issued)
             citations <- rcrossref::cr_citation_count(.doi)$count
         } else {
             arxiv_id <- stringr::str_remove(.doi, "arxiv/")
             arxiv_data <- aRxiv::arxiv_search(id_list = arxiv_id)
             title <- arxiv_data$title
+            preprint <- TRUE
             date <- NA
             citations <- NA
         }
