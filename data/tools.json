@@ -85,11 +85,11 @@
         "Title": "alona: a web server for single cell RNA-seq analysis",
         "DOI": "10.1093/bioinformatics/btaa269",
         "Date": "2020-04-23",
-        "Citations": 0
+        "Citations": 1
       }
     ],
     "Preprints": [],
-    "Citations": 0,
+    "Citations": 1,
     "NumPubs": 1,
     "NumPreprints": 0,
     "PyPI": "adobo",
@@ -265,7 +265,7 @@
         "Title": "SCENIC: single-cell regulatory network inference and clustering",
         "DOI": "10.1038/nmeth.4463",
         "Date": "2017-10-09",
-        "Citations": 397
+        "Citations": 398
       }
     ],
     "Preprints": [
@@ -275,7 +275,7 @@
         "Citations": 3
       }
     ],
-    "Citations": 400,
+    "Citations": 401,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "AUCell",
@@ -1027,7 +1027,7 @@
         "Title": "BGP: identifying gene-specific branching dynamics from single-cell data with a branching Gaussian process",
         "DOI": "10.1186/s13059-018-1440-2",
         "Date": "2018-05-29",
-        "Citations": 8
+        "Citations": 9
       }
     ],
     "Preprints": [
@@ -1037,7 +1037,7 @@
         "Citations": 3
       }
     ],
-    "Citations": 11,
+    "Citations": 12,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "ManchesterBioinference/BranchedGP"
@@ -1792,6 +1792,28 @@
     "GitHub": "maximilianh/cellBrowser"
   },
   {
+    "Tool": "CellChat",
+    "Platform": "R/C++",
+    "Code": "https://github.com/sqjin/CellChat",
+    "Description": "Inference and analysis of cell-cell communication",
+    "License": "GPL-3.0",
+    "Added": "2020-07-31",
+    "Updated": "2020-07-31",
+    "Categories": ["GeneNetworks", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Inference and analysis of cell-cell communication using CellChat",
+        "DOI": "10.1101/2020.07.21.214387",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "sqjin/CellChat"
+  },
+  {
     "Tool": "CellFishing",
     "Platform": "Julia",
     "Code": "https://github.com/bicycle1885/CellFishing.jl",
@@ -1814,20 +1836,49 @@
     "GitHub": "bicycle1885/CellFishing.jl"
   },
   {
+    "Tool": "cellgrid",
+    "Platform": "Python",
+    "Code": "https://github.com/Brodinlab/cellgrid",
+    "Description": "Cell classification by learning known phenotypes",
+    "License": "MIT",
+    "Added": "2020-07-31",
+    "Updated": "2020-07-31",
+    "Categories": ["Classification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Single-cell classification using learned cell phenotypes",
+        "DOI": "10.1101/2020.07.22.216002",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "PyPI": "cellgrid",
+    "GitHub": "Brodinlab/cellgrid"
+  },
+  {
     "Tool": "CellID",
     "Platform": "R/C++",
-    "Code": "https://github.com/cbl-imagine/CellID",
+    "Code": "https://github.com/RausellLab/CelliD",
     "Description": "Gene signature extraction and cell identity recognition at individual cell level",
     "License": "GPL-3.0",
     "Added": "2020-06-26",
-    "Updated": "2020-06-26",
-    "Categories": ["DimensionalityReduction", "GeneSets", "Visualisation"],
+    "Updated": "2020-07-31",
+    "Categories": ["Classification", "DimensionalityReduction", "GeneSets", "Visualisation"],
     "Publications": [],
-    "Preprints": [],
+    "Preprints": [
+      {
+        "Title": "Cell-ID: gene signature extraction and cell identity recognition at individual cell level",
+        "DOI": "10.1101/2020.07.23.215525",
+        "Citations": 0
+      }
+    ],
     "Citations": 0,
     "NumPubs": 0,
-    "NumPreprints": 0,
-    "GitHub": "cbl-imagine/CellID"
+    "NumPreprints": 1,
+    "GitHub": "RausellLab/CelliD"
   },
   {
     "Tool": "Cellity",
@@ -3761,6 +3812,28 @@
     "GitHub": "qzhan321/Dmatch"
   },
   {
+    "Tool": "Domino",
+    "Platform": "R",
+    "Code": "https://github.com/chris-cherry/domino",
+    "Description": "Domino is a tool for analysis of intra- and intercellular signaling in single cell RNA seq based on transcription factor activation",
+    "License": "GPL-3.0",
+    "Added": "2020-07-31",
+    "Updated": "2020-07-31",
+    "Categories": ["GeneNetworks", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Domino: reconstructing intercellular signaling dynamics with transcription factor activation in model biomaterial environments",
+        "DOI": "10.1101/2020.07.24.218537",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "chris-cherry/domino"
+  },
+  {
     "Tool": "DoubletDecon",
     "Platform": "R",
     "Code": "https://github.com/EDePasquale/DoubletDecon",
@@ -4838,6 +4911,27 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "cole-trapnell-lab/garnett"
+  },
+  {
+    "Tool": "gCAnno",
+    "Platform": "Python",
+    "Code": "https://github.com/xjtu-omics/gCAnno",
+    "Description": "A graph-based single cell type annotation method",
+    "Added": "2020-07-31",
+    "Updated": "2020-07-31",
+    "Categories": ["Classification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "gCAnno: A Graph-based Single Cell Type Annotation Method",
+        "DOI": "10.21203/rs.3.rs-36926/v1",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "xjtu-omics/gCAnno"
   },
   {
     "Tool": "GenePattern",
@@ -6167,7 +6261,7 @@
         "Title": "Near-optimal probabilistic RNA-seq quantification",
         "DOI": "10.1038/nbt.3519",
         "Date": "2016-04-04",
-        "Citations": 2251
+        "Citations": 2252
       }
     ],
     "Preprints": [
@@ -6182,7 +6276,7 @@
         "Citations": 26
       }
     ],
-    "Citations": 2283,
+    "Citations": 2284,
     "NumPubs": 1,
     "NumPreprints": 2,
     "GitHub": "pachterlab/kallisto"
@@ -6258,6 +6352,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "epigen/KPNN"
+  },
+  {
+    "Tool": "LAK",
+    "Platform": "R",
+    "Code": "https://github.com/HIT-biostatistical/LAK",
+    "Description": "A computational pipeline for single-cell RNA-seq data clustering analysis using Lasso And K-means based feature selection method",
+    "Added": "2020-07-31",
+    "Updated": "2020-07-31",
+    "Categories": ["Clustering"],
+    "Publications": [
+      {
+        "Title": "LAK: Lasso and K-Means Based Single-Cell RNA-Seq Data Clustering Analysis",
+        "DOI": "10.1109/ACCESS.2020.3008681",
+        "Date": "2020",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "HIT-biostatistical/LAK"
   },
   {
     "Tool": "LAmbDA",
@@ -9046,7 +9162,7 @@
         "Title": "Salmon provides fast and bias-aware quantification of transcript expression",
         "DOI": "10.1038/nmeth.4197",
         "Date": "2017-03-06",
-        "Citations": 1557
+        "Citations": 1560
       },
       {
         "Title": "Alevin efficiently estimates accurate gene abundances from dscRNA-seq data",
@@ -9072,7 +9188,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 1652,
+    "Citations": 1655,
     "NumPubs": 2,
     "NumPreprints": 3,
     "GitHub": "COMBINE-lab/salmon"
@@ -9210,7 +9326,7 @@
     "Description": "R package for transfer learning of scRNA-seq denoising.",
     "License": "GPL (>=2)",
     "Added": "2019-11-03",
-    "Updated": "2019-11-03",
+    "Updated": "2020-07-31",
     "Categories": ["DimensionalityReduction", "Imputation"],
     "Publications": [
       {
@@ -9218,6 +9334,12 @@
         "DOI": "10.1038/s41592-019-0537-1",
         "Date": "2019-08-30",
         "Citations": 29
+      },
+      {
+        "Title": "Online Single-cell RNA-seq Data Denoising with Transfer Learning",
+        "DOI": "10.1145/3311790.3399617",
+        "Date": "2020-07-21",
+        "Citations": 0
       }
     ],
     "Preprints": [
@@ -9228,7 +9350,7 @@
       }
     ],
     "Citations": 31,
-    "NumPubs": 1,
+    "NumPubs": 2,
     "NumPreprints": 1,
     "GitHub": "jingshuw/SAVERX"
   },
@@ -9485,7 +9607,7 @@
         "Title": "SCANPY: large-scale single-cell gene expression data analysis",
         "DOI": "10.1186/s13059-017-1382-0",
         "Date": "2018-02-06",
-        "Citations": 444
+        "Citations": 445
       },
       {
         "Title": "PAGA: graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells",
@@ -9506,7 +9628,7 @@
         "Citations": 21
       }
     ],
-    "Citations": 573,
+    "Citations": 574,
     "NumPubs": 2,
     "NumPreprints": 2,
     "PyPI": "scanpy",
@@ -10414,7 +10536,7 @@
         "Title": "SCENIC: single-cell regulatory network inference and clustering",
         "DOI": "10.1038/nmeth.4463",
         "Date": "2017-10-09",
-        "Citations": 397
+        "Citations": 398
       },
       {
         "Title": "A scalable SCENIC workflow for single-cell gene regulatory network analysis",
@@ -10430,7 +10552,7 @@
         "Citations": 3
       }
     ],
-    "Citations": 402,
+    "Citations": 403,
     "NumPubs": 2,
     "NumPreprints": 1,
     "PyPI": "pyscenic",
@@ -13256,13 +13378,13 @@
         "Title": "Comprehensive Integration of Single-Cell Data",
         "DOI": "10.1016/j.cell.2019.05.031",
         "Date": "2019-06",
-        "Citations": 781
+        "Citations": 783
       },
       {
         "Title": "Spatial reconstruction of single-cell gene expression data",
         "DOI": "10.1038/nbt.3192",
         "Date": "2015-04-13",
-        "Citations": 1209
+        "Citations": 1210
       },
       {
         "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
@@ -13288,7 +13410,7 @@
         "Citations": 44
       }
     ],
-    "Citations": 3951,
+    "Citations": 3954,
     "NumPubs": 3,
     "NumPreprints": 3,
     "CRAN": "Seurat",
@@ -14731,11 +14853,11 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 10375
+        "Citations": 10378
       }
     ],
     "Preprints": [],
-    "Citations": 10375,
+    "Citations": 10378,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "alexdobin/STAR"
@@ -15447,7 +15569,7 @@
         "Title": "UMI-tools: modeling sequencing errors in Unique Molecular Identifiers to improve quantification accuracy",
         "DOI": "10.1101/gr.209601.116",
         "Date": "2017-01-18",
-        "Citations": 276
+        "Citations": 277
       }
     ],
     "Preprints": [
@@ -15457,7 +15579,7 @@
         "Citations": 8
       }
     ],
-    "Citations": 284,
+    "Citations": 285,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "umi-tools",
