@@ -344,6 +344,8 @@ Conos	MarkerGenes
 Conos	Visualisation
 constclust	Clustering
 constclust	Visualisation
+corral	DimensionalityReduction
+corral	Integration
 countClust	Clustering
 countClust	DifferentialExpression
 countClust	DimensionalityReduction
@@ -603,6 +605,11 @@ GiniClust3	RareCells
 GiniClust3	Visualisation
 GLM-PCA	DimensionalityReduction
 GMM-Demux	QualityControl
+GPcounts	DifferentialExpression
+GPcounts	ExpressionPatterns
+GPcounts	Ordering
+GPcounts	VariableGenes
+GPcounts	Visualisation
 GPfates	Ordering
 GPfates	Visualisation
 GPseudoClust	ExpressionPatterns
@@ -944,6 +951,15 @@ pCreode	DimensionalityReduction
 pCreode	Ordering
 pCreode	Visualisation
 peco	CellCycle
+Pegasus	Clustering
+Pegasus	DifferentialExpression
+Pegasus	DimensionalityReduction
+Pegasus	Integration
+Pegasus	Normalisation
+Pegasus	Ordering
+Pegasus	QualityControl
+Pegasus	VariableGenes
+Pegasus	Visualisation
 PHATE	DimensionalityReduction
 PHATE	Visualisation
 PhenoPath	Ordering
@@ -993,6 +1009,7 @@ PyMINEr	GeneNetworks
 PyMINEr	GeneSets
 PyMINEr	Visualisation
 pyNVR	VariableGenes
+qSNE	DimensionalityReduction
 quasildr	DimensionalityReduction
 quasildr	Ordering
 QUBIC2	Clustering
@@ -1113,6 +1130,9 @@ scAlign	DimensionalityReduction
 scAlign	Integration
 scAlign	RareCells
 scAlleleCount	AlleleSpecific
+scAnCluster	Classification
+scAnCluster	Clustering
+scAnCluster	MarkerGenes
 scanorama	Integration
 Scanpy	Clustering
 Scanpy	DifferentialExpression
@@ -1526,6 +1546,7 @@ scVI	Integration
 scVirtualCyto	Interactive
 scVirtualCyto	Visualisation
 scvis	DimensionalityReduction
+scvr	Visualisation
 scziDesk	Clustering
 scziDesk	DimensionalityReduction
 SEGtool	GeneFiltering
@@ -1759,6 +1780,9 @@ Tempora	Visualisation
 TENET	GeneNetworks
 TILPRED	Classification
 TILPRED	Immune
+TinGa	DimensionalityReduction
+TinGa	Ordering
+TinGa	Visualisation
 tn_test	DifferentialExpression
 tn_test	Visualisation
 TooManyCells	Clustering
