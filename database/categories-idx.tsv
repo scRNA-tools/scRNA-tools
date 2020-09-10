@@ -123,6 +123,7 @@ bigSCale2	Normalisation
 bigSCale2	Ordering
 bigSCale2	VariableGenes
 bigSCale2	Visualisation
+bindSC	Integration
 BingleSeq	Clustering
 BingleSeq	DifferentialExpression
 BingleSeq	GeneSets
@@ -273,6 +274,8 @@ CellView	Interactive
 CellView	Visualisation
 cellxgene	Interactive
 cellxgene	Visualisation
+cellxgene_VIP	Interactive
+cellxgene_VIP	Visualisation
 Cerebro	GeneSets
 Cerebro	Interactive
 Cerebro	Visualisation
@@ -798,6 +801,7 @@ MAESTRO	QualityControl
 MAESTRO	Quantification
 MAESTRO	UMIs
 MAESTRO	Visualisation
+MAGAN	Integration
 MAGIC	DimensionalityReduction
 MAGIC	Imputation
 MAGIC	Interactive
@@ -945,6 +949,9 @@ OnClass	MarkerGenes
 OnlinePCA	DimensionalityReduction
 OnlinePCA	Visualisation
 OpenVisuMap	DimensionalityReduction
+OscoNet	CellCycle
+OscoNet	ExpressionPatterns
+OscoNet	Ordering
 Oscope	CellCycle
 Ouija	ExpressionPatterns
 Ouija	MarkerGenes
@@ -992,6 +999,7 @@ PHATE	DimensionalityReduction
 PHATE	Visualisation
 PhenoPath	Ordering
 PhenoPath	Simulation
+PieParty	Visualisation
 PIMseq	DifferentialExpression
 PIMseq	Visualisation
 pipeComp	Visualisation
@@ -1017,6 +1025,7 @@ POWSC	Visualisation
 powsimR	Simulation
 powsimR	Visualisation
 Pre-Phaser	CellCycle
+PRESCIENT	Ordering
 ProjecTILs	Classification
 ProjecTILs	DimensionalityReduction
 ProjecTILs	Immune
@@ -1222,6 +1231,8 @@ scDataviz	DimensionalityReduction
 scDataviz	GeneSets
 scDataviz	MarkerGenes
 scDataviz	Visualisation
+scDblFinder	Clustering
+scDblFinder	QualityControl
 scDD	DifferentialExpression
 scDD	Simulation
 scDDboost	DifferentialExpression
@@ -1896,9 +1907,12 @@ VDJPuzzle	Assembly
 VDJPuzzle	Immune
 VDJPuzzle	Quantification
 VDJPuzzle	Visualisation
+VECTOR	DimensionalityReduction
+VECTOR	Ordering
 velocyto	AlternativeSplicing
 velocyto	Ordering
 velocyto	Visualisation
+VeTra	Ordering
 VIPER	Imputation
 VIPER	Visualisation
 Vireo	Variants
