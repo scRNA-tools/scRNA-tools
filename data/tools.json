@@ -85,11 +85,11 @@
         "Title": "alona: a web server for single cell RNA-seq analysis",
         "DOI": "10.1093/bioinformatics/btaa269",
         "Date": "2020-04-23",
-        "Citations": 1
+        "Citations": 0
       }
     ],
     "Preprints": [],
-    "Citations": 1,
+    "Citations": 0,
     "NumPubs": 1,
     "NumPreprints": 0,
     "PyPI": "adobo",
@@ -549,9 +549,16 @@
     "Code": "https://github.com/mandricigor/batman",
     "Description": "BATMAN is a novel tool for batch effect correction (integration) of single-cell RNA-Seq datasets.",
     "Added": "2020-02-01",
-    "Updated": "2020-02-01",
+    "Updated": "2020-09-10",
     "Categories": ["Integration"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "BATMAN: Fast and Accurate Integration of Single-Cell RNA-Seq Datasets via Minimum-Weight Matching",
+        "DOI": "10.1016/j.isci.2020.101185",
+        "Date": "2020-06",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "BATMAN: fast and accurate integration of single-cell RNA-Seq datasets via minimum-weight matching",
@@ -560,7 +567,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "mandricigor/batman"
   },
@@ -863,6 +870,22 @@
     "NumPubs": 2,
     "NumPreprints": 0,
     "GitHub": "iaconogi/bigSCale2"
+  },
+  {
+    "Tool": "bindSC",
+    "Platform": "R",
+    "Code": "https://github.com/KChen-lab/bindSC",
+    "Description": "Bi-dimensional INtegration of multi-omics Data from Single Cell sequencing technologies",
+    "License": "GPL-3.0",
+    "Added": "2020-09-10",
+    "Updated": "2020-09-10",
+    "Categories": ["Integration"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "GitHub": "KChen-lab/bindSC"
   },
   {
     "Tool": "BingleSeq",
@@ -2202,6 +2225,28 @@
     "NumPreprints": 0,
     "PyPI": "cellxgene",
     "GitHub": "chanzuckerberg/cellxgene"
+  },
+  {
+    "Tool": "cellxgene_VIP",
+    "Platform": "Python",
+    "Code": "https://github.com/interactivereport/cellxgene_VIP",
+    "Description": "Enhanced plotting functions plugin for cellxgene",
+    "License": "MIT",
+    "Added": "2020-09-10",
+    "Updated": "2020-09-10",
+    "Categories": ["Interactive", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "cellxgene VIP unleashes full power of interactive visualization, plotting and analysis of scRNA-seq data in the scale of millions of cells",
+        "DOI": "10.1101/2020.08.28.270652",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "interactivereport/cellxgene_VIP"
   },
   {
     "Tool": "Cerebro",
@@ -4482,7 +4527,7 @@
     "Code": "https://github.com/cuhklinlab/elasticC3",
     "Description": "Elastic Coupled Co-clustering for Single-Cell Genomic Data",
     "Added": "2020-04-13",
-    "Updated": "2020-04-13",
+    "Updated": "2020-09-10",
     "Categories": ["Integration"],
     "Publications": [],
     "Preprints": [],
@@ -4755,11 +4800,11 @@
   {
     "Tool": "FEATS",
     "Platform": "Python",
-    "Code": "https://edwinv87.github.io/feats",
+    "Code": "https://github.com/edwinv87/feats",
     "Description": "Feats is a python software package that can perform multiple tasks related to data clustering. It can perform cluster count estimation, outlier detection, data integration from different experiments.",
     "License": "MIT",
     "Added": "2020-07-26",
-    "Updated": "2020-07-26",
+    "Updated": "2020-09-10",
     "Categories": ["Clustering", "Integration"],
     "Publications": [],
     "Preprints": [
@@ -4772,7 +4817,8 @@
     "Citations": 0,
     "NumPubs": 0,
     "NumPreprints": 1,
-    "PyPI": "feats"
+    "PyPI": "feats",
+    "GitHub": "edwinv87/feats"
   },
   {
     "Tool": "FiRE",
@@ -6772,6 +6818,21 @@
     "GitHub": "liulab-dfci/MAESTRO"
   },
   {
+    "Tool": "MAGAN",
+    "Platform": "Python",
+    "Code": "https://github.com/KrishnaswamyLab/MAGAN",
+    "Description": "MAGAN: Manifold Aligning Generative Adversarial Network",
+    "Added": "2020-09-10",
+    "Updated": "2020-09-10",
+    "Categories": ["Integration"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "GitHub": "KrishnaswamyLab/MAGAN"
+  },
+  {
     "Tool": "MAGIC",
     "Platform": "Python/R/MATLAB",
     "Code": "https://github.com/KrishnaswamyLab/MAGIC",
@@ -7294,12 +7355,19 @@
     "Description": "mitch is an R package for multi-dimensional enrichment analysis",
     "License": "CC BY-SA 4.0",
     "Added": "2020-04-29",
-    "Updated": "2020-04-29",
+    "Updated": "2020-09-10",
     "Categories": ["GeneSets", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "mitch: multi-contrast pathway enrichment for multi-omics and single-cell profiling data",
+        "DOI": "10.1186/s12864-020-06856-9",
+        "Date": "2020-06-29",
+        "Citations": 0
+      }
+    ],
     "Preprints": [],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 0,
     "Bioc": "mitch",
     "GitHub": "markziemann/mitch"
@@ -8029,6 +8097,29 @@
     "GitHub": "VisuMap/OpenVisuMap"
   },
   {
+    "Tool": "OscoNet",
+    "Platform": "Python/R",
+    "Code": "https://github.com/alexisboukouvalas/OscoNet",
+    "Description": "Method to infer sinusoidal oscillations in single cell data",
+    "License": "MIT",
+    "Added": "2020-09-10",
+    "Updated": "2020-09-10",
+    "Categories": ["CellCycle", "ExpressionPatterns", "Ordering"],
+    "Publications": [
+      {
+        "Title": "OscoNet: inferring oscillatory gene networks",
+        "DOI": "10.1186/s12859-020-03561-y",
+        "Date": "2020-08",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "alexisboukouvalas/OscoNet"
+  },
+  {
     "Tool": "Oscope",
     "Platform": "R",
     "Description": "Oscope: a statistical pipeline for identifying oscillatory genes in unsynchronized single cell RNA-seq experiments.",
@@ -8427,6 +8518,27 @@
     "GitHub": "kieranrcampbell/phenopath"
   },
   {
+    "Tool": "PieParty",
+    "Platform": "Python",
+    "Code": "https://github.com/harbourlab/PieParty",
+    "Description": "PieParty is a visualization tool allowing to represent every cell in single-cell sequencing plots (UMAP, tSNE, ect.) as a pie chart",
+    "Added": "2020-09-10",
+    "Updated": "2020-09-10",
+    "Categories": ["Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "PieParty: Visualizing cells from scRNA-seq data as pie charts",
+        "DOI": "10.1101/2020.08.25.267021",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "harbourlab/PieParty"
+  },
+  {
     "Tool": "PIMseq",
     "Platform": "R",
     "Code": "https://github.com/CenterForStatistics-UGent/PIMseq",
@@ -8606,6 +8718,28 @@
     "GitHub": "ayurovsky/Pre-Phaser"
   },
   {
+    "Tool": "PRESCIENT",
+    "Platform": "Python",
+    "Code": "https://github.com/gifford-lab/prescient",
+    "Description": "PRESCIENT (Potential eneRgy undErlying Single Cell gradIENTs), a generative model for modeling single-cell time-series",
+    "License": "MIT",
+    "Added": "2020-09-10",
+    "Updated": "2020-09-10",
+    "Categories": ["Ordering"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Generative modeling of single-cell population time series for inferring cell differentiation landscapes",
+        "DOI": "10.1101/2020.08.26.269332",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "gifford-lab/prescient"
+  },
+  {
     "Tool": "ProjecTILs",
     "Platform": "R",
     "Code": "https://github.com/carmonalab/ProjecTILs",
@@ -8648,10 +8782,10 @@
       {
         "Title": "PROSSTT: probabilistic simulation of single-cell RNA-seq data for complex differentiation processes",
         "DOI": "10.1101/256941",
-        "Citations": 2
+        "Citations": 1
       }
     ],
-    "Citations": 10,
+    "Citations": 9,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "soedinglab/prosstt"
@@ -10407,6 +10541,23 @@
     "GitHub": "kevinblighe/scDataviz"
   },
   {
+    "Tool": "scDblFinder",
+    "Platform": "R",
+    "Code": "https://github.com/plger/scDblFinder",
+    "Description": "Gathers various methods for the detection and handling of doublets/multiplets in single-cell RNA sequencing data",
+    "License": "GPL-3.0",
+    "Added": "2020-09-10",
+    "Updated": "2020-09-10",
+    "Categories": ["Clustering", "QualityControl"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "scDblFinder",
+    "GitHub": "plger/scDblFinder"
+  },
+  {
     "Tool": "SCDC",
     "Platform": "R",
     "Code": "https://github.com/meichendong/SCDC",
@@ -11726,19 +11877,25 @@
   {
     "Tool": "scMappR",
     "Platform": "R",
-    "Code": "https://github.com/DustinSokolowski/scMappR",
+    "Code": "https://github.com/wilsonlabgroup/scMappR",
     "Description": "Single-cell mapper (scMappR) is an R package that allows users to better understand the cell-type contributions to a list of genes",
     "License": "GPL-3",
     "Added": "2020-03-12",
-    "Updated": "2020-03-12",
+    "Updated": "2020-09-10",
     "Categories": ["GeneSets", "Visualisation"],
     "Publications": [],
-    "Preprints": [],
+    "Preprints": [
+      {
+        "Title": "Single-cell mapper (scMappR): using scRNA-seq to infer cell-type specificities of differentially expressed genes",
+        "DOI": "10.1101/2020.08.24.265298",
+        "Citations": 0
+      }
+    ],
     "Citations": 0,
     "NumPubs": 0,
-    "NumPreprints": 0,
+    "NumPreprints": 1,
     "CRAN": "scMappR",
-    "GitHub": "DustinSokolowski/scMappR"
+    "GitHub": "wilsonlabgroup/scMappR"
   },
   {
     "Tool": "SCMarker",
@@ -14731,9 +14888,16 @@
     "Description": "SMNN: Batch Effect Correction for Single-cell RNA-seq data via Supervised Mutual Nearest Neighbor Detection",
     "License": "GPL-3",
     "Added": "2019-06-20",
-    "Updated": "2019-06-20",
+    "Updated": "2020-09-10",
     "Categories": ["Integration"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "SMNN: batch effect correction for single-cell RNA-seq data via supervised mutual nearest neighbor detection",
+        "DOI": "10.1093/bib/bbaa097",
+        "Date": "2020-06-26",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "SMNN: Batch Effect Correction for Single-cell RNA-seq data via Supervised Mutual Nearest Neighbor Detection",
@@ -14742,7 +14906,7 @@
       }
     ],
     "Citations": 1,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "yycunc/SMNN"
   },
@@ -15203,11 +15367,11 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 10834
+        "Citations": 10837
       }
     ],
     "Preprints": [],
-    "Citations": 10834,
+    "Citations": 10837,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "alexdobin/STAR"
@@ -16290,6 +16454,28 @@
     "NumPreprints": 1
   },
   {
+    "Tool": "VECTOR",
+    "Platform": "R",
+    "Code": "https://github.com/jumphone/Vector",
+    "Description": "Unsupervised Inference of Developmental Directions for Single Cells",
+    "Added": "2020-09-10",
+    "Updated": "2020-09-10",
+    "Categories": ["DimensionalityReduction", "Ordering"],
+    "Publications": [
+      {
+        "Title": "Unsupervised Inference of Developmental Directions for Single Cells Using VECTOR",
+        "DOI": "10.1016/j.celrep.2020.108069",
+        "Date": "2020-08",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "jumphone/Vector"
+  },
+  {
     "Tool": "velocyto",
     "Platform": "Python/R",
     "Code": "https://github.com/velocyto-team/velocyto.R",
@@ -16317,6 +16503,27 @@
     "NumPreprints": 1,
     "PyPI": "velocyto",
     "GitHub": "velocyto-team/velocyto.R"
+  },
+  {
+    "Tool": "VeTra",
+    "Platform": "Python",
+    "Code": "https://github.com/wgzgithub/VeTra",
+    "Description": "A tool for infering scRNA-seq trajectories from RNA velocity",
+    "Added": "2020-09-10",
+    "Updated": "2020-09-10",
+    "Categories": ["Ordering"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "VeTra: a new trajectory inference tool based on RNA velocity",
+        "DOI": "10.1101/2020.09.01.277095",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "wgzgithub/VeTra"
   },
   {
     "Tool": "VIPER",
