@@ -85,11 +85,11 @@
         "Title": "alona: a web server for single cell RNA-seq analysis",
         "DOI": "10.1093/bioinformatics/btaa269",
         "Date": "2020-04-23",
-        "Citations": 0
+        "Citations": 1
       }
     ],
     "Preprints": [],
-    "Citations": 0,
+    "Citations": 1,
     "NumPubs": 1,
     "NumPreprints": 0,
     "PyPI": "adobo",
@@ -340,11 +340,11 @@
         "Title": "Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq",
         "DOI": "10.1126/science.aaa1934",
         "Date": "2015-02-19",
-        "Citations": 1451
+        "Citations": 1453
       }
     ],
     "Preprints": [],
-    "Citations": 1451,
+    "Citations": 1453,
     "NumPubs": 1,
     "NumPreprints": 0,
     "PyPI": "backspinpy",
@@ -5685,13 +5685,19 @@
     "Description": "Hierarchical Random Forest for Information Transfer",
     "License": "GPL-3",
     "Added": "2020-05-14",
-    "Updated": "2020-05-14",
+    "Updated": "2020-09-24",
     "Categories": ["Classification", "Visualisation"],
     "Publications": [],
-    "Preprints": [],
+    "Preprints": [
+      {
+        "Title": "HieRFIT: Hierarchical Random Forest for Information Transfer",
+        "DOI": "10.1101/2020.09.16.300822",
+        "Citations": 0
+      }
+    ],
     "Citations": 0,
     "NumPubs": 0,
-    "NumPreprints": 0,
+    "NumPreprints": 1,
     "GitHub": "yasinkaymaz/HieRFIT"
   },
   {
@@ -6167,11 +6173,11 @@
         "Title": "Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma",
         "DOI": "10.1126/science.1254257",
         "Date": "2014-06-12",
-        "Citations": 1683
+        "Citations": 1684
       }
     ],
     "Preprints": [],
-    "Citations": 1683,
+    "Citations": 1684,
     "NumPubs": 1,
     "NumPreprints": 0,
     "Bioc": "infercnv",
@@ -6498,7 +6504,7 @@
         "Title": "Near-optimal probabilistic RNA-seq quantification",
         "DOI": "10.1038/nbt.3519",
         "Date": "2016-04-04",
-        "Citations": 2405
+        "Citations": 2406
       }
     ],
     "Preprints": [
@@ -6513,7 +6519,7 @@
         "Citations": 27
       }
     ],
-    "Citations": 2438,
+    "Citations": 2439,
     "NumPubs": 1,
     "NumPreprints": 2,
     "GitHub": "pachterlab/kallisto"
@@ -9507,6 +9513,29 @@
     "Bioc": "Rsubread"
   },
   {
+    "Tool": "rSuperCT",
+    "Platform": "R",
+    "Code": "https://github.com/weilin-genomics/rSuperCT",
+    "Description": "rSuperCT is the R version of SuperCT, implementing the supervised-learning framework for enhanced characterization of single-cell transcriptomic profiles",
+    "License": "GPL (>=2)",
+    "Added": "2020-09-24",
+    "Updated": "2020-09-24",
+    "Categories": ["Classification", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "SuperCT: a supervised-learning framework for enhanced characterization of single-cell transcriptomic profiles",
+        "DOI": "10.1093/nar/gkz116",
+        "Date": "2019-02-25",
+        "Citations": 16
+      }
+    ],
+    "Preprints": [],
+    "Citations": 16,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "weilin-genomics/rSuperCT"
+  },
+  {
     "Tool": "SAFE",
     "Platform": "R",
     "Code": "https://github.com/yycunc/SAFEclustering",
@@ -9587,7 +9616,7 @@
         "Title": "Salmon provides fast and bias-aware quantification of transcript expression",
         "DOI": "10.1038/nmeth.4197",
         "Date": "2017-03-06",
-        "Citations": 1687
+        "Citations": 1688
       },
       {
         "Title": "Alevin efficiently estimates accurate gene abundances from dscRNA-seq data",
@@ -9613,7 +9642,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 1787,
+    "Citations": 1788,
     "NumPubs": 2,
     "NumPreprints": 3,
     "GitHub": "COMBINE-lab/salmon"
@@ -10913,13 +10942,20 @@
   {
     "Tool": "Scedar",
     "Platform": "Python",
-    "Code": "https://github.com/logstar/scedar",
+    "Code": "https://github.com/TaylorResearchLab/scedar",
     "Description": "Scedar (Single-cell exploratory data analysis for RNA-Seq) is a reliable and easy-to-use Python package for efficient visualization, imputation of gene dropouts, detection of rare transcriptomic profiles, and clustering of large-scale single cell RNA-seq (scRNA-seq) datasets.",
     "License": "MIT",
     "Added": "2018-11-13",
-    "Updated": "2018-11-13",
+    "Updated": "2020-09-24",
     "Categories": ["Clustering", "DimensionalityReduction", "Imputation", "MarkerGenes", "RareCells", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Scedar: A scalable Python package for single-cell RNA-seq exploratory data analysis",
+        "DOI": "10.1371/journal.pcbi.1007794",
+        "Date": "2020-04-27",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Scedar: a scalable Python package for single-cell RNA-seq exploratory data analysis",
@@ -10928,10 +10964,10 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "scedar",
-    "GitHub": "logstar/scedar"
+    "GitHub": "TaylorResearchLab/scedar"
   },
   {
     "Tool": "SCell",
@@ -12319,7 +12355,7 @@
         "Title": "A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain",
         "DOI": "10.1016/j.cell.2018.05.057",
         "Date": "2018-08",
-        "Citations": 175
+        "Citations": 176
       }
     ],
     "Preprints": [
@@ -12329,7 +12365,7 @@
         "Citations": 5
       }
     ],
-    "Citations": 180,
+    "Citations": 181,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "aertslab/SCope"
@@ -15432,11 +15468,11 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 11020
+        "Citations": 11025
       }
     ],
     "Preprints": [],
-    "Citations": 11020,
+    "Citations": 11025,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "alexdobin/STAR"
@@ -16446,6 +16482,30 @@
     "GitHub": "jgraving/vaesne"
   },
   {
+    "Tool": "VALERIE",
+    "Platform": "R",
+    "Code": "https://github.com/wenweixiong/VALERIE",
+    "Description": "VALERIE enables visualisation of alternative splicing events from high-throughput single-cell RNA-sequencing experiments",
+    "License": "GPL-3",
+    "Added": "2020-09-24",
+    "Updated": "2020-09-24",
+    "Categories": ["AlternativeSplicing", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "VALERIE: Visual-based inspection of alternative splicing events at single-cell resolution",
+        "DOI": "10.1371/journal.pcbi.1008195",
+        "Date": "2020-09-08",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "CRAN": "VALERIE",
+    "GitHub": "wenweixiong/VALERIE"
+  },
+  {
     "Tool": "VAMF",
     "Platform": "Stan/R/C++",
     "Code": "https://github.com/willtownes/vamf",
@@ -16574,7 +16634,7 @@
         "Title": "RNA velocity of single cells",
         "DOI": "10.1038/s41586-018-0414-6",
         "Date": "2018-08",
-        "Citations": 468
+        "Citations": 469
       }
     ],
     "Preprints": [
@@ -16584,7 +16644,7 @@
         "Citations": 13
       }
     ],
-    "Citations": 481,
+    "Citations": 482,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "velocyto",
