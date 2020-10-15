@@ -460,6 +460,8 @@ DigitalCellSorter	QualityControl
 DigitalCellSorter	Visualisation
 DIMMSC	Clustering
 DIMMSC	Visualisation
+dincta	Classification
+dincta	Integration
 DISC	Imputation
 DISCO	AlternativeSplicing
 distinct	DifferentialExpression
@@ -502,6 +504,7 @@ dropEst	QualityControl
 dropEst	Quantification
 dropEst	UMIs
 dropEst	Visualisation
+dropkick	QualityControl
 DropLasso	Classification
 DropletUtils	QualityControl
 DropletUtils	Simulation
@@ -526,6 +529,7 @@ DrSeq2	VariableGenes
 DTWScore	DifferentialExpression
 DTWScore	Ordering
 DTWScore	VariableGenes
+DUBStepR	GeneFiltering
 Dune	Clustering
 Dune	Visualisation
 DUSC	Clustering
@@ -667,6 +671,7 @@ GRISLI	GeneNetworks
 GRM	Normalisation
 GRNUlar	GeneNetworks
 GRNVBEM	GeneNetworks
+h-tSNE	DimensionalityReduction
 Harmony	DimensionalityReduction
 Harmony	Integration
 HieRFIT	Classification
@@ -723,6 +728,7 @@ indeXplorer	Interactive
 indeXplorer	Visualisation
 inferCNV	Variants
 inferCNV	Visualisation
+infohet	VariableGenes
 INSCT	Integration
 IronThrone-GoT	UMIs
 IronThrone-GoT	Variants
@@ -755,10 +761,13 @@ jackstraw	DimensionalityReduction
 jackstraw	GeneFiltering
 jackstraw	MarkerGenes
 jackstraw	VariableGenes
+JIND	Classification
+JIND	Integration
 k-branches	Ordering
 kallisto	Quantification
 kallisto	UMIs
 kBET	Integration
+KMD	Clustering
 knn_smooth	Imputation
 KPNN	Classification
 KPNN	GeneNetworks
@@ -930,8 +939,11 @@ MUSIC	Visualisation
 NaiveDE	DifferentialExpression
 NaiveDE	Simulation
 NanoPARE	Alignment
+NATMI	GeneNetworks
+NATMI	Visualisation
 NBID	DifferentialExpression
 NEBULA	DifferentialExpression
+Nebulosa	Visualisation
 NetImpute	Imputation
 netNMF-sc	DimensionalityReduction
 netNMF-sc	GeneNetworks
@@ -1114,6 +1126,7 @@ redPATH	Ordering
 redPATH	VariableGenes
 redPATH	Visualisation
 RESCUE	Imputation
+RNA-Sieve	Integration
 robustSingleCell	Clustering
 robustSingleCell	DimensionalityReduction
 robustSingleCell	Integration
@@ -1165,6 +1178,8 @@ SAVER	Imputation
 SAVER-X	DimensionalityReduction
 SAVER-X	Imputation
 SBDN	GeneNetworks
+sc-jnmf	Clustering
+sc-REnF	GeneFiltering
 SC2P	DifferentialExpression
 SC2P	Visualisation
 SC3	Clustering
@@ -1758,6 +1773,7 @@ slingshot	DimensionalityReduction
 slingshot	Ordering
 slingshot	Visualisation
 SMNN	Integration
+SMSC	Clustering
 SNN-Cliq	Clustering
 solo	QualityControl
 solo	Visualisation
