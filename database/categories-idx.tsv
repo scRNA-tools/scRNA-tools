@@ -10,6 +10,7 @@ ACTIONet	GeneSets
 ACTIONet	Integration
 ACTIONet	Normalisation
 ACTIONet	Visualisation
+ADImpute	Imputation
 adobo	CellCycle
 adobo	Classification
 adobo	Clustering
@@ -20,6 +21,7 @@ adobo	Imputation
 adobo	Normalisation
 adobo	QualityControl
 adobo	Visualisation
+aggregateBioVar	Quantification
 alevinQC	Interactive
 alevinQC	Visualisation
 ALRA	Imputation
@@ -427,6 +429,7 @@ densityCut	Visualisation
 DensityPath	Clustering
 DensityPath	DimensionalityReduction
 DensityPath	Ordering
+densvis	DimensionalityReduction
 densVis	DimensionalityReduction
 DepecheR	Clustering
 DepecheR	MarkerGenes
@@ -561,6 +564,8 @@ ESAT	Clustering
 ESAT	DimensionalityReduction
 ESAT	Ordering
 ESAT	Quantification
+escape	GeneSets
+escape	Visualisation
 eSVD	DimensionalityReduction
 eSVD	Ordering
 eSVD	Visualisation
@@ -958,6 +963,8 @@ netSmooth	Imputation
 netSmooth	Visualisation
 netsne	DimensionalityReduction
 NetworkInference	GeneNetworks
+NewWave	DimensionalityReduction
+NewWave	Integration
 nichenetr	GeneNetworks
 nichenetr	Visualisation
 NIFA	DimensionalityReduction
@@ -1223,10 +1230,7 @@ scASK	Classification
 scASK	DimensionalityReduction
 scASK	Interactive
 Scater	DimensionalityReduction
-Scater	Interactive
-Scater	Normalisation
 Scater	QualityControl
-Scater	Quantification
 Scater	Visualisation
 SCATS	AlternativeSplicing
 scBASE	AlleleSpecific
@@ -1617,6 +1621,8 @@ scUnifrac	DimensionalityReduction
 scUnifrac	Integration
 scUnifrac	VariableGenes
 scUnifrac	Visualisation
+scuttle	Normalisation
+scuttle	QualityControl
 scVAE	Clustering
 scVDMC	Clustering
 scVEGs	VariableGenes
@@ -1955,6 +1961,8 @@ VDJPuzzle	Quantification
 VDJPuzzle	Visualisation
 VECTOR	DimensionalityReduction
 VECTOR	Ordering
+velociraptor	DimensionalityReduction
+velociraptor	Ordering
 velocyto	AlternativeSplicing
 velocyto	Ordering
 velocyto	Visualisation
