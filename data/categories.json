@@ -466,8 +466,7 @@
         "Tool": "scdney"
       },
       {
-        "Tool": "scfind",
-        "Bioc": "scfind"
+        "Tool": "scfind"
       },
       {
         "Tool": "scID"
@@ -791,7 +790,8 @@
         "Tool": "IKAP"
       },
       {
-        "Tool": "ILoReg"
+        "Tool": "ILoReg",
+        "Bioc": "ILoReg"
       },
       {
         "Tool": "iS-CellR"
@@ -852,6 +852,7 @@
       },
       {
         "Tool": "MOFA2",
+        "Bioc": "MOFA2",
         "PyPI": "mofapy2"
       },
       {
@@ -993,7 +994,8 @@
         "Tool": "scclusteval"
       },
       {
-        "Tool": "scDataviz"
+        "Tool": "scDataviz",
+        "Bioc": "scDataviz"
       },
       {
         "Tool": "scDblFinder",
@@ -1572,7 +1574,8 @@
         "Tool": "Conos"
       },
       {
-        "Tool": "corral"
+        "Tool": "corral",
+        "Bioc": "corral"
       },
       {
         "Tool": "countClust",
@@ -1596,6 +1599,10 @@
       },
       {
         "Tool": "DensityPath"
+      },
+      {
+        "Tool": "densvis",
+        "Bioc": "densvis"
       },
       {
         "Tool": "densVis"
@@ -1758,6 +1765,7 @@
       },
       {
         "Tool": "MOFA2",
+        "Bioc": "MOFA2",
         "PyPI": "mofapy2"
       },
       {
@@ -1784,6 +1792,10 @@
       },
       {
         "Tool": "netsne"
+      },
+      {
+        "Tool": "NewWave",
+        "Bioc": "NewWave"
       },
       {
         "Tool": "NIFA"
@@ -1906,7 +1918,8 @@
         "Tool": "scCCESS"
       },
       {
-        "Tool": "scDataviz"
+        "Tool": "scDataviz",
+        "Bioc": "scDataviz"
       },
       {
         "Tool": "scDeepCluster"
@@ -2119,6 +2132,10 @@
       },
       {
         "Tool": "VECTOR"
+      },
+      {
+        "Tool": "velociraptor",
+        "Bioc": "velociraptor"
       },
       {
         "Tool": "VISION"
@@ -2739,6 +2756,10 @@
         "Tool": "DrivAER"
       },
       {
+        "Tool": "escape",
+        "Bioc": "escape"
+      },
+      {
         "Tool": "FastProject",
         "PyPI": "FastProject"
       },
@@ -2798,7 +2819,8 @@
         "Tool": "sake"
       },
       {
-        "Tool": "scDataviz"
+        "Tool": "scDataviz",
+        "Bioc": "scDataviz"
       },
       {
         "Tool": "SCDE",
@@ -2946,6 +2968,10 @@
     "Description": "Estimation of expression where zeros have been observed",
     "Tools": [
       {
+        "Tool": "ADImpute",
+        "Bioc": "ADImpute"
+      },
+      {
         "Tool": "adobo",
         "PyPI": "adobo"
       },
@@ -3048,6 +3074,7 @@
       },
       {
         "Tool": "MOFA2",
+        "Bioc": "MOFA2",
         "PyPI": "mofapy2"
       },
       {
@@ -3245,7 +3272,8 @@
         "Tool": "Conos"
       },
       {
-        "Tool": "corral"
+        "Tool": "corral",
+        "Bioc": "corral"
       },
       {
         "Tool": "coupleCoC"
@@ -3342,6 +3370,7 @@
       },
       {
         "Tool": "MOFA2",
+        "Bioc": "MOFA2",
         "PyPI": "mofapy2"
       },
       {
@@ -3350,6 +3379,10 @@
       },
       {
         "Tool": "MuSiC"
+      },
+      {
+        "Tool": "NewWave",
+        "Bioc": "NewWave"
       },
       {
         "Tool": "OnClass",
@@ -3644,10 +3677,6 @@
         "Tool": "scASK"
       },
       {
-        "Tool": "Scater",
-        "Bioc": "scater"
-      },
-      {
         "Tool": "scClustViz"
       },
       {
@@ -3662,8 +3691,7 @@
         "PyPI": "scelvis"
       },
       {
-        "Tool": "scfind",
-        "Bioc": "scfind"
+        "Tool": "scfind"
       },
       {
         "Tool": "scGEApp"
@@ -3932,15 +3960,15 @@
         "Tool": "scCATCH"
       },
       {
-        "Tool": "scDataviz"
+        "Tool": "scDataviz",
+        "Bioc": "scDataviz"
       },
       {
         "Tool": "Scedar",
         "PyPI": "scedar"
       },
       {
-        "Tool": "scfind",
-        "Bioc": "scfind"
+        "Tool": "scfind"
       },
       {
         "Tool": "scGeneFit"
@@ -4238,10 +4266,6 @@
         "PyPI": "scanpy"
       },
       {
-        "Tool": "Scater",
-        "Bioc": "scater"
-      },
-      {
         "Tool": "scBatch"
       },
       {
@@ -4315,6 +4339,10 @@
       {
         "Tool": "sctransform",
         "CRAN": "sctransform"
+      },
+      {
+        "Tool": "scuttle",
+        "Bioc": "scuttle"
       },
       {
         "Tool": "scVelo",
@@ -4694,6 +4722,10 @@
         "Tool": "VECTOR"
       },
       {
+        "Tool": "velociraptor",
+        "Bioc": "velociraptor"
+      },
+      {
         "Tool": "velocyto",
         "PyPI": "velocyto"
       },
@@ -4905,7 +4937,8 @@
         "Tool": "scCancer"
       },
       {
-        "Tool": "scCB2"
+        "Tool": "scCB2",
+        "Bioc": "scCB2"
       },
       {
         "Tool": "scDblFinder",
@@ -4967,6 +5000,10 @@
         "CRAN": "scTenifoldNet"
       },
       {
+        "Tool": "scuttle",
+        "Bioc": "scuttle"
+      },
+      {
         "Tool": "SeuratV3Wizard"
       },
       {
@@ -5005,6 +5042,10 @@
     "Category": "Quantification",
     "Description": "Quantification of expression from reads",
     "Tools": [
+      {
+        "Tool": "aggregateBioVar",
+        "Bioc": "aggregateBioVar"
+      },
       {
         "Tool": "AltAnalyze",
         "PyPI": "AltAnalyze"
@@ -5075,10 +5116,6 @@
       },
       {
         "Tool": "salmon"
-      },
-      {
-        "Tool": "Scater",
-        "Bioc": "scater"
       },
       {
         "Tool": "scMAGeCK",
@@ -5169,7 +5206,8 @@
         "PyPI": "giniclust3"
       },
       {
-        "Tool": "ILoReg"
+        "Tool": "ILoReg",
+        "Bioc": "ILoReg"
       },
       {
         "Tool": "RaceID",
@@ -5359,7 +5397,8 @@
         "Bioc": "splatter"
       },
       {
-        "Tool": "SPsimSeq"
+        "Tool": "SPsimSeq",
+        "Bioc": "SPsimSeq"
       },
       {
         "Tool": "SymSim"
@@ -6153,6 +6192,10 @@
         "PyPI": "ECLAIR"
       },
       {
+        "Tool": "escape",
+        "Bioc": "escape"
+      },
+      {
         "Tool": "eSVD"
       },
       {
@@ -6347,6 +6390,7 @@
       },
       {
         "Tool": "MOFA2",
+        "Bioc": "MOFA2",
         "PyPI": "mofapy2"
       },
       {
@@ -6370,7 +6414,8 @@
         "Tool": "NATMI"
       },
       {
-        "Tool": "Nebulosa"
+        "Tool": "Nebulosa",
+        "Bioc": "Nebulosa"
       },
       {
         "Tool": "netSmooth",
@@ -6419,7 +6464,8 @@
         "Tool": "PIMseq"
       },
       {
-        "Tool": "pipeComp"
+        "Tool": "pipeComp",
+        "Bioc": "pipeComp"
       },
       {
         "Tool": "PIVOT"
@@ -6532,7 +6578,8 @@
         "Tool": "scDAPA"
       },
       {
-        "Tool": "scDataviz"
+        "Tool": "scDataviz",
+        "Bioc": "scDataviz"
       },
       {
         "Tool": "SCDE",
