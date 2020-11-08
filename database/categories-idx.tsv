@@ -467,6 +467,7 @@ DIMMSC	Clustering
 DIMMSC	Visualisation
 dincta	Classification
 dincta	Integration
+Dino	Normalisation
 DISC	Imputation
 DISCO	AlternativeSplicing
 distinct	DifferentialExpression
@@ -566,6 +567,7 @@ ESAT	Ordering
 ESAT	Quantification
 escape	GeneSets
 escape	Visualisation
+ESCO	Simulation
 eSVD	DimensionalityReduction
 eSVD	Ordering
 eSVD	Visualisation
@@ -771,6 +773,10 @@ jackstraw	VariableGenes
 JIND	Classification
 JIND	Integration
 k-branches	Ordering
+K2Taxonomer	Clustering
+K2Taxonomer	DifferentialExpression
+K2Taxonomer	GeneSets
+K2Taxonomer	Visualisation
 kallisto	Quantification
 kallisto	UMIs
 kBET	Integration
@@ -1011,6 +1017,8 @@ Palantir	Normalisation
 Palantir	Ordering
 Palantir	QualityControl
 Palantir	Visualisation
+Pamona	Integration
+Pamona	Visualisation
 ParaDPMM	Classification
 PARC	Clustering
 PBA	Ordering
@@ -1106,6 +1114,7 @@ Randomly	GeneFiltering
 Randomly	Imputation
 Randomly	QualityControl
 Randomly	Visualisation
+RankCorr	MarkerGenes
 RayleighSelection	DifferentialExpression
 RayleighSelection	DimensionalityReduction
 RayleighSelection	Visualisation
@@ -1226,6 +1235,8 @@ Scanpy	Simulation
 Scanpy	VariableGenes
 Scanpy	Visualisation
 scAPA	AlternativeSplicing
+scAPAtrap	AlternativeSplicing
+scAPAtrap	Quantification
 scASK	Classification
 scASK	DimensionalityReduction
 scASK	Interactive
@@ -1247,6 +1258,9 @@ scCancer	DifferentialExpression
 scCancer	GeneNetworks
 scCancer	QualityControl
 scCancer	StemCells
+scCaps	Clustering
+scCaps	DimensionalityReduction
+scCaps	GeneNetworks
 scCATCH	Classification
 scCATCH	MarkerGenes
 scCB2	QualityControl
@@ -1565,6 +1579,7 @@ scScope	Clustering
 scScope	Imputation
 scScope	Normalisation
 scSDAE	Imputation
+scSemiCluster	Clustering
 scSeqR	Clustering
 scSeqR	DifferentialExpression
 scSeqR	DimensionalityReduction
@@ -1684,6 +1699,8 @@ Sharq	QualityControl
 Sharq	Quantification
 Sharq	UMIs
 Sharq	Visualisation
+ShinyCell	Interactive
+ShinyCell	Visualisation
 SiCeLoRe	AlleleSpecific
 SiCeLoRe	AlternativeSplicing
 SiCeLoRe	UMIs
@@ -1903,6 +1920,7 @@ Tree-SNE	Visualisation
 trendsceek	ExpressionPatterns
 trendsceek	Simulation
 trendsceek	Visualisation
+Triangulate	GeneNetworks
 TRUmiCount	Quantification
 TRUmiCount	UMIs
 trVAE	DimensionalityReduction
