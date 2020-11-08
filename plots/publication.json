@@ -3,10 +3,10 @@
     {
       "orientation": "v",
       "width": 0.9,
-      "base": 355,
+      "base": 359,
       "x": [1],
-      "y": [405],
-      "text": "Count: 405<br />Type: Published",
+      "y": [411],
+      "text": "Count: 411<br />Type: Published",
       "type": "bar",
       "marker": {
         "autocolorscale": false,
@@ -29,8 +29,8 @@
       "width": 0.9,
       "base": 89,
       "x": [1],
-      "y": [266],
-      "text": "Count: 266<br />Type: Preprint",
+      "y": [270],
+      "text": "Count: 270<br />Type: Preprint",
       "type": "bar",
       "marker": {
         "autocolorscale": false,
@@ -74,9 +74,9 @@
     },
     {
       "x": [1],
-      "y": [557.5],
-      "text": "Published 53.3%",
-      "hovertext": "Midpoint: 557.5<br />Count: 557.5<br />Type: Published",
+      "y": [564.5],
+      "text": "Published 53.4%",
+      "hovertext": "Midpoint: 564.5<br />Count: 564.5<br />Type: Published",
       "textfont": {
         "size": 22.6771653543307,
         "color": "rgba(255,255,255,1)"
@@ -94,9 +94,9 @@
     },
     {
       "x": [1],
-      "y": [222],
-      "text": "Preprint 35%",
-      "hovertext": "Midpoint: 222.0<br />Count: 222.0<br />Type: Preprint",
+      "y": [224],
+      "text": "Preprint 35.1%",
+      "hovertext": "Midpoint: 224.0<br />Count: 224.0<br />Type: Preprint",
       "textfont": {
         "size": 22.6771653543307,
         "color": "rgba(255,255,255,1)"
@@ -115,7 +115,7 @@
     {
       "x": [1],
       "y": [44.5],
-      "text": "Not published 11.7%",
+      "text": "Not published 11.6%",
       "hovertext": "Midpoint:  44.5<br />Count:  44.5<br />Type: Not published",
       "textfont": {
         "size": 22.6771653543307,
@@ -191,12 +191,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [-38, 798],
+      "range": [-38.5, 808.5],
       "tickmode": "array",
-      "ticktext": ["0", "200", "400", "600"],
-      "tickvals": [0, 200, 400, 600],
+      "ticktext": ["0", "200", "400", "600", "800"],
+      "tickvals": [0, 200, 400, 600, 800],
       "categoryorder": "array",
-      "categoryarray": ["0", "200", "400", "600"],
+      "categoryarray": ["0", "200", "400", "600", "800"],
       "nticks": null,
       "ticks": "",
       "tickcolor": null,
@@ -267,13 +267,13 @@
   },
   "source": "A",
   "attrs": {
-    "35e12442fe46": {
+    "356b62f03dd7": {
       "x": {},
       "y": {},
       "fill": {},
       "type": "bar"
     },
-    "35e133111acf": {
+    "356b4b2c420f": {
       "y": {},
       "label": {},
       "x": {},
@@ -281,10 +281,10 @@
       "fill": {}
     }
   },
-  "cur_data": "35e12442fe46",
+  "cur_data": "356b62f03dd7",
   "visdat": {
-    "35e12442fe46": ["function (y) ", "x"],
-    "35e133111acf": ["function (y) ", "x"]
+    "356b62f03dd7": ["function (y) ", "x"],
+    "356b4b2c420f": ["function (y) ", "x"]
   },
   "highlight": {
     "on": "plotly_click",

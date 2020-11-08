@@ -1172,7 +1172,7 @@
     "Description": "BRIE (Bayesian regression for isoform estimate) is a Bayesian method to estimate isoform proportions from RNA-seq data.",
     "License": "Apache-2.0",
     "Added": "2017-01-10",
-    "Updated": "2018-03-14",
+    "Updated": "2020-11-08",
     "Categories": ["AlternativeSplicing", "Quantification"],
     "Publications": [
       {
@@ -1187,11 +1187,16 @@
         "Title": "Transcriptome-wide splicing quantification in single cells",
         "DOI": "10.1101/098517",
         "Citations": 1
+      },
+      {
+        "Title": "Computational identification of splicing phenotypes from single cell transcriptomic experiments",
+        "DOI": "10.1101/2020.11.04.368019",
+        "Citations": 0
       }
     ],
     "Citations": 46,
     "NumPubs": 1,
-    "NumPreprints": 1,
+    "NumPreprints": 2,
     "PyPI": "brie",
     "GitHub": "huangyh09/brie"
   },
@@ -1472,10 +1477,10 @@
       {
         "Title": "Cardelino: Integrating whole exomes and single-cell transcriptomes to reveal phenotypic impact of somatic variants",
         "DOI": "10.1101/413047",
-        "Citations": 11
+        "Citations": 12
       }
     ],
-    "Citations": 16,
+    "Citations": 17,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "single-cell-genetics/cardelino"
@@ -3987,6 +3992,28 @@
     "GitHub": "songtingstone/dincta"
   },
   {
+    "Tool": "Dino",
+    "Platform": "R",
+    "Code": "https://github.com/JBrownBiostat/Dino",
+    "Description": "Dino constructs a flexible negative-binomial mixture model of gene expression for normalisation",
+    "License": "GPL-3.0",
+    "Added": "2020-11-08",
+    "Updated": "2020-11-08",
+    "Categories": ["Normalisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Normalization by distributional resampling of high throughput single-cell RNA-sequencing data",
+        "DOI": "10.1101/2020.10.28.359901",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "JBrownBiostat/Dino"
+  },
+  {
     "Tool": "DISC",
     "Platform": "Python",
     "Code": "https://github.com/xie-lab/DISC",
@@ -4934,6 +4961,28 @@
     "NumPreprints": 0,
     "Bioc": "escape",
     "GitHub": "ncborcherding/escape"
+  },
+  {
+    "Tool": "ESCO",
+    "Platform": "R",
+    "Code": "https://github.com/JINJINT/ESCO",
+    "Description": "An scRNA-seq simulation model that adopts the idea of the copula to impose gene co-expression, while preserving the highlights of available simulators",
+    "License": "GPL-3.0",
+    "Added": "2020-11-08",
+    "Updated": "2020-11-08",
+    "Categories": ["Simulation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "ESCO: single cell expression simulation incorporating gene co-expression",
+        "DOI": "10.1101/2020.10.20.347211",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "JINJINT/ESCO"
   },
   {
     "Tool": "eSVD",
@@ -6799,6 +6848,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "theislab/kbranches"
+  },
+  {
+    "Tool": "K2Taxonomer",
+    "Platform": "R",
+    "Code": "https://github.com/montilab/K2Taxonomer",
+    "Description": "K2Taxonomer is an R package built around a \"top-down\" recursive partitioning framework to perform unsupervised learning of nested “taxonomy-like” subgroups from high-throughput -omics data",
+    "License": "GPL-3.0",
+    "Added": "2020-11-08",
+    "Updated": "2020-11-08",
+    "Categories": ["Clustering", "DifferentialExpression", "GeneSets", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Multi-resolution characterization of molecular taxonomies in bulk and single-cell transcriptomics data",
+        "DOI": "10.1101/2020.11.05.370197",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "montilab/K2Taxonomer"
   },
   {
     "Tool": "kallisto",
@@ -8725,6 +8796,28 @@
     "GitHub": "dpeerlab/Palantir"
   },
   {
+    "Tool": "Pamona",
+    "Platform": "Python",
+    "Code": "https://github.com/caokai1073/Pamona",
+    "Description": "Manifold alignment for heterogeneous single-cell multi-omics data integration",
+    "Added": "2020-11-08",
+    "Updated": "2020-11-08",
+    "Categories": ["Integration", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Manifold alignment for heterogeneous single-cell multi-omics data integration using Pamona",
+        "DOI": "10.1101/2020.11.03.366146",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "PyPI": "pamona",
+    "GitHub": "caokai1073/Pamona"
+  },
+  {
     "Tool": "ParaDPMM",
     "Platform": "Matlab",
     "Code": "https://github.com/tiehangd/Para_DPMM",
@@ -8802,9 +8895,16 @@
     "Code": "http://page.amss.ac.cn/shihua.zhang/software.html",
     "Description": "PBLR: an accurate single cell RNA-seq data imputation tool considering cell heterogeneity and prior expression level of dropouts",
     "Added": "2018-11-13",
-    "Updated": "2018-11-13",
+    "Updated": "2020-11-08",
     "Categories": ["Imputation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Imputing single-cell RNA-seq data by considering cell heterogeneity and prior expression of dropouts",
+        "DOI": "10.1093/jmcb/mjaa052",
+        "Date": "2020-10-01",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "PBLR: an accurate single cell RNA-seq data imputation tool considering cell heterogeneity and prior expression level of dropouts",
@@ -8813,7 +8913,7 @@
       }
     ],
     "Citations": 6,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1
   },
   {
@@ -9605,6 +9705,28 @@
     "NumPreprints": 1,
     "PyPI": "randomly",
     "GitHub": "RabadanLab/randomly"
+  },
+  {
+    "Tool": "RankCorr",
+    "Platform": "Python",
+    "Code": "https://github.com/ahsv/RankCorr",
+    "Description": "A marker selection method for scRNA-seq data based on rank correlation",
+    "Added": "2020-11-08",
+    "Updated": "2020-11-08",
+    "Categories": ["MarkerGenes"],
+    "Publications": [
+      {
+        "Title": "A rank-based marker selection method for high throughput scRNA-seq data",
+        "DOI": "10.1186/s12859-020-03641-z",
+        "Date": "2020-10-23",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "ahsv/RankCorr"
   },
   {
     "Tool": "RayleighSelection",
@@ -10641,6 +10763,29 @@
     "GitHub": "ElkonLab/scAPA"
   },
   {
+    "Tool": "scAPAtrap",
+    "Platform": "R",
+    "Code": "https://github.com/BMILAB/scAPAtrap",
+    "Description": "Identification and quantification of alternative polyadenylation sites from single-cell RNA-seq data",
+    "License": "AGPL-3.0",
+    "Added": "2020-11-08",
+    "Updated": "2020-11-08",
+    "Categories": ["AlternativeSplicing", "Quantification"],
+    "Publications": [
+      {
+        "Title": "scAPAtrap: identification and quantification of alternative polyadenylation sites from single-cell RNA-seq data",
+        "DOI": "10.1093/bib/bbaa273",
+        "Date": "2020-11-03",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "BMILAB/scAPAtrap"
+  },
+  {
     "Tool": "scASK",
     "Platform": "MATLAB",
     "Code": "https://github.com/liubo2358/scASKcmd",
@@ -10866,6 +11011,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "wguo-research/scCancer"
+  },
+  {
+    "Tool": "scCaps",
+    "Platform": "Python",
+    "Code": "https://github.com/wanglf19/scCaps",
+    "Description": "An interpretable deep-learning architecture of capsule networks for identifying cellular-type gene expression programs from single-cell RNA-seq data",
+    "Added": "2020-11-08",
+    "Updated": "2020-11-08",
+    "Categories": ["Clustering", "DimensionalityReduction", "GeneNetworks"],
+    "Publications": [
+      {
+        "Title": "An interpretable deep-learning architecture of capsule networks for identifying cell-type gene expression programs from single-cell RNA-sequencing data",
+        "DOI": "10.1038/s42256-020-00244-4",
+        "Date": "2020-11-02",
+        "Citations": 1
+      }
+    ],
+    "Preprints": [],
+    "Citations": 1,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "wanglf19/scCaps"
   },
   {
     "Tool": "scCATCH",
@@ -13794,6 +13961,28 @@
     "GitHub": "klovbe/scSDAE"
   },
   {
+    "Tool": "scSemiCluster",
+    "Platform": "Python",
+    "Code": "https://github.com/xuebaliang/scSemiCluster",
+    "Description": "A flexible single cell semi-supervised clustering and annotation framework",
+    "Added": "2020-11-08",
+    "Updated": "2020-11-08",
+    "Categories": ["Clustering"],
+    "Publications": [
+      {
+        "Title": "Single-cell RNA-seq data semi-supervised clustering and annotation via structural regularized domain adaptation",
+        "DOI": "10.1093/bioinformatics/btaa908",
+        "Date": "2020-10-24",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "xuebaliang/scSemiCluster"
+  },
+  {
     "Tool": "scSeqR",
     "Platform": "R",
     "Code": "https://github.com/rezakj/scSeqR",
@@ -14693,6 +14882,28 @@
     "Citations": 3,
     "NumPubs": 0,
     "NumPreprints": 1
+  },
+  {
+    "Tool": "ShinyCell",
+    "Platform": "R",
+    "Code": "https://github.com/SGDDNB/ShinyCell",
+    "Description": "ShinyCell is a R package that allows users to create interactive Shiny-based web applications to visualise single-cell data",
+    "License": "GPL-3.0",
+    "Added": "2020-11-08",
+    "Updated": "2020-11-08",
+    "Categories": ["Interactive", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "ShinyCell: Simple and sharable visualisation of single-cell gene expression data",
+        "DOI": "10.1101/2020.10.25.354100",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "SGDDNB/ShinyCell"
   },
   {
     "Tool": "SiCeLoRe",
@@ -16748,6 +16959,29 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "edsgard/trendsceek"
+  },
+  {
+    "Tool": "Triangulate",
+    "Platform": "R",
+    "Code": "https://github.com/SchulzLab/Triangulate",
+    "Description": "Triangulate provides a platform for linking regulatory elements to gene expression in single cells",
+    "License": "MIT",
+    "Added": "2020-11-08",
+    "Updated": "2020-11-08",
+    "Categories": ["GeneNetworks"],
+    "Publications": [
+      {
+        "Title": "Prediction of single-cell gene expression for transcription factor analysis",
+        "DOI": "10.1093/gigascience/giaa113",
+        "Date": "2020-10-30",
+        "Citations": 1
+      }
+    ],
+    "Preprints": [],
+    "Citations": 1,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "SchulzLab/Triangulate"
   },
   {
     "Tool": "TRUmiCount",
