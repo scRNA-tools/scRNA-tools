@@ -572,13 +572,21 @@
     <script type="application/javascript" src="js/jquery-banner.js"></script>
 
     <script>
-      function logicalFormatter(value) {
-        var colour = '#ff9999'
-        if (value) {
-          colour = '#009933'
-        }
+      // function logicalFormatter(value) {
+      //   var colour = '#ff9999'
+      //   if (value) {
+      //     colour = '#009933'
+      //   }
 
-        return '<span  style="color: ' + colour + '">' + value + '</div>'
+      //   return '<span  style="color: ' + colour + '">' + value + '</div>'
+      // }
+
+      function logicalFormatter(value) {
+        if (value) {
+          return "True"
+        } else {
+          return "False"
+        }
       }
 
       function listFormatter(value) {
