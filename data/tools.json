@@ -361,6 +361,27 @@
     "GitHub": "divyanshu-talwar/AutoImpute"
   },
   {
+    "Tool": "BABEL",
+    "Platform": "Python",
+    "Code": "https://github.com/wukevin/babel",
+    "Description": "BABEL is a deep learning model designed to translate between mutliple single cell modalities",
+    "Added": "2020-11-15",
+    "Updated": "2020-11-15",
+    "Categories": ["Integration"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "BABEL enables cross-modality translation between multi-omic profiles at single-cell resolution",
+        "DOI": "10.1101/2020.11.09.375550",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "wukevin/babel"
+  },
+  {
     "Tool": "BackSPIN",
     "Platform": "Python",
     "Code": "https://github.com/linnarsson-lab/BackSPIN",
@@ -1477,10 +1498,10 @@
       {
         "Title": "Cardelino: Integrating whole exomes and single-cell transcriptomes to reveal phenotypic impact of somatic variants",
         "DOI": "10.1101/413047",
-        "Citations": 11
+        "Citations": 12
       }
     ],
-    "Citations": 17,
+    "Citations": 18,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "single-cell-genetics/cardelino"
@@ -3243,11 +3264,11 @@
         "Title": "Discrete distributional differential expression (D3E) - a tool for gene expression analysis of single-cell RNA-seq data",
         "DOI": "10.1186/s12859-016-0944-6",
         "Date": "2016-02-29",
-        "Citations": 38
+        "Citations": 39
       }
     ],
     "Preprints": [],
-    "Citations": 38,
+    "Citations": 39,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "hemberg-lab/D3E"
@@ -4082,11 +4103,11 @@
         "Title": "TheDrosophilaembryo at single-cell transcriptome resolution",
         "DOI": "10.1126/science.aan3235",
         "Date": "2017-08-31",
-        "Citations": 170
+        "Citations": 171
       }
     ],
     "Preprints": [],
-    "Citations": 170,
+    "Citations": 171,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "rajewsky-lab/distmap"
@@ -5993,6 +6014,29 @@
     "GitHub": "immunogenomics/harmony"
   },
   {
+    "Tool": "hbfm",
+    "Platform": "R/C++",
+    "Code": "https://github.com/mnsekula/hbfm",
+    "Description": "hbfm is an R package for performing gene co-expression analysis in discrete single-cell RNA sequencing data",
+    "License": "GPL (>=2)",
+    "Added": "2020-11-15",
+    "Updated": "2020-11-15",
+    "Categories": ["GeneNetworks"],
+    "Publications": [
+      {
+        "Title": "A sparse Bayesian factor model for the construction of gene co-expression networks from single-cell RNA sequencing count data",
+        "DOI": "10.1186/s12859-020-03707-y",
+        "Date": "2020-08-18",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "mnsekula/hbfm"
+  },
+  {
     "Tool": "HieRFIT",
     "Platform": "R",
     "Code": "https://github.com/yasinkaymaz/HieRFIT",
@@ -6382,9 +6426,16 @@
     "Description": "ILoReg is a tool for high-resolution cell population identification from single-cell RNA-seq (scRNA-seq) data. High-resolution refers to the ability of ILoReg to identify subpopulations with subtle transcriptomic differences.",
     "License": "GPL-3.0",
     "Added": "2020-02-01",
-    "Updated": "2020-10-30",
+    "Updated": "2020-11-15",
     "Categories": ["Clustering", "RareCells"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "ILoReg: a tool for high-resolution cell population identification from single-cell RNA-seq data",
+        "DOI": "10.1093/bioinformatics/btaa919",
+        "Date": "2020-11-05",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "ILoReg enables high-resolution cell population identification from single-cell RNA-seq data",
@@ -6393,7 +6444,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "ILoReg",
     "GitHub": "elolab/iloreg"
@@ -6625,6 +6676,28 @@
     "NumPreprints": 0,
     "Bioc": "iSEE",
     "GitHub": "csoneson/iSEE"
+  },
+  {
+    "Tool": "iSMNN",
+    "Platform": "R",
+    "Code": "https://github.com/yycunc/iSMNN",
+    "Description": "Batch Effect Correction for Single-cell RNA-seq data via Iterative Supervised Mutual Nearest Neighbor Refinement",
+    "License": "GPL-3",
+    "Added": "2020-11-15",
+    "Updated": "2020-11-15",
+    "Categories": ["Integration"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "iSMNN: Batch Effect Correction for Single-cell RNA-seq data via Iterative Supervised Mutual Nearest Neighbor Refinement",
+        "DOI": "10.1101/2020.11.09.375659",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "yycunc/iSMNN"
   },
   {
     "Tool": "ISnorm",
@@ -6885,7 +6958,7 @@
         "Title": "Near-optimal probabilistic RNA-seq quantification",
         "DOI": "10.1038/nbt.3519",
         "Date": "2016-04-04",
-        "Citations": 2571
+        "Citations": 2572
       }
     ],
     "Preprints": [
@@ -6900,7 +6973,7 @@
         "Citations": 29
       }
     ],
-    "Citations": 2607,
+    "Citations": 2608,
     "NumPubs": 1,
     "NumPreprints": 2,
     "GitHub": "pachterlab/kallisto"
@@ -7374,11 +7447,11 @@
         "Title": "MAST: a flexible statistical framework for assessing transcriptional changes and characterizing heterogeneity in single-cell RNA sequencing data",
         "DOI": "10.1186/s13059-015-0844-5",
         "Date": "2015-12",
-        "Citations": 576
+        "Citations": 578
       }
     ],
     "Preprints": [],
-    "Citations": 576,
+    "Citations": 578,
     "NumPubs": 1,
     "NumPreprints": 0,
     "Bioc": "MAST",
@@ -7962,7 +8035,7 @@
         "Title": "The dynamics and regulators of cell fate decisions are revealed by pseudotemporal ordering of single cells",
         "DOI": "10.1038/nbt.2859",
         "Date": "2014-03-23",
-        "Citations": 1697
+        "Citations": 1698
       },
       {
         "Title": "Single-cell mRNA quantification and differential analysis with Census",
@@ -7974,7 +8047,7 @@
         "Title": "Reversed graph embedding resolves complex single-cell trajectories",
         "DOI": "10.1038/nmeth.4402",
         "Date": "2017-08-21",
-        "Citations": 658
+        "Citations": 659
       }
     ],
     "Preprints": [
@@ -7984,7 +8057,7 @@
         "Citations": 35
       }
     ],
-    "Citations": 2784,
+    "Citations": 2786,
     "NumPubs": 3,
     "NumPreprints": 1,
     "Bioc": "monocle",
@@ -9914,6 +9987,29 @@
     "GitHub": "seasamgo/rescue"
   },
   {
+    "Tool": "RNA-Bloom",
+    "Platform": "Java",
+    "Code": "https://github.com/bcgsc/RNA-Bloom",
+    "Description": "RNA-Bloom is a fast and memory-efficient de novo transcript sequence assembler designed for scRNA-seq",
+    "License": "GPL-3.0",
+    "Added": "2020-11-15",
+    "Updated": "2020-11-15",
+    "Categories": ["Assembly"],
+    "Publications": [
+      {
+        "Title": "RNA-Bloom enables reference-free and reference-guided sequence assembly for single-cell transcriptomes",
+        "DOI": "10.1101/gr.260174.119",
+        "Date": "2020-08",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "bcgsc/RNA-Bloom"
+  },
+  {
     "Tool": "RNA-Sieve",
     "Platform": "Python/Mathematica",
     "Code": "https://github.com/songlab-cal/rna-sieve",
@@ -10100,6 +10196,28 @@
     "GitHub": "weilin-genomics/rSuperCT"
   },
   {
+    "Tool": "RVAgene",
+    "Platform": "Python",
+    "Code": "https://github.com/maclean-lab/RVAgene",
+    "Description": "RVAgene models gene expression dynamics in single-cell or bulk data",
+    "License": "MIT",
+    "Added": "2020-11-15",
+    "Updated": "2020-11-15",
+    "Categories": ["DimensionalityReduction", "Simulation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "RVAgene: Generative modeling of gene expression time series data",
+        "DOI": "10.1101/2020.11.10.375436",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "maclean-lab/RVAgene"
+  },
+  {
     "Tool": "SAFE",
     "Platform": "R",
     "Code": "https://github.com/yycunc/SAFEclustering",
@@ -10180,7 +10298,7 @@
         "Title": "Salmon provides fast and bias-aware quantification of transcript expression",
         "DOI": "10.1038/nmeth.4197",
         "Date": "2017-03-06",
-        "Citations": 1815
+        "Citations": 1816
       },
       {
         "Title": "Alevin efficiently estimates accurate gene abundances from dscRNA-seq data",
@@ -10206,7 +10324,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 1919,
+    "Citations": 1920,
     "NumPubs": 2,
     "NumPreprints": 3,
     "GitHub": "COMBINE-lab/salmon"
@@ -10234,6 +10352,22 @@
     "NumPreprints": 0,
     "PyPI": "sam-algorithm",
     "GitHub": "atarashansky/self-assembling-manifold"
+  },
+  {
+    "Tool": "SampleQC",
+    "Platform": "R/C++",
+    "Code": "https://github.com/wmacnair/sampleqc",
+    "Description": "SampleQC is an R package for robust multivariate, multi-celltype, multi-sample quality control for single cell RNA-seq",
+    "License": "MIT",
+    "Added": "2020-11-15",
+    "Updated": "2020-11-15",
+    "Categories": ["QualityControl", "Simulation", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "GitHub": "wmacnair/sampleqc"
   },
   {
     "Tool": "SAMstrt",
@@ -11341,7 +11475,7 @@
         "Title": "A statistical approach for identifying differential distributions in single-cell RNA-seq experiments",
         "DOI": "10.1186/s13059-016-1077-y",
         "Date": "2016-10-25",
-        "Citations": 97
+        "Citations": 98
       }
     ],
     "Preprints": [
@@ -11351,7 +11485,7 @@
         "Citations": 3
       }
     ],
-    "Citations": 100,
+    "Citations": 101,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "scDD",
@@ -11392,11 +11526,11 @@
         "Title": "Bayesian approach to single-cell differential expression analysis",
         "DOI": "10.1038/nmeth.2967",
         "Date": "2014-05-18",
-        "Citations": 643
+        "Citations": 644
       }
     ],
     "Preprints": [],
-    "Citations": 643,
+    "Citations": 644,
     "NumPubs": 1,
     "NumPreprints": 0,
     "Bioc": "scde",
@@ -14760,7 +14894,7 @@
         "Title": "Comprehensive Integration of Single-Cell Data",
         "DOI": "10.1016/j.cell.2019.05.031",
         "Date": "2019-06",
-        "Citations": 1214
+        "Citations": 1218
       },
       {
         "Title": "Spatial reconstruction of single-cell gene expression data",
@@ -14772,7 +14906,7 @@
         "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
         "DOI": "10.1038/nbt.4096",
         "Date": "2018-04-02",
-        "Citations": 2281
+        "Citations": 2283
       }
     ],
     "Preprints": [
@@ -14797,7 +14931,7 @@
         "Citations": 49
       }
     ],
-    "Citations": 5007,
+    "Citations": 5013,
     "NumPubs": 3,
     "NumPreprints": 4,
     "CRAN": "Seurat",
@@ -16307,11 +16441,11 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 11732
+        "Citations": 11736
       }
     ],
     "Preprints": [],
-    "Citations": 11732,
+    "Citations": 11736,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "alexdobin/STAR"
@@ -16330,11 +16464,11 @@
         "Title": "Human haematopoietic stem cell lineage commitment is a continuous process",
         "DOI": "10.1038/ncb3493",
         "Date": "2017-03-20",
-        "Citations": 310
+        "Citations": 311
       }
     ],
     "Preprints": [],
-    "Citations": 310,
+    "Citations": 311,
     "NumPubs": 1,
     "NumPreprints": 0
   },
@@ -16701,9 +16835,16 @@
     "Code": "https://github.com/neocaleb/TENET",
     "Description": "A tool for reconstructing Transfer Entropy-based causal gene NETwork from pseudo-time ordered single cell transcriptomic data",
     "Added": "2019-11-12",
-    "Updated": "2020-01-02",
+    "Updated": "2020-11-15",
     "Categories": ["GeneNetworks"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "TENET: gene network reconstruction using transfer entropy reveals key regulatory factors from single cell transcriptomic data",
+        "DOI": "10.1093/nar/gkaa1014",
+        "Date": "2020-11-10",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Gene network reconstruction using single cell transcriptomic data reveals key factors for embryonic stem cell differentiation",
@@ -16712,7 +16853,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "neocaleb/TENET"
   },
@@ -17185,7 +17326,7 @@
         "Title": "Power analysis of single-cell RNA-sequencing experiments",
         "DOI": "10.1038/nmeth.4220",
         "Date": "2017-03-06",
-        "Citations": 272
+        "Citations": 273
       }
     ],
     "Preprints": [
@@ -17195,7 +17336,7 @@
         "Citations": 6
       }
     ],
-    "Citations": 278,
+    "Citations": 279,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "umis",
@@ -17315,11 +17456,11 @@
         "Title": "Single-cell reconstruction of developmental trajectories during zebrafish embryogenesis",
         "DOI": "10.1126/science.aar3131",
         "Date": "2018-04-26",
-        "Citations": 236
+        "Citations": 237
       }
     ],
     "Preprints": [],
-    "Citations": 236,
+    "Citations": 237,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "farrellja/URD"
@@ -18013,7 +18154,7 @@
         "Title": "zUMIs - A fast and flexible pipeline to process RNA sequencing data with UMIs",
         "DOI": "10.1093/gigascience/giy059",
         "Date": "2018-05-26",
-        "Citations": 74
+        "Citations": 75
       }
     ],
     "Preprints": [
@@ -18023,7 +18164,7 @@
         "Citations": 9
       }
     ],
-    "Citations": 83,
+    "Citations": 84,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "sdparekh/zUMIs"
