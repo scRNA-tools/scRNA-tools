@@ -62,6 +62,7 @@ Augur	VariableGenes
 AutoImpute	Imputation
 AutoImpute	Normalisation
 AutoImpute	VariableGenes
+BABEL	Integration
 BackSPIN	Clustering
 BackSPIN	GeneFiltering
 badger	Variants
@@ -683,6 +684,7 @@ GRNVBEM	GeneNetworks
 h-tSNE	DimensionalityReduction
 Harmony	DimensionalityReduction
 Harmony	Integration
+hbfm	GeneNetworks
 HieRFIT	Classification
 HieRFIT	Visualisation
 HIPPO	DifferentialExpression
@@ -754,6 +756,7 @@ iscandar	Interactive
 iscandar	Visualisation
 iSEE	Interactive
 iSEE	Visualisation
+iSMNN	Integration
 ISnorm	Normalisation
 ISOP	DifferentialExpression
 ISOP	ExpressionPatterns
@@ -1144,6 +1147,7 @@ redPATH	Ordering
 redPATH	VariableGenes
 redPATH	Visualisation
 RESCUE	Imputation
+RNA-Bloom	Assembly
 RNA-Sieve	Integration
 robustSingleCell	Clustering
 robustSingleCell	DimensionalityReduction
@@ -1163,6 +1167,8 @@ Rsubread	Alignment
 Rsubread	Quantification
 rSuperCT	Classification
 rSuperCT	Visualisation
+RVAgene	DimensionalityReduction
+RVAgene	Simulation
 SAFE	Clustering
 SAIC	Clustering
 sake	Clustering
@@ -1183,6 +1189,9 @@ SAM	Interactive
 SAM	MarkerGenes
 SAM	Normalisation
 SAM	Visualisation
+SampleQC	QualityControl
+SampleQC	Simulation
+SampleQC	Visualisation
 SAMstrt	DifferentialExpression
 SAMstrt	Normalisation
 Sanity	Normalisation
