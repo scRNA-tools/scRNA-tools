@@ -220,6 +220,8 @@ celda	Visualisation
 Cell_BLAST	Classification
 Cell_BLAST	Visualisation
 Cell-BLAST	Classification
+cell2location	Classification
+cell2location	Integration
 cellAlign	ExpressionPatterns
 cellAlign	Normalisation
 cellAlign	Ordering
@@ -354,6 +356,9 @@ CoGAPs	GeneSets
 CoGAPs	Visualisation
 COMET	MarkerGenes
 COMET	Visualisation
+compass	DimensionalityReduction
+compass	GeneNetworks
+compass	Visualisation
 CONCLUS	Clustering
 CONCLUS	DimensionalityReduction
 CONCLUS	MarkerGenes
@@ -395,6 +400,8 @@ cTPnet	Integration
 Cyclum	CellCycle
 Cyclum	DimensionalityReduction
 CytoTalk	GeneNetworks
+D-EE	DimensionalityReduction
+D-EE	Visualisation
 D3E	DifferentialExpression
 DC3	Clustering
 DC3	Integration
@@ -470,6 +477,15 @@ dincta	Classification
 dincta	Integration
 Dino	Normalisation
 DISC	Imputation
+DIscBIO	Clustering
+DIscBIO	DifferentialExpression
+DIscBIO	DimensionalityReduction
+DIscBIO	GeneNetworks
+DIscBIO	Normalisation
+DIscBIO	Ordering
+DIscBIO	QualityControl
+DIscBIO	VariableGenes
+DIscBIO	Visualisation
 DISCO	AlternativeSplicing
 distinct	DifferentialExpression
 DistMap	Classification
@@ -552,6 +568,8 @@ dynverse	Visualisation
 ECLAIR	Clustering
 ECLAIR	Ordering
 ECLAIR	Visualisation
+EDGE	DimensionalityReduction
+EDGE	VariableGenes
 elasticC3	Integration
 ELSA	Classification
 ELSA	DimensionalityReduction
@@ -1029,6 +1047,7 @@ PBLR	Imputation
 pcaReduce	Clustering
 pCMF	DimensionalityReduction
 pCMF	Visualisation
+pcqc	DimensionalityReduction
 pCreode	DimensionalityReduction
 pCreode	Ordering
 pCreode	Visualisation
@@ -1086,6 +1105,9 @@ Pseudocell_Tracer	Visualisation
 pseudodynamics	Ordering
 pseudogp	Ordering
 pseudogp	Visualisation
+PseudotimeDE	DifferentialExpression
+PseudotimeDE	ExpressionPatterns
+PseudotimeDE	Visualisation
 pyHSICLasso	MarkerGenes
 PyMINEr	Clustering
 PyMINEr	DimensionalityReduction
@@ -1306,6 +1328,7 @@ SCDE	Visualisation
 scDeepCluster	Clustering
 scDeepCluster	DimensionalityReduction
 scDesign	Simulation
+scDesign2	Simulation
 scDGN	DimensionalityReduction
 scDGN	Integration
 scdiff	GeneNetworks
@@ -1465,6 +1488,7 @@ scMetric	DimensionalityReduction
 scMetric	Visualisation
 scModels	Simulation
 SCmut	Variants
+scMVAE	DimensionalityReduction
 scNBMF	DimensionalityReduction
 scNCA	Integration
 scNCA	Simulation
@@ -1534,6 +1558,7 @@ scprep	GeneSets
 scprep	Normalisation
 scprep	QualityControl
 scprep	Visualisation
+scPretrain	Classification
 SCQC	GeneFiltering
 SCQC	QualityControl
 SCRABBLE	Imputation
@@ -1666,6 +1691,9 @@ scziDesk	DimensionalityReduction
 SEGtool	GeneFiltering
 SEGtool	MarkerGenes
 SelfE	VariableGenes
+SEMITONES	GeneSets
+SEMITONES	MarkerGenes
+SEMITONES	Visualisation
 SEPA	ExpressionPatterns
 SEPA	GeneSets
 SEPA	Interactive
@@ -1872,6 +1900,7 @@ switchde	ExpressionPatterns
 SWNE	DimensionalityReduction
 SWNE	Normalisation
 SWNE	Visualisation
+Symphony	Classification
 SymSim	Simulation
 SymSim	Visualisation
 SynergisticCore	GeneNetworks
