@@ -395,11 +395,11 @@
         "Title": "Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq",
         "DOI": "10.1126/science.aaa1934",
         "Date": "2015-02-19",
-        "Citations": 1513
+        "Citations": 1514
       }
     ],
     "Preprints": [],
-    "Citations": 1513,
+    "Citations": 1514,
     "NumPubs": 1,
     "NumPreprints": 0,
     "PyPI": "backspinpy",
@@ -1772,6 +1772,28 @@
     "GitHub": "gao-lab/Cell_BLAST"
   },
   {
+    "Tool": "cell2location",
+    "Platform": "Python",
+    "Code": "https://github.com/BayraktarLab/cell2location",
+    "Description": "Cell2location maps the spatial distribution of cell types by integrating single-cell RNA-seq (scRNA-seq) and multi-cell spatial transcriptomic data from a given tissue",
+    "License": "Apache-2.0",
+    "Added": "2020-11-22",
+    "Updated": "2020-11-22",
+    "Categories": ["Classification", "Integration"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Comprehensive mapping of tissue cell architecture via integrated single cell and spatial transcriptomics",
+        "DOI": "10.1101/2020.11.15.378125",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "BayraktarLab/cell2location"
+  },
+  {
     "Tool": "cellAlign",
     "Platform": "R/C++",
     "Code": "https://github.com/shenorrLab/cellAlign",
@@ -2910,6 +2932,22 @@
     "GitHub": "MSingerLab/COMETSC"
   },
   {
+    "Tool": "compass",
+    "Platform": "Python",
+    "Code": "https://github.com/nceglia/compass",
+    "Description": "Vector representations of gene co-expression in single-cell RNA-seq",
+    "License": "MIT",
+    "Added": "2020-11-22",
+    "Updated": "2020-11-22",
+    "Categories": ["DimensionalityReduction", "GeneNetworks", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "GitHub": "nceglia/compass"
+  },
+  {
     "Tool": "CONCLUS",
     "Platform": "R",
     "Code": "https://github.com/lancrinlab/CONCLUS",
@@ -3251,6 +3289,29 @@
     "GitHub": "tanlabcode/CytoTalk"
   },
   {
+    "Tool": "D-EE",
+    "Platform": "C/R",
+    "Code": "https://github.com/ShaokunAn/D-EE",
+    "Description": "D-EE: a distributed software for visualizing intrinsic structure of large-scale single-cell data",
+    "License": "GPL-3.0",
+    "Added": "2020-11-22",
+    "Updated": "2020-11-22",
+    "Categories": ["DimensionalityReduction", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "D-EE: Distributed software for visualizing intrinsic structure of large-scale single-cell data",
+        "DOI": "10.1093/gigascience/giaa126",
+        "Date": "2020-11",
+        "Citations": 1
+      }
+    ],
+    "Preprints": [],
+    "Citations": 1,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "ShaokunAn/D-EE"
+  },
+  {
     "Tool": "D3E",
     "Platform": "Python",
     "Code": "https://github.com/hemberg-lab/D3E",
@@ -3264,11 +3325,11 @@
         "Title": "Discrete distributional differential expression (D3E) - a tool for gene expression analysis of single-cell RNA-seq data",
         "DOI": "10.1186/s12859-016-0944-6",
         "Date": "2016-02-29",
-        "Citations": 40
+        "Citations": 39
       }
     ],
     "Preprints": [],
-    "Citations": 40,
+    "Citations": 39,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "hemberg-lab/D3E"
@@ -4059,6 +4120,23 @@
     "GitHub": "xie-lab/DISC"
   },
   {
+    "Tool": "DIscBIO",
+    "Platform": "R",
+    "Code": "https://github.com/ocbe-uio/DIscBIO",
+    "Description": "DIscBIO: A user-friendly pipeline for biomarker discovery in single-cell transcriptomics",
+    "License": "MIT",
+    "Added": "2020-11-22",
+    "Updated": "2020-11-22",
+    "Categories": ["Clustering", "DifferentialExpression", "DimensionalityReduction", "GeneNetworks", "Normalisation", "Ordering", "QualityControl", "VariableGenes", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "CRAN": "DIscBIO",
+    "GitHub": "ocbe-uio/DIscBIO"
+  },
+  {
     "Tool": "DISCO",
     "Platform": "Python",
     "Code": "https://pbtech-vc.med.cornell.edu/git/mason-lab/disco/tree/master",
@@ -4238,7 +4316,7 @@
         "Title": "DoubletFinder: Doublet Detection in Single-Cell RNA Sequencing Data Using Artificial Nearest Neighbors",
         "DOI": "10.1016/j.cels.2019.03.003",
         "Date": "2019-04",
-        "Citations": 124
+        "Citations": 123
       }
     ],
     "Preprints": [
@@ -4248,7 +4326,7 @@
         "Citations": 17
       }
     ],
-    "Citations": 141,
+    "Citations": 140,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "chris-mcginnis-ucsf/DoubletFinder"
@@ -4795,6 +4873,29 @@
     "NumPreprints": 1,
     "PyPI": "ECLAIR",
     "GitHub": "GGiecold/ECLAIR"
+  },
+  {
+    "Tool": "EDGE",
+    "Platform": "R/C++",
+    "Code": "https://github.com/shawnstat/EDGE",
+    "Description": "Ensemble dimensionality reduction and feature gene extraction for single-cell RNA-seq data",
+    "License": "GPL-3.0",
+    "Added": "2020-11-22",
+    "Updated": "2020-11-22",
+    "Categories": ["DimensionalityReduction", "VariableGenes"],
+    "Publications": [
+      {
+        "Title": "Ensemble dimensionality reduction and feature gene extraction for single-cell RNA-seq data",
+        "DOI": "10.1038/s41467-020-19465-7",
+        "Date": "2020-11-17",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "shawnstat/EDGE"
   },
   {
     "Tool": "elasticC3",
@@ -9034,6 +9135,27 @@
     "NumPreprints": 1
   },
   {
+    "Tool": "pcqc",
+    "Platform": "Python",
+    "Code": "https://github.com/RoussosLab/pcqc",
+    "Description": "Robustly Identifying the Most Important PC's for Clustering and Nonlinear Dimensionality Reduction",
+    "Added": "2020-11-22",
+    "Updated": "2020-11-22",
+    "Categories": ["DimensionalityReduction"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "PCQC: Selecting optimal principal components for identifying clusters with highly imbalanced class sizes in single-cell RNA-seq data",
+        "DOI": "10.1101/2020.11.19.390542",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "RoussosLab/pcqc"
+  },
+  {
     "Tool": "pCreode",
     "Platform": "Python",
     "Code": "https://github.com/KenLauLab/pCreode",
@@ -9534,6 +9656,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "kieranrcampbell/pseudogp"
+  },
+  {
+    "Tool": "PseudotimeDE",
+    "Platform": "R",
+    "Code": "https://github.com/SONGDONGYUAN1994/PseudotimeDE",
+    "Description": "Inference of differential gene expression along cell pseudotime with well-calibrated p-values from single-cell RNA sequencing data",
+    "License": "MIT",
+    "Added": "2020-11-22",
+    "Updated": "2020-11-22",
+    "Categories": ["DifferentialExpression", "ExpressionPatterns", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "PseudotimeDE: inference of differential gene expression along cell pseudotime with well-calibrated p-values from single-cell RNA sequencing data",
+        "DOI": "10.1101/2020.11.17.387779",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "SONGDONGYUAN1994/PseudotimeDE"
   },
   {
     "Tool": "pyHSICLasso",
@@ -10163,11 +10307,11 @@
         "Title": "The R package Rsubread is easier, faster, cheaper and better for alignment and quantification of RNA sequencing reads",
         "DOI": "10.1093/nar/gkz114",
         "Date": "2019-02-20",
-        "Citations": 215
+        "Citations": 217
       }
     ],
     "Preprints": [],
-    "Citations": 215,
+    "Citations": 217,
     "NumPubs": 1,
     "NumPreprints": 0,
     "Bioc": "Rsubread"
@@ -10859,7 +11003,7 @@
       {
         "Title": "Scanpy for analysis of large-scale single-cell gene expression data",
         "DOI": "10.1101/174029",
-        "Citations": 8
+        "Citations": 9
       },
       {
         "Title": "Graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells",
@@ -10867,7 +11011,7 @@
         "Citations": 22
       }
     ],
-    "Citations": 751,
+    "Citations": 752,
     "NumPubs": 2,
     "NumPreprints": 2,
     "PyPI": "scanpy",
@@ -11580,6 +11724,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "Vivianstats/scDesign"
+  },
+  {
+    "Tool": "scDesign2",
+    "Platform": "R",
+    "Code": "https://github.com/JSB-UCLA/scDesign2",
+    "Description": "An interpretable simulator that generates realistic single-cell gene expression count data with gene correlations captured",
+    "License": "MIT",
+    "Added": "2020-11-22",
+    "Updated": "2020-11-22",
+    "Categories": ["Simulation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "scDesign2: an interpretable simulator that generates high-fidelity single-cell gene expression count data with gene correlations captured",
+        "DOI": "10.1101/2020.11.17.387795",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "JSB-UCLA/scDesign2"
   },
   {
     "Tool": "scDGN",
@@ -12940,7 +13106,7 @@
         "Title": "Evaluating stably expressed genes in single cells",
         "DOI": "10.1093/gigascience/giz106",
         "Date": "2019-09-01",
-        "Citations": 11
+        "Citations": 12
       }
     ],
     "Preprints": [
@@ -12955,7 +13121,7 @@
         "Citations": 9
       }
     ],
-    "Citations": 58,
+    "Citations": 59,
     "NumPubs": 2,
     "NumPreprints": 2,
     "Bioc": "scMerge",
@@ -13028,6 +13194,28 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "nghiavtr/SCmut"
+  },
+  {
+    "Tool": "scMVAE",
+    "Platform": "Python",
+    "Code": "https://github.com/cmzuo11/scMVAE",
+    "Description": "Deep-joint-learning analysis model of single cell transcriptome and open chromatin accessibility data",
+    "Added": "2020-11-22",
+    "Updated": "2020-11-22",
+    "Categories": ["DimensionalityReduction"],
+    "Publications": [
+      {
+        "Title": "Deep-joint-learning analysis model of single cell transcriptome and open chromatin accessibility data",
+        "DOI": "10.1093/bib/bbaa287",
+        "Date": "2020-11-17",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "cmzuo11/scMVAE"
   },
   {
     "Tool": "scNBMF",
@@ -13231,7 +13419,7 @@
         "Title": "A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain",
         "DOI": "10.1016/j.cell.2018.05.057",
         "Date": "2018-08",
-        "Citations": 200
+        "Citations": 201
       }
     ],
     "Preprints": [
@@ -13241,7 +13429,7 @@
         "Citations": 5
       }
     ],
-    "Citations": 205,
+    "Citations": 206,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "aertslab/SCope"
@@ -13607,6 +13795,28 @@
     "NumPreprints": 0,
     "PyPI": "scprep",
     "GitHub": "KrishnaswamyLab/scprep"
+  },
+  {
+    "Tool": "scPretrain",
+    "Platform": "Python",
+    "Code": "https://github.com/ruiyi-zhang/scPretrain",
+    "Description": "Multi-task self-supervised learning for cell type classification",
+    "License": "MIT",
+    "Added": "2020-11-22",
+    "Updated": "2020-11-22",
+    "Categories": ["Classification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "scPretrain: Multi-task self-supervised learning for cell type classification",
+        "DOI": "10.1101/2020.11.18.386102",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "ruiyi-zhang/scPretrain"
   },
   {
     "Tool": "SCQC",
@@ -14790,6 +15000,28 @@
     "GitHub": "Priyadarshini-Rai/SelfE"
   },
   {
+    "Tool": "SEMITONES",
+    "Platform": "Python",
+    "Code": "https://github.com/ohlerlab/SEMITONES",
+    "Description": "Single-cEll Marker IdentificaTiON by Enrichment Scoring",
+    "License": "GPL-3.0",
+    "Added": "2020-11-22",
+    "Updated": "2020-11-22",
+    "Categories": ["GeneSets", "MarkerGenes", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "SEMITONES: Single-cEll Marker IdentificaTiON by Enrichment Scoring",
+        "DOI": "10.1101/2020.11.17.386664",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "ohlerlab/SEMITONES"
+  },
+  {
     "Tool": "SEPA",
     "Platform": "R",
     "Code": "https://github.com/zji90/SEPA",
@@ -15154,13 +15386,19 @@
     "Description": "A versatile R package to facilitate the analysis workflow for single-cell data",
     "License": "Custom",
     "Added": "2019-07-11",
-    "Updated": "2019-07-11",
+    "Updated": "2020-11-22",
     "Categories": ["DifferentialExpression", "ExpressionPatterns", "MarkerGenes"],
     "Publications": [],
-    "Preprints": [],
+    "Preprints": [
+      {
+        "Title": "Venice: A New Algorithm for Finding Marker Genes in Single-Cell Transcriptomic Data",
+        "DOI": "10.1101/2020.11.16.384479",
+        "Citations": 0
+      }
+    ],
     "Citations": 0,
     "NumPubs": 0,
-    "NumPreprints": 0,
+    "NumPreprints": 1,
     "GitHub": "bioturing/signac"
   },
   {
@@ -15571,10 +15809,15 @@
     "Description": "Interactive Analysis of Single Cell RNA-Seq Data",
     "License": "MIT",
     "Added": "2018-05-13",
-    "Updated": "2018-11-13",
+    "Updated": "2020-11-22",
     "Categories": ["Alignment", "Clustering", "DifferentialExpression", "DimensionalityReduction", "GeneFiltering", "GeneSets", "Interactive", "MarkerGenes", "Normalisation", "QualityControl", "Quantification", "Visualisation"],
     "Publications": [],
     "Preprints": [
+      {
+        "Title": "Comprehensive generation, visualization, and reporting of quality control metrics for single-cell RNA sequencing data",
+        "DOI": "10.1101/2020.11.16.385328",
+        "Citations": 0
+      },
       {
         "Title": "Interactive single cell RNA-Seq analysis with the Single Cell Toolkit (SCTK)",
         "DOI": "10.1101/329755",
@@ -15583,7 +15826,7 @@
     ],
     "Citations": 3,
     "NumPubs": 0,
-    "NumPreprints": 1,
+    "NumPreprints": 2,
     "Bioc": "singleCellTK",
     "GitHub": "compbiomed/singleCellTK"
   },
@@ -16441,11 +16684,11 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 11819
+        "Citations": 11820
       }
     ],
     "Preprints": [],
-    "Citations": 11819,
+    "Citations": 11820,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "alexdobin/STAR"
@@ -16553,6 +16796,28 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "yanwu2014/swne"
+  },
+  {
+    "Tool": "Symphony",
+    "Platform": "R/C++",
+    "Code": "https://github.com/immunogenomics/symphony",
+    "Description": "Efficient and precise single-cell reference atlas mapping with Symphony",
+    "License": "MIT",
+    "Added": "2020-11-22",
+    "Updated": "2020-11-22",
+    "Categories": ["Classification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Efficient and precise single-cell reference atlas mapping with Symphony",
+        "DOI": "10.1101/2020.11.18.389189",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "immunogenomics/symphony"
   },
   {
     "Tool": "SymSim",
@@ -17092,11 +17357,11 @@
         "Title": "Identification of spatial expression trends in single-cell gene expression data",
         "DOI": "10.1038/nmeth.4634",
         "Date": "2018-03-19",
-        "Citations": 56
+        "Citations": 55
       }
     ],
     "Preprints": [],
-    "Citations": 56,
+    "Citations": 55,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "edsgard/trendsceek"
@@ -17413,10 +17678,10 @@
       {
         "Title": "UniPath: A uniform approach for pathway and gene-set based analysis of heterogeneity in single-cell epigenome and transcriptome profiles",
         "DOI": "10.1101/864389",
-        "Citations": 1
+        "Citations": 0
       }
     ],
-    "Citations": 1,
+    "Citations": 0,
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "reggenlab/UniPath"
