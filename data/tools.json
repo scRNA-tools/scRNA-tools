@@ -1817,6 +1817,23 @@
     "GitHub": "shenorrLab/cellAlign"
   },
   {
+    "Tool": "CellaRepertorium",
+    "Platform": "R/C++",
+    "Code": "https://github.com/amcdavid/CellaRepertorium",
+    "Description": "Methods to cluster and analyze high-throughput single cell immune cell repertoires, especially from the 10X Genomics VDJ solution",
+    "License": "GPL-3",
+    "Added": "2020-11-29",
+    "Updated": "2020-11-29",
+    "Categories": ["Clustering", "Immune", "QualityControl", "Variants", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "CellaRepertorium",
+    "GitHub": "amcdavid/CellaRepertorium"
+  },
+  {
     "Tool": "cellassign",
     "Platform": "R",
     "Code": "https://github.com/irrationone/cellassign",
@@ -3325,11 +3342,11 @@
         "Title": "Discrete distributional differential expression (D3E) - a tool for gene expression analysis of single-cell RNA-seq data",
         "DOI": "10.1186/s12859-016-0944-6",
         "Date": "2016-02-29",
-        "Citations": 39
+        "Citations": 40
       }
     ],
     "Preprints": [],
-    "Citations": 39,
+    "Citations": 40,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "hemberg-lab/D3E"
@@ -4157,13 +4174,19 @@
     "Description": "distinct is a statistical method to perform differential testing between two or more groups of distributions",
     "License": "GPL (>=3)",
     "Added": "2020-04-29",
-    "Updated": "2020-04-29",
+    "Updated": "2020-11-29",
     "Categories": ["DifferentialExpression"],
     "Publications": [],
-    "Preprints": [],
+    "Preprints": [
+      {
+        "Title": "distinct: a novel approach to differential distribution analyses",
+        "DOI": "10.1101/2020.11.24.394213",
+        "Citations": 0
+      }
+    ],
     "Citations": 0,
     "NumPubs": 0,
-    "NumPreprints": 0,
+    "NumPreprints": 1,
     "Bioc": "distinct",
     "GitHub": "SimoneTiberi/distinct"
   },
@@ -6482,11 +6505,11 @@
         "Title": "Integrative differential expression and gene set enrichment analysis using summary statistics for scRNA-seq studies",
         "DOI": "10.1038/s41467-020-15298-6",
         "Date": "2020-03-27",
-        "Citations": 1
+        "Citations": 0
       }
     ],
     "Preprints": [],
-    "Citations": 1,
+    "Citations": 0,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "xzhoulab/iDEA"
@@ -7059,7 +7082,7 @@
         "Title": "Near-optimal probabilistic RNA-seq quantification",
         "DOI": "10.1038/nbt.3519",
         "Date": "2016-04-04",
-        "Citations": 2616
+        "Citations": 2617
       }
     ],
     "Preprints": [
@@ -7074,7 +7097,7 @@
         "Citations": 31
       }
     ],
-    "Citations": 2654,
+    "Citations": 2655,
     "NumPubs": 1,
     "NumPreprints": 2,
     "GitHub": "pachterlab/kallisto"
@@ -7278,6 +7301,22 @@
     "CRAN": "LEAP"
   },
   {
+    "Tool": "learn2count",
+    "Platform": "R",
+    "Code": "https://github.com/drisso/learn2count",
+    "Description": "Structure learning of graphical models for count data",
+    "License": "Artistic-2.0",
+    "Added": "2020-11-29",
+    "Updated": "2020-11-29",
+    "Categories": ["DimensionalityReduction"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "GitHub": "drisso/learn2count"
+  },
+  {
     "Tool": "LIGER",
     "Platform": "R/C++",
     "Code": "https://github.com/MacoskoLab/liger",
@@ -7420,6 +7459,28 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "zy26/M3S"
+  },
+  {
+    "Tool": "MacroPolo",
+    "Platform": "Python",
+    "Code": "https://github.com/ch6845/MarcoPolo",
+    "Description": "MarcoPolo is a clustering-free approach to the exploration of differentially expressed genes along with group information in single-cell RNA-seq data",
+    "License": "GPL-2.0",
+    "Added": "2020-11-29",
+    "Updated": "2020-11-29",
+    "Categories": ["DifferentialExpression"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "MarcoPolo: a clustering-free approach to the exploration of differentially expressed genes along with group information in single-cell RNA-seq data",
+        "DOI": "10.1101/2020.11.23.393900",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "ch6845/MarcoPolo"
   },
   {
     "Tool": "MAESTRO",
@@ -7907,6 +7968,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "yuifu/millefy"
+  },
+  {
+    "Tool": "miloR",
+    "Platform": "R",
+    "Code": "https://github.com/MarioniLab/miloR",
+    "Description": "Milo is a method for differential abundance analysis on KNN graph from single-cell datasets",
+    "License": "GPL-3",
+    "Added": "2020-11-29",
+    "Updated": "2020-11-29",
+    "Categories": ["MarkerGenes", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Milo: differential abundance testing on single-cell data using k-NN graphs",
+        "DOI": "10.1101/2020.11.23.393769",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "MarioniLab/miloR"
   },
   {
     "Tool": "MIMOSCA",
@@ -11626,10 +11709,10 @@
       {
         "Title": "scDD: A statistical approach for identifying differential distributions in single-cell RNA-seq experiments",
         "DOI": "10.1101/035501",
-        "Citations": 3
+        "Citations": 4
       }
     ],
-    "Citations": 106,
+    "Citations": 107,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "scDD",
@@ -12695,7 +12778,7 @@
         "Title": "An accurate and robust imputation method scImpute for single-cell RNA-seq data",
         "DOI": "10.1038/s41467-018-03405-7",
         "Date": "2018-03-08",
-        "Citations": 199
+        "Citations": 198
       }
     ],
     "Preprints": [
@@ -12705,7 +12788,7 @@
         "Citations": 20
       }
     ],
-    "Citations": 219,
+    "Citations": 218,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "Vivianstats/scImpute"
@@ -13106,7 +13189,7 @@
         "Title": "Evaluating stably expressed genes in single cells",
         "DOI": "10.1093/gigascience/giz106",
         "Date": "2019-09-01",
-        "Citations": 11
+        "Citations": 12
       }
     ],
     "Preprints": [
@@ -13121,7 +13204,7 @@
         "Citations": 9
       }
     ],
-    "Citations": 58,
+    "Citations": 59,
     "NumPubs": 2,
     "NumPreprints": 2,
     "Bioc": "scMerge",
@@ -13729,6 +13812,28 @@
     "GitHub": "ncbi/scPopCorn"
   },
   {
+    "Tool": "scPOST",
+    "Platform": "R",
+    "Code": "https://github.com/immunogenomics/scpost",
+    "Description": "Simulation of single-cell datasets for power analyses that estimate power to detect cell state frequency shifts between conditions",
+    "License": "MIT",
+    "Added": "2020-11-29",
+    "Updated": "2020-11-29",
+    "Categories": ["Simulation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Maximizing statistical power to detect clinically associated cell states with scPOST",
+        "DOI": "10.1101/2020.11.23.390682",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "immunogenomics/scpost"
+  },
+  {
     "Tool": "scPower",
     "Platform": "R",
     "Code": "https://github.com/heiniglab/scPower",
@@ -13934,6 +14039,27 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "XiaoyingZheng121/scRCMF"
+  },
+  {
+    "Tool": "SCReadCounts",
+    "Platform": "Python",
+    "Code": "https://github.com/HorvathLab/NGS",
+    "Description": "SCReadCounts is a computational tool for a cell-level assessment of the read counts bearing a particular nucleotide at genomic positions of interest from single cell RNA sequencing (scRNA-seq) data",
+    "Added": "2020-11-29",
+    "Updated": "2020-11-29",
+    "Categories": ["Variants"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "SCReadCounts: Estimation of cell-level SNVs from scRNA-seq data",
+        "DOI": "10.1101/2020.11.23.394569",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "HorvathLab/NGS"
   },
   {
     "Tool": "scReClassify",
@@ -16684,11 +16810,11 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 11922
+        "Citations": 11923
       }
     ],
     "Preprints": [],
-    "Citations": 11922,
+    "Citations": 11923,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "alexdobin/STAR"
@@ -17357,11 +17483,11 @@
         "Title": "Identification of spatial expression trends in single-cell gene expression data",
         "DOI": "10.1038/nmeth.4634",
         "Date": "2018-03-19",
-        "Citations": 56
+        "Citations": 55
       }
     ],
     "Preprints": [],
-    "Citations": 56,
+    "Citations": 55,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "edsgard/trendsceek"
