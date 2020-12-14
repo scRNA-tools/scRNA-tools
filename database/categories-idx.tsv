@@ -59,6 +59,8 @@ AUCell	Interactive
 AUCell	Visualisation
 Augur	Simulation
 Augur	VariableGenes
+AutoClass	Classification
+AutoClass	Imputation
 AutoImpute	Imputation
 AutoImpute	Normalisation
 AutoImpute	VariableGenes
@@ -126,7 +128,9 @@ bigSCale2	Normalisation
 bigSCale2	Ordering
 bigSCale2	VariableGenes
 bigSCale2	Visualisation
+bindSC	Clustering
 bindSC	Integration
+bindSC	Visualisation
 BingleSeq	Clustering
 BingleSeq	DifferentialExpression
 BingleSeq	GeneSets
@@ -251,6 +255,8 @@ CellID	GeneSets
 CellID	Visualisation
 Cellity	QualityControl
 CellMeSH	Classification
+CellMixS	Integration
+CellMixS	Visualisation
 CellO	Classification
 CellPhoneDB	GeneNetworks
 CellPhoneDB	Visualisation
@@ -346,6 +352,7 @@ ClusterMine	Clustering
 ClusterMine	GeneSets
 clustermole	Classification
 clustermole	MarkerGenes
+clusterpval	MarkerGenes
 clustifyr	Classification
 clustifyr	VariableGenes
 clustifyr	Visualisation
@@ -554,6 +561,10 @@ DrSeq2	QualityControl
 DrSeq2	Quantification
 DrSeq2	UMIs
 DrSeq2	VariableGenes
+DSAVE-M	Classification
+DSAVE-M	Visualisation
+DSAVE-R	Classification
+DSAVE-R	Visualisation
 DTWScore	DifferentialExpression
 DTWScore	Ordering
 DTWScore	VariableGenes
@@ -911,6 +922,7 @@ MetaCell	MarkerGenes
 MetaCell	QualityControl
 MetaCell	VariableGenes
 MetaCell	Visualisation
+metacells	Clustering
 MetaNeighbor	Classification
 MetaNeighbor	Clustering
 MetaNeighbor	GeneSets
@@ -1373,6 +1385,7 @@ SCENIC	Clustering
 SCENIC	GeneNetworks
 SCENIC	Visualisation
 SCENT	Ordering
+SCENT	StemCells
 scEpath	Clustering
 scEpath	DimensionalityReduction
 scEpath	ExpressionPatterns
@@ -1413,6 +1426,10 @@ scGPS	Clustering
 scGPS	MarkerGenes
 scGPS	VariableGenes
 scGPS	Visualisation
+schema	DifferentialExpression
+schema	GeneSets
+schema	Integration
+schema	Visualisation
 schex	Visualisation
 scHinter	Imputation
 scHinter	Normalisation
@@ -1488,6 +1505,8 @@ scMatch	Classification
 scMatch	GeneSets
 scMCA	Classification
 scMCA	Visualisation
+SCMER	DimensionalityReduction
+SCMER	VariableGenes
 scMerge	Clustering
 scMerge	DimensionalityReduction
 scMerge	Integration
