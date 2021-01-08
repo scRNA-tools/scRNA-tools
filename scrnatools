@@ -7,15 +7,10 @@
 #                                                                              #
 ################################################################################
 
-#### PACKRAT ####
+#### RENV ####
 
-suppressMessages(
-    packrat::restore(
-        overwrite.dirty = TRUE,
-        prompt          = FALSE,
-        restart         = FALSE
-    )
-)
+options("renv.verbose" = FALSE)
+renv::restore()
 
 #### DOCOPT ####
 
@@ -72,7 +67,7 @@ source("app/utils.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.3.4")
+opts <- docopt(DOCOPT, version = "0.3.5")
 
 logo <- get_logo()
 cat(logo, "\n")

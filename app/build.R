@@ -150,7 +150,8 @@ save_table_json <- function(database, data_dir) {
         dplyr::summarise(
             DOIs      = paste(DOI, collapse = ";"),
             Dates     = paste(Date, collapse = ";"),
-            Citations = sum(Citations)
+            Citations = sum(Citations),
+            .groups   = "drop_last"
         )
 
     tools <- purrr::map_dfr(database$Tools, function(.tool) {
