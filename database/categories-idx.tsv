@@ -281,6 +281,7 @@ CellRouter	Ordering
 CellRouter	QualityControl
 CellRouter	Visualisation
 cellSNP	Variants
+cellsnp-lite	Variants
 CellTagR	QualityControl
 CellTagR	Quantification
 CellTagR	UMIs
@@ -411,6 +412,8 @@ cTPnet	Imputation
 cTPnet	Integration
 Cyclum	CellCycle
 Cyclum	DimensionalityReduction
+Cytopath	Ordering
+Cytopath	Visualisation
 CytoTalk	GeneNetworks
 D-EE	DimensionalityReduction
 D-EE	Visualisation
@@ -592,6 +595,8 @@ ELSA	DimensionalityReduction
 embeddr	Ordering
 EMEP	Clustering
 EMEP	DimensionalityReduction
+ENCORE	Clustering
+ENCORE	MarkerGenes
 ENHANCE	DimensionalityReduction
 ENHANCE	Imputation
 EnImpute	Imputation
@@ -603,6 +608,10 @@ ESAT	Quantification
 escape	GeneSets
 escape	Visualisation
 ESCO	Simulation
+eSPRESSO	Clustering
+eSPRESSO	DimensionalityReduction
+eSPRESSO	GeneFiltering
+eSPRESSO	Visualisation
 eSVD	DimensionalityReduction
 eSVD	Ordering
 eSVD	Visualisation
@@ -1106,6 +1115,7 @@ PoissonUMIs	Visualisation
 polyApipe	AlternativeSplicing
 polyApipe	Quantification
 polyApipe	UMIs
+powerEQTL	Variants
 POWSC	DifferentialExpression
 POWSC	Simulation
 POWSC	Visualisation
@@ -1318,6 +1328,7 @@ scCATCH	MarkerGenes
 scCB2	QualityControl
 scCCESS	Clustering
 scCCESS	DimensionalityReduction
+scClassifR	Classification
 scClassify	Classification
 scClassify	Visualisation
 scCLUE	Clustering
@@ -1327,6 +1338,7 @@ scclusteval	Clustering
 scclusteval	Visualisation
 scClustViz	Interactive
 scClustViz	Visualisation
+scCODA	Modality
 scConsensus	Classification
 scConsensus	DifferentialExpression
 scConsensus	Integration
@@ -1402,6 +1414,7 @@ scFeatureFilter	Visualisation
 scfind	Classification
 scfind	Interactive
 scfind	MarkerGenes
+scFusion	Variants
 scGAN	Simulation
 scGEApp	DimensionalityReduction
 scGEApp	GeneFiltering
@@ -1487,6 +1500,8 @@ scIVA	Interactive
 scIVA	MarkerGenes
 scIVA	QualityControl
 scIVA	Visualisation
+scLAPA	AlternativeSplicing
+scLAPA	Clustering
 scLCA	Clustering
 SClineager	Ordering
 SClineager	Variants
@@ -1514,7 +1529,11 @@ scMerge	Normalisation
 scMerge	VariableGenes
 scMetric	DimensionalityReduction
 scMetric	Visualisation
+scMLnet	GeneNetworks
+scMLnet	Visualisation
 scModels	Simulation
+scMomentum	GeneNetworks
+scMomentum	Ordering
 SCmut	Variants
 scMVAE	DimensionalityReduction
 scNBMF	DimensionalityReduction
@@ -1755,6 +1774,8 @@ SeuratWizard	MarkerGenes
 SeuratWizard	Normalisation
 SeuratWizard	QualityControl
 SeuratWizard	VariableGenes
+sfaira	Classification
+sfaira	DimensionalityReduction
 SHARP	Clustering
 SHARP	DimensionalityReduction
 SHARP	GeneFiltering
@@ -1897,6 +1918,7 @@ SpaOTsc	Visualisation
 SparseDC	Clustering
 SparseDC	MarkerGenes
 SPARSim	Simulation
+SPaRTAN	GeneNetworks
 Specter	Clustering
 Spectrum	Clustering
 Spectrum	Visualisation
@@ -2064,6 +2086,10 @@ VISION	Visualisation
 visnormsc	Interactive
 visnormsc	Normalisation
 visnormsc	Visualisation
+VITAE	DifferentialExpression
+VITAE	DimensionalityReduction
+VITAE	Ordering
+VITAE	Visualisation
 VoxHunt	Visualisation
 VPAC	Clustering
 VPAC	DimensionalityReduction
