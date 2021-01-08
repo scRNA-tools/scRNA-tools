@@ -1,18 +1,18 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
 language: r
-r: 3.6
+r: 4.0
 sudo: true
 
 cache:
   directories:
-    - $TRAVIS_BUILD_DIR/packrat/src
-    - $TRAVIS_BUILD_DIR/packrat/lib
+  - $HOME/.local/share/renv
+  - $TRAVIS_BUILD_DIR/renv/library
   packages: true
 
 install:
-  - R -e "0" --args --bootstrap-packrat
-  - R -e "packrat::restore(restart = FALSE)"
+  - Rscript -e "if (!requireNamespace('renv', quietly = TRUE)) install.packages('renv')"
+  - Rscript -e "renv::restore()"
 
 script:
   - ./scrnatools build
