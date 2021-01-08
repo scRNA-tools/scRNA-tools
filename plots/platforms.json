@@ -5,8 +5,8 @@
       "width": 0.95,
       "base": 0,
       "x": [1],
-      "y": [470],
-      "text": "Platform: R<br />Count: 470<br />Percent: 50",
+      "y": [479],
+      "text": "Platform: R<br />Count: 479<br />Percent: 49.9",
       "type": "bar",
       "marker": {
         "autocolorscale": false,
@@ -29,8 +29,8 @@
       "width": 0.95,
       "base": 0,
       "x": [2],
-      "y": [297],
-      "text": "Platform: Python<br />Count: 297<br />Percent: 31.6",
+      "y": [305],
+      "text": "Platform: Python<br />Count: 305<br />Percent: 31.8",
       "type": "bar",
       "marker": {
         "autocolorscale": false,
@@ -53,8 +53,8 @@
       "width": 0.95,
       "base": 0,
       "x": [3],
-      "y": [89],
-      "text": "Platform: C++<br />Count:  89<br />Percent: 9.5",
+      "y": [91],
+      "text": "Platform: C++<br />Count:  91<br />Percent: 9.5",
       "type": "bar",
       "marker": {
         "autocolorscale": false,
@@ -78,7 +78,7 @@
       "base": 0,
       "x": [4],
       "y": [59],
-      "text": "Platform: MATLAB<br />Count:  59<br />Percent: 6.3",
+      "text": "Platform: MATLAB<br />Count:  59<br />Percent: 6.2",
       "type": "bar",
       "marker": {
         "autocolorscale": false,
@@ -102,7 +102,7 @@
       "base": 0,
       "x": [5],
       "y": [25],
-      "text": "Platform: Other<br />Count:  25<br />Percent: 2.7",
+      "text": "Platform: Other<br />Count:  25<br />Percent: 2.6",
       "type": "bar",
       "marker": {
         "autocolorscale": false,
@@ -122,9 +122,9 @@
     },
     {
       "x": [1],
-      "y": [423],
-      "text": "R<br />50%",
-      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 423<br />Platform: R<br />Count: 423<br />Percent: 50",
+      "y": [431.05],
+      "text": "R<br />49.9%",
+      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 431.05<br />Platform: R<br />Count: 431.05<br />Percent: 49.9",
       "textfont": {
         "size": 18.8976377952756,
         "color": "rgba(255,255,255,1)"
@@ -142,9 +142,9 @@
     },
     {
       "x": [2],
-      "y": [344],
-      "text": "Python<br />31.6%",
-      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 344<br />Platform: Python<br />Count: 344<br />Percent: 31.6",
+      "y": [352.95],
+      "text": "Python<br />31.8%",
+      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 352.95<br />Platform: Python<br />Count: 352.95<br />Percent: 31.8",
       "textfont": {
         "size": 18.8976377952756,
         "color": "rgba(0,173,239,1)"
@@ -162,9 +162,9 @@
     },
     {
       "x": [3],
-      "y": [136],
+      "y": [138.95],
       "text": "C++<br />9.5%",
-      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 136<br />Platform: C++<br />Count: 136<br />Percent: 9.5",
+      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 138.95<br />Platform: C++<br />Count: 138.95<br />Percent: 9.5",
       "textfont": {
         "size": 18.8976377952756,
         "color": "rgba(141,198,63,1)"
@@ -182,9 +182,9 @@
     },
     {
       "x": [4],
-      "y": [106],
-      "text": "MATLAB<br />6.3%",
-      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 106<br />Platform: MATLAB<br />Count: 106<br />Percent: 6.3",
+      "y": [106.95],
+      "text": "MATLAB<br />6.2%",
+      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...: 106.95<br />Platform: MATLAB<br />Count: 106.95<br />Percent: 6.2",
       "textfont": {
         "size": 18.8976377952756,
         "color": "rgba(0,183,198,1)"
@@ -202,9 +202,9 @@
     },
     {
       "x": [5],
-      "y": [72],
-      "text": "Other<br />2.7%",
-      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...:  72<br />Platform: Other<br />Count:  72<br />Percent: 2.7",
+      "y": [72.95],
+      "text": "Other<br />2.6%",
+      "hovertext": "dplyr::if_else(Count == max(Count), Count - sum(Count) * 0.05, ...:  72.95<br />Platform: Other<br />Count:  72.95<br />Percent: 2.6",
       "textfont": {
         "size": 18.8976377952756,
         "color": "rgba(244,121,32,1)"
@@ -279,12 +279,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [-23.5, 493.5],
+      "range": [-23.95, 502.95],
       "tickmode": "array",
-      "ticktext": ["0", "100", "200", "300", "400"],
-      "tickvals": [0, 100, 200, 300, 400],
+      "ticktext": ["0", "100", "200", "300", "400", "500"],
+      "tickvals": [0, 100, 200, 300, 400, 500],
       "categoryorder": "array",
-      "categoryarray": ["0", "100", "200", "300", "400"],
+      "categoryarray": ["0", "100", "200", "300", "400", "500"],
       "nticks": null,
       "ticks": "",
       "tickcolor": null,
@@ -355,7 +355,7 @@
   },
   "source": "A",
   "attrs": {
-    "35727b4e4bf4": {
+    "35675aaf3fbe": {
       "x": {},
       "y": {},
       "fill": {},
@@ -363,7 +363,7 @@
       "text": {},
       "type": "bar"
     },
-    "35721ff32900": {
+    "3567f3c87ed": {
       "y": {},
       "label": {},
       "x": {},
@@ -373,10 +373,10 @@
       "text": {}
     }
   },
-  "cur_data": "35727b4e4bf4",
+  "cur_data": "35675aaf3fbe",
   "visdat": {
-    "35727b4e4bf4": ["function (y) ", "x"],
-    "35721ff32900": ["function (y) ", "x"]
+    "35675aaf3fbe": ["function (y) ", "x"],
+    "3567f3c87ed": ["function (y) ", "x"]
   },
   "highlight": {
     "on": "plotly_click",
