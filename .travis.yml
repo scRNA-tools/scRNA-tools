@@ -4,6 +4,9 @@ language: r
 r: 4.0
 sudo: true
 
+env:
+  - RENV_CONFIG_REPOS_OVERRIDE="https://cloud.r-project.org"
+
 cache:
   directories:
   - $HOME/.local/share/renv
