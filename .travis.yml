@@ -13,6 +13,9 @@ cache:
   - $TRAVIS_BUILD_DIR/renv/library
   packages: true
 
+before_install:
+  - sudo apt-get -y install libgit2-dev
+
 install:
   - Rscript -e "if (!requireNamespace('renv', quietly = TRUE)) install.packages('renv')"
   - Rscript -e "renv::restore()"
