@@ -11,8 +11,8 @@ get_references <- function(dois) {
 
     dummy <- tibble::tibble(
         DOI        = character(),
-        arXiv      = character(),
-        Preprint   = character(),
+        arXiv      = logical(),
+        Preprint   = logical(),
         Date       = character(),
         Title      = character(),
         Citations  = double(),

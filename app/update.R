@@ -33,7 +33,7 @@ update_tool <- function(database, pkgs_cache, name = NULL) {
     cat("\n")
 
     done <- FALSE
-    while(!done) {
+    while (!done) {
 
         field <- prompt_menu(
             "What would you like to update?",
@@ -41,7 +41,7 @@ update_tool <- function(database, pkgs_cache, name = NULL) {
               "Repositories", "Ignored", "Categories")
         )
 
-        database <- switch(field,
+        database <- switch (field,
             Name         = update_name(name, database),
             Platform     = update_platform(name, database),
             Description  = update_description(name, database),

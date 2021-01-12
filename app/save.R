@@ -8,6 +8,8 @@ save_database <- function(database, dir = "database") {
 
     `%>%` <- magrittr::`%>%`
 
+    usethis::ui_todo("Saving database...")
+    
     fs::dir_create(dir)
 
     tools        <- get_tools(database$Tools)

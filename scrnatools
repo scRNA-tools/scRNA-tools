@@ -26,6 +26,8 @@ Usage:
     scrnatools archive [<name>]
     scrnatools restore [<arc>]
     scrnatools stats [--plot]
+    scrnatools categories
+    scrnatools add_category
     scrnatools -h | --help
     scrnatools --version
 
@@ -60,6 +62,7 @@ source("app/analysis.R")
 source("app/pkgs-cache.R")
 source("app/references.R")
 source("app/archive.R")
+source("app/categories.R")
 source("app/save.R")
 source("app/git.R")
 source("app/stats.R")
@@ -67,12 +70,21 @@ source("app/utils.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.3.5")
+opts <- docopt(DOCOPT, version = "0.4.0")
 
 logo <- get_logo()
 cat(logo, "\n")
 
-if (any(c(opts$add, opts$update, opts$build, opts$archive, opts$restore))) {
+modifying <- any(c(
+    opts$add,
+    opts$update,
+    opts$build,
+    opts$archive,
+    opts$restore,
+    opts$add_category
+))
+
+if (modifying) {
     check_status()
 }
 
@@ -115,10 +127,18 @@ if (opts$restore) {
 }
 
 if (opts$stats) {
-   show_stats(database, opts$plot)
+    show_stats(database, opts$plot)
 }
 
-if (!any(c(opts$search, opts$stats, opts$build))) {
+if (opts$categories) {
+    show_categories(database)
+}
+
+if (opts$add_category) {
+    database <- add_category(database)
+}
+
+if (modifying) {
     save_database(database, dir)
     commit_database(dir)
 }
