@@ -104,6 +104,23 @@ set_gitmessage_checkdone <- function(name) {
     readr::write_lines(msg, ".gitmessage")
 }
 
+#' Set add category git message
+#'
+#' Set the template git commit message for adding a new category
+set_gitmessage_addcategory <- function(name, description) {
+    
+    msg <- glue::glue(
+        "# Check the new category description:\n",
+        "Update: New {name} category",
+        "\n\n",
+        "{description}",
+        "\n\n",
+        "https://www.scrna-tools.org/tools?sort=name&cats={name}"
+    )
+    
+    readr::write_lines(msg, ".gitmessage")
+}
+
 #' Commit database
 #'
 #' Commit the database directory using the template commit message

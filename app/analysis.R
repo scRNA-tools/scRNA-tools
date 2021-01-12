@@ -278,7 +278,7 @@ get_datecount <- function(tools) {
     datecount <- tools %>%
         dplyr::select(Date = Added) %>%
         dplyr::group_by(Date) %>%
-        dplyr::summarise(Count = dplyr::n()) %>%
+        dplyr::summarise(Count = dplyr::n(), .groups = "drop_last") %>%
         tidyr::complete(Date = tidyr::full_seq(Date, 1),
                         fill = list(Count = 0)) %>%
         dplyr::mutate(Total = cumsum(Count))
@@ -302,7 +302,8 @@ get_pub_data <- function(database) {
         dplyr::group_by(Tool) %>%
         dplyr::summarise(
             Published = any(!Preprint),
-            Preprint  = any(Preprint)
+            Preprint  = any(Preprint),
+            .groups   = "drop_last"
         )
 
     pub_data <- tibble::tibble(Tool = names(database$Tools)) %>%

@@ -71,7 +71,7 @@ ui_pairs_list <- function(pairs_list, indent = 0) {
 #' Prompt string
 #'
 #' Prompt the user for a single string response. User will continue to be
-#' prompted until their reponse passes any checks.
+#' prompted until their response passes any checks.
 #'
 #' @param prompt Prompt string
 #' @param ... Extra arguments passed to `check_input`
@@ -111,6 +111,7 @@ prompt_vec <- function(prompt, sep = ",", min = 0, dups = TRUE, ...) {
 
     while(!success) {
         string <- ui_prompt(prompt)
+        string <- stringr::str_remove(string, paste0(sep, "$"))
 
         if (string == "") {
             vec <- character()
@@ -273,6 +274,39 @@ prompt_categories <- function(database) {
                min = 1, values = database$Categories$Category)
 }
 
+#' Prompt tools
+#'
+#' Prompt for the tools associated with a category. Tools not in the database
+#' will be ignored. There must be at least one present tool.
+#'
+#' @param database Database object
+#'
+#' @return vector of tools
+prompt_tools <- function(database) {
+    tools <- character()
+    
+    while (length(tools) < 1) {
+        tools <- prompt_vec("Tools (comma separated):", min = 1)
+        
+        not_present <- !(tools %in% names(database$Tools))
+        
+        if (sum(not_present > 0)) {
+            usethis::ui_oops(glue::glue(
+                "The following tools are not in the database and will be ",
+                "ignored: {usethis::ui_value(tools[not_present])}"
+            ))
+        }
+        
+        tools <- tools[!not_present]
+        
+        if (length(tools) == 0) {
+            usethis::ui_oops("There must be at least one tool in the database")
+        }
+    }
+    
+    return(tools)
+}
+
 #' Check input
 #'
 #' Check the input provided by a user
@@ -314,8 +348,6 @@ check_input <- function(string, allowed = "A-Za-z0-9", start = "A-Za-z",
         if (any(string %in% values)) {
             usethis::ui_oops("That value already exists, please try again")
             return(FALSE)
-        } else {
-            return(TRUE)
         }
     }
 
@@ -344,7 +376,7 @@ check_input <- function(string, allowed = "A-Za-z0-9", start = "A-Za-z",
         }
 
         if (!is.null(start)) {
-            start   <- paste0("^[", start, "]")
+            start <- paste0("^[", start, "]")
             if (any(!stringr::str_detect(string, start))) {
                 usethis::ui_oops(
                     "Starts with incorrect character, please try again"

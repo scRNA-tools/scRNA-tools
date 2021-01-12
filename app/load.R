@@ -7,6 +7,8 @@
 #' @return Database object
 load_database <- function(dir = "database") {
 
+    usethis::ui_todo("Loading database...")
+    
     tools        <- load_tools(dir)
     doi_idx      <- load_doi_idx(dir)
     repositories <- load_repositories(dir)
