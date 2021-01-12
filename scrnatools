@@ -140,5 +140,7 @@ if (opts$add_category) {
 
 if (modifying) {
     save_database(database, dir)
-    commit_database(dir)
+    if (!opts$build) {
+        commit_database(dir)
+    }
 }
