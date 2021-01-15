@@ -6,6 +6,8 @@
 #' @return regex object
 url_re <- function() {
 
+    `%>%` <- magrittr::`%>%`
+
     valid_chars <- rex::rex(except_some_of(".", "/", " ", "-"))
 
     rex::rex(
