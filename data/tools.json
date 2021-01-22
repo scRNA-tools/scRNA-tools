@@ -1526,10 +1526,10 @@
       {
         "Title": "Cardelino: Integrating whole exomes and single-cell transcriptomes to reveal phenotypic impact of somatic variants",
         "DOI": "10.1101/413047",
-        "Citations": 12
+        "Citations": 11
       }
     ],
-    "Citations": 20,
+    "Citations": 19,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "single-cell-genetics/cardelino"
@@ -3120,6 +3120,28 @@
     "GitHub": "diazlab/CONICS"
   },
   {
+    "Tool": "Connectome",
+    "Platform": "R",
+    "Code": "https://github.com/msraredon/Connectome",
+    "Description": "Connectome is an R toolkit to explore cell-cell connectivity patterns based on ligand and receptor data in heterogeneous single-cell datasets",
+    "License": "GPL-3.0",
+    "Added": "2021-01-22",
+    "Updated": "2021-01-22",
+    "Categories": ["DimensionalityReduction", "GeneNetworks", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Connectome: computation and visualization of cell-cell signaling topologies in single-cell systems data",
+        "DOI": "10.1101/2021.01.21.427529",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "msraredon/Connectome"
+  },
+  {
     "Tool": "Conos",
     "Platform": "R/C++",
     "Code": "https://github.com/hms-dbmi/conos",
@@ -3254,6 +3276,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "cuhklinlab/coupleCoC"
+  },
+  {
+    "Tool": "CrossTalker",
+    "Platform": "R",
+    "Code": "https://github.com/CostaLab/CrossTalkeR",
+    "Description": "CrossTalkeR is a framework for network analysis and visualisation of LR networks",
+    "License": "MIT",
+    "Added": "2021-01-22",
+    "Updated": "2021-01-22",
+    "Categories": ["GeneNetworks", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "CrossTalkeR: Analysis and Visualisation of Ligand Receptor Networks",
+        "DOI": "10.1101/2021.01.20.427390",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "CostaLab/CrossTalkeR"
   },
   {
     "Tool": "CSHMM",
@@ -4087,6 +4131,28 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "Bioc": "destiny"
+  },
+  {
+    "Tool": "DevKidCC",
+    "Platform": "R",
+    "Code": "https://github.com/KidneyRegeneration/DevKidCC",
+    "Description": "DevKidCC (Developing Kidney Cell Classifier) is a tool that will classify single cell kidney data, both human tissue and human stem cell derived organoids",
+    "License": "MIT",
+    "Added": "2021-01-22",
+    "Updated": "2021-01-22",
+    "Categories": ["Classification", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "DevKidCC allows for robust classification and direct comparisons of kidney organoid datasets",
+        "DOI": "10.1101/2021.01.20.427346",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "KidneyRegeneration/DevKidCC"
   },
   {
     "Tool": "DEWAKSS",
@@ -5210,6 +5276,27 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "lixt314/EMEP"
+  },
+  {
+    "Tool": "EmptyNN",
+    "Platform": "R",
+    "Code": "https://github.com/lkmklsmn/empty_nn",
+    "Description": "EmptyNN is a novel cell-calling algorithm based on Positive-unlabeled (PU) learning which removes cell-free droplets and recovers lost cells in droplet-based single cell RNA sequencing data",
+    "Added": "2021-01-22",
+    "Updated": "2021-01-22",
+    "Categories": ["QualityControl"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "EmptyNN: A neural network based on positive-unlabeled learning to remove cell-free droplets and recover lost cells in single-cell RNA sequencing data",
+        "DOI": "10.1101/2021.01.15.426387",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "lkmklsmn/empty_nn"
   },
   {
     "Tool": "ENCORE",
@@ -6358,7 +6445,7 @@
     "Publications": [],
     "Preprints": [
       {
-        "Title": "H-tSNE: Hierarchical Nonlinear Dimensionality Reduction",
+        "Title": "Haisu: Hierarchical Supervised Nonlinear Dimensionality Reduction",
         "DOI": "10.1101/2020.10.05.324798",
         "Citations": 0
       }
@@ -6367,6 +6454,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "Cobanoglu-Lab/h-tSNE"
+  },
+  {
+    "Tool": "Haisu",
+    "Platform": "Python",
+    "Code": "https://github.com/Cobanoglu-Lab/Haisu",
+    "Description": "Hierarchical Supervised Nonlinear Dimensionality Reduction",
+    "License": "MIT",
+    "Added": "2021-01-22",
+    "Updated": "2021-01-22",
+    "Categories": ["DimensionalityReduction"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Haisu: Hierarchical Supervised Nonlinear Dimensionality Reduction",
+        "DOI": "10.1101/2020.10.05.324798",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "Cobanoglu-Lab/Haisu"
   },
   {
     "Tool": "Harmony",
@@ -7301,6 +7410,29 @@
     "GitHub": "mohit1997/JIND"
   },
   {
+    "Tool": "JOINT",
+    "Platform": "Python",
+    "Code": "https://github.com/wanglab-georgetown/JOINT",
+    "Description": "JOINT performs probability-based cell-type identification and DEG analysis simultaneously without the need for imputation",
+    "License": "Apache-2.0",
+    "Added": "2021-01-22",
+    "Updated": "2021-01-22",
+    "Categories": ["Clustering", "DifferentialExpression", "Imputation"],
+    "Publications": [
+      {
+        "Title": "JOINT for large-scale single-cell RNA-sequencing analysis via soft-clustering and parallel computing",
+        "DOI": "10.1186/s12864-020-07302-6",
+        "Date": "2021-01-11",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "wanglab-georgetown/JOINT"
+  },
+  {
     "Tool": "Jvis",
     "Platform": "Python",
     "Code": "https://github.com/canzarlab/JVis-learn",
@@ -7381,7 +7513,7 @@
         "Title": "Near-optimal probabilistic RNA-seq quantification",
         "DOI": "10.1038/nbt.3519",
         "Date": "2016-04-04",
-        "Citations": 2811
+        "Citations": 2812
       }
     ],
     "Preprints": [
@@ -7396,7 +7528,7 @@
         "Citations": 37
       }
     ],
-    "Citations": 2855,
+    "Citations": 2856,
     "NumPubs": 1,
     "NumPreprints": 2,
     "GitHub": "pachterlab/kallisto"
@@ -10773,11 +10905,11 @@
         "Title": "The R package Rsubread is easier, faster, cheaper and better for alignment and quantification of RNA sequencing reads",
         "DOI": "10.1093/nar/gkz114",
         "Date": "2019-02-20",
-        "Citations": 278
+        "Citations": 279
       }
     ],
     "Preprints": [],
-    "Citations": 278,
+    "Citations": 279,
     "NumPubs": 1,
     "NumPreprints": 0,
     "Bioc": "Rsubread"
@@ -10908,7 +11040,7 @@
         "Title": "Salmon provides fast and bias-aware quantification of transcript expression",
         "DOI": "10.1038/nmeth.4197",
         "Date": "2017-03-06",
-        "Citations": 2045
+        "Citations": 2046
       },
       {
         "Title": "Alevin efficiently estimates accurate gene abundances from dscRNA-seq data",
@@ -10934,7 +11066,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 2158,
+    "Citations": 2159,
     "NumPubs": 2,
     "NumPreprints": 3,
     "GitHub": "COMBINE-lab/salmon"
@@ -11022,6 +11154,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "jmbreda/Sanity"
+  },
+  {
+    "Tool": "satUrn",
+    "Platform": "R",
+    "Code": "https://github.com/statOmics/satuRn",
+    "Description": "Scalable Analysis of Differential Transcript Usage for Bulk and Single-Cell RNA-sequencing Applications",
+    "License": "Artistic-2.0",
+    "Added": "2021-01-22",
+    "Updated": "2021-01-22",
+    "Categories": ["AlternativeSplicing", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "satuRn: Scalable Analysis of differential Transcript Usage for bulk and single-cell RNA-sequencing applications",
+        "DOI": "10.1101/2021.01.14.426636",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "statOmics/satuRn"
   },
   {
     "Tool": "SAUCIE",
@@ -11251,6 +11405,28 @@
     "GitHub": "cuhklinlab/scACE"
   },
   {
+    "Tool": "scAdapt",
+    "Platform": "Python",
+    "Code": "https://github.com/zhoux85/scAdapt",
+    "Description": "scAdapt is a virtual adversarial domain adaptation network to transfer single cell labels between datasets with batch effects",
+    "License": "MIT",
+    "Added": "2021-01-22",
+    "Updated": "2021-01-22",
+    "Categories": ["Classification", "DimensionalityReduction"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "scAdapt: Virtual adversarial domain adaptation network for single cell RNA-seq data classification across platforms and species",
+        "DOI": "10.1101/2021.01.18.427083",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "zhoux85/scAdapt"
+  },
+  {
     "Tool": "scAEspy",
     "Platform": "Python",
     "Code": "https://gitlab.com/cvejic-group/scaespy",
@@ -11389,6 +11565,27 @@
     "NumPubs": 0,
     "NumPreprints": 0,
     "GitHub": "barkasn/scAlleleCount"
+  },
+  {
+    "Tool": "scalpel",
+    "Platform": "Python",
+    "Code": "https://github.com/bendemeo/scalpel",
+    "Description": "Scalpel is a dimensionality reduction technique for single-cell data that uses information-theoretic principles to accurately represent rare cell types",
+    "Added": "2021-01-22",
+    "Updated": "2021-01-22",
+    "Categories": ["DimensionalityReduction", "RareCells"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Scalpel: Information-based Dimensionality Reduction for Rare Cell Type Discovery",
+        "DOI": "10.1101/2021.01.19.427303",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "bendemeo/scalpel"
   },
   {
     "Tool": "scAnCluster",
@@ -11535,18 +11732,25 @@
     "Code": "https://github.com/liubo2358/scASKcmd",
     "Description": "scASK is a novel and robust ensemble framework that is especially suited for cell type classification based on scRNA-seq data",
     "Added": "2020-06-16",
-    "Updated": "2020-06-16",
+    "Updated": "2021-01-22",
     "Categories": ["Classification", "DimensionalityReduction", "Interactive"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "scASK: A Novel Ensemble Framework for Classifying Cell Types Based on Single-cell RNA-seq Data",
+        "DOI": "10.1109/JBHI.2021.3050963",
+        "Date": "2021",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
-        "Title": "scASK: A novel ensemble framework for classifying cell types based on scRNA-seq data",
+        "Title": "scASK: A novel ensemble framework for classifying cell types based on single-cell RNA-seq data",
         "DOI": "10.1101/2020.06.07.138271",
         "Citations": 0
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "liubo2358/scASKcmd"
   },
@@ -11963,10 +12167,10 @@
       {
         "Title": "Evaluating single-cell cluster stability using the Jaccard similarity index",
         "DOI": "10.1101/2020.05.26.116640",
-        "Citations": 1
+        "Citations": 2
       }
     ],
-    "Citations": 1,
+    "Citations": 2,
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "crazyhottommy/scclusteval"
@@ -12137,10 +12341,10 @@
       {
         "Title": "scDD: A statistical approach for identifying differential distributions in single-cell RNA-seq experiments",
         "DOI": "10.1101/035501",
-        "Citations": 3
+        "Citations": 4
       }
     ],
-    "Citations": 111,
+    "Citations": 112,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "scDD",
@@ -12770,6 +12974,29 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "jamesjcai/scGEApp"
+  },
+  {
+    "Tool": "scGEAToolbox",
+    "Platform": "MATLAB",
+    "Code": "https://github.com/jamesjcai/scGEAToolbox",
+    "Description": "scGEAToolbox is a Matlab toolbox for scRNA-seq data analysis",
+    "License": "GPL-3.0",
+    "Added": "2021-01-22",
+    "Updated": "2021-01-22",
+    "Categories": ["Clustering", "DimensionalityReduction", "GeneFiltering", "GeneNetworks", "GeneSets", "Integration", "MarkerGenes", "Normalisation", "Ordering", "QualityControl", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "scGEAToolbox: a Matlab toolbox for single-cell RNA sequencing data analysis",
+        "DOI": "10.1093/bioinformatics/btz830",
+        "Date": "2019-11-07",
+        "Citations": 1
+      }
+    ],
+    "Preprints": [],
+    "Citations": 1,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "jamesjcai/scGEAToolbox"
   },
   {
     "Tool": "scGen",
@@ -17466,11 +17693,11 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 12863
+        "Citations": 12866
       }
     ],
     "Preprints": [],
-    "Citations": 12863,
+    "Citations": 12866,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "alexdobin/STAR"
@@ -17993,10 +18220,10 @@
       {
         "Title": "TooManyCells identifies and visualizes relationships of single-cell clades",
         "DOI": "10.1101/519660",
-        "Citations": 1
+        "Citations": 2
       }
     ],
-    "Citations": 8,
+    "Citations": 9,
     "NumPubs": 1,
     "NumPreprints": 1,
     "CRAN": "TooManyCellsR",
@@ -18410,7 +18637,7 @@
         "Title": "Scalable preprocessing for sparse scRNA-seq data exploiting prior knowledge",
         "DOI": "10.1093/bioinformatics/bty293",
         "Date": "2018-06-27",
-        "Citations": 12
+        "Citations": 11
       }
     ],
     "Preprints": [
@@ -18425,7 +18652,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 13,
+    "Citations": 12,
     "NumPubs": 1,
     "NumPreprints": 2,
     "PyPI": "uncurl-seq",
@@ -18481,6 +18708,28 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "reggenlab/UniPath"
+  },
+  {
+    "Tool": "UniverSC",
+    "Platform": "Shell/Perl/R",
+    "Code": "https://github.com/minoda-lab/universc",
+    "Description": "UniverSC is a universal single-cell processing tool that supports any UMI-based platform",
+    "License": "GPL-3.0",
+    "Added": "2021-01-22",
+    "Updated": "2021-01-22",
+    "Categories": ["Alignment", "Quantification", "UMIs"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "UniverSC: a flexible cross-platform single-cell data processing pipeline",
+        "DOI": "10.1101/2021.01.19.427209",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "minoda-lab/universc"
   },
   {
     "Tool": "UPhyloplot2",
