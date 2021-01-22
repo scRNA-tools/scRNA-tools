@@ -384,6 +384,9 @@ CONCLUS	Visualisation
 CONICS	Integration
 CONICS	Variants
 CONICS	Visualisation
+Connectome	DimensionalityReduction
+Connectome	GeneNetworks
+Connectome	Visualisation
 Conos	Clustering
 Conos	DifferentialExpression
 Conos	DimensionalityReduction
@@ -402,6 +405,8 @@ countClust	VariableGenes
 countClust	Visualisation
 coupleCoC	Clustering
 coupleCoC	Integration
+CrossTalker	GeneNetworks
+CrossTalker	Visualisation
 CSHMM	Ordering
 CSHMM-TF	ExpressionPatterns
 CSHMM-TF	GeneNetworks
@@ -475,6 +480,8 @@ DESCEND	Visualisation
 DEsingle	DifferentialExpression
 destiny	DimensionalityReduction
 destiny	Visualisation
+DevKidCC	Classification
+DevKidCC	Visualisation
 DEWAKSS	Imputation
 DEWAKSS	Visualisation
 Dhaka	Clustering
@@ -599,6 +606,7 @@ ELSA	DimensionalityReduction
 embeddr	Ordering
 EMEP	Clustering
 EMEP	DimensionalityReduction
+EmptyNN	QualityControl
 ENCORE	Clustering
 ENCORE	MarkerGenes
 ENHANCE	DimensionalityReduction
@@ -729,6 +737,7 @@ GRM	Normalisation
 GRNUlar	GeneNetworks
 GRNVBEM	GeneNetworks
 h-tSNE	DimensionalityReduction
+Haisu	DimensionalityReduction
 Harmony	DimensionalityReduction
 Harmony	Integration
 hbfm	GeneNetworks
@@ -823,6 +832,9 @@ jackstraw	MarkerGenes
 jackstraw	VariableGenes
 JIND	Classification
 JIND	Integration
+JOINT	Clustering
+JOINT	DifferentialExpression
+JOINT	Imputation
 Jvis	DimensionalityReduction
 Jvis	Integration
 k-branches	Ordering
@@ -1262,6 +1274,8 @@ SampleQC	Visualisation
 SAMstrt	DifferentialExpression
 SAMstrt	Normalisation
 Sanity	Normalisation
+satUrn	AlternativeSplicing
+satUrn	Visualisation
 SAUCIE	Clustering
 SAUCIE	DimensionalityReduction
 SAUCIE	Imputation
@@ -1281,6 +1295,8 @@ SC3	Interactive
 scACE	Clustering
 scACE	Integration
 scACE	Simulation
+scAdapt	Classification
+scAdapt	DimensionalityReduction
 scAEspy	DimensionalityReduction
 scAEspy	Integration
 scAI	Clustering
@@ -1296,6 +1312,8 @@ scAlign	DimensionalityReduction
 scAlign	Integration
 scAlign	RareCells
 scAlleleCount	AlleleSpecific
+scalpel	DimensionalityReduction
+scalpel	RareCells
 scAnCluster	Classification
 scAnCluster	Clustering
 scAnCluster	MarkerGenes
@@ -1438,6 +1456,17 @@ scGEApp	Interactive
 scGEApp	Normalisation
 scGEApp	VariableGenes
 scGEApp	Visualisation
+scGEAToolbox	Clustering
+scGEAToolbox	DimensionalityReduction
+scGEAToolbox	GeneFiltering
+scGEAToolbox	GeneNetworks
+scGEAToolbox	GeneSets
+scGEAToolbox	Integration
+scGEAToolbox	MarkerGenes
+scGEAToolbox	Normalisation
+scGEAToolbox	Ordering
+scGEAToolbox	QualityControl
+scGEAToolbox	Visualisation
 scGen	DifferentialExpression
 scGen	Integration
 scGeneFit	MarkerGenes
@@ -2056,6 +2085,9 @@ UniPath	Clustering
 UniPath	GeneSets
 UniPath	Imputation
 UniPath	Ordering
+UniverSC	Alignment
+UniverSC	Quantification
+UniverSC	UMIs
 UPhyloplot2	Visualisation
 URD	Clustering
 URD	DifferentialExpression
