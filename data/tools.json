@@ -322,8 +322,8 @@
     "Description": "Augur is an R package to prioritize cell types involved in the response to an experimental perturbation within high-dimensional single-cell data.",
     "License": "MIT",
     "Added": "2020-01-02",
-    "Updated": "2020-01-02",
-    "Categories": ["Simulation", "VariableGenes"],
+    "Updated": "2021-01-12",
+    "Categories": ["Perturbations", "Simulation", "VariableGenes"],
     "Publications": [],
     "Preprints": [
       {
@@ -1526,10 +1526,10 @@
       {
         "Title": "Cardelino: Integrating whole exomes and single-cell transcriptomes to reveal phenotypic impact of somatic variants",
         "DOI": "10.1101/413047",
-        "Citations": 11
+        "Citations": 12
       }
     ],
-    "Citations": 20,
+    "Citations": 21,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "single-cell-genetics/cardelino"
@@ -2189,6 +2189,28 @@
     "GitHub": "deweylab/CellO"
   },
   {
+    "Tool": "CellOracle",
+    "Platform": "python",
+    "Code": "https://github.com/morris-lab/CellOracle",
+    "Description": "CellOracle integrates single-cell transcriptome and epigenome profiles to infer gene regulatory networks.",
+    "License": "Apache-2.0",
+    "Added": "2021-01-25",
+    "Updated": "2021-01-25",
+    "Categories": ["GeneNetworks", "GeneSets", "Integration", "Perturbations", "Simulation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "CellOracle: Dissecting cell identity via network inference and in silico gene perturbation",
+        "DOI": "10.1101/2020.02.17.947416",
+        "Citations": 1
+      }
+    ],
+    "Citations": 1,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "morris-lab/CellOracle"
+  },
+  {
     "Tool": "CellPhoneDB",
     "Platform": "Python",
     "Code": "https://github.com/Teichlab/cellphonedb",
@@ -2237,11 +2259,11 @@
         "Title": "Massively parallel digital transcriptional profiling of single cells",
         "DOI": "10.1038/ncomms14049",
         "Date": "2017-01-16",
-        "Citations": 1527
+        "Citations": 1528
       }
     ],
     "Preprints": [],
-    "Citations": 1527,
+    "Citations": 1528,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "10XGenomics/cellranger"
@@ -3548,11 +3570,11 @@
         "Title": "Discrete distributional differential expression (D3E) - a tool for gene expression analysis of single-cell RNA-seq data",
         "DOI": "10.1186/s12859-016-0944-6",
         "Date": "2016-02-29",
-        "Citations": 39
+        "Citations": 40
       }
     ],
     "Preprints": [],
-    "Citations": 39,
+    "Citations": 40,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "hemberg-lab/D3E"
@@ -7852,7 +7874,7 @@
         "Title": "M3Drop: dropout-based feature selection for scRNASeq",
         "DOI": "10.1093/bioinformatics/bty1044",
         "Date": "2018-12-24",
-        "Citations": 68
+        "Citations": 69
       }
     ],
     "Preprints": [
@@ -7862,7 +7884,7 @@
         "Citations": 14
       }
     ],
-    "Citations": 82,
+    "Citations": 83,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "M3Drop",
@@ -8220,8 +8242,8 @@
     "Description": "MELD (Manifold Enhancement of Latent Dimensions), Quantifying the effect of experimental perturbations in scRNA-seq data.",
     "License": "GPL-3",
     "Added": "2019-02-01",
-    "Updated": "2019-02-01",
-    "Categories": ["Clustering", "DimensionalityReduction", "Integration"],
+    "Updated": "2021-01-12",
+    "Categories": ["Clustering", "DimensionalityReduction", "Integration", "Perturbations"],
     "Publications": [],
     "Preprints": [
       {
@@ -8460,8 +8482,8 @@
     "Description": "Multiple Input Multiple Output Single Cell Analysis",
     "License": "MIT",
     "Added": "2018-11-15",
-    "Updated": "2018-11-15",
-    "Categories": ["Classification", "Integration"],
+    "Updated": "2021-01-12",
+    "Categories": ["Classification", "Integration", "Perturbations"],
     "Publications": [
       {
         "Title": "Perturb-Seq: Dissecting Molecular Circuits with Scalable Single-Cell RNA Profiling of Pooled Genetic Screens",
@@ -8873,8 +8895,8 @@
     "Description": "MUSIC: Model-based Understanding of SIngle-cell CRISPR screening",
     "License": "Apache-2.0",
     "Added": "2019-05-31",
-    "Updated": "2019-05-31",
-    "Categories": ["Clustering", "QualityControl", "Visualisation"],
+    "Updated": "2021-01-12",
+    "Categories": ["Clustering", "Perturbations", "QualityControl", "Visualisation"],
     "Publications": [
       {
         "Title": "Model-based understanding of single-cell CRISPR screening",
@@ -9803,6 +9825,29 @@
     "GitHub": "KrishnaswamyLab/PHATE"
   },
   {
+    "Tool": "PhEMD",
+    "Platform": "R",
+    "Code": "https://github.com/KrishnaswamyLab/phemd",
+    "Description": "PhEMD (phenotypic earth mover's distance) identifies axes of variation among multicellular biospecimens profiled at single-cell resolution.",
+    "Added": "2021-01-25",
+    "Updated": "2021-01-25",
+    "Categories": ["DimensionalityReduction", "Perturbations"],
+    "Publications": [
+      {
+        "Title": "Uncovering axes of variation among single-cell cancer specimens",
+        "DOI": "10.1038/s41592-019-0689-z",
+        "Date": "2020-01-13",
+        "Citations": 6
+      }
+    ],
+    "Preprints": [],
+    "Citations": 6,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "Bioc": "phemd",
+    "GitHub": "KrishnaswamyLab/phemd"
+  },
+  {
     "Tool": "PhenoPath",
     "Platform": "R",
     "Code": "https://github.com/kieranrcampbell/phenopath",
@@ -9981,6 +10026,27 @@
     "NumPubs": 0,
     "NumPreprints": 0,
     "GitHub": "swbioinf/polyapipe"
+  },
+  {
+    "Tool": "PopAlign",
+    "Platform": "python",
+    "Code": "https://github.com/thomsonlab/popalign",
+    "Description": "PopAlign constructs a compressed representation of single-cell data to identify subpopulations of cells within a heterogeneous mixture and tracks gene expression and cell abundance changes.",
+    "Added": "2021-01-25",
+    "Updated": "2021-01-25",
+    "Categories": ["Clustering", "DifferentialExpression", "DimensionalityReduction", "Perturbations"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Dissecting heterogeneous cell populations across drug and disease conditions with PopAlign",
+        "DOI": "10.1101/421354",
+        "Citations": 2
+      }
+    ],
+    "Citations": 2,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "thomsonlab/popalign"
   },
   {
     "Tool": "powerEQTL",
@@ -11040,7 +11106,7 @@
         "Title": "Salmon provides fast and bias-aware quantification of transcript expression",
         "DOI": "10.1038/nmeth.4197",
         "Date": "2017-03-06",
-        "Citations": 2053
+        "Citations": 2055
       },
       {
         "Title": "Alevin efficiently estimates accurate gene abundances from dscRNA-seq data",
@@ -11066,7 +11132,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 2166,
+    "Citations": 2168,
     "NumPubs": 2,
     "NumPreprints": 3,
     "GitHub": "COMBINE-lab/salmon"
@@ -11694,11 +11760,11 @@
         "Title": "Cell-type-specific analysis of alternative polyadenylation using single-cell transcriptomics data",
         "DOI": "10.1093/nar/gkz781",
         "Date": "2019-09-10",
-        "Citations": 12
+        "Citations": 13
       }
     ],
     "Preprints": [],
-    "Citations": 12,
+    "Citations": 13,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "ElkonLab/scAPA"
@@ -11811,6 +11877,29 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "huyustats/SCATS"
+  },
+  {
+    "Tool": "SCATTome",
+    "Platform": "R",
+    "Code": "https://github.com/bvnlab/SCATTome",
+    "Description": "SCATTome (Single Cell Analysis of Targeted Transcriptome) predicts a drug response per cell using qRT-PCR data.",
+    "License": "GPL-3.0",
+    "Added": "2021-01-25",
+    "Updated": "2021-01-25",
+    "Categories": ["Perturbations"],
+    "Publications": [
+      {
+        "Title": "Single-cell analysis of targeted transcriptome predicts drug sensitivity of single cells within human myeloma tumors",
+        "DOI": "10.1038/leu.2015.361",
+        "Date": "2015-12-29",
+        "Citations": 35
+      }
+    ],
+    "Preprints": [],
+    "Citations": 35,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "bvnlab/SCATTome"
   },
   {
     "Tool": "scBASE",
@@ -12167,10 +12256,10 @@
       {
         "Title": "Evaluating single-cell cluster stability using the Jaccard similarity index",
         "DOI": "10.1101/2020.05.26.116640",
-        "Citations": 1
+        "Citations": 2
       }
     ],
-    "Citations": 1,
+    "Citations": 2,
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "crazyhottommy/scclusteval"
@@ -12341,10 +12430,10 @@
       {
         "Title": "scDD: A statistical approach for identifying differential distributions in single-cell RNA-seq experiments",
         "DOI": "10.1101/035501",
-        "Citations": 3
+        "Citations": 4
       }
     ],
-    "Citations": 111,
+    "Citations": 112,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "scDD",
@@ -13005,8 +13094,8 @@
     "Description": "scGen is a generative model to predict single-cell perturbation response across cell types, studies and species",
     "License": "GPL-3",
     "Added": "2019-08-05",
-    "Updated": "2019-08-05",
-    "Categories": ["DifferentialExpression", "Integration"],
+    "Updated": "2021-01-12",
+    "Categories": ["DifferentialExpression", "Integration", "Perturbations"],
     "Publications": [
       {
         "Title": "scGen predicts single-cell perturbation responses",
@@ -13769,8 +13858,8 @@
     "Description": "scMAGeCK is a computational model to identify genes associated with multiple expression phenotypes from CRISPR screening coupled with single-cell RNA sequencing data (CROP-seq)",
     "License": "BSD-2-clause",
     "Added": "2020-02-05",
-    "Updated": "2020-04-29",
-    "Categories": ["Quantification", "Variants"],
+    "Updated": "2021-01-12",
+    "Categories": ["Perturbations", "Quantification", "Variants"],
     "Publications": [
       {
         "Title": "scMAGeCK links genotypes with multiple phenotypes in single-cell CRISPR screens",
@@ -16096,13 +16185,13 @@
         "Title": "Spatial reconstruction of single-cell gene expression data",
         "DOI": "10.1038/nbt.3192",
         "Date": "2015-04-13",
-        "Citations": 1432
+        "Citations": 1433
       },
       {
         "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
         "DOI": "10.1038/nbt.4096",
         "Date": "2018-04-02",
-        "Citations": 2643
+        "Citations": 2644
       }
     ],
     "Preprints": [
@@ -16127,7 +16216,7 @@
         "Citations": 56
       }
     ],
-    "Citations": 5846,
+    "Citations": 5848,
     "NumPubs": 3,
     "NumPreprints": 4,
     "CRAN": "Seurat",
@@ -17693,11 +17782,11 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 12890
+        "Citations": 12897
       }
     ],
     "Preprints": [],
-    "Citations": 12890,
+    "Citations": 12897,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "alexdobin/STAR"
@@ -18433,8 +18522,8 @@
     "Code": "https://github.com/theislab/trVAE",
     "Description": "trVAE is a deep generative model which learns mapping between multiple different styles (conditions)",
     "Added": "2019-11-03",
-    "Updated": "2021-01-08",
-    "Categories": ["DimensionalityReduction"],
+    "Updated": "2021-01-12",
+    "Categories": ["DimensionalityReduction", "Perturbations"],
     "Publications": [
       {
         "Title": "Conditional out-of-distribution generation for unpaired data using transfer VAE",
@@ -18637,7 +18726,7 @@
         "Title": "Scalable preprocessing for sparse scRNA-seq data exploiting prior knowledge",
         "DOI": "10.1093/bioinformatics/bty293",
         "Date": "2018-06-27",
-        "Citations": 12
+        "Citations": 11
       }
     ],
     "Preprints": [
@@ -18652,7 +18741,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 13,
+    "Citations": 12,
     "NumPubs": 1,
     "NumPreprints": 2,
     "PyPI": "uncurl-seq",
@@ -19014,7 +19103,7 @@
         "Title": "RNA velocity of single cells",
         "DOI": "10.1038/s41586-018-0414-6",
         "Date": "2018-08",
-        "Citations": 622
+        "Citations": 623
       }
     ],
     "Preprints": [
@@ -19024,7 +19113,7 @@
         "Citations": 15
       }
     ],
-    "Citations": 637,
+    "Citations": 638,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "velocyto",

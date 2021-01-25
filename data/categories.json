@@ -972,6 +972,9 @@
         "Tool": "PIVOT"
       },
       {
+        "Tool": "PopAlign"
+      },
+      {
         "Tool": "PyMINEr"
       },
       {
@@ -1489,6 +1492,9 @@
         "Tool": "PIVOT"
       },
       {
+        "Tool": "PopAlign"
+      },
+      {
         "Tool": "POWSC"
       },
       {
@@ -1989,7 +1995,14 @@
         "PyPI": "phate"
       },
       {
+        "Tool": "PhEMD",
+        "Bioc": "phemd"
+      },
+      {
         "Tool": "PIVOT"
+      },
+      {
+        "Tool": "PopAlign"
       },
       {
         "Tool": "ProjecTILs"
@@ -2674,6 +2687,9 @@
         "Tool": "CellChat"
       },
       {
+        "Tool": "CellOracle"
+      },
+      {
         "Tool": "CellPhoneDB",
         "PyPI": "CellPhoneDB"
       },
@@ -2951,6 +2967,9 @@
       },
       {
         "Tool": "CellID"
+      },
+      {
+        "Tool": "CellOracle"
       },
       {
         "Tool": "CellTree",
@@ -3512,6 +3531,9 @@
       {
         "Tool": "CellMixS",
         "Bioc": "CellMixS"
+      },
+      {
+        "Tool": "CellOracle"
       },
       {
         "Tool": "cFIT"
@@ -5097,6 +5119,50 @@
     ]
   },
   {
+    "Category": "Perturbations",
+    "Description": "Analysis of induced perturbations such as drug effects",
+    "Tools": [
+      {
+        "Tool": "Augur"
+      },
+      {
+        "Tool": "CellOracle"
+      },
+      {
+        "Tool": "MELD",
+        "PyPI": "meld"
+      },
+      {
+        "Tool": "MIMOSCA"
+      },
+      {
+        "Tool": "MUSIC"
+      },
+      {
+        "Tool": "PhEMD",
+        "Bioc": "phemd"
+      },
+      {
+        "Tool": "PopAlign"
+      },
+      {
+        "Tool": "SCATTome"
+      },
+      {
+        "Tool": "scGen",
+        "PyPI": "scgen"
+      },
+      {
+        "Tool": "scMAGeCK",
+        "Bioc": "scMAGeCK"
+      },
+      {
+        "Tool": "trVAE",
+        "PyPI": "trVAE"
+      }
+    ]
+  },
+  {
     "Category": "QualityControl",
     "Description": "Removal of low-quality cells",
     "Tools": [
@@ -5654,6 +5720,9 @@
       },
       {
         "Tool": "cellassign"
+      },
+      {
+        "Tool": "CellOracle"
       },
       {
         "Tool": "CIDR"
