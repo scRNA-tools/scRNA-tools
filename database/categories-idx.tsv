@@ -57,6 +57,7 @@ ascend	Visualisation
 AUCell	GeneNetworks
 AUCell	Interactive
 AUCell	Visualisation
+Augur	Perturbations
 Augur	Simulation
 Augur	VariableGenes
 AutoClass	Classification
@@ -258,6 +259,11 @@ CellMeSH	Classification
 CellMixS	Integration
 CellMixS	Visualisation
 CellO	Classification
+CellOracle	GeneNetworks
+CellOracle	GeneSets
+CellOracle	Integration
+CellOracle	Perturbations
+CellOracle	Simulation
 CellPhoneDB	GeneNetworks
 CellPhoneDB	Visualisation
 CellRanger	Alignment
@@ -943,6 +949,7 @@ MEDALT	Variants
 MELD	Clustering
 MELD	DimensionalityReduction
 MELD	Integration
+MELD	Perturbations
 MERLoT	Ordering
 MERLoT	Visualisation
 MetaCell	Clustering
@@ -967,6 +974,7 @@ miloR	MarkerGenes
 miloR	Visualisation
 MIMOSCA	Classification
 MIMOSCA	Integration
+MIMOSCA	Perturbations
 MIND	Integration
 minnow	Simulation
 minnow	UMIs
@@ -1017,6 +1025,7 @@ MuSiC	Integration
 MuSiC	Simulation
 MuSiC	Visualisation
 MUSIC	Clustering
+MUSIC	Perturbations
 MUSIC	QualityControl
 MUSIC	Visualisation
 NaiveDE	DifferentialExpression
@@ -1112,6 +1121,8 @@ Pegasus	VariableGenes
 Pegasus	Visualisation
 PHATE	DimensionalityReduction
 PHATE	Visualisation
+PhEMD	DimensionalityReduction
+PhEMD	Perturbations
 PhenoPath	Ordering
 PhenoPath	Simulation
 phyloRNA	Alignment
@@ -1141,6 +1152,10 @@ PoissonUMIs	Visualisation
 polyApipe	AlternativeSplicing
 polyApipe	Quantification
 polyApipe	UMIs
+PopAlign	Clustering
+PopAlign	DifferentialExpression
+PopAlign	DimensionalityReduction
+PopAlign	Perturbations
 powerEQTL	Variants
 POWSC	DifferentialExpression
 POWSC	Simulation
@@ -1338,6 +1353,7 @@ Scater	DimensionalityReduction
 Scater	QualityControl
 Scater	Visualisation
 SCATS	AlternativeSplicing
+SCATTome	Perturbations
 scBASE	AlleleSpecific
 scBatch	Integration
 scBatch	Normalisation
@@ -1469,6 +1485,7 @@ scGEAToolbox	QualityControl
 scGEAToolbox	Visualisation
 scGen	DifferentialExpression
 scGen	Integration
+scGen	Perturbations
 scGeneFit	MarkerGenes
 scGESTALT	Alignment
 scGESTALT	Interactive
@@ -1553,6 +1570,7 @@ scLVM	CellCycle
 scLVM	Normalisation
 scLVM	VariableGenes
 scLVM	Visualisation
+scMAGeCK	Perturbations
 scMAGeCK	Quantification
 scMAGeCK	Variants
 scmap	Classification
@@ -2061,6 +2079,7 @@ Triangulate	GeneNetworks
 TRUmiCount	Quantification
 TRUmiCount	UMIs
 trVAE	DimensionalityReduction
+trVAE	Perturbations
 TSCAN	Clustering
 TSCAN	Interactive
 TSCAN	MarkerGenes
