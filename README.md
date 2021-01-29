@@ -32,7 +32,25 @@ If you are interested in joining the scRNA-tools team please
 ## Citation
 
 If you find the scRNA-tools database useful for your work please cite our
-preprint: Zappia L, Phipson B, Oshlack A. ["Exploring the single-cell RNA-seq
-analysis landscape with the scRNA-tools
-database"](https://doi.org/10.1371/journal.pcbi.1006245), PLOS Computational
-Biology (2018), DOI: 10.1371/journal.pcbi.1006245"
+publication:
+
+> Zappia L, Phipson B, Oshlack A. _"Exploring the single-cell RNA-seq
+> analysis landscape with the scRNA-tools database"_, **PLOS Computational
+> Biology** (2018), DOI: [10.1371/journal.pcbi.1006245](https://doi.org/10.1371/journal.pcbi.1006245)
+
+```bibtex
+@ARTICLE{,
+  title       = "Exploring the single-cell {RNA-seq} analysis landscape with
+                 the {scRNA-tools} database",
+  author      = "Zappia, Luke and Phipson, Belinda and Oshlack, Alicia",
+  journal     = "PLoS Computational Biology",
+  volume      =  14,
+  number      =  6,
+  pages       = "e1006245",
+  month       =  jun,
+  year        =  2018,
+  language    = "en",
+  doi         = "10.1371/journal.pcbi.1006245",
+  url         = "https://doi.org/10.1371/journal.pcbi.1006245",
+}
+```
