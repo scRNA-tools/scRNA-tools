@@ -142,6 +142,7 @@ COT	Python	https://github.com/MintaYLu/COT	Cosine based One-sample Test (COT) is
 countClust	R	https://github.com/kkdey/CountClust	Clustering and Visualizing RNA-Seq Expression Data using Grade of Membership Models. Fits grade of membership models (GoM, also known as admixture models) to cluster RNA-seq gene expression count data, identifies characteristic genes driving cluster memberships, and provides a visual summary of the cluster memberships.	GPL (>= 2)	2016-09-12	2019-11-03
 coupleCoC	MATLAB	https://github.com/cuhklinlab/coupleCoC	A coupled co-clustering-based unsupervised transfer learning algorithm (coupleCoC) for the integrative analysis of multimodal single-cell data	NA	2020-04-01	2020-04-01
 CrossTalker	R	https://github.com/CostaLab/CrossTalkeR	CrossTalkeR is a framework for network analysis and visualisation of LR networks	MIT	2021-01-22	2021-01-22
+CrossTalkeR	R	https://github.com/CostaLab/CrossTalkeR	CrossTalkeR identifies relevant ligands, receptors and cell types contributing to changes in cell communication when contrasting two biological states	MIT	2021-01-29	2021-01-29
 CSHMM	Python	https://github.com/jessica1338/CSHMM-for-time-series-scRNA-Seq	CSHMM accurately infers branching topology in time series data and correctly and continuously assign cells to paths	NA	2019-05-08	2019-05-08
 CSHMM-TF	Python	https://github.com/jessica1338/CSHMM-TF-for-time-series-scRNA-Seq	Continuous-State Hidden Markov Models TF (CSHMM-TF) method which integrates probabilistic modeling of scRNA-Seq data with the ability to assign TFs to specific activation points in the learned model	NA	2020-03-03	2020-03-03
 CSMF	Matlab	http://page.amss.ac.cn/shihua.zhang/software.html	CSMF (Common and Specific Matrix Factorization) is a MATLAB package to simultaneously extract common and specific patterns from the data of two or multiple biological interrelated conditions via matrix factorization.	NA	2018-03-08	2018-03-08
@@ -172,7 +173,7 @@ DendroSplit	Python	https://github.com/jessemzhang/dendrosplit	DendroSplit, an in
 densityCut	R	https://bitbucket.org/jerry00/densitycut_dev	densityCut is an efficient density-based clustering algorithm to analyze large-scale biological data	GPL (>= 2)	2018-11-13	2018-11-13
 DensityPath	R/Matlab	https://github.com/ucasdp/DensityPath	DensityPath can accurately and efficiently reconstruct the underlying cell developmental trajectories for large-scale scRNAseq data.	NA	2018-03-08	2018-12-13
 densvis	R/C++/Python	https://github.com/Alanocallaghan/densvis	Implements the density-preserving modification to t-SNE and UMAP described by Narayan et al. in densVis	MIT	2020-10-30	2020-10-30
-densVis	Python/MATLAB/C++	https://github.com/hhcho/densvis	Density-preserving data visualization tools den-SNE and densMAP, augmenting the tools t-SNE and UMAP respectively	MIT	2020-05-18	2020-05-18
+densVis	Python/MATLAB/C++	https://github.com/hhcho/densvis	Density-preserving data visualization tools den-SNE and densMAP, augmenting the tools t-SNE and UMAP respectively	MIT	2020-05-18	2021-01-29
 DepecheR	R	https://github.com/Theorell/DepecheR	DepecheR is an R package for clustering cytometry and single-cell RNA sequencing data according to a minimal set of biological markers	MIT	2018-11-14	2018-11-14
 DESC	Python	https://github.com/eleozzr/desc	DESC is an unsupervised deep learning algorithm for clustering scRNA-seq data.	NA	2019-02-01	2020-08-06
 DESCEND	R	https://github.com/jingshuw/descend	DESCEND deconvolves the true gene expression distribution across cells for UMI scRNA-seq counts	GPL (>= 2)	2017-12-20	2017-12-20
@@ -282,7 +283,7 @@ h-tSNE	Python	https://github.com/Cobanoglu-Lab/h-tSNE	Hierarchical t-Distributed
 Haisu	Python	https://github.com/Cobanoglu-Lab/Haisu	Hierarchical Supervised Nonlinear Dimensionality Reduction	MIT	2021-01-22	2021-01-22
 Harmony	R/C++	https://github.com/immunogenomics/harmony	Algorithm that projects cells into a shared embedding in which cells group by cell type rather than dataset-specific conditions.	GPL-3	2018-11-09	2018-11-09
 hbfm	R/C++	https://github.com/mnsekula/hbfm	hbfm is an R package for performing gene co-expression analysis in discrete single-cell RNA sequencing data	GPL (>=2)	2020-11-15	2020-11-15
-HiDeF	Python	https://github.com/fanzheng10/HiDeF	HiDeF is an analysis framework to robustly resolve the hierarchical structures of networks based on multiscale community detection and the concepts of persistent homology	BSD-3-Clause	2021-01-15	2021-01-15
+HiDeF	Python	https://github.com/fanzheng10/HiDeF	HiDeF is an analysis framework to robustly resolve the hierarchical structures of networks based on multiscale community detection and the concepts of persistent homology	BSD-3-Clause	2021-01-15	2021-01-29
 HieRFIT	R	https://github.com/yasinkaymaz/HieRFIT	Hierarchical Random Forest for Information Transfer	GPL-3	2020-05-14	2020-09-24
 HIPPO	R	https://github.com/tk382/HIPPO	Single cell UMI analysis tool that focuses on zero-inflation to detect biological heterogeneity.	GPL (>=2)	2020-04-13	2020-04-29
 HocusPocus	R	https://github.com/joeburns06/hocuspocus	Basic PCA-based workflow for analysis and plotting of single cell RNA-seq data.	NA	2016-09-08	2016-09-08
@@ -336,7 +337,7 @@ LandSCENT	R	https://github.com/ChenWeiyan/LandSCENT	LandSCENT (Landscape Single 
 LATE	Python	https://github.com/audreyqyfu/LATE	LATE leverages information of dependence between genes/cells, and recovers the missing values (zeros)	GPL-3.0	2020-01-02	2020-01-02
 LEAP	R	https://cran.r-project.org/web/packages/LEAP/index.html	Constructing Gene Co-Expression Networks for Single-Cell RNA-Sequencing Data Using Pseudotime Ordering.	GPL-2	2016-09-12	2017-04-18
 learn2count	R	https://github.com/drisso/learn2count	Structure learning of graphical models for count data	Artistic-2.0	2020-11-29	2020-11-29
-LIGER	R/C++	https://github.com/MacoskoLab/liger	LIGER (Linked Inference of Genomic Experimental Relationships)	GPL-3	2018-11-09	2020-04-13
+LIGER	R/C++	https://github.com/MacoskoLab/liger	LIGER (Linked Inference of Genomic Experimental Relationships)	GPL-3	2018-11-09	2021-01-29
 LineagePulse	R	https://github.com/YosefLab/LineagePulse	Differential expression analysis and model fitting for single-cell RNA-seq data in pseudotime	Artistic-2.0	2018-05-13	2018-05-13
 Linnorm	R	https://github.com/kenshunyip/Linnorm	Linnorm is an R package for the analysis of RNA-seq, scRNA-seq, ChIP-seq count data or any large scale count data.	MIT	2017-02-01	2018-03-14
 LTMGSCA	R	https://github.com/clwan/LTMGSCA	LTMGSCA is a left truncated mixture Gaussian (LTMG) model-based single cell RNA-seq analysis pipeline that can accurately infer the modality and distribution of individual gene’s expression profile in scRNA-seq data, while decrease the impact from dropout and low expression value.	MIT	2019-08-12	2020-04-29
@@ -412,7 +413,7 @@ Oscope	R	NA	Oscope: a statistical pipeline for identifying oscillatory genes in 
 Ouija	R	https://github.com/kieranrcampbell/ouija	Incorporate prior information into single-cell trajectory (pseudotime) analyses using Bayesian nonlinear factor analysis.	GPL (>= 3)	2016-09-08	2018-06-27
 ouijaflow	Python	https://github.com/kieranrcampbell/ouijaflow	ouijaflow implements the probabilistic single-cell pseudotime model Ouija in Edward and Tensorflow, allowing scalable inference on large single-cell datasets. Inference is performed using reparametrization gradient variational inference.	NA	2018-03-15	2018-06-27
 Outrigger	Python	https://github.com/YeoLab/outrigger	Outrigger is a program to calculate alternative splicing scores of RNA-Seq data based on junction reads and a de novo, custom annotation created with a graph database, especially made for single-cell analyses.	BSD-3-clause	2016-09-08	2017-07-16
-pagoda2	R/C++	https://github.com/hms-dbmi/pagoda2	Single Cell Analysis and Differential Expression	GPL-3	2018-11-09	2018-11-09
+pagoda2	R/C++	https://github.com/hms-dbmi/pagoda2	Single Cell Analysis and Differential Expression	GPL-3	2018-11-09	2021-01-29
 Palantir	Python	https://github.com/dpeerlab/Palantir	Palantir is an algorithm to align cells along differentiation trajectories. Palantir models differentiation as a stochastic process where stem cells differentiate to terminally differentiated cells by a series of steps through a low dimensional phenotypic manifold.	GPL-2	2019-04-05	2020-03-12
 Pamona	Python	https://github.com/caokai1073/Pamona	Manifold alignment for heterogeneous single-cell multi-omics data integration	NA	2020-11-08	2020-11-08
 ParaDPMM	Matlab	https://github.com/tiehangd/Para_DPMM	Parallelized Inference for Single Cell Transcriptomic Clustering with Split Merge Sampling on DPMM Model	NA	2018-03-08	2018-09-07
@@ -769,7 +770,7 @@ Symphony	R/C++	https://github.com/immunogenomics/symphony	Efficient and precise 
 SymSim	R	https://github.com/YosefLab/SymSim	SymSim (Synthetic model of multiple variability factors for Simulation) is an R package for simulation of single cell RNA-Seq data	Artistic-2.0	2018-08-03	2019-06-20
 SynergisticCore	R/C++	https://git-r3lab.uni.lu/satoshi.okawa/synergisticcore	A new computational method for determining such synergistic identity cores of subpopulations within a given cell population.	NA	2019-03-01	2019-03-01
 talklr	R	https://github.com/yuliangwang/talklr	An information theory-based approach to uncover potential ligand-receptor interactions involved in tissue homeostasis and diseases	GPL (>=2)	2020-02-20	2020-02-20
-Tangram	Python	https://github.com/broadinstitute/Tangram	Tangram is a Python package, written in PyTorch, for mapping single-cell (or single-nucleus) gene expression data onto spatial gene expression data	NA	2020-09-17	2020-09-17
+Tangram	Python	https://github.com/broadinstitute/Tangram	Tangram is a Python package, written in PyTorch, for mapping single-cell (or single-nucleus) gene expression data onto spatial gene expression data	NA	2020-09-17	2021-01-29
 TAR-scRNA-seq	Snakemake	https://github.com/fw262/TAR-scRNA-seq	TAR-scRNA-seq (Transcriptionally Active Region single-cell RNA-seq) is a workflow that enables the discovery of transcripts beyond those listed in gene annotations in scRNA-seq analysis	GPL-3.0	2020-08-14	2020-08-14
 TASC	C++	https://github.com/scrna-seq/TASC	TASC (Toolkit for Analysis of Single Cell RNA-seq), an empirical Bayes approach to reliably model the cell-specific dropout rates and amplification bias by use of external RNA spike-ins.	MIT	2017-03-29	2018-03-14
 TASIC	MATLAB	https://www.andrew.cmu.edu/user/sabrinar/TASIC/TASIC.htm	TASIC uses a Hidden Markov Model (HMM) based on a probabilistic Kalman Filter approach to combine time and expression information for determining the branching process associated with time series single cell studies.	NA	2017-04-27	2017-04-27
@@ -795,6 +796,7 @@ TRUmiCount	R/Shell	https://github.com/Cibiv/trumicount	TRUmiCount uses a mechani
 trVAE	Python	https://github.com/theislab/trVAE	trVAE is a deep generative model which learns mapping between multiple different styles (conditions)	NA	2019-11-03	2021-01-12
 TSCAN	R	https://github.com/zji90/TSCAN	Pseudo-time reconstruction and evaluation in single-cell RNA-seq analysis.	GPL (>= 2)	2016-09-09	2016-09-09
 TSEE	MATLAB	https://github.com/ShaokunAn/TSEE	TSEE: an elastic embedding method to visualize the dynamic gene expression patterns of time series single-cell RNA sequencing data	NA	2019-04-16	2019-04-16
+TWO-SIGMA	R	https://github.com/edvanburen/twosigma	R package for differential expression (DE) analysis and gene set testing (GST) in single-cell RNA-seq (scRNA-seq) data	GPL-2	2021-01-29	2021-01-29
 txburst	Python	https://github.com/sandberg-lab/txburst	Transcriptional burst kinetics inference and analysis from allelic single-cell RNA-seq	NA	2019-01-11	2019-01-11
 UMI_analysis	Perl/C	https://github.com/ncgr/UMI-analysis	The software identifies instances of sequence reads originating from the same mRNA molecule (sharing a UMI) but which map to a series of adjacent coordinates on the reference.	BSD-3-clause	2018-12-01	2020-06-26
 UMI-tools	Python	https://github.com/CGATOxford/UMI-tools	This repository contains tools for dealing with Unique Molecular Identifiers (UMIs)/Random Molecular Tags (RMTs).	MIT	2016-09-12	2018-03-14
@@ -818,6 +820,7 @@ VECTOR	R	https://github.com/jumphone/Vector	Unsupervised Inference of Developmen
 velociraptor	R/Python	https://github.com/kevinrue/velociraptor	Toolkit for single-cell velocity, primarily an R wrapper for scVelo	MIT	2020-10-30	2020-10-30
 velocyto	Python/R	https://github.com/velocyto-team/velocyto.R	velocyto (velox + κύτος, quick cell) is a package for the analysis of expression dynamics single cell RNA seq data, in particuar it allows the estimation of the RNA velocity of single cells.	NA	2017-10-29	2018-08-10
 VeloSim	R	https://github.com/PeterZZQ/VeloSim	VeloSim is a simulation package that generates single-cell RNA Sequencing data for continuous cell developmental processes	MIT	2021-01-15	2021-01-15
+VeloViz	R/C++	https://github.com/JEFworks-Lab/veloviz	VeloViz creates an RNA-velocity-informed 2D embedding for single cell transcriptomics data	GPL-3	2021-01-29	2021-01-29
 VeTra	Python	https://github.com/wgzgithub/VeTra	A tool for infering scRNA-seq trajectories from RNA velocity	NA	2020-09-10	2020-09-10
 VIPER	R/C++	https://github.com/ChenMengjie/VIPER	VIPER is based on nonnegative sparse regression models and is capable of progressively inferring a sparse set of local neighborhood cells that are most predictive of the expression levels of the cell of interest for imputation.	MIT	2018-11-19	2018-11-19
 Vireo	Python	https://github.com/single-cell-genetics/vireo	Vireo: Variational Inference for Reconstructing Ensemble Origin by expressed SNPs in multiplexed scRNA-seq data	Apache-2.0	2020-01-08	2020-01-08
