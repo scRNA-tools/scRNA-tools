@@ -53,7 +53,7 @@ update_tool <- function(database, pkgs_cache, name = NULL) {
             Categories   = update_categories(name, database)
         )
 
-        if (field == "Tool") {
+        if (field == "Name") {
             name <- database$Name
             database <- database$Database
         }
