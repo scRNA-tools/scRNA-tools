@@ -415,6 +415,8 @@ countClust	VariableGenes
 countClust	Visualisation
 coupleCoC	Clustering
 coupleCoC	Integration
+coupleCoC_plus	Clustering
+coupleCoC_plus	Integration
 CrossTalker	GeneNetworks
 CrossTalker	Visualisation
 CrossTalkeR	GeneNetworks
@@ -594,6 +596,7 @@ DSAVE-M	Classification
 DSAVE-M	Visualisation
 DSAVE-R	Classification
 DSAVE-R	Visualisation
+DTAE	DimensionalityReduction
 DTWScore	DifferentialExpression
 DTWScore	Ordering
 DTWScore	VariableGenes
@@ -817,6 +820,11 @@ inferCNVpy	DimensionalityReduction
 inferCNVpy	Variants
 infohet	VariableGenes
 INSCT	Integration
+IRIS-FGM	Classification
+IRIS-FGM	Clustering
+IRIS-FGM	DifferentialExpression
+IRIS-FGM	GeneNetworks
+IRIS-FGM	Visualisation
 IronThrone-GoT	UMIs
 IronThrone-GoT	Variants
 iS-CellR	Clustering
@@ -1144,6 +1152,8 @@ PhEMD	DimensionalityReduction
 PhEMD	Perturbations
 PhenoPath	Ordering
 PhenoPath	Simulation
+PhylEx	Integration
+PhylEx	Variants
 phyloRNA	Alignment
 phyloRNA	Normalisation
 phyloRNA	Ordering
@@ -1484,6 +1494,8 @@ scfind	Classification
 scfind	Interactive
 scfind	MarkerGenes
 scFusion	Variants
+scGAE	DimensionalityReduction
+scGAE	Visualisation
 scGAN	Simulation
 scGEApp	DimensionalityReduction
 scGEApp	GeneFiltering
@@ -1818,9 +1830,12 @@ scVelo	GeneFiltering
 scVelo	Normalisation
 scVelo	Ordering
 scVelo	Visualisation
-scVI	Classification
-scVI	DimensionalityReduction
-scVI	Integration
+scvi-tools	Classification
+scvi-tools	DifferentialExpression
+scvi-tools	DimensionalityReduction
+scvi-tools	Imputation
+scvi-tools	Integration
+scvi-tools	Normalisation
 scVirtualCyto	Interactive
 scVirtualCyto	Visualisation
 scvis	DimensionalityReduction
@@ -2105,6 +2120,7 @@ trendsceek	ExpressionPatterns
 trendsceek	Simulation
 trendsceek	Visualisation
 Triangulate	GeneNetworks
+Triku	VariableGenes
 TRUmiCount	Quantification
 TRUmiCount	UMIs
 trVAE	DimensionalityReduction
@@ -2199,6 +2215,8 @@ VITAE	DifferentialExpression
 VITAE	DimensionalityReduction
 VITAE	Ordering
 VITAE	Visualisation
+Vitessce	Interactive
+Vitessce	Visualisation
 VoxHunt	Visualisation
 VPAC	Clustering
 VPAC	DimensionalityReduction
