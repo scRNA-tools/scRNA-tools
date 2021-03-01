@@ -19,6 +19,7 @@ jobs:
       RSPM: https://packagemanager.rstudio.com/cran/__linux__/focal/latest
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       RENV_PATHS_ROOT: ~/.local/share/renv
+      RENV_CONFIG_REPOS_OVERRIDE: https://packagemanager.rstudio.com/cran/__linux__/focal/latest
 
     steps:
       - uses: actions/checkout@v2
