@@ -266,6 +266,10 @@ CellOracle	GeneSets
 CellOracle	Integration
 CellOracle	Perturbations
 CellOracle	Simulation
+CellPath	Clustering
+CellPath	DifferentialExpression
+CellPath	Ordering
+CellPath	Visualisation
 CellPhoneDB	GeneNetworks
 CellPhoneDB	Visualisation
 CellRanger	Alignment
@@ -417,6 +421,7 @@ coupleCoC	Clustering
 coupleCoC	Integration
 coupleCoC_plus	Clustering
 coupleCoC_plus	Integration
+CPLVM	DimensionalityReduction
 CrossTalker	GeneNetworks
 CrossTalker	Visualisation
 CrossTalkeR	GeneNetworks
@@ -657,6 +662,8 @@ FateID	StemCells
 FateID	Visualisation
 fcoex	GeneNetworks
 fcoex	Visualisation
+FEAST	Clustering
+FEAST	VariableGenes
 FEATS	Clustering
 FEATS	Integration
 FiRE	DimensionalityReduction
@@ -722,6 +729,10 @@ GiniClust3	RareCells
 GiniClust3	Visualisation
 GLM-PCA	DimensionalityReduction
 glmGamPoi	DifferentialExpression
+GLUER	DimensionalityReduction
+GLUER	Integration
+GLUER	Interactive
+GLUER	Visualisation
 GMM-Demux	QualityControl
 GPcounts	DifferentialExpression
 GPcounts	ExpressionPatterns
@@ -789,6 +800,8 @@ i2dash	Visualisation
 iasva	DimensionalityReduction
 iasva	MarkerGenes
 iasva	Normalisation
+ICELLNET	GeneNetworks
+ICELLNET	Visualisation
 iCellR	CellCycle
 iCellR	Clustering
 iCellR	DifferentialExpression
@@ -805,6 +818,7 @@ IKAP	MarkerGenes
 IKAP	Visualisation
 ILoReg	Clustering
 ILoReg	RareCells
+iMAP	Integration
 ImmClassifier	Classification
 ImmClassifier	Immune
 immunarch	Immune
@@ -1259,6 +1273,12 @@ rCASC	QualityControl
 rCASC	Quantification
 rCASC	UMIs
 rCASC	Visualisation
+RCAv2	Classification
+RCAv2	Clustering
+RCAv2	DifferentialExpression
+RCAv2	DimensionalityReduction
+RCAv2	Normalisation
+RCAv2	Visualisation
 reCAT	CellCycle
 reCAT	Clustering
 reCAT	Ordering
@@ -1632,6 +1652,7 @@ scMetric	DimensionalityReduction
 scMetric	Visualisation
 scMLnet	GeneNetworks
 scMLnet	Visualisation
+scMM	Integration
 scModels	Simulation
 scMomentum	GeneNetworks
 scMomentum	Ordering
@@ -1777,6 +1798,7 @@ scSeqR	Normalisation
 scSeqR	QualityControl
 scSeqR	Visualisation
 scsim	Simulation
+scSorter	Classification
 scSplit	Variants
 scSVA	DimensionalityReduction
 scSVA	Interactive
@@ -2203,6 +2225,9 @@ VIA	Visualisation
 VIPER	Imputation
 VIPER	Visualisation
 Vireo	Variants
+VisCello	DimensionalityReduction
+VisCello	Interactive
+VisCello	Visualisation
 VISION	Classification
 VISION	DimensionalityReduction
 VISION	GeneSets

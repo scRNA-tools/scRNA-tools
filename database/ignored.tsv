@@ -102,6 +102,7 @@ BASIC	PyPI	basic-ml
 BASIC	PyPI	basicCAS
 BASIC	PyPI	basicCal
 BASIC	PyPI	basicCals
+BASIC	PyPI	basicMLpy
 BASIC	PyPI	basicai
 BASIC	PyPI	basicauth
 BASIC	PyPI	basicdata
@@ -136,6 +137,7 @@ BASiCS	PyPI	basics
 BasisVAE	PyPI	basis
 BasisVAE	PyPI	bassa
 batchelor	CRAN	batch
+batchelor	CRAN	batchr
 bcbio	PyPI	bcbio-gff
 bcbio	PyPI	bcbiocov
 BCseq	Bioc	bcSeq
@@ -222,6 +224,8 @@ CellO	PyPI	cellx
 CellO	PyPI	cellygon
 CellO	PyPI	chellow
 CellO	PyPI	cjhello
+CellPath	PyPI	cella
+CellPath	PyPI	celldeath
 CellRanger	CRAN	cellranger
 CellRanger	PyPI	cellare
 CellRanger	PyPI	cellrank
@@ -344,9 +348,11 @@ compass	PyPI	compares
 compass	PyPI	comparesv
 compass	PyPI	compas-3gs
 compass	PyPI	compas-nurbs
+compass	PyPI	compas-slicer
 compass	PyPI	compaslib
 compass	PyPI	compass
 compass	PyPI	compress
+compass	PyPI	compressai
 compass	PyPI	compresso
 compass	PyPI	comptests
 compass	PyPI	kompass
@@ -372,6 +378,7 @@ Conos	CRAN	CONS
 corral	CRAN	cora
 corral	CRAN	corrDNA
 COT	PyPI	cbot
+COT	PyPI	clot
 COT	PyPI	cmot
 COT	PyPI	co
 COT	PyPI	coat
@@ -388,6 +395,8 @@ COT	PyPI	cotpy
 COT	PyPI	mcot
 COT	PyPI	scot
 countClust	CRAN	countcolors
+CPLVM	PyPI	clvm
+CPLVM	PyPI	cpl
 CrossTalker	CRAN	crosstalk
 CrossTalker	CRAN	crossval
 CrossTalker	CRAN	crosswalkr
@@ -535,6 +544,7 @@ DISCO	PyPI	discogs
 DISCO	PyPI	discogspy
 DISCO	PyPI	discogui
 DISCO	PyPI	discoin
+DISCO	PyPI	discombed
 DISCO	PyPI	discomll
 DISCO	PyPI	discomp
 DISCO	PyPI	discon
@@ -626,6 +636,7 @@ Dynamo	PyPI	DynaMIT
 Dynamo	PyPI	DynamicForm
 Dynamo	PyPI	DynamicPool
 Dynamo	PyPI	DynamodbFdw
+Dynamo	PyPI	dyna-orm
 Dynamo	PyPI	dynamallow
 Dynamo	PyPI	dynamet
 Dynamo	PyPI	dynamic
@@ -695,6 +706,7 @@ escape	CRAN	scape
 ESCO	CRAN	esc
 eSVD	CRAN	evd
 eSVD	CRAN	svd
+FEAST	CRAN	feasts
 FEATS	PyPI	FATS
 FEATS	PyPI	eats
 FEATS	PyPI	feast
@@ -757,6 +769,11 @@ genesorteR	CRAN	generator
 GeneSwitches	Bioc	GENESIS
 GiniClust	PyPI	Ginzicut
 GiniClust	PyPI	giniclust3
+GLUER	Conda	glue-core
+GLUER	PyPI	glu
+GLUER	PyPI	glue
+GLUER	PyPI	glue-core
+GLUER	PyPI	gluer
 GPfates	PyPI	Gates
 Granatum	PyPI	Granatum
 GrandPrix	PyPI	grand
@@ -841,6 +858,22 @@ iasva	CRAN	isva
 iDEA	Bioc	ideal
 iDEA	CRAN	IDE
 iDEA	CRAN	ideamdb
+iMAP	PyPI	0imap
+iMAP	PyPI	aimap
+iMAP	PyPI	bimap
+iMAP	PyPI	iap
+iMAP	PyPI	imapIO
+iMAP	PyPI	imaper
+iMAP	PyPI	imaplar
+iMAP	PyPI	imapmon
+iMAP	PyPI	imaps
+iMAP	PyPI	imapy
+iMAP	PyPI	imaspy
+iMAP	PyPI	inmap
+iMAP	PyPI	limap
+iMAP	PyPI	map
+iMAP	PyPI	uimap
+iMAP	PyPI	vimap
 ImmClassifier	CRAN	OptimClassifier
 ImmClassifier	PyPI	hmm-classifier
 ImmClassifier	PyPI	imdbclassifier
@@ -855,6 +888,7 @@ INSCT	PyPI	inspect2
 INSCT	PyPI	inspecta
 INSCT	PyPI	inspectr
 INSCT	PyPI	insta
+INSCT	PyPI	instr
 iS-CellR	CRAN	iCellR
 iscandar	PyPI	iscan
 iscandar	PyPI	iscard
@@ -1267,6 +1301,7 @@ Polaratio	CRAN	polAr
 Polaratio	CRAN	polaroid
 Polaratio	PyPI	polar
 Polaratio	PyPI	polaris
+Polaratio	PyPI	polarization
 Polaratio	PyPI	polaroid
 Polaratio	PyPI	portio
 polyApipe	CRAN	polyaAeppli
@@ -1321,6 +1356,7 @@ PyMINEr	PyPI	pymilter
 PyMINEr	PyPI	pymime
 PyMINEr	PyPI	pyminc
 PyMINEr	PyPI	pyminder
+PyMINEr	PyPI	pymindergas
 PyMINEr	PyPI	pymine
 PyMINEr	PyPI	pyminecraft
 PyMINEr	PyPI	pyminer
@@ -1399,6 +1435,7 @@ RCA	CRAN	urca
 RCA	PyPI	rca
 rCASC	Bioc	RCAS
 rCASC	CRAN	RCA
+RCAv2	CRAN	RCA
 reCAT	CRAN	REAT
 reCAT	CRAN	RECA
 reCAT	CRAN	rCAT
@@ -1626,6 +1663,7 @@ schema	PyPI	zschema
 SCHiRM	PyPI	scim
 SCHiRM	PyPI	scir
 SCHiRM	PyPI	scrim
+scHPF	PyPI	scHPL
 scHPF	PyPI	sch
 scIB	PyPI	SCRIdb
 scIB	PyPI	SClib
@@ -1658,11 +1696,14 @@ SCIM	PyPI	ascim
 SCIM	PyPI	sc_tim
 SCIM	PyPI	sci
 SCIM	PyPI	sciMove
+SCIM	PyPI	scicm
+SCIM	PyPI	scidmg
 SCIM	PyPI	scigym
 SCIM	PyPI	scim
 SCIM	PyPI	scimap
 SCIM	PyPI	scimath
 SCIM	PyPI	scimes
+SCIM	PyPI	scimotf
 SCIM	PyPI	scimple
 SCIM	PyPI	scimpy
 SCIM	PyPI	scinum
@@ -1722,6 +1763,9 @@ SCMER	PyPI	scmver
 scMLnet	CRAN	smnet
 scMLnet	PyPI	scml
 scMLnet	PyPI	smnet
+scMM	CRAN	SMM
+scMM	CRAN	cmm
+scMM	CRAN	scmamp
 scMomentum	PyPI	momentum
 SCmut	CRAN	SMUT
 scMVAE	PyPI	scame
@@ -1882,6 +1926,7 @@ SHARP	CRAN	shapeR
 SHARP	CRAN	shapr
 SHARP	CRAN	shar
 SHARP	CRAN	sharpData
+SHARP	CRAN	sharpPen
 SHARP	CRAN	sharpr2
 SHARP	CRAN	sharx
 SHARP	PyPI	sharp
@@ -1927,6 +1972,7 @@ SIMLR	CRAN	simmr
 SIMLR	CRAN	simr
 SIMLR	CRAN	simrel
 SIMLR	CRAN	simsl
+SIMLR	CRAN	simul
 SIMPLEs	CRAN	SimPhe
 SIMPLEs	CRAN	simpleMLP
 SIMPLEs	CRAN	simpleSetup
@@ -2171,6 +2217,7 @@ STREAM	PyPI	streem
 STREAM	PyPI	upstream
 STREAM	PyPI	xstream
 STREAM	PyPI	zstream
+STREAM	PyPI	zstreams
 switchde	CRAN	switchcase
 switchde	CRAN	switchnpreg
 switchde	CRAN	switchr
