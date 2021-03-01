@@ -44,3 +44,5 @@ jobs:
         shell: Rscript {0}
         run: |
           sessionInfo()
+          installed <- installed.packages()
+          installed[, "Version", drop = FALSE]
