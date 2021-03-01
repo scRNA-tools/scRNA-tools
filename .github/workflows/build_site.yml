@@ -42,13 +42,10 @@ jobs:
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
           renv::restore()
 
-      - name: Session info
+      - name: Diagnostics
         shell: Rscript {0}
         run: |
-          sessionInfo()
-          installed <- installed.packages()
-          installed[, "Version", drop = FALSE]
           renv::diagnostics()
 
-      - name: List dir
-        run: ls -l
+      - name: Database stats
+        run: ./scrnatools stats
