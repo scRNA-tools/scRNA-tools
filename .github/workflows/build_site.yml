@@ -10,7 +10,7 @@ on:
 name: Build-site
 
 jobs:
-  R-CMD-check:
+  Build-site:
     runs-on: ubuntu-20.04
 
     env:
@@ -19,22 +19,22 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       RENV_PATHS_ROOT: ~/.local/share/renv
 
-  steps:
+    steps:
 
-    - uses: r-lib/actions/setup-r@v1
-      with:
-        r-version: "4.0"
+      - uses: r-lib/actions/setup-r@v1
+        with:
+          r-version: "4.0"
 
-    - name: Cache packages
-      uses: actions/cache@v1
-      with:
-        path: ${{ env.RENV_PATHS_ROOT }}
-        key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-renv-
+      - name: Cache packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.RENV_PATHS_ROOT }}
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
 
-    - name: Restore packages
-      shell: Rscript {0}
-      run: |
-        if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
-        renv::restore()
+      - name: Restore packages
+        shell: Rscript {0}
+        run: |
+          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          renv::restore()
