@@ -1,0 +1,40 @@
+on:
+  push:
+    branches:
+      - master
+      - ci
+  pull_request:
+    branches:
+      - master
+
+name: Build-site
+
+jobs:
+  R-CMD-check:
+    runs-on: ubuntu-20.04
+
+    env:
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      RSPM: https://packagemanager.rstudio.com/cran/__linux__/focal/latest
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      RENV_PATHS_ROOT: ~/.local/share/renv
+
+  steps:
+
+  - uses: r-lib/actions/setup-r@v1
+    with:
+      r-version: "4.0"
+
+  - name: Cache packages
+    uses: actions/cache@v1
+    with:
+      path: ${{ env.RENV_PATHS_ROOT }}
+      key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+      restore-keys: |
+        ${{ runner.os }}-renv-
+
+  - name: Restore packages
+    shell: Rscript {0}
+    run: |
+      if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+      renv::restore()
