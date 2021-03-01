@@ -47,3 +47,6 @@ jobs:
           installed <- installed.packages()
           installed[, "Version", drop = FALSE]
           renv::diagnostics()
+
+      - name: List dir
+        run: ls -l
