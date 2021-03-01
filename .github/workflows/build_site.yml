@@ -49,3 +49,6 @@ jobs:
 
       - name: Database stats
         run: ./scrnatools stats
+
+      - name: Build site
+        run: ./scrnatools build
