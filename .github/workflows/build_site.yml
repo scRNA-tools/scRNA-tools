@@ -46,3 +46,4 @@ jobs:
           sessionInfo()
           installed <- installed.packages()
           installed[, "Version", drop = FALSE]
+          renv::diagnostics()
