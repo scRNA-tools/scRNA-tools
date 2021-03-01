@@ -39,3 +39,8 @@ jobs:
         run: |
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
           renv::restore()
+
+      - name: Session info
+        shell: Rscript {0}
+        run: |
+          sessionInfo()
