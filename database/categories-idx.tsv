@@ -601,6 +601,7 @@ DSAVE-M	Classification
 DSAVE-M	Visualisation
 DSAVE-R	Classification
 DSAVE-R	Visualisation
+dsb	Normalisation
 DTAE	DimensionalityReduction
 DTWScore	DifferentialExpression
 DTWScore	Ordering
@@ -800,6 +801,10 @@ i2dash	Visualisation
 iasva	DimensionalityReduction
 iasva	MarkerGenes
 iasva	Normalisation
+ICAnet	DimensionalityReduction
+ICAnet	GeneNetworks
+ICAnet	Integration
+ICAnet	Visualisation
 ICELLNET	GeneNetworks
 ICELLNET	Visualisation
 iCellR	CellCycle
@@ -1014,6 +1019,8 @@ MIMOSCA	Perturbations
 MIND	Integration
 minnow	Simulation
 minnow	UMIs
+miQC	QualityControl
+miQC	Visualisation
 mitch	GeneSets
 mitch	Visualisation
 mnnpy	Integration
@@ -1292,6 +1299,7 @@ redPATH	Ordering
 redPATH	VariableGenes
 redPATH	Visualisation
 RESCUE	Imputation
+RGGC	Clustering
 RNA-Bloom	Assembly
 RNA-Sieve	Integration
 robustSingleCell	Clustering
@@ -1505,6 +1513,8 @@ scEpath	Normalisation
 scEpath	Ordering
 scEpath	QualityControl
 scEpath	Visualisation
+scFates	Ordering
+scFates	Visualisation
 scFBA	GeneNetworks
 scFBA	Integration
 scFEA	GeneNetworks
@@ -1933,9 +1943,9 @@ SigHotSpotter	Visualisation
 signac	DifferentialExpression
 signac	ExpressionPatterns
 signac	MarkerGenes
-Signac-class	Classification
-Signac-class	Immune
-Signac-class	MarkerGenes
+SignacX	Classification
+SignacX	Immune
+SignacX	MarkerGenes
 SILGGM	GeneNetworks
 SimiC	GeneNetworks
 SIMLR	Clustering
@@ -2071,6 +2081,7 @@ STACAS	Integration
 STAR	Alignment
 STAR	Quantification
 STAR	UMIs
+StationaryOT	Ordering
 STEMNET	Ordering
 STEMNET	Visualisation
 STREAM	ExpressionPatterns
