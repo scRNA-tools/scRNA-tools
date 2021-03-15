@@ -394,6 +394,7 @@ CONCLUS	MarkerGenes
 CONCLUS	Normalisation
 CONCLUS	RareCells
 CONCLUS	Visualisation
+condiments	Ordering
 CONGAS	Variants
 CONICS	Integration
 CONICS	Variants
@@ -603,6 +604,8 @@ DSAVE-R	Classification
 DSAVE-R	Visualisation
 dsb	Normalisation
 DTAE	DimensionalityReduction
+DTFLOW	Ordering
+DTFLOW	Visualisation
 DTWScore	DifferentialExpression
 DTWScore	Ordering
 DTWScore	VariableGenes
@@ -1076,6 +1079,7 @@ MUSIC	Clustering
 MUSIC	Perturbations
 MUSIC	QualityControl
 MUSIC	Visualisation
+MuTrans	Ordering
 NaiveDE	DifferentialExpression
 NaiveDE	Simulation
 NanoPARE	Alignment
@@ -1312,6 +1316,7 @@ ROGUE	GeneFiltering
 ROGUE	QualityControl
 ROGUE	Visualisation
 ROSeq	DifferentialExpression
+ROSeq-R	DifferentialExpression
 rpca	DimensionalityReduction
 RSCORE	Clustering
 RSCORE	GeneNetworks
@@ -1450,6 +1455,7 @@ scConsensus	Classification
 scConsensus	DifferentialExpression
 scConsensus	Integration
 scConsensus	Visualisation
+scCorr	GeneNetworks
 scDAPA	AlternativeSplicing
 scDAPA	Visualisation
 scDataviz	Clustering
@@ -1817,6 +1823,8 @@ scTCRseq	Immune
 scTDA	Ordering
 scTDA	QualityControl
 scTDA	Visualisation
+scTE	Alignment
+scTE	Quantification
 scTenifoldNet	DimensionalityReduction
 scTenifoldNet	GeneNetworks
 scTenifoldNet	Normalisation
