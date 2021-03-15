@@ -2626,9 +2626,16 @@
     "Code": "https://github.com/pengminshi/cFIT",
     "Description": "cFIT (common Factor Space Integration & Transfer) is a tool for data integration and transfer for scRNAseq data",
     "Added": "2020-09-17",
-    "Updated": "2020-09-17",
+    "Updated": "2021-03-12",
     "Categories": ["DimensionalityReduction", "Integration", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Integration and transfer learning of single-cell transcriptomes via cFIT",
+        "DOI": "10.1073/pnas.2024383118",
+        "Date": "2021-03-03",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "cFIT: Integration and transfer learning of single cell transcriptomes, illustrated by fetal brain cell development",
@@ -2637,7 +2644,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "pengminshi/cFIT"
   },
@@ -3012,9 +3019,16 @@
     "Description": "Classify cells from single-cell RNA sequencing data using external reference data (e.g., bulk RNA-seq, scRNA-seq, microarray, gene lists).",
     "License": "MIT",
     "Added": "2019-12-04",
-    "Updated": "2020-04-29",
+    "Updated": "2021-03-12",
     "Categories": ["Classification", "VariableGenes", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "clustifyr: an R package for automated single-cell RNA sequencing cluster classification",
+        "DOI": "10.12688/f1000research.22969.2",
+        "Date": "2020-07-16",
+        "Citations": 6
+      }
+    ],
     "Preprints": [
       {
         "Title": "clustifyr: An R package for automated single-cell RNA sequencing cluster classification",
@@ -3022,8 +3036,8 @@
         "Citations": 2
       }
     ],
-    "Citations": 2,
-    "NumPubs": 0,
+    "Citations": 8,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "clustifyr",
     "GitHub": "rnabioco/clustifyr"
@@ -3206,6 +3220,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "lancrinlab/CONCLUS"
+  },
+  {
+    "Tool": "condiments",
+    "Platform": "R",
+    "Code": "https://github.com/HectorRDB/condiments",
+    "Description": "Trajectory inference across multiple conditions with condiments: differential topology, progression, differentiation, and expression",
+    "License": "MIT",
+    "Added": "2021-03-12",
+    "Updated": "2021-03-12",
+    "Categories": ["Ordering"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Trajectory inference across multiple conditions with condiments: differential topology, progression, differentiation, and expression.",
+        "DOI": "10.1101/2021.03.09.433671",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "HectorRDB/condiments"
   },
   {
     "Tool": "CONGAS",
@@ -5268,6 +5304,28 @@
     "GitHub": "hci-unihd/DTAE"
   },
   {
+    "Tool": "DTFLOW",
+    "Platform": "Python",
+    "Code": "https://github.com/statway/DTFLOW",
+    "Description": "DTFLOW: inferring and visualizing dynamic cellular trajectories from single-cell data",
+    "Added": "2021-03-12",
+    "Updated": "2021-03-12",
+    "Categories": ["Ordering", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "DTFLOW: Inference and Visualization of Single-cell Pseudotime Trajectory Using Diffusion Propagation",
+        "DOI": "10.1016/j.gpb.2020.08.003",
+        "Date": "2021-03",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "statway/DTFLOW"
+  },
+  {
     "Tool": "DTWScore",
     "Platform": "R",
     "Code": "https://github.com/xiaoxiaoxier/DTWscore",
@@ -7113,10 +7171,10 @@
       {
         "Title": "Hypercluster: a flexible tool for parallelized unsupervised clustering optimization",
         "DOI": "10.1101/2020.01.13.905323",
-        "Citations": 2
+        "Citations": 1
       }
     ],
-    "Citations": 2,
+    "Citations": 1,
     "NumPubs": 0,
     "NumPreprints": 1,
     "PyPI": "hypercluster",
@@ -7388,9 +7446,16 @@
     "Description": "Knowledge-based and lineage-driven immune cell classification in single-cell RNA-Seq data",
     "License": "GPL-3.0",
     "Added": "2020-04-01",
-    "Updated": "2020-04-01",
+    "Updated": "2021-03-12",
     "Categories": ["Classification", "Immune"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Knowledge-based classification of fine-grained immune cell types in single-cell RNA-Seq data",
+        "DOI": "10.1093/bib/bbab039",
+        "Date": "2021-03-03",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Knowledge-based classification of fine-grained immune cell types in single-cell RNA-Seq data with ImmClassifier",
@@ -7399,7 +7464,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "xliu-uth/ImmClassifier"
   },
@@ -8960,11 +9025,11 @@
         "Title": "Perturb-Seq: Dissecting Molecular Circuits with Scalable Single-Cell RNA Profiling of Pooled Genetic Screens",
         "DOI": "10.1016/j.cell.2016.11.038",
         "Date": "2016-12",
-        "Citations": 517
+        "Citations": 518
       }
     ],
     "Preprints": [],
-    "Citations": 517,
+    "Citations": 518,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "asncd/MIMOSCA"
@@ -9424,6 +9489,27 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "bm2-lab/MUSIC"
+  },
+  {
+    "Tool": "MuTrans",
+    "Platform": "MATLAB",
+    "Code": "https://github.com/cliffzhou92/MuTrans-release",
+    "Description": "Dissecting Transition Cells from Single-cell Transcriptome through Multi-Scale Stochastic Dynamics",
+    "Added": "2021-03-12",
+    "Updated": "2021-03-12",
+    "Categories": ["Ordering"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Dissecting Transition Cells from Single-cell Transcriptome Data through Multiscale Stochastic Dynamics",
+        "DOI": "10.1101/2021.03.07.434281",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "cliffzhou92/MuTrans-release"
   },
   {
     "Tool": "NaiveDE",
@@ -10441,9 +10527,16 @@
     "Code": "https://github.com/harbourlab/PieParty",
     "Description": "PieParty is a visualization tool allowing to represent every cell in single-cell sequencing plots (UMAP, tSNE, ect.) as a pie chart",
     "Added": "2020-09-10",
-    "Updated": "2021-01-08",
+    "Updated": "2021-03-12",
     "Categories": ["Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "PieParty: visualizing cells from scRNA-seq data as pie charts",
+        "DOI": "10.26508/lsa.202000986",
+        "Date": "2021-03-05",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "PieParty: Visualizing cells from scRNA-seq data as pie charts",
@@ -10452,7 +10545,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "pieparty",
     "GitHub": "harbourlab/PieParty"
@@ -11066,7 +11159,7 @@
         "Title": "De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data",
         "DOI": "10.1016/j.stem.2016.05.010",
         "Date": "2016-08",
-        "Citations": 271
+        "Citations": 272
       },
       {
         "Title": "Single-cell messenger RNA sequencing reveals rare intestinal cell types",
@@ -11082,7 +11175,7 @@
       }
     ],
     "Preprints": [],
-    "Citations": 970,
+    "Citations": 971,
     "NumPubs": 3,
     "NumPreprints": 0,
     "CRAN": "RaceID",
@@ -11539,6 +11632,30 @@
     "GitHub": "malaalam/ROSeq"
   },
   {
+    "Tool": "ROSeq-R",
+    "Platform": "R",
+    "Code": "https://github.com/krishan57gupta/ROSeq",
+    "Description": "Modeling expression ranks for noise-tolerant differential expression analysis of scRNA-Seq data",
+    "License": "GPL-3.0",
+    "Added": "2021-03-12",
+    "Updated": "2021-03-12",
+    "Categories": ["DifferentialExpression"],
+    "Publications": [
+      {
+        "Title": "Modeling expression ranks for noise-tolerant differential expression analysis of scRNA-seq data",
+        "DOI": "10.1101/gr.267070.120",
+        "Date": "2021-03-05",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "Bioc": "ROSeq",
+    "GitHub": "krishan57gupta/ROSeq"
+  },
+  {
     "Tool": "rpca",
     "Platform": "R",
     "Code": "https://github.com/macieksk/rpca",
@@ -11596,11 +11713,11 @@
         "Title": "The R package Rsubread is easier, faster, cheaper and better for alignment and quantification of RNA sequencing reads",
         "DOI": "10.1093/nar/gkz114",
         "Date": "2019-02-20",
-        "Citations": 322
+        "Citations": 324
       }
     ],
     "Preprints": [],
-    "Citations": 322,
+    "Citations": 324,
     "NumPubs": 1,
     "NumPreprints": 0,
     "Bioc": "Rsubread"
@@ -12124,7 +12241,7 @@
     "Description": "scAEspy: a unifying tool based on autoencoders for the analysis of single-cell RNA sequencing data",
     "License": "GPL-3",
     "Added": "2019-08-12",
-    "Updated": "2019-08-12",
+    "Updated": "2021-03-12",
     "Categories": ["DimensionalityReduction", "Integration"],
     "Publications": [],
     "Preprints": [
@@ -12136,7 +12253,8 @@
     ],
     "Citations": 1,
     "NumPubs": 0,
-    "NumPreprints": 1
+    "NumPreprints": 1,
+    "PyPI": "scaespy"
   },
   {
     "Tool": "scAI",
@@ -12956,6 +13074,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "prabhakarlab/scConsensus"
+  },
+  {
+    "Tool": "scCorr",
+    "Platform": "R",
+    "Code": "https://github.com/CBIIT-CGBB/scCorr",
+    "Description": "A graph-based k-partitioning approach for single-cell gene-gene correlation analysis",
+    "License": "GPL-2",
+    "Added": "2021-03-12",
+    "Updated": "2021-03-12",
+    "Categories": ["GeneNetworks"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "scCorr: A graph-based k-partitioning approach for single-cell gene-gene correlation analysis",
+        "DOI": "10.1101/2021.03.04.433945",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "CBIIT-CGBB/scCorr"
   },
   {
     "Tool": "scDAPA",
@@ -16264,6 +16404,29 @@
     "GitHub": "pcamara/scTDA"
   },
   {
+    "Tool": "scTE",
+    "Platform": "Python",
+    "Code": "https://github.com/JiekaiLab/scTE",
+    "Description": "Quantifying transposable element (TEs) expression from single-cell sequencing data",
+    "License": "MIT",
+    "Added": "2021-03-12",
+    "Updated": "2021-03-12",
+    "Categories": ["Alignment", "Quantification"],
+    "Publications": [
+      {
+        "Title": "Identifying transposable element expression dynamics and heterogeneity during development at the single-cell level with a processing pipeline scTE",
+        "DOI": "10.1038/s41467-021-21808-x",
+        "Date": "2021-03-05",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "JiekaiLab/scTE"
+  },
+  {
     "Tool": "scTenifoldNet",
     "Platform": "R/MATLAB",
     "Code": "https://github.com/cailab-tamu/scTenifoldNet",
@@ -18607,11 +18770,11 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 13689
+        "Citations": 13691
       }
     ],
     "Preprints": [],
-    "Citations": 13689,
+    "Citations": 13691,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "alexdobin/STAR"
