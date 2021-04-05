@@ -860,6 +860,8 @@ inferCNVpy	DimensionalityReduction
 inferCNVpy	Variants
 infohet	VariableGenes
 INSCT	Integration
+iQcell	GeneNetworks
+iQcell	Simulation
 IRIS-FGM	Classification
 IRIS-FGM	Clustering
 IRIS-FGM	DifferentialExpression
@@ -1048,6 +1050,9 @@ miQC	QualityControl
 miQC	Visualisation
 mitch	GeneSets
 mitch	Visualisation
+MLG	Clustering
+MLG	Integration
+MLG	Visualisation
 mnnpy	Integration
 Moana	Classification
 Moana	Clustering
@@ -1074,6 +1079,8 @@ Monocle	Visualisation
 Mpath	Ordering
 mpCMF	DimensionalityReduction
 MPSSC	Clustering
+MQuad	Variants
+MQuad	Visualisation
 mrtree	Clustering
 mrtree	DimensionalityReduction
 mrtree	Imputation
@@ -1090,6 +1097,7 @@ MUDAN	Normalisation
 MUDAN	QualityControl
 MUDAN	VariableGenes
 MUDAN	Visualisation
+MultiMAP	Integration
 muscat	DifferentialExpression
 muscat	MarkerGenes
 muscat	Simulation
@@ -1223,6 +1231,8 @@ PIVOT	Normalisation
 PIVOT	Ordering
 PIVOT	QualityControl
 PIVOT	Visualisation
+pLDA	Clustering
+pLDA	Visualisation
 pmVAE	DimensionalityReduction
 PoissonUMIs	UMIs
 PoissonUMIs	Visualisation
@@ -1393,6 +1403,8 @@ SC2P	DifferentialExpression
 SC2P	Visualisation
 SC3	Clustering
 SC3	Interactive
+SCA	DimensionalityReduction
+SCA	RareCells
 scACE	Clustering
 scACE	Integration
 scACE	Simulation
@@ -1400,6 +1412,8 @@ scAdapt	Classification
 scAdapt	DimensionalityReduction
 scAEspy	DimensionalityReduction
 scAEspy	Integration
+SCAFE	AlternativeSplicing
+SCAFE	Quantification
 scAI	Clustering
 scAI	DimensionalityReduction
 scAI	Integration
@@ -1413,8 +1427,17 @@ scAlign	DimensionalityReduction
 scAlign	Integration
 scAlign	RareCells
 scAlleleCount	AlleleSpecific
-scalpel	DimensionalityReduction
-scalpel	RareCells
+scAMACE	Clustering
+scAMACE	Integration
+scAMACE_py	Clustering
+scAMACE_py	Integration
+scAmpi	Alignment
+scAmpi	Classification
+scAmpi	Clustering
+scAmpi	DifferentialExpression
+scAmpi	Normalisation
+scAmpi	QualityControl
+scAmpi	Quantification
 scAnCluster	Classification
 scAnCluster	Clustering
 scAnCluster	MarkerGenes
@@ -1489,6 +1512,7 @@ scDataviz	MarkerGenes
 scDataviz	Visualisation
 scDblFinder	Clustering
 scDblFinder	QualityControl
+scDCC	Clustering
 scDD	DifferentialExpression
 scDD	Simulation
 scDDboost	DifferentialExpression
@@ -2192,6 +2216,7 @@ TSCAN	MarkerGenes
 TSCAN	Ordering
 TSCAN	Visualisation
 TSEE	DimensionalityReduction
+Tweedieverse	DifferentialExpression
 TWO-SIGMA	DifferentialExpression
 TWO-SIGMA	GeneSets
 TWO-SIGMA	Simulation
