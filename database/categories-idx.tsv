@@ -124,6 +124,12 @@ BESCA	Integration
 BESCA	Normalisation
 BESCA	QualityControl
 BESCA	Visualisation
+Beyondcell	CellCycle
+Beyondcell	Clustering
+Beyondcell	DimensionalityReduction
+Beyondcell	GeneSets
+Beyondcell	Perturbations
+Beyondcell	Visualisation
 Bfimpute	Imputation
 bigSCale	Clustering
 bigSCale	DifferentialExpression
@@ -1044,6 +1050,7 @@ MIMOSCA	Classification
 MIMOSCA	Integration
 MIMOSCA	Perturbations
 MIND	Integration
+minicore	Clustering
 minnow	Simulation
 minnow	UMIs
 miQC	QualityControl
@@ -1268,6 +1275,7 @@ pseudogp	Visualisation
 PseudotimeDE	DifferentialExpression
 PseudotimeDE	ExpressionPatterns
 PseudotimeDE	Visualisation
+PsiNorm	Normalisation
 pyHSICLasso	MarkerGenes
 PyMINEr	Clustering
 PyMINEr	DimensionalityReduction
@@ -1468,6 +1476,10 @@ SCATTome	Perturbations
 scBASE	AlleleSpecific
 scBatch	Integration
 scBatch	Normalisation
+scbean	DimensionalityReduction
+scbean	Integration
+scbean	QualityControl
+scbean	Visualisation
 scBio	Integration
 SCC	Imputation
 SCCAF	Clustering
@@ -1854,6 +1866,9 @@ scSeqR	Normalisation
 scSeqR	QualityControl
 scSeqR	Visualisation
 scsim	Simulation
+scSO	Clustering
+scSO	DimensionalityReduction
+scSO	Interactive
 scSorter	Classification
 scSplit	Variants
 scSVA	DimensionalityReduction
@@ -1999,6 +2014,8 @@ SignacX	Classification
 SignacX	Immune
 SignacX	MarkerGenes
 SILGGM	GeneNetworks
+SimCD	Clustering
+SimCD	DifferentialExpression
 SimiC	GeneNetworks
 SIMLR	Clustering
 SIMLR	DimensionalityReduction
@@ -2205,6 +2222,9 @@ trendsceek	ExpressionPatterns
 trendsceek	Simulation
 trendsceek	Visualisation
 Triangulate	GeneNetworks
+tricycle	CellCycle
+tricycle	DimensionalityReduction
+tricycle	Visualisation
 Triku	VariableGenes
 TRUmiCount	Quantification
 TRUmiCount	UMIs
@@ -2311,6 +2331,7 @@ Vitessce	Visualisation
 VoxHunt	Visualisation
 VPAC	Clustering
 VPAC	DimensionalityReduction
+waddR	DifferentialExpression
 WASP	Alignment
 WASP	Clustering
 WASP	DifferentialExpression
