@@ -135,6 +135,8 @@ DOI	arXiv	Preprint	Date	Title
 10.1038/s41587-020-00803-5	FALSE	FALSE	2021-02-08	Quantifying the effect of experimental perturbations at single-cell resolution
 10.1038/s41587-020-0591-3	FALSE	FALSE	2020-08-03	Generalizing RNA velocity to transient cell states through dynamical modeling
 10.1038/s41587-021-00870-2	FALSE	FALSE	2021-04-01	Modular, efficient and constant-memory single-cell RNA-seq preprocessing
+10.1038/s41587-021-00875-x	FALSE	FALSE	2021-04-29	Bayesian inference of gene expression states from single-cell RNA-seq data
+10.1038/s41587-021-00896-6	FALSE	FALSE	2021-04-29	Gene signature extraction and cell identity recognition at the single-cell level with Cell-ID
 10.1038/s41590-018-0276-y	FALSE	FALSE	2019-01-14	Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage
 10.1038/s41592-018-0033-z	FALSE	FALSE	2018-06-25	SAVER: gene expression recovery for single-cell RNA sequencing
 10.1038/s41592-018-0082-3	FALSE	FALSE	2018-07-31	BraCeR: B-cell-receptor reconstruction and clonality inference from single-cell RNA-seq
@@ -173,6 +175,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1038/s41598-019-56911-z	FALSE	FALSE	2019-12	Using transfer learning from prior reference knowledge to improve the clustering of single-cell RNA-Seq data
 10.1038/s41598-020-60400-z	FALSE	FALSE	2020-02-27	Reconstructing temporal and spatial dynamics from single-cell pseudotime using prior knowledge of real scale cell densities
 10.1038/s41598-020-67016-3	FALSE	FALSE	2020-07-03	Recursive Consensus Clustering for novel subtype discovery from transcriptome data
+10.1038/s41598-021-88875-4	FALSE	FALSE	2021-04-30	Synthetic single cell RNA sequencing data from small pilot studies using deep generative models
 10.1038/s42256-019-0037-0	FALSE	FALSE	2019-04	Clustering single-cell RNA-seq data with a model-based deep learning approach
 10.1038/s42256-020-00244-4	FALSE	FALSE	2020-11-02	An interpretable deep-learning architecture of capsule networks for identifying cell-type gene expression programs from single-cell RNA-sequencing data
 10.1038/srep33892	FALSE	FALSE	2016-09-27	Identifying and removing the cell-cycle effect from single-cell RNA-Sequencing data
@@ -324,6 +327,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1093/nargab/lqaa025	FALSE	FALSE	2020-04-20	Single-Cell Virtual Cytometer allows user-friendly and versatile analysis and visualization of multimodal single cell RNAseq datasets
 10.1093/nargab/lqaa039	FALSE	FALSE	2020-05-25	Deep soft K-means clustering with self-training for single-cell RNA sequence data
 10.1093/nargab/lqaa082	FALSE	FALSE	2020-10-09	scAIDE: clustering of large-scale single-cell RNA-seq data reveals putative and rare cell types
+10.1097/BS9.0000000000000072	FALSE	FALSE	2021-04	SIEVE: identifying robust single cell variable genes for single-cell RNA sequencing data
 10.1101/014472	FALSE	TRUE	NA	Sincell: Bioconductor package for the statistical assessment of cell-state hierarchies from single-cell RNA-seq data
 10.1101/021592	FALSE	TRUE	NA	Salmon provides accurate, fast, and bias-aware transcript expression estimates using dual-phase inference
 10.1101/027219	FALSE	TRUE	NA	Laplacian eigenmaps and principal curves for high resolution pseudotemporal ordering of single-cell RNA-seq profiles
@@ -597,6 +601,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2021.01.28.428619	FALSE	TRUE	NA	SMILE: Mutual Information Learning for Integration of Single Cell Omics Data
 10.1101/2021.01.28.428664	FALSE	TRUE	NA	pmVAE: Learning Interpretable Single-Cell Representations with Pathway Modules
 10.1101/2021.01.28.428725	FALSE	TRUE	NA	ACTIVA: realistic single-cell RNA-seq generation with automatic cell-type identification using introspective variational autoencoders
+10.1101/2021.02.01.429187	FALSE	TRUE	NA	Differential dropout analysis captures biological variation in single-cell RNA sequencing data
 10.1101/2021.02.01.429207	FALSE	TRUE	NA	Cell type classification and discovery across diseases, technologies and tissues reveals conserved gene signatures and enables standardized single-cell readouts
 10.1101/2021.02.02.429335	FALSE	TRUE	NA	Genotyping Copy Number Alterations from single-cell RNA sequencing
 10.1101/2021.02.03.429484	FALSE	TRUE	NA	DeepDRIM: a deep neural network to reconstruct cell-type-speciﬁc gene regulatory network using single-cell RNA-seq data
@@ -645,6 +650,12 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2021.04.19.440534	FALSE	TRUE	NA	Axes of inter-sample variability among transcriptional neighborhoods reveal disease associated cell states in single-cell data
 10.1101/2021.04.27.441683	FALSE	TRUE	NA	Robust and annotation-free analysis of isoform variation using short-read scRNA-seq data
 10.1101/2021.04.28.441833	FALSE	TRUE	NA	scvi-tools: a library for deep probabilistic analysis of single-cell omics data
+10.1101/2021.04.29.441691	FALSE	TRUE	NA	Factorization-based Imputation of Expression in Single-cell Transciptomic Analysis (FIESTA) recovers Gene-Cell-State relationships
+10.1101/2021.05.02.441899	FALSE	TRUE	NA	Scarf: A toolkit for memory efficient analysis of large-scale single-cell genomics data
+10.1101/2021.05.03.442435	FALSE	TRUE	NA	scShaper: ensemble method for fast and accurate linear trajectory inference from single-cell RNA-seq data
+10.1101/2021.05.03.442499	FALSE	TRUE	NA	Single-cell gene regulatory network inference at scale: The Inferelator 3.0
+10.1101/2021.05.05.442380	FALSE	TRUE	NA	Unbiased integration of single cell transcriptomes using a linear hybrid method
+10.1101/2021.05.05.442755	FALSE	TRUE	NA	STARsolo: accurate, fast and versatile mapping/quantification of single-cell and single-nucleus RNA-seq data
 10.1101/206052	FALSE	TRUE	NA	RNA velocity in single cells
 10.1101/207704	FALSE	TRUE	NA	ascend: R package for analysis of single cell RNA-seq data
 10.1101/208819	FALSE	TRUE	NA	Graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells
@@ -937,6 +948,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1186/s12864-020-06856-9	FALSE	FALSE	2020-06-29	mitch: multi-contrast pathway enrichment for multi-omics and single-cell profiling data
 10.1186/s12864-020-07302-6	FALSE	FALSE	2021-01-11	JOINT for large-scale single-cell RNA-sequencing analysis via soft-clustering and parallel computing
 10.1186/s12864-021-07469-6	FALSE	FALSE	2021-03-18	WASP: a versatile, web-accessible single cell RNA-Seq processing platform
+10.1186/s12864-021-07635-w	FALSE	FALSE	2021-05-01	Hierarchicell: an R-package for estimating power for tests of differential expression with single-cell data
 10.1186/s12918-018-0581-y	FALSE	FALSE	2018-05-25	SCNS: a graphical tool for reconstructing executable regulatory networks from single-cell genomic data
 10.1186/s12918-018-0652-0	FALSE	FALSE	2018-12	scdNet: a computational tool for single-cell differential network analysis
 10.1186/s12918-019-0699-6	FALSE	FALSE	2019-04	A fast and efficient count-based matrix factorization method for detecting cell types from single-cell RNAseq data
