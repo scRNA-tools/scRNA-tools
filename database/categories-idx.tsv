@@ -1,4 +1,7 @@
 Tool	Category
+acorde	AlternativeSplicing
+acorde	DifferentialExpression
+acorde	Visualisation
 ACTINN	Classification
 ACTION	Clustering
 ACTION	DimensionalityReduction
@@ -346,6 +349,8 @@ CHETAH	Interactive
 CHETAH	Normalisation
 CHETAH	Visualisation
 chooseR	Clustering
+Chord	DimensionalityReduction
+Chord	QualityControl
 CIDR	Clustering
 CIDR	DimensionalityReduction
 CIDR	Imputation
@@ -434,6 +439,10 @@ constclust	Clustering
 constclust	Visualisation
 corral	DimensionalityReduction
 corral	Integration
+CoSpar	CellCycle
+CoSpar	Ordering
+CoSpar	VariableGenes
+CoSpar	Visualisation
 COT	MarkerGenes
 countClust	Clustering
 countClust	DifferentialExpression
@@ -852,6 +861,7 @@ iCellR	Normalisation
 iCellR	QualityControl
 iCellR	Visualisation
 iDEA	GeneSets
+IDEAS	DifferentialExpression
 IKAP	Clustering
 IKAP	MarkerGenes
 IKAP	Visualisation
@@ -1910,6 +1920,9 @@ scShaper	Clustering
 scShaper	DimensionalityReduction
 scShaper	Ordering
 scsim	Simulation
+scsnv	Alignment
+scsnv	Quantification
+scsnv	Variants
 scSO	Clustering
 scSO	DimensionalityReduction
 scSO	Interactive
@@ -2052,6 +2065,8 @@ SigHotSpotter	GeneNetworks
 SigHotSpotter	GeneSets
 SigHotSpotter	Interactive
 SigHotSpotter	Visualisation
+SIGMA	Clustering
+SIGMA	Visualisation
 signac	DifferentialExpression
 signac	ExpressionPatterns
 signac	MarkerGenes
@@ -2286,6 +2301,7 @@ TWO-SIGMA	DifferentialExpression
 TWO-SIGMA	GeneSets
 TWO-SIGMA	Simulation
 txburst	AlleleSpecific
+UCell	GeneSets
 UMI_analysis	Quantification
 UMI_analysis	UMIs
 UMI-tools	Quantification
