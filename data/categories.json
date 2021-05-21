@@ -4,6 +4,9 @@
     "Description": "Alignment of sequencing reads to a reference",
     "Tools": [
       {
+        "Tool": "alevin-fry"
+      },
+      {
         "Tool": "BALDR"
       },
       {
@@ -149,6 +152,10 @@
         "Tool": "acorde"
       },
       {
+        "Tool": "airpart",
+        "Bioc": "airpart"
+      },
+      {
         "Tool": "AltAnalyze",
         "PyPI": "AltAnalyze"
       },
@@ -170,7 +177,8 @@
         "Tool": "polyApipe"
       },
       {
-        "Tool": "satUrn"
+        "Tool": "satuRn",
+        "Bioc": "satuRn"
       },
       {
         "Tool": "SCAFE"
@@ -239,6 +247,9 @@
       },
       {
         "Tool": "TraCeR"
+      },
+      {
+        "Tool": "TRUST4"
       },
       {
         "Tool": "VDJPuzzle"
@@ -327,7 +338,8 @@
         "Tool": "SCRAT"
       },
       {
-        "Tool": "tricycle"
+        "Tool": "tricycle",
+        "Bioc": "tricycle"
       }
     ]
   },
@@ -392,7 +404,8 @@
         "PyPI": "cellgrid"
       },
       {
-        "Tool": "CellID"
+        "Tool": "CellID",
+        "Bioc": "CelliD"
       },
       {
         "Tool": "CellMeSH"
@@ -479,7 +492,8 @@
         "Tool": "ImmClassifier"
       },
       {
-        "Tool": "IRIS-FGM"
+        "Tool": "IRIS-FGM",
+        "Bioc": "IRISFGM"
       },
       {
         "Tool": "ItClust",
@@ -560,7 +574,8 @@
         "Tool": "scCATCH"
       },
       {
-        "Tool": "scClassifR"
+        "Tool": "scClassifR",
+        "Bioc": "scClassifR"
       },
       {
         "Tool": "scClassify",
@@ -574,6 +589,9 @@
       },
       {
         "Tool": "scfind"
+      },
+      {
+        "Tool": "SciBet"
       },
       {
         "Tool": "scID"
@@ -806,7 +824,8 @@
         "Tool": "COAC"
       },
       {
-        "Tool": "CONCLUS"
+        "Tool": "CONCLUS",
+        "Bioc": "conclus"
       },
       {
         "Tool": "Conos",
@@ -906,7 +925,8 @@
         "Tool": "eSPRESSO"
       },
       {
-        "Tool": "FEAST"
+        "Tool": "FEAST",
+        "Bioc": "FEAST"
       },
       {
         "Tool": "FEATS",
@@ -943,7 +963,8 @@
         "Tool": "GraphSCC"
       },
       {
-        "Tool": "HGC"
+        "Tool": "HGC",
+        "Bioc": "HGC"
       },
       {
         "Tool": "HiDeF",
@@ -969,7 +990,8 @@
         "PyPI": "infercnvpy"
       },
       {
-        "Tool": "IRIS-FGM"
+        "Tool": "IRIS-FGM",
+        "Bioc": "IRISFGM"
       },
       {
         "Tool": "iS-CellR"
@@ -1136,6 +1158,7 @@
       },
       {
         "Tool": "RCSL",
+        "Bioc": "RCSL",
         "CRAN": "RCSL"
       },
       {
@@ -1612,7 +1635,8 @@
         "Tool": "IDEAS"
       },
       {
-        "Tool": "IRIS-FGM"
+        "Tool": "IRIS-FGM",
+        "Bioc": "IRISFGM"
       },
       {
         "Tool": "iS-CellR"
@@ -1693,7 +1717,8 @@
         "Tool": "PopAlign"
       },
       {
-        "Tool": "POWSC"
+        "Tool": "POWSC",
+        "Bioc": "POWSC"
       },
       {
         "Tool": "PseudotimeDE"
@@ -1906,7 +1931,8 @@
         "Tool": "Cellar"
       },
       {
-        "Tool": "CellID"
+        "Tool": "CellID",
+        "Bioc": "CelliD"
       },
       {
         "Tool": "CellRanger"
@@ -1941,7 +1967,8 @@
         "Tool": "compass"
       },
       {
-        "Tool": "CONCLUS"
+        "Tool": "CONCLUS",
+        "Bioc": "conclus"
       },
       {
         "Tool": "Connectome"
@@ -2189,7 +2216,6 @@
       },
       {
         "Tool": "MOFA",
-        "Bioc": "MOFA",
         "PyPI": "mofapy"
       },
       {
@@ -2607,7 +2633,8 @@
         "Tool": "TinGa"
       },
       {
-        "Tool": "tricycle"
+        "Tool": "tricycle",
+        "Bioc": "tricycle"
       },
       {
         "Tool": "trVAE",
@@ -2905,6 +2932,7 @@
       },
       {
         "Tool": "RCSL",
+        "Bioc": "RCSL",
         "CRAN": "RCSL"
       },
       {
@@ -3052,6 +3080,9 @@
         "Tool": "Connectome"
       },
       {
+        "Tool": "COSLIR"
+      },
+      {
         "Tool": "CrossTalkeR"
       },
       {
@@ -3116,10 +3147,15 @@
         "PyPI": "inferelator"
       },
       {
+        "Tool": "InterCellar",
+        "Bioc": "InterCellar"
+      },
+      {
         "Tool": "iQcell"
       },
       {
-        "Tool": "IRIS-FGM"
+        "Tool": "IRIS-FGM",
+        "Bioc": "IRISFGM"
       },
       {
         "Tool": "iTALK"
@@ -3182,6 +3218,10 @@
       },
       {
         "Tool": "scCaps"
+      },
+      {
+        "Tool": "scConnect",
+        "PyPI": "scConnect"
       },
       {
         "Tool": "scCorr"
@@ -3341,7 +3381,8 @@
         "Tool": "BingleSeq"
       },
       {
-        "Tool": "CellID"
+        "Tool": "CellID",
+        "Bioc": "CelliD"
       },
       {
         "Tool": "CellOracle"
@@ -3610,6 +3651,9 @@
       {
         "Tool": "TRAPeS",
         "PyPI": "trapes"
+      },
+      {
+        "Tool": "TRUST4"
       },
       {
         "Tool": "VDJPuzzle"
@@ -3958,6 +4002,10 @@
         "Tool": "ClusterMap"
       },
       {
+        "Tool": "Compartmap",
+        "Bioc": "compartmap"
+      },
+      {
         "Tool": "CONICS"
       },
       {
@@ -4060,6 +4108,9 @@
         "Tool": "MARS"
       },
       {
+        "Tool": "MAT2"
+      },
+      {
         "Tool": "MATCHER",
         "PyPI": "pymatcher"
       },
@@ -4088,7 +4139,6 @@
       },
       {
         "Tool": "MOFA",
-        "Bioc": "MOFA",
         "PyPI": "mofapy"
       },
       {
@@ -4278,6 +4328,9 @@
         "Tool": "SpaOTsc"
       },
       {
+        "Tool": "SSBER"
+      },
+      {
         "Tool": "sscClust"
       },
       {
@@ -4409,6 +4462,10 @@
       },
       {
         "Tool": "indeXplorer"
+      },
+      {
+        "Tool": "InterCellar",
+        "Bioc": "InterCellar"
       },
       {
         "Tool": "iS-CellR"
@@ -4643,7 +4700,8 @@
         "PyPI": "COMETSC"
       },
       {
-        "Tool": "CONCLUS"
+        "Tool": "CONCLUS",
+        "Bioc": "conclus"
       },
       {
         "Tool": "Conos",
@@ -4710,7 +4768,8 @@
         "PyPI": "MICTI"
       },
       {
-        "Tool": "miloR"
+        "Tool": "miloR",
+        "Bioc": "miloR"
       },
       {
         "Tool": "Monocle",
@@ -4966,7 +5025,8 @@
         "Tool": "Citrus"
       },
       {
-        "Tool": "CONCLUS"
+        "Tool": "CONCLUS",
+        "Bioc": "conclus"
       },
       {
         "Tool": "DendroSplit",
@@ -5303,7 +5363,8 @@
         "Bioc": "cellTree"
       },
       {
-        "Tool": "condiments"
+        "Tool": "condiments",
+        "Bioc": "condiments"
       },
       {
         "Tool": "CoSpar",
@@ -5486,6 +5547,7 @@
       },
       {
         "Tool": "RCSL",
+        "Bioc": "RCSL",
         "CRAN": "RCSL"
       },
       {
@@ -5739,6 +5801,10 @@
         "PyPI": "adobo"
       },
       {
+        "Tool": "airpart",
+        "Bioc": "airpart"
+      },
+      {
         "Tool": "Asc-Seurat"
       },
       {
@@ -5894,7 +5960,8 @@
         "Tool": "MetaCell"
       },
       {
-        "Tool": "miQC"
+        "Tool": "miQC",
+        "Bioc": "miQC"
       },
       {
         "Tool": "Moana",
@@ -6083,6 +6150,9 @@
         "Bioc": "aggregateBioVar"
       },
       {
+        "Tool": "alevin-fry"
+      },
+      {
         "Tool": "AltAnalyze",
         "PyPI": "AltAnalyze"
       },
@@ -6206,7 +6276,8 @@
         "Tool": "sircel"
       },
       {
-        "Tool": "SoupX"
+        "Tool": "SoupX",
+        "CRAN": "SoupX"
       },
       {
         "Tool": "STAR"
@@ -6260,7 +6331,8 @@
     "Description": "Identification of rare cell populations",
     "Tools": [
       {
-        "Tool": "CONCLUS"
+        "Tool": "CONCLUS",
+        "Bioc": "conclus"
       },
       {
         "Tool": "FiRE"
@@ -6421,7 +6493,8 @@
         "Bioc": "phenopath"
       },
       {
-        "Tool": "POWSC"
+        "Tool": "POWSC",
+        "Bioc": "POWSC"
       },
       {
         "Tool": "powsimR"
@@ -6581,6 +6654,9 @@
     "Category": "UMIs",
     "Description": "Processing of Unique Molecular Identifiers",
     "Tools": [
+      {
+        "Tool": "alevin-fry"
+      },
       {
         "Tool": "bcbio",
         "PyPI": "bcbio"
@@ -6759,7 +6835,8 @@
         "Tool": "EDGE"
       },
       {
-        "Tool": "FEAST"
+        "Tool": "FEAST",
+        "Bioc": "FEAST"
       },
       {
         "Tool": "FiRE"
@@ -6832,6 +6909,9 @@
       {
         "Tool": "scGPS",
         "Bioc": "scGPS"
+      },
+      {
+        "Tool": "SciBet"
       },
       {
         "Tool": "scLVM",
@@ -7059,6 +7139,10 @@
         "PyPI": "adobo"
       },
       {
+        "Tool": "airpart",
+        "Bioc": "airpart"
+      },
+      {
         "Tool": "alevinQC",
         "Bioc": "alevinQC"
       },
@@ -7183,7 +7267,8 @@
         "Tool": "CellexalVR"
       },
       {
-        "Tool": "CellID"
+        "Tool": "CellID",
+        "Bioc": "CelliD"
       },
       {
         "Tool": "CellMixS",
@@ -7288,10 +7373,15 @@
         "PyPI": "COMETSC"
       },
       {
+        "Tool": "Compartmap",
+        "Bioc": "compartmap"
+      },
+      {
         "Tool": "compass"
       },
       {
-        "Tool": "CONCLUS"
+        "Tool": "CONCLUS",
+        "Bioc": "conclus"
       },
       {
         "Tool": "CONICS"
@@ -7585,7 +7675,12 @@
         "Bioc": "infercnv"
       },
       {
-        "Tool": "IRIS-FGM"
+        "Tool": "InterCellar",
+        "Bioc": "InterCellar"
+      },
+      {
+        "Tool": "IRIS-FGM",
+        "Bioc": "IRISFGM"
       },
       {
         "Tool": "iS-CellR"
@@ -7658,10 +7753,12 @@
         "Tool": "Millefy"
       },
       {
-        "Tool": "miloR"
+        "Tool": "miloR",
+        "Bioc": "miloR"
       },
       {
-        "Tool": "miQC"
+        "Tool": "miQC",
+        "Bioc": "miQC"
       },
       {
         "Tool": "mitch",
@@ -7676,7 +7773,6 @@
       },
       {
         "Tool": "MOFA",
-        "Bioc": "MOFA",
         "PyPI": "mofapy"
       },
       {
@@ -7781,7 +7877,8 @@
         "Tool": "PoissonUMIs"
       },
       {
-        "Tool": "POWSC"
+        "Tool": "POWSC",
+        "Bioc": "POWSC"
       },
       {
         "Tool": "powsimR"
@@ -7823,6 +7920,7 @@
       },
       {
         "Tool": "RCSL",
+        "Bioc": "RCSL",
         "CRAN": "RCSL"
       },
       {
@@ -7855,7 +7953,8 @@
         "Tool": "SampleQC"
       },
       {
-        "Tool": "satUrn"
+        "Tool": "satuRn",
+        "Bioc": "satuRn"
       },
       {
         "Tool": "SAUCIE"
@@ -8235,7 +8334,8 @@
         "Tool": "SOUP"
       },
       {
-        "Tool": "SoupX"
+        "Tool": "SoupX",
+        "CRAN": "SoupX"
       },
       {
         "Tool": "SPADE"
@@ -8314,7 +8414,8 @@
         "Tool": "trendsceek"
       },
       {
-        "Tool": "tricycle"
+        "Tool": "tricycle",
+        "Bioc": "tricycle"
       },
       {
         "Tool": "TSCAN",
