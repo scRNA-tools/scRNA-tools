@@ -26,6 +26,12 @@ adobo	Normalisation
 adobo	QualityControl
 adobo	Visualisation
 aggregateBioVar	Quantification
+airpart	AlternativeSplicing
+airpart	QualityControl
+airpart	Visualisation
+alevin-fry	Alignment
+alevin-fry	Quantification
+alevin-fry	UMIs
 alevinQC	Interactive
 alevinQC	Visualisation
 ALRA	Imputation
@@ -412,6 +418,8 @@ CoGAPs	GeneSets
 CoGAPs	Visualisation
 COMET	MarkerGenes
 COMET	Visualisation
+Compartmap	Integration
+Compartmap	Visualisation
 compass	DimensionalityReduction
 compass	GeneNetworks
 compass	Visualisation
@@ -439,6 +447,7 @@ constclust	Clustering
 constclust	Visualisation
 corral	DimensionalityReduction
 corral	Integration
+COSLIR	GeneNetworks
 CoSpar	CellCycle
 CoSpar	Ordering
 CoSpar	VariableGenes
@@ -884,6 +893,9 @@ inferCNVpy	Variants
 Inferelator	GeneNetworks
 infohet	VariableGenes
 INSCT	Integration
+InterCellar	GeneNetworks
+InterCellar	Interactive
+InterCellar	Visualisation
 iQcell	GeneNetworks
 iQcell	Simulation
 IRIS-FGM	Classification
@@ -1018,6 +1030,7 @@ MAST	GeneNetworks
 MAST	GeneSets
 MAST	Normalisation
 MAST	QualityControl
+MAT2	Integration
 MATCHER	ExpressionPatterns
 MATCHER	Integration
 MATCHER	Ordering
@@ -1419,8 +1432,8 @@ SampleQC	Visualisation
 SAMstrt	DifferentialExpression
 SAMstrt	Normalisation
 Sanity	Normalisation
-satUrn	AlternativeSplicing
-satUrn	Visualisation
+satuRn	AlternativeSplicing
+satuRn	Visualisation
 SAUCIE	Clustering
 SAUCIE	DimensionalityReduction
 SAUCIE	Imputation
@@ -1552,6 +1565,7 @@ scclusteval	Visualisation
 scClustViz	Interactive
 scClustViz	Visualisation
 scCODA	Modality
+scConnect	GeneNetworks
 scConsensus	Classification
 scConsensus	DifferentialExpression
 scConsensus	Integration
@@ -1693,6 +1707,8 @@ scHOT	Visualisation
 scHPF	DimensionalityReduction
 scHPF	ExpressionPatterns
 scIB	Integration
+SciBet	Classification
+SciBet	VariableGenes
 scicast	Clustering
 scicast	DimensionalityReduction
 scicast	Interactive
@@ -2198,6 +2214,7 @@ SPRING	DimensionalityReduction
 SPRING	Interactive
 SPRING	Visualisation
 SPsimSeq	Simulation
+SSBER	Integration
 sscClust	Clustering
 sscClust	DimensionalityReduction
 sscClust	Integration
@@ -2288,6 +2305,8 @@ tricycle	Visualisation
 Triku	VariableGenes
 TRUmiCount	Quantification
 TRUmiCount	UMIs
+TRUST4	Assembly
+TRUST4	Immune
 trVAE	DimensionalityReduction
 trVAE	Perturbations
 TSCAN	Clustering
