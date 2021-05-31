@@ -26,7 +26,7 @@ get_references <- function(dois) {
 
     references <- purrr::map_dfr(dois, function(.doi) {
 
-        arxiv    <- stringr::str_detect(.doi, "arxiv")
+        arxiv <- stringr::str_detect(.doi, "arxiv")
 
         if (!arxiv) {
             cr_data <- rcrossref::cr_works(.doi, .progress = "text")$data
@@ -75,12 +75,6 @@ get_references <- function(dois) {
         correct <- prompt_yn("Is this correct (y/n)?:")
 
         if (correct) {
-            if (arxiv) {
-                timestamp <- NA
-            } else {
-                timestamp <- lubridate::now("UTC")
-            }
-
             ref <- tibble::tibble(
                 DOI        = .doi,
                 arXiv      = arxiv,
@@ -88,7 +82,7 @@ get_references <- function(dois) {
                 Date       = date,
                 Title      = title,
                 Citations  = citations,
-                Timestamp  = timestamp,
+                Timestamp  = lubridate::now("UTC"),
                 Delay      = 0
             )
         } else {
