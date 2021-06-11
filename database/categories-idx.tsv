@@ -72,6 +72,9 @@ ascend	GeneFiltering
 ascend	Normalisation
 ascend	QualityControl
 ascend	Visualisation
+ASURAT	Clustering
+ASURAT	GeneSets
+ASURAT	Visualisation
 AUCell	GeneNetworks
 AUCell	Interactive
 AUCell	Visualisation
@@ -107,6 +110,8 @@ BatchBench	QualityControl
 BatchBench	Visualisation
 batchelor	Integration
 BATMAN	Integration
+BayesEATS	Clustering
+BayesEATS	Integration
 bayNorm	Imputation
 bayNorm	Normalisation
 bayNorm	Simulation
@@ -690,6 +695,9 @@ ENHANCE	DimensionalityReduction
 ENHANCE	Imputation
 EnImpute	Imputation
 EnsembleKQC	QualityControl
+eQTLsingle	Alignment
+eQTLsingle	Quantification
+eQTLsingle	Variants
 ESAT	Clustering
 ESAT	DimensionalityReduction
 ESAT	Ordering
@@ -1662,6 +1670,8 @@ scEpath	Normalisation
 scEpath	Ordering
 scEpath	QualityControl
 scEpath	Visualisation
+scETM	DimensionalityReduction
+scETM	Integration
 scFates	Ordering
 scFates	Visualisation
 scFBA	GeneNetworks
@@ -1938,6 +1948,7 @@ scry	DimensionalityReduction
 scry	GeneFiltering
 SCSA	Classification
 SCSA	GeneSets
+SCSC	Clustering
 scScope	Clustering
 scScope	Imputation
 scScope	Normalisation
@@ -2260,6 +2271,10 @@ STREAM	Interactive
 STREAM	Normalisation
 STREAM	Ordering
 STREAM	Visualisation
+SuperCell	Clustering
+SuperCell	MarkerGenes
+SuperCell	Ordering
+SuperCell	Visualisation
 Superscan	Classification
 switchde	DifferentialExpression
 switchde	ExpressionPatterns
