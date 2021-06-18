@@ -245,6 +245,7 @@ CCNMF	DifferentialExpression
 CCNMF	DimensionalityReduction
 CCNMF	Integration
 CCNMF	Visualisation
+CCPE	CellCycle
 ccRemover	CellCycle
 CCSN	GeneNetworks
 celaref	Classification
@@ -456,6 +457,8 @@ constclust	Clustering
 constclust	Visualisation
 corral	DimensionalityReduction
 corral	Integration
+COSG	MarkerGenes
+COSGR	MarkerGenes
 COSLIR	GeneNetworks
 CoSpar	CellCycle
 CoSpar	Ordering
@@ -660,6 +663,8 @@ dsb	Normalisation
 DTAE	DimensionalityReduction
 DTFLOW	Ordering
 DTFLOW	Visualisation
+DTUrtle	AlternativeSplicing
+DTUrtle	Visualisation
 DTWScore	DifferentialExpression
 DTWScore	Ordering
 DTWScore	VariableGenes
@@ -1824,6 +1829,9 @@ scMVAE	DimensionalityReduction
 scNBMF	DimensionalityReduction
 scNCA	Integration
 scNCA	Simulation
+scNetViz	GeneNetworks
+scNetViz	Interactive
+scNetViz	Visualisation
 SCNorm	Normalisation
 scNPF	GeneNetworks
 scNPF	Imputation
@@ -2113,6 +2121,8 @@ SIEVE	VariableGenes
 SigEMD	DifferentialExpression
 SigEMD	Imputation
 SigEMD	Visualisation
+sigGCN	Classification
+sigGCN	GeneNetworks
 SigHotSpotter	GeneNetworks
 SigHotSpotter	GeneSets
 SigHotSpotter	Interactive
@@ -2156,6 +2166,7 @@ SinCHet	Visualisation
 SINGE	GeneNetworks
 SingleCellExplorer	Interactive
 SingleCellExplorer	Visualisation
+singleCellHaystack	DifferentialExpression
 singleCellHaystack	MarkerGenes
 singleCellHaystack	Visualisation
 SingleCellNet	Classification

@@ -81,6 +81,7 @@ cb_sniffer	Python	https://github.com/sridnona/cb_sniffer	Mutation barcode caller
 ccdf	R	https://github.com/Mgauth/ccdf	ccdf is a package for performing single-cell RNA-seq differential expression analysis and more generally complex hypothesis testing	NA	2021-05-28	2021-05-28
 ccfindR	R	https://github.com/hjunwoo/ccfindR	single-cell RNA-seq data analysis using Bayesian non-negative matrix factorization	GPL (>= 2)	2018-05-13	2019-07-11
 CCNMF	R/C++	https://github.com/XQBai/CCNMF	Coupled-Clone Nonnegative Matrix Factorization (CCNMF) is a method for joint inference of clonal structure using paired Single-cell DNA-Seq and RNA-Seq data	MIT	2020-02-17	2020-02-17
+CCPE	MATLAB	https://github.com/LiuJJ0327/CCPE	A novel cell cycle pseudotime estimation method to characterize cell cycle timing and determine cell cycle phases from single-cell RNA-seq data	NA	2021-06-18	2021-06-18
 ccRemover	R	https://github.com/cran/ccRemover	Implements a method for identifying and removing the cell-cycle effect from scRNA-Seq data.	GPL-3	2018-04-23	2018-04-23
 CCSN	MATLAB	NA	CCSN can be used for cell clustering and dimension reduction on a network basis of single cells	NA	2020-02-05	2020-02-05
 celaref	R	https://github.com/MonashBioinformaticsPlatform/celaref	The celaref (cell labelling by reference) package aims to streamline the cell-type identification step, by suggesting cluster labels on the basis of similarity to an already-characterised reference dataset.	GPL-3	2018-06-08	2018-06-08
@@ -157,6 +158,8 @@ Connectome	R	https://github.com/msraredon/Connectome	Connectome is an R toolkit 
 Conos	R/C++	https://github.com/hms-dbmi/conos	Clustering on Network of Samples	GPL-3	2018-11-09	2021-02-26
 constclust	Pythjon	https://github.com/ivirshup/constclust	Consistent Clusters for scRNA-seq	MIT	2019-07-24	2020-12-12
 corral	R	https://github.com/laurenhsu1/corral	corral is a package to perform correspondence analysis on count data, particularly for single-cell (e.g., RNA-seq)	GPL-2	2020-08-06	2020-10-30
+COSG	Python	https://github.com/genecell/COSG	COSG is a cosine similarity-based method for more accurate and scalable marker gene identification	BSD-3-Clause	2021-06-18	2021-06-18
+COSGR	R	https://github.com/genecell/COSGR	R implementation of COSG	BSD-3-Clause	2021-06-18	2021-06-18
 COSLIR	Python/MATLAB	https://github.com/Ge-lab-pku/COSLIR	COSLIR: Direct Reconstruction of Gene Regulatory Networks underlying Cellular state Transitions without Pseudo-time Inference	MIT	2021-05-21	2021-05-21
 CoSpar	Python	https://github.com/AllonKleinLab/cospar	Dynamic inference by integrating state and lineage information	MIT	2021-05-14	2021-05-14
 COT	Python	https://github.com/MintaYLu/COT	Cosine based One-sample Test (COT) is an accurate and efficient method to detect subtype-specific marker genes	MIT	2021-01-15	2021-01-15
@@ -247,6 +250,7 @@ DSAVE-R	R	https://github.com/SysBioChalmers/DSAVE-R	A method to evaluate the pur
 dsb	R	https://github.com/niaid/dsb	A lightweight R package for normalizing and denoising CITE-seq protein data	Custom	2021-03-05	2021-03-05
 DTAE	Python	https://github.com/hci-unihd/DTAE	Visualizing hierarchies in scRNA-seq data using a density tree-biased autoencoder	NA	2021-02-19	2021-02-19
 DTFLOW	Python	https://github.com/statway/DTFLOW	DTFLOW: inferring and visualizing dynamic cellular trajectories from single-cell data	NA	2021-03-12	2021-03-12
+DTUrtle	R	https://github.com/TobiTekath/DTUrtle	Perform differential transcript usage (DTU) analysis of bulk or single-cell RNA-seq data and visualize results	GPL-3.0	2021-06-18	2021-06-18
 DTWScore	R	https://github.com/xiaoxiaoxier/DTWscore	Transcriptional heterogeneity analysis for time-series single-cell RNA-seq data	NA	2017-05-30	2017-05-30
 DUBStepR	R	https://github.com/prabhakarlab/DUBStepR	DUBStepR (Determining the Underlying Basis using Step-wise Regression) is a feature selection algorithm for cell type identification in single-cell RNA-sequencing data	MIT	2020-10-15	2021-03-26
 Dune	R	https://github.com/HectorRDB/Dune	Dune is an R Package that provides a parameter-free method for optimizing the trade-off between the resolution of clusters and their replicability across datasets	MIT	2020-03-18	2020-04-29
@@ -369,7 +373,7 @@ iTALK	R	https://github.com/Coolgenome/iTALK	iTALK is an R toolkit for characteri
 ItClust	Python	https://github.com/jianhuupenn/ItClust	ItClust is an Iterative Transfer learning algorithm for scRNA-seq clustering	NA	2020-02-13	2020-02-13
 iterClust	R	https://github.com/hd2326/iterClust	iterClust, an iterative clustering framework, which can separate more pronounced differences (e.g. A and B) in starting iterations, followed by relatively subtle differences (e.g. B1 and B2), providing a comprehensive clustering trajectory.	Custom	2018-11-13	2018-11-13
 ivis	Python/R	https://github.com/beringresearch/ivis	ivis preserves global data structures in a low-dimensional space, adds new data points to existing embeddings using a parametric mapping function, and scales linearly to hundreds of thousands of cells	GPL-2	2019-07-04	2019-07-04
-jackstraw	R	https://github.com/ncchung/jackstraw	The jackstraw package provides a statistical test to identify variables (i.e., transcripts, genes) or observations (i.e., single cells) that are significantly associated with latent variables.	GPL-2	2018-06-27	2020-03-18
+jackstraw	R	https://github.com/ncchung/jackstraw	The jackstraw package provides a statistical test to identify variables (i.e., transcripts, genes) or observations (i.e., single cells) that are significantly associated with latent variables.	GPL-2	2018-06-27	2021-06-18
 JIND	Python	https://github.com/mohit1997/JIND	JIND is a framework for automated cell-type identification based on neural networks	MIT	2020-10-15	2020-10-15
 JOINT	Python	https://github.com/wanglab-georgetown/JOINT	JOINT performs probability-based cell-type identification and DEG analysis simultaneously without the need for imputation	Apache-2.0	2021-01-22	2021-01-22
 JSOM	Python	https://github.com/hlim95/JSOM	Jointly Evolving Self-organzing Maps	NA	2021-03-26	2021-03-26
@@ -709,6 +713,7 @@ SCmut	R	https://github.com/nghiavtr/SCmut	SCmut is a novel and robust statistica
 scMVAE	Python	https://github.com/cmzuo11/scMVAE	Deep-joint-learning analysis model of single cell transcriptome and open chromatin accessibility data	NA	2020-11-22	2020-11-22
 scNBMF	Python/R	https://github.com/sqsun/scNBMF	A fast and efficient count-based matrix factorization method for detecting cell types from single-cell RNA-seq data	NA	2019-04-16	2019-04-16
 scNCA	R	https://github.com/gongx030/scNCA	scNCA is an R package for integrating multiple sources of temporal single cell RNA-seq data	MIT	2019-02-25	2019-02-25
+scNetViz	Java	https://github.com/RBVI/scNetViz	A Cytoscape app to aid biological interpretation of cell clusters in scRNA-seq data using network analysis	Apache-2.0	2021-06-18	2021-06-18
 SCNorm	R	https://github.com/rhondabacher/SCnorm	A quantile regression based approach for robust normalization of single cell RNA-seq data.	GPL (>= 2)	2016-11-29	2018-03-14
 scNPF	R	https://github.com/BMILAB/scNPF	An integrative framework assisted by network propagation and network fusion for pre-processing of single-cell RNA-seq data	GPL-2	2019-05-17	2019-05-17
 SCNS	Javascript/F#	https://github.com/swoodhouse/SCNS-GUI	The Single Cell Network Synthesis tool (SCNS) is a tool for the reconstruction and analysis of executable models from single-cell gene expression data.	MIT	2018-06-01	2018-06-01
@@ -814,6 +819,7 @@ SICILIAN	Python/R	https://github.com/salzmanlab/SICILIAN	Specific splice junctio
 Sierra	R	https://github.com/VCCRI/Sierra	Sierra is an R package designed for detecting differential transcript usage analysis from polyA-enriched single cell RNASeq data.	NA	2019-12-11	2019-12-11
 SIEVE	R	https://github.com/YinanZhang522/SIEVE	SIEVE is a strategy used for select highly Variable genes from single-cell RNA Seq data, based on random sampling for all single cells in a scRNA-seq dataset	NA	2021-05-07	2021-05-07
 SigEMD	R	https://github.com/NabaviLab/SigEMD	SigEMD is a novel method to identify differentially expressed genes in single cell RNA sequencing data.	NA	2018-05-01	2018-05-01
+sigGCN	Python	https://github.com/NabaviLab/sigGCN	Cell classification that combines a graph convolutional network (GCN) and a neural network to exploit gene interaction networks	NA	2021-06-18	2021-06-18
 SigHotSpotter	R	https://gitlab.com/srikanth.ravichandran/sighotspotter	A computational tool to predict hotspots of signaling pathways responsible for the stable maintenance of cell subpopulation phenotypes, by integrating signaling and transcriptional networks.	AGPL-3	2019-11-15	2019-11-15
 SIGMA	R	https://github.com/Siliegia/SIGMA	A package to calculate clusterability in clusters of scRNA-seq data	GPL-2	2021-05-14	2021-05-14
 signac	R/C++	https://github.com/bioturing/signac	A versatile R package to facilitate the analysis workflow for single-cell data	Custom	2019-07-11	2020-11-22
@@ -831,7 +837,7 @@ SINCERITIES	MATLAB/R	https://github.com/CABSEL/SINCERITIES	SINCERITIES is a tool
 SinCHet	MATLAB	http://labpages2.moffitt.org/chen/software	a MATLAB GUI toolbox for Single Cell Heterogeneity analysis in cancer	NA	2017-11-20	2017-11-20
 SINGE	MATLAB	https://github.com/gitter-lab/SINGE	SINGE (Single-cell Inference of Networks using Granger Ensembles) reconstructs gene regulatory networks from pseudotime-annotated scRNA-seq data	MIT	2019-02-05	2019-05-17
 SingleCellExplorer	Python	https://github.com/d-feng/scExplorer	Single Cell Explorer is a Python-based web server application for computational and experimental scientists to iteratively and collaboratively annotate cell expression phenotypes within a user-friendly and visually appealing platform.	LGPL-3.0	2019-09-02	2019-09-02
-singleCellHaystack	R	https://github.com/alexisvdb/singleCellHaystack	singleCellHaystack is a package for finding surprising needles (=genes) in haystacks (=multi-dimensional representations of single cell transcriptome data)	MIT	2019-02-25	2020-09-17
+singleCellHaystack	R	https://github.com/alexisvdb/singleCellHaystack	singleCellHaystack is a package for finding surprising needles (=genes) in haystacks (=multi-dimensional representations of single cell transcriptome data)	MIT	2019-02-25	2021-06-18
 SingleCellNet	R	https://github.com/pcahan1/singleCellNet	SingleCellNet enables the classifcation of single cell RNA-Seq data across species and platforms	MIT	2019-08-12	2019-08-12
 SingleCellSignalR	R	https://github.com/SCA-IRCM/SingleCellSignalR	Allows single cell RNA seq data analysis, clustering, creates internal network and infers cell-cell interactions.	GPL-3	2019-12-18	2020-04-29
 SingleCellSignatureExplorer	GO/R	https://sites.google.com/site/fredsoftwares/products/single-cell-signature-explorer	Single-Cell Signature Explorer is a package of four software tools dedicated to high throughput signature exploration in single-cell RNA-seq analysis.	NA	2019-05-07	2020-04-14
@@ -867,7 +873,7 @@ SPARSim	R	https://gitlab.com/sysbiobig/sparsim	SPARSim is a single cell RNA-seq 
 SPaRTAN	Python/C	https://github.com/osmanbeyoglulab/SPaRTAN	SPaRTAN (Single-cell Proteomic and RNA based Transcription factor Activity Network) ntegrates parallel surface protein measurements with mRNA expression data in cells based on CITE-seqseq data	NA	2021-01-08	2021-01-08
 Specter	MATLAB	https://github.com/canzarlab/Specter	A novel tool for clustering large-scale single cell RNA-seq and multi-modal data	NA	2020-06-16	2020-06-16
 Spectrum	R	https://github.com/crj32/Spectrum	Fast Adaptive Spectral Clustering for Single and Multi-View Data	AGPLv3	2019-05-23	2019-05-23
-Splatter	R	https://github.com/Oshlack/splatter	Splatter is a package for the simple simulation of single-cell RNA-seq count data.	GPL-3	2016-10-27	2018-03-14
+Splatter	R	https://github.com/Oshlack/splatter	Splatter is a package for the simple simulation of single-cell RNA-seq count data.	GPL-3	2016-10-27	2021-06-18
 SPRING	Python/MATLAB/Javascript	https://github.com/AllonKleinLab/SPRING	SPRING is a collection of pre-processing scripts and a web browser-based tool for visualizing and interacting with high dimensional data.	NA	2016-12-05	2016-12-05
 SPsimSeq	R	https://github.com/CenterForStatistics-UGent/SPsimSeq	Semi-parametric simulation of bulk and single cell RNA-seq data	GPL-2	2019-06-28	2021-01-08
 SSBER	R	https://github.com/zy456/SSBER	SSBER: removing batch effect for single-cell RNA sequencing data	NA	2021-05-21	2021-05-21
