@@ -1,3 +1,23 @@
+#' Check database
+#'
+#' Perform automatic database checks
+#'
+#' @param database Database object
+#' @param pkgs_cache Packages cache table
+#' @param dir Database directory
+#' @param all Whether to check all repositories
+#'
+#' @return Updated database object
+check <- function(database, pkgs_cache, dir, all) {
+
+    database <- check_repositories(database, pkgs_cache, dir, all)
+    database <- check_github(database, dir)
+
+    set_gitmessage_checkdone()
+    
+    return(database)
+}
+
 #' Check repositories
 #'
 #' Check for new package repository matches
@@ -8,7 +28,7 @@
 #' @param all Whether to check all repositories
 #'
 #' @return Updated database object
-check <- function(database, pkgs_cache, dir, all) {
+check_repositories <- function(database, pkgs_cache, dir, all) {
 
     if (!all) {
         last_week <- lubridate::today("UTC") - 7
@@ -18,12 +38,13 @@ check <- function(database, pkgs_cache, dir, all) {
 
         if (nrow(pkgs_cache) == 0) {
             usethis::ui_done("No new repositories to check")
-            quit()
+            return(database)
         }
     }
 
     usethis::ui_todo(glue::glue(
-        "Checking {usethis::ui_value(nrow(pkgs_cache))} repositories..."
+        "Checking {usethis::ui_value(nrow(pkgs_cache))} ",
+        "package repositories..."
     ))
 
     pb <- progress::progress_bar$new(
@@ -78,9 +99,55 @@ check <- function(database, pkgs_cache, dir, all) {
             commit_database(dir)
         }
     }
-    usethis::ui_done("Repositories updated")
+    usethis::ui_done("Package repositories updated")
 
-    set_gitmessage_checkdone()
+    return(database)
+}
 
+#' Check GitHub repositories
+#'
+#' Check GitHub repositories still exist
+#'
+#' @param database Database object
+#' @param dir Database directory
+#'
+#' @return Updated database object
+check_github <- function(database, dir) {
+
+    usethis::ui_todo(glue::glue(
+        "Checking GitHub repositories..."
+    ))
+    
+    pb <- progress::progress_bar$new(
+        format = paste(
+            "[:bar] :current/:total :percent",
+            "Elapsed: :elapsedfull ETA: :eta"
+        ),
+        total = length(database$Tools),
+        clear = FALSE
+    )
+
+    pb$tick(0)
+    for (name in names(database$Tools)) {
+        pb$tick()
+        tool <- database$Tools[[name]]
+        
+        github <- tool$Repositories["GitHub"]
+        if (is.na(github)) {
+            next
+        }
+        
+        exists <- ping_gh_repo(github, newline = TRUE)
+        if (!exists) {
+            cat("\n")
+            database <- update_code(name, database)
+            usethis::ui_todo("Commiting new code URL...")
+            save_database(database, dir)
+            set_gitmessage_gh_check(name)
+            commit_database(dir)
+        }
+    }
+    
+    usethis::ui_done("GitHub repositories updated")
     return(database)
 }

@@ -58,7 +58,7 @@ set_gitmessage_update <- function(name) {
     readr::write_lines(msg, ".gitmessage")
 }
 
-#' Set check git message
+#' Set check repository git message
 #'
 #' Set the template git commit message for checking tool repositories
 #'
@@ -72,6 +72,21 @@ set_gitmessage_check <- function(name) {
         "https://www.scrna-tools.org/tools#{name}"
     )
 
+    readr::write_lines(msg, ".gitmessage")
+}
+
+#' Set check GitHub git message
+#'
+#' Set the template git commit message for checking GitHub repositories
+#'
+#' @param name Name of the updated tool
+set_gitmessage_gh_check <- function(name) {
+    
+    msg <- glue::glue(
+        "# Enter the new URL\n",
+        "Changed code URL for {name} to URL after check",
+    )
+    
     readr::write_lines(msg, ".gitmessage")
 }
 
@@ -94,11 +109,11 @@ set_gitmessage_checkremove <- function(name) {
 #'
 #' Set the template git commit message for completing repository checking (to
 #' capture additional ignored repositories)
-set_gitmessage_checkdone <- function(name) {
+set_gitmessage_checkdone <- function() {
 
     msg <- paste(
         "# Delete time before commiting\n",
-        "Completed repository checks ", lubridate::now("UTC")
+        "Completed checks", lubridate::now("UTC")
     )
 
     readr::write_lines(msg, ".gitmessage")
@@ -107,6 +122,9 @@ set_gitmessage_checkdone <- function(name) {
 #' Set add category git message
 #'
 #' Set the template git commit message for adding a new category
+#' 
+#' @param name Name of the new category
+#' @param description Description of the new category
 set_gitmessage_addcategory <- function(name, description) {
     
     msg <- glue::glue(

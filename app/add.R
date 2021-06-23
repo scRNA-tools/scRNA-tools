@@ -38,9 +38,9 @@ add_tool <- function(database, pkgs_cache) {
 
     tool <- new_sctool(name, platform, code, license, description, dois,
                        categories)
-    tool <- update_github(tool)
 
     database$Tools[[name]] <- tool
+    database <- update_github(name, database)
     database <- update_repositories(name, database, pkgs_cache, prompt = FALSE)
 
     database$References <- dplyr::bind_rows(database$References, refs)
