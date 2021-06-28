@@ -13,6 +13,7 @@ check <- function(database, pkgs_cache, dir, all, links) {
 
     database <- check_repositories(database, pkgs_cache, dir, all)
     database <- check_github(database, dir)
+    database <- check_licenses(database, dir)
     
     if (links) {
         database <- check_preprint_links(database, dir)
@@ -162,6 +163,73 @@ check_github <- function(database, dir) {
     return(database)
 }
 
+check_licenses <- function(database, dir) {
+    
+    licenses <- get_tools(database$Tools)$License
+    spdx_licenses <- load_spdx_licenses()
+    
+    usethis::ui_todo(glue::glue(
+        "Checking GitHub licenses..."
+    ))
+    
+    pb <- progress::progress_bar$new(
+        format = paste(
+            "[:bar] :current/:total :percent",
+            "Elapsed: :elapsedfull ETA: :eta"
+        ),
+        total = length(database$Tools),
+        clear = FALSE
+    )
+    
+    pb$tick(0)
+    for (name in names(database$Tools)) {
+        pb$tick()
+        tool <- database$Tools[[name]]
+        
+        github <- tool$Repositories["GitHub"]
+        if (is.na(github)) {
+            next
+        }
+        
+        license <- tool$License
+        gh_license <- get_gh_license(github)
+        
+        if (is.na(gh_license) || gh_license == "NOASSERTION") {
+            next
+        }
+        
+        if (is.na(license) || gh_license != license) {
+            cat("\n\n")
+            usethis::ui_info("Found new GitHub license for {name}:")
+            usethis::ui_line(glue::glue(
+                "{usethis::ui_field('Current license: ')}",
+                "{usethis::ui_value(license)}"
+            ))
+            usethis::ui_line(glue::glue(
+                "{usethis::ui_field('GitHub license: ')}",
+                "{usethis::ui_value(gh_license)}"
+            ))
+            update <- prompt_yn("Do you want to use the GitHub license?:")
+            
+            if (update) {
+                tool <- database$Tools[[name]]
+                
+                tool$License <- gh_license
+                tool$Updated <- lubridate::today("UTC")
+                
+                database$Tools[[name]] <- tool
+            }
+        }
+    }
+    
+    save_database(database, dir)
+    set_gitmessage_license_check()
+    commit_database(dir)
+    
+    usethis::ui_done("Licenses updated")
+    return(database)
+}
+
 #' Check preprint links
 #'
 #' Check for new linked publications for existing preprints
@@ -233,4 +301,7 @@ check_preprint_links <- function(database, dir) {
             
         }
     }
+    
+    usethis::ui_done("Preprint linking complete")
+    return(database)
 }

@@ -328,3 +328,25 @@ load_pkgs_cache <- function(dir) {
 
     return(pkgs_cache)
 }
+
+#' Load SPDX licenses
+#'
+#' Load the SPDX license list. See https://github.com/spdx/license-list-data 
+#' for details
+#'
+#' @return tibble containing licenses
+load_spdx_licenses <- function() {
+    response <- jsonlite::read_json(
+        "https://spdx.org/licenses/licenses.json",
+        simplifyVector = TRUE
+    )
+    
+    licenses <- response$licenses %>%
+        dplyr::filter(!isDeprecatedLicenseId) %>%
+        dplyr::select(License = licenseId, Name = name) %>%
+        dplyr::mutate(License = stringr::str_remove(License, "-only")) %>%
+        dplyr::arrange(License) %>%
+        tibble::as_tibble()
+    
+    return(licenses)
+}

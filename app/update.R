@@ -9,6 +9,9 @@
 #' @return Updated database object
 update_tool <- function(database, pkgs_cache, name = NULL) {
 
+    licenses <- get_tools(database$Tools)$License
+    spdx_licenses <- load_spdx_licenses()
+    
     cat("\n")
     if (!is.null(name) && !(name %in% names(database$Tools))) {
         usethis::ui_oops(glue::glue(
@@ -46,7 +49,8 @@ update_tool <- function(database, pkgs_cache, name = NULL) {
             Platform     = update_platform(name, database),
             Description  = update_description(name, database),
             Code         = update_code(name, database),
-            License      = update_license(name, database),
+            License      = update_license(name, database, licenses,
+                                          spdx_licenses),
             DOIs         = update_dois(name, database),
             Repositories = update_repositories(name, database, pkgs_cache),
             Ignored      = update_ignored(name, database),
@@ -245,9 +249,11 @@ update_github <- function(name, database) {
 #'
 #' @param name Name of the tool to update
 #' @param database Database object
+#' @param licenses Vector of licenses for tools
+#' @param spdx_license data.frame of SPDX licenses
 #'
 #' @return Updated database object
-update_license <- function(name, database) {
+update_license <- function(name, database, licenses, spdx_licenses) {
 
     tool <- database$Tools[[name]]
 
@@ -255,8 +261,8 @@ update_license <- function(name, database) {
         "Enter new license. ",
         "Current license is {usethis::ui_value(tool$License)}."
     ))
-
-    tool$License <- prompt_license()
+    
+    tool$License <- prompt_license(licenses, spdx_licenses)
     tool$Updated <- lubridate::today("UTC")
 
     database$Tools[[name]] <- tool

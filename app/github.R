@@ -26,3 +26,17 @@ ping_gh_repo <- function(repo, newline = FALSE) {
     
     return(FALSE)
 }
+
+get_gh_license <- function(repo) {
+    
+    query <- glue::glue("GET /repos/{repo}/license")
+    
+    result <- try(gh::gh(query), silent = TRUE)
+    if (is(result, "try-error")) {
+        license <- NA
+    } else {
+        license <- result$license$spdx_id
+    }
+    
+    return(license)
+}
