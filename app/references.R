@@ -30,7 +30,12 @@ get_references <- function(dois, ref_links) {
                 container_title = "container.title" %in% colnames(cr_data)
             )
             
-            date <- dplyr::if_else(preprint, NA_character_, cr_data$issued)
+            date <- dplyr::if_else(
+                preprint,
+                NA_character_,
+                get_cr_reference_date(cr_data)
+            )
+            
             citations <- rcrossref::cr_citation_count(.doi)$count
         } else {
             arxiv_id   <- stringr::str_remove(.doi, "arxiv/")
@@ -326,4 +331,32 @@ new_ref_link <- function(doi, linked_doi, preprint, correct = TRUE) {
     }
     
     return(link)
+}
+
+#' Get Crossref reference date
+#'
+#' Get the publication date for a Crossref reference
+#'
+#' @param cr_ref data.frame containing a Crossref reference
+#'
+#' @details
+#' If the online publication date is present that is used, otherwise the print
+#' publication date is used. If both are missing then the issued date is used.
+#'
+#' @return publication date
+get_cr_reference_date <- function(cr_ref) {
+    
+    if ("published.online" %in% colnames(cr_ref)) {
+        date <- cr_ref$published.online
+    } else if ("published.print" %in% colnames(cr_ref)) {
+        date <- cr_ref$published.print
+    } else {
+        date <- cr_ref$issued
+    }
+    
+    # date <- lubridate::as_date(
+    #     lubridate::parse_date_time(date, c("y-m-d", "y-m", "y"))
+    # )
+    
+    return(date)
 }
