@@ -266,7 +266,7 @@ update_license <- function(name, database) {
 
 #' Update DOIs
 #'
-#' Update the DOIs assoiciated of a tool
+#' Update the DOIs associated with a tool
 #'
 #' @param name Name of the tool to update
 #' @param database Database object
@@ -282,7 +282,7 @@ update_dois <- function(name, database) {
     ))
 
     dois <- prompt_dois()
-    refs <- get_references(dois)
+    refs <- get_references(dois, database$RefLinks)
     dois <- refs$DOI
 
     tool$DOIs <- dois
@@ -290,6 +290,10 @@ update_dois <- function(name, database) {
 
     database$Tools[[name]] <- tool
     database$References <- dplyr::bind_rows(database$References, refs)
+    database$RefLinks <- dplyr::bind_rows(
+        database$RefLinks,
+        attr(refs, "Links")
+    )
 
     return(database)
 }

@@ -15,6 +15,7 @@ load_database <- function(dir = "database") {
     ignored      <- load_ignored(dir)
     cat_idx      <- load_cat_idx(dir)
     references   <- load_references(dir)
+    ref_links    <- load_ref_links(dir)
     categories   <- load_categories(dir)
 
     tools_list <- create_tools_list(tools, doi_idx, repositories, ignored,
@@ -23,6 +24,7 @@ load_database <- function(dir = "database") {
     database <- list(
         Tools      = tools_list,
         References = references,
+        RefLinks   = ref_links,
         Categories = categories
     )
 
@@ -163,6 +165,24 @@ load_references <- function(dir) {
     )
 
     return(references)
+}
+
+#' Load reference links
+#'
+#' Load the reference links table from the database
+#'
+#' @param dir Path to the directory containing the database
+#'
+#' @return tibble
+load_ref_links <- function(dir) {
+    readr::read_tsv(
+        fs::path(dir, "reference-links.tsv"),
+        col_types = readr::cols(
+            Preprint    = readr::col_character(),
+            Publication = readr::col_character(),
+            Correct     = readr::col_logical()
+        )
+    )
 }
 
 #' Load repositories

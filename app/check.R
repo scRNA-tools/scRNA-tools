@@ -6,13 +6,23 @@
 #' @param pkgs_cache Packages cache table
 #' @param dir Database directory
 #' @param all Whether to check all repositories
+#' @param links Whether to check for preprint-publication links
 #'
 #' @return Updated database object
-check <- function(database, pkgs_cache, dir, all) {
+check <- function(database, pkgs_cache, dir, all, links) {
 
     database <- check_repositories(database, pkgs_cache, dir, all)
     database <- check_github(database, dir)
-
+    
+    if (links) {
+        database <- check_preprint_links(database, dir)
+    } else {
+        usethis::ui_info(paste(
+            "Skipping preprint-publication links checks.",
+            "Maybe you should do this if you haven't in a while?"
+        ))
+    }
+    
     set_gitmessage_checkdone()
     
     return(database)
@@ -150,4 +160,77 @@ check_github <- function(database, dir) {
     
     usethis::ui_done("GitHub repositories updated")
     return(database)
+}
+
+#' Check preprint links
+#'
+#' Check for new linked publications for existing preprints
+#'
+#' @param database Database object
+#' @param dir Database directory
+#'
+#' @return Updated database object
+check_preprint_links <- function(database, dir) {
+    usethis::ui_todo(glue::glue(
+        "Checking for preprint-publication links..."
+    ))
+    
+    pb <- progress::progress_bar$new(
+        format = paste(
+            "[:bar] :current/:total :percent",
+            "Elapsed: :elapsedfull ETA: :eta"
+        ),
+        total = length(database$Tools),
+        clear = FALSE
+    )
+    
+    pb$tick(0)
+    for (name in names(database$Tools)) {
+        pb$tick()
+        tool <- database$Tools[[name]]
+        
+        preprints_to_check <- database$References %>%
+            dplyr::filter(
+                DOI %in% tool$DOIs,
+                Preprint,
+                !arXiv
+            ) %>%
+            dplyr::filter(
+                !(DOI %in% database$RefLinks$Preprint)
+            )
+        
+        if (nrow(preprints_to_check) == 0) {
+            next
+        }
+        
+        for (idx in seq_len(nrow(preprints_to_check))) {
+            linked_ref <- get_linked_ref(
+                preprints_to_check[idx, ],
+                print_query = TRUE
+            )
+            
+            if (nrow(linked_ref) > 0) {
+                database$References <- dplyr::bind_rows(
+                    database$References,
+                    linked_ref
+                )
+                
+                database$RefLinks <- dplyr::bind_rows(
+                    database$RefLinks,
+                    attr(linked_ref, "Links")
+                )
+                
+                tool$DOIs <- c(tool$DOIs, linked_ref$DOI)
+                tool$Updated <- lubridate::today("UTC")
+                
+                database$Tools[[name]] <- tool
+                
+                usethis::ui_todo("Commiting new reference...")
+                save_database(database, dir)
+                set_gitmessage_update(name)
+                commit_database(dir)
+            }
+            
+        }
+    }
 }

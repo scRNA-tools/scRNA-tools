@@ -31,7 +31,7 @@ add_tool <- function(database, pkgs_cache) {
     code         <- prompt_code()
     license      <- prompt_license()
     dois         <- prompt_dois()
-    refs         <- get_references(dois)
+    refs         <- get_references(dois, database$RefLinks)
     dois         <- refs$DOI
     description  <- prompt_description()
     categories   <- prompt_categories(database)
@@ -44,6 +44,10 @@ add_tool <- function(database, pkgs_cache) {
     database <- update_repositories(name, database, pkgs_cache, prompt = FALSE)
 
     database$References <- dplyr::bind_rows(database$References, refs)
+    database$RefLinks <- dplyr::bind_rows(
+        database$RefLinks,
+        attr(refs, "Links")
+    )
 
     usethis::ui_done(glue::glue(
         "Added {usethis::ui_value(name)} to database"
