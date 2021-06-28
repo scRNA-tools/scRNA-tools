@@ -158,7 +158,7 @@ set_gitmessage_addcategory <- function(name, description) {
 #'
 #' @param dir Database directory
 #' 
-#' @return Whether or not the database was committed
+#' @return Invisibly whether or not the database was committed
 commit_database <- function(dir) {
 
     status <- git2r::status()
@@ -168,8 +168,10 @@ commit_database <- function(dir) {
     
     if (sum(changes) == 0) {
         usethis::ui_info("No database changes, commit skipped")
-        fs::file_delete(".gitmessage")
-        return(FALSE)
+        if (fs::file_exists(".gitmessage")) {
+            fs::file_delete(".gitmessage")
+        }
+        return(invisible(FALSE))
     }
     
     git2r::add(path = dir)
@@ -185,7 +187,9 @@ commit_database <- function(dir) {
         ))
     }
 
-    fs::file_delete(".gitmessage")
+    if (fs::file_exists(".gitmessage")) {
+        fs::file_delete(".gitmessage")
+    }
     
-    return(TRUE)
+    invisible(TRUE)
 }

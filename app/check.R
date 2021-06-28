@@ -111,6 +111,10 @@ check_repositories <- function(database, pkgs_cache, dir, all) {
         }
     }
     usethis::ui_done("Package repositories updated")
+    
+    save_database(database, dir)
+    set_gitmessage_checkdone()
+    commit_database(dir)
 
     return(database)
 }
@@ -200,7 +204,10 @@ check_licenses <- function(database, dir) {
         
         if (is.na(license) || gh_license != license) {
             cat("\n\n")
-            usethis::ui_info("Found new GitHub license for {name}:")
+            usethis::ui_info(glue::glue(
+                "Found new GitHub license for {usethis::ui_value(name)} at ", 
+                "{usethis::ui_value(tool$Code)}:"
+            ))
             usethis::ui_line(glue::glue(
                 "{usethis::ui_field('Current license: ')}",
                 "{usethis::ui_value(license)}"
@@ -239,6 +246,9 @@ check_licenses <- function(database, dir) {
 #'
 #' @return Updated database object
 check_preprint_links <- function(database, dir) {
+    
+    `%>%` <- magrittr::`%>%`
+    
     usethis::ui_todo(glue::glue(
         "Checking for preprint-publication links..."
     ))

@@ -350,6 +350,9 @@ load_pkgs_cache <- function(dir) {
 #'
 #' @return tibble containing licenses
 load_spdx_licenses <- function() {
+    
+    `%>%` <- magrittr::`%>%`
+    
     response <- jsonlite::read_json(
         "https://spdx.org/licenses/licenses.json",
         simplifyVector = TRUE
@@ -388,5 +391,5 @@ clear_database_cache <- function(dir) {
         }
     }
     
-    return(TRUE)
+    invisible(TRUE)
 }
