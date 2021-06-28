@@ -2,12 +2,27 @@
 #'
 #' Load the scRNA-tools database from disk
 #'
-#' @param dir Path to directory containg the database
+#' @param dir Path to directory containing the database
+#' @param cache Whether to load the database from cache
 #'
 #' @return Database object
-load_database <- function(dir = "database") {
+load_database <- function(dir = "database", cache = TRUE) {
 
-    usethis::ui_todo("Loading database...")
+    clear_database_cache(dir)
+    
+    usethis::ui_todo("Loading database from {usethis::ui_path(dir)}...")
+    
+    if (cache) {
+        cache_file <- fs::path(dir, "database-cache.Rds")
+        if (fs::file_exists(cache_file)) {
+            database <- readr::read_rds(cache_file)
+            usethis::ui_done("Database loaded from cache")
+        } else {
+            usethis::ui_oops("Cache file does not exist, loading from files...")
+            database <- load_database(dir, cache = FALSE)
+        }
+        return(database)
+    }
     
     tools        <- load_tools(dir)
     doi_idx      <- load_doi_idx(dir)
@@ -28,9 +43,7 @@ load_database <- function(dir = "database") {
         Categories = categories
     )
 
-    usethis::ui_done(glue::glue(
-        "Database loaded from {usethis::ui_path(dir)}"
-    ))
+    usethis::ui_done("Database loaded from files")
 
     return(database)
 }
@@ -310,6 +323,7 @@ load_pkgs_cache <- function(dir) {
     )
 
     if (mod_diff > 7) {
+        
         usethis::ui_info(paste(
             "Packages cache is out of date. Updating packages cache..."
         ))
@@ -349,4 +363,30 @@ load_spdx_licenses <- function() {
         tibble::as_tibble()
     
     return(licenses)
+}
+
+#' Clear database cache
+#' 
+#' Delete the database cache if it is too old
+#'
+#' @param dir Path to the directory containing the database
+#'
+#' @return
+clear_database_cache <- function(dir) {
+    
+    cache_file <- fs::path(dir, "database-cache.Rds")
+    
+    if (fs::file_exists(cache_file)) {
+        mod_time <- fs::file_info(cache_file)$modification_time
+        mod_diff <- difftime(lubridate::now("UTC"), mod_time, units = "days")
+        
+        if (mod_diff > 7) {
+            usethis::ui_info(
+                "Database cache out of data. Clearing database cache..."
+            )
+            fs::file_delete(cache_file)
+        }
+    }
+    
+    return(TRUE)
 }
