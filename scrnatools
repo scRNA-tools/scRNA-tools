@@ -21,7 +21,7 @@ Usage:
     scrnatools add
     scrnatools update [<name>]
     scrnatools search [<name>]
-    scrnatools check [--all]
+    scrnatools check [--all] [--links]
     scrnatools build
     scrnatools archive [<name>]
     scrnatools restore [<arc>]
@@ -35,6 +35,7 @@ Options:
   name          Name of a tool in the database
   arc           Name of an archive in the database
   -a, --all     Whether to check all repositories (not just new ones)
+  -l, --links   Whether to check for preprint-publication links
   -p, --plot    Whether to show plots
   -h --help     Show this help message.
   --version     Show version.
@@ -65,12 +66,13 @@ source("app/archive.R")
 source("app/categories.R")
 source("app/save.R")
 source("app/git.R")
+source("app/github.R")
 source("app/stats.R")
 source("app/utils.R")
 
 #### MAIN CODE ####
 
-opts <- docopt(DOCOPT, version = "0.4.3")
+opts <- docopt(DOCOPT, version = "0.5.0")
 
 logo <- get_logo()
 cat(logo, "\n")
@@ -108,7 +110,7 @@ if (opts$update) {
 }
 
 if (opts$check) {
-    database <- check(database, pkgs_cache, dir, opts$all)
+    database <- check(database, pkgs_cache, dir, opts$all, opts$links)
 }
 
 if (opts$search) {

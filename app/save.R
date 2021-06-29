@@ -4,11 +4,12 @@
 #'
 #' @param database Database object
 #' @param dir Path to directory containing the database
-save_database <- function(database, dir = "database") {
+#' @param cache Whether to save database cache Rds file
+save_database <- function(database, dir = "database", cache = TRUE) {
 
     `%>%` <- magrittr::`%>%`
 
-    usethis::ui_todo("Saving database...")
+    usethis::ui_todo("Saving database to {usethis::ui_path(dir)}...")
     
     fs::dir_create(dir)
 
@@ -18,17 +19,25 @@ save_database <- function(database, dir = "database") {
     cat_idx      <- get_cat_idx(database$Tools)
     repositories <- get_repositories(database$Tools)
 
-    references <- database$References %>%
+    database$References <- database$References %>%
         dplyr::filter(DOI %in% doi_idx$DOI) %>%
         dplyr::group_by(DOI) %>%
         dplyr::top_n(1, Timestamp) %>%
+        dplyr::ungroup() %>%
         arrange_str(DOI)
 
-    citations  <- dplyr::select(references, DOI, Citations, Timestamp, Delay)
-    references <- dplyr::select(references, DOI, arXiv, Preprint, Date, Title)
+    database$RefLinks <- database$RefLinks %>%
+        dplyr::distinct() %>%
+        arrange_str(Preprint)
+    
+    citations  <- dplyr::select(database$References, DOI, Citations, Timestamp,
+                                Delay)
+    references <- dplyr::select(database$References, DOI, arXiv, Preprint, Date,
+                                Title)
 
     readr::write_tsv(tools,               fs::path(dir, "tools.tsv"))
     readr::write_tsv(references,          fs::path(dir, "references.tsv"))
+    readr::write_tsv(database$RefLinks,   fs::path(dir, "reference-links.tsv"))
     readr::write_tsv(citations,           fs::path(dir, "citations-cache.tsv"))
     readr::write_tsv(doi_idx,             fs::path(dir, "doi-idx.tsv"))
     readr::write_tsv(repositories,        fs::path(dir, "repositories.tsv"))
@@ -36,9 +45,12 @@ save_database <- function(database, dir = "database") {
     readr::write_tsv(database$Categories, fs::path(dir, "categories.tsv"))
     readr::write_tsv(cat_idx,             fs::path(dir, "categories-idx.tsv"))
 
-    usethis::ui_done(glue::glue(
-        "Database written to {usethis::ui_path(dir)}"
-    ))
+    usethis::ui_done("Files written")
+    
+    if (cache) {
+        readr::write_rds(database, fs::path(dir, "database-cache.Rds"))
+        usethis::ui_done("Cache written")
+    }
 }
 
 #' Get tools

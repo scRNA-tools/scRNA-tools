@@ -8,6 +8,9 @@
 #' @return Database with added tool
 add_tool <- function(database, pkgs_cache) {
 
+    licenses <- get_tools(database$Tools)$License
+    spdx_licenses <- load_spdx_licenses()
+    
     cat("\n")
     usethis::ui_todo("Please enter the details of the new tool to add")
     cat("\n")
@@ -26,24 +29,28 @@ add_tool <- function(database, pkgs_cache) {
             return(database)
         }
     }
-
+    
     platform     <- prompt_platform()
     code         <- prompt_code()
-    license      <- prompt_license()
+    license      <- prompt_license(licenses, spdx_licenses)
     dois         <- prompt_dois()
-    refs         <- get_references(dois)
+    refs         <- get_references(dois, database$RefLinks)
     dois         <- refs$DOI
     description  <- prompt_description()
     categories   <- prompt_categories(database)
 
     tool <- new_sctool(name, platform, code, license, description, dois,
                        categories)
-    tool <- update_github(tool)
 
     database$Tools[[name]] <- tool
+    database <- update_github(name, database)
     database <- update_repositories(name, database, pkgs_cache, prompt = FALSE)
 
     database$References <- dplyr::bind_rows(database$References, refs)
+    database$RefLinks <- dplyr::bind_rows(
+        database$RefLinks,
+        attr(refs, "Links")
+    )
 
     usethis::ui_done(glue::glue(
         "Added {usethis::ui_value(name)} to database"
