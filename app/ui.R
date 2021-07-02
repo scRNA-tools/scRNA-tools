@@ -249,12 +249,12 @@ prompt_license <- function(licenses, spdx_licenses) {
     
     license <- prompt_menu("License:", options)
     
-    if (license == "None") {
-        license <- NA
-    }
-    
     if (license == "Other") {
         license <- prompt_other_license(spdx_licenses)
+    }
+    
+    if (license == "None") {
+        license <- NA
     }
     
     return(license)
