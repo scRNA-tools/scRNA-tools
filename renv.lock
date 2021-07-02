@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.0.0",
+    "Version": "4.0.5",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -145,6 +145,13 @@
       "Repository": "CRAN",
       "Hash": "0f22be39ec1d141fd03683c06f3a6e67"
     },
+    "corpus": {
+      "Package": "corpus",
+      "Version": "0.10.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c119a9dd352dca188ba3131ddd08f40d"
+    },
     "cowplot": {
       "Package": "cowplot",
       "Version": "1.1.1",
@@ -228,6 +235,18 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "e9eeef7931ee99ca0093f3f20b88e09b"
+    },
+    "doilinker": {
+      "Package": "doilinker",
+      "Version": "0.1.0",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "lazappi",
+      "RemoteRepo": "doilinker",
+      "RemoteRef": "main",
+      "RemoteSha": "7d908f875a1193efba50174f8a9337c5598ea89c",
+      "Hash": "ec6beb9518a55876a63178fb3a62ecab"
     },
     "dplyr": {
       "Package": "dplyr",
