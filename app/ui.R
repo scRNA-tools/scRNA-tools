@@ -244,7 +244,7 @@ prompt_code <- function() {
 #' @return License string
 prompt_license <- function(licenses, spdx_licenses) {
     
-    options <- names(sort(table(tools$License), decreasing = TRUE)[1:6])
+    options <- names(sort(table(licenses), decreasing = TRUE)[1:6])
     options <- c(options, "Other", "None")
     
     license <- prompt_menu("License:", options)
