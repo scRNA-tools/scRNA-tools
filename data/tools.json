@@ -1444,6 +1444,28 @@
     "GitHub": "cozygene/bisque"
   },
   {
+    "Tool": "BITFAM",
+    "Platform": "R",
+    "Code": "https://github.com/jaleesr/BITFAM",
+    "Description": "Bayesian Inference Transcription Factor Activity model (BITFAM) is based on a fundamental biological principle that the differences in scRNA-seq profiles of individual cells reflect distinct underlying transcription factor activity states",
+    "Added": "2021-07-09",
+    "Updated": "2021-07-09",
+    "Categories": ["GeneNetworks", "Normalisation", "VariableGenes"],
+    "Publications": [
+      {
+        "Title": "A Bayesian inference transcription factor activity model for the analysis of single-cell transcriptomes",
+        "DOI": "10.1101/gr.265595.120",
+        "Date": "2021-06-30",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "jaleesr/BITFAM"
+  },
+  {
     "Tool": "bonvoyage",
     "Platform": "Python",
     "Code": "https://github.com/yeolab/bonvoyage",
@@ -2779,7 +2801,7 @@
     "Description": "CellPath is a single cell trajectory inference method that infers cell developmental trajectory using single-cell RNA Sequencing data and RNA-velocity data",
     "License": "GPL-3.0",
     "Added": "2021-02-26",
-    "Updated": "2021-02-26",
+    "Updated": "2021-07-09",
     "Categories": ["Clustering", "DifferentialExpression", "Ordering", "Visualisation"],
     "Publications": [],
     "Preprints": [
@@ -2792,6 +2814,7 @@
     "Citations": 2,
     "NumPubs": 0,
     "NumPreprints": 1,
+    "PyPI": "cellpath",
     "GitHub": "PeterZZQ/CellPath"
   },
   {
@@ -4472,6 +4495,30 @@
     "Citations": 16,
     "NumPubs": 1,
     "NumPreprints": 1
+  },
+  {
+    "Tool": "CStreet",
+    "Platform": "Python",
+    "Code": "https://github.com/TongjiZhanglab/CStreet",
+    "Description": "CStreet is a cell state trajectory inference method for time-series single-cell RNA-seq data",
+    "License": "MIT",
+    "Added": "2021-07-09",
+    "Updated": "2021-07-09",
+    "Categories": ["Clustering", "DimensionalityReduction", "Normalisation", "Ordering", "QualityControl", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "CStreet: a computed Cell State trajectory inference method for time-series single-cell RNA sequencing data",
+        "DOI": "10.1093/bioinformatics/btab488",
+        "Date": "2021-07-01",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "PyPI": "cstreet",
+    "GitHub": "TongjiZhanglab/CStreet"
   },
   {
     "Tool": "ctgGEM",
@@ -8999,13 +9046,14 @@
     "Description": "Fast and Seamless Exploration of Single-cell and Bulk T-cell/Antibody Immune Repertoires in R",
     "License": "AGPL-3.0",
     "Added": "2020-06-26",
-    "Updated": "2020-06-26",
+    "Updated": "2021-07-09",
     "Categories": ["Immune", "Visualisation"],
     "Publications": [],
     "Preprints": [],
     "Citations": 0,
     "NumPubs": 0,
     "NumPreprints": 0,
+    "CRAN": "immunarch",
     "GitHub": "immunomind/immunarch"
   },
   {
@@ -10007,6 +10055,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "drisso/learn2count"
+  },
+  {
+    "Tool": "LIANA",
+    "Platform": "R/Python",
+    "Code": "https://github.com/saezlab/liana",
+    "Description": "LIANA: a LIgand-receptor ANalysis frAmework",
+    "License": "MIT",
+    "Added": "2021-07-09",
+    "Updated": "2021-07-09",
+    "Categories": ["GeneNetworks"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Comparison of Resources and Methods to infer Cell-Cell Communication from Single-cell RNA Data",
+        "DOI": "10.1101/2021.05.21.445160",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "saezlab/liana"
   },
   {
     "Tool": "LIGER",
@@ -21042,8 +21112,9 @@
     "Platform": "Python/R",
     "Code": "https://github.com/salzmanlab/SICILIAN",
     "Description": "Specific splice junction detection in single cells with SICILIAN (SIngle Cell precIse spLice estImAtioN)",
+    "License": "GPL-2.0",
     "Added": "2020-04-17",
-    "Updated": "2020-04-17",
+    "Updated": "2021-07-09",
     "Categories": ["Alignment"],
     "Publications": [],
     "Preprints": [
