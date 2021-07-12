@@ -47,8 +47,7 @@ jobs:
       - name: Install rcrossref
         shell: Rscript {0}
         run: |
-          options(pkgType = "source")
-          renv::install("rcrossref", type = "source", rebuild = TRUE)
+          install.packages("rcrossref", type = "source")
 
       - name: Diagnostics
         shell: Rscript {0}
