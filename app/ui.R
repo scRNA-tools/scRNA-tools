@@ -235,12 +235,78 @@ prompt_code <- function() {
 
 #' Prompt license
 #'
-#' Prompt for the license of a tool
+#' Prompt for the license of a tool. User can choose from a list of most common
+#' licenses or enter another license.
+#' 
+#' @param licenses Vector of licenses for tools
+#' @param spdx_license data.frame of SPDX licenses
 #'
 #' @return License string
-prompt_license <- function() {
-    prompt_string("License:", allowed = "-A-Za-z0-9>=.() ", empty = FALSE,
-                  whitespace = FALSE)
+prompt_license <- function(licenses, spdx_licenses) {
+    
+    options <- names(sort(table(licenses), decreasing = TRUE)[1:6])
+    options <- c(options, "Other", "None")
+    
+    license <- prompt_menu("License:", options)
+    
+    if (license == "Other") {
+        license <- prompt_other_license(spdx_licenses)
+    }
+    
+    if (license == "None") {
+        license <- NA
+    }
+    
+    return(license)
+}
+
+#' Prompt other license
+#'
+#' Prompt for another license. Input is compared to the SPDX license list and
+#' user is provided a list of valid licenses to select from.
+#'
+#' @param spdx_licenses data.frame of SPDX licenses
+#'
+#' @return License string
+prompt_other_license <- function(spdx_licenses) {
+    
+    success <- FALSE
+    
+    while (!success) {
+        license <- prompt_string(
+            "Search for a license:",
+            allowed    = "-A-Za-z0-9>=.() ",
+            empty      = FALSE,
+            whitespace = FALSE
+        )
+        
+        if (license %in% c(spdx_licenses$License, "Custom")) {
+            success <- TRUE
+        } else {
+            matches <- stringdist::stringsim(
+                tolower(license),
+                tolower(spdx_licenses$License),
+                method = "jw", p = 0.1
+            ) > 0.75
+            
+            if (any(matches)) {
+                usethis::ui_info(glue::glue(
+                    "{usethis::ui_value(sum(matches))} similar licenses found"
+                ))
+                license <- prompt_menu(
+                    "Select a license:",
+                    c(spdx_licenses$License[matches], "None of these")
+                )
+                if (!(license == "None of these")) {
+                    success <- TRUE
+                }
+            } else {
+                usethis::ui_oops("No similar licenses found!")
+            }
+        }
+    }
+    
+    return(license)
 }
 
 #' Prompt description
@@ -316,7 +382,7 @@ prompt_tools <- function(database) {
 #' @param start Set of characters the input is allowed to start with
 #' @param whitespace Whether to check for whitespace in the input
 #' @param empty Whether to check if the input is empty
-#' @param exact Exact regular expression they input must match
+#' @param exact Exact regular expression that input must match
 #' @param values Vector of values
 #' @param not If `TRUE` items in `values` are not allowed, if `FALSE` items in
 #' `values` are the ONLY options that are allowed

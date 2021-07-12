@@ -9,6 +9,9 @@
 #' @return Updated database object
 update_tool <- function(database, pkgs_cache, name = NULL) {
 
+    licenses <- get_tools(database$Tools)$License
+    spdx_licenses <- load_spdx_licenses()
+    
     cat("\n")
     if (!is.null(name) && !(name %in% names(database$Tools))) {
         usethis::ui_oops(glue::glue(
@@ -46,7 +49,8 @@ update_tool <- function(database, pkgs_cache, name = NULL) {
             Platform     = update_platform(name, database),
             Description  = update_description(name, database),
             Code         = update_code(name, database),
-            License      = update_license(name, database),
+            License      = update_license(name, database, licenses,
+                                          spdx_licenses),
             DOIs         = update_dois(name, database),
             Repositories = update_repositories(name, database, pkgs_cache),
             Ignored      = update_ignored(name, database),
@@ -149,20 +153,28 @@ update_code <- function(name, database) {
     usethis::ui_todo(glue::glue(
         "Enter new code URL. Current URL is {usethis::ui_value(tool$Code)}."
     ))
-
+    
     code <- prompt_code()
-
+    
     tool$Code <- code
     tool$Updated <- lubridate::today("UTC")
-    tool <- update_github(tool)
-
+    
     database$Tools[[name]] <- tool
+    
+    database <- update_github(name, database)
 
     return(database)
 }
 
-update_github <- function(tool) {
+update_github <- function(name, database) {
 
+    tool <- database$Tools[[name]]
+    
+    repos <- get_repositories(database$Tools)
+    all_gh <- repos$GitHub
+    names(all_gh) <- repos$Tool
+    all_gh <- all_gh[!is.na(all_gh)]
+    
     code <- tool$Code
     old_gh <- tool$Repositories["GitHub"]
     has_old_gh <- !is.na(old_gh)
@@ -182,18 +194,53 @@ update_github <- function(tool) {
     if (has_old_gh && !same_gh) {
         tool$Repositories["GitHub"] <- NA
         usethis::ui_done(
-            "Removed old GitHub repository {usethis::ui_field(old_gh)}"
+            "Removed old GitHub repository {usethis::ui_value(old_gh)}"
         )
     }
 
+    retry <- FALSE
     if (has_new_gh && !same_gh) {
-        tool$Repositories["GitHub"] <- new_gh
-        usethis::ui_done(
-            "Found new GitHub repository {usethis::ui_field(new_gh)}"
-        )
+        new_gh_exists <- ping_gh_repo(new_gh)
+        if (new_gh_exists) {
+            usethis::ui_done(
+                "Found new GitHub repository {usethis::ui_value(new_gh)}"
+            )
+            if (new_gh %in% all_gh) {
+                matching_gh <- names(all_gh[all_gh == new_gh])
+                usethis::ui_info(glue::glue(
+                    "The {usethis::ui_value(new_gh)} GitHub repository ",
+                    "is already used by these tools: ",
+                    "{usethis::ui_value(matching_gh)}"
+                ))
+                add <- prompt_yn(glue::glue(
+                    "Do you want to add this repository to {name} (y/n)?:"
+                ))
+                if (add) {
+                    tool$Repositories["GitHub"] <- new_gh
+                    tool$Updated <- lubridate::today("UTC")
+                } else {
+                    retry <- prompt_yn(
+                        "Do you want to enter a new code URL (y/n)?:"
+                    )
+                }
+            } else {
+                tool$Repositories["GitHub"] <- new_gh
+                tool$Updated <- lubridate::today("UTC")
+            }
+        } else {
+            usethis::ui_info(
+                "The GitHub repository of this URL does not exist"
+            )
+            retry <- prompt_yn("Do you want to enter a new code URL (y/n)?:")
+        }
     }
 
-    return(tool)
+    database$Tools[[name]] <- tool
+    if (retry) {
+        database <- update_code(name, database)
+    }
+    
+    return(database)
 }
 
 #' Update license
@@ -202,9 +249,11 @@ update_github <- function(tool) {
 #'
 #' @param name Name of the tool to update
 #' @param database Database object
+#' @param licenses Vector of licenses for tools
+#' @param spdx_license data.frame of SPDX licenses
 #'
 #' @return Updated database object
-update_license <- function(name, database) {
+update_license <- function(name, database, licenses, spdx_licenses) {
 
     tool <- database$Tools[[name]]
 
@@ -212,8 +261,8 @@ update_license <- function(name, database) {
         "Enter new license. ",
         "Current license is {usethis::ui_value(tool$License)}."
     ))
-
-    tool$License <- prompt_license()
+    
+    tool$License <- prompt_license(licenses, spdx_licenses)
     tool$Updated <- lubridate::today("UTC")
 
     database$Tools[[name]] <- tool
@@ -223,7 +272,7 @@ update_license <- function(name, database) {
 
 #' Update DOIs
 #'
-#' Update the DOIs assoiciated of a tool
+#' Update the DOIs associated with a tool
 #'
 #' @param name Name of the tool to update
 #' @param database Database object
@@ -239,7 +288,7 @@ update_dois <- function(name, database) {
     ))
 
     dois <- prompt_dois()
-    refs <- get_references(dois)
+    refs <- get_references(dois, database$RefLinks)
     dois <- refs$DOI
 
     tool$DOIs <- dois
@@ -247,6 +296,10 @@ update_dois <- function(name, database) {
 
     database$Tools[[name]] <- tool
     database$References <- dplyr::bind_rows(database$References, refs)
+    database$RefLinks <- dplyr::bind_rows(
+        database$RefLinks,
+        attr(refs, "Links")
+    )
 
     return(database)
 }

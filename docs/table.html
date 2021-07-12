@@ -1,14 +1,48 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en-US">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2F7WX4H5P"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!-- Cookie Consent by https://www.TermsFeed.com -->
+    <script
+      type="text/javascript"
+      src="//www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js"
+      charset="UTF-8"
+    ></script>
+    <script type="text/javascript" charset="UTF-8">
+      document.addEventListener('DOMContentLoaded', function () {
+        cookieconsent.run({
+          notice_banner_type: 'headline',
+          consent_type: 'express',
+          palette: 'light',
+          language: 'en',
+          page_load_consent_levels: ['strictly-necessary'],
+          notice_banner_reject_button_hide: false,
+          preferences_center_close_button_hide: false,
+          website_name: 'scRNA-tools',
+        })
+      })
+    </script>
 
-      gtag('config', 'G-P2F7WX4H5P');
+    <noscript
+      >Cookie Consent by
+      <a href="https://www.TermsFeed.com/" rel="nofollow noopener">TermsFeed</a></noscript
+    >
+    <!-- End Cookie Consent -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P2F7WX4H5P"
+      type="text/plain"
+      cookie-consent="tracking"
+    ></script>
+    <script type="text/plain" cookie-consent="tracking">
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-P2F7WX4H5P')
     </script>
 
     <!--// Metadata ---------------------------------------------------- -->
@@ -103,7 +137,6 @@
     <script src="https://unpkg.com/tableexport.jquery.plugin@1.10.17/tableExport.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/page-jump-to/bootstrap-table-page-jump-to.min.js"></script>
-
   </head>
 
   <body id="page-table">
@@ -193,9 +226,7 @@
             >
               Pub Dates
             </th>
-            <th data-field="Citations" data-sortable="true" data-visible="true">
-              Citations
-            </th>
+            <th data-field="Citations" data-sortable="true" data-visible="true">Citations</th>
             <th
               data-field="Code"
               data-sortable="true"
@@ -204,9 +235,7 @@
             >
               Code
             </th>
-            <th data-field="Description" data-sortable="true" data-visible="false">
-              Description
-            </th>
+            <th data-field="Description" data-sortable="true" data-visible="false">Description</th>
             <th
               data-field="License"
               data-sortable="true"
@@ -520,12 +549,8 @@
             >
               Simulation
             </th>
-            <th data-field="Added" data-sortable="true" data-visible="false">
-              Added
-            </th>
-            <th data-field="Updated" data-sortable="true" data-visible="false">
-              Updated
-            </th>
+            <th data-field="Added" data-sortable="true" data-visible="false">Added</th>
+            <th data-field="Updated" data-sortable="true" data-visible="false">Updated</th>
           </tr>
         </thead>
       </table>
@@ -592,9 +617,9 @@
 
       function logicalFormatter(value) {
         if (value) {
-          return "True"
+          return 'True'
         } else {
-          return "False"
+          return 'False'
         }
       }
 

@@ -6,6 +6,11 @@ on:
   pull_request:
     branches:
       - master
+<<<<<<< HEAD
+=======
+  schedule:
+    - cron: "0 3 * * *"
+>>>>>>> master
 
 name: Build-site
 
@@ -55,7 +60,11 @@ jobs:
 
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3
+<<<<<<< HEAD
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+=======
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/master') || github.event_name == 'schedule' }}
+>>>>>>> master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
