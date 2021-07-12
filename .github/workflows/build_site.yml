@@ -44,6 +44,11 @@ jobs:
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
           renv::restore()
 
+      - name: Install rcrossref
+        shell: Rscript {0}
+        run: |
+          renv::install("rcrossref", type = "source", rebuild = TRUE)
+
       - name: Diagnostics
         shell: Rscript {0}
         run: |
