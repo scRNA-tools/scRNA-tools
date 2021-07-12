@@ -44,15 +44,13 @@ jobs:
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
           renv::restore()
 
-      - name: Install rcrossref
-        shell: Rscript {0}
-        run: |
-          install.packages("rcrossref", type = "source")
-
       - name: Diagnostics
         shell: Rscript {0}
         run: |
           renv::diagnostics()
+
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
 
       - name: Database stats
         run: ./scrnatools stats
