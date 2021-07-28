@@ -22,7 +22,11 @@ save_database <- function(database, dir = "database", cache = TRUE) {
     database$References <- database$References %>%
         dplyr::filter(DOI %in% doi_idx$DOI) %>%
         dplyr::group_by(DOI) %>%
+        # Select most recent timestamp
         dplyr::top_n(1, Timestamp) %>%
+        # Select most recent date (or NA)
+        dplyr::arrange(dplyr::desc(Date)) %>%
+        dplyr::slice(1) %>%
         dplyr::ungroup() %>%
         arrange_str(DOI)
 
@@ -33,7 +37,8 @@ save_database <- function(database, dir = "database", cache = TRUE) {
     citations  <- dplyr::select(database$References, DOI, Citations, Timestamp,
                                 Delay)
     references <- dplyr::select(database$References, DOI, arXiv, Preprint, Date,
-                                Title)
+                                Title) %>%
+        dplyr::distinct()
 
     readr::write_tsv(tools,               fs::path(dir, "tools.tsv"))
     readr::write_tsv(references,          fs::path(dir, "references.tsv"))
