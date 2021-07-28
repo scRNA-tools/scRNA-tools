@@ -113,7 +113,7 @@ check_repositories <- function(database, pkgs_cache, dir, all) {
     usethis::ui_done("Package repositories updated")
     
     save_database(database, dir)
-    set_gitmessage_checkdone()
+    set_gitmessage_check_ignored()
     commit_database(dir)
 
     return(database)

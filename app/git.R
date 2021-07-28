@@ -118,10 +118,24 @@ set_gitmessage_license_check <- function() {
     readr::write_lines(msg, ".gitmessage")
 }
 
-#' Set check done git message
+#' Set check ignored git message
 #'
 #' Set the template git commit message for completing repository checking (to
 #' capture additional ignored repositories)
+set_gitmessage_check_ignored <- function() {
+    
+    msg <- paste(
+        "# Delete time before committing\n",
+        "Completed repository checks", lubridate::now("UTC")
+    )
+    
+    readr::write_lines(msg, ".gitmessage")
+}
+
+#' Set check done git message
+#'
+#' Set the template git commit message for completing all checking (to
+#' capture any additional changes)
 set_gitmessage_checkdone <- function() {
 
     msg <- paste(
