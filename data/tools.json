@@ -590,11 +590,11 @@
         "Title": "Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq",
         "DOI": "10.1126/science.aaa1934",
         "Date": "2015-02-19",
-        "Citations": 1750
+        "Citations": 1751
       }
     ],
     "Preprints": [],
-    "Citations": 1750,
+    "Citations": 1751,
     "NumPubs": 1,
     "NumPreprints": 0,
     "PyPI": "backspinpy",
@@ -6716,9 +6716,16 @@
     "Code": "https://github.com/Natsu01/EEISP",
     "Description": "A tool for identifying codependent and mutually exclusive gene sets from sparse single-cell RNA-seq data",
     "Added": "2021-03-19",
-    "Updated": "2021-03-19",
+    "Updated": "2021-07-27",
     "Categories": ["GeneNetworks"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Codependency and mutual exclusivity for gene community detection from sparse single-cell transcriptome data",
+        "DOI": "10.1093/nar/gkab601",
+        "Date": "2021-07-22",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Codependency and mutual exclusivity for gene community detection from sparse single-cell transcriptome data",
@@ -6727,7 +6734,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "Natsu01/EEISP"
   },
@@ -6825,9 +6832,16 @@
     "Code": "https://github.com/lkmklsmn/empty_nn",
     "Description": "EmptyNN is a novel cell-calling algorithm based on Positive-unlabeled (PU) learning which removes cell-free droplets and recovers lost cells in droplet-based single cell RNA sequencing data",
     "Added": "2021-01-22",
-    "Updated": "2021-01-22",
+    "Updated": "2021-07-27",
     "Categories": ["QualityControl"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "EmptyNN: A neural network based on positive and unlabeled learning to remove cell-free droplets and recover lost cells in scRNA-seq data",
+        "DOI": "10.1016/j.patter.2021.100311",
+        "Date": "2021-07",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "EmptyNN: A neural network based on positive-unlabeled learning to remove cell-free droplets and recover lost cells in single-cell RNA sequencing data",
@@ -6836,7 +6850,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "lkmklsmn/empty_nn"
   },
@@ -7891,9 +7905,16 @@
     "Description": "GPcounts is Gaussian process regression package for counts data with negative binomial and zero-inflated negative binomial likelihoods",
     "License": "Apache-2.0",
     "Added": "2020-08-06",
-    "Updated": "2020-08-06",
+    "Updated": "2021-07-27",
     "Categories": ["DifferentialExpression", "ExpressionPatterns", "Ordering", "VariableGenes", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Non-parametric modelling of temporal and spatial counts data from RNA-seq experiments",
+        "DOI": "10.1093/bioinformatics/btab486",
+        "Date": "2021-07-02",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Non-parametric modelling of temporal and spatial counts data from RNA-seq experiments",
@@ -7902,7 +7923,7 @@
       }
     ],
     "Citations": 1,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "ManchesterBioinference/GPcounts"
   },
@@ -8452,9 +8473,16 @@
     "Description": "Hierarchical Random Forest for Information Transfer",
     "License": "GPL-3.0",
     "Added": "2020-05-14",
-    "Updated": "2020-09-24",
+    "Updated": "2021-07-27",
     "Categories": ["Classification", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "HieRFIT: A hierarchical cell type classification tool for projections from complex single-cell atlas datasets",
+        "DOI": "10.1093/bioinformatics/btab499",
+        "Date": "2021-07-13",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "HieRFIT: Hierarchical Random Forest for Information Transfer",
@@ -8463,7 +8491,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "yasinkaymaz/HieRFIT"
   },
@@ -8695,10 +8723,10 @@
       {
         "Title": "Hypercluster: a flexible tool for parallelized unsupervised clustering optimization",
         "DOI": "10.1101/2020.01.13.905323",
-        "Citations": 2
+        "Citations": 1
       }
     ],
-    "Citations": 2,
+    "Citations": 1,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "hypercluster",
@@ -8741,9 +8769,16 @@
     "Description": "The R package i2dash provides functionality to create customized, web-based dashboards for data presentation, exploration and sharing.",
     "License": "MIT",
     "Added": "2020-07-10",
-    "Updated": "2020-10-27",
+    "Updated": "2021-07-27",
     "Categories": ["Interactive", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "i2dash: Creation of Flexible, Interactive and Web-based Dashboards for Visualization of Omics Data",
+        "DOI": "10.1016/j.gpb.2021.01.007",
+        "Date": "2021-07",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "i2dash: Creation of Flexible, Interactive and Web-based Dashboards for Visualization of Omics-pipeline Results",
@@ -8752,7 +8787,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "CRAN": "i2dash"
   },
@@ -8891,11 +8926,10 @@
   {
     "Tool": "IDEAS",
     "Platform": "R",
-    "Code": "https://github.com/Sun-lab/ideas",
     "Description": "Individual level Differential Expression Analysis for Single cells",
     "License": "MIT",
     "Added": "2021-05-14",
-    "Updated": "2021-05-14",
+    "Updated": "2021-07-27",
     "Categories": ["DifferentialExpression"],
     "Publications": [],
     "Preprints": [
@@ -8907,8 +8941,7 @@
     ],
     "Citations": 0,
     "NumPubs": 0,
-    "NumPreprints": 1,
-    "GitHub": "Sun-lab/ideas"
+    "NumPreprints": 1
   },
   {
     "Tool": "IKAP",
@@ -9731,9 +9764,16 @@
     "Description": "K2Taxonomer is an R package built around a \"top-down\" recursive partitioning framework to perform unsupervised learning of nested “taxonomy-like” subgroups from high-throughput -omics data",
     "License": "GPL-3.0",
     "Added": "2020-11-08",
-    "Updated": "2020-11-08",
+    "Updated": "2021-07-27",
     "Categories": ["Clustering", "DifferentialExpression", "GeneSets", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Multi-resolution characterization of molecular taxonomies in bulk and single-cell transcriptomics data",
+        "DOI": "10.1093/nar/gkab552",
+        "Date": "2021-07-06",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Multi-resolution characterization of molecular taxonomies in bulk and single-cell transcriptomics data",
@@ -9742,7 +9782,7 @@
       }
     ],
     "Citations": 1,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "montilab/K2Taxonomer"
   },
@@ -11298,7 +11338,7 @@
         "Title": "The dynamics and regulators of cell fate decisions are revealed by pseudotemporal ordering of single cells",
         "DOI": "10.1038/nbt.2859",
         "Date": "2014-03-23",
-        "Citations": 2219
+        "Citations": 2220
       },
       {
         "Title": "Single-cell mRNA quantification and differential analysis with Census",
@@ -11320,7 +11360,7 @@
         "Citations": 40
       }
     ],
-    "Citations": 3766,
+    "Citations": 3767,
     "NumPubs": 3,
     "NumPreprints": 1,
     "Bioc": "monocle",
@@ -14066,9 +14106,16 @@
     "Description": "RNA-Sieve is a method for the deconvolution of bulk cell samples via single-cell RNA expression data",
     "License": "GPL-3.0",
     "Added": "2020-10-15",
-    "Updated": "2020-10-15",
+    "Updated": "2021-07-27",
     "Categories": ["Integration"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "A likelihood-based deconvolution of bulk gene expression data using single-cell references",
+        "DOI": "10.1101/gr.272344.120",
+        "Date": "2021-07-22",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "RNA-Sieve: A likelihood-based deconvolution of bulk gene expression data using single-cell references",
@@ -14077,7 +14124,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "rnasieve",
     "GitHub": "songlab-cal/rna-sieve"
@@ -16244,9 +16291,16 @@
     "Description": "Identifying differential distributed genes for single cell RNA data",
     "License": "GPL-2.0-or-later",
     "Added": "2019-06-06",
-    "Updated": "2019-06-06",
+    "Updated": "2021-07-27",
     "Categories": ["DifferentialExpression"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "A compositional model to assess expression changes from single-cell RNA-seq data",
+        "DOI": "10.1214/20-aoas1423",
+        "Date": "2021-06-01",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "A Compositional Model to Assess Expression Changes from Single-Cell Rna-Seq Data",
@@ -16255,7 +16309,7 @@
       }
     ],
     "Citations": 4,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "wiscstatman/scDDboost"
   },
@@ -16870,9 +16924,16 @@
     "Description": "scFEA (single cell Flux Estimation Analysis) infers single cell fluxome from single cell RNA-sequencing (scRNA-seq) data",
     "License": "MIT",
     "Added": "2020-10-05",
-    "Updated": "2020-10-05",
+    "Updated": "2021-07-27",
     "Categories": ["GeneNetworks"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "A graph neural network model to estimate cell-wise metabolic flux using single-cell RNA-seq data",
+        "DOI": "10.1101/gr.271205.120",
+        "Date": "2021-07-22",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "scFEA: A graph neural network model to estimate cell-wise metabolic flux using single cell RNA-seq data",
@@ -16881,7 +16942,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "changwn/scFEA"
   },
@@ -17916,9 +17977,16 @@
     "Description": "Inferring gene networks from single-cell gene expression data",
     "License": "GPL-2.0",
     "Added": "2020-10-05",
-    "Updated": "2020-10-05",
+    "Updated": "2021-07-27",
     "Categories": ["GeneNetworks"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "scLink: Inferring Sparse Gene Co-expression Networks from Single-cell Expression Data",
+        "DOI": "10.1016/j.gpb.2020.11.006",
+        "Date": "2021-07",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "scLink: Inferring Sparse Gene Co-expression Networks from Single-cell Expression Data",
@@ -17927,7 +17995,7 @@
       }
     ],
     "Citations": 2,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "CRAN": "scLink",
     "GitHub": "Vivianstats/scLink"
@@ -18928,9 +18996,16 @@
     "Description": "scPNMF is a method to facilitate gene selection for targeted gene profiling by learning a sparse gene encoding of single cells",
     "License": "MIT",
     "Added": "2021-02-12",
-    "Updated": "2021-06-28",
+    "Updated": "2021-07-27",
     "Categories": ["VariableGenes"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "scPNMF: sparse gene encoding of single cells to facilitate gene selection for targeted gene profiling",
+        "DOI": "10.1093/bioinformatics/btab273",
+        "Date": "2021-07-01",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "scPNMF: sparse gene encoding of single cells to facilitate gene selection for targeted gene profiling",
@@ -18939,7 +19014,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "JSB-UCLA/scPNMF"
   },
@@ -19785,9 +19860,16 @@
     "Description": "A reference-free and alignment-free approach to classify cell types with k-mer level features derived from raw reads in a scRNA-seq experiment",
     "License": "GPL-3.0",
     "Added": "2021-06-04",
-    "Updated": "2021-06-28",
+    "Updated": "2021-07-27",
     "Categories": ["Classification", "Quantification"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "A Reference-free Approach for Cell Type Classification with scRNA-seq",
+        "DOI": "10.1016/j.isci.2021.102855",
+        "Date": "2021-07",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "A Reference-free Approach for Cell Type Classification with scRNA-seq",
@@ -19796,7 +19878,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "digi2002/scSimClassify"
   },
@@ -19998,9 +20080,16 @@
     "Description": "Perform virtual knockout experiments on single-cell gene regulatory networks",
     "License": "GPL-2.0-or-later",
     "Added": "2021-03-26",
-    "Updated": "2021-03-26",
+    "Updated": "2021-07-27",
     "Categories": ["GeneNetworks", "Perturbations", "Simulation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "scTenifoldKnk: An Efficient Virtual Knockout Tool for Gene Function Predictions via Single-Cell Gene Regulatory Network Perturbation",
+        "DOI": "10.2139/ssrn.3872938",
+        "Date": "2021",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "scTenifoldKnk: a machine learning workflow performing virtual knockout experiments on single-cell gene regulatory networks",
@@ -20009,7 +20098,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "CRAN": "scTenifoldKnk",
     "GitHub": "cailab-tamu/scTenifoldKnk"
@@ -20806,7 +20895,7 @@
         "Title": "Comprehensive Integration of Single-Cell Data",
         "DOI": "10.1016/j.cell.2019.05.031",
         "Date": "2019-06",
-        "Citations": 2747
+        "Citations": 2748
       },
       {
         "Title": "Integrated analysis of multimodal single-cell data",
@@ -20855,7 +20944,7 @@
         "Citations": 64
       }
     ],
-    "Citations": 8912,
+    "Citations": 8913,
     "NumPubs": 5,
     "NumPreprints": 4,
     "CRAN": "Seurat",
@@ -21118,9 +21207,16 @@
     "Code": "https://github.com/NabaviLab/sigGCN",
     "Description": "Cell classification that combines a graph convolutional network (GCN) and a neural network to exploit gene interaction networks",
     "Added": "2021-06-18",
-    "Updated": "2021-06-18",
+    "Updated": "2021-07-27",
     "Categories": ["Classification", "GeneNetworks"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Single-cell classification using graph convolutional networks",
+        "DOI": "10.1186/s12859-021-04278-2",
+        "Date": "2021-07-08",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Single-Cell Classification Using Graph Convolutional Networks",
@@ -21129,7 +21225,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "NabaviLab/sigGCN"
   },
@@ -22707,7 +22803,7 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 15923
+        "Citations": 15926
       }
     ],
     "Preprints": [
@@ -22717,7 +22813,7 @@
         "Citations": 4
       }
     ],
-    "Citations": 15927,
+    "Citations": 15930,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "alexdobin/STAR"
@@ -23748,11 +23844,11 @@
         "Title": "TSCAN: Pseudo-time reconstruction and evaluation in single-cell RNA-seq analysis",
         "DOI": "10.1093/nar/gkw430",
         "Date": "2016-05-13",
-        "Citations": 279
+        "Citations": 280
       }
     ],
     "Preprints": [],
-    "Citations": 279,
+    "Citations": 280,
     "NumPubs": 1,
     "NumPreprints": 0,
     "Bioc": "TSCAN",
@@ -23853,9 +23949,16 @@
     "Description": "UCell is an R package for calculating gene signatures in single-cell datasets",
     "License": "GPL-3.0",
     "Added": "2021-05-14",
-    "Updated": "2021-05-14",
+    "Updated": "2021-07-27",
     "Categories": ["GeneSets"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "UCell: Robust and scalable single-cell gene signature scoring",
+        "DOI": "10.1016/j.csbj.2021.06.043",
+        "Date": "2021",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "UCell: robust and scalable single-cell gene signature scoring",
@@ -23864,7 +23967,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "carmonalab/UCell"
   },
