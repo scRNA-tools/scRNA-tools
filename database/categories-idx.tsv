@@ -339,6 +339,9 @@ CellRouter	Normalisation
 CellRouter	Ordering
 CellRouter	QualityControl
 CellRouter	Visualisation
+CellSIUS	Clustering
+CellSIUS	RareCells
+CellSIUS	Visualisation
 cellSNP	Variants
 cellsnp-lite	Variants
 CellTagR	QualityControl
@@ -782,6 +785,8 @@ FRmatch	Classification
 FRmatch	Interactive
 FRmatch	Visualisation
 G2S3	Imputation
+GapClust	Clustering
+GapClust	RareCells
 Garnett	Classification
 Garnett	MarkerGenes
 Garnett	Visualisation
@@ -973,6 +978,10 @@ jackstraw	DimensionalityReduction
 jackstraw	GeneFiltering
 jackstraw	MarkerGenes
 jackstraw	VariableGenes
+JGNsc	GeneNetworks
+JGNsc	GeneSets
+JGNsc	Simulation
+JGNsc	Visualisation
 JIND	Classification
 JIND	Integration
 JOINT	Clustering
@@ -993,6 +1002,8 @@ kallisto	Quantification
 kallisto	UMIs
 kBET	Integration
 KMD	Clustering
+kmermaid	Classification
+kmermaid	Quantification
 knn_smooth	Imputation
 KPNN	Classification
 KPNN	GeneNetworks
@@ -1000,6 +1011,11 @@ LAK	Clustering
 LAmbDA	Classification
 LAmbDA	Integration
 LAmbDA	VariableGenes
+Lamian	DifferentialExpression
+Lamian	GeneSets
+Lamian	Integration
+Lamian	Ordering
+Lamian	Visualisation
 LandSCENT	DimensionalityReduction
 LandSCENT	GeneNetworks
 LandSCENT	Ordering
@@ -1108,6 +1124,7 @@ MetaNeighbor	Classification
 MetaNeighbor	Clustering
 MetaNeighbor	GeneSets
 MetaNeighbor	VariableGenes
+MetaNeighbor	Visualisation
 MFA	Ordering
 MFA	Simulation
 MFA	Visualisation
@@ -1355,6 +1372,8 @@ Pseudocell_Tracer	DimensionalityReduction
 Pseudocell_Tracer	Ordering
 Pseudocell_Tracer	Visualisation
 pseudodynamics	Ordering
+pseudoga	Ordering
+pseudoga	VariableGenes
 pseudogp	Ordering
 pseudogp	Visualisation
 PseudotimeDE	DifferentialExpression
@@ -1524,6 +1543,7 @@ scAI	Visualisation
 scAIDE	Clustering
 scAIDE	MarkerGenes
 scAIDE	Visualisation
+scAL	Clustering
 SCALE	AlleleSpecific
 SCALEX	Classification
 SCALEX	DimensionalityReduction
@@ -1594,6 +1614,7 @@ scBio	Integration
 SCC	Imputation
 SCCAF	Clustering
 SCCAF	Visualisation
+scCAN	Clustering
 scCancer	CellCycle
 scCancer	Classification
 scCancer	Clustering
@@ -1657,6 +1678,12 @@ scDesign2	Simulation
 scDetect	Classification
 scDGN	DimensionalityReduction
 scDGN	Integration
+scDHA	Classification
+scDHA	Clustering
+scDHA	DimensionalityReduction
+scDHA	GeneFiltering
+scDHA	Ordering
+scDHA	Visualisation
 scdiff	GeneNetworks
 scdiff	Interactive
 scdiff	Ordering
@@ -1786,6 +1813,8 @@ scID	MarkerGenes
 scID	Normalisation
 scID	Visualisation
 scIGANs	Imputation
+scIHPF	DimensionalityReduction
+scIHPF	Integration
 Scillus	DifferentialExpression
 Scillus	GeneSets
 Scillus	QualityControl
@@ -1806,6 +1835,7 @@ scirpy	Visualisation
 scisorseqr	Alignment
 scisorseqr	AlternativeSplicing
 scisorseqr	Quantification
+scISR	Imputation
 scIVA	GeneSets
 scIVA	Interactive
 scIVA	MarkerGenes
