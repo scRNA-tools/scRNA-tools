@@ -397,6 +397,7 @@ CITEseqCount	Integration
 CITEseqCount	Quantification
 CITEseqCount	UMIs
 Citrus	Normalisation
+CLEAR	Integration
 clonealign	Integration
 clonealign	Variants
 clonealign	Visualisation
@@ -534,6 +535,9 @@ DeepCycle	DimensionalityReduction
 DeepCycle	Ordering
 DeepDRIM	GeneNetworks
 DeepImpute	Imputation
+DeepSEM	DimensionalityReduction
+DeepSEM	GeneNetworks
+DeepSEM	Simulation
 DeepSort	Classification
 DEGAS	Classification
 DeLorean	ExpressionPatterns
@@ -774,6 +778,7 @@ flotilla	DimensionalityReduction
 flotilla	GeneNetworks
 flotilla	Interactive
 flotilla	QualityControl
+FlowGrid	Clustering
 FLOWMAPR	Interactive
 FLOWMAPR	Visualisation
 FORKS	Clustering
@@ -1045,6 +1050,11 @@ Linnorm	Normalisation
 Linnorm	Simulation
 Linnorm	VariableGenes
 Linnorm	Visualisation
+LinQView	Clustering
+LinQView	DimensionalityReduction
+LinQView	Integration
+LinQView	Normalisation
+LinQView	Visualisation
 locCSN	GeneNetworks
 LTMGSCA	Clustering
 LTMGSCA	DifferentialExpression
@@ -1147,6 +1157,7 @@ minnow	Simulation
 minnow	UMIs
 miQC	QualityControl
 miQC	Visualisation
+miRSCAPE	Imputation
 mitch	GeneSets
 mitch	Visualisation
 MLG	Clustering
@@ -1380,6 +1391,8 @@ PseudotimeDE	DifferentialExpression
 PseudotimeDE	ExpressionPatterns
 PseudotimeDE	Visualisation
 PsiNorm	Normalisation
+Psix	AlternativeSplicing
+Psix	Visualisation
 pyHSICLasso	MarkerGenes
 PyMINEr	Clustering
 PyMINEr	DimensionalityReduction
@@ -1875,6 +1888,9 @@ scMerge	Normalisation
 scMerge	VariableGenes
 scMetric	DimensionalityReduction
 scMetric	Visualisation
+scmixture	Clustering
+scmixture	DimensionalityReduction
+scmixture	Visualisation
 scMLnet	GeneNetworks
 scMLnet	Visualisation
 scMM	Integration
@@ -1941,6 +1957,7 @@ scploid	Visualisation
 scPlot	Interactive
 scPlot	Visualisation
 scPNMF	VariableGenes
+scPOP	Integration
 scPopCorn	Clustering
 scPopCorn	Integration
 scPopCorn	Normalisation
@@ -2072,6 +2089,8 @@ scTHI	DimensionalityReduction
 scTHI	GeneNetworks
 scTHI	Visualisation
 scTIM	MarkerGenes
+scTITANS	Clustering
+scTITANS	MarkerGenes
 sctransform	DifferentialExpression
 sctransform	Integration
 sctransform	Normalisation
@@ -2409,6 +2428,7 @@ transformGamPoi	Normalisation
 transformGamPoi	Transformation
 TRAPeS	Immune
 TRAPeS	Quantification
+TraSig	GeneNetworks
 Tree-SNE	Clustering
 Tree-SNE	Visualisation
 trendsceek	ExpressionPatterns
