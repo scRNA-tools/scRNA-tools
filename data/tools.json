@@ -4606,6 +4606,29 @@
     "GitHub": "zhouzilu/cTPnet"
   },
   {
+    "Tool": "cvCovEst",
+    "Platform": "R",
+    "Code": "https://github.com/PhilBoileau/cvCovEst",
+    "Description": "cvCovEst implements an efficient cross-validated procedure for covariance matrix estimation, particularly useful in high-dimensional settings",
+    "License": "MIT",
+    "Added": "2021-08-06",
+    "Updated": "2021-08-06",
+    "Categories": ["GeneNetworks"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Cross-Validated Loss-Based Covariance Matrix Estimator Selection in High Dimensions",
+        "DOI": "arxiv/2102.09715",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "CRAN": "cvCovEst",
+    "GitHub": "PhilBoileau/cvCovEst"
+  },
+  {
     "Tool": "Cyclum",
     "Platform": "Python",
     "Code": "https://github.com/KChen-lab/cyclum",
@@ -9948,7 +9971,7 @@
         "Title": "Near-optimal probabilistic RNA-seq quantification",
         "DOI": "10.1038/nbt.3519",
         "Date": "2016-04-04",
-        "Citations": 3554
+        "Citations": 3555
       },
       {
         "Title": "Modular, efficient and constant-memory single-cell RNA-seq preprocessing",
@@ -9980,7 +10003,7 @@
         "Citations": 0
       }
     ],
-    "Citations": 3681,
+    "Citations": 3682,
     "NumPubs": 3,
     "NumPreprints": 3,
     "GitHub": "pachterlab/kallisto"
@@ -12333,6 +12356,29 @@
     "NumPreprints": 1,
     "PyPI": "northstar",
     "GitHub": "northstaratlas/northstar"
+  },
+  {
+    "Tool": "OCAT",
+    "Platform": "Python",
+    "Code": "https://github.com/bowang-lab/OCAT",
+    "Description": "OCAT (One Cell At a Time) provides a fast and memory-efficient framework for analyzing and integrating large-scale scRNA-seq data",
+    "License": "MIT",
+    "Added": "2021-08-06",
+    "Updated": "2021-08-06",
+    "Categories": ["DimensionalityReduction", "Integration", "MarkerGenes", "Normalisation", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "One Cell At a Time: A Unified Framework to Integrate and Analyze Single-cell RNA-seq Data",
+        "DOI": "10.1101/2021.05.12.443814",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "PyPI": "OCAT",
+    "GitHub": "bowang-lab/OCAT"
   },
   {
     "Tool": "ODEGRfinder",
@@ -19626,6 +19672,27 @@
     "GitHub": "ybai3/scqc"
   },
   {
+    "Tool": "scQcut",
+    "Platform": "Python",
+    "Code": "https://github.com/mary77/scQcut",
+    "Description": "scQcut, employs a topology-based criterion to guide the construction of KNN graph, and then applies an efficient modularity-based community discovery algorithm to predict robust cell clusters",
+    "Added": "2021-08-06",
+    "Updated": "2021-08-06",
+    "Categories": ["Clustering"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "A completely parameter-free method for graph-based single cell RNA-seq clustering",
+        "DOI": "10.1101/2021.07.15.452521",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "mary77/scQcut"
+  },
+  {
     "Tool": "scQuint",
     "Platform": "Python",
     "Code": "https://github.com/songlab-cal/scquint",
@@ -21154,6 +21221,22 @@
     "GitHub": "xuebaliang/scziDesk"
   },
   {
+    "Tool": "SDAMS",
+    "Platform": "R",
+    "Code": "https://bioconductor.org/packages/SDAMS",
+    "Description": "Differential Abundant/Expression Analysis for Metabolomics, Proteomics and single-cell RNA sequencing Data",
+    "License": "GPL-1.0",
+    "Added": "2021-08-06",
+    "Updated": "2021-08-06",
+    "Categories": ["Modality"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "SDAMS"
+  },
+  {
     "Tool": "SDImpute",
     "Platform": "R",
     "Code": "https://github.com/Jinsl-lab/SDImpute",
@@ -21372,7 +21455,7 @@
         "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
         "DOI": "10.1038/nbt.4096",
         "Date": "2018-04-02",
-        "Citations": 3718
+        "Citations": 3719
       },
       {
         "Title": "Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression",
@@ -21403,7 +21486,7 @@
         "Citations": 65
       }
     ],
-    "Citations": 9126,
+    "Citations": 9127,
     "NumPubs": 5,
     "NumPreprints": 4,
     "CRAN": "Seurat",
@@ -21457,6 +21540,29 @@
     "NumPreprints": 0,
     "PyPI": "sfaira",
     "GitHub": "theislab/sfaira"
+  },
+  {
+    "Tool": "ShareNet",
+    "Platform": "Python",
+    "Code": "https://github.com/alexw16/sharenet",
+    "Description": "ShareNet is a Bayesian framework for boosting the accuracy of cell type-specific gene regulatory associations that can be used with a wide range of general network inference algorithms",
+    "License": "MIT",
+    "Added": "2021-08-06",
+    "Updated": "2021-08-06",
+    "Categories": ["GeneNetworks", "RareCells"],
+    "Publications": [
+      {
+        "Title": "Bayesian information sharing enhances detection of regulatory associations in rare cell types",
+        "DOI": "10.1093/bioinformatics/btab269",
+        "Date": "2021-07-12",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "alexw16/sharenet"
   },
   {
     "Tool": "SHARP",
@@ -23262,7 +23368,7 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 16135
+        "Citations": 16137
       }
     ],
     "Preprints": [
@@ -23272,7 +23378,7 @@
         "Citations": 5
       }
     ],
-    "Citations": 16140,
+    "Citations": 16142,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "alexdobin/STAR"
@@ -23391,6 +23497,23 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "GfellerLab/SuperCell"
+  },
+  {
+    "Tool": "supercells",
+    "Platform": "Python",
+    "Code": "https://github.com/compugen-ltd/supercells",
+    "Description": "Supercells is a tool which generates a single report for multiple 10x cellranger samples - thus saving time and allowing comparative QC analysis",
+    "License": "BSD-3-Clause",
+    "Added": "2021-08-06",
+    "Updated": "2021-08-06",
+    "Categories": ["QualityControl"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "PyPI": "supercells",
+    "GitHub": "compugen-ltd/supercells"
   },
   {
     "Tool": "Superscan",
