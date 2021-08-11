@@ -1,0 +1,34 @@
+Category	Phase	Description
+Alignment	Phase 1	Alignment of sequencing reads to a reference
+Assembly	Phase 1	Tools that perform assembly of scRNA-seq reads
+UMIs	Phase 1	Processing of Unique Molecular Identifiers
+Quantification	Phase 1	Quantification of expression from reads
+QualityControl	Phase 2	Removal of low-quality cells
+GeneFiltering	Phase 2	Removal of lowly expressed or otherwise uninformative genes
+Imputation	Phase 2	Estimation of expression where zeros have been observed
+Normalisation	Phase 2	Removal of unwanted variation that may affect results
+CellCycle	Phase 2	Assignment or correction of stages of the cell cycle, or other uses of cell cycle genes, or genes associated with similar processes
+Classification	Phase 3	Assignment of cell types based on a reference dataset
+Clustering	Phase 3	Unsupervised grouping of cells based on expression profiles
+Ordering	Phase 3	Ordering of cells along a trajectory
+RareCells	Phase 3	Identification of rare cell populations
+StemCells	Phase 3	Identification of cells with stem-like characteristics
+DifferentialExpression	Phase 4	Testing of differential expression across groups of cells
+ExpressionPatterns	Phase 4	Detection of genes that change expression across a trajectory
+GeneNetworks	Phase 4	Identification or use of co-regulated gene networks
+GeneSets	Phase 4	Testing for over representation or other uses of annotated gene sets
+MarkerGenes	Phase 4	Identification or use of genes that mark cell populations
+DimensionalityReduction	Multiple	Projection of cells into a lower dimensional space
+Interactive	Multiple	Tools with an interactive component or a graphical user interface
+VariableGenes	Multiple	Identifcation or use of highly (or lowly) variable genes
+Visualisation	Multiple	Functions for visualising some aspect of scRNA-seq data or analysis
+AlleleSpecific	Other	Detection of allele-specific expression
+AlternativeSplicing	Other	Detection of alternative splicing
+Haplotypes	Other	Use or assignment of haplotypes
+Immune	Other	Assignment of receptor sequences and immune cell clonality
+Integration	Phase 2	Combining of scRNA-seq datasets or integration with other single-cell data types
+Modality	Other	Identification or use of modality in gene expression
+Simulation	Other	Generation of synthetic scRNA-seq datasets
+Transformation	Other	Transformation between expression levels and some other measure
+Variants	Other	Detection or use of nucleotide variants
+Perturbations	Other	Analysis of induced perturbations such as drug effects
