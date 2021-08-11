@@ -268,6 +268,8 @@ celda	Simulation
 celda	Visualisation
 Cell-BLAST	Classification
 Cell-BLAST	Visualisation
+cell2cell	GeneNetworks
+cell2cell	Visualisation
 cell2location	Classification
 cell2location	Integration
 cellAlign	ExpressionPatterns
@@ -293,6 +295,9 @@ CellBender	Visualisation
 CellBIC	Clustering
 cellBrowser	Interactive
 cellBrowser	Visualisation
+CellCall	GeneNetworks
+CellCall	GeneSets
+CellCall	Visualisation
 CellChat	GeneNetworks
 CellChat	Visualisation
 CellexalVR	Interactive
@@ -657,6 +662,7 @@ dropEst	UMIs
 dropEst	Visualisation
 dropkick	QualityControl
 DropLasso	Classification
+DropletQC	QualityControl
 DropletUtils	QualityControl
 DropletUtils	Simulation
 DropletUtils	UMIs
@@ -1212,6 +1218,7 @@ MUDAN	QualityControl
 MUDAN	VariableGenes
 MUDAN	Visualisation
 MultiMAP	Integration
+MUREN	Normalisation
 muscat	DifferentialExpression
 muscat	MarkerGenes
 muscat	Simulation
@@ -1688,6 +1695,7 @@ scDDboost	DifferentialExpression
 SCDE	DifferentialExpression
 SCDE	GeneSets
 SCDE	Visualisation
+scDEAL	Perturbations
 scDECAF	Classification
 scDECAF	GeneSets
 scDeepCluster	Clustering
@@ -1896,6 +1904,8 @@ scMetric	DimensionalityReduction
 scMetric	Visualisation
 scmixture	Clustering
 scmixture	DimensionalityReduction
+scmixture	GeneSets
+scmixture	MarkerGenes
 scmixture	Visualisation
 scMLnet	GeneNetworks
 scMLnet	Visualisation
@@ -1990,6 +2000,7 @@ scQuint	DimensionalityReduction
 scQuint	Quantification
 SCRABBLE	Imputation
 SCRABBLE	Visualisation
+scRAE	Clustering
 scran	CellCycle
 scran	Integration
 scran	Interactive
