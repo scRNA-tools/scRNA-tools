@@ -131,11 +131,11 @@
   {
     "Tool": "ADImpute",
     "Platform": "R",
-    "Code": "https://github.com/anacarolinaleote/ADImpute",
+    "Code": "https://github.com/beyergroup/ADImpute",
     "Description": "ADImpute predicts unmeasured gene expression values from single cell RNA-sequencing data (dropout imputation)",
     "License": "GPL-3.0",
     "Added": "2020-10-30",
-    "Updated": "2021-07-31",
+    "Updated": "2021-08-08",
     "Categories": ["Imputation"],
     "Publications": [],
     "Preprints": [
@@ -149,7 +149,7 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "Bioc": "ADImpute",
-    "GitHub": "anacarolinaleote/ADImpute"
+    "GitHub": "beyergroup/ADImpute"
   },
   {
     "Tool": "adobo",
@@ -2331,6 +2331,28 @@
     "GitHub": "gao-lab/Cell_BLAST"
   },
   {
+    "Tool": "cell2cell",
+    "Platform": "Python",
+    "Code": "https://github.com/earmingol/cell2cell",
+    "Description": "Inferring cell-cell interactions from transcriptomes with cell2cell",
+    "Added": "2021-08-07",
+    "Updated": "2021-08-07",
+    "Categories": ["GeneNetworks", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Inferring a spatial code of cell-cell interactions across a whole animal bodys",
+        "DOI": "10.1101/2020.11.22.392217",
+        "Citations": 2
+      }
+    ],
+    "Citations": 2,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "PyPI": "cell2cell",
+    "GitHub": "earmingol/cell2cell"
+  },
+  {
     "Tool": "cell2location",
     "Platform": "Python",
     "Code": "https://github.com/BayraktarLab/cell2location",
@@ -2539,6 +2561,29 @@
     "NumPreprints": 0,
     "PyPI": "cellbrowser",
     "GitHub": "maximilianh/cellBrowser"
+  },
+  {
+    "Tool": "CellCall",
+    "Platform": "R",
+    "Code": "https://github.com/ShellyCoder/cellcall",
+    "Description": "Integrating paired ligand-receptor and transcription factor activities for cell-cell communication",
+    "License": "Artistic-2.0",
+    "Added": "2021-08-08",
+    "Updated": "2021-08-08",
+    "Categories": ["GeneNetworks", "GeneSets", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "CellCall: integrating paired ligand–receptor and transcription factor activities for cell–cell communication",
+        "DOI": "10.1093/nar/gkab638",
+        "Date": "2021-07-31",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "ShellyCoder/cellcall"
   },
   {
     "Tool": "CellChat",
@@ -6343,6 +6388,28 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "jpvert/droplasso"
+  },
+  {
+    "Tool": "DropletQC",
+    "Platform": "R",
+    "Code": "https://github.com/powellgenomicslab/DropletQC",
+    "Description": "DropletQC, a new method that is able to detect empty droplets, damaged, and intact cells, and accurately distinguish from one another",
+    "License": "MIT",
+    "Added": "2021-08-08",
+    "Updated": "2021-08-08",
+    "Categories": ["QualityControl"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "DropletQC: improved identification of empty droplets and damaged cells in single-cell RNA-seq data",
+        "DOI": "10.1101/2021.08.02.454717",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "powellgenomicslab/DropletQC"
   },
   {
     "Tool": "DropletUtils",
@@ -11856,6 +11923,29 @@
     "GitHub": "Teichlab/MultiMAP"
   },
   {
+    "Tool": "MUREN",
+    "Platform": "R",
+    "Code": "https://github.com/hippo-yf/MUREN",
+    "Description": "MUREN: a Robust and Multi-reference Approach of RNA-seq Transcript Normalization",
+    "License": "GPL-3.0",
+    "Added": "2021-08-08",
+    "Updated": "2021-08-08",
+    "Categories": ["Normalisation"],
+    "Publications": [
+      {
+        "Title": "MUREN: a robust and multi-reference approach of RNA-seq transcript normalization",
+        "DOI": "10.1186/s12859-021-04288-0",
+        "Date": "2021-07-28",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "hippo-yf/MUREN"
+  },
+  {
     "Tool": "muscat",
     "Platform": "R",
     "Code": "https://github.com/HelenaLC/muscat",
@@ -12249,13 +12339,19 @@
     "Description": "A model designed for dimensionality reduction and batch effect removal for scRNA-seq data",
     "License": "GPL-3.0",
     "Added": "2020-10-30",
-    "Updated": "2020-10-30",
+    "Updated": "2021-08-08",
     "Categories": ["DimensionalityReduction", "Integration"],
     "Publications": [],
-    "Preprints": [],
+    "Preprints": [
+      {
+        "Title": "NewWave: a scalable R/Bioconductor package for the dimensionality reduction and batch effect removal of single-cell RNA-seq data",
+        "DOI": "10.1101/2021.08.02.453487",
+        "Citations": 0
+      }
+    ],
     "Citations": 0,
     "NumPubs": 0,
-    "NumPreprints": 0,
+    "NumPreprints": 1,
     "Bioc": "NewWave",
     "GitHub": "fedeago/NewWave"
   },
@@ -14162,9 +14258,16 @@
     "Description": "RCA (Reference Component Analysis) is a computational approach for robust cell type annotation of single cell RNA sequencing data (scRNAseq)",
     "License": "MIT",
     "Added": "2021-02-26",
-    "Updated": "2021-02-26",
+    "Updated": "2021-08-08",
     "Categories": ["Classification", "Clustering", "DifferentialExpression", "DimensionalityReduction", "Normalisation", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "RCA2: a scalable supervised clustering algorithm that reduces batch effects in scRNA-seq data",
+        "DOI": "10.1093/nar/gkab632",
+        "Date": "2021-07-28",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Robust clustering and interpretation of scRNA-seq data using reference component analysis",
@@ -14173,7 +14276,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "prabhakarlab/RCAv2"
   },
@@ -16474,7 +16577,7 @@
         "Title": "Analysis of alternative polyadenylation from single-cell RNA-seq using scDaPars reveals cell subpopulations invisible to gene expression",
         "DOI": "10.1101/gr.271346.120",
         "Date": "2021-05-25",
-        "Citations": 1
+        "Citations": 2
       }
     ],
     "Preprints": [
@@ -16484,7 +16587,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 2,
+    "Citations": 3,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "YiPeng-Gao/scDaPars"
@@ -16718,6 +16821,28 @@
     "NumPreprints": 1,
     "Bioc": "scde",
     "GitHub": "hms-dbmi/scde"
+  },
+  {
+    "Tool": "scDEAL",
+    "Platform": "Python",
+    "Code": "https://github.com/OSU-BMBL/scDEAL",
+    "Description": "Deep Transfer Learning of Drug Sensitivity by Integrating Bulk and Single-cell RNA-seq data",
+    "License": "Apache-2.0",
+    "Added": "2021-08-08",
+    "Updated": "2021-08-08",
+    "Categories": ["Perturbations"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Deep Transfer Learning of Drug Responses by Integrating Bulk and Single-cell RNA-seq data",
+        "DOI": "10.1101/2021.08.01.454654",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "OSU-BMBL/scDEAL"
   },
   {
     "Tool": "scDECAF",
@@ -18750,7 +18875,7 @@
     "Description": "A Bayesian mixture model approach to zero-inflation of counts for scRNA-seq data",
     "Added": "2021-07-31",
     "Updated": "2021-07-31",
-    "Categories": ["Clustering", "DimensionalityReduction", "Visualisation"],
+    "Categories": ["Clustering", "DimensionalityReduction", "GeneSets", "MarkerGenes", "Visualisation"],
     "Publications": [],
     "Preprints": [
       {
@@ -19738,6 +19863,28 @@
     "GitHub": "tanlabcode/SCRABBLE"
   },
   {
+    "Tool": "scRAE",
+    "Platform": "Python",
+    "Code": "https://github.com/arnabkmondal/scRAE",
+    "Description": "scRAE: Deterministic Regularized Autoencoders with Flexible Priors for Clustering Single-cell Gene Expression Data",
+    "License": "MIT",
+    "Added": "2021-08-07",
+    "Updated": "2021-08-07",
+    "Categories": ["Clustering"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "ScRAE: Deterministic Regularized Autoencoders with Flexible Priors for Clustering Single-cell Gene Expression Data",
+        "DOI": "arxiv/2107.07709",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "arnabkmondal/scRAE"
+  },
+  {
     "Tool": "scran",
     "Platform": "R",
     "Code": "https://github.com/MarioniLab/scran",
@@ -19757,7 +19904,7 @@
         "Title": "Pooling across cells to normalize single-cell RNA sequencing data with many zero counts",
         "DOI": "10.1186/s13059-016-0947-7",
         "Date": "2016-04-27",
-        "Citations": 498
+        "Citations": 499
       }
     ],
     "Preprints": [
@@ -19767,7 +19914,7 @@
         "Citations": 16
       }
     ],
-    "Citations": 1199,
+    "Citations": 1200,
     "NumPubs": 2,
     "NumPreprints": 1,
     "Bioc": "scran",
