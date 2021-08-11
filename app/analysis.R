@@ -357,7 +357,7 @@ get_platforms_data <- function(tools) {
                 labels = c("R", "Python", "MATLAB", "C++", "Other")
             ),
             Platform = forcats::fct_reorder(Platform, -Count),
-            Percent  = round(Count / sum(Count) * 100, 1),
+            Percent  = round(Count / nrow(tools) * 100, 1),
             Label    = paste0(Platform, "\n", Percent, "%")
         )
 
