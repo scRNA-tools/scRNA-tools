@@ -53,16 +53,21 @@ archive_tool <- function(database, dir, name = NULL) {
 
         tool <- database$Tools[[name]]
         archive_refs <- dplyr::filter(database$References, DOI %in% tool$DOIs)
-
+        archive_ref_links <- dplyr::filter(
+            database$RefLinks,
+            (Preprint %in% tool$DOIs) | (Publication %in% tool$DOIs)
+        )
+        
         archive_data <- list(
             Tools      = database$Tools[name],
             References = archive_refs,
+            RefLinks   = archive_ref_links,
             Categories = database$Categories
         )
 
         archive_dir <- fs::path(dir, "archive",
                                 paste(lubridate::today("UTC"), name, sep = "-"))
-        save_database(archive_data, archive_dir)
+        save_database(archive_data, archive_dir, cache = FALSE)
 
         database$Tools[[name]] <- NULL
 
@@ -156,6 +161,12 @@ restore_archive <- function(database, dir, archive = NULL) {
             database$References,
             archive_data$References
         )
+        if ("RefLinks" %in% names(archive_data)) {
+            database$RefLinks <- dplyr::bind_rows(
+                database$RefLinks,
+                archive_data$RefLinks
+            )
+        }
         database$Categories <- dplyr::bind_rows(
             database$Categories,
             dplyr::filter(
