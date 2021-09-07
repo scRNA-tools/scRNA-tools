@@ -54,3 +54,26 @@ publication:
   url         = "https://doi.org/10.1371/journal.pcbi.1006245",
 }
 ```
+
+If you make use of our analysis of the first 1000 tools in the database please
+also cite:
+
+> Zappia L, Theis FJ. _"Over 1000 tools reveal trends in the single-cell RNA-seq
+> analysis landscape"_, **bioRxiv** (2021),
+> DOI: [10.1101/2021.08.13.456196](https://doi.org/10.1101/2021.08.13.456196)
+
+```bibtex
+
+@UNPUBLISHED{,
+  title    = "Over 1000 tools reveal trends in the single-cell {RNA-seq}
+              analysis landscape",
+  author   = "Zappia, Luke and Theis, Fabian J",
+  journal  = "bioRxiv",
+  pages    = "2021.08.13.456196",
+  month    =  aug,
+  year     =  2021,
+  language = "en",
+  doi      = "10.1101/2021.08.13.456196",
+  url      = "https://doi.org/10.1101/2021.08.13.456196"
+}
+```
