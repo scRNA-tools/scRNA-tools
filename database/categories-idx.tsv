@@ -448,6 +448,10 @@ COAC	GeneNetworks
 CoGAPs	DimensionalityReduction
 CoGAPs	GeneSets
 CoGAPs	Visualisation
+cola	Clustering
+cola	DimensionalityReduction
+cola	GeneSets
+cola	Visualisation
 COMET	MarkerGenes
 COMET	Visualisation
 Compartmap	Integration
@@ -727,6 +731,8 @@ EDGE	DimensionalityReduction
 EDGE	VariableGenes
 EEISP	GeneNetworks
 elasticC3	Integration
+ELeFHAnt	Classification
+ELeFHAnt	Integration
 ELSA	Classification
 ELSA	DimensionalityReduction
 embeddr	Ordering
@@ -1219,6 +1225,8 @@ Monocle	ExpressionPatterns
 Monocle	MarkerGenes
 Monocle	Ordering
 Monocle	Visualisation
+MOSCATO	GeneNetworks
+MOSCATO	Simulation
 Mpath	Ordering
 mpCMF	DimensionalityReduction
 MPSSC	Clustering
@@ -1681,6 +1689,8 @@ scbean	QualityControl
 scbean	Visualisation
 scBio	Integration
 SCC	Imputation
+scCAEs	Clustering
+scCAEs	DimensionalityReduction
 SCCAF	Clustering
 SCCAF	Visualisation
 scCAN	Clustering
@@ -1927,6 +1937,10 @@ Sciviewer	Visualisation
 scLAPA	AlternativeSplicing
 scLAPA	Clustering
 scLCA	Clustering
+scLINE	DimensionalityReduction
+scLINE	GeneNetworks
+scLINE	Integration
+scLINE	Visualisation
 SClineager	Ordering
 SClineager	Variants
 scLink	GeneNetworks
@@ -2464,6 +2478,7 @@ TAR-scRNA-seq	Quantification
 TASC	DifferentialExpression
 TASC	Normalisation
 TASC	Quantification
+tascCODA	Modality
 TASIC	Interactive
 TASIC	Ordering
 TBSP	Clustering
@@ -2538,6 +2553,7 @@ TWO-SIGMA	GeneSets
 TWO-SIGMA	Simulation
 txburst	AlleleSpecific
 UCell	GeneSets
+UICPC	Clustering
 UMI_analysis	Quantification
 UMI_analysis	UMIs
 UMI-tools	Quantification
