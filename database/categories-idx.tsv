@@ -787,6 +787,8 @@ FEAST	Clustering
 FEAST	VariableGenes
 FEATS	Clustering
 FEATS	Integration
+FeatureCorr	Transformation
+FeatureCorr	Visualisation
 FIESTA	Imputation
 FiRE	DimensionalityReduction
 FiRE	RareCells
@@ -1292,6 +1294,7 @@ netSmooth	Imputation
 netSmooth	Visualisation
 netsne	DimensionalityReduction
 NetworkInference	GeneNetworks
+NeuCA	Classification
 NewWave	DimensionalityReduction
 NewWave	Integration
 nichenetr	GeneNetworks
@@ -1759,6 +1762,7 @@ scDDboost	DifferentialExpression
 SCDE	DifferentialExpression
 SCDE	GeneSets
 SCDE	Visualisation
+scDEA	DifferentialExpression
 scDEAL	Perturbations
 scDECAF	Classification
 scDECAF	GeneSets
@@ -1813,6 +1817,8 @@ SCENA	Visualisation
 SCENIC	Clustering
 SCENIC	GeneNetworks
 SCENIC	Visualisation
+SCEnt	GeneFiltering
+SCEnt	VariableGenes
 SCENT	Ordering
 SCENT	StemCells
 scEpath	Clustering
@@ -2239,6 +2245,7 @@ scziDesk	Clustering
 scziDesk	DimensionalityReduction
 SDAMS	Modality
 SDImpute	Imputation
+SEDIM	Imputation
 SEGtool	GeneFiltering
 SEGtool	MarkerGenes
 SelfE	VariableGenes
@@ -2619,6 +2626,9 @@ VDJPuzzle	Quantification
 VDJPuzzle	Visualisation
 VECTOR	DimensionalityReduction
 VECTOR	Ordering
+VEGA	DifferentialExpression
+VEGA	DimensionalityReduction
+VEGA	GeneNetworks
 velociraptor	DimensionalityReduction
 velociraptor	Ordering
 velocyto	AlternativeSplicing
