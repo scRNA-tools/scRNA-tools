@@ -3142,11 +3142,11 @@
         "Title": "Immune Landscape of Viral- and Carcinogen-Driven Head and Neck Cancer",
         "DOI": "10.1016/j.immuni.2019.11.014",
         "Date": "2020-01",
-        "Citations": 90
+        "Citations": 91
       }
     ],
     "Preprints": [],
-    "Citations": 90,
+    "Citations": 91,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "arc85/celltalker"
@@ -6355,11 +6355,11 @@
         "Title": "Immune Landscape of Viral- and Carcinogen-Driven Head and Neck Cancer",
         "DOI": "10.1016/j.immuni.2019.11.014",
         "Date": "2020-01",
-        "Citations": 90
+        "Citations": 91
       }
     ],
     "Preprints": [],
-    "Citations": 90,
+    "Citations": 91,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "arc85/dragonsc"
@@ -7090,7 +7090,7 @@
     "Code": "https://github.com/Natsu01/EEISP",
     "Description": "A tool for identifying codependent and mutually exclusive gene sets from sparse single-cell RNA-seq data",
     "Added": "2021-03-19",
-    "Updated": "2021-07-27",
+    "Updated": "2021-10-02",
     "Categories": ["GeneNetworks"],
     "Publications": [
       {
@@ -7110,6 +7110,7 @@
     "Citations": 0,
     "NumPubs": 1,
     "NumPreprints": 1,
+    "PyPI": "eeisp",
     "GitHub": "Natsu01/EEISP"
   },
   {
@@ -7720,6 +7721,29 @@
     "NumPreprints": 1,
     "PyPI": "feats",
     "GitHub": "edwinv87/feats"
+  },
+  {
+    "Tool": "FeatureCorr",
+    "Platform": "R",
+    "Code": "https://github.com/DKundnani/FeatureCorr",
+    "Description": "An R package to study feature correlations aided with data transformation for Next Generation sequencing and microarray data",
+    "License": "GPL-3.0",
+    "Added": "2021-10-02",
+    "Updated": "2021-10-02",
+    "Categories": ["Transformation", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "FeatureCorr: An R package to study feature correlations aided with data transformation for sequencing and microarray data",
+        "DOI": "10.1016/j.simpa.2021.100144",
+        "Date": "2021-11",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "DKundnani/FeatureCorr"
   },
   {
     "Tool": "FIESTA",
@@ -12757,6 +12781,28 @@
     "GitHub": "Tchanders/NetworkInference.jl"
   },
   {
+    "Tool": "NeuCA",
+    "Platform": "R",
+    "Code": "https://github.com/haoharryfeng/NeuCA",
+    "Description": "NEUral-network based Cell Annotation",
+    "License": "GPL-2.0",
+    "Added": "2021-10-02",
+    "Updated": "2021-10-02",
+    "Categories": ["Classification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "A neural network-based method for exhaustive cell label assignment using single cell RNA-seq data",
+        "DOI": "10.1101/2021.09.25.461825",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "haoharryfeng/NeuCA"
+  },
+  {
     "Tool": "NewWave",
     "Platform": "R",
     "Code": "https://github.com/fedeago/NewWave",
@@ -16689,9 +16735,16 @@
     "Description": "Scbean integrates a range of models for single-cell data analysis, including dimensionality reduction, remvoing batch effects, and transferring well-annotated cell type labels from scRNA-seq to scATAC-seq and spatial resoved transcriptomics",
     "License": "MIT",
     "Added": "2021-04-12",
-    "Updated": "2021-04-12",
+    "Updated": "2021-10-02",
     "Categories": ["DimensionalityReduction", "Integration", "QualityControl", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "A versatile and scalable single-cell data integration algorithm based on domain-adversarial and variational approximation",
+        "DOI": "10.1093/bib/bbab400",
+        "Date": "2021-09-28",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Efficient and scalable integration of single-cell data using domain-adversarial and variational approximation",
@@ -16700,7 +16753,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "scbean",
     "GitHub": "jhu99/scbean"
@@ -17348,12 +17401,19 @@
     "Description": "Gathers various methods for the detection and handling of doublets/multiplets in single-cell RNA sequencing data",
     "License": "GPL-3.0",
     "Added": "2020-09-10",
-    "Updated": "2020-09-10",
+    "Updated": "2021-10-02",
     "Categories": ["Clustering", "QualityControl"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Doublet identification in single-cell sequencing data using scDblFinder",
+        "DOI": "10.12688/f1000research.73600.1",
+        "Date": "2021-09-28",
+        "Citations": 0
+      }
+    ],
     "Preprints": [],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 0,
     "Bioc": "scDblFinder",
     "GitHub": "plger/scDblFinder"
@@ -17503,6 +17563,29 @@
     "NumPreprints": 1,
     "Bioc": "scde",
     "GitHub": "hms-dbmi/scde"
+  },
+  {
+    "Tool": "scDEA",
+    "Platform": "R",
+    "Code": "https://github.com/Zhangxf-ccnu/scDEA",
+    "Description": "Applies ensemble learning for single-cell differential expression analysis on single-cell RNA-seq dataset",
+    "License": "GPL-2.0-or-later",
+    "Added": "2021-10-02",
+    "Updated": "2021-10-02",
+    "Categories": ["DifferentialExpression"],
+    "Publications": [
+      {
+        "Title": "scDEA: differential expression analysis in single-cell RNA-sequencing data via ensemble learning",
+        "DOI": "10.1093/bib/bbab402",
+        "Date": "2021-09-25",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "Zhangxf-ccnu/scDEA"
   },
   {
     "Tool": "scDEAL",
@@ -18051,6 +18134,23 @@
     "NumPreprints": 1,
     "PyPI": "pyscenic",
     "GitHub": "aertslab/SCENIC"
+  },
+  {
+    "Tool": "SCEnt",
+    "Platform": "R",
+    "Code": "https://github.com/hwarden162/SCEnt",
+    "Description": "SCEnt is a package for single cell entropy analysis",
+    "License": "GPL-3.0",
+    "Added": "2021-10-02",
+    "Updated": "2021-10-02",
+    "Categories": ["GeneFiltering", "VariableGenes"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "CRAN": "SCEnt",
+    "GitHub": "hwarden162/SCEnt"
   },
   {
     "Tool": "SCENT",
@@ -22307,6 +22407,28 @@
     "GitHub": "Jinsl-lab/SDImpute"
   },
   {
+    "Tool": "SEDIM",
+    "Platform": "Python",
+    "Code": "https://github.com/li-shaochuan/SEDIM",
+    "Description": "High-throughput Molecular Data Imputation and Characterization with Surrogate-assisted Automatic Neural Architecture Search",
+    "Added": "2021-10-02",
+    "Updated": "2021-10-02",
+    "Categories": ["Imputation"],
+    "Publications": [
+      {
+        "Title": "High-throughput single-cell RNA-seq data imputation and characterization with surrogate-assisted automated deep learning",
+        "DOI": "10.1093/bib/bbab368",
+        "Date": "2021-09-22",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "li-shaochuan/SEDIM"
+  },
+  {
     "Tool": "SEGtool",
     "Platform": "R",
     "Code": "http://bioinfo.life.hust.edu.cn/SEGtool/",
@@ -22484,7 +22606,7 @@
         "Title": "Comprehensive Integration of Single-Cell Data",
         "DOI": "10.1016/j.cell.2019.05.031",
         "Date": "2019-06",
-        "Citations": 3179
+        "Citations": 3180
       },
       {
         "Title": "Integrated analysis of multimodal single-cell data",
@@ -22502,13 +22624,13 @@
         "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
         "DOI": "10.1038/nbt.4096",
         "Date": "2018-04-02",
-        "Citations": 3964
+        "Citations": 3965
       },
       {
         "Title": "Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression",
         "DOI": "10.1186/s13059-019-1874-1",
         "Date": "2019-12-23",
-        "Citations": 572
+        "Citations": 573
       }
     ],
     "Preprints": [
@@ -22533,7 +22655,7 @@
         "Citations": 66
       }
     ],
-    "Citations": 9949,
+    "Citations": 9952,
     "NumPubs": 5,
     "NumPreprints": 4,
     "CRAN": "Seurat",
@@ -23462,11 +23584,11 @@
         "Title": "Immune Landscape of Viral- and Carcinogen-Driven Head and Neck Cancer",
         "DOI": "10.1016/j.immuni.2019.11.014",
         "Date": "2020-01",
-        "Citations": 90
+        "Citations": 91
       }
     ],
     "Preprints": [],
-    "Citations": 90,
+    "Citations": 91,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "arc85/singleseqgset"
@@ -25899,10 +26021,10 @@
       {
         "Title": "UniPath: A uniform approach for pathway and gene-set based analysis of heterogeneity in single-cell epigenome and transcriptome profiles",
         "DOI": "10.1101/864389",
-        "Citations": 0
+        "Citations": 1
       }
     ],
-    "Citations": 2,
+    "Citations": 3,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "reggenlab/UniPath"
@@ -26188,6 +26310,35 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "jumphone/Vector"
+  },
+  {
+    "Tool": "VEGA",
+    "Platform": "Python",
+    "Code": "https://github.com/LucasESBS/vega",
+    "Description": "A VAE for analyzing pathways, transcription factors, cell types in single-cell RNA-seq data",
+    "License": "GPL-3.0",
+    "Added": "2021-10-02",
+    "Updated": "2021-10-02",
+    "Categories": ["DifferentialExpression", "DimensionalityReduction", "GeneNetworks"],
+    "Publications": [
+      {
+        "Title": "VEGA is an interpretable generative model for inferring biological network activity in single-cell transcriptomics",
+        "DOI": "10.1038/s41467-021-26017-0",
+        "Date": "2021-09-28",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "Biological network-inspired interpretable variational autoencoder",
+        "DOI": "10.1101/2020.12.17.423310",
+        "Citations": 1
+      }
+    ],
+    "Citations": 1,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "GitHub": "LucasESBS/vega"
   },
   {
     "Tool": "velociraptor",
