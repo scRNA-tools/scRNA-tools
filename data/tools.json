@@ -5890,7 +5890,7 @@
         "Title": "Enhancing droplet-based single-nucleus RNA-seq resolution using the semi-supervised machine learning classifier DIEM",
         "DOI": "10.1038/s41598-020-67513-5",
         "Date": "2020-07-03",
-        "Citations": 11
+        "Citations": 12
       }
     ],
     "Preprints": [
@@ -5900,7 +5900,7 @@
         "Citations": 5
       }
     ],
-    "Citations": 16,
+    "Citations": 17,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "marcalva/diem"
@@ -7106,11 +7106,11 @@
         "Title": "Ensemble dimensionality reduction and feature gene extraction for single-cell RNA-seq data",
         "DOI": "10.1038/s41467-020-19465-7",
         "Date": "2020-11-17",
-        "Citations": 3
+        "Citations": 4
       }
     ],
     "Preprints": [],
-    "Citations": 3,
+    "Citations": 4,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "shawnstat/EDGE"
@@ -7392,6 +7392,28 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "Oyl-CityU/EnTSSR"
+  },
+  {
+    "Tool": "Eoulsan",
+    "Platform": "Java",
+    "Code": "https://github.com/GenomicParisCentre/eoulsan",
+    "Description": "With Eoulsan, users can easily set up a cloud computing cluster and automate the analysis of several samples at once using various software solutions available",
+    "License": "CECILL-C",
+    "Added": "2021-10-22",
+    "Updated": "2021-10-22",
+    "Categories": ["Alignment", "QualityControl", "Quantification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Eoulsan 2: an efficient workflow manager for reproducible bulk, long-read and single-cell transcriptomics analyses",
+        "DOI": "10.1101/2021.10.13.464219",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "GenomicParisCentre/eoulsan"
   },
   {
     "Tool": "EPIC",
@@ -9319,10 +9341,10 @@
       {
         "Title": "Hypercluster: a flexible tool for parallelized unsupervised clustering optimization",
         "DOI": "10.1101/2020.01.13.905323",
-        "Citations": 2
+        "Citations": 1
       }
     ],
-    "Citations": 2,
+    "Citations": 1,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "hypercluster",
@@ -9567,6 +9589,27 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "NHLBI-BCB/IKAP"
+  },
+  {
+    "Tool": "ikarus",
+    "Platform": "Python",
+    "Code": "https://github.com/BIMSBbioinfo/ikarus",
+    "Description": "Ikarus is a stepwise machine learning pipeline that tries to cope with a task of distinguishing tumor cells from normal cells",
+    "Added": "2021-10-22",
+    "Updated": "2021-10-22",
+    "Categories": ["Classification", "Variants"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Identifying tumor cells at the single cell level",
+        "DOI": "10.1101/2021.10.15.463909",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "BIMSBbioinfo/ikarus"
   },
   {
     "Tool": "ILoReg",
@@ -16584,11 +16627,11 @@
         "Title": "scAPAtrap: identification and quantification of alternative polyadenylation sites from single-cell RNA-seq data",
         "DOI": "10.1093/bib/bbaa273",
         "Date": "2020-11-03",
-        "Citations": 5
+        "Citations": 4
       }
     ],
     "Preprints": [],
-    "Citations": 5,
+    "Citations": 4,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "BMILAB/scAPAtrap"
@@ -20126,6 +20169,29 @@
     "GitHub": "ddb-qiwang/scMRA-torch"
   },
   {
+    "Tool": "scMRMA",
+    "Platform": "R/C++",
+    "Code": "https://github.com/JiaLiVUMC/scMRMA",
+    "Description": "single cell Multi-Resolution Marker-based Annotation Algorithm",
+    "License": "GPL-2.0-or-later",
+    "Added": "2021-10-22",
+    "Updated": "2021-10-22",
+    "Categories": ["Classification", "Normalisation", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "scMRMA: single cell multiresolution marker-based annotation",
+        "DOI": "10.1093/nar/gkab931",
+        "Date": "2021-10-14",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "JiaLiVUMC/scMRMA"
+  },
+  {
     "Tool": "SCmut",
     "Platform": "R",
     "Code": "https://github.com/nghiavtr/SCmut",
@@ -23091,7 +23157,7 @@
         "Title": "Sierra: discovery of differential transcript usage from polyA-captured single-cell RNA-seq data",
         "DOI": "10.1186/s13059-020-02071-7",
         "Date": "2020-07-08",
-        "Citations": 19
+        "Citations": 18
       }
     ],
     "Preprints": [
@@ -23101,7 +23167,7 @@
         "Citations": 3
       }
     ],
-    "Citations": 22,
+    "Citations": 21,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "VCCRI/Sierra"
@@ -23290,6 +23356,28 @@
     "NumPreprints": 0,
     "CRAN": "SILGGM",
     "GitHub": "cran/SILGGM"
+  },
+  {
+    "Tool": "SIMBA",
+    "Platform": "Python",
+    "Code": "https://github.com/pinellolab/simba",
+    "Description": "SIngle-cell eMBedding Along with features",
+    "License": "BSD-3-Clause",
+    "Added": "2021-10-22",
+    "Updated": "2021-10-22",
+    "Categories": ["DimensionalityReduction", "GeneFiltering", "Normalisation", "QualityControl", "VariableGenes", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "SIMBA: SIngle-cell eMBedding Along with features",
+        "DOI": "10.1101/2021.10.17.464750",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "pinellolab/simba"
   },
   {
     "Tool": "SimCD",
@@ -25021,7 +25109,7 @@
         "Title": "Visualizing and Interpreting Single-Cell Gene Expression Datasets with Similarity Weighted Nonnegative Embedding",
         "DOI": "10.1016/j.cels.2018.10.015",
         "Date": "2018-12",
-        "Citations": 32
+        "Citations": 33
       }
     ],
     "Preprints": [
@@ -25031,7 +25119,7 @@
         "Citations": 3
       }
     ],
-    "Citations": 35,
+    "Citations": 36,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "yanwu2014/swne"
