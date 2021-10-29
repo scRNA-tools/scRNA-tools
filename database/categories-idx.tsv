@@ -88,6 +88,7 @@ AutoClass	Imputation
 AutoImpute	Imputation
 AutoImpute	Normalisation
 AutoImpute	VariableGenes
+AutomaticCellTypeIdentification	Classification
 BABEL	Integration
 BackSPIN	Clustering
 BackSPIN	GeneFiltering
@@ -128,6 +129,8 @@ bcbioSingleCell	QualityControl
 bcbioSingleCell	UMIs
 bcbioSingleCell	Visualisation
 BCseq	Quantification
+BEANIE	GeneSets
+BEANIE	Visualisation
 BEARscc	Clustering
 BEARscc	Simulation
 BEELINE	GeneNetworks
@@ -545,6 +548,7 @@ DC3	Integration
 DCA	Imputation
 DCA_R	DimensionalityReduction
 DDA	DifferentialExpression
+ddqc	QualityControl
 ddSeeker	QualityControl
 ddSeeker	UMIs
 DECENT	DifferentialExpression
@@ -1115,6 +1119,7 @@ M3Drop	Simulation
 M3Drop	Visualisation
 M3S	Modality
 MAAPER	AlternativeSplicing
+MACA	Classification
 MacroPolo	DifferentialExpression
 MAESTRO	Alignment
 MAESTRO	Classification
@@ -1134,6 +1139,7 @@ MAGIC	Interactive
 MAGIC	QualityControl
 MAGIC	Visualisation
 MAPiT	Ordering
+MARGARET	Ordering
 MarkerCount	Classification
 MARS	Classification
 MARS	DimensionalityReduction
@@ -1570,6 +1576,9 @@ rusty_axe	DimensionalityReduction
 rusty_axe	Visualisation
 RVAgene	DimensionalityReduction
 RVAgene	Simulation
+RZiMM	Clustering
+RZiMM	MarkerGenes
+RZiMM	Visualisation
 SAFE	Clustering
 SAIC	Clustering
 sake	Clustering
@@ -1934,6 +1943,7 @@ scID	Visualisation
 scIGANs	Imputation
 scIHPF	DimensionalityReduction
 scIHPF	Integration
+SCILEN	Clustering
 Scillus	DifferentialExpression
 Scillus	GeneSets
 Scillus	QualityControl
@@ -2098,6 +2108,7 @@ scprep	Visualisation
 scPretrain	Classification
 scProject	Classification
 scProject	Visualisation
+scPSD	Transformation
 SCQC	GeneFiltering
 SCQC	QualityControl
 scQcut	Clustering
@@ -2176,6 +2187,7 @@ scSeqR	Visualisation
 scShaper	Clustering
 scShaper	DimensionalityReduction
 scShaper	Ordering
+scShapes	DifferentialExpression
 scsim	Simulation
 scSimClassify	Classification
 scSimClassify	Quantification
@@ -2225,6 +2237,8 @@ sctransform	Visualisation
 scTree	Classification
 scTree	MarkerGenes
 scTree	Visualisation
+scTreeViz	Interactive
+scTreeViz	Visualisation
 scTSSR	Imputation
 scTyper	Classification
 scTyper	Visualisation
