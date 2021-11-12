@@ -9,9 +9,9 @@
 load_database <- function(dir = "database", cache = TRUE) {
 
     clear_database_cache(dir)
-    
+
     usethis::ui_todo("Loading database from {usethis::ui_path(dir)}...")
-    
+
     if (cache) {
         cache_file <- fs::path(dir, "database-cache.Rds")
         if (fs::file_exists(cache_file)) {
@@ -23,7 +23,7 @@ load_database <- function(dir = "database", cache = TRUE) {
         }
         return(database)
     }
-    
+
     tools        <- load_tools(dir)
     doi_idx      <- load_doi_idx(dir)
     repositories <- load_repositories(dir)
@@ -323,7 +323,7 @@ load_pkgs_cache <- function(dir) {
     )
 
     if (mod_diff > 7) {
-        
+
         usethis::ui_info(paste(
             "Packages cache is out of date. Updating packages cache..."
         ))
@@ -345,51 +345,51 @@ load_pkgs_cache <- function(dir) {
 
 #' Load SPDX licenses
 #'
-#' Load the SPDX license list. See https://github.com/spdx/license-list-data 
+#' Load the SPDX license list. See https://github.com/spdx/license-list-data
 #' for details
 #'
 #' @return tibble containing licenses
 load_spdx_licenses <- function() {
-    
+
     `%>%` <- magrittr::`%>%`
-    
+
     response <- jsonlite::read_json(
         "https://spdx.org/licenses/licenses.json",
         simplifyVector = TRUE
     )
-    
+
     licenses <- response$licenses %>%
         dplyr::filter(!isDeprecatedLicenseId) %>%
         dplyr::select(License = licenseId, Name = name) %>%
         dplyr::mutate(License = stringr::str_remove(License, "-only")) %>%
         dplyr::arrange(License) %>%
         tibble::as_tibble()
-    
+
     return(licenses)
 }
 
 #' Clear database cache
-#' 
+#'
 #' Delete the database cache if it is too old
 #'
 #' @param dir Path to the directory containing the database
 #'
 #' @return
 clear_database_cache <- function(dir) {
-    
+
     cache_file <- fs::path(dir, "database-cache.Rds")
-    
+
     if (fs::file_exists(cache_file)) {
         mod_time <- fs::file_info(cache_file)$modification_time
-        mod_diff <- difftime(lubridate::now("UTC"), mod_time, units = "days")
-        
-        if (mod_diff > 7) {
+        mod_diff <- difftime(lubridate::now("UTC"), mod_time, units = "hours")
+
+        if (mod_diff > 2) {
             usethis::ui_info(
                 "Database cache out of data. Clearing database cache..."
             )
             fs::file_delete(cache_file)
         }
     }
-    
+
     invisible(TRUE)
 }
