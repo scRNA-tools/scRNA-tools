@@ -1204,10 +1204,10 @@
       {
         "Title": "Besca, a single-cell transcriptomics analysis toolkit to accelerate translational research",
         "DOI": "10.1101/2020.08.11.245795",
-        "Citations": 1
+        "Citations": 0
       }
     ],
-    "Citations": 1,
+    "Citations": 0,
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "bedapub/besca"
@@ -4026,6 +4026,28 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "ChengF-Lab/COAC"
+  },
+  {
+    "Tool": "Cobolt",
+    "Platform": "Python",
+    "Code": "https://github.com/epurdom/cobolt",
+    "Description": "Cobolt is a method developed for modeling multi-omic single-cell sequencing datasets",
+    "License": "MIT",
+    "Added": "2021-11-12",
+    "Updated": "2021-11-12",
+    "Categories": ["Clustering", "DimensionalityReduction", "GeneFiltering", "Integration", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Cobolt: Joint analysis of multimodal single-cell sequencing data",
+        "DOI": "10.1101/2021.04.03.438329",
+        "Citations": 1
+      }
+    ],
+    "Citations": 1,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "epurdom/cobolt"
   },
   {
     "Tool": "CoGAPs",
@@ -8554,10 +8576,10 @@
       {
         "Title": "glmGamPoi: Fitting Gamma-Poisson Generalized Linear Models on Single Cell Count Data",
         "DOI": "10.1101/2020.08.13.249623",
-        "Citations": 2
+        "Citations": 3
       }
     ],
-    "Citations": 10,
+    "Citations": 11,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "glmGamPoi",
@@ -14081,10 +14103,10 @@
       {
         "Title": "Cancer phylogenetics using single-cell RNA-seq data",
         "DOI": "10.1101/2021.01.07.425804",
-        "Citations": 2
+        "Citations": 1
       }
     ],
-    "Citations": 2,
+    "Citations": 1,
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "bioDS/phyloRNA"
@@ -15763,6 +15785,27 @@
     "GitHub": "bbrener1/rusty_axe"
   },
   {
+    "Tool": "ruvIIInb",
+    "Platform": "R",
+    "Code": "https://github.com/limfuxing/ruvIIInb",
+    "Description": "RUV-III-NB, a statistical method that can be used to adjust counts for library size and batch effects",
+    "Added": "2021-11-12",
+    "Updated": "2021-11-12",
+    "Categories": ["Integration", "Normalisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "RUV-III-NB: Normalization of single cell RNA-seq Data",
+        "DOI": "10.1101/2021.11.06.467575",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "limfuxing/ruvIIInb"
+  },
+  {
     "Tool": "RVAgene",
     "Platform": "Python",
     "Code": "https://github.com/maclean-lab/RVAgene",
@@ -16866,11 +16909,11 @@
         "Title": "scAPAtrap: identification and quantification of alternative polyadenylation sites from single-cell RNA-seq data",
         "DOI": "10.1093/bib/bbaa273",
         "Date": "2020-11-03",
-        "Citations": 4
+        "Citations": 5
       }
     ],
     "Preprints": [],
-    "Citations": 4,
+    "Citations": 5,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "BMILAB/scAPAtrap"
@@ -17027,13 +17070,19 @@
     "Description": "Map single-cell transcriptomes to copy number evolutionary trees",
     "License": "GPL-3.0",
     "Added": "2021-11-05",
-    "Updated": "2021-11-05",
+    "Updated": "2021-11-12",
     "Categories": ["Clustering", "Simulation", "Visualisation"],
     "Publications": [],
-    "Preprints": [],
+    "Preprints": [
+      {
+        "Title": "Mapping single-cell transcriptomes to copy number evolutionary trees",
+        "DOI": "10.1101/2021.11.04.467244",
+        "Citations": 0
+      }
+    ],
     "Citations": 0,
     "NumPubs": 0,
-    "NumPreprints": 0,
+    "NumPreprints": 1,
     "PyPI": "scatrex",
     "GitHub": "cbg-ethz/SCATrEx"
   },
@@ -18909,6 +18958,28 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "imsb-uke/scGAN"
+  },
+  {
+    "Tool": "scGate",
+    "Platform": "R",
+    "Code": "https://github.com/carmonalab/scGate",
+    "Description": "scGate is an R package that automatizes the typical manual marker-based approach to cell type annotation",
+    "License": "GPL-3.0",
+    "Added": "2021-11-12",
+    "Updated": "2021-11-12",
+    "Categories": ["Classification", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "scGate: marker-based purification of cell types from heterogeneous single-cell RNA-seq datasets",
+        "DOI": "10.1101/2021.11.08.467740",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "carmonalab/scGate"
   },
   {
     "Tool": "scGEAToolbox",
@@ -23966,6 +24037,27 @@
     "NumPreprints": 0
   },
   {
+    "Tool": "Sincast",
+    "Platform": "R/C++",
+    "Code": "https://github.com/meiosis97/Sincast",
+    "Description": "Sincast is a computational framework to query scRNA-seq data based on bulk reference atlases",
+    "Added": "2021-11-12",
+    "Updated": "2021-11-12",
+    "Categories": ["Classification", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Sincast: a computational framework to predict cell identities in single cell transcriptomes using bulk atlases as references",
+        "DOI": "10.1101/2021.11.07.467660",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "meiosis97/Sincast"
+  },
+  {
     "Tool": "sincell",
     "Platform": "R",
     "Description": "Existing computational approaches for the assessment of cell-state hierarchies from single-cell data might be formalized under a general workflow composed of i) a metric to assess cell-to-cell similarities (combined or not with a dimensionality reduction step), and ii) a graph-building algorithm (optionally making use of a cells-clustering step). Sincell R package implements a methodological toolbox allowing flexible workflows under such framework.",
@@ -26319,9 +26411,9 @@
     "Platform": "R",
     "Code": "https://github.com/byzhang23/TreeCorTreat",
     "Description": "TreeCorTreat is an open source R package that uses a tree-based correlation screen to analyze and visualize the association between phenotype and transcriptomic features and cell types at multiple cell type resolution levels",
-    "License": "GPL-2.0",
+    "License": "GPL-3.0",
     "Added": "2021-11-05",
-    "Updated": "2021-11-05",
+    "Updated": "2021-11-12",
     "Categories": ["Visualisation"],
     "Publications": [],
     "Preprints": [
