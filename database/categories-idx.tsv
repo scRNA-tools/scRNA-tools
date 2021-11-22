@@ -14,6 +14,7 @@ ACTIONet	Integration
 ACTIONet	Normalisation
 ACTIONet	Visualisation
 ACTIVA	Simulation
+ADC	GeneNetworks
 ADImpute	Imputation
 adobo	CellCycle
 adobo	Classification
@@ -89,6 +90,7 @@ AutoImpute	Imputation
 AutoImpute	Normalisation
 AutoImpute	VariableGenes
 AutomaticCellTypeIdentification	Classification
+AWGAN	Integration
 BABEL	Integration
 BackSPIN	Clustering
 BackSPIN	GeneFiltering
@@ -188,6 +190,15 @@ Bisque	Simulation
 BITFAM	GeneNetworks
 BITFAM	Normalisation
 BITFAM	VariableGenes
+bollito	Alignment
+bollito	Clustering
+bollito	DifferentialExpression
+bollito	DimensionalityReduction
+bollito	Normalisation
+bollito	Ordering
+bollito	QualityControl
+bollito	Quantification
+bollito	Visualisation
 bonvoyage	Transformation
 BPSC	DifferentialExpression
 BraCeR	Alignment
@@ -391,6 +402,8 @@ CHETAH	Visualisation
 chooseR	Clustering
 Chord	DimensionalityReduction
 Chord	QualityControl
+CIDER	Clustering
+CIDER	Integration
 CIDR	Clustering
 CIDR	DimensionalityReduction
 CIDR	Imputation
@@ -492,6 +505,8 @@ Conos	MarkerGenes
 Conos	Visualisation
 constclust	Clustering
 constclust	Visualisation
+CopulaGCN	Clustering
+CopulaGCN	DimensionalityReduction
 CopyKAT	Variants
 corral	DimensionalityReduction
 corral	Integration
@@ -1268,6 +1283,9 @@ mrtree	DimensionalityReduction
 mrtree	Imputation
 mrtree	Simulation
 mrtree	Visualisation
+MTD	Alignment
+MTD	Quantification
+MTD	Visualisation
 MTGO-SC	GeneNetworks
 MTGO-SC	GeneSets
 mtSC	Classification
@@ -1451,6 +1469,8 @@ PopAlign	Clustering
 PopAlign	DifferentialExpression
 PopAlign	DimensionalityReduction
 PopAlign	Perturbations
+Portal	DimensionalityReduction
+Portal	Integration
 powerEQTL	Variants
 POWSC	DifferentialExpression
 POWSC	Simulation
@@ -1780,6 +1800,7 @@ scConsensus	DifferentialExpression
 scConsensus	Integration
 scConsensus	Visualisation
 scCorr	GeneNetworks
+scCustomize	Visualisation
 scDA	DimensionalityReduction
 scDAPA	AlternativeSplicing
 scDAPA	Visualisation
@@ -1808,6 +1829,7 @@ scDECAF	Classification
 scDECAF	GeneSets
 scDeepCluster	Clustering
 scDeepCluster	DimensionalityReduction
+scDeepHash	Classification
 scDeepSort	Classification
 scDesign	Simulation
 scDesign2	Simulation
@@ -2203,6 +2225,8 @@ scScope	Clustering
 scScope	Imputation
 scScope	Normalisation
 scSDAE	Imputation
+scSemiAE	DimensionalityReduction
+scSemiAE	Integration
 scSemiCluster	Clustering
 scSensitiveGeneDefine	VariableGenes
 scSeqR	Clustering
@@ -2248,6 +2272,9 @@ scTenifoldNet	DimensionalityReduction
 scTenifoldNet	GeneNetworks
 scTenifoldNet	Normalisation
 scTenifoldNet	QualityControl
+scTenifoldpy	DimensionalityReduction
+scTenifoldpy	GeneNetworks
+scTenifoldpy	Perturbations
 scTensor	GeneNetworks
 scTensor	Visualisation
 scTGIF	Classification
