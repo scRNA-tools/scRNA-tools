@@ -1262,10 +1262,10 @@
       {
         "Title": "Besca, a single-cell transcriptomics analysis toolkit to accelerate translational research",
         "DOI": "10.1101/2020.08.11.245795",
-        "Citations": 1
+        "Citations": 0
       }
     ],
-    "Citations": 1,
+    "Citations": 0,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "bedapub/besca"
@@ -3037,7 +3037,7 @@
         "Title": "Single-cell reconstruction of the early maternal–fetal interface in humans",
         "DOI": "10.1038/s41586-018-0698-6",
         "Date": "2018-11-14",
-        "Citations": 717
+        "Citations": 718
       },
       {
         "Title": "CellPhoneDB: inferring cell–cell communication from combined expression of multi-subunit ligand–receptor complexes",
@@ -3058,7 +3058,7 @@
         "Citations": 31
       }
     ],
-    "Citations": 1160,
+    "Citations": 1161,
     "NumPubs": 2,
     "NumPreprints": 2,
     "PyPI": "CellPhoneDB",
@@ -8741,10 +8741,10 @@
       {
         "Title": "glmGamPoi: Fitting Gamma-Poisson Generalized Linear Models on Single Cell Count Data",
         "DOI": "10.1101/2020.08.13.249623",
-        "Citations": 3
+        "Citations": 2
       }
     ],
-    "Citations": 13,
+    "Citations": 12,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "glmGamPoi",
@@ -9741,6 +9741,27 @@
     "NumPreprints": 1,
     "Bioc": "iasva",
     "GitHub": "UcarLab/iasva"
+  },
+  {
+    "Tool": "IBMR",
+    "Platform": "R/C++",
+    "Code": "https://github.com/keshav-motwani/IBMR",
+    "Description": "Integrative Binned Multinomial Regression",
+    "Added": "2021-12-03",
+    "Updated": "2021-12-03",
+    "Categories": ["Classification", "Simulation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Binned multinomial logistic regression for integrative cell type annotation",
+        "DOI": "arxiv/2111.12149",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "keshav-motwani/IBMR"
   },
   {
     "Tool": "ICAnet",
@@ -11418,11 +11439,11 @@
   {
     "Tool": "MacroPolo",
     "Platform": "Python",
-    "Code": "https://github.com/ch6845/MarcoPolo",
+    "Code": "https://github.com/ch6845/MarcoPolo_old",
     "Description": "MarcoPolo is a clustering-free approach to the exploration of differentially expressed genes along with group information in single-cell RNA-seq data",
     "License": "GPL-2.0",
     "Added": "2020-11-29",
-    "Updated": "2020-11-29",
+    "Updated": "2021-12-03",
     "Categories": ["DifferentialExpression"],
     "Publications": [],
     "Preprints": [
@@ -11435,7 +11456,7 @@
     "Citations": 0,
     "NumPubs": 0,
     "NumPreprints": 1,
-    "GitHub": "ch6845/MarcoPolo"
+    "GitHub": "ch6845/MarcoPolo_old"
   },
   {
     "Tool": "MAESTRO",
@@ -12856,6 +12877,27 @@
     "NumPubs": 0,
     "NumPreprints": 0,
     "GitHub": "JEFworks/MUDAN"
+  },
+  {
+    "Tool": "MuDCoD",
+    "Platform": "Python",
+    "Code": "https://github.com/bo1929/MuDCoD",
+    "Description": "MuDCoD: Multi-subject Dynamic Community Detection",
+    "Added": "2021-12-03",
+    "Updated": "2021-12-03",
+    "Categories": ["GeneNetworks"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "MuDCoD: Multi-Subject Community Detection in Personalized Dynamic Gene Networks from Single Cell RNA Sequencing",
+        "DOI": "10.1101/2021.11.30.470619",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "bo1929/MuDCoD"
   },
   {
     "Tool": "MultiK",
@@ -14370,10 +14412,10 @@
       {
         "Title": "Cancer phylogenetics using single-cell RNA-seq data",
         "DOI": "10.1101/2021.01.07.425804",
-        "Citations": 2
+        "Citations": 1
       }
     ],
-    "Citations": 2,
+    "Citations": 1,
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "bioDS/phyloRNA"
@@ -15419,11 +15461,11 @@
         "Title": "Reference component analysis of single-cell transcriptomes elucidates cellular heterogeneity in human colorectal tumors",
         "DOI": "10.1038/ng.3818",
         "Date": "2017-03-20",
-        "Citations": 476
+        "Citations": 477
       }
     ],
     "Preprints": [],
-    "Citations": 476,
+    "Citations": 477,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "GIS-SP-Group/RCA"
@@ -18205,10 +18247,10 @@
       {
         "Title": "Dynamic Analysis of Alternative Polyadenylation from Single-Cell RNA-Seq (scDaPars) Reveals Cell Subpopulations Invisible to Gene Expression Analysis",
         "DOI": "10.1101/2020.09.23.310649",
-        "Citations": 2
+        "Citations": 1
       }
     ],
-    "Citations": 7,
+    "Citations": 6,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "YiPeng-Gao/scDaPars"
@@ -19531,6 +19573,28 @@
     "GitHub": "IMB-Computational-Genomics-Lab/scGPS"
   },
   {
+    "Tool": "scGTM",
+    "Platform": "Python",
+    "Code": "https://github.com/ElvisCuiHan/scGTM",
+    "Description": "scGTM: Single-cell generalized trend model",
+    "License": "MIT",
+    "Added": "2021-12-03",
+    "Updated": "2021-12-03",
+    "Categories": ["ExpressionPatterns", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Single-cell generalized trend model (scGTM): a flexible and interpretable model of gene expression trend along cell pseudotime",
+        "DOI": "10.1101/2021.11.25.470059",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "ElvisCuiHan/scGTM"
+  },
+  {
     "Tool": "schema",
     "Platform": "Python",
     "Code": "https://github.com/rs239/schema",
@@ -19857,6 +19921,27 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "PaulingLiu/scibet"
+  },
+  {
+    "Tool": "sciCAN",
+    "Platform": "Python",
+    "Code": "https://github.com/rpmccordlab/sciCAN",
+    "Description": "Integration of single-cell chromatin accessibility and gene expression data via cycle-consistent adversarial network",
+    "Added": "2021-12-03",
+    "Updated": "2021-12-03",
+    "Categories": ["Integration"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "sciCAN: Single-cell chromatin accessibility and gene expression data integration via Cycle-consistent Adversarial Network",
+        "DOI": "10.1101/2021.11.30.470677",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "rpmccordlab/sciCAN"
   },
   {
     "Tool": "scicast",
@@ -22268,7 +22353,7 @@
         "Title": "Scrublet: Computational Identification of Cell Doublets in Single-Cell Transcriptomic Data",
         "DOI": "10.1016/j.cels.2018.11.005",
         "Date": "2019-04",
-        "Citations": 400
+        "Citations": 401
       }
     ],
     "Preprints": [
@@ -22278,7 +22363,7 @@
         "Citations": 25
       }
     ],
-    "Citations": 425,
+    "Citations": 426,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "scrublet",
@@ -23852,7 +23937,7 @@
         "Title": "Comprehensive Integration of Single-Cell Data",
         "DOI": "10.1016/j.cell.2019.05.031",
         "Date": "2019-06",
-        "Citations": 3619
+        "Citations": 3620
       },
       {
         "Title": "Integrated analysis of multimodal single-cell data",
@@ -23870,7 +23955,7 @@
         "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
         "DOI": "10.1038/nbt.4096",
         "Date": "2018-04-02",
-        "Citations": 4267
+        "Citations": 4268
       },
       {
         "Title": "Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression",
@@ -23901,7 +23986,7 @@
         "Citations": 72
       }
     ],
-    "Citations": 11033,
+    "Citations": 11035,
     "NumPubs": 5,
     "NumPreprints": 4,
     "CRAN": "Seurat",
@@ -25461,7 +25546,7 @@
         "Title": "Extracting a cellular hierarchy from high-dimensional cytometry data with SPADE",
         "DOI": "10.1038/nbt.1991",
         "Date": "2011-10-02",
-        "Citations": 690
+        "Citations": 691
       },
       {
         "Title": "Visualization and cellular hierarchy inference of single-cell data using SPADE",
@@ -25471,7 +25556,7 @@
       }
     ],
     "Preprints": [],
-    "Citations": 771,
+    "Citations": 772,
     "NumPubs": 2,
     "NumPreprints": 0,
     "GitHub": "nolanlab/spade"
@@ -25572,6 +25657,28 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "osmanbeyoglulab/SPaRTAN"
+  },
+  {
+    "Tool": "speckle",
+    "Platform": "R",
+    "Code": "https://github.com/Oshlack/speckle",
+    "Description": "The speckle package currently contains functions to analyse differences in cell type proportions in single cell RNA-seq data, and to classify cells as male or female",
+    "License": "GPL-3.0",
+    "Added": "2021-12-03",
+    "Updated": "2021-12-03",
+    "Categories": ["Classification", "Normalisation", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "propeller: testing for differences in cell type proportions in single cell data",
+        "DOI": "10.1101/2021.11.28.470236",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "Oshlack/speckle"
   },
   {
     "Tool": "Specter",
@@ -25941,7 +26048,7 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 18023
+        "Citations": 18024
       }
     ],
     "Preprints": [
@@ -25951,7 +26058,7 @@
         "Citations": 12
       }
     ],
-    "Citations": 18035,
+    "Citations": 18036,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "alexdobin/STAR"
@@ -27489,10 +27596,10 @@
       {
         "Title": "UniPath: A uniform approach for pathway and gene-set based analysis of heterogeneity in single-cell epigenome and transcriptome profiles",
         "DOI": "10.1101/864389",
-        "Citations": 1
+        "Citations": 0
       }
     ],
-    "Citations": 3,
+    "Citations": 2,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "reggenlab/UniPath"
