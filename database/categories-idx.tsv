@@ -15,6 +15,8 @@ ACTIONet	Normalisation
 ACTIONet	Visualisation
 ACTIVA	Simulation
 ADC	GeneNetworks
+ADClust	Clustering
+ADClust	DimensionalityReduction
 ADImpute	Imputation
 adobo	CellCycle
 adobo	Classification
@@ -131,6 +133,7 @@ bcbioSingleCell	QualityControl
 bcbioSingleCell	UMIs
 bcbioSingleCell	Visualisation
 BCseq	Quantification
+BDA	DifferentialExpression
 BEANIE	GeneSets
 BEANIE	Visualisation
 BEARscc	Clustering
@@ -270,6 +273,8 @@ CCNMF	Visualisation
 CCPE	CellCycle
 ccRemover	CellCycle
 CCSN	GeneNetworks
+CDI	Clustering
+CDI	Visualisation
 celaref	Classification
 celaref	Visualisation
 celda	Clustering
@@ -508,6 +513,8 @@ Conos	MarkerGenes
 Conos	Visualisation
 constclust	Clustering
 constclust	Visualisation
+contrastiveVI	DimensionalityReduction
+contrastiveVI	Perturbations
 CopulaGCN	Clustering
 CopulaGCN	DimensionalityReduction
 CopyKAT	Variants
@@ -575,7 +582,6 @@ DCA	Imputation
 DCA_R	DimensionalityReduction
 DCATS	DifferentialExpression
 DCATS	Simulation
-DDA	DifferentialExpression
 ddqc	QualityControl
 ddSeeker	QualityControl
 ddSeeker	UMIs
@@ -2013,6 +2019,7 @@ scHOT	Visualisation
 scHPF	DimensionalityReduction
 scHPF	ExpressionPatterns
 scHPL	Classification
+scIAE	Classification
 scIB	Integration
 SciBet	Classification
 SciBet	VariableGenes
