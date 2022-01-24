@@ -6,6 +6,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1007/978-3-030-26969-2_47	FALSE	FALSE	2019-07-24	EnsembleKQC: An Unsupervised Ensemble Learning Method for Quality Control of Single Cell RNA-seq Sequencing Data
 10.1007/978-3-319-78723-7_31	FALSE	FALSE	2018-03-28	scFeatureFilter: Correlation-Based Feature Filtering for Single-Cell RNAseq
 10.1007/s12539-017-0277-9	FALSE	FALSE	2017-12-26	visnormsc: A Graphical User Interface to Normalize Single-cell RNA Sequencing Data
+10.1007/s12539-021-00495-8	FALSE	FALSE	2022-01-14	FSCAM: CAM-Based Feature Selection for Clustering scRNA-seq
 10.1007/s12561-021-09304-8	FALSE	FALSE	2021-03-25	Penalized Latent Dirichlet Allocation Model in Single-Cell RNA Sequencing
 10.1007/s12561-021-09308-4	FALSE	FALSE	2021-04-12	Bayesian Joint Modeling of Single-Cell Expression Data and Bulk Spatial Transcriptomic Data
 10.1007/s40484-019-0192-7	FALSE	FALSE	2020-01-22	Imputation of single-cell gene expression with an autoencoder neural network
@@ -197,6 +198,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1038/s41467-021-26682-1	FALSE	FALSE	2021-11-04	Single-cell normalization and association testing unifying CRISPR screen and gene co-expression analyses with Normalisr
 10.1038/s41467-021-26779-7	FALSE	FALSE	2021-11-16	scPower accelerates and optimizes the design of multi-sample single cell transcriptomic studies
 10.1038/s41467-021-27150-6	FALSE	FALSE	2021-11-25	scCODA is a Bayesian model for compositional single-cell data analysis
+10.1038/s41467-021-27729-z	FALSE	FALSE	2022-01-11	Zero-preserving imputation of single-cell RNA-seq data
 10.1038/s41540-020-00162-6	FALSE	FALSE	2021-01-05	Sparsely-connected autoencoder (SCA) for single cell RNAseq data mining
 10.1038/s41551-021-00770-5	FALSE	FALSE	2021-08-02	Computational reconstruction of the signalling networks surrounding implanted biomaterials from single-cell transcriptomics
 10.1038/s41586-018-0414-6	FALSE	FALSE	2018-08-08	RNA velocity of single cells
@@ -279,6 +281,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1038/s41598-021-88875-4	FALSE	FALSE	2021-04-30	Synthetic single cell RNA sequencing data from small pilot studies using deep generative models
 10.1038/s41598-021-99003-7	FALSE	FALSE	2021-10-08	A topology-preserving dimensionality reduction method for single-cell RNA-seq data using graph autoencoder
 10.1038/s42003-021-02146-6	FALSE	FALSE	2021-05-26	NEBULA is a fast negative binomial mixed model for differential or co-expression analysis of large-scale multi-subject single-cell data
+10.1038/s42003-021-02986-2	FALSE	FALSE	2022-01-11	InterCellar enables interactive analysis and exploration of cell−cell communication in single-cell transcriptomic data
 10.1038/s42256-019-0037-0	FALSE	FALSE	2019-04-09	Clustering single-cell RNA-seq data with a model-based deep learning approach
 10.1038/s42256-020-00233-7	FALSE	FALSE	2020-10-05	Iterative transfer learning with neural network for clustering and cell type classification in single-cell RNA-seq analysis
 10.1038/s42256-020-00244-4	FALSE	FALSE	2020-11-02	An interpretable deep-learning architecture of capsule networks for identifying cell-type gene expression programs from single-cell RNA-sequencing data
@@ -304,6 +307,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1089/cmb.2018.0255	FALSE	FALSE	2019-08	Truncated Robust Principal Component Analysis and Noise Reduction for Single Cell RNA Sequencing Data
 10.1089/cmb.2019.0337	FALSE	FALSE	2020-08-01	Semisupervised Generative Autoencoder for Single-Cell Data
 10.1089/cmb.2020.0439	FALSE	FALSE	2021-05-01	Supervised Adversarial Alignment of Single-Cell RNA-seq Data
+10.1089/cmb.2021.0440	FALSE	FALSE	2022-01-01	Simulating Single-Cell Gene Expression Count Data with Preserved Gene Correlations by scDesign2
 10.1093/bib/bbaa097	FALSE	FALSE	2020-06-26	SMNN: batch effect correction for single-cell RNA-seq data via supervised mutual nearest neighbor detection
 10.1093/bib/bbaa127	FALSE	FALSE	2020-07-06	scCancer: a package for automated processing of single-cell RNA-seq data in cancer
 10.1093/bib/bbaa216	FALSE	FALSE	2020-10-01	A spectral clustering with self-weighted multiple kernel learning method for single-cell RNA-seq data
@@ -837,7 +841,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2020.11.16.385328	FALSE	TRUE	NA	Comprehensive generation, visualization, and reporting of quality control metrics for single-cell RNA sequencing data
 10.1101/2020.11.17.386664	FALSE	TRUE	NA	SEMITONES: Single-cEll Marker IdentificaTiON by Enrichment Scoring
 10.1101/2020.11.17.387779	FALSE	TRUE	NA	PseudotimeDE: inference of differential gene expression along cell pseudotime with well-calibrated p-values from single-cell RNA sequencing data
-10.1101/2020.11.17.387795	FALSE	TRUE	NA	scDesign2: an interpretable simulator that generates high-fidelity single-cell gene expression count data with gene correlations captured
+10.1101/2020.11.17.387795	FALSE	TRUE	NA	scDesign2: a transparent simulator that generates high-fidelity single-cell gene expression count data with gene correlations captured
 10.1101/2020.11.18.386102	FALSE	TRUE	NA	scPretrain: Multi-task self-supervised learning for cell type classification
 10.1101/2020.11.18.389189	FALSE	TRUE	NA	Efficient and precise single-cell reference atlas mapping with Symphony
 10.1101/2020.11.19.390542	FALSE	TRUE	NA	PCQC: Selecting optimal principal components for identifying clusters with highly imbalanced class sizes in single-cell RNA-seq data
@@ -1061,6 +1065,8 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2021.12.21.473757	FALSE	TRUE	NA	Isolating salient variations of interest in single-cell transcriptomic data with contrastiveVI
 10.1101/2022.01.03.474840	FALSE	TRUE	NA	Clustering Deviation Index (CDI): A robust and accurate unsupervised measure for evaluating scRNA-seq data clustering
 10.1101/2022.01.06.475279	FALSE	TRUE	NA	Supervised dimensionality reduction for exploration of single-cell data by Hybrid Subset Selection - Linear Discriminant Analysis
+10.1101/2022.01.15.476407	FALSE	TRUE	NA	scSampler: fast diversity-preserving subsampling of large-scale single-cell transcriptomic data
+10.1101/2022.01.17.476603	FALSE	TRUE	NA	Combinatorial selection of biomarkers to optimize gene signatures in diagnostics and single cell applications
 10.1101/205534	FALSE	TRUE	NA	Simultaneous single-cell profiling of lineages and cell types in the vertebrate brain by scGESTALT
 10.1101/206052	FALSE	TRUE	NA	RNA velocity in single cells
 10.1101/207704	FALSE	TRUE	NA	ascend: R package for analysis of single cell RNA-seq data
@@ -1412,6 +1418,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1186/s12859-021-04472-2	FALSE	FALSE	2021-11-18	Asc-Seurat: analytical single-cell Seurat-based web application
 10.1186/s12859-021-04489-7	FALSE	FALSE	2021-11-30	Nested Stochastic Block Models applied to the analysis of single cell data
 10.1186/s12859-021-04493-x	FALSE	FALSE	2021-12-07	An efficient scRNA-seq dropout imputation method using graph attention network
+10.1186/s12859-021-04507-8	FALSE	FALSE	2022-01-12	baredSC: Bayesian approach to retrieve expression distribution of single-cell data
 10.1186/s12859-021-04549-y	FALSE	FALSE	2022-01-06	RNA-combine: a toolkit for comprehensive analyses on transcriptome data from different sequencing platforms
 10.1186/s12864-016-2897-6	FALSE	FALSE	2016-08-22	Detection of high variability in gene expression from single-cell RNA-seq profiling
 10.1186/s12864-017-4019-5	FALSE	FALSE	2017-10-03	SAIC: an iterative clustering approach for analysis of single cell RNA-seq data
@@ -1517,6 +1524,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1186/s13059-021-02556-z	FALSE	FALSE	2021-12	Cobolt: integrative analysis of multimodal single-cell sequencing data
 10.1186/s13059-021-02561-2	FALSE	FALSE	2021-12	CIDER: an interpretable meta-clustering framework for single-cell RNA-seq data integration and evaluation
 10.1186/s13059-021-02565-y	FALSE	FALSE	2021-12	MultiMAP: dimensionality reduction and integration of multimodal data
+10.1186/s13059-021-02590-x	FALSE	FALSE	2022-01-10	Phiclust: a clusterability measure for single-cell transcriptomics reveals phenotypic subpopulations
 10.1186/s13059-021-02593-8	FALSE	FALSE	2022-01-06	scDALI: modeling allelic heterogeneity in single cells reveals context-specific genetic regulation
 10.1186/s13073-017-0492-3	FALSE	FALSE	2017-12-05	Granatum: a graphical single-cell RNA-Seq analysis pipeline for genomics scientists
 10.1186/s13073-018-0528-3	FALSE	FALSE	2018-03-20	BALDR: a computational pipeline for paired heavy and light chain immunoglobulin reconstruction in single-cell RNA-seq data
