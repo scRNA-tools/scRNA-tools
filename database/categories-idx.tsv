@@ -435,6 +435,8 @@ CLEAR	Integration
 clonealign	Integration
 clonealign	Variants
 clonealign	Visualisation
+ClustAssess	Clustering
+ClustAssess	Visualisation
 cluster_diffex	Clustering
 cluster_diffex	DifferentialExpression
 cluster_diffex	DimensionalityReduction
@@ -1139,6 +1141,9 @@ LIGER	MarkerGenes
 LIGER	Normalisation
 LIGER	VariableGenes
 LIGER	Visualisation
+LINEAGE	MarkerGenes
+LINEAGE	Ordering
+LINEAGE	Variants
 LineagePulse	DifferentialExpression
 LineagePulse	ExpressionPatterns
 LineagePulse	Simulation
@@ -1378,6 +1383,7 @@ NewWave	DimensionalityReduction
 NewWave	Integration
 nichenetr	GeneNetworks
 nichenetr	Visualisation
+NICHES	GeneNetworks
 NIFA	DimensionalityReduction
 nimfa	Clustering
 nimfa	DimensionalityReduction
@@ -1963,6 +1969,7 @@ scFBA	Integration
 scFEA	GeneNetworks
 scFeatureFilter	GeneFiltering
 scFeatureFilter	Visualisation
+scFeatures	Integration
 scfind	Classification
 scfind	Interactive
 scfind	MarkerGenes
@@ -2096,6 +2103,8 @@ scIVA	QualityControl
 scIVA	Visualisation
 Sciviewer	Interactive
 Sciviewer	Visualisation
+scJoint	Integration
+scJoint	Visualisation
 scLAPA	AlternativeSplicing
 scLAPA	Clustering
 scLCA	Clustering
@@ -2300,6 +2309,9 @@ scSemiAE	DimensionalityReduction
 scSemiAE	Integration
 scSemiCluster	Clustering
 scSensitiveGeneDefine	VariableGenes
+scSeqComm	GeneNetworks
+scSeqComm	GeneSets
+scSeqComm	Visualisation
 scSeqR	Clustering
 scSeqR	DifferentialExpression
 scSeqR	DimensionalityReduction
@@ -2431,6 +2443,7 @@ SEPIRA	GeneNetworks
 seqgendiff	Simulation
 SERGIO	GeneNetworks
 SERGIO	Simulation
+SERM	Imputation
 Seurat	Clustering
 Seurat	DifferentialExpression
 Seurat	DimensionalityReduction
@@ -2663,6 +2676,7 @@ STACAS	Integration
 STAR	Alignment
 STAR	Quantification
 STAR	UMIs
+STARE	GeneNetworks
 StationaryOT	Ordering
 STEMNET	Ordering
 STEMNET	Visualisation
@@ -2882,6 +2896,11 @@ WASP	Normalisation
 WASP	QualityControl
 WASP	Quantification
 WASP	Visualisation
+WAT3R	Clustering
+WAT3R	Immune
+WAT3R	QualityControl
+WAT3R	Quantification
+WAT3R	Visualisation
 WaveCrest	ExpressionPatterns
 WaveCrest	Interactive
 WaveCrest	MarkerGenes
