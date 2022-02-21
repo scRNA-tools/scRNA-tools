@@ -129,6 +129,29 @@
     "GitHub": "SindiLab/ACTIVA"
   },
   {
+    "Tool": "activeSVC",
+    "Platform": "Python",
+    "Code": "https://github.com/xqchen/activeSVC",
+    "Description": "ActiveSVC selects features for large matrix data with reduced computational complexity or limited data acquisition. It approaches Sequential Feature Selection through an active learning strategy with a support vector machine classifier.",
+    "License": "GPL-3.0",
+    "Added": "2022-02-18",
+    "Updated": "2022-02-18",
+    "Categories": ["MarkerGenes", "VariableGenes"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Active feature selection discovers minimal gene sets for classifying cell types and disease states with single-cell mRNA-seq data",
+        "DOI": "10.1101/2021.06.15.448478",
+        "Citations": 1
+      }
+    ],
+    "Citations": 1,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "PyPI": "activeSVC",
+    "GitHub": "xqchen/activeSVC"
+  },
+  {
     "Tool": "ADC",
     "Platform": "Python",
     "Code": "https://github.com/zhanglabtools/ADC",
@@ -1333,10 +1356,10 @@
       {
         "Title": "Besca, a single-cell transcriptomics analysis toolkit to accelerate translational research",
         "DOI": "10.1101/2020.08.11.245795",
-        "Citations": 0
+        "Citations": 1
       }
     ],
-    "Citations": 1,
+    "Citations": 2,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "bedapub/besca"
@@ -1741,7 +1764,7 @@
         "Title": "BraCeR: B-cell-receptor reconstruction and clonality inference from single-cell RNA-seq",
         "DOI": "10.1038/s41592-018-0082-3",
         "Date": "2018-07-31",
-        "Citations": 51
+        "Citations": 52
       }
     ],
     "Preprints": [
@@ -1751,7 +1774,7 @@
         "Citations": 4
       }
     ],
-    "Citations": 55,
+    "Citations": 56,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "teichlab/bracer"
@@ -2234,6 +2257,27 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "single-cell-genetics/cardelino"
+  },
+  {
+    "Tool": "CaSee",
+    "Platform": "Python",
+    "Code": "https://github.com/yuansh3354/CaSee",
+    "Description": "CaSee, a tumor cell discrimination model based on deep learning framework",
+    "Added": "2022-02-18",
+    "Updated": "2022-02-18",
+    "Categories": ["Classification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "CaSee: A lightning transfer-learning model directly used to discriminate cancer/normal cells from scRNA-seq",
+        "DOI": "10.1101/2022.02.10.480003",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "yuansh3354/CaSee"
   },
   {
     "Tool": "CaSpER",
@@ -3954,6 +3998,28 @@
     "GitHub": "kieranrcampbell/clonealign"
   },
   {
+    "Tool": "ClonoCluster",
+    "Platform": "R",
+    "Code": "https://github.com/leeprichman/ClonoCluster",
+    "Description": "A method for using clonal origin to inform transcriptome clustering",
+    "License": "GPL-3.0",
+    "Added": "2022-02-18",
+    "Updated": "2022-02-18",
+    "Categories": ["Clustering", "DimensionalityReduction", "MarkerGenes", "Variants", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "ClonoCluster: a method for using clonal origin to inform transcriptome clustering",
+        "DOI": "10.1101/2022.02.11.480077",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "leeprichman/ClonoCluster"
+  },
+  {
     "Tool": "ClustAssess",
     "Platform": "R/C++",
     "Code": "https://github.com/Core-Bioinformatics/ClustAssess",
@@ -4242,7 +4308,7 @@
     "Description": "Consensus Non-negative Matrix Factorization on single-cell RNA-Seq data",
     "License": "MIT",
     "Added": "2019-07-24",
-    "Updated": "2019-07-24",
+    "Updated": "2022-02-18",
     "Categories": ["Clustering", "DimensionalityReduction"],
     "Publications": [
       {
@@ -4262,6 +4328,7 @@
     "Citations": 83,
     "NumPubs": 1,
     "NumPreprints": 1,
+    "PyPI": "cnmf",
     "GitHub": "dylkot/cNMF"
   },
   {
@@ -9545,6 +9612,28 @@
     "GitHub": "mscastillo/GRNVBEM"
   },
   {
+    "Tool": "GSFA",
+    "Platform": "R/C++",
+    "Code": "https://github.com/gradonion/GSFA",
+    "Description": "Bayesian sparse factor analysis on single-cell CRISPR screen data",
+    "License": "MIT",
+    "Added": "2022-02-18",
+    "Updated": "2022-02-18",
+    "Categories": ["Normalisation", "Perturbations", "VariableGenes", "Variants"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "A novel Bayesian factor analysis method improves detection of genes and biological processes affected by perturbations in single-cell CRISPR screening",
+        "DOI": "10.1101/2022.02.13.480282",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "gradonion/GSFA"
+  },
+  {
     "Tool": "h-tSNE",
     "Platform": "Python",
     "Code": "https://github.com/Cobanoglu-Lab/h-tSNE",
@@ -11649,7 +11738,7 @@
     "Description": "LIGER (Linked Inference of Genomic Experimental Relationships)",
     "License": "GPL-3.0",
     "Added": "2018-11-09",
-    "Updated": "2021-02-05",
+    "Updated": "2022-02-18",
     "Categories": ["DimensionalityReduction", "Integration", "MarkerGenes", "Normalisation", "VariableGenes", "Visualisation"],
     "Publications": [
       {
@@ -11657,6 +11746,12 @@
         "DOI": "10.1016/j.cell.2019.05.006",
         "Date": "2019-06",
         "Citations": 417
+      },
+      {
+        "Title": "UINMF performs mosaic integration of single-cell multi-omic datasets using nonnegative matrix factorization",
+        "DOI": "10.1038/s41467-022-28431-4",
+        "Date": "2022-02-09",
+        "Citations": 0
       },
       {
         "Title": "Jointly defining cell types from multiple single-cell datasets using LIGER",
@@ -11672,14 +11767,19 @@
         "Citations": 1
       },
       {
+        "Title": "Nonnegative matrix factorization integrates single-cell multi-omic datasets with partially overlapping features",
+        "DOI": "10.1101/2021.04.09.439160",
+        "Citations": 2
+      },
+      {
         "Title": "Integrative inference of brain cell similarities and differences from single-cell genomics",
         "DOI": "10.1101/459891",
         "Citations": 14
       }
     ],
-    "Citations": 453,
-    "NumPubs": 2,
-    "NumPreprints": 2,
+    "Citations": 455,
+    "NumPubs": 3,
+    "NumPreprints": 3,
     "CRAN": "rliger",
     "GitHub": "welch-lab/liger"
   },
@@ -11792,6 +11892,28 @@
     "NumPreprints": 1,
     "PyPI": "locCSN",
     "GitHub": "xuranw/locCSN"
+  },
+  {
+    "Tool": "LRLoop",
+    "Platform": "R",
+    "Code": "https://github.com/Pinlyu3/LRLoop",
+    "Description": "LRLoop is a full-featured R package for analyzing LR-Loops from bulk & single-cell RNA-seq data.",
+    "License": "MIT",
+    "Added": "2022-02-18",
+    "Updated": "2022-02-18",
+    "Categories": ["GeneNetworks", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "LRLoop: Feedback loops as a design principle of cell-cell communication",
+        "DOI": "10.1101/2022.02.04.479174",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "Pinlyu3/LRLoop"
   },
   {
     "Tool": "LTMGSCA",
@@ -16975,7 +17097,7 @@
         "Title": "Salmon provides fast and bias-aware quantification of transcript expression",
         "DOI": "10.1038/nmeth.4197",
         "Date": "2017-03-06",
-        "Citations": 3525
+        "Citations": 3527
       },
       {
         "Title": "A Bayesian framework for inter-cellular information sharing improves dscRNA-seq quantification",
@@ -17007,7 +17129,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 3697,
+    "Citations": 3699,
     "NumPubs": 3,
     "NumPreprints": 3,
     "GitHub": "COMBINE-lab/salmon"
@@ -17444,7 +17566,7 @@
     "Description": "Decompose an expression profile into a usage matrix and a GEP/archetype matrix",
     "License": "MIT",
     "Added": "2021-09-24",
-    "Updated": "2021-09-24",
+    "Updated": "2022-02-18",
     "Categories": ["Clustering", "MarkerGenes", "Visualisation"],
     "Publications": [],
     "Preprints": [
@@ -17457,6 +17579,7 @@
     "Citations": 0,
     "NumPubs": 0,
     "NumPreprints": 1,
+    "PyPI": "scAAnet",
     "GitHub": "AprilYuge/scAAnet_latest"
   },
   {
@@ -17903,7 +18026,7 @@
         "Title": "SCANPY: large-scale single-cell gene expression data analysis",
         "DOI": "10.1186/s13059-017-1382-0",
         "Date": "2018-02-06",
-        "Citations": 1433
+        "Citations": 1434
       },
       {
         "Title": "PAGA: graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells",
@@ -17924,7 +18047,7 @@
         "Citations": 24
       }
     ],
-    "Citations": 1821,
+    "Citations": 1822,
     "NumPubs": 2,
     "NumPreprints": 2,
     "PyPI": "scanpy",
@@ -18004,6 +18127,28 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "YangLab/SCAPTURE"
+  },
+  {
+    "Tool": "scAR",
+    "Platform": "Python",
+    "Code": "https://github.com/CaibinSh/scAR",
+    "Description": "scAR (single cell Ambient Remover) is a package for denoising multiple single cell omics data",
+    "License": "MIT",
+    "Added": "2022-02-18",
+    "Updated": "2022-02-18",
+    "Categories": ["DimensionalityReduction", "Quantification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Probabilistic modelling of ambient noise in single-cell omics data",
+        "DOI": "10.1101/2022.01.14.476312",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "CaibinSh/scAR"
   },
   {
     "Tool": "scArches",
@@ -24577,9 +24722,15 @@
     "Description": "scvi-tools (single-cell variational inference tools) is a package for probabilistic modeling of single-cell omics data, built on top of PyTorch and Anndata",
     "License": "BSD-3-Clause",
     "Added": "2018-04-04",
-    "Updated": "2021-09-03",
+    "Updated": "2022-02-18",
     "Categories": ["Classification", "DifferentialExpression", "DimensionalityReduction", "Imputation", "Integration", "Normalisation", "QualityControl"],
     "Publications": [
+      {
+        "Title": "A Python library for probabilistic analysis of single-cell omics data",
+        "DOI": "10.1038/s41587-021-01206-w",
+        "Date": "2022-02-07",
+        "Citations": 1
+      },
       {
         "Title": "Deep generative modeling for single-cell transcriptomics",
         "DOI": "10.1038/s41592-018-0229-2",
@@ -24652,8 +24803,8 @@
         "Citations": 0
       }
     ],
-    "Citations": 747,
-    "NumPubs": 4,
+    "Citations": 748,
+    "NumPubs": 5,
     "NumPreprints": 9,
     "PyPI": "scvi-tools",
     "GitHub": "YosefLab/scvi-tools"
@@ -25843,9 +25994,16 @@
     "Description": "SINGE (Single-cell Inference of Networks using Granger Ensembles) reconstructs gene regulatory networks from pseudotime-annotated scRNA-seq data",
     "License": "MIT",
     "Added": "2019-02-05",
-    "Updated": "2019-05-17",
+    "Updated": "2022-02-18",
     "Categories": ["GeneNetworks"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "Network inference with Granger causality ensembles on single-cell transcriptomics",
+        "DOI": "10.1016/j.celrep.2022.110333",
+        "Date": "2022-02",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Network Inference with Granger Causality Ensembles on Single-Cell Transcriptomic Data",
@@ -25854,7 +26012,7 @@
       }
     ],
     "Citations": 12,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "gitter-lab/SINGE"
   },
