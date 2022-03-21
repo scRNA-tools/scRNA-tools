@@ -34,6 +34,7 @@ aggregateBioVar	Quantification
 airpart	AlternativeSplicing
 airpart	QualityControl
 airpart	Visualisation
+aLDG	GeneNetworks
 alevin-fry	Alignment
 alevin-fry	Quantification
 alevin-fry	UMIs
@@ -55,6 +56,9 @@ AltAnalyze	Normalisation
 AltAnalyze	Quantification
 AltAnalyze	Visualisation
 anchor	Modality
+APL	GeneSets
+APL	MarkerGenes
+APL	Visualisation
 ASAP	Clustering
 ASAP	DifferentialExpression
 ASAP	GeneFiltering
@@ -195,6 +199,8 @@ Bisque	Simulation
 BITFAM	GeneNetworks
 BITFAM	Normalisation
 BITFAM	VariableGenes
+BLGGM	Clustering
+BLGGM	GeneNetworks
 bollito	Alignment
 bollito	Clustering
 bollito	DifferentialExpression
@@ -383,6 +389,7 @@ CellTagR	UMIs
 CellTagR	Visualisation
 celltalker	GeneNetworks
 celltalker	Visualisation
+CellTools	Imputation
 CellTrails	DimensionalityReduction
 CellTrails	Ordering
 CellTrails	Visualisation
@@ -458,6 +465,8 @@ cluster_diffex	Visualisation
 clusterExperiment	Clustering
 clusterExperiment	MarkerGenes
 clusterExperiment	Visualisation
+ClusterFoldSimilarity	Integration
+ClusterFoldSimilarity	Visualisation
 Clustergrammer2	Classification
 Clustergrammer2	Clustering
 Clustergrammer2	GeneSets
@@ -691,6 +700,7 @@ DIscBIO	Ordering
 DIscBIO	QualityControl
 DIscBIO	VariableGenes
 DIscBIO	Visualisation
+DISCERN	Imputation
 DISCO	AlternativeSplicing
 distinct	DifferentialExpression
 DistMap	Classification
@@ -794,6 +804,8 @@ ELeFHAnt	Integration
 ELSA	Classification
 ELSA	DimensionalityReduction
 embeddr	Ordering
+EMBEDR	DimensionalityReduction
+EMBEDR	Visualisation
 EMEP	Clustering
 EMEP	DimensionalityReduction
 EmptyNN	QualityControl
@@ -1045,6 +1057,10 @@ IKAP	MarkerGenes
 IKAP	Visualisation
 ikarus	Classification
 ikarus	Variants
+Ikura	Alignment
+Ikura	QualityControl
+Ikura	Quantification
+Ikura	UMIs
 ILoReg	Clustering
 ILoReg	RareCells
 iMAP	Integration
@@ -1162,6 +1178,8 @@ LandSCENT	GeneNetworks
 LandSCENT	Ordering
 LandSCENT	StemCells
 LandSCENT	Visualisation
+LANTSA	Classification
+LANTSA	DimensionalityReduction
 LATE	Imputation
 LEAP	GeneNetworks
 LEAP	Ordering
@@ -1480,6 +1498,7 @@ Palantir	Normalisation
 Palantir	Ordering
 Palantir	QualityControl
 Palantir	Visualisation
+Palo	Visualisation
 Pamona	Integration
 Pamona	Visualisation
 Pando	GeneNetworks
@@ -1867,6 +1886,7 @@ scbean	Integration
 scbean	QualityControl
 scbean	Visualisation
 scBio	Integration
+scBonita	GeneNetworks
 scBT	DifferentialExpression
 SCC	Imputation
 scCAEs	Clustering
@@ -2192,6 +2212,15 @@ scMerge	Normalisation
 scMerge	VariableGenes
 scMetric	DimensionalityReduction
 scMetric	Visualisation
+scMiko	Classification
+scMiko	Clustering
+scMiko	DifferentialExpression
+scMiko	DimensionalityReduction
+scMiko	GeneSets
+scMiko	Integration
+scMiko	MarkerGenes
+scMiko	Normalisation
+scMiko	Visualisation
 scmixture	Clustering
 scmixture	DimensionalityReduction
 scmixture	GeneSets
@@ -2437,6 +2466,7 @@ scTriangulate	Clustering
 scTriangulate	QualityControl
 scTriangulate	Visualisation
 scTSSR	Imputation
+ScType	Classification
 scTyper	Classification
 scTyper	Visualisation
 SCUBA	ExpressionPatterns
@@ -2480,6 +2510,7 @@ scziDesk	Clustering
 scziDesk	DimensionalityReduction
 SDAMS	Modality
 SDImpute	Imputation
+secDrug	Perturbations
 SEDIM	Imputation
 SEGtool	GeneFiltering
 SEGtool	MarkerGenes
@@ -2798,10 +2829,17 @@ TinGa	Ordering
 TinGa	Visualisation
 tn_test	DifferentialExpression
 tn_test	Visualisation
+Tobiko	Alignment
+Tobiko	Immune
+Tobiko	QualityControl
+Tobiko	Quantification
+Tobiko	UMIs
 TooManyCells	Clustering
 TooManyCells	DifferentialExpression
 TooManyCells	RareCells
 TooManyCells	Visualisation
+TopOMetry	DimensionalityReduction
+TopOMetry	Visualisation
 topslam	Ordering
 TraCeR	Alignment
 TraCeR	Assembly
@@ -2848,6 +2886,7 @@ TWO-SIGMA	GeneSets
 TWO-SIGMA	Simulation
 txburst	AlleleSpecific
 UCell	GeneSets
+ucie	Visualisation
 UICPC	Clustering
 UMI_analysis	Quantification
 UMI_analysis	UMIs
