@@ -1334,7 +1334,7 @@
         "Title": "Benchmarking algorithms for gene regulatory network inference from single-cell transcriptomic data",
         "DOI": "10.1038/s41592-019-0690-6",
         "Date": "2020-01-06",
-        "Citations": 155
+        "Citations": 156
       }
     ],
     "Preprints": [
@@ -1344,7 +1344,7 @@
         "Citations": 9
       }
     ],
-    "Citations": 164,
+    "Citations": 165,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "murali-group/Beeline"
@@ -1540,7 +1540,7 @@
         "Title": "Single-cell transcriptomics unveils gene regulatory network plasticity",
         "DOI": "10.1186/s13059-019-1713-4",
         "Date": "2019-06-04",
-        "Citations": 90
+        "Citations": 91
       }
     ],
     "Preprints": [
@@ -1555,7 +1555,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 147,
+    "Citations": 148,
     "NumPubs": 2,
     "NumPreprints": 2,
     "GitHub": "iaconogi/bigSCale2"
@@ -2222,7 +2222,7 @@
     "Description": "The goal of Canek is to correct batch effect from single cell transcriptomics",
     "License": "MIT",
     "Added": "2021-05-07",
-    "Updated": "2021-05-07",
+    "Updated": "2022-03-25",
     "Categories": ["Integration"],
     "Publications": [],
     "Preprints": [
@@ -2235,6 +2235,7 @@
     "Citations": 0,
     "NumPubs": 0,
     "NumPreprints": 1,
+    "CRAN": "Canek",
     "GitHub": "MartinLoza/Canek"
   },
   {
@@ -4597,6 +4598,28 @@
     "GitHub": "epurdom/cobolt"
   },
   {
+    "Tool": "cocoa",
+    "Platform": "R/C++",
+    "Code": "https://github.com/kharchenkolab/cacoa",
+    "Description": "Case-Control Analysis of scRNA-seq experiments",
+    "License": "GPL-3.0",
+    "Added": "2022-03-25",
+    "Updated": "2022-03-25",
+    "Categories": ["DifferentialExpression", "GeneSets", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Case-control analysis of single-cell RNA-seq studies",
+        "DOI": "10.1101/2022.03.15.484475",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "kharchenkolab/cacoa"
+  },
+  {
     "Tool": "CoGAPs",
     "Platform": "R/C++",
     "Code": "https://github.com/FertigLab/CoGAPS",
@@ -4824,18 +4847,25 @@
     "Description": "A set of Pyro models and functions to infer CNA from scRNA-seq data",
     "License": "GPL-3.0",
     "Added": "2021-02-05",
-    "Updated": "2021-02-05",
+    "Updated": "2022-03-25",
     "Categories": ["Variants"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "A Bayesian method to cluster single-cell RNA sequencing data using Copy Number Alterations",
+        "DOI": "10.1093/bioinformatics/btac143",
+        "Date": "2022-03-17",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
-        "Title": "Genotyping Copy Number Alterations from single-cell RNA sequencing",
+        "Title": "A Bayesian method to cluster single-cell RNA sequencing data using Copy Number Alterations",
         "DOI": "10.1101/2021.02.02.429335",
         "Citations": 0
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "congas",
     "GitHub": "caravagnalab/congas"
@@ -5832,18 +5862,24 @@
   {
     "Tool": "DCATS",
     "Platform": "R",
-    "Code": "https://github.com/huangyh09/DCATS",
+    "Code": "https://github.com/holab-hku/DCATS",
     "Description": "Methods to detect the differential composition abundances between multiple conditions in singel-cell experiments",
-    "License": "GPL-3.0-or-later",
+    "License": "MIT",
     "Added": "2021-11-05",
-    "Updated": "2021-11-05",
+    "Updated": "2022-03-25",
     "Categories": ["DifferentialExpression", "Simulation"],
     "Publications": [],
-    "Preprints": [],
+    "Preprints": [
+      {
+        "Title": "DCATS: differential composition analysis for complex single-cell experimental designs",
+        "DOI": "10.1101/2022.03.21.485232",
+        "Citations": 0
+      }
+    ],
     "Citations": 0,
     "NumPubs": 0,
-    "NumPreprints": 0,
-    "GitHub": "huangyh09/DCATS"
+    "NumPreprints": 1,
+    "GitHub": "holab-hku/DCATS"
   },
   {
     "Tool": "ddqc",
@@ -9456,10 +9492,10 @@
       {
         "Title": "glmGamPoi: Fitting Gamma-Poisson Generalized Linear Models on Single Cell Count Data",
         "DOI": "10.1101/2020.08.13.249623",
-        "Citations": 3
+        "Citations": 2
       }
     ],
-    "Citations": 25,
+    "Citations": 24,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "glmGamPoi",
@@ -18635,6 +18671,29 @@
     "GitHub": "BMILAB/scAPAtrap"
   },
   {
+    "Tool": "SCAPE",
+    "Platform": "Python",
+    "Code": "https://github.com/LuChenLab/SCAPE",
+    "Description": "SCAPE is a tool for estimating alternative polyadenylation (APA) events from single-end or pair-end scRNA-seq data",
+    "License": "MIT",
+    "Added": "2022-03-25",
+    "Updated": "2022-03-25",
+    "Categories": ["AlternativeSplicing", "Quantification"],
+    "Publications": [
+      {
+        "Title": "SCAPE: a mixture model revealing single-cell polyadenylation diversity and cellular dynamics during cell differentiation and reprogramming",
+        "DOI": "10.1093/nar/gkac167",
+        "Date": "2022-03-14",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "LuChenLab/SCAPE"
+  },
+  {
     "Tool": "SCAPTURE",
     "Platform": "Shell/Python/R",
     "Code": "https://github.com/YangLab/SCAPTURE",
@@ -19738,10 +19797,10 @@
       {
         "Title": "Dynamic Analysis of Alternative Polyadenylation from Single-Cell RNA-Seq (scDaPars) Reveals Cell Subpopulations Invisible to Gene Expression Analysis",
         "DOI": "10.1101/2020.09.23.310649",
-        "Citations": 2
+        "Citations": 1
       }
     ],
-    "Citations": 9,
+    "Citations": 8,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "YiPeng-Gao/scDaPars"
@@ -20581,7 +20640,7 @@
         "Title": "A scalable SCENIC workflow for single-cell gene regulatory network analysis",
         "DOI": "10.1038/s41596-020-0336-2",
         "Date": "2020-06-19",
-        "Citations": 97
+        "Citations": 98
       }
     ],
     "Preprints": [
@@ -20591,7 +20650,7 @@
         "Citations": 6
       }
     ],
-    "Citations": 1289,
+    "Citations": 1290,
     "NumPubs": 2,
     "NumPreprints": 1,
     "PyPI": "pyscenic",
@@ -22360,6 +22419,29 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "TianLab-Bioinfo/scMAGIC"
+  },
+  {
+    "Tool": "scMAGS",
+    "Platform": "Python",
+    "Code": "https://github.com/doganlab/scmags",
+    "Description": "scmags selects marker genes from scRNA-seq data that are exclusive to each cell type such that, selected marker genes are highly expressed in a specific cell type while lowly expressed in other cell types",
+    "License": "Apache-2.0",
+    "Added": "2022-03-25",
+    "Updated": "2022-03-25",
+    "Categories": ["DimensionalityReduction", "GeneFiltering", "MarkerGenes", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "scMAGS: Marker gene selection from scRNA-seq data for spatial transcriptomics studies",
+        "DOI": "10.1101/2022.03.22.485261",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "PyPI": "scmags",
+    "GitHub": "doganlab/scmags"
   },
   {
     "Tool": "scmap",
@@ -25014,6 +25096,23 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "ZJUFanLab/scTITANS"
+  },
+  {
+    "Tool": "scTOP",
+    "Platform": "Python",
+    "Code": "https://github.com/Emergent-Behaviors-in-Biology/scTOP",
+    "Description": "A Python package for finding projections onto known cell phenotyes, given matrices of raw RNA count data",
+    "License": "GPL-3.0",
+    "Added": "2022-03-25",
+    "Updated": "2022-03-25",
+    "Categories": ["Classification"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "PyPI": "scTOP",
+    "GitHub": "Emergent-Behaviors-in-Biology/scTOP"
   },
   {
     "Tool": "sctransform",
@@ -28787,6 +28886,28 @@
     "GitHub": "Galaxeee/TedSim"
   },
   {
+    "Tool": "Tempo",
+    "Platform": "Python",
+    "Code": "https://github.com/bauerbach95/tempo",
+    "Description": "A Bayesian Algorithm for Circadian Phase Inference in Single-Cell RNA-Sequencing Data",
+    "License": "MIT",
+    "Added": "2022-03-25",
+    "Updated": "2022-03-25",
+    "Categories": ["CellCycle"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Tempo: an unsupervised Bayesian algorithm for circadian phase inference in single-cell transcriptomics",
+        "DOI": "10.1101/2022.03.15.484454",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "bauerbach95/tempo"
+  },
+  {
     "Tool": "Tempora",
     "Platform": "R",
     "Code": "https://github.com/BaderLab/Tempora",
@@ -29828,10 +29949,10 @@
       {
         "Title": "UniPath: A uniform approach for pathway and gene-set based analysis of heterogeneity in single-cell epigenome and transcriptome profiles",
         "DOI": "10.1101/864389",
-        "Citations": 1
+        "Citations": 0
       }
     ],
-    "Citations": 4,
+    "Citations": 3,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "reggenlab/UniPath"
