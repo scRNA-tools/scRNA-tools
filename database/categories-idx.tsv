@@ -109,8 +109,11 @@ BALDR	Assembly
 BALDR	Immune
 BAMMSC	Clustering
 BAMMSC	Integration
+BarCounter	Quantification
 baredSC	Quantification
 baredSC	Visualisation
+BarMixer	QualityControl
+BarMixer	Visualisation
 BASIC	Assembly
 BASIC	Immune
 BASiCS	DifferentialExpression
@@ -225,6 +228,7 @@ BREM-SC	Clustering
 BREM-SC	Integration
 BRIE	AlternativeSplicing
 BRIE	Quantification
+BSDE	DifferentialExpression
 bseqsc	DifferentialExpression
 bseqsc	Integration
 bseqsc	Visualisation
@@ -705,6 +709,8 @@ DIscBIO	VariableGenes
 DIscBIO	Visualisation
 DISCERN	Imputation
 DISCO	AlternativeSplicing
+DiSiR	GeneNetworks
+DiSiR	Visualisation
 distinct	DifferentialExpression
 DistMap	Classification
 DistMap	Visualisation
@@ -798,6 +804,7 @@ dynverse	Visualisation
 ECLAIR	Clustering
 ECLAIR	Ordering
 ECLAIR	Visualisation
+EDClust	Clustering
 EDGE	DimensionalityReduction
 EDGE	VariableGenes
 EEISP	GeneNetworks
@@ -1580,6 +1587,10 @@ PopAlign	Clustering
 PopAlign	DifferentialExpression
 PopAlign	DimensionalityReduction
 PopAlign	Perturbations
+popsicleR	Clustering
+popsicleR	Normalisation
+popsicleR	QualityControl
+popsicleR	Visualisation
 Portal	DimensionalityReduction
 Portal	Integration
 powerEQTL	Variants
@@ -1612,6 +1623,8 @@ PseudotimeDE	Visualisation
 PsiNorm	Normalisation
 Psix	AlternativeSplicing
 Psix	Visualisation
+psupertime	Ordering
+psupertime	Visualisation
 pyHSICLasso	MarkerGenes
 PyMINEr	Clustering
 PyMINEr	DimensionalityReduction
@@ -1818,6 +1831,7 @@ scAlign	DimensionalityReduction
 scAlign	Integration
 scAlign	RareCells
 scAlleleCount	AlleleSpecific
+Scallop2	Assembly
 scAMACE	Clustering
 scAMACE	Integration
 scAMACE_py	Clustering
