@@ -611,7 +611,7 @@
         "Title": "SCENIC: single-cell regulatory network inference and clustering",
         "DOI": "10.1038/nmeth.4463",
         "Date": "2017-10-09",
-        "Citations": 1207
+        "Citations": 1208
       }
     ],
     "Preprints": [
@@ -621,7 +621,7 @@
         "Citations": 6
       }
     ],
-    "Citations": 1213,
+    "Citations": 1214,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "AUCell",
@@ -3093,7 +3093,7 @@
         "Title": "Inference and analysis of cell-cell communication using CellChat",
         "DOI": "10.1038/s41467-021-21246-9",
         "Date": "2021-02-17",
-        "Citations": 194
+        "Citations": 195
       }
     ],
     "Preprints": [
@@ -3103,7 +3103,7 @@
         "Citations": 21
       }
     ],
-    "Citations": 215,
+    "Citations": 216,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "sqjin/CellChat"
@@ -6059,6 +6059,36 @@
     "GitHub": "shmohammadi86/DECODE"
   },
   {
+    "Tool": "decoupler",
+    "Platform": "Python",
+    "Code": "https://github.com/saezlab/decoupler-py",
+    "Description": "decoupler is a package containing different statistical methods to extract biological activities from omics data within a unified framework",
+    "License": "GPL-3.0",
+    "Added": "2022-04-08",
+    "Updated": "2022-04-08",
+    "Categories": ["GeneNetworks", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "decoupleR: ensemble of computational methods to infer biological activities from omics data",
+        "DOI": "10.1093/bioadv/vbac016",
+        "Date": "2022-03-08",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "decoupleR: Ensemble of computational methods to infer biological activities from omics data",
+        "DOI": "10.1101/2021.11.04.467271",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "PyPI": "decoupler",
+    "GitHub": "saezlab/decoupler-py"
+  },
+  {
     "Tool": "deCS",
     "Platform": "R",
     "Code": "https://github.com/GuangshengPei/deCS",
@@ -8719,6 +8749,27 @@
     "GitHub": "YosefLab/FastProject"
   },
   {
+    "Tool": "FateCompass",
+    "Platform": "MATLAB",
+    "Code": "https://github.com/sarajimenez/fatecompass",
+    "Description": "FateCompass is a flexible pipeline to estimate dynamic stochastic trajectories of gene expression and transcription factor activities during cell-fate decision using single-cell RNA seq data",
+    "Added": "2022-04-08",
+    "Updated": "2022-04-08",
+    "Categories": ["Ordering", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Characterization of cell-fate decision landscapes by estimating transcription factor dynamics",
+        "DOI": "10.1101/2022.04.01.486696",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "sarajimenez/fatecompass"
+  },
+  {
     "Tool": "FateID",
     "Platform": "R",
     "Code": "https://github.com/dgrun/FateID",
@@ -9618,10 +9669,10 @@
       {
         "Title": "glmGamPoi: Fitting Gamma-Poisson Generalized Linear Models on Single Cell Count Data",
         "DOI": "10.1101/2020.08.13.249623",
-        "Citations": 3
+        "Citations": 2
       }
     ],
-    "Citations": 27,
+    "Citations": 26,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "glmGamPoi",
@@ -10629,10 +10680,10 @@
       {
         "Title": "Hypercluster: a flexible tool for parallelized unsupervised clustering optimization",
         "DOI": "10.1101/2020.01.13.905323",
-        "Citations": 2
+        "Citations": 1
       }
     ],
-    "Citations": 3,
+    "Citations": 2,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "hypercluster",
@@ -11749,6 +11800,30 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "wanglab-georgetown/JOINT"
+  },
+  {
+    "Tool": "JSNMF_py",
+    "Platform": "Python",
+    "Code": "https://github.com/cuhklinlab/JSNMF_py",
+    "Description": "Joint analysis of scRNA-seq and epigenomic-seq data via semi-orthogonal nonnegative matrix factorization",
+    "License": "MIT",
+    "Added": "2022-04-08",
+    "Updated": "2022-04-08",
+    "Categories": ["Clustering", "GeneSets", "Integration", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "JSNMF enables effective and accurate integrative analysis of single-cell multiomics data",
+        "DOI": "10.1093/bib/bbac105",
+        "Date": "2022-04-04",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "PyPI": "JSNMF-py",
+    "GitHub": "cuhklinlab/JSNMF_py"
   },
   {
     "Tool": "JSOM",
@@ -13854,19 +13929,19 @@
         "Title": "The dynamics and regulators of cell fate decisions are revealed by pseudotemporal ordering of single cells",
         "DOI": "10.1038/nbt.2859",
         "Date": "2014-03-23",
-        "Citations": 2724
+        "Citations": 2725
       },
       {
         "Title": "Single-cell mRNA quantification and differential analysis with Census",
         "DOI": "10.1038/nmeth.4150",
         "Date": "2017-01-23",
-        "Citations": 675
+        "Citations": 676
       },
       {
         "Title": "Reversed graph embedding resolves complex single-cell trajectories",
         "DOI": "10.1038/nmeth.4402",
         "Date": "2017-08-21",
-        "Citations": 1310
+        "Citations": 1311
       }
     ],
     "Preprints": [
@@ -13876,7 +13951,7 @@
         "Citations": 44
       }
     ],
-    "Citations": 4753,
+    "Citations": 4756,
     "NumPubs": 3,
     "NumPreprints": 1,
     "Bioc": "monocle",
@@ -17590,7 +17665,7 @@
         "Title": "The R package Rsubread is easier, faster, cheaper and better for alignment and quantification of RNA sequencing reads",
         "DOI": "10.1093/nar/gkz114",
         "Date": "2019-02-20",
-        "Citations": 728
+        "Citations": 729
       }
     ],
     "Preprints": [
@@ -17600,7 +17675,7 @@
         "Citations": 22
       }
     ],
-    "Citations": 750,
+    "Citations": 751,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "Rsubread"
@@ -18579,6 +18654,28 @@
     "GitHub": "quon-titative-biology/scAlign"
   },
   {
+    "Tool": "scAllele",
+    "Platform": "Python",
+    "Code": "https://github.com/gxiaolab/scAllele",
+    "Description": "scAllele is a versatile tool to detect and analyze nucleotide variants in scRNA-seq",
+    "License": "MIT",
+    "Added": "2022-04-08",
+    "Updated": "2022-04-08",
+    "Categories": ["AlternativeSplicing", "Variants"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "scAllele: a versatile tool for the detection and analysis of variants in scRNA-seq",
+        "DOI": "10.1101/2022.03.29.486330",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "gxiaolab/scAllele"
+  },
+  {
     "Tool": "scAlleleCount",
     "Platform": "Python/R",
     "Code": "https://github.com/barkasn/scAlleleCount",
@@ -18701,6 +18798,22 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "ETH-NEXUS/scAmpi_single_cell_RNA"
+  },
+  {
+    "Tool": "scanalysis",
+    "Platform": "R",
+    "Code": "https://github.com/keshav-motwani/scanalysis",
+    "Description": "Multi-Sample Visualization and Immune Repertoire Analysis Utilities for Single-Cell Data",
+    "License": "MIT",
+    "Added": "2022-04-08",
+    "Updated": "2022-04-08",
+    "Categories": ["Immune", "QualityControl", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "GitHub": "keshav-motwani/scanalysis"
   },
   {
     "Tool": "scAnCluster",
@@ -19063,11 +19176,11 @@
   {
     "Tool": "Scater",
     "Platform": "R",
-    "Code": "https://github.com/davismcc/scater",
+    "Code": "https://github.com/Alanocallaghan/scater",
     "Description": "A collection of tools for various analyses of single-cell RNA-seq data with a focus on quality control and visualisation",
-    "License": "GPL-2.0-or-later",
+    "License": "GPL-3.0",
     "Added": "2016-09-08",
-    "Updated": "2020-10-30",
+    "Updated": "2022-04-08",
     "Categories": ["DimensionalityReduction", "QualityControl", "Visualisation"],
     "Publications": [
       {
@@ -19088,7 +19201,7 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "scater",
-    "GitHub": "davismcc/scater"
+    "GitHub": "Alanocallaghan/scater"
   },
   {
     "Tool": "SCATrEx",
@@ -20835,7 +20948,7 @@
         "Title": "SCENIC: single-cell regulatory network inference and clustering",
         "DOI": "10.1038/nmeth.4463",
         "Date": "2017-10-09",
-        "Citations": 1207
+        "Citations": 1208
       },
       {
         "Title": "A scalable SCENIC workflow for single-cell gene regulatory network analysis",
@@ -20851,7 +20964,7 @@
         "Citations": 6
       }
     ],
-    "Citations": 1314,
+    "Citations": 1315,
     "NumPubs": 2,
     "NumPreprints": 1,
     "PyPI": "pyscenic",
@@ -25999,6 +26112,28 @@
     "GitHub": "Jinsl-lab/SDImpute"
   },
   {
+    "Tool": "SEACells",
+    "Platform": "Python",
+    "Code": "https://github.com/dpeerlab/SEACells",
+    "Description": "Single-cEll Aggregation for High Resolution Cell States",
+    "License": "GPL-2.0",
+    "Added": "2022-04-08",
+    "Updated": "2022-04-08",
+    "Categories": ["Clustering", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "SEACells: Inference of transcriptional and epigenomic cellular states from single-cell genomics data",
+        "DOI": "10.1101/2022.04.02.486748",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "dpeerlab/SEACells"
+  },
+  {
     "Tool": "secDrug",
     "Platform": "R",
     "Code": "https://github.com/Ujjal-Mukherjee/secDrug",
@@ -26288,25 +26423,25 @@
         "Title": "Comprehensive Integration of Single-Cell Data",
         "DOI": "10.1016/j.cell.2019.05.031",
         "Date": "2019-06",
-        "Citations": 4474
+        "Citations": 4476
       },
       {
         "Title": "Integrated analysis of multimodal single-cell data",
         "DOI": "10.1016/j.cell.2021.04.048",
         "Date": "2021-06",
-        "Citations": 570
+        "Citations": 571
       },
       {
         "Title": "Spatial reconstruction of single-cell gene expression data",
         "DOI": "10.1038/nbt.3192",
         "Date": "2015-04-13",
-        "Citations": 2246
+        "Citations": 2247
       },
       {
         "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
         "DOI": "10.1038/nbt.4096",
         "Date": "2018-04-02",
-        "Citations": 4880
+        "Citations": 4881
       },
       {
         "Title": "Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression",
@@ -26342,7 +26477,7 @@
         "Citations": 76
       }
     ],
-    "Citations": 13398,
+    "Citations": 13403,
     "NumPubs": 5,
     "NumPreprints": 5,
     "CRAN": "Seurat",
@@ -27080,6 +27215,29 @@
     "Citations": 8,
     "NumPubs": 1,
     "NumPreprints": 0
+  },
+  {
+    "Tool": "SingCellaR",
+    "Platform": "R/C++",
+    "Code": "https://github.com/supatt-lab/SingCellaR",
+    "Description": "An integrative analysis tool for analysing single-cell RNA sequencing data",
+    "License": "GPL-3.0",
+    "Added": "2022-04-08",
+    "Updated": "2022-04-08",
+    "Categories": ["CellCycle", "Clustering", "DifferentialExpression", "DimensionalityReduction", "GeneFiltering", "GeneSets", "Integration", "MarkerGenes", "QualityControl", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "Processing single-cell RNA-seq datasets using SingCellaR",
+        "DOI": "10.1016/j.xpro.2022.101266",
+        "Date": "2022-06",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "supatt-lab/SingCellaR"
   },
   {
     "Tool": "SINGE",
@@ -28444,7 +28602,7 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 20057
+        "Citations": 20058
       }
     ],
     "Preprints": [
@@ -28454,7 +28612,7 @@
         "Citations": 30
       }
     ],
-    "Citations": 20087,
+    "Citations": 20088,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "alexdobin/STAR"
@@ -30151,10 +30309,10 @@
       {
         "Title": "UniPath: A uniform approach for pathway and gene-set based analysis of heterogeneity in single-cell epigenome and transcriptome profiles",
         "DOI": "10.1101/864389",
-        "Citations": 0
+        "Citations": 1
       }
     ],
-    "Citations": 3,
+    "Citations": 4,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "reggenlab/UniPath"
