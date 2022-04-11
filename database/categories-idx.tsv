@@ -620,6 +620,8 @@ ddSeeker	UMIs
 DECENT	DifferentialExpression
 DECENT	Imputation
 DECODE	Imputation
+decoupler	GeneNetworks
+decoupler	Visualisation
 deCS	Classification
 DEEF	DimensionalityReduction
 DeepCycle	CellCycle
@@ -859,6 +861,8 @@ FastProject	DimensionalityReduction
 FastProject	GeneSets
 FastProject	Interactive
 FastProject	Visualisation
+FateCompass	Ordering
+FateCompass	Visualisation
 FateID	Classification
 FateID	DifferentialExpression
 FateID	StemCells
@@ -1145,6 +1149,10 @@ JIND	Integration
 JOINT	Clustering
 JOINT	DifferentialExpression
 JOINT	Imputation
+JSNMF_py	Clustering
+JSNMF_py	GeneSets
+JSNMF_py	Integration
+JSNMF_py	Visualisation
 JSOM	Clustering
 JSOM	DimensionalityReduction
 JSOM	Integration
@@ -1830,6 +1838,8 @@ SCALEX	Visualisation
 scAlign	DimensionalityReduction
 scAlign	Integration
 scAlign	RareCells
+scAllele	AlternativeSplicing
+scAllele	Variants
 scAlleleCount	AlleleSpecific
 Scallop2	Assembly
 scAMACE	Clustering
@@ -1843,6 +1853,9 @@ scAmpi	DifferentialExpression
 scAmpi	Normalisation
 scAmpi	QualityControl
 scAmpi	Quantification
+scanalysis	Immune
+scanalysis	QualityControl
+scanalysis	Visualisation
 scAnCluster	Classification
 scAnCluster	Clustering
 scAnCluster	MarkerGenes
@@ -2534,6 +2547,8 @@ scziDesk	Clustering
 scziDesk	DimensionalityReduction
 SDAMS	Modality
 SDImpute	Imputation
+SEACells	Clustering
+SEACells	Visualisation
 secDrug	Perturbations
 SEDIM	Imputation
 SEGtool	GeneFiltering
@@ -2658,6 +2673,16 @@ SINCERITIES	GeneNetworks
 SinCHet	Clustering
 SinCHet	Interactive
 SinCHet	Visualisation
+SingCellaR	CellCycle
+SingCellaR	Clustering
+SingCellaR	DifferentialExpression
+SingCellaR	DimensionalityReduction
+SingCellaR	GeneFiltering
+SingCellaR	GeneSets
+SingCellaR	Integration
+SingCellaR	MarkerGenes
+SingCellaR	QualityControl
+SingCellaR	Visualisation
 SINGE	GeneNetworks
 SingleCellExplorer	Interactive
 SingleCellExplorer	Visualisation
