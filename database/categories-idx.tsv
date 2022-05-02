@@ -128,6 +128,8 @@ batchelor	Integration
 BATMAN	Integration
 BayesEATS	Clustering
 BayesEATS	Integration
+BayesPrism	DimensionalityReduction
+BayesPrism	Integration
 bayNorm	Imputation
 bayNorm	Normalisation
 bayNorm	Simulation
@@ -243,6 +245,10 @@ bustools	Quantification
 bustools	UMIs
 BZINB	Simulation
 CACTUS	Variants
+CAISC	Clustering
+CAISC	Integration
+CAISC	Variants
+CAISC	Visualisation
 CALISTA	Clustering
 CALISTA	Normalisation
 CALISTA	Ordering
@@ -336,6 +342,9 @@ CellCall	GeneSets
 CellCall	Visualisation
 CellChat	GeneNetworks
 CellChat	Visualisation
+CellDrift	Ordering
+CellDrift	Perturbations
+CellDrift	Visualisation
 CellexalVR	Interactive
 CellexalVR	Visualisation
 CellFishing	Classification
@@ -614,6 +623,8 @@ DCA	Imputation
 DCA_R	DimensionalityReduction
 DCATS	DifferentialExpression
 DCATS	Simulation
+DCLEAR	Ordering
+DCLEAR	Simulation
 ddqc	QualityControl
 ddSeeker	QualityControl
 ddSeeker	UMIs
@@ -780,7 +791,9 @@ DSAVE-M	Classification
 DSAVE-M	Visualisation
 DSAVE-R	Classification
 DSAVE-R	Visualisation
+dsb	Immune
 dsb	Normalisation
+dsb	Transformation
 DTAE	DimensionalityReduction
 DTFLOW	Ordering
 DTFLOW	Visualisation
@@ -1234,6 +1247,7 @@ LinQView	Visualisation
 locCSN	GeneNetworks
 LRLoop	GeneNetworks
 LRLoop	Visualisation
+LRT	Immune
 LTMGSCA	Clustering
 LTMGSCA	DifferentialExpression
 LTMGSCA	DimensionalityReduction
@@ -2113,6 +2127,7 @@ scGPS	Clustering
 scGPS	MarkerGenes
 scGPS	VariableGenes
 scGPS	Visualisation
+scGraph	Classification
 scGTM	ExpressionPatterns
 scGTM	Visualisation
 schema	DifferentialExpression
@@ -2144,6 +2159,7 @@ scHPF	ExpressionPatterns
 scHPL	Classification
 scIAE	Classification
 scIB	Integration
+SCIBER	Integration
 SciBet	Classification
 SciBet	VariableGenes
 sciCAN	Integration
@@ -2404,6 +2420,8 @@ scRNABatchQC	Integration
 scRNABatchQC	QualityControl
 scRNABatchQC	Visualisation
 scRNAss	Assembly
+scROSHI	Clustering
+scROSHI	GeneSets
 Scrublet	QualityControl
 scruff	Alignment
 scruff	Quantification
@@ -2651,6 +2669,7 @@ SIMLR	Clustering
 SIMLR	DimensionalityReduction
 SIMLR	Visualisation
 SIMPLEs	Imputation
+SIMS	Classification
 simspec	Classification
 simspec	Clustering
 simspec	DimensionalityReduction
@@ -2861,8 +2880,6 @@ TBSP	Visualisation
 TCM	DimensionalityReduction
 TCM	Visualisation
 TDL	GeneNetworks
-TED	DimensionalityReduction
-TED	Integration
 TedSim	DimensionalityReduction
 TedSim	Simulation
 TedSim	Visualisation
@@ -2977,6 +2994,7 @@ uSORT	QualityControl
 uSORT	VariableGenes
 VAE-SNE	Clustering
 VAE-SNE	DimensionalityReduction
+vaeda	QualityControl
 VALERIE	AlternativeSplicing
 VALERIE	Visualisation
 VAM	GeneSets
