@@ -385,7 +385,7 @@ clear_database_cache <- function(dir) {
 
         if (mod_diff > 2) {
             usethis::ui_info(
-                "Database cache out of data. Clearing database cache..."
+                "Database cache out of date. Clearing database cache..."
             )
             fs::file_delete(cache_file)
         }
