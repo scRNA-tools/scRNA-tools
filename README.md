@@ -59,21 +59,22 @@ If you make use of our analysis of the first 1000 tools in the database please
 also cite:
 
 > Zappia L, Theis FJ. _"Over 1000 tools reveal trends in the single-cell RNA-seq
-> analysis landscape"_, **bioRxiv** (2021),
-> DOI: [10.1101/2021.08.13.456196](https://doi.org/10.1101/2021.08.13.456196)
+> analysis landscape"_, **Genome Biology** (2021),
+> DOI: [10.1186/s13059-021-02519-4](https://doi.org/10.1186/s13059-021-02519-4)
 
 ```bibtex
-
-@UNPUBLISHED{,
+@ARTICLE{,
   title    = "Over 1000 tools reveal trends in the single-cell {RNA-seq}
               analysis landscape",
   author   = "Zappia, Luke and Theis, Fabian J",
-  journal  = "bioRxiv",
-  pages    = "2021.08.13.456196",
-  month    =  aug,
+  journal  = "Genome Biol.",
+  volume   =  22,
+  number   =  1,
+  pages    = "301",
+  month    =  oct,
   year     =  2021,
-  language = "en",
-  doi      = "10.1101/2021.08.13.456196",
-  url      = "https://doi.org/10.1101/2021.08.13.456196"
+  language = "en"
+  doi      = "10.1186/s13059-021-02519-4",
+  url      = "https://doi.org/10.1186/s13059-021-02519-4"
 }
 ```
