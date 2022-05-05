@@ -66,7 +66,30 @@ add_tool <- function(database, pkgs_cache) {
         }
     }
     
-    platform <- prompt_platform()
+    if (has_gh) {
+        platform <- get_gh_platform(gh)
+        
+        if (is.na(platform) || platform == "NOASSERTION") {
+            platform <- prompt_platform()
+        } else {
+            usethis::ui_done(glue::glue(
+                "Found GitHub platform for {usethis::ui_value(name)} at ", 
+                "{usethis::ui_value(code)}"
+            ))
+            use <- prompt_yn(glue::glue(
+                "Do you want to use {usethis::ui_value(platform)} (y/n)?:"
+            ))
+            if (!use) {
+                platform <- prompt_platform()
+            }
+        }
+    } else {
+        usethis::ui_oops(glue::glue(
+            "No GitHub platform for {usethis::ui_value(name)} at ", 
+            "{usethis::ui_value(code)}}"
+        ))
+        platform <- prompt_platform()
+    }
     
     if (has_gh) {
         license <- get_gh_license(gh)
@@ -79,7 +102,7 @@ add_tool <- function(database, pkgs_cache) {
                 "{usethis::ui_value(code)}"
             ))
             use <- prompt_yn(glue::glue(
-                "Do you want to use the {usethis::ui_value(license)}",
+                "Do you want to use the {usethis::ui_value(license)} ",
                 "license (y/n)?:"
             ))
             if (!use) {
