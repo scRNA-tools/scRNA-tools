@@ -44,6 +44,11 @@ jobs:
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
           renv::restore()
 
+      - name: Install git2r
+        shell: Rscript {0}
+        run: |
+          renv::install("git2r", type = "source", rebuild = TRUE, repos = c(CRAN = "http://cran.rstudio.com"))
+
       - name: Diagnostics
         shell: Rscript {0}
         run: |
