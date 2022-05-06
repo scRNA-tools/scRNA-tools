@@ -8,6 +8,7 @@
       "y": [0.412379421221865, 0.245980707395498, 0.242765273311897, 0.141479099678457, 0.118167202572347, 0.115755627009646, 0.114951768488746, 0.106109324758842, 0.102893890675241, 0.10048231511254, 0.0860128617363344, 0.0755627009646302, 0.069935691318328, 0.0643086816720257, 0.0635048231511254, 0.0610932475884244, 0.0602893890675241, 0.0458199356913183, 0.042604501607717, 0.0361736334405145, 0.0345659163987138, 0.0337620578778135, 0.0273311897106109, 0.022508038585209, 0.0217041800643087, 0.0176848874598071, 0.0120578778135048, 0.00723472668810289, 0.00643086816720257, 0.00562700964630225, 0.00562700964630225, 0.00482315112540193, 0.00160771704180064],
       "text": ["Category: Visualisation<br />Count: 513<br />Percent: 41.2", "Category: Clustering<br />Count: 306<br />Percent: 24.6", "Category: Dimensionality Reduction<br />Count: 302<br />Percent: 24.3", "Category: Integration<br />Count: 176<br />Percent: 14.1", "Category: Gene Networks<br />Count: 147<br />Percent: 11.8", "Category: Ordering<br />Count: 144<br />Percent: 11.6", "Category: Classification<br />Count: 143<br />Percent: 11.5", "Category: Differential Expression<br />Count: 132<br />Percent: 10.6", "Category: Quality Control<br />Count: 128<br />Percent: 10.3", "Category: Normalisation<br />Count: 125<br />Percent: 10", "Category: Marker Genes<br />Count: 107<br />Percent: 8.6", "Category: Interactive<br />Count: 94<br />Percent: 7.6", "Category: Gene Sets<br />Count: 87<br />Percent: 7", "Category: Imputation<br />Count: 80<br />Percent: 6.4", "Category: Simulation<br />Count: 79<br />Percent: 6.4", "Category: Quantification<br />Count: 76<br />Percent: 6.1", "Category: Variable Genes<br />Count: 75<br />Percent: 6", "Category: Gene Filtering<br />Count: 57<br />Percent: 4.6", "Category: Variants<br />Count: 53<br />Percent: 4.3", "Category: Alignment<br />Count: 45<br />Percent: 3.6", "Category: UMIs<br />Count: 43<br />Percent: 3.5", "Category: Expression Patterns<br />Count: 42<br />Percent: 3.4", "Category: Alternative Splicing<br />Count: 34<br />Percent: 2.7", "Category: Cell Cycle<br />Count: 28<br />Percent: 2.3", "Category: Immune<br />Count: 27<br />Percent: 2.2", "Category: Perturbations<br />Count: 22<br />Percent: 1.8", "Category: Rare Cells<br />Count: 15<br />Percent: 1.2", "Category: Assembly<br />Count: 9<br />Percent: 0.7", "Category: Transformation<br />Count: 8<br />Percent: 0.6", "Category: Modality<br />Count: 7<br />Percent: 0.6", "Category: Stem Cells<br />Count: 7<br />Percent: 0.6", "Category: Allele Specific<br />Count: 6<br />Percent: 0.5", "Category: Haplotypes<br />Count: 2<br />Percent: 0.2"],
       "type": "bar",
+      "textposition": "none",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(122,82,199,1)",
@@ -83,10 +84,10 @@
       "autorange": false,
       "range": [-0.0206189710610932, 0.432998392282958],
       "tickmode": "array",
-      "ticktext": ["0.0%", "10.0%", "20.0%", "30.0%", "40.0%"],
+      "ticktext": ["0%", "10%", "20%", "30%", "40%"],
       "tickvals": [0, 0.1, 0.2, 0.3, 0.4],
       "categoryorder": "array",
-      "categoryarray": ["0.0%", "10.0%", "20.0%", "30.0%", "40.0%"],
+      "categoryarray": ["0%", "10%", "20%", "30%", "40%"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(0,0,0,1)",
@@ -152,21 +153,22 @@
   },
   "config": {
     "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
     "showSendToCloud": false,
     "responsive": true
   },
   "source": "A",
   "attrs": {
-    "225e50f77a4b": {
+    "3d11aa5d846": {
       "x": {},
       "y": {},
       "text": {},
       "type": "bar"
     }
   },
-  "cur_data": "225e50f77a4b",
+  "cur_data": "3d11aa5d846",
   "visdat": {
-    "225e50f77a4b": ["function (y) ", "x"]
+    "3d11aa5d846": ["function (y) ", "x"]
   },
   "highlight": {
     "on": "plotly_click",

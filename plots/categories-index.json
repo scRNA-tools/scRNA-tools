@@ -8,6 +8,7 @@
       "y": [0.412379421221865, 0.245980707395498, 0.242765273311897, 0.141479099678457, 0.118167202572347, 0.115755627009646, 0.114951768488746, 0.106109324758842, 0.102893890675241, 0.10048231511254, 0.0860128617363344, 0.0755627009646302, 0.069935691318328, 0.0643086816720257, 0.0635048231511254, 0.0610932475884244, 0.0602893890675241, 0.0458199356913183, 0.042604501607717, 0.0361736334405145, 0.0345659163987138, 0.0337620578778135, 0.0273311897106109, 0.022508038585209, 0.0217041800643087, 0.0176848874598071, 0.0120578778135048, 0.00723472668810289, 0.00643086816720257, 0.00562700964630225, 0.00562700964630225, 0.00482315112540193, 0.00160771704180064],
       "text": ["Category: Visualisation<br />Prop: 0.412379421<br />Count: 513<br />Percent: 41.2", "Category: Clustering<br />Prop: 0.245980707<br />Count: 306<br />Percent: 24.6", "Category: Dimensionality Reduction<br />Prop: 0.242765273<br />Count: 302<br />Percent: 24.3", "Category: Integration<br />Prop: 0.141479100<br />Count: 176<br />Percent: 14.1", "Category: Gene Networks<br />Prop: 0.118167203<br />Count: 147<br />Percent: 11.8", "Category: Ordering<br />Prop: 0.115755627<br />Count: 144<br />Percent: 11.6", "Category: Classification<br />Prop: 0.114951768<br />Count: 143<br />Percent: 11.5", "Category: Differential Expression<br />Prop: 0.106109325<br />Count: 132<br />Percent: 10.6", "Category: Quality Control<br />Prop: 0.102893891<br />Count: 128<br />Percent: 10.3", "Category: Normalisation<br />Prop: 0.100482315<br />Count: 125<br />Percent: 10", "Category: Marker Genes<br />Prop: 0.086012862<br />Count: 107<br />Percent: 8.6", "Category: Interactive<br />Prop: 0.075562701<br />Count: 94<br />Percent: 7.6", "Category: Gene Sets<br />Prop: 0.069935691<br />Count: 87<br />Percent: 7", "Category: Imputation<br />Prop: 0.064308682<br />Count: 80<br />Percent: 6.4", "Category: Simulation<br />Prop: 0.063504823<br />Count: 79<br />Percent: 6.4", "Category: Quantification<br />Prop: 0.061093248<br />Count: 76<br />Percent: 6.1", "Category: Variable Genes<br />Prop: 0.060289389<br />Count: 75<br />Percent: 6", "Category: Gene Filtering<br />Prop: 0.045819936<br />Count: 57<br />Percent: 4.6", "Category: Variants<br />Prop: 0.042604502<br />Count: 53<br />Percent: 4.3", "Category: Alignment<br />Prop: 0.036173633<br />Count: 45<br />Percent: 3.6", "Category: UMIs<br />Prop: 0.034565916<br />Count: 43<br />Percent: 3.5", "Category: Expression Patterns<br />Prop: 0.033762058<br />Count: 42<br />Percent: 3.4", "Category: Alternative Splicing<br />Prop: 0.027331190<br />Count: 34<br />Percent: 2.7", "Category: Cell Cycle<br />Prop: 0.022508039<br />Count: 28<br />Percent: 2.3", "Category: Immune<br />Prop: 0.021704180<br />Count: 27<br />Percent: 2.2", "Category: Perturbations<br />Prop: 0.017684887<br />Count: 22<br />Percent: 1.8", "Category: Rare Cells<br />Prop: 0.012057878<br />Count: 15<br />Percent: 1.2", "Category: Assembly<br />Prop: 0.007234727<br />Count: 9<br />Percent: 0.7", "Category: Transformation<br />Prop: 0.006430868<br />Count: 8<br />Percent: 0.6", "Category: Modality<br />Prop: 0.005627010<br />Count: 7<br />Percent: 0.6", "Category: Stem Cells<br />Prop: 0.005627010<br />Count: 7<br />Percent: 0.6", "Category: Allele Specific<br />Prop: 0.004823151<br />Count: 6<br />Percent: 0.5", "Category: Haplotypes<br />Prop: 0.001607717<br />Count: 2<br />Percent: 0.2"],
       "type": "bar",
+      "textposition": "none",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(122,82,199,1)",
@@ -84,10 +85,10 @@
       "autorange": false,
       "range": [-0.0206189710610932, 0.432998392282958],
       "tickmode": "array",
-      "ticktext": ["0.0%", "10.0%", "20.0%", "30.0%", "40.0%"],
+      "ticktext": ["0%", "10%", "20%", "30%", "40%"],
       "tickvals": [0, 0.1, 0.2, 0.3, 0.4],
       "categoryorder": "array",
-      "categoryarray": ["0.0%", "10.0%", "20.0%", "30.0%", "40.0%"],
+      "categoryarray": ["0%", "10%", "20%", "30%", "40%"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(0,0,0,1)",
@@ -154,21 +155,22 @@
   },
   "config": {
     "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
     "showSendToCloud": false,
     "displayModeBar": false
   },
   "source": "A",
   "attrs": {
-    "225e1bad05e4": {
+    "3d11e5a5902": {
       "x": {},
       "y": {},
       "text": {},
       "type": "bar"
     }
   },
-  "cur_data": "225e1bad05e4",
+  "cur_data": "3d11e5a5902",
   "visdat": {
-    "225e1bad05e4": ["function (y) ", "x"]
+    "3d11e5a5902": ["function (y) ", "x"]
   },
   "highlight": {
     "on": "plotly_click",
