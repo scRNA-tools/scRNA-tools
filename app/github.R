@@ -27,6 +27,13 @@ ping_gh_repo <- function(repo, newline = FALSE) {
     return(FALSE)
 }
 
+#' Get GitHub license
+#'
+#' Get the license for a GitHub repository from the GitHub API
+#' 
+#' @param repo String giving the repository in the form "owner/repo"
+#'
+#' @return String with the license or `NA` if not found
 get_gh_license <- function(repo) {
     
     query <- glue::glue("GET /repos/{repo}/license")
@@ -39,4 +46,25 @@ get_gh_license <- function(repo) {
     }
     
     return(license)
+}
+
+#' Get GitHub platform
+#'
+#' Get the platforms for a GitHub repository from the GitHub API
+#' 
+#' @param repo String giving the repository in the form "owner/repo"
+#'
+#' @return String with the platforms or `NA` if not found
+get_gh_platform <- function(repo) {
+    
+    query <- glue::glue("GET /repos/{repo}/languages")
+    
+    result <- try(gh::gh(query), silent = TRUE)
+    if (is(result, "try-error")) {
+        platform <- NA
+    } else {
+        platform <- paste(names(result), collapse = "/")
+    }
+    
+    return(platform)
 }

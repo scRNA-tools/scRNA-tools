@@ -40,7 +40,7 @@ save_database <- function(database, dir = "database", cache = TRUE) {
                                 Title) %>%
         dplyr::distinct()
 
-    readr::write_tsv(tools,               fs::path(dir, "tools.tsv"))
+    readr::write_tsv(tools,               fs::path(dir, "tools.tsv"), escape = "none")
     readr::write_tsv(references,          fs::path(dir, "references.tsv"))
     readr::write_tsv(database$RefLinks,   fs::path(dir, "reference-links.tsv"))
     readr::write_tsv(citations,           fs::path(dir, "citations-cache.tsv"))
