@@ -66,7 +66,8 @@ load_tools <- function(dir) {
             License     = readr::col_character(),
             Added       = readr::col_date(format = ""),
             Updated     = readr::col_date(format = "")
-        )
+        ),
+        quote = "$"
     )
 }
 
