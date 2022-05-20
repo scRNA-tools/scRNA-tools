@@ -963,6 +963,9 @@ GeneSwitches	ExpressionPatterns
 GeneSwitches	GeneSets
 GeneSwitches	Transformation
 GeneSwitches	Visualisation
+GeneVector	DimensionalityReduction
+GeneVector	GeneNetworks
+GeneVector	Integration
 genomicInstability	Variants
 genomicInstability	Visualisation
 geosketch	DimensionalityReduction
@@ -1478,6 +1481,7 @@ netSmooth	Visualisation
 netsne	DimensionalityReduction
 NetworkInference	GeneNetworks
 NeuCA	Classification
+NEUROeSTIMator	GeneNetworks
 NewWave	DimensionalityReduction
 NewWave	Integration
 nichenetr	GeneNetworks
@@ -1729,6 +1733,7 @@ reCAT	CellCycle
 reCAT	Clustering
 reCAT	Ordering
 reCAT	Visualisation
+RECODE	Imputation
 RecursiveConsensusClustering	Clustering
 Red_Panda	Variants
 redPATH	Clustering
@@ -1737,6 +1742,10 @@ redPATH	MarkerGenes
 redPATH	Ordering
 redPATH	VariableGenes
 redPATH	Visualisation
+Regionvelocity	DimensionalityReduction
+Regionvelocity	GeneFiltering
+Regionvelocity	Ordering
+Regionvelocity	Visualisation
 RESCUE	Imputation
 Revelio	CellCycle
 Revelio	Ordering
@@ -2058,6 +2067,7 @@ Scedar	Imputation
 Scedar	MarkerGenes
 Scedar	RareCells
 Scedar	Visualisation
+scEFSC	Clustering
 SCell	Clustering
 SCell	DifferentialExpression
 SCell	DimensionalityReduction
@@ -2262,6 +2272,8 @@ scMAGS	GeneFiltering
 scMAGS	MarkerGenes
 scMAGS	Visualisation
 scmap	Classification
+scMAPA	AlternativeSplicing
+scMAPA	Quantification
 scMappR	GeneSets
 scMappR	Visualisation
 SCMarker	VariableGenes
@@ -2302,6 +2314,7 @@ scMM	Integration
 scModels	Simulation
 scMomentum	GeneNetworks
 scMomentum	Ordering
+scMOO	Imputation
 scMRA	Classification
 scMRMA	Classification
 scMRMA	Normalisation
@@ -2342,6 +2355,7 @@ SCORPIUS	Ordering
 SCORPIUS	Visualisation
 SCOUP	Ordering
 SCOUT	Ordering
+scover	GeneNetworks
 SCPA	GeneSets
 SCPA	Visualisation
 scPanoView	Clustering
@@ -2948,6 +2962,7 @@ traviz	Visualisation
 Tree-SNE	Clustering
 Tree-SNE	Visualisation
 TreeCorTreat	Visualisation
+TREG	VariableGenes
 trendsceek	ExpressionPatterns
 trendsceek	Simulation
 trendsceek	Visualisation
@@ -2995,6 +3010,8 @@ UniPath	Clustering
 UniPath	GeneSets
 UniPath	Imputation
 UniPath	Ordering
+UniTVelo	Ordering
+UniTVelo	Visualisation
 UniverSC	Alignment
 UniverSC	Quantification
 UniverSC	UMIs
