@@ -354,6 +354,8 @@ CellID	DimensionalityReduction
 CellID	GeneSets
 CellID	Visualisation
 Cellity	QualityControl
+CellLayers	GeneSets
+CellLayers	Visualisation
 CellMeSH	Classification
 CellMixS	Integration
 CellMixS	Visualisation
@@ -794,6 +796,7 @@ DSAVE-R	Visualisation
 dsb	Immune
 dsb	Normalisation
 dsb	Transformation
+DSINMF	Classification
 DTAE	DimensionalityReduction
 DTFLOW	Ordering
 DTFLOW	Visualisation
@@ -986,6 +989,8 @@ GiniClust3	RareCells
 GiniClust3	Visualisation
 GLM-PCA	DimensionalityReduction
 glmGamPoi	DifferentialExpression
+GLUE	GeneNetworks
+GLUE	Integration
 GLUER	DimensionalityReduction
 GLUER	Integration
 GLUER	Interactive
@@ -1120,6 +1125,8 @@ inferCNVpy	Variants
 Inferelator	GeneNetworks
 infohet	VariableGenes
 INSCT	Integration
+INSISTC	Classification
+INSISTC	GeneNetworks
 InterCellar	GeneNetworks
 InterCellar	Interactive
 InterCellar	Visualisation
@@ -1446,6 +1453,8 @@ MultiVelo	Ordering
 MultiVelo	QualityControl
 MultiVelo	Visualisation
 MUREN	Normalisation
+MURP	DimensionalityReduction
+MURP	Visualisation
 muscat	DifferentialExpression
 muscat	MarkerGenes
 muscat	Simulation
@@ -1458,6 +1467,7 @@ MUSIC	Perturbations
 MUSIC	QualityControl
 MUSIC	Visualisation
 MuTrans	Ordering
+N-ACT	Classification
 NaiveDE	DifferentialExpression
 NaiveDE	Simulation
 NanoPARE	Alignment
@@ -1546,6 +1556,9 @@ Palantir	Normalisation
 Palantir	Ordering
 Palantir	QualityControl
 Palantir	Visualisation
+PALMO	DimensionalityReduction
+PALMO	VariableGenes
+PALMO	Visualisation
 Palo	Visualisation
 Pamona	Integration
 Pamona	Visualisation
@@ -1618,6 +1631,7 @@ pmVAE	DimensionalityReduction
 PoissonUMIs	UMIs
 PoissonUMIs	Visualisation
 Polaratio	Clustering
+Pollock	Classification
 polyApipe	AlternativeSplicing
 polyApipe	Quantification
 polyApipe	UMIs
@@ -2402,6 +2416,8 @@ scprep	Visualisation
 scPretrain	Classification
 scProject	Classification
 scProject	Visualisation
+scProximitE	RareCells
+scProximitE	Visualisation
 scPSD	Transformation
 SCpubr	Visualisation
 SCQC	GeneFiltering
@@ -2505,6 +2521,12 @@ scSO	Clustering
 scSO	DimensionalityReduction
 scSO	Interactive
 scSorter	Classification
+scSpace	Clustering
+scSpace	DimensionalityReduction
+scSpace	Integration
+scSpace	Normalisation
+scSpace	VariableGenes
+scSpace	Visualisation
 scSplit	Variants
 scSVA	DimensionalityReduction
 scSVA	Interactive
@@ -2797,6 +2819,7 @@ slingshot	Visualisation
 SMILE	Integration
 SMNN	Integration
 SMSC	Clustering
+SMURF	DimensionalityReduction
 SNN-Cliq	Clustering
 solo	QualityControl
 solo	Visualisation
@@ -2971,6 +2994,9 @@ tricycle	CellCycle
 tricycle	DimensionalityReduction
 tricycle	Visualisation
 Triku	VariableGenes
+TRIPOD	GeneNetworks
+TRIPOD	Integration
+TRIPOD	Visualisation
 TRUmiCount	Quantification
 TRUmiCount	UMIs
 TRUST4	Assembly
