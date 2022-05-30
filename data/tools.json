@@ -758,7 +758,7 @@
     "Publications": [],
     "Preprints": [
       {
-        "Title": "AWGAN: A Powerful Batch Correction Model for scRNA-seq Data",
+        "Title": "ResPAN: a powerful batch correction model for scRNA-seq data through residual adversarial networks",
         "DOI": "10.1101/2021.11.08.467781",
         "Citations": 0
       }
@@ -4684,11 +4684,11 @@
         "Title": "CMF-Impute: An accurate imputation tool for single cell RNA-seq data",
         "DOI": "10.1093/bioinformatics/btaa109",
         "Date": "2020-02-19",
-        "Citations": 34
+        "Citations": 35
       }
     ],
     "Preprints": [],
-    "Citations": 34,
+    "Citations": 35,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "xujunlin123/CMFImpute"
@@ -5899,6 +5899,28 @@
     "NumPreprints": 1,
     "PyPI": "cytopath",
     "GitHub": "aron0093/cytopath"
+  },
+  {
+    "Tool": "CytoSPACE",
+    "Platform": "Python/R",
+    "Code": "https://github.com/digitalcytometry/cytospace",
+    "Description": "CytoSPACE is a novel computational tool for assigning single-cell transcriptomes to in situ spatial transcriptomics (ST) data",
+    "License": "GPL-3.0",
+    "Added": "2022-05-27",
+    "Updated": "2022-05-27",
+    "Categories": ["Integration", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Robust alignment of single-cell and spatial transcriptomes with CytoSPACE",
+        "DOI": "10.1101/2022.05.20.488356",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "digitalcytometry/cytospace"
   },
   {
     "Tool": "CytoTalk",
@@ -9799,6 +9821,28 @@
     "GitHub": "brianhie/geosketch"
   },
   {
+    "Tool": "gExcite",
+    "Platform": "Snakemake/R/Python",
+    "Code": "https://github.com/ETH-NEXUS/gExcite_pipeline",
+    "Description": "A start-to-end framework for single-cell gene expression, hashing, and antibody analysis",
+    "License": "GPL-3.0",
+    "Added": "2022-05-27",
+    "Updated": "2022-05-27",
+    "Categories": ["Alignment", "DifferentialExpression", "Immune", "Quantification", "UMIs"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "gExcite - A start-to-end framework for single-cell gene expression, hashing, and antibody analysis",
+        "DOI": "10.1101/2022.05.23.490488",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "ETH-NEXUS/gExcite_pipeline"
+  },
+  {
     "Tool": "gficf",
     "Platform": "R",
     "Code": "https://github.com/dibbelab/gficf",
@@ -9954,10 +9998,10 @@
       {
         "Title": "glmGamPoi: Fitting Gamma-Poisson Generalized Linear Models on Single Cell Count Data",
         "DOI": "10.1101/2020.08.13.249623",
-        "Citations": 3
+        "Citations": 2
       }
     ],
-    "Citations": 32,
+    "Citations": 31,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "glmGamPoi",
@@ -12068,7 +12112,6 @@
     "Citations": 124,
     "NumPubs": 2,
     "NumPreprints": 1,
-    "CRAN": "jackstraw",
     "GitHub": "ncchung/jackstraw"
   },
   {
@@ -17923,6 +17966,29 @@
     "GitHub": "seasamgo/rescue"
   },
   {
+    "Tool": "ResPAN",
+    "Platform": "Python",
+    "Code": "https://github.com/AprilYuge/ResPAN",
+    "Description": "ResPAN is a light structured Residual autoencoder and mutual nearest neighbor Paring guided Adversarial Network for scRNA-seq batch correction",
+    "License": "MIT",
+    "Added": "2022-05-27",
+    "Updated": "2022-05-27",
+    "Categories": ["Integration"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "ResPAN: a powerful batch correction model for scRNA-seq data through residual adversarial networks",
+        "DOI": "10.1101/2021.11.08.467781",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "PyPI": "ResPAN",
+    "GitHub": "AprilYuge/ResPAN"
+  },
+  {
     "Tool": "Revelio",
     "Platform": "R",
     "Code": "https://github.com/danielschw188/Revelio",
@@ -17993,6 +18059,35 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "zliu3/RGGC"
+  },
+  {
+    "Tool": "RISC",
+    "Platform": "R/C++",
+    "Code": "https://github.com/bioinfoDZ/RISC",
+    "Description": "RISC (Robust Integration of Single Cell RNA-seq) implements the RPCI integration algorithm",
+    "License": "GPL-3.0",
+    "Added": "2022-05-27",
+    "Updated": "2022-05-27",
+    "Categories": ["Clustering", "DimensionalityReduction", "Integration", "MarkerGenes", "Normalisation", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "Robust integration of multiple single-cell RNA sequencing datasets using a single reference space",
+        "DOI": "10.1038/s41587-021-00859-x",
+        "Date": "2021-03-25",
+        "Citations": 6
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "RISC: robust integration of single-cell RNA-seq datasets with different extents of cell cluster overlap",
+        "DOI": "10.1101/483297",
+        "Citations": 2
+      }
+    ],
+    "Citations": 8,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "GitHub": "bioinfoDZ/RISC"
   },
   {
     "Tool": "RNA-Bloom",
@@ -28875,11 +28970,11 @@
         "Title": "Identification of cell types from single-cell transcriptomes using a novel clustering method",
         "DOI": "10.1093/bioinformatics/btv088",
         "Date": "2015-02-11",
-        "Citations": 355
+        "Citations": 356
       }
     ],
     "Preprints": [],
-    "Citations": 355,
+    "Citations": 356,
     "NumPubs": 1,
     "NumPreprints": 0
   },
@@ -29581,7 +29676,7 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 20833
+        "Citations": 20835
       }
     ],
     "Preprints": [
@@ -29591,7 +29686,7 @@
         "Citations": 34
       }
     ],
-    "Citations": 20867,
+    "Citations": 20869,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "alexdobin/STAR"
