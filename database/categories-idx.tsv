@@ -576,6 +576,10 @@ countClust	DifferentialExpression
 countClust	DimensionalityReduction
 countClust	VariableGenes
 countClust	Visualisation
+countland	Clustering
+countland	MarkerGenes
+countland	QualityControl
+countland	Visualisation
 coupleCoC	Clustering
 coupleCoC	Integration
 coupleCoC_plus	Clustering
@@ -648,6 +652,7 @@ DeepSEM	DimensionalityReduction
 DeepSEM	GeneNetworks
 DeepSEM	Simulation
 DeepSort	Classification
+DeepVelo	Ordering
 DEGAS	Classification
 DeLorean	ExpressionPatterns
 DeLorean	GeneFiltering
@@ -1089,6 +1094,8 @@ ICAnet	DimensionalityReduction
 ICAnet	GeneNetworks
 ICAnet	Integration
 ICAnet	Visualisation
+ICAT	Clustering
+ICAT	Perturbations
 ICELLNET	GeneNetworks
 ICELLNET	Visualisation
 iCellR	CellCycle
@@ -1328,11 +1335,20 @@ matchSCore	Integration
 matchSCore2	Classification
 matchSCore2	Integration
 matchSCore2	Visualisation
+MATTE	DifferentialExpression
+MATTE	DimensionalityReduction
+MATTE	GeneFiltering
+MATTE	GeneSets
+MATTE	Normalisation
+MATTE	Visualisation
 mbkmeans	Clustering
 mcap	Clustering
 McImpute	GeneFiltering
 McImpute	Imputation
 McImpute	Normalisation
+mcMuffin	Clustering
+mcMuffin	GeneSets
+mcMuffin	Visualisation
 MCXpress	Clustering
 MCXpress	DimensionalityReduction
 MCXpress	GeneFiltering
@@ -1574,6 +1590,7 @@ ParaDPMM	Classification
 PARC	Clustering
 PBA	Ordering
 PBLR	Imputation
+PCAone	DimensionalityReduction
 pcaReduce	Clustering
 pCMF	DimensionalityReduction
 pCMF	Visualisation
@@ -2461,6 +2478,8 @@ SCRAT	Visualisation
 scRCMF	Clustering
 scRCMF	DimensionalityReduction
 SCReadCounts	Variants
+scReadSim	Quantification
+scReadSim	Simulation
 scReClassify	Classification
 scRecover	Imputation
 scRecover	Normalisation
