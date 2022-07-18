@@ -98,6 +98,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1016/j.patter.2020.100139	FALSE	FALSE	2020-12	scTenifoldNet: A Machine Learning Workflow for Constructing and Comparing Transcriptome-wide Gene Regulatory Networks from Single-Cell Data
 10.1016/j.patter.2021.100311	FALSE	FALSE	2021-07	EmptyNN: A neural network based on positive and unlabeled learning to remove cell-free droplets and recover lost cells in scRNA-seq data
 10.1016/j.patter.2022.100443	FALSE	FALSE	2022-03	EMBEDR: Distinguishing signal from noise in single-cell omics data
+10.1016/j.patter.2022.100536	FALSE	FALSE	2022-06	Supervised dimensionality reduction for exploration of single-cell data by HSS-LDA
 10.1016/j.simpa.2021.100144	FALSE	FALSE	2021-11	FeatureCorr: An R package to study feature correlations aided with data transformation for sequencing and microarray data
 10.1016/j.stem.2016.05.010	FALSE	FALSE	2016-08	De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data
 10.1016/j.stem.2021.02.015	FALSE	FALSE	2021-06	Resolving organoid brain region identities by mapping single-cell genomic data to reference atlases
@@ -230,6 +231,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1038/s41467-022-29744-0	FALSE	FALSE	2022-04-14	Interactive single-cell data analysis using Cellar
 10.1038/s41467-022-30545-8	FALSE	FALSE	2022-05-23	Cell cycle gene regulation dynamics revealed by RNA velocity and deep-learning
 10.1038/s41467-022-30755-0	FALSE	FALSE	2022-06-09	Comparison of methods and resources for cell-cell communication inference from single-cell RNA-Seq data
+10.1038/s41467-022-31107-8	FALSE	FALSE	2022-06-20	Forest Fire Clustering for single-cell sequencing combines iterative label propagation with parallelized Monte Carlo simulations
 10.1038/s41540-020-00162-6	FALSE	FALSE	2021-01-05	Sparsely-connected autoencoder (SCA) for single cell RNAseq data mining
 10.1038/s41551-021-00770-5	FALSE	FALSE	2021-08-02	Computational reconstruction of the signalling networks surrounding implanted biomaterials from single-cell transcriptomics
 10.1038/s41556-022-00884-1	FALSE	FALSE	2022-04-12	CellComm infers cellular crosstalk that drives haematopoietic stem and progenitor cell development
@@ -344,6 +346,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1038/s43588-021-00172-2	FALSE	FALSE	2021-12	Uncovering cell identity through differential stability with Cepo
 10.1038/s43588-022-00216-1	FALSE	FALSE	2022-03-28	Accurate assembly of multi-end RNA-seq data with Scallop2
 10.1038/s43588-022-00251-y	FALSE	FALSE	2022-05-30	Adversarial domain translation networks for integrating large-scale atlas-level single-cell datasets
+10.1038/s43588-022-00263-8	FALSE	FALSE	2022-06	Minimal gene set discovery in single-cell mRNA-seq datasets with ActiveSVM
 10.1038/srep33892	FALSE	FALSE	2016-09-27	Identifying and removing the cell-cycle effect from single-cell RNA-Sequencing data
 10.1073/pnas.1408993111	FALSE	FALSE	2014-12-15	Bifurcation analysis of single-cell gene expression data reveals epigenetic landscape
 10.1073/pnas.1714723115	FALSE	FALSE	2018-02-20	Fundamental limits on dynamic inference from single-cell snapshots
@@ -494,6 +497,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1093/bioinformatics/btac168	FALSE	FALSE	2022-03-22	EDClust: An EM-MM hybrid method for cell clustering in multiple-subject single-cell RNA sequencing
 10.1093/bioinformatics/btac171	FALSE	FALSE	2022-03-25	BSDE: Barycenter Single-Cell Differential Expression for Case-Control Studies
 10.1093/bioinformatics/btac199	FALSE	FALSE	2022-04-08	scGraph: a graph neural network-based approach to automatically identify cell types
+10.1093/bioinformatics/btac227	FALSE	FALSE	2022-06-24	psupertime: supervised pseudotime analysis for time-series single-cell RNA-seq data
 10.1093/bioinformatics/btac271	FALSE	FALSE	2022-04-15	scSampler: fast diversity-preserving subsampling of large-scale single-cell transcriptomic data
 10.1093/bioinformatics/btac300	FALSE	FALSE	2022-04-29	Imputing dropouts for single-cell RNA sequencing based on multi-objective optimization
 10.1093/bioinformatics/btac340	FALSE	FALSE	2022-05-23	ScisorWiz: visualizing differential isoform expression in single-cell long-read data
@@ -1056,7 +1060,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2021.04.13.439670	FALSE	TRUE	NA	UCell: robust and scalable single-cell gene signature scoring
 10.1101/2021.04.13.439707	FALSE	TRUE	NA	Transferable representations of single-cell transcriptomic data
 10.1101/2021.04.14.439903	FALSE	TRUE	NA	Compositional perturbation autoencoder for single-cell response modeling
-10.1101/2021.04.16.440230	FALSE	TRUE	NA	Learning latent embedding of multi-modal single cell data and cross-modality relationship simultaneously
+10.1101/2021.04.16.440230	FALSE	TRUE	NA	Integrating unmatched scRNA-seq and scATAC-seq data and learning cross-modality relationship simultaneously
 10.1101/2021.04.19.440534	FALSE	TRUE	NA	Axes of inter-sample variability among transcriptional neighborhoods reveal disease associated cell states in single-cell data
 10.1101/2021.04.27.441683	FALSE	TRUE	NA	Robust and annotation-free analysis of isoform variation using short-read scRNA-seq data
 10.1101/2021.04.28.441833	FALSE	TRUE	NA	scvi-tools: a library for deep probabilistic analysis of single-cell omics data
@@ -1746,6 +1750,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1186/s13059-022-02667-1	FALSE	FALSE	2022-04-19	Metacell-2: a divide-and-conquer metacell algorithm for scalable scRNA-seq analysis
 10.1186/s13059-022-02679-x	FALSE	FALSE	2022-05-09	Bi-order multimodal integration of single-cell data
 10.1186/s13059-022-02683-1	FALSE	FALSE	2022-05-30	Identifying tumor cells at the single-cell level using machine learning
+10.1186/s13059-022-02706-x	FALSE	FALSE	2022-06-27	scDART: integrating unmatched scRNA-seq and scATAC-seq data and learning cross-modality relationship simultaneously
 10.1186/s13073-017-0492-3	FALSE	FALSE	2017-12-05	Granatum: a graphical single-cell RNA-Seq analysis pipeline for genomics scientists
 10.1186/s13073-018-0528-3	FALSE	FALSE	2018-03-20	BALDR: a computational pipeline for paired heavy and light chain immunoglobulin reconstruction in single-cell RNA-seq data
 10.1186/s13073-018-0567-9	FALSE	FALSE	2018-07-24	Single-cell transcriptome analysis of lineage diversity in high-grade glioma
