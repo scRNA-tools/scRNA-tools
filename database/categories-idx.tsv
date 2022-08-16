@@ -195,6 +195,7 @@ BingleSeq	Interactive
 BingleSeq	Normalisation
 BingleSeq	QualityControl
 BingleSeq	Visualisation
+Biomodelling	Simulation
 BioTIP	ExpressionPatterns
 BioTIP	GeneNetworks
 BioTIP	Visualisation
@@ -369,6 +370,8 @@ CellOracle	GeneSets
 CellOracle	Integration
 CellOracle	Perturbations
 CellOracle	Simulation
+CellOT	Perturbations
+CellOT	Visualisation
 CellPath	Clustering
 CellPath	DifferentialExpression
 CellPath	Ordering
@@ -853,6 +856,7 @@ EMBEDR	Visualisation
 EMEP	Clustering
 EMEP	DimensionalityReduction
 EmptyNN	QualityControl
+enclone	Immune
 ENCORE	Clustering
 ENCORE	MarkerGenes
 ENHANCE	DimensionalityReduction
@@ -967,6 +971,8 @@ Garnett	Classification
 Garnett	MarkerGenes
 Garnett	Visualisation
 gCAnno	Classification
+GEARS	Perturbations
+GEARS	Visualisation
 geneBasisR	DifferentialExpression
 geneBasisR	DimensionalityReduction
 geneBasisR	MarkerGenes
@@ -1911,6 +1917,9 @@ sc-compReg	Visualisation
 sc-jnmf	Clustering
 sc-Libra	Integration
 sc-REnF	GeneFiltering
+sc2marker	MarkerGenes
+sc2marker	Normalisation
+sc2marker	Visualisation
 SC2P	DifferentialExpression
 SC2P	Visualisation
 SC3	Clustering
@@ -2129,6 +2138,7 @@ scdney	Classification
 scdney	Clustering
 scdney	Visualisation
 scDoc	Imputation
+scDREAMER	Integration
 scDRS	Variants
 scds	QualityControl
 sceb	VariableGenes
@@ -2417,6 +2427,7 @@ SCNS	Visualisation
 scNym	Classification
 SCODE	GeneNetworks
 SCODE	Ordering
+SCOIT	Integration
 scone	GeneFiltering
 scone	Imputation
 scone	Interactive
@@ -2484,6 +2495,8 @@ scProject	Visualisation
 scProximitE	RareCells
 scProximitE	Visualisation
 scPSD	Transformation
+scPSM	Imputation
+scPSM	Integration
 SCpubr	Visualisation
 SCQC	GeneFiltering
 SCQC	QualityControl
@@ -2595,6 +2608,11 @@ scSpace	Normalisation
 scSpace	VariableGenes
 scSpace	Visualisation
 scSplit	Variants
+scSTEM	Clustering
+scSTEM	ExpressionPatterns
+scSTEM	Interactive
+scSTEM	Ordering
+scSTEM	Visualisation
 scSVA	DimensionalityReduction
 scSVA	Interactive
 scSVA	Visualisation
@@ -3153,6 +3171,7 @@ VeloRep	DimensionalityReduction
 VeloRep	Ordering
 VeloSim	Simulation
 VeloSim	Visualisation
+VeloVAE	Ordering
 VeloViz	DimensionalityReduction
 VeloViz	Visualisation
 VeTra	Ordering
