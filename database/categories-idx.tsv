@@ -289,6 +289,7 @@ ccfindR	Normalisation
 ccfindR	QualityControl
 ccfindR	Simulation
 ccfindR	Visualisation
+ccImpute	Imputation
 ccNet	DimensionalityReduction
 ccNet	ExpressionPatterns
 ccNet	Ordering
@@ -449,6 +450,10 @@ CHETAH	Visualisation
 chooseR	Clustering
 Chord	DimensionalityReduction
 Chord	QualityControl
+CIARA	Clustering
+CIARA	MarkerGenes
+CIARA	RareCells
+CIARA	Visualisation
 CIDER	Clustering
 CIDER	Integration
 CIDR	Clustering
@@ -814,6 +819,7 @@ DSAVE-R	Visualisation
 dsb	Immune
 dsb	Normalisation
 dsb	Transformation
+dsCellNet	GeneNetworks
 DSINMF	Classification
 DTAE	DimensionalityReduction
 DTFLOW	Ordering
@@ -927,6 +933,9 @@ FIRM	VariableGenes
 fishpond	DifferentialExpression
 fishpond	Normalisation
 fishpond	Visualisation
+FitDevo	Ordering
+FitDevo	StemCells
+FitDevo	Visualisation
 FLAMES	Alignment
 FLAMES	Quantification
 FLAMES	UMIs
@@ -1060,6 +1069,9 @@ GRISLI	GeneNetworks
 GRM	Normalisation
 GRNUlar	GeneNetworks
 GRNVBEM	GeneNetworks
+GRUFFI	GeneSets
+GRUFFI	QualityControl
+GRUFFI	Visualisation
 GSFA	Normalisation
 GSFA	Perturbations
 GSFA	VariableGenes
@@ -1336,6 +1348,8 @@ MAGIC	Visualisation
 MAPiT	Ordering
 MARGARET	Ordering
 MarkerCount	Classification
+MarkerMap	MarkerGenes
+MarkerMap	Visualisation
 MarkovHC	Clustering
 MarkovHC	Visualisation
 MARS	Classification
@@ -2901,6 +2915,7 @@ SLICER	Ordering
 slingshot	DimensionalityReduction
 slingshot	Ordering
 slingshot	Visualisation
+SMGR	Integration
 SMILE	Integration
 SMNN	Integration
 SMSC	Clustering
@@ -3235,6 +3250,11 @@ wot	Visualisation
 Wx	MarkerGenes
 XenoCell	QualityControl
 XenoCell	Quantification
+ZetaSuite	Imputation
+ZetaSuite	Normalisation
+ZetaSuite	Perturbations
+ZetaSuite	QualityControl
+ZetaSuite	Visualisation
 ZIAQ	DifferentialExpression
 ZIFA	DimensionalityReduction
 ZINB-WaVE	DimensionalityReduction
