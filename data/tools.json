@@ -628,6 +628,28 @@
     "GitHub": "keita-iida/ASURAT"
   },
   {
+    "Tool": "ATAXIC",
+    "Platform": "R",
+    "Code": "https://github.com/XS-Wang-Lab/ATAXIC",
+    "Description": "An algorithm to quantify transcriptomic perturbation heterogeneity in single cancer cells.",
+    "Added": "2022-09-09",
+    "Updated": "2022-09-09",
+    "Categories": ["Perturbations"],
+    "Publications": [
+      {
+        "Title": "ATAXIC: An Algorithm to Quantify Transcriptomic Perturbation Heterogeneity in Single Cancer Cells",
+        "DOI": "10.1155/2022/4106736",
+        "Date": "2022-08-31",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "XS-Wang-Lab/ATAXIC"
+  },
+  {
     "Tool": "AUCell",
     "Platform": "R",
     "Code": "https://github.com/aertslab/AUCell",
@@ -3718,7 +3740,7 @@
         "Title": "CellPhoneDB: inferring cell–cell communication from combined expression of multi-subunit ligand–receptor complexes",
         "DOI": "10.1038/s41596-020-0292-x",
         "Date": "2020-02-26",
-        "Citations": 800
+        "Citations": 802
       }
     ],
     "Preprints": [
@@ -3733,7 +3755,7 @@
         "Citations": 42
       }
     ],
-    "Citations": 1821,
+    "Citations": 1823,
     "NumPubs": 2,
     "NumPreprints": 2,
     "PyPI": "CellPhoneDB",
@@ -6314,6 +6336,28 @@
     "GitHub": "zktuong/dandelion"
   },
   {
+    "Tool": "DAPCA",
+    "Platform": "Python/MATLAB",
+    "Code": "https://github.com/mirkes/DAPCA",
+    "Description": "Domain Adaptation Principal Component Analysis is a new base linear method for domain adaptation (learning on out-of-distribution data)",
+    "License": "GPL-3.0",
+    "Added": "2022-09-09",
+    "Updated": "2022-09-09",
+    "Categories": ["DimensionalityReduction"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Domain Adaptation Principal Component Analysis: base linear method for learning with out-of-distribution data",
+        "DOI": "arxiv/2208.13290",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "mirkes/DAPCA"
+  },
+  {
     "Tool": "DC3",
     "Platform": "Python",
     "Code": "https://github.com/SUwonglab/DC3",
@@ -7804,7 +7848,7 @@
         "Title": "DoubletFinder: Doublet Detection in Single-Cell RNA Sequencing Data Using Artificial Nearest Neighbors",
         "DOI": "10.1016/j.cels.2019.03.003",
         "Date": "2019-04",
-        "Citations": 605
+        "Citations": 606
       }
     ],
     "Preprints": [
@@ -7814,7 +7858,7 @@
         "Citations": 19
       }
     ],
-    "Citations": 624,
+    "Citations": 625,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "chris-mcginnis-ucsf/DoubletFinder"
@@ -8644,7 +8688,6 @@
     "Citations": 28,
     "NumPubs": 1,
     "NumPreprints": 1,
-    "CRAN": "dyngen",
     "GitHub": "dynverse/dyngen"
   },
   {
@@ -11131,7 +11174,7 @@
         "Title": "Fast, sensitive and accurate integration of single-cell data with Harmony",
         "DOI": "10.1038/s41592-019-0619-0",
         "Date": "2019-11-18",
-        "Citations": 1249
+        "Citations": 1250
       }
     ],
     "Preprints": [
@@ -11141,7 +11184,7 @@
         "Citations": 62
       }
     ],
-    "Citations": 1311,
+    "Citations": 1312,
     "NumPubs": 1,
     "NumPreprints": 1,
     "CRAN": "harmony",
@@ -11584,10 +11627,10 @@
       {
         "Title": "Hypercluster: a flexible tool for parallelized unsupervised clustering optimization",
         "DOI": "10.1101/2020.01.13.905323",
-        "Citations": 1
+        "Citations": 2
       }
     ],
-    "Citations": 3,
+    "Citations": 4,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "hypercluster",
@@ -12591,10 +12634,10 @@
       {
         "Title": "iTALK: an R Package to Characterize and Illustrate Intercellular Communication",
         "DOI": "10.1101/507871",
-        "Citations": 92
+        "Citations": 93
       }
     ],
-    "Citations": 92,
+    "Citations": 93,
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "Coolgenome/iTALK"
@@ -12962,7 +13005,7 @@
         "Title": "Near-optimal probabilistic RNA-seq quantification",
         "DOI": "10.1038/nbt.3519",
         "Date": "2016-04-04",
-        "Citations": 4831
+        "Citations": 4832
       },
       {
         "Title": "Modular, efficient and constant-memory single-cell RNA-seq preprocessing",
@@ -12994,7 +13037,7 @@
         "Citations": 0
       }
     ],
-    "Citations": 5076,
+    "Citations": 5077,
     "NumPubs": 3,
     "NumPreprints": 3,
     "GitHub": "pachterlab/kallisto"
@@ -14366,6 +14409,28 @@
     "GitHub": "KrishnaswamyLab/MELD"
   },
   {
+    "Tool": "MELT",
+    "Platform": "Python",
+    "Code": "https://github.com/Ying-Lab/MELT",
+    "Description": "A metric learning model with triplet network to obtain a suitable dissimilarity measure for hierarchical or longitudinal genomic and microbiome data",
+    "Added": "2022-09-09",
+    "Updated": "2022-09-09",
+    "Categories": ["DimensionalityReduction", "Ordering"],
+    "Publications": [
+      {
+        "Title": "Metric learning for comparing genomic data with triplet network",
+        "DOI": "10.1093/bib/bbac345",
+        "Date": "2022-09-01",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "Ying-Lab/MELT"
+  },
+  {
     "Tool": "MERLoT",
     "Platform": "R/Python",
     "Code": "https://github.com/soedinglab/merlot",
@@ -15102,7 +15167,7 @@
         "Title": "The dynamics and regulators of cell fate decisions are revealed by pseudotemporal ordering of single cells",
         "DOI": "10.1038/nbt.2859",
         "Date": "2014-03-23",
-        "Citations": 3060
+        "Citations": 3062
       },
       {
         "Title": "Single-cell mRNA quantification and differential analysis with Census",
@@ -15114,7 +15179,7 @@
         "Title": "Reversed graph embedding resolves complex single-cell trajectories",
         "DOI": "10.1038/nmeth.4402",
         "Date": "2017-08-21",
-        "Citations": 1540
+        "Citations": 1541
       }
     ],
     "Preprints": [
@@ -15124,7 +15189,7 @@
         "Citations": 48
       }
     ],
-    "Citations": 5403,
+    "Citations": 5406,
     "NumPubs": 3,
     "NumPreprints": 1,
     "Bioc": "monocle",
@@ -18487,11 +18552,11 @@
         "Title": "Reference component analysis of single-cell transcriptomes elucidates cellular heterogeneity in human colorectal tumors",
         "DOI": "10.1038/ng.3818",
         "Date": "2017-03-20",
-        "Citations": 571
+        "Citations": 572
       }
     ],
     "Preprints": [],
-    "Citations": 571,
+    "Citations": 572,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "GIS-SP-Group/RCA"
@@ -19954,7 +20019,7 @@
         "Title": "SC3: consensus clustering of single-cell RNA-seq data",
         "DOI": "10.1038/nmeth.4236",
         "Date": "2017-03-27",
-        "Citations": 871
+        "Citations": 872
       }
     ],
     "Preprints": [
@@ -19964,7 +20029,7 @@
         "Citations": 33
       }
     ],
-    "Citations": 904,
+    "Citations": 905,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "SC3",
@@ -20876,10 +20941,10 @@
       {
         "Title": "scater: pre-processing, quality control, normalisation and visualisation of single-cell RNA-seq data in R",
         "DOI": "10.1101/069633",
-        "Citations": 15
+        "Citations": 14
       }
     ],
-    "Citations": 433,
+    "Citations": 432,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "scater",
@@ -25255,6 +25320,29 @@
     "GitHub": "JiaLiVUMC/scMRMA"
   },
   {
+    "Tool": "scMTD",
+    "Platform": "R",
+    "Code": "https://github.com/Jinsl-lab/scMTD",
+    "Description": "scMTD: a statistical multidimensional imputation method for single-cell RNA-seq data leveraging transcriptome dynamic information",
+    "License": "GPL-3.0",
+    "Added": "2022-09-09",
+    "Updated": "2022-09-09",
+    "Categories": ["Imputation"],
+    "Publications": [
+      {
+        "Title": "scMTD: a statistical multidimensional imputation method for single-cell RNA-seq data leveraging transcriptome dynamic information",
+        "DOI": "10.1186/s13578-022-00886-4",
+        "Date": "2022-09-02",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "Jinsl-lab/scMTD"
+  },
+  {
     "Tool": "scMuffin",
     "Platform": "R",
     "Code": "https://github.com/emosca-cnr/scMuffin",
@@ -28053,10 +28141,10 @@
       {
         "Title": "scater: pre-processing, quality control, normalisation and visualisation of single-cell RNA-seq data in R",
         "DOI": "10.1101/069633",
-        "Citations": 15
+        "Citations": 14
       }
     ],
-    "Citations": 433,
+    "Citations": 432,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "scuttle",
@@ -28759,13 +28847,13 @@
         "Title": "Comprehensive Integration of Single-Cell Data",
         "DOI": "10.1016/j.cell.2019.05.031",
         "Date": "2019-06",
-        "Citations": 5504
+        "Citations": 5505
       },
       {
         "Title": "Integrated analysis of multimodal single-cell data",
         "DOI": "10.1016/j.cell.2021.04.048",
         "Date": "2021-06",
-        "Citations": 1237
+        "Citations": 1238
       },
       {
         "Title": "Spatial reconstruction of single-cell gene expression data",
@@ -28813,7 +28901,7 @@
         "Citations": 81
       }
     ],
-    "Citations": 16452,
+    "Citations": 16454,
     "NumPubs": 5,
     "NumPreprints": 5,
     "CRAN": "Seurat",
@@ -31039,7 +31127,7 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 22572
+        "Citations": 22573
       }
     ],
     "Preprints": [
@@ -31049,7 +31137,7 @@
         "Citations": 44
       }
     ],
-    "Citations": 22616,
+    "Citations": 22617,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "alexdobin/STAR"
@@ -32745,13 +32833,19 @@
     "Description": "UNIFAN (Unsupervised Single-cell Functional Annotation) simultaneously clusters and annotates cells with known biological processes (including pathways)",
     "License": "MIT",
     "Added": "2021-11-27",
-    "Updated": "2022-06-17",
+    "Updated": "2022-09-09",
     "Categories": ["Classification", "Clustering"],
     "Publications": [
       {
         "Title": "Unsupervised Cell Functional Annotation for Single-Cell RNA-Seq",
         "DOI": "10.1007/978-3-031-04749-7_24",
-        "Date": "2022",
+        "Date": "2022-04-29",
+        "Citations": 0
+      },
+      {
+        "Title": "UNIFAN: A Tool for Unsupervised Single-Cell Clustering and Annotation",
+        "DOI": "10.1089/cmb.2022.0251",
+        "Date": "2022-08-25",
         "Citations": 0
       }
     ],
@@ -32763,7 +32857,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 1,
+    "NumPubs": 2,
     "NumPreprints": 1,
     "GitHub": "doraadong/UNIFAN"
   },
@@ -32884,7 +32978,7 @@
         "Title": "Uphyloplot2: visualizing phylogenetic trees from single-cell RNA-seq data",
         "DOI": "10.1186/s12864-021-07739-3",
         "Date": "2021-06-05",
-        "Citations": 0
+        "Citations": 1
       }
     ],
     "Preprints": [
@@ -32894,7 +32988,7 @@
         "Citations": 0
       }
     ],
-    "Citations": 0,
+    "Citations": 1,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "harbourlab/UPhyloplot2"
