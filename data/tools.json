@@ -1594,10 +1594,10 @@
       {
         "Title": "Besca, a single-cell transcriptomics analysis toolkit to accelerate translational research",
         "DOI": "10.1101/2020.08.11.245795",
-        "Citations": 1
+        "Citations": 0
       }
     ],
-    "Citations": 4,
+    "Citations": 3,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "besca",
@@ -3820,7 +3820,7 @@
         "Title": "Massively parallel digital transcriptional profiling of single cells",
         "DOI": "10.1038/ncomms14049",
         "Date": "2017-01-16",
-        "Citations": 2795
+        "Citations": 2796
       }
     ],
     "Preprints": [
@@ -3830,7 +3830,7 @@
         "Citations": 14
       }
     ],
-    "Citations": 2809,
+    "Citations": 2810,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "10XGenomics/cellranger"
@@ -6387,6 +6387,29 @@
     "GitHub": "mirkes/DAPCA"
   },
   {
+    "Tool": "dbcti",
+    "Platform": "R",
+    "Code": "https://github.com/tianlt/dbcti",
+    "Description": "dbcti is designed to be able to infer any topological patterns of cell differentiation path and is robust to noises in single-cell RNA-seq data",
+    "License": "GPL-2.0-or-later",
+    "Added": "2022-09-30",
+    "Updated": "2022-09-30",
+    "Categories": ["DimensionalityReduction", "Normalisation", "Ordering", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "Density-based detection of cell transition states to construct disparate and bifurcating trajectories",
+        "DOI": "10.1093/nar/gkac785",
+        "Date": "2022-09-16",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "tianlt/dbcti"
+  },
+  {
     "Tool": "DC3",
     "Platform": "Python",
     "Code": "https://github.com/SUwonglab/DC3",
@@ -6956,7 +6979,7 @@
         "Title": "Multiplexed droplet single-cell RNA-sequencing using natural genetic variation",
         "DOI": "10.1038/nbt.4042",
         "Date": "2017-12-11",
-        "Citations": 513
+        "Citations": 514
       }
     ],
     "Preprints": [
@@ -6966,7 +6989,7 @@
         "Citations": 5
       }
     ],
-    "Citations": 518,
+    "Citations": 519,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "statgen/demuxlet"
@@ -7337,7 +7360,7 @@
         "Title": "Optimal tuning of weighted kNN- and diffusion-based methods for denoising single cell genomics data",
         "DOI": "10.1371/journal.pcbi.1008569",
         "Date": "2021-01-07",
-        "Citations": 7
+        "Citations": 8
       }
     ],
     "Preprints": [
@@ -7347,7 +7370,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 8,
+    "Citations": 9,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "DEWAKSS"
@@ -7877,7 +7900,7 @@
         "Title": "DoubletFinder: Doublet Detection in Single-Cell RNA Sequencing Data Using Artificial Nearest Neighbors",
         "DOI": "10.1016/j.cels.2019.03.003",
         "Date": "2019-04",
-        "Citations": 626
+        "Citations": 627
       }
     ],
     "Preprints": [
@@ -7887,7 +7910,7 @@
         "Citations": 20
       }
     ],
-    "Citations": 646,
+    "Citations": 647,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "chris-mcginnis-ucsf/DoubletFinder"
@@ -11672,10 +11695,10 @@
       {
         "Title": "Hypercluster: a flexible tool for parallelized unsupervised clustering optimization",
         "DOI": "10.1101/2020.01.13.905323",
-        "Citations": 2
+        "Citations": 1
       }
     ],
-    "Citations": 4,
+    "Citations": 3,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "hypercluster",
@@ -13050,7 +13073,7 @@
         "Title": "Near-optimal probabilistic RNA-seq quantification",
         "DOI": "10.1038/nbt.3519",
         "Date": "2016-04-04",
-        "Citations": 4920
+        "Citations": 4921
       },
       {
         "Title": "Modular, efficient and constant-memory single-cell RNA-seq preprocessing",
@@ -13082,7 +13105,7 @@
         "Citations": 0
       }
     ],
-    "Citations": 5178,
+    "Citations": 5179,
     "NumPubs": 3,
     "NumPreprints": 3,
     "GitHub": "pachterlab/kallisto"
@@ -13217,7 +13240,7 @@
         "Title": "Knowledge-primed neural networks enable biologically interpretable deep learning on single-cell sequencing data",
         "DOI": "10.1186/s13059-020-02100-5",
         "Date": "2020-08-03",
-        "Citations": 30
+        "Citations": 31
       }
     ],
     "Preprints": [
@@ -13227,7 +13250,7 @@
         "Citations": 2
       }
     ],
-    "Citations": 32,
+    "Citations": 33,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "epigen/KPNN"
@@ -14259,8 +14282,9 @@
     "Platform": "Python",
     "Code": "https://github.com/zjupgx/MATTE",
     "Description": "MATTE (Module Alignment of TranscripTomE) is a python package aiming to analyze transcriptome from samples with different phenotypes in a module view",
+    "License": "GPL-3.0",
     "Added": "2022-06-03",
-    "Updated": "2022-06-03",
+    "Updated": "2022-09-30",
     "Categories": ["DifferentialExpression", "DimensionalityReduction", "GeneFiltering", "GeneSets", "Normalisation", "Visualisation"],
     "Publications": [],
     "Preprints": [
@@ -14744,7 +14768,7 @@
         "Title": "Differential abundance testing on single-cell data using k-nearest neighbor graphs",
         "DOI": "10.1038/s41587-021-01033-z",
         "Date": "2021-09-30",
-        "Citations": 46
+        "Citations": 47
       }
     ],
     "Preprints": [
@@ -14754,7 +14778,7 @@
         "Citations": 21
       }
     ],
-    "Citations": 67,
+    "Citations": 68,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "miloR",
@@ -19587,7 +19611,7 @@
         "Title": "Salmon provides fast and bias-aware quantification of transcript expression",
         "DOI": "10.1038/nmeth.4197",
         "Date": "2017-03-06",
-        "Citations": 4436
+        "Citations": 4437
       },
       {
         "Title": "A Bayesian framework for inter-cellular information sharing improves dscRNA-seq quantification",
@@ -19619,7 +19643,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 4641,
+    "Citations": 4642,
     "NumPubs": 3,
     "NumPreprints": 3,
     "GitHub": "COMBINE-lab/salmon"
@@ -20438,7 +20462,7 @@
     "Description": "scAllele is a versatile tool to detect and analyze nucleotide variants in scRNA-seq",
     "License": "MIT",
     "Added": "2022-04-08",
-    "Updated": "2022-04-08",
+    "Updated": "2022-09-30",
     "Categories": ["AlternativeSplicing", "Variants"],
     "Publications": [],
     "Preprints": [
@@ -20451,6 +20475,7 @@
     "Citations": 0,
     "NumPubs": 0,
     "NumPreprints": 1,
+    "PyPI": "scAllele",
     "GitHub": "gxiaolab/scAllele"
   },
   {
@@ -20986,10 +21011,10 @@
       {
         "Title": "scater: pre-processing, quality control, normalisation and visualisation of single-cell RNA-seq data in R",
         "DOI": "10.1101/069633",
-        "Citations": 14
+        "Citations": 15
       }
     ],
-    "Citations": 443,
+    "Citations": 444,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "scater",
@@ -26310,9 +26335,16 @@
     "Description": "Similarity Metrics at High Dimensionality - testing for rare cell types",
     "License": "GPL-3.0",
     "Added": "2022-05-20",
-    "Updated": "2022-05-20",
+    "Updated": "2022-09-30",
     "Categories": ["RareCells", "Visualisation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "How does the structure of data impact cell–cell similarity? Evaluating how structural properties influence the performance of proximity metrics in single cell RNA-seq data",
+        "DOI": "10.1093/bib/bbac387",
+        "Date": "2022-09-23",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "How does data structure impact cell-cell similarity? Evaluating the influence of structural properties on proximity metric performance in single cell RNA-seq data",
@@ -26321,7 +26353,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "scproximite",
     "GitHub": "Ebony-Watson/scProximitE"
@@ -27739,6 +27771,22 @@
     "Bioc": "scTensor"
   },
   {
+    "Tool": "scTEP",
+    "Platform": "R",
+    "Code": "https://cran.r-project.org/web/packages/scTEP",
+    "Description": "A single-cell trajectory inference method using 'Autoencoder' and Minimum Spanning Tree (MST) from high dimensional 'scRNA-Seq' data",
+    "License": "LGPL-2.0-or-later",
+    "Added": "2022-09-30",
+    "Updated": "2022-09-30",
+    "Categories": ["Clustering", "GeneSets", "Normalisation", "Ordering"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "CRAN": "scTEP"
+  },
+  {
     "Tool": "scTGIF",
     "Platform": "R",
     "Code": "https://github.com/rikenbit/scTGIF",
@@ -28186,10 +28234,10 @@
       {
         "Title": "scater: pre-processing, quality control, normalisation and visualisation of single-cell RNA-seq data in R",
         "DOI": "10.1101/069633",
-        "Citations": 14
+        "Citations": 15
       }
     ],
-    "Citations": 443,
+    "Citations": 444,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "scuttle",
@@ -28892,7 +28940,7 @@
         "Title": "Comprehensive Integration of Single-Cell Data",
         "DOI": "10.1016/j.cell.2019.05.031",
         "Date": "2019-06",
-        "Citations": 5654
+        "Citations": 5655
       },
       {
         "Title": "Integrated analysis of multimodal single-cell data",
@@ -28910,7 +28958,7 @@
         "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
         "DOI": "10.1038/nbt.4096",
         "Date": "2018-04-02",
-        "Citations": 5710
+        "Citations": 5712
       },
       {
         "Title": "Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression",
@@ -28946,7 +28994,7 @@
         "Citations": 82
       }
     ],
-    "Citations": 16940,
+    "Citations": 16943,
     "NumPubs": 5,
     "NumPreprints": 5,
     "CRAN": "Seurat",
@@ -31172,7 +31220,7 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 22978
+        "Citations": 22980
       }
     ],
     "Preprints": [
@@ -31182,7 +31230,7 @@
         "Citations": 50
       }
     ],
-    "Citations": 23028,
+    "Citations": 23030,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "alexdobin/STAR"
@@ -32957,10 +33005,10 @@
       {
         "Title": "UniPath: A uniform approach for pathway and gene-set based analysis of heterogeneity in single-cell epigenome and transcriptome profiles",
         "DOI": "10.1101/864389",
-        "Citations": 1
+        "Citations": 0
       }
     ],
-    "Citations": 6,
+    "Citations": 5,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "reggenlab/UniPath"
