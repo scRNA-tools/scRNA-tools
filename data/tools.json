@@ -1594,10 +1594,10 @@
       {
         "Title": "Besca, a single-cell transcriptomics analysis toolkit to accelerate translational research",
         "DOI": "10.1101/2020.08.11.245795",
-        "Citations": 1
+        "Citations": 0
       }
     ],
-    "Citations": 4,
+    "Citations": 3,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "besca",
@@ -4734,7 +4734,7 @@
         "Title": "Single-cell transcriptome analysis of lineage diversity in high-grade glioma",
         "DOI": "10.1186/s13073-018-0567-9",
         "Date": "2018-07-24",
-        "Citations": 119
+        "Citations": 120
       }
     ],
     "Preprints": [
@@ -4744,7 +4744,7 @@
         "Citations": 2
       }
     ],
-    "Citations": 121,
+    "Citations": 122,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "simslab/cluster_diffex2018"
@@ -5516,6 +5516,29 @@
     "NumPreprints": 1,
     "PyPI": "contrastive-vi",
     "GitHub": "suinleelab/contrastiveVI"
+  },
+  {
+    "Tool": "COPILOT",
+    "Platform": "R",
+    "Code": "https://github.com/ohlerlab/COPILOT",
+    "Description": "Single cell RNA-seq preprocessing tool for gene-by-cell matrices of UMI counts",
+    "License": "MIT",
+    "Added": "2022-10-07",
+    "Updated": "2022-10-07",
+    "Categories": ["QualityControl", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "Protocol for fast scRNA-seq raw data processing using scKB and non-arbitrary quality control with COPILOT",
+        "DOI": "10.1016/j.xpro.2022.101729",
+        "Date": "2022-12",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "ohlerlab/COPILOT"
   },
   {
     "Tool": "CopulaGCN",
@@ -6918,7 +6941,6 @@
     "Citations": 93,
     "NumPubs": 1,
     "NumPreprints": 1,
-    "CRAN": "DeLorean",
     "GitHub": "JohnReid/DeLorean"
   },
   {
@@ -8698,9 +8720,16 @@
     "Code": "https://github.com/yuxu-1/dynDeepDRIM",
     "Description": "A dynamic deep learning model to infer direct regulatory interactions using single cell time-course gene expression data",
     "Added": "2021-09-03",
-    "Updated": "2021-09-03",
+    "Updated": "2022-10-07",
     "Categories": ["GeneNetworks"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "dynDeepDRIM: a dynamic deep learning model to infer direct regulatory interactions using time-course single-cell gene expression data",
+        "DOI": "10.1093/bib/bbac424",
+        "Date": "2022-09-27",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "dynDeepDRIM: a dynamic deep learning model to infer direct regulatory interactions using single cell time-course gene expression data",
@@ -8709,7 +8738,7 @@
       }
     ],
     "Citations": 1,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "yuxu-1/dynDeepDRIM"
   },
@@ -11204,6 +11233,35 @@
     "NumPubs": 0,
     "NumPreprints": 1,
     "GitHub": "Cobanoglu-Lab/Haisu"
+  },
+  {
+    "Tool": "HAL",
+    "Platform": "Python",
+    "Code": "https://github.com/alexandreday/HAL",
+    "Description": "Uses supervised linkage methods to build a cluster hierarchy on raw single-cell data",
+    "Added": "2022-10-07",
+    "Updated": "2022-10-07",
+    "Categories": ["Classification", "Clustering", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "HAL-X: Scalable hierarchical clustering for rapid and tunable single-cell analysis",
+        "DOI": "10.1371/journal.pcbi.1010349",
+        "Date": "2022-10-03",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "Scalable clustering with supervised linkage methods",
+        "DOI": "10.1101/2021.08.01.454697",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "PyPI": "hal-x",
+    "GitHub": "alexandreday/HAL"
   },
   {
     "Tool": "HARISSA",
@@ -24593,6 +24651,29 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "SydneyBioX/scJoint"
+  },
+  {
+    "Tool": "scKB",
+    "Platform": "Shell",
+    "Code": "https://github.com/ohlerlab/scKB",
+    "Description": "Use kallisto and bustools to call the gene-by-cell matrix for both spliced and unspliced transcripts of scRNA-seq",
+    "License": "MIT",
+    "Added": "2022-10-07",
+    "Updated": "2022-10-07",
+    "Categories": ["Quantification", "UMIs"],
+    "Publications": [
+      {
+        "Title": "Protocol for fast scRNA-seq raw data processing using scKB and non-arbitrary quality control with COPILOT",
+        "DOI": "10.1016/j.xpro.2022.101729",
+        "Date": "2022-12",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "ohlerlab/scKB"
   },
   {
     "Tool": "scLAPA",
