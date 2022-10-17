@@ -767,6 +767,9 @@ dmatch	Integration
 dmatch	Visualisation
 Domino	GeneNetworks
 Domino	Visualisation
+DoubletCollection	Clustering
+DoubletCollection	QualityControl
+DoubletCollection	Visualisation
 DoubletDecon	CellCycle
 DoubletDecon	QualityControl
 DoubletDetection	QualityControl
@@ -913,6 +916,8 @@ FastProject	DimensionalityReduction
 FastProject	GeneSets
 FastProject	Interactive
 FastProject	Visualisation
+FastRNA	DimensionalityReduction
+FastRNA	GeneFiltering
 FateCompass	Ordering
 FateCompass	Visualisation
 FateID	Classification
@@ -1737,6 +1742,9 @@ POWSC	Simulation
 POWSC	Visualisation
 powsimR	Simulation
 powsimR	Visualisation
+PPMS	Alignment
+PPMS	Quantification
+PPMS	UMIs
 Pre-Phaser	CellCycle
 PRESCIENT	Ordering
 PRESCIENT	Perturbations
@@ -2562,6 +2570,8 @@ scran	Interactive
 scran	Normalisation
 scran	VariableGenes
 scran	Visualisation
+scRare	Classification
+scRare	RareCells
 SCRAT	CellCycle
 SCRAT	Clustering
 SCRAT	DimensionalityReduction
@@ -2971,6 +2981,7 @@ SMURF	DimensionalityReduction
 SNN-Cliq	Clustering
 solo	QualityControl
 solo	Visualisation
+SoloTE	Quantification
 SoptSC	Clustering
 SoptSC	DimensionalityReduction
 SoptSC	Ordering
@@ -2997,6 +3008,7 @@ SparseDC	Clustering
 SparseDC	MarkerGenes
 SPARSim	Simulation
 SPaRTAN	GeneNetworks
+SPECK	Quantification
 speckle	Classification
 speckle	Normalisation
 speckle	Visualisation
