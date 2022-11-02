@@ -55,6 +55,7 @@ AltAnalyze	MarkerGenes
 AltAnalyze	Normalisation
 AltAnalyze	Quantification
 AltAnalyze	Visualisation
+AmbientContaminationMetrics	QualityControl
 anchor	Modality
 APL	GeneSets
 APL	MarkerGenes
@@ -432,6 +433,8 @@ cellxgene	Interactive
 cellxgene	Visualisation
 cellxgene_VIP	Interactive
 cellxgene_VIP	Visualisation
+Census	Clustering
+Census	Visualisation
 Cepo	DifferentialExpression
 Cepo	MarkerGenes
 Cepo	Visualisation
@@ -625,11 +628,16 @@ CStreet	Ordering
 CStreet	QualityControl
 CStreet	Visualisation
 ctgGEM	Visualisation
+CTpathway	GeneSets
+CTpathway	Visualisation
 cTPnet	Imputation
 cTPnet	Integration
 cvCovEst	GeneNetworks
 Cyclum	CellCycle
 Cyclum	DimensionalityReduction
+cytocipher	Clustering
+cytocipher	MarkerGenes
+cytocipher	Visualisation
 Cytopath	Ordering
 Cytopath	Visualisation
 CytoSPACE	Integration
@@ -641,6 +649,10 @@ D3E	DifferentialExpression
 DALI	Immune
 DALI	Integration
 DALI	Visualisation
+DANCE	Classification
+DANCE	Clustering
+DANCE	Imputation
+DANCE	Integration
 dandelion	Immune
 dandelion	Visualisation
 DAPCA	DimensionalityReduction
@@ -1041,6 +1053,9 @@ GiniClust3	Clustering
 GiniClust3	DimensionalityReduction
 GiniClust3	RareCells
 GiniClust3	Visualisation
+GiRAFR	Quantification
+GiRAFR	UMIs
+GiRAFR	Variants
 GLM-PCA	DimensionalityReduction
 glmGamPoi	DifferentialExpression
 GLUE	GeneNetworks
@@ -1556,6 +1571,10 @@ MUSIC	Perturbations
 MUSIC	QualityControl
 MUSIC	Visualisation
 MuTrans	Ordering
+mvTCR	DimensionalityReduction
+mvTCR	Immune
+mvTCR	Integration
+mvTCR	Perturbations
 N-ACT	Classification
 NaiveDE	DifferentialExpression
 NaiveDE	Simulation
@@ -1647,6 +1666,7 @@ Palantir	Ordering
 Palantir	QualityControl
 Palantir	Visualisation
 PALMO	DimensionalityReduction
+PALMO	Integration
 PALMO	VariableGenes
 PALMO	Visualisation
 Palo	Visualisation
@@ -1778,6 +1798,9 @@ PyMINEr	GeneNetworks
 PyMINEr	GeneSets
 PyMINEr	Visualisation
 pyNVR	VariableGenes
+Pyro-Velocity	DimensionalityReduction
+Pyro-Velocity	Ordering
+Pyro-Velocity	Visualisation
 PySCUBA	Clustering
 PySCUBA	Interactive
 PySCUBA	Ordering
@@ -2114,6 +2137,10 @@ scclusteval	Clustering
 scclusteval	Visualisation
 scClustViz	Interactive
 scClustViz	Visualisation
+scCobra	DimensionalityReduction
+scCobra	Integration
+scCobra	Normalisation
+scCobra	VariableGenes
 scCODA	Modality
 scCODE	DifferentialExpression
 scCODE	Visualisation
@@ -2281,6 +2308,8 @@ scGESTALT	Visualisation
 scGNN	Clustering
 scGNN	Imputation
 scGNN	VariableGenes
+scGNN2	Clustering
+scGNN2	Imputation
 scGPS	Clustering
 scGPS	MarkerGenes
 scGPS	VariableGenes
@@ -2288,6 +2317,7 @@ scGPS	Visualisation
 scGraph	Classification
 scGTM	ExpressionPatterns
 scGTM	Visualisation
+scGWAS	Variants
 schema	DifferentialExpression
 schema	GeneSets
 schema	Integration
@@ -2781,6 +2811,8 @@ SDAMS	Modality
 SDImpute	Imputation
 SEACells	Clustering
 SEACells	Visualisation
+SEAT	Clustering
+SEAT	DimensionalityReduction
 secDrug	Perturbations
 SEDIM	Imputation
 SEGtool	GeneFiltering
@@ -3242,6 +3274,7 @@ velociraptor	Ordering
 velocyto	AlternativeSplicing
 velocyto	Ordering
 velocyto	Visualisation
+Velorama	GeneNetworks
 VeloRep	DimensionalityReduction
 VeloRep	Ordering
 VeloSim	Simulation
