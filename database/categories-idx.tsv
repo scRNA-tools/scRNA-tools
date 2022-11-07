@@ -30,6 +30,7 @@ adobo	Imputation
 adobo	Normalisation
 adobo	QualityControl
 adobo	Visualisation
+AE-TPGG	DimensionalityReduction
 aggregateBioVar	Quantification
 airpart	AlternativeSplicing
 airpart	QualityControl
@@ -122,6 +123,7 @@ BASiCS	DifferentialExpression
 BASiCS	Normalisation
 BASiCS	Simulation
 BASiCS	VariableGenes
+BASiCStan	Normalisation
 BasisVAE	Clustering
 BatchBench	Integration
 BatchBench	QualityControl
@@ -545,6 +547,8 @@ cola	Visualisation
 CombiROC	MarkerGenes
 COMET	MarkerGenes
 COMET	Visualisation
+CommPath	GeneNetworks
+CommPath	Visualisation
 Compartmap	Integration
 Compartmap	Visualisation
 compass	DimensionalityReduction
@@ -699,6 +703,8 @@ Demuxalot	Variants
 demuxlet	QualityControl
 demuxlet	UMIs
 demuxlet	Variants
+demuxmix	UMIs
+demuxmix	Visualisation
 DEN	DimensionalityReduction
 DEN	Visualisation
 DENDRO	Clustering
@@ -740,6 +746,10 @@ Dhaka	Clustering
 Dhaka	DimensionalityReduction
 Dhaka	Visualisation
 DIALOGUE	DimensionalityReduction
+Dictys	GeneNetworks
+Dictys	Integration
+Dictys	Ordering
+Dictys	Visualisation
 DIEM	Clustering
 DIEM	GeneFiltering
 DIEM	QualityControl
@@ -868,6 +878,9 @@ dynverse	Normalisation
 dynverse	Ordering
 dynverse	Simulation
 dynverse	Visualisation
+EasyCellType	Classification
+EasyCellType	MarkerGenes
+EasyCellType	Visualisation
 ECLAIR	Clustering
 ECLAIR	Ordering
 ECLAIR	Visualisation
@@ -918,6 +931,7 @@ eSVD	Ordering
 eSVD	Visualisation
 EVI	Integration
 EVI	Ordering
+exceiver	GeneNetworks
 Falco	Alignment
 Falco	Quantification
 FastCount	Quantification
@@ -2103,6 +2117,7 @@ scBERT	Classification
 scBio	Integration
 scBonita	GeneNetworks
 scBT	DifferentialExpression
+scBubbletree	Visualisation
 SCC	Imputation
 scCAEs	Clustering
 scCAEs	DimensionalityReduction
@@ -2384,6 +2399,9 @@ scINSIGHT	DimensionalityReduction
 scINSIGHT	GeneSets
 scINSIGHT	Perturbations
 scIntegral	Integration
+sciPENN	Classification
+sciPENN	Imputation
+sciPENN	Integration
 scipr	Integration
 scirpy	Immune
 scirpy	Visualisation
@@ -2532,6 +2550,13 @@ SCORPIUS	Visualisation
 SCOUP	Ordering
 SCOUT	Ordering
 scover	GeneNetworks
+SCP	DifferentialExpression
+SCP	DimensionalityReduction
+SCP	GeneSets
+SCP	Integration
+SCP	Ordering
+SCP	QualityControl
+SCP	Visualisation
 SCPA	GeneSets
 SCPA	Visualisation
 scPanoView	Clustering
@@ -2778,6 +2803,8 @@ scUTRquant	Quantification
 scuttle	Normalisation
 scuttle	QualityControl
 scVAE	Clustering
+scVAEIT	Imputation
+scVAEIT	Integration
 scVDMC	Clustering
 scVEGs	VariableGenes
 scVelo	GeneFiltering
@@ -3259,6 +3286,9 @@ VarTrix	Alignment
 VarTrix	Variants
 VASC	DimensionalityReduction
 VASC	Visualisation
+VDJdive	Immune
+VDJdive	Integration
+VDJdive	Visualisation
 VDJPuzzle	Alignment
 VDJPuzzle	Assembly
 VDJPuzzle	Immune
@@ -3282,6 +3312,8 @@ VeloSim	Visualisation
 VeloVAE	Ordering
 VeloViz	DimensionalityReduction
 VeloViz	Visualisation
+Venus	Alignment
+Venus	Quantification
 VeTra	Ordering
 VIA	ExpressionPatterns
 VIA	Ordering
