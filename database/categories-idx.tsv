@@ -595,6 +595,7 @@ CoSpar	CellCycle
 CoSpar	Ordering
 CoSpar	VariableGenes
 CoSpar	Visualisation
+CosTaL	Clustering
 COT	MarkerGenes
 countClust	Clustering
 countClust	DifferentialExpression
@@ -893,6 +894,7 @@ ELeFHAnt	Classification
 ELeFHAnt	Integration
 ELSA	Classification
 ELSA	DimensionalityReduction
+ELVAR	Clustering
 embeddr	Ordering
 EMBEDR	DimensionalityReduction
 EMBEDR	Visualisation
@@ -1167,6 +1169,8 @@ i2dash	Visualisation
 iasva	DimensionalityReduction
 iasva	MarkerGenes
 iasva	Normalisation
+Ibex	DimensionalityReduction
+Ibex	Immune
 IBMR	Classification
 IBMR	Simulation
 ICAnet	DimensionalityReduction
@@ -1449,6 +1453,8 @@ MELD	Integration
 MELD	Perturbations
 MELT	DimensionalityReduction
 MELT	Ordering
+memento	DifferentialExpression
+memento	Simulation
 MERLoT	Ordering
 MERLoT	Visualisation
 MetaCell	Clustering
@@ -2048,6 +2054,14 @@ scAmpi	DifferentialExpression
 scAmpi	Normalisation
 scAmpi	QualityControl
 scAmpi	Quantification
+scAN10	Alignment
+scAN10	Clustering
+scAN10	DimensionalityReduction
+scAN10	Normalisation
+scAN10	QualityControl
+scAN10	Quantification
+scAN10	UMIs
+scAN10	Visualisation
 scanalysis	Immune
 scanalysis	QualityControl
 scanalysis	Visualisation
@@ -3021,6 +3035,10 @@ SIP	Alignment
 sircel	Quantification
 sircel	UMIs
 SISUA	DimensionalityReduction
+SJD	DimensionalityReduction
+SJD	Integration
+SJD	Normalisation
+SJD	Visualisation
 slalom	DimensionalityReduction
 slalom	GeneSets
 slalom	VariableGenes
@@ -3091,6 +3109,8 @@ Sphetcher	DimensionalityReduction
 splattdr	Simulation
 Splatter	Simulation
 Splatter	Visualisation
+spliceJAC	GeneNetworks
+spliceJAC	Visualisation
 SPmarker	MarkerGenes
 SPRING	DimensionalityReduction
 SPRING	Interactive
@@ -3178,6 +3198,8 @@ Tobiko	Immune
 Tobiko	QualityControl
 Tobiko	Quantification
 Tobiko	UMIs
+TOMAS	DifferentialExpression
+TOMAS	Visualisation
 TooManyCells	Clustering
 TooManyCells	DifferentialExpression
 TooManyCells	RareCells
