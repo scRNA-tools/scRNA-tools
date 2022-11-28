@@ -1654,10 +1654,10 @@
       {
         "Title": "Besca, a single-cell transcriptomics analysis toolkit to accelerate translational research",
         "DOI": "10.1101/2020.08.11.245795",
-        "Citations": 1
+        "Citations": 0
       }
     ],
-    "Citations": 6,
+    "Citations": 5,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "besca",
@@ -2607,8 +2607,8 @@
     "Description": "CAPITAL, a method for comparing pseudotime trajectories with tree alignment whereby trajectories including branching can be compared without any knowledge of paths to be compared.",
     "License": "BSD-3-Clause",
     "Added": "2019-12-05",
-    "Updated": "2022-10-28",
-    "Categories": ["Ordering"],
+    "Updated": "2022-11-25",
+    "Categories": ["DimensionalityReduction", "ExpressionPatterns", "Ordering", "QualityControl", "VariableGenes", "Visualisation"],
     "Publications": [
       {
         "Title": "Alignment of single-cell trajectory trees with CAPITAL",
@@ -6937,6 +6937,28 @@
     "GitHub": "DaigoOkada/deef"
   },
   {
+    "Tool": "DeepCCI",
+    "Platform": "Python/R",
+    "Code": "https://github.com/JiangBioLab/DeepCCI",
+    "Description": "DeepCCI is a graph convolutional network (GCN)-based deep learning framework for Cell-Cell Interactions inference from scRNA-seq data",
+    "License": "MIT",
+    "Added": "2022-11-25",
+    "Updated": "2022-11-25",
+    "Categories": ["Clustering", "GeneNetworks", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "DeepCCI: a deep learning framework for identifying cell-cell interactions from single-cell RNA sequencing data",
+        "DOI": "10.1101/2022.11.11.516061",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "JiangBioLab/DeepCCI"
+  },
+  {
     "Tool": "DeepCycle",
     "Platform": "Python",
     "Code": "https://github.com/andreariba/DeepCycle",
@@ -7400,7 +7422,7 @@
         "Title": "Assessing single-cell transcriptomic variability through density-preserving data visualization",
         "DOI": "10.1038/s41587-020-00801-7",
         "Date": "2021-01-18",
-        "Citations": 26
+        "Citations": 27
       }
     ],
     "Preprints": [
@@ -7410,7 +7432,7 @@
         "Citations": 7
       }
     ],
-    "Citations": 33,
+    "Citations": 34,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "hhcho/densvis"
@@ -10732,7 +10754,7 @@
     "Description": "Vector representations of gene co-expression in single cell RNAseq",
     "License": "MIT",
     "Added": "2022-05-06",
-    "Updated": "2022-05-06",
+    "Updated": "2022-11-25",
     "Categories": ["DimensionalityReduction", "GeneNetworks", "Integration"],
     "Publications": [],
     "Preprints": [
@@ -10745,6 +10767,7 @@
     "Citations": 2,
     "NumPubs": 0,
     "NumPreprints": 1,
+    "PyPI": "genevector-nceglia",
     "GitHub": "nceglia/genevector"
   },
   {
@@ -11672,7 +11695,7 @@
     "Description": "Algorithm that projects cells into a shared embedding in which cells group by cell type rather than dataset-specific conditions.",
     "License": "GPL-3.0",
     "Added": "2018-11-09",
-    "Updated": "2021-06-04",
+    "Updated": "2022-11-25",
     "Categories": ["DimensionalityReduction", "Integration"],
     "Publications": [
       {
@@ -11692,6 +11715,7 @@
     "Citations": 1528,
     "NumPubs": 1,
     "NumPreprints": 1,
+    "CRAN": "harmony",
     "GitHub": "immunogenomics/harmony"
   },
   {
@@ -12131,10 +12155,10 @@
       {
         "Title": "Hypercluster: a flexible tool for parallelized unsupervised clustering optimization",
         "DOI": "10.1101/2020.01.13.905323",
-        "Citations": 1
+        "Citations": 2
       }
     ],
-    "Citations": 4,
+    "Citations": 5,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "hypercluster",
@@ -13252,7 +13276,7 @@
     "Description": "The jackstraw package provides a statistical test to identify variables (i.e., transcripts, genes) or observations (i.e., single cells) that are significantly associated with latent variables.",
     "License": "GPL-2.0",
     "Added": "2018-06-27",
-    "Updated": "2021-06-18",
+    "Updated": "2022-11-25",
     "Categories": ["Clustering", "DimensionalityReduction", "GeneFiltering", "MarkerGenes", "VariableGenes"],
     "Publications": [
       {
@@ -13278,6 +13302,7 @@
     "Citations": 134,
     "NumPubs": 2,
     "NumPreprints": 1,
+    "CRAN": "jackstraw",
     "GitHub": "ncchung/jackstraw"
   },
   {
@@ -13905,7 +13930,7 @@
     "Description": "LIANA: a LIgand-receptor ANalysis frAmework",
     "License": "GPL-3.0",
     "Added": "2021-07-09",
-    "Updated": "2022-06-17",
+    "Updated": "2022-11-25",
     "Categories": ["GeneNetworks"],
     "Publications": [
       {
@@ -13925,6 +13950,7 @@
     "Citations": 27,
     "NumPubs": 1,
     "NumPreprints": 1,
+    "PyPI": "liana",
     "GitHub": "saezlab/liana"
   },
   {
@@ -15953,6 +15979,28 @@
     "GitHub": "pengminshi/MRtree"
   },
   {
+    "Tool": "mtANN",
+    "Platform": "Python/R",
+    "Code": "https://github.com/Zhangxf-ccnu/mtANN",
+    "Description": "mtANN is a novel cell-type annotation framework that integrates ensemble learning and deep learning simultaneously, to annotate cells in a new query dataset with the help of multiple well-labeled reference datasets",
+    "Added": "2022-11-25",
+    "Updated": "2022-11-25",
+    "Categories": ["Classification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Cell-type annotation with accurate unseen cell-type identification using multiple references",
+        "DOI": "10.1101/2022.11.17.516980",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "PyPI": "mtANN",
+    "GitHub": "Zhangxf-ccnu/mtANN"
+  },
+  {
     "Tool": "MTD",
     "Platform": "R/Python",
     "Code": "https://github.com/FEI38750/MTD",
@@ -17514,7 +17562,7 @@
         "Title": "Parallel clustering of single cell transcriptomic data with split-merge sampling on Dirichlet process mixtures",
         "DOI": "10.1093/bioinformatics/bty702",
         "Date": "2018-08-28",
-        "Citations": 9
+        "Citations": 10
       }
     ],
     "Preprints": [
@@ -17524,7 +17572,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 10,
+    "Citations": 11,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "tiehangd/Para_DPMM"
@@ -17909,6 +17957,30 @@
     "NumPreprints": 1,
     "Bioc": "phenopath",
     "GitHub": "kieranrcampbell/phenopath"
+  },
+  {
+    "Tool": "phenotype-cover",
+    "Platform": "Python",
+    "Code": "https://github.com/euxhenh/phenotype-cover",
+    "Description": "Multiset multicover methods for discriminative marker selection",
+    "License": "MIT",
+    "Added": "2022-11-25",
+    "Updated": "2022-11-25",
+    "Categories": ["MarkerGenes", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "Multiset multicover methods for discriminative marker selection",
+        "DOI": "10.1016/j.crmeth.2022.100332",
+        "Date": "2022-11",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "PyPI": "phenotype-cover",
+    "GitHub": "euxhenh/phenotype-cover"
   },
   {
     "Tool": "phiclust",
@@ -20179,7 +20251,7 @@
         "Title": "Salmon provides fast and bias-aware quantification of transcript expression",
         "DOI": "10.1038/nmeth.4197",
         "Date": "2017-03-06",
-        "Citations": 4685
+        "Citations": 4687
       },
       {
         "Title": "A Bayesian framework for inter-cellular information sharing improves dscRNA-seq quantification",
@@ -20211,7 +20283,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 4902,
+    "Citations": 4904,
     "NumPubs": 3,
     "NumPreprints": 3,
     "GitHub": "COMBINE-lab/salmon"
@@ -20643,6 +20715,23 @@
     "GitHub": "haowulab/SC2P"
   },
   {
+    "Tool": "SC2Spa",
+    "Platform": "Python",
+    "Code": "https://github.com/linbuliao/SC2Spa",
+    "Description": "SC2Spa: a deep learning based approach to map transcriptome to spatial origins at cellular resolution",
+    "License": "BSD-3-Clause",
+    "Added": "2022-11-25",
+    "Updated": "2022-11-25",
+    "Categories": ["ExpressionPatterns", "Integration", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "PyPI": "SC2Spa",
+    "GitHub": "linbuliao/SC2Spa"
+  },
+  {
     "Tool": "SC3",
     "Platform": "R",
     "Code": "https://github.com/hemberg-lab/sc3",
@@ -20663,10 +20752,10 @@
       {
         "Title": "SC3 - consensus clustering of single-cell RNA-Seq data",
         "DOI": "10.1101/036558",
-        "Citations": 33
+        "Citations": 32
       }
     ],
-    "Citations": 936,
+    "Citations": 935,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "SC3",
@@ -29127,7 +29216,7 @@
         "Title": "Generalizing RNA velocity to transient cell states through dynamical modeling",
         "DOI": "10.1038/s41587-020-0591-3",
         "Date": "2020-08-03",
-        "Citations": 738
+        "Citations": 739
       }
     ],
     "Preprints": [
@@ -29137,7 +29226,7 @@
         "Citations": 107
       }
     ],
-    "Citations": 845,
+    "Citations": 846,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "scvelo",
@@ -30663,7 +30752,7 @@
     "Description": "singleCellHaystack is a package for finding surprising needles (=genes) in haystacks (=multi-dimensional representations of single cell transcriptome data)",
     "License": "MIT",
     "Added": "2019-02-25",
-    "Updated": "2021-06-18",
+    "Updated": "2022-11-25",
     "Categories": ["DifferentialExpression", "MarkerGenes", "Visualisation"],
     "Publications": [
       {
@@ -30675,6 +30764,11 @@
     ],
     "Preprints": [
       {
+        "Title": "A universal differential expression prediction tool for single-cell and spatial genomics data",
+        "DOI": "10.1101/2022.11.13.516355",
+        "Citations": 0
+      },
+      {
         "Title": "singleCellHaystack: Finding surprising genes in 2-dimensional representations of single cell transcriptome data",
         "DOI": "10.1101/557967",
         "Citations": 0
@@ -30682,7 +30776,7 @@
     ],
     "Citations": 21,
     "NumPubs": 1,
-    "NumPreprints": 1,
+    "NumPreprints": 2,
     "CRAN": "singleCellHaystack",
     "GitHub": "alexisvdb/singleCellHaystack"
   },
@@ -32127,7 +32221,7 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 23984
+        "Citations": 23989
       }
     ],
     "Preprints": [
@@ -32137,7 +32231,7 @@
         "Citations": 58
       }
     ],
-    "Citations": 24042,
+    "Citations": 24047,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "alexdobin/STAR"
@@ -32875,6 +32969,28 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "carmonalab/TILPRED"
+  },
+  {
+    "Tool": "TimiGP",
+    "Platform": "R",
+    "Code": "https://github.com/CSkylarL/TimiGP",
+    "Description": "An R package to infer cell functional interactions and clinical values in tumor immune microenvironment through gene pairs",
+    "License": "MIT",
+    "Added": "2022-11-25",
+    "Updated": "2022-11-25",
+    "Categories": ["GeneNetworks", "Immune"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "TimiGP: inferring inter-cell functional interactions and clinical values in the tumor immune microenvironment through gene pairs",
+        "DOI": "10.1101/2022.11.17.515465",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "CSkylarL/TimiGP"
   },
   {
     "Tool": "TinGa",
@@ -33970,9 +34086,16 @@
     "Description": "UniverSC is a universal single-cell processing tool that supports any UMI-based platform",
     "License": "GPL-3.0",
     "Added": "2021-01-22",
-    "Updated": "2021-01-22",
+    "Updated": "2022-11-25",
     "Categories": ["Alignment", "Quantification", "UMIs"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "A flexible cross-platform single-cell data processing pipeline",
+        "DOI": "10.1038/s41467-022-34681-z",
+        "Date": "2022-11-11",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "UniverSC: a flexible cross-platform single-cell data processing pipeline",
@@ -33981,7 +34104,7 @@
       }
     ],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "minoda-lab/universc"
   },
@@ -34343,7 +34466,7 @@
         "Title": "RNA velocity of single cells",
         "DOI": "10.1038/s41586-018-0414-6",
         "Date": "2018-08-08",
-        "Citations": 1725
+        "Citations": 1726
       }
     ],
     "Preprints": [
@@ -34353,7 +34476,7 @@
         "Citations": 20
       }
     ],
-    "Citations": 1745,
+    "Citations": 1746,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "velocyto",
