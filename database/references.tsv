@@ -74,6 +74,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1016/j.csbj.2022.07.047	FALSE	FALSE	2022	dsCellNet: A new computational tool to infer cell–cell communication networks in the developing and aging brain
 10.1016/j.csbj.2022.08.028	FALSE	FALSE	2022-08	scWizard: a web-based automated tool for classifying and annotating single cells and downstream analysis of single-cell RNA-seq data in cancers
 10.1016/j.csbj.2022.10.028	FALSE	FALSE	2022-10	CommPath: An R package for inference and analysis of pathway-mediated cell-cell communication chain from single-cell transcriptomics
+10.1016/j.csbj.2022.11.055	FALSE	FALSE	2023	scDrug: From single-cell RNA-seq to drug response prediction
 10.1016/j.exphem.2019.08.009	FALSE	FALSE	2019-10	Machine learning predicts putative haematopoietic stem cells within large single-cell transcriptomics datasets
 10.1016/j.gene.2022.146520	FALSE	FALSE	2022-06	Discovering single-cell eQTLs from scRNA-seq data only
 10.1016/j.gpb.2018.08.003	FALSE	FALSE	2018-10	VASC: Dimension Reduction and Visualization of Single-cell RNA-seq Data by Deep Variational Autoencoder
@@ -95,6 +96,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1016/j.isci.2021.103200	FALSE	FALSE	2021-10	Miscell: an efficient self-supervised learning approach for dissecting single-cell transcriptome
 10.1016/j.isci.2021.103251	FALSE	FALSE	2021-11	CellexalVR: A virtual reality platform to visualize and analyze single-cell omics data
 10.1016/j.isci.2022.104962	FALSE	FALSE	2022-08	miRSCAPE - Inferring miRNA expression from scRNA-seq data
+10.1016/j.isci.2022.105709	FALSE	FALSE	2022-12	Distance covariance entropy reveals primed states and bifurcation dynamics in single-cell RNA-Seq data
 10.1016/j.jbi.2021.103899	FALSE	FALSE	2021-09	scLINE: A multi-network integration framework based on network embedding for representation of single-cell RNA-seq data
 10.1016/j.jbi.2022.104093	FALSE	FALSE	2022-06	A downsampling method enables robust clustering and integration of single-cell transcriptome data
 10.1016/j.jim.2021.113176	FALSE	FALSE	2021-12	SCHNAPPs - Single Cell sHiNy APPlication(s)
@@ -249,6 +251,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1038/s41467-022-34277-7	FALSE	FALSE	2022-10-30	Deep transfer learning of cancer drug responses by integrating bulk and single-cell RNA-seq data
 10.1038/s41467-022-34595-w	FALSE	FALSE	2022-11-21	Leveraging data-driven self-consistency for high-fidelity gene expression recovery
 10.1038/s41467-022-34681-z	FALSE	FALSE	2022-11-11	A flexible cross-platform single-cell data processing pipeline
+10.1038/s41467-022-35094-8	FALSE	FALSE	2022-12-01	A unified computational framework for single-cell data integration with optimal transport
 10.1038/s41540-020-00162-6	FALSE	FALSE	2021-01-05	Sparsely-connected autoencoder (SCA) for single cell RNAseq data mining
 10.1038/s41551-021-00770-5	FALSE	FALSE	2021-08-02	Computational reconstruction of the signalling networks surrounding implanted biomaterials from single-cell transcriptomics
 10.1038/s41556-022-00884-1	FALSE	FALSE	2022-04-12	CellComm infers cellular crosstalk that drives haematopoietic stem and progenitor cell development
@@ -1255,6 +1258,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2022.02.11.480077	FALSE	TRUE	NA	ClonoCluster: a method for using clonal origin to inform transcriptome clustering
 10.1101/2022.02.13.480282	FALSE	TRUE	NA	A novel Bayesian factor analysis method improves detection of genes and biological processes affected by perturbations in single-cell CRISPR screening
 10.1101/2022.02.13.480299	FALSE	TRUE	NA	scShapes: A statistical framework for identifying distribution shapes in single-cell RNA-sequencing data
+10.1101/2022.02.14.480323	FALSE	TRUE	NA	uniPort: a unified computational framework for single-cell data integration with optimal transport
 10.1101/2022.02.16.480703	FALSE	TRUE	NA	Tensor decomposition reveals coordinated multicellular patterns of transcriptional variation that distinguish and stratify disease individuals
 10.1101/2022.02.23.481646	FALSE	TRUE	NA	SEQUIN: rapid and reproducible analysis of RNA-seq data in R/Shiny
 10.1101/2022.02.24.481684	FALSE	TRUE	NA	Dictionary learning for integrative, multimodal, and scalable single-cell analysis
@@ -1349,6 +1353,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2022.11.09.515787	FALSE	TRUE	NA	Ibex: Variational autoencoder for single-cell BCR sequencing.
 10.1101/2022.11.09.515836	FALSE	TRUE	NA	memento: Generalized differential expression analysis of single-cell RNA-seq with method of moments estimation and efficient resampling
 10.1101/2022.11.10.516044	FALSE	TRUE	NA	CosTaL: An Accurate and Scalable Graph-Based Clustering Algorithm for High-Dimensional Single-Cell Data Analysis
+10.1101/2022.11.10.516050	FALSE	TRUE	NA	STREAK: A Supervised Cell Surface Receptor Abundance Estimation Strategy for Single Cell RNA-Sequencing Data using Feature Selection and Thresholded Gene Set Scoring
 10.1101/2022.11.11.516061	FALSE	TRUE	NA	DeepCCI: a deep learning framework for identifying cell-cell interactions from single-cell RNA sequencing data
 10.1101/2022.11.13.516355	FALSE	TRUE	NA	A universal differential expression prediction tool for single-cell and spatial genomics data
 10.1101/2022.11.17.515465	FALSE	TRUE	NA	TimiGP: inferring inter-cell functional interactions and clinical values in the tumor immune microenvironment through gene pairs
@@ -1357,6 +1362,12 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2022.11.22.517567	FALSE	TRUE	NA	Accurate<i>de novo</i>detection of somatic mutations in high-throughput single-cell profiling data sets
 10.1101/2022.11.25.518001	FALSE	TRUE	NA	SLIDE: Significant Latent Factor Interaction Discovery and Exploration across biological domains
 10.1101/2022.11.28.517803	FALSE	TRUE	NA	Population-level integration of single-cell datasets enables multi-scale analysis across samples
+10.1101/2022.11.29.518384	FALSE	TRUE	NA	Gene Set Scoring on the Nearest Neighbor Graph (gssnng) for Single Cell RNA-seq (scRNA-seq)
+10.1101/2022.12.01.518678	FALSE	TRUE	NA	Metacell projection for interpretable and quantitative use of transcriptional atlases
+10.1101/2022.12.02.518832	FALSE	TRUE	NA	Accurate quantification of single-nucleus and single-cell RNA-seq transcripts
+10.1101/2022.12.04.519058	FALSE	TRUE	NA	Monopogen: single nucleotide variant calling from single cell sequencing
+10.1101/2022.12.05.519161	FALSE	TRUE	NA	Anti-correlated Feature Selection Prevents False Discovery of Subpopulations in scRNAseq
+10.1101/2022.12.06.519414	FALSE	TRUE	NA	Unsupervised reference-free inference reveals unrecognized regulated transcriptomic complexity in human single cells
 10.1101/205534	FALSE	TRUE	NA	Simultaneous single-cell profiling of lineages and cell types in the vertebrate brain by scGESTALT
 10.1101/206052	FALSE	TRUE	NA	RNA velocity in single cells
 10.1101/207704	FALSE	TRUE	NA	ascend: R package for analysis of single cell RNA-seq data
@@ -1913,6 +1924,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1371/journal.pcbi.1010351	FALSE	FALSE	2022-07-21	Haisu: Hierarchically supervised nonlinear dimensionality reduction
 10.1371/journal.pcbi.1010636	FALSE	FALSE	2022-10-27	Venus: An efficient virus infection detection and fusion site discovery method using single-cell and bulk RNA-seq data
 10.1371/journal.pcbi.1010715	FALSE	FALSE	2022-11-17	Inferring a spatial code of cell-cell interactions across a whole animal body
+10.1371/journal.pcbi.1010753	FALSE	FALSE	2022-12-05	Secuer: Ultrafast, scalable and accurate clustering of single-cell RNA-seq data
 10.1371/journal.pgen.1006599	FALSE	FALSE	2017-03-23	Visualizing the structure of RNA-seq expression data using grade of membership models
 10.1371/journal.pgen.1010251	FALSE	FALSE	2022-06-16	EPIC: Inferring relevant cell types for complex traits by integrating genome-wide association studies and single-cell RNA sequencing
 10.1371/journal.pone.0180583	FALSE	FALSE	2017-07-03	Dr.seq2: A quality control and analysis pipeline for parallel single cell transcriptome and epigenome data
@@ -2017,3 +2029,4 @@ arxiv/2203.01990	TRUE	TRUE	NA	From local to global gene co-expression estimation
 arxiv/2207.14106	TRUE	TRUE	NA	MarkerMap: nonlinear marker selection for single-cell studies
 arxiv/2208.13290	TRUE	TRUE	NA	Domain Adaptation Principal Component Analysis: base linear method for learning with out-of-distribution data
 arxiv/2210.14330	TRUE	TRUE	NA	A single-cell gene expression language model
+arxiv/2212.00519	TRUE	TRUE	NA	Corvo: Visualizing CellxGene Single-Cell Datasets in Virtual Reality

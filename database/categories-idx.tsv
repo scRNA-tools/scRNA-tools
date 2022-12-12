@@ -58,6 +58,7 @@ AltAnalyze	Quantification
 AltAnalyze	Visualisation
 AmbientContaminationMetrics	QualityControl
 anchor	Modality
+anticor_features	VariableGenes
 APL	GeneSets
 APL	MarkerGenes
 APL	Visualisation
@@ -595,6 +596,8 @@ CopulaGCN	DimensionalityReduction
 CopyKAT	Variants
 corral	DimensionalityReduction
 corral	Integration
+Corvo	Interactive
+Corvo	Visualisation
 COSG	MarkerGenes
 COSGR	MarkerGenes
 COSLIR	GeneNetworks
@@ -757,6 +760,7 @@ Dhaka	Clustering
 Dhaka	DimensionalityReduction
 Dhaka	Visualisation
 DIALOGUE	DimensionalityReduction
+DICE	Ordering
 Dictys	GeneNetworks
 Dictys	Integration
 Dictys	Ordering
@@ -1135,6 +1139,7 @@ GSFA	Normalisation
 GSFA	Perturbations
 GSFA	VariableGenes
 GSFA	Variants
+gssnng	GeneSets
 h-tSNE	DimensionalityReduction
 Haisu	DimensionalityReduction
 HAL	Classification
@@ -1553,6 +1558,7 @@ Monod	DifferentialExpression
 Monod	QualityControl
 Monod	Quantification
 Monod	Visualisation
+Monopopgen	Variants
 MOSCATO	GeneNetworks
 MOSCATO	Simulation
 Mpath	Ordering
@@ -1647,6 +1653,8 @@ NIFA	DimensionalityReduction
 nimfa	Clustering
 nimfa	DimensionalityReduction
 nimfa	Visualisation
+NOMAD	AlternativeSplicing
+NOMAD	Variants
 Normalisr	DifferentialExpression
 Normalisr	GeneNetworks
 Normalisr	Normalisation
@@ -2262,6 +2270,7 @@ scdney	Visualisation
 scDoc	Imputation
 scDREAMER	Integration
 scDRS	Variants
+scDrug	Perturbations
 scds	QualityControl
 sceb	VariableGenes
 scEC	Clustering
@@ -2669,6 +2678,8 @@ scran	VariableGenes
 scran	Visualisation
 scRare	Classification
 scRare	RareCells
+scRAS	RareCells
+scRAS	Visualisation
 SCRAT	CellCycle
 SCRAT	Clustering
 SCRAT	DimensionalityReduction
@@ -2883,6 +2894,7 @@ SEACells	Visualisation
 SEAT	Clustering
 SEAT	DimensionalityReduction
 secDrug	Perturbations
+Secuer	Clustering
 SEDIM	Imputation
 SEGtool	GeneFiltering
 SEGtool	MarkerGenes
@@ -3167,6 +3179,7 @@ STARE	GeneNetworks
 StationaryOT	Ordering
 STEMNET	Ordering
 STEMNET	Visualisation
+STREAK	Immune
 STREAM	ExpressionPatterns
 STREAM	Interactive
 STREAM	Normalisation
@@ -3310,6 +3323,7 @@ UniPath	Clustering
 UniPath	GeneSets
 UniPath	Imputation
 UniPath	Ordering
+uniPort	Integration
 UniTVelo	Ordering
 UniTVelo	Visualisation
 UniverSC	Alignment
