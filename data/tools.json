@@ -1676,10 +1676,10 @@
       {
         "Title": "Besca, a single-cell transcriptomics analysis toolkit to accelerate translational research",
         "DOI": "10.1101/2020.08.11.245795",
-        "Citations": 1
+        "Citations": 0
       }
     ],
-    "Citations": 7,
+    "Citations": 6,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "besca",
@@ -3861,20 +3861,14 @@
     "Description": "CellOracle integrates single-cell transcriptome and epigenome profiles to infer gene regulatory networks.",
     "License": "Apache-2.0",
     "Added": "2021-01-25",
-    "Updated": "2023-02-17",
+    "Updated": "2023-01-04",
     "Categories": ["GeneNetworks", "GeneSets", "Integration", "Perturbations", "Simulation"],
     "Publications": [
       {
         "Title": "Gene regulatory network reconfiguration in direct lineage reprogramming",
         "DOI": "10.1016/j.stemcr.2022.11.010",
-        "Date": "2023-01",
+        "Date": "2022-12",
         "Citations": 2
-      },
-      {
-        "Title": "Dissecting cell identity via network inference and in silico gene perturbation",
-        "DOI": "10.1038/s41586-022-05688-9",
-        "Date": "2023-02-08",
-        "Citations": 0
       }
     ],
     "Preprints": [
@@ -3885,7 +3879,7 @@
       }
     ],
     "Citations": 56,
-    "NumPubs": 2,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "morris-lab/CellOracle"
   },
@@ -4402,22 +4396,6 @@
     "NumPubs": 0,
     "NumPreprints": 2,
     "GitHub": "interactivereport/cellxgene_VIP"
-  },
-  {
-    "Tool": "cellXY",
-    "Platform": "R",
-    "Code": "https://github.com/phipsonlab/cellXY",
-    "Description": "The cellXY package currently contains trained models to classify cells as male or female and to predict whether a cell is a male-female doublet or not",
-    "License": "GPL-3.0",
-    "Added": "2023-02-17",
-    "Updated": "2023-02-17",
-    "Categories": ["Classification"],
-    "Publications": [],
-    "Preprints": [],
-    "Citations": 0,
-    "NumPubs": 0,
-    "NumPreprints": 0,
-    "GitHub": "phipsonlab/cellXY"
   },
   {
     "Tool": "Census",
@@ -9375,28 +9353,6 @@
     "GitHub": "dynverse/dyngen"
   },
   {
-    "Tool": "DynGFN",
-    "Platform": "Python",
-    "Code": "https://github.com/lazaratan/dyn-gfn",
-    "Description": "DynGFN is method for learning cyclic causal structure of dynamic systems from observational time-series data",
-    "License": "MIT",
-    "Added": "2023-02-17",
-    "Updated": "2023-02-17",
-    "Categories": ["GeneNetworks"],
-    "Publications": [],
-    "Preprints": [
-      {
-        "Title": "DynGFN: Bayesian Dynamic Causal Discovery using Generative Flow Networks",
-        "DOI": "arxiv/2302.04178",
-        "Citations": 0
-      }
-    ],
-    "Citations": 0,
-    "NumPubs": 0,
-    "NumPreprints": 1,
-    "GitHub": "lazaratan/dyn-gfn"
-  },
-  {
     "Tool": "dynverse",
     "Platform": "R",
     "Code": "https://github.com/dynverse/dynverse",
@@ -11081,30 +11037,6 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "MarioniLab/geneBasisR"
-  },
-  {
-    "Tool": "GeneClust",
-    "Platform": "Python",
-    "Code": "https://github.com/ToryDeng/scGeneClust",
-    "Description": "GeneClust is a computational feature selection method for scRNA-seq cell clustering. GeneClust groups genes into clusters from which genes are evaluated and selected with the aim of maximizing relevance, minimizing redundancy and preserving complementarity.",
-    "License": "AGPL-3.0",
-    "Added": "2023-02-17",
-    "Updated": "2023-02-17",
-    "Categories": ["Clustering", "DimensionalityReduction", "Normalisation", "VariableGenes"],
-    "Publications": [
-      {
-        "Title": "A cofunctional grouping-based approach for non-redundant feature gene selection in unannotated single-cell RNA-seq analysis",
-        "DOI": "10.1093/bib/bbad042",
-        "Date": "2023-02-08",
-        "Citations": 0
-      }
-    ],
-    "Preprints": [],
-    "Citations": 0,
-    "NumPubs": 1,
-    "NumPreprints": 0,
-    "PyPI": "GeneClust",
-    "GitHub": "ToryDeng/scGeneClust"
   },
   {
     "Tool": "GenePattern",
@@ -14914,28 +14846,6 @@
     "NumPreprints": 1,
     "PyPI": "MACA-Python",
     "GitHub": "ImXman/MACA"
-  },
-  {
-    "Tool": "MaCroDNA",
-    "Platform": "Python",
-    "Code": "https://github.com/NakhlehLab/MaCroDNA",
-    "Description": "MaCroDNA (Matching Cross-Domain Nucleic Acids) is a correlation-based method to perform mapping between scRNA-seq gene expression and scDNA-seq copy number values",
-    "Added": "2023-02-17",
-    "Updated": "2023-02-17",
-    "Categories": ["Integration", "Variants"],
-    "Publications": [],
-    "Preprints": [
-      {
-        "Title": "MaCroDNA: Accurate integration of single-cell DNA and RNA data for a deeper understanding of tumor heterogeneity",
-        "DOI": "10.1101/2022.08.21.504709",
-        "Citations": 0
-      }
-    ],
-    "Citations": 0,
-    "NumPubs": 0,
-    "NumPreprints": 1,
-    "PyPI": "MaCroDNA",
-    "GitHub": "NakhlehLab/MaCroDNA"
   },
   {
     "Tool": "MacroPolo",
@@ -33317,11 +33227,11 @@
   {
     "Tool": "speckle",
     "Platform": "R",
-    "Code": "https://github.com/phipsonlab/speckle",
+    "Code": "https://github.com/Oshlack/speckle",
     "Description": "The speckle package currently contains functions to analyse differences in cell type proportions in single cell RNA-seq data, and to classify cells as male or female",
     "License": "GPL-3.0",
     "Added": "2021-12-03",
-    "Updated": "2023-02-17",
+    "Updated": "2022-08-26",
     "Categories": ["Classification", "Normalisation", "Visualisation"],
     "Publications": [
       {
@@ -33341,7 +33251,7 @@
     "Citations": 11,
     "NumPubs": 1,
     "NumPreprints": 1,
-    "GitHub": "phipsonlab/speckle"
+    "GitHub": "Oshlack/speckle"
   },
   {
     "Tool": "Specter",
@@ -35203,7 +35113,7 @@
         "Title": "TRUmiCount: correctly counting absolute numbers of molecules using unique molecular identifiers",
         "DOI": "10.1093/bioinformatics/bty283",
         "Date": "2018-04-16",
-        "Citations": 15
+        "Citations": 14
       }
     ],
     "Preprints": [
@@ -35213,7 +35123,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 16,
+    "Citations": 15,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "Cibiv/trumicount"
@@ -36715,28 +36625,6 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "ShengquanChen/VPAC"
-  },
-  {
-    "Tool": "Vulture",
-    "Platform": "Nextflow/Python/Perl/R/Shell",
-    "Code": "https://github.com/holab-hku/Vulture",
-    "Description": "Vulture is a scalable cloud-based pipeline that performs microbial calling for single-cell RNA sequencing data, enabling the meta-analysis of the single-cell host-microbial studies from the AWS Open Data and other public domain",
-    "License": "MIT",
-    "Added": "2023-02-17",
-    "Updated": "2023-02-17",
-    "Categories": ["Alignment", "QualityControl", "Quantification"],
-    "Publications": [],
-    "Preprints": [
-      {
-        "Title": "Vulture: Cloud-enabled scalable mining of microbial reads in public scRNA-seq data",
-        "DOI": "10.1101/2023.02.13.528411",
-        "Citations": 0
-      }
-    ],
-    "Citations": 0,
-    "NumPubs": 0,
-    "NumPreprints": 1,
-    "GitHub": "holab-hku/Vulture"
   },
   {
     "Tool": "waddR",
