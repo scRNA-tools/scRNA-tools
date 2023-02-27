@@ -700,6 +700,7 @@ DCLEAR	Simulation
 ddqc	QualityControl
 ddSeeker	QualityControl
 ddSeeker	UMIs
+de-goulash	Variants
 DECENT	DifferentialExpression
 DECENT	Imputation
 DECODE	Imputation
@@ -2004,6 +2005,7 @@ RNA-combine	QualityControl
 RNA-combine	Quantification
 RNA-combine	Visualisation
 RNA-Sieve	Integration
+RNAForecaster	Ordering
 robustSingleCell	Clustering
 robustSingleCell	DimensionalityReduction
 robustSingleCell	Integration
@@ -2099,6 +2101,8 @@ SCA	RareCells
 scAAnet	Clustering
 scAAnet	MarkerGenes
 scAAnet	Visualisation
+scAce	Clustering
+scAce	DimensionalityReduction
 scACE	Clustering
 scACE	Integration
 scACE	Simulation
@@ -2730,6 +2734,8 @@ scploid	Visualisation
 scPlot	Interactive
 scPlot	Visualisation
 scPNMF	VariableGenes
+scpoisson	Clustering
+scpoisson	Visualisation
 scPOP	Integration
 scPopCorn	Clustering
 scPopCorn	Integration
@@ -3175,6 +3181,9 @@ SIP	Alignment
 sircel	Quantification
 sircel	UMIs
 SISUA	DimensionalityReduction
+siVAE	DimensionalityReduction
+siVAE	GeneSets
+siVAE	Visualisation
 SJD	DimensionalityReduction
 SJD	Integration
 SJD	Normalisation
@@ -3199,6 +3208,8 @@ SMILE	Integration
 SMNN	Integration
 SMSC	Clustering
 SMURF	DimensionalityReduction
+SnapCCESS	DimensionalityReduction
+SnapCCESS	Integration
 SNN-Cliq	Clustering
 solo	QualityControl
 solo	Visualisation
@@ -3281,6 +3292,8 @@ STAR	Alignment
 STAR	Quantification
 STAR	UMIs
 STARE	GeneNetworks
+starmapVis	Interactive
+starmapVis	Visualisation
 StationaryOT	Ordering
 STEMNET	Ordering
 STEMNET	Visualisation
