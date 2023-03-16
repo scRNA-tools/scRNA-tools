@@ -200,6 +200,8 @@ BingleSeq	Interactive
 BingleSeq	Normalisation
 BingleSeq	QualityControl
 BingleSeq	Visualisation
+biolord	DimensionalityReduction
+biolord	Integration
 Biomodelling	Simulation
 BioTIP	ExpressionPatterns
 BioTIP	GeneNetworks
@@ -1104,6 +1106,9 @@ gficf	DimensionalityReduction
 gficf	GeneSets
 gficf	Normalisation
 gficf	Visualisation
+GFPA	GeneNetworks
+GFPA	Integration
+GFPA	Visualisation
 GiniClust	Clustering
 GiniClust	DimensionalityReduction
 GiniClust	Interactive
@@ -1157,6 +1162,8 @@ GraphEmbed	DimensionalityReduction
 GraphEmbed	Visualisation
 GraphSCC	Clustering
 GraphSCI	Imputation
+GrID-Net	GeneNetworks
+GrID-Net	Integration
 GRISLI	GeneNetworks
 GRM	Normalisation
 GRN-VAE	GeneNetworks
@@ -1399,6 +1406,9 @@ LatentVelo	Visualisation
 LEAP	GeneNetworks
 LEAP	Ordering
 learn2count	DimensionalityReduction
+lemur	DifferentialExpression
+lemur	DimensionalityReduction
+lemur	Visualisation
 LIANA	GeneNetworks
 Libra	DifferentialExpression
 LIGER	DimensionalityReduction
@@ -1822,6 +1832,13 @@ phyloRNA	QualityControl
 phyloRNA	Quantification
 phyloRNA	UMIs
 phyloRNA	Variants
+Piccolo	Clustering
+Piccolo	DifferentialExpression
+Piccolo	DimensionalityReduction
+Piccolo	MarkerGenes
+Piccolo	Normalisation
+Piccolo	QualityControl
+Piccolo	VariableGenes
 PieParty	Visualisation
 PIMseq	DifferentialExpression
 PIMseq	Visualisation
@@ -2658,6 +2675,8 @@ scMTD	Imputation
 scMuffin	Clustering
 scMuffin	GeneSets
 scMuffin	Visualisation
+scMultiSim	Simulation
+scMultiSim	Visualisation
 SCmut	Variants
 scMVAE	DimensionalityReduction
 scNanoGPS	Alignment
@@ -2715,6 +2734,9 @@ SCP	QualityControl
 SCP	Visualisation
 SCPA	GeneSets
 SCPA	Visualisation
+scPagwas	GeneNetworks
+scPagwas	Variants
+scPagwas	Visualisation
 scPanoView	Clustering
 scPanoView	DimensionalityReduction
 scPanoView	VariableGenes
@@ -2724,6 +2746,7 @@ SCPattern	ExpressionPatterns
 SCPattern	Interactive
 scPCA	DimensionalityReduction
 scphaser	Haplotypes
+scPheno	Normalisation
 scPhere	DimensionalityReduction
 scPhere	Interactive
 scPhere	Ordering
@@ -3368,6 +3391,12 @@ TimiGP	Immune
 TinGa	DimensionalityReduction
 TinGa	Ordering
 TinGa	Visualisation
+TITAN	DimensionalityReduction
+TITAN	GeneSets
+TITAN	Imputation
+TITAN	MarkerGenes
+TITAN	Normalisation
+TITAN	Visualisation
 tn_test	DifferentialExpression
 tn_test	Visualisation
 Tobiko	Alignment
