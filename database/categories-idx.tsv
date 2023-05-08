@@ -745,6 +745,9 @@ DeLorean	ExpressionPatterns
 DeLorean	GeneFiltering
 DeLorean	Ordering
 DeLorean	Visualisation
+deMULTIplex2	DimensionalityReduction
+deMULTIplex2	Quantification
+deMULTIplex2	Simulation
 Demuxafy	QualityControl
 Demuxafy	Variants
 Demuxalot	Variants
@@ -832,7 +835,7 @@ DiSiR	Visualisation
 distinct	DifferentialExpression
 DistMap	Classification
 DistMap	Visualisation
-DittoSeq	Visualisation
+dittoSeq	Visualisation
 dmatch	DimensionalityReduction
 dmatch	Integration
 dmatch	Visualisation
@@ -1254,6 +1257,22 @@ Ibex	DimensionalityReduction
 Ibex	Immune
 IBMR	Classification
 IBMR	Simulation
+IBRAP	CellCycle
+IBRAP	Classification
+IBRAP	Clustering
+IBRAP	DifferentialExpression
+IBRAP	GeneSets
+IBRAP	Integration
+IBRAP	Normalisation
+IBRAP	Ordering
+IBRAP	QualityControl
+IBRAP	VariableGenes
+IBRAP	Visualisation
+iBRIDGE	Classification
+iBRIDGE	GeneSets
+iBRIDGE	Immune
+iBRIDGE	Integration
+iBRIDGE	Normalisation
 ICAnet	DimensionalityReduction
 ICAnet	GeneNetworks
 ICAnet	Integration
@@ -1463,6 +1482,7 @@ LinQView	DimensionalityReduction
 LinQView	Integration
 LinQView	Normalisation
 LinQView	Visualisation
+LinRace	Ordering
 locaTE	GeneNetworks
 locCSN	GeneNetworks
 Longcell	AlternativeSplicing
@@ -1783,6 +1803,7 @@ OnlinePCA	DimensionalityReduction
 OnlinePCA	Visualisation
 OpenVisuMap	DimensionalityReduction
 ORIGINS	GeneNetworks
+ORIGINS2	GeneNetworks
 OscoNet	CellCycle
 OscoNet	ExpressionPatterns
 OscoNet	Ordering
@@ -1824,6 +1845,8 @@ Panpipes	QualityControl
 Panpipes	Visualisation
 ParaDPMM	Classification
 PARC	Clustering
+PAUSE	DimensionalityReduction
+PAUSE	GeneSets
 PBA	Ordering
 PBLR	Imputation
 PCAone	DimensionalityReduction
@@ -2378,6 +2401,8 @@ scDHA	DimensionalityReduction
 scDHA	GeneFiltering
 scDHA	Ordering
 scDHA	Visualisation
+scDHMap	DimensionalityReduction
+scDHMap	VariableGenes
 scdiff	GeneNetworks
 scdiff	Interactive
 scdiff	Ordering
@@ -2885,6 +2910,8 @@ scRNA	DimensionalityReduction
 scRNABatchQC	Integration
 scRNABatchQC	QualityControl
 scRNABatchQC	Visualisation
+scRNAseqApp	Interactive
+scRNAseqApp	Visualisation
 scRNAss	Assembly
 scROSHI	Clustering
 scROSHI	GeneSets
@@ -2945,6 +2972,10 @@ scSpace	Integration
 scSpace	Normalisation
 scSpace	VariableGenes
 scSpace	Visualisation
+scSPARKL	DimensionalityReduction
+scSPARKL	Normalisation
+scSPARKL	QualityControl
+scSPARKL	VariableGenes
 scSplit	Variants
 scSTEM	Clustering
 scSTEM	ExpressionPatterns
@@ -3415,6 +3446,7 @@ TASC	Quantification
 tascCODA	Modality
 TASIC	Interactive
 TASIC	Ordering
+tauFisher	CellCycle
 TBSP	Clustering
 TBSP	Ordering
 TBSP	Variants
