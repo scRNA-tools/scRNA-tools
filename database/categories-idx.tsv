@@ -851,6 +851,8 @@ DoubletDetection	Visualisation
 DoubletFinder	Clustering
 DoubletFinder	DimensionalityReduction
 DoubletFinder	QualityControl
+Dozer	GeneNetworks
+Dozer	Simulation
 dpi	DimensionalityReduction
 dpi	Imputation
 dpi	Integration
@@ -864,6 +866,8 @@ DPT	Ordering
 DPT	Visualisation
 DRA	DimensionalityReduction
 dragonsc	Clustering
+DREAM	DimensionalityReduction
+DREAM	Visualisation
 dreamlet	DifferentialExpression
 dreamlet	Visualisation
 DrImpute	Imputation
@@ -1533,6 +1537,8 @@ MarkovHC	Visualisation
 MARS	Classification
 MARS	DimensionalityReduction
 MARS	Integration
+MASI	Classification
+MASI	MarkerGenes
 MAST	DifferentialExpression
 MAST	GeneNetworks
 MAST	GeneSets
@@ -1626,6 +1632,7 @@ mitch	Visualisation
 MitoHEAR	Clustering
 MitoHEAR	Variants
 MitoHEAR	Visualisation
+mitoSplitter	Quantification
 MiXCR	Alignment
 MiXCR	AlleleSpecific
 MiXCR	Assembly
@@ -2142,6 +2149,8 @@ SampleQC	Visualisation
 SAMstrt	DifferentialExpression
 SAMstrt	Normalisation
 Sanity	Normalisation
+Sargent	Classification
+Sargent	MarkerGenes
 SASCRiP	QualityControl
 SASCRiP	Quantification
 satuRn	AlternativeSplicing
@@ -2384,6 +2393,7 @@ scDEA	DifferentialExpression
 scDEAL	Perturbations
 scDECAF	Classification
 scDECAF	GeneSets
+scDEED	DimensionalityReduction
 scDeepCluster	Clustering
 scDeepCluster	DimensionalityReduction
 scDeepHash	Classification
@@ -2502,6 +2512,11 @@ scGAE	Visualisation
 scGAN	Simulation
 scGate	Classification
 scGate	Visualisation
+scGBM	Clustering
+scGBM	DimensionalityReduction
+scGBM	Imputation
+scGBM	Simulation
+scGBM	Visualisation
 scGCL	DimensionalityReduction
 scGCL	Imputation
 scGEAToolbox	Clustering
@@ -3019,6 +3034,8 @@ scTIM	MarkerGenes
 scTITANS	Clustering
 scTITANS	MarkerGenes
 scTOP	Classification
+scTopoGAN	DimensionalityReduction
+scTopoGAN	Integration
 scTour	DimensionalityReduction
 scTour	Ordering
 scTour	Visualisation
@@ -3463,6 +3480,7 @@ Tempora	GeneSets
 Tempora	Ordering
 Tempora	Visualisation
 TENET	GeneNetworks
+tGPT	DimensionalityReduction
 TILPRED	Classification
 TILPRED	Immune
 TimiGP	GeneNetworks
@@ -3524,6 +3542,7 @@ tricycle	CellCycle
 tricycle	DimensionalityReduction
 tricycle	Visualisation
 Triku	VariableGenes
+TripletCell	Classification
 TRIPOD	GeneNetworks
 TRIPOD	Integration
 TRIPOD	Visualisation
