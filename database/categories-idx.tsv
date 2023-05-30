@@ -348,6 +348,7 @@ cellAlign	ExpressionPatterns
 cellAlign	Normalisation
 cellAlign	Ordering
 cellAlign	Visualisation
+CellANOVA	Integration
 Cellar	Classification
 Cellar	Clustering
 Cellar	DifferentialExpression
@@ -439,6 +440,14 @@ CellRouter	Visualisation
 CellSIUS	Clustering
 CellSIUS	RareCells
 CellSIUS	Visualisation
+cellsnake	Classification
+cellsnake	Clustering
+cellsnake	DimensionalityReduction
+cellsnake	Integration
+cellsnake	Normalisation
+cellsnake	QualityControl
+cellsnake	VariableGenes
+cellsnake	Visualisation
 cellSNP	Variants
 cellsnp-lite	Variants
 CellST	Ordering
@@ -459,6 +468,9 @@ CellTree	Visualisation
 CellTrek	Integration
 CellTrek	Interactive
 CellTrek	Visualisation
+CellTypist	Classification
+CellTypist	Integration
+CellTypist	Visualisation
 CellView	Interactive
 CellView	Visualisation
 cellxgene	Interactive
@@ -745,6 +757,7 @@ DeLorean	ExpressionPatterns
 DeLorean	GeneFiltering
 DeLorean	Ordering
 DeLorean	Visualisation
+DELVE	VariableGenes
 deMULTIplex2	DimensionalityReduction
 deMULTIplex2	Quantification
 deMULTIplex2	Simulation
@@ -999,6 +1012,7 @@ EVI	Integration
 EVI	Ordering
 exceiver	GeneNetworks
 exFINDER	GeneNetworks
+expressyouRcell	Visualisation
 Falco	Alignment
 Falco	Quantification
 FastCount	Quantification
@@ -1545,6 +1559,9 @@ MAST	GeneSets
 MAST	Normalisation
 MAST	QualityControl
 MAT2	Integration
+MatchCLOT	DimensionalityReduction
+MatchCLOT	Integration
+MatchCLOT	Normalisation
 MATCHER	ExpressionPatterns
 MATCHER	Integration
 MATCHER	Ordering
@@ -1600,6 +1617,9 @@ MetaNeighbor	Clustering
 MetaNeighbor	GeneSets
 MetaNeighbor	VariableGenes
 MetaNeighbor	Visualisation
+MetaTiME	DimensionalityReduction
+MetaTiME	GeneSets
+MetaTiME	Integration
 MFA	Ordering
 MFA	Simulation
 MFA	Visualisation
@@ -1678,6 +1698,9 @@ Monod	Visualisation
 Monopopgen	Variants
 MOSCATO	GeneNetworks
 MOSCATO	Simulation
+moscot	Integration
+moscot	Ordering
+moscot	Visualisation
 Mowgli	GeneSets
 Mowgli	Integration
 Mowgli	Visualisation
@@ -1776,6 +1799,7 @@ NIFA	DimensionalityReduction
 nimfa	Clustering
 nimfa	DimensionalityReduction
 nimfa	Visualisation
+NLBayes	GeneNetworks
 NOMAD	AlternativeSplicing
 NOMAD	Variants
 NOMAD2	AlternativeSplicing
@@ -2419,6 +2443,12 @@ scdiff	Ordering
 scdiff	Visualisation
 scDiffCom	GeneNetworks
 scDiffCom	Visualisation
+scDisInFact	DimensionalityReduction
+scDisInFact	Integration
+scDisInFact	Perturbations
+scDist	Perturbations
+scDist	Simulation
+scDist	Visualisation
 scdNet	GeneNetworks
 scdNet	GeneSets
 scdney	Classification
@@ -2548,6 +2578,7 @@ scGPS	Clustering
 scGPS	MarkerGenes
 scGPS	VariableGenes
 scGPS	Visualisation
+scGPT	DimensionalityReduction
 scGraph	Classification
 scGREAT	Clustering
 scGREAT	GeneNetworks
@@ -2690,6 +2721,8 @@ SCMAPpy	Classification
 SCMarker	VariableGenes
 scMatch	Classification
 scMatch	GeneSets
+scMayoMap	Classification
+scMayoMap	Visualisation
 scMC	Clustering
 scMC	Integration
 scMC	MarkerGenes
@@ -2737,6 +2770,7 @@ scMLnet	GeneNetworks
 scMLnet	Visualisation
 scMM	Integration
 scModels	Simulation
+scMOG	Simulation
 scMoMaT	Clustering
 scMoMaT	DimensionalityReduction
 scMoMaT	Integration
@@ -2927,6 +2961,13 @@ scRNABatchQC	QualityControl
 scRNABatchQC	Visualisation
 scRNAseqApp	Interactive
 scRNAseqApp	Visualisation
+scRNASequest	Classification
+scRNASequest	DifferentialExpression
+scRNASequest	DimensionalityReduction
+scRNASequest	Integration
+scRNASequest	MarkerGenes
+scRNASequest	QualityControl
+scRNASequest	Visualisation
 scRNAss	Assembly
 scROSHI	Clustering
 scROSHI	GeneSets
@@ -3286,6 +3327,12 @@ singleCellTK	Normalisation
 singleCellTK	QualityControl
 singleCellTK	Quantification
 singleCellTK	Visualisation
+SinglePointRNA	Clustering
+SinglePointRNA	DifferentialExpression
+SinglePointRNA	Integration
+SinglePointRNA	Interactive
+SinglePointRNA	QualityControl
+SinglePointRNA	Visualisation
 SingleR	Classification
 SingleR	Visualisation
 singleseqgset	GeneSets
