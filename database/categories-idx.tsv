@@ -1032,6 +1032,9 @@ FastProject	Interactive
 FastProject	Visualisation
 FastRNA	DimensionalityReduction
 FastRNA	GeneFiltering
+fastTopics	DimensionalityReduction
+fastTopics	Simulation
+fastTopics	Visualisation
 FateCompass	Ordering
 FateCompass	Visualisation
 FateID	Classification
@@ -1162,6 +1165,10 @@ gficf	Visualisation
 GFPA	GeneNetworks
 GFPA	Integration
 GFPA	Visualisation
+GIANT	DimensionalityReduction
+GIANT	GeneNetworks
+GIANT	GeneSets
+GIANT	Integration
 GiniClust	Clustering
 GiniClust	DimensionalityReduction
 GiniClust	Interactive
@@ -1364,6 +1371,9 @@ inferCNVpy	DimensionalityReduction
 inferCNVpy	Variants
 Inferelator	GeneNetworks
 infohet	VariableGenes
+InGene	DimensionalityReduction
+InGene	VariableGenes
+InGene	Visualisation
 INSCT	Integration
 INSISTC	Classification
 INSISTC	GeneNetworks
@@ -1484,6 +1494,7 @@ LatentVelo	Ordering
 LatentVelo	Visualisation
 LDA_scRNAseq	Clustering
 LDA_scRNAseq	GeneSets
+leader	DimensionalityReduction
 LEAP	GeneNetworks
 LEAP	Ordering
 learn2count	DimensionalityReduction
@@ -1758,6 +1769,10 @@ multiGroupVI	Integration
 MultiK	Clustering
 MultiK	Visualisation
 MultiMAP	Integration
+multinichenetr	DifferentialExpression
+multinichenetr	DimensionalityReduction
+multinichenetr	GeneNetworks
+multinichenetr	Visualisation
 Multiscale_PHATE	DimensionalityReduction
 Multiscale_PHATE	Visualisation
 MultiVelo	DimensionalityReduction
@@ -2452,6 +2467,8 @@ scDEED	DimensionalityReduction
 scDeepCluster	Clustering
 scDeepCluster	DimensionalityReduction
 scDeepHash	Classification
+scDeepInsight	Classification
+scDeepInsight	DimensionalityReduction
 scDeepSort	Classification
 scDesign	Simulation
 scDesign2	Simulation
@@ -2684,6 +2701,13 @@ SCINA	Classification
 SCINA	GeneSets
 SCINA	Visualisation
 SCINET	GeneNetworks
+SCING	DimensionalityReduction
+SCING	GeneNetworks
+SCING	GeneSets
+SCING	Perturbations
+SCING-pipeline	QualityControl
+SCING-pipeline	Quantification
+SCING-pipeline	UMIs
 scINSIGHT	DimensionalityReduction
 scINSIGHT	GeneSets
 scINSIGHT	Perturbations
@@ -3595,6 +3619,8 @@ TooManyCells	Clustering
 TooManyCells	DifferentialExpression
 TooManyCells	RareCells
 TooManyCells	Visualisation
+TooManyCellsInteractive	Interactive
+TooManyCellsInteractive	Visualisation
 TopOMetry	DimensionalityReduction
 TopOMetry	Visualisation
 topslam	Ordering
