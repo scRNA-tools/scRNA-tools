@@ -56,6 +56,7 @@ AltAnalyze	MarkerGenes
 AltAnalyze	Normalisation
 AltAnalyze	Quantification
 AltAnalyze	Visualisation
+AlzScPred	Classification
 AmbientContaminationMetrics	QualityControl
 anchor	Modality
 anticor_features	VariableGenes
@@ -338,6 +339,7 @@ celda	Normalisation
 celda	QualityControl
 celda	Simulation
 celda	Visualisation
+CeLEry	Integration
 Cell-BLAST	Classification
 Cell-BLAST	Visualisation
 cell2cell	GeneNetworks
@@ -670,6 +672,8 @@ coupledAE-patchseq	Integration
 CPA	DimensionalityReduction
 CPA	Perturbations
 CPLVM	DimensionalityReduction
+CRMetrics	QualityControl
+CRMetrics	Visualisation
 CrossTalkeR	GeneNetworks
 CrossTalkeR	Visualisation
 CS-CORE	GeneNetworks
@@ -1233,6 +1237,7 @@ GRNVBEM	GeneNetworks
 GRUFFI	GeneSets
 GRUFFI	QualityControl
 GRUFFI	Visualisation
+gsdensity	GeneSets
 GSEApy	GeneSets
 GSEApy	Visualisation
 GSFA	Normalisation
@@ -1470,6 +1475,8 @@ kmermaid	Quantification
 knn_smooth	Imputation
 KPNN	Classification
 KPNN	GeneNetworks
+ktest	DifferentialExpression
+ktest	Visualisation
 LAK	Clustering
 LAmbDA	Classification
 LAmbDA	Integration
@@ -2021,6 +2028,7 @@ PPMS	Alignment
 PPMS	Quantification
 PPMS	UMIs
 Pre-Phaser	CellCycle
+PreCanCell	Classification
 PRESCIENT	Ordering
 PRESCIENT	Perturbations
 ProjecTILs	Classification
@@ -2107,6 +2115,8 @@ RCAv2	DifferentialExpression
 RCAv2	DimensionalityReduction
 RCAv2	Normalisation
 RCAv2	Visualisation
+RCI-NB	Classification
+RCI-NB	Normalisation
 RcppML	Clustering
 RcppML	DimensionalityReduction
 RCSL	Clustering
@@ -2120,6 +2130,8 @@ reCAT	Clustering
 reCAT	Ordering
 reCAT	Visualisation
 RECODE	Imputation
+RECOMBINE	MarkerGenes
+RECOMBINE	Visualisation
 RecursiveConsensusClustering	Clustering
 Red_Panda	Variants
 redPATH	Clustering
@@ -2156,6 +2168,8 @@ RNA-combine	QualityControl
 RNA-combine	Quantification
 RNA-combine	Visualisation
 RNA-Sieve	Integration
+RNA-strain-match	Alignment
+RNA-strain-match	Variants
 RNAForecaster	Ordering
 robustSingleCell	Clustering
 robustSingleCell	DimensionalityReduction
@@ -2503,6 +2517,16 @@ scdney	Classification
 scdney	Clustering
 scdney	Visualisation
 scDoc	Imputation
+scdrake	CellCycle
+scdrake	Classification
+scdrake	Clustering
+scdrake	DimensionalityReduction
+scdrake	Integration
+scdrake	MarkerGenes
+scdrake	Normalisation
+scdrake	QualityControl
+scdrake	VariableGenes
+scdrake	Visualisation
 scDREAMER	Integration
 scDRS	Variants
 scDrug	Perturbations
@@ -2744,6 +2768,7 @@ scJoint	Integration
 scJoint	Visualisation
 scKB	Quantification
 scKB	UMIs
+scKINETICS	Ordering
 scLAPA	AlternativeSplicing
 scLAPA	Clustering
 scLCA	Clustering
@@ -2967,6 +2992,9 @@ SCpubr	Visualisation
 scQA	Clustering
 SCQC	GeneFiltering
 SCQC	QualityControl
+scQCEA	Classification
+scQCEA	Interactive
+scQCEA	QualityControl
 scQcut	Clustering
 scQuint	Alignment
 scQuint	AlternativeSplicing
@@ -3278,6 +3306,8 @@ Sharq	UMIs
 Sharq	Visualisation
 ShinyCell	Interactive
 ShinyCell	Visualisation
+ShinyMultiome-UiO	Interactive
+ShinyMultiome-UiO	Visualisation
 SiCeLoRe	AlleleSpecific
 SiCeLoRe	AlternativeSplicing
 SiCeLoRe	UMIs
@@ -3640,6 +3670,9 @@ Trajan	Visualisation
 TrajectoryNet	Ordering
 transformGamPoi	Normalisation
 transformGamPoi	Transformation
+Transmorph	DimensionalityReduction
+Transmorph	Integration
+Transmorph	Visualisation
 TRAPeS	Immune
 TRAPeS	Quantification
 TraSig	GeneNetworks
@@ -3758,6 +3791,11 @@ VeloSim	Visualisation
 VeloVAE	Ordering
 VeloViz	DimensionalityReduction
 VeloViz	Visualisation
+velvet	Clustering
+velvet	Normalisation
+velvet	Ordering
+velvet	VariableGenes
+velvet	Visualisation
 Venus	Alignment
 Venus	Quantification
 VeTra	Ordering
