@@ -532,6 +532,7 @@ CITEseqCount	Integration
 CITEseqCount	Quantification
 CITEseqCount	UMIs
 Citrus	Normalisation
+CL-Impute	Imputation
 CLEAR	Integration
 clonealign	Integration
 clonealign	Variants
@@ -663,6 +664,7 @@ countland	Clustering
 countland	MarkerGenes
 countland	QualityControl
 countland	Visualisation
+countsplit	Quantification
 coupleCoC	Clustering
 coupleCoC	Integration
 coupleCoC_plus	Clustering
@@ -1891,6 +1893,7 @@ Ouija	Visualisation
 ouijaflow	ExpressionPatterns
 ouijaflow	Ordering
 Outrigger	AlternativeSplicing
+PACSI	Perturbations
 pagoda2	Clustering
 pagoda2	DifferentialExpression
 pagoda2	DimensionalityReduction
@@ -2171,6 +2174,8 @@ RNA-Sieve	Integration
 RNA-strain-match	Alignment
 RNA-strain-match	Variants
 RNAForecaster	Ordering
+RobustCCC	GeneNetworks
+RobustCCC	Simulation
 robustSingleCell	Clustering
 robustSingleCell	DimensionalityReduction
 robustSingleCell	Integration
@@ -2652,6 +2657,7 @@ scGPS	VariableGenes
 scGPS	Visualisation
 scGPT	DimensionalityReduction
 scGraph	Classification
+scGraphNE	DimensionalityReduction
 scGREAT	Clustering
 scGREAT	GeneNetworks
 scGREAT	MarkerGenes
@@ -3396,6 +3402,8 @@ SingleCellGGM	GeneNetworks
 singleCellHaystack	DifferentialExpression
 singleCellHaystack	MarkerGenes
 singleCellHaystack	Visualisation
+singleCellHaystack-py	MarkerGenes
+singleCellHaystack-py	Visualisation
 SingleCellNet	Classification
 SingleCellNet	Visualisation
 SingleCellSignalR	Classification
