@@ -3389,6 +3389,28 @@
     "GitHub": "earmingol/cell2cell"
   },
   {
+    "Tool": "cell2fate",
+    "Platform": "Python",
+    "Code": "https://github.com/BayraktarLab/cell2fate",
+    "Description": "A formulation of RNA velocity based on a linearization of the velocity ODE",
+    "License": "Apache-2.0",
+    "Added": "2023-08-11",
+    "Updated": "2023-08-11",
+    "Categories": ["Ordering"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Model-based inference of RNA velocity modules improves cell fate prediction",
+        "DOI": "10.1101/2023.08.03.551650",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "BayraktarLab/cell2fate"
+  },
+  {
     "Tool": "cell2location",
     "Platform": "Python",
     "Code": "https://github.com/BayraktarLab/cell2location",
@@ -5364,6 +5386,33 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "simslab/cluster_diffex2018"
+  },
+  {
+    "Tool": "ClusterDE",
+    "Platform": "R",
+    "Code": "https://github.com/SONGDONGYUAN1994/ClusterDE",
+    "Description": "A Post-clustering Differential Expression (DE) Method For Solving Double Dipping",
+    "License": "MIT",
+    "Added": "2023-08-04",
+    "Updated": "2023-08-11",
+    "Categories": ["DifferentialExpression", "MarkerGenes"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "ClusterDE: a post-clustering differential expression (DE) method robust to false-positive inflation caused by double dipping",
+        "DOI": "10.1101/2023.07.21.550107",
+        "Citations": 1
+      },
+      {
+        "Title": "ClusterDE: a post-clustering differential expression (DE) method robust to false-positive inflation caused by double dipping",
+        "DOI": "10.21203/rs.3.rs-3211191/v1",
+        "Citations": 0
+      }
+    ],
+    "Citations": 1,
+    "NumPubs": 0,
+    "NumPreprints": 2,
+    "GitHub": "SONGDONGYUAN1994/ClusterDE"
   },
   {
     "Tool": "clusterExperiment",
@@ -12944,6 +12993,28 @@
     "GitHub": "mscastillo/GRNVBEM"
   },
   {
+    "Tool": "GRouNdGAN",
+    "Platform": "Python",
+    "Code": "https://github.com/Emad-COMBINE-lab/GRouNdGAN",
+    "Description": "GRN-guided in silico simulation of single-cell RNA-seq data using Causal Generative Adversarial Networks",
+    "License": "AGPL-3.0",
+    "Added": "2023-08-04",
+    "Updated": "2023-08-04",
+    "Categories": ["Simulation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "GRouNdGAN: GRN-guided simulation of single-cell RNA-seq data using causal generative adversarial networks",
+        "DOI": "10.1101/2023.07.25.550225",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "Emad-COMBINE-lab/GRouNdGAN"
+  },
+  {
     "Tool": "GRUFFI",
     "Platform": "R",
     "Code": "https://github.com/jn-goe/gruffi",
@@ -13085,6 +13156,28 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "Cobanoglu-Lab/h-tSNE"
+  },
+  {
+    "Tool": "hadge",
+    "Platform": "Nextflow/R/Python/Shell",
+    "Code": "https://github.com/theislab/hadge",
+    "Description": "hadge: a comprehensive pipeline for donor deconvolution in single cell",
+    "License": "MIT",
+    "Added": "2023-08-04",
+    "Updated": "2023-08-04",
+    "Categories": ["Quantification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "hadge: a comprehensive pipeline for donor deconvolution in single cell",
+        "DOI": "10.1101/2023.07.23.550061",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "theislab/hadge"
   },
   {
     "Tool": "Haisu",
@@ -18649,11 +18742,11 @@
         "Title": "NanoPARE: parallel analysis of RNA 5′ ends from low-input RNA",
         "DOI": "10.1101/gr.239202.118",
         "Date": "2018-10-24",
-        "Citations": 49
+        "Citations": 48
       }
     ],
     "Preprints": [],
-    "Citations": 49,
+    "Citations": 48,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "Gregor-Mendel-Institute/NanoPARE"
@@ -20528,6 +20621,29 @@
     "GitHub": "bioDS/phyloRNA"
   },
   {
+    "Tool": "PhyloVelo",
+    "Platform": "Python",
+    "Code": "https://github.com/kunwang34/PhyloVelo",
+    "Description": "PhyloVelo is a computational framework to quantify the transcriptomic velocity field from phylogeny-resolved scRNA-seq data",
+    "License": "BSD-3-Clause",
+    "Added": "2023-08-04",
+    "Updated": "2023-08-04",
+    "Categories": ["DimensionalityReduction", "Normalisation", "Ordering", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "PhyloVelo enhances transcriptomic velocity field mapping using monotonically expressed genes",
+        "DOI": "10.1038/s41587-023-01887-5",
+        "Date": "2023-07-31",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "kunwang34/PhyloVelo"
+  },
+  {
     "Tool": "Piccolo",
     "Platform": "R",
     "Code": "https://github.com/Amartya101/Piccolo",
@@ -21111,6 +21227,28 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "carmonalab/ProjecTILs"
+  },
+  {
+    "Tool": "ProjectSVR",
+    "Platform": "R",
+    "Code": "https://github.com/jarninggau/ProjectSVR",
+    "Description": "ProjectSVR is a machine learning-based algorithm for mapping the query cells onto well-constructed reference atlas",
+    "License": "MIT",
+    "Added": "2023-08-11",
+    "Updated": "2023-08-11",
+    "Categories": ["Classification", "Integration", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "ProjectSVR: Mapping single-cell RNA-seq data to reference atlases by supported vector regression",
+        "DOI": "10.1101/2023.07.31.551202",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "jarninggau/ProjectSVR"
   },
   {
     "Tool": "PROSSTT",
@@ -21896,10 +22034,10 @@
       {
         "Title": "Fast and robust non-negative matrix factorization for single-cell experiments",
         "DOI": "10.1101/2021.09.01.458620",
-        "Citations": 13
+        "Citations": 12
       }
     ],
-    "Citations": 13,
+    "Citations": 12,
     "NumPubs": 0,
     "NumPreprints": 1,
     "CRAN": "RcppML",
@@ -22887,7 +23025,7 @@
         "Title": "Salmon provides fast and bias-aware quantification of transcript expression",
         "DOI": "10.1038/nmeth.4197",
         "Date": "2017-03-06",
-        "Citations": 5834
+        "Citations": 5835
       },
       {
         "Title": "A Bayesian framework for inter-cellular information sharing improves dscRNA-seq quantification",
@@ -22919,7 +23057,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 6090,
+    "Citations": 6091,
     "NumPubs": 3,
     "NumPreprints": 3,
     "GitHub": "COMBINE-lab/salmon"
@@ -23743,6 +23881,35 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "chung-lab/scafe"
+  },
+  {
+    "Tool": "scaffold",
+    "Platform": "R",
+    "Code": "https://github.com/rhondabacher/scaffold",
+    "Description": "Scaffold is an R package for generating scRNA-seq data by statistically modeling each step of the experimental data generation process",
+    "License": "GPL-2.0-or-later",
+    "Added": "2023-08-04",
+    "Updated": "2023-08-04",
+    "Categories": ["Simulation", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "Enhancing biological signals and detection rates in single-cell RNA-seq experiments with cDNA library equalization",
+        "DOI": "10.1093/nar/gkab1071",
+        "Date": "2021-11-24",
+        "Citations": 3
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "Enhancing biological signals and detection rates in single-cell RNA-seq experiments with cDNA library equalization",
+        "DOI": "10.1101/2020.10.05.326553",
+        "Citations": 1
+      }
+    ],
+    "Citations": 4,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "GitHub": "rhondabacher/scaffold"
   },
   {
     "Tool": "scAI",
@@ -25441,9 +25608,16 @@
     "Description": "Outlier-aware and count-based compositional analysis of single-cell data",
     "License": "GPL-3.0",
     "Added": "2022-03-11",
-    "Updated": "2022-04-30",
+    "Updated": "2023-08-11",
     "Categories": ["Simulation"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "sccomp: Robust differential composition and variability analysis for single-cell data",
+        "DOI": "10.1073/pnas.2203828120",
+        "Date": "2023-08-07",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Robust differential composition and variability analysis for multisample cell omics",
@@ -25452,7 +25626,7 @@
       }
     ],
     "Citations": 2,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "sccomp",
     "GitHub": "stemangiola/sccomp"
@@ -28735,9 +28909,16 @@
     "Description": "This package allows the reclustering of single cell clusters based on the identification of the highly variable genes that are unique to each cluster",
     "License": "MIT",
     "Added": "2021-11-05",
-    "Updated": "2023-05-05",
+    "Updated": "2023-08-04",
     "Categories": ["Clustering", "DimensionalityReduction", "MarkerGenes"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "<u>S<\/u>ub-<u>C<\/u>luster <u>I<\/u>dentification through <u>S<\/u>emi-<u>S<\/u>upervised <u>O<\/u>ptimization of <u>R<\/u>are-Cell <u>S<\/u>ilhouettes (SCISSORS) in Single-Cell RNA-Sequencing",
+        "DOI": "10.1093/bioinformatics/btad449",
+        "Date": "2023-07-27",
+        "Citations": 0
+      }
+    ],
     "Preprints": [
       {
         "Title": "Sub-Cluster Identification through Semi-Supervised Optimization of Rare-cell Silhouettes (SCISSORS) in Single-Cell Sequencing",
@@ -28746,7 +28927,7 @@
       }
     ],
     "Citations": 1,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "jr-leary7/SCISSORS"
   },
@@ -30340,7 +30521,7 @@
     "Description": "SCORPIUS an unsupervised approach for inferring developmental chronologies from single-cell RNA sequencing data.",
     "License": "GPL-3.0",
     "Added": "2016-10-11",
-    "Updated": "2016-10-11",
+    "Updated": "2023-08-11",
     "Categories": ["DimensionalityReduction", "ExpressionPatterns", "GeneNetworks", "Ordering", "Visualisation"],
     "Publications": [],
     "Preprints": [
@@ -30353,6 +30534,7 @@
     "Citations": 65,
     "NumPubs": 0,
     "NumPreprints": 1,
+    "CRAN": "SCORPIUS",
     "GitHub": "rcannood/SCORPIUS"
   },
   {
@@ -33436,6 +33618,28 @@
     "GitHub": "YosefLab/scvi-tools"
   },
   {
+    "Tool": "scViralQuant",
+    "Platform": "Java/Shell/Python/Perl",
+    "Code": "https://github.com/galelab/scViralQuant",
+    "Description": "The goal of this python package is to accurately align and quantify viral reads for 10x single cell data",
+    "License": "BSD-3-Clause",
+    "Added": "2023-08-04",
+    "Updated": "2023-08-04",
+    "Categories": ["Quantification", "UMIs", "Visualisation"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "scViralQuant: A tool for efficient alignment and quantification of viral reads from 10x single cell sequencing data sets",
+        "DOI": "10.1101/2023.07.21.549987",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "galelab/scViralQuant"
+  },
+  {
     "Tool": "scVirtualCyto",
     "Platform": "Javascript",
     "Code": "https://github.com/FredPont/single-cell-virtual-cytometer",
@@ -33504,7 +33708,7 @@
         "Title": "singlecellVR: Interactive Visualization of Single-Cell Data in Virtual Reality",
         "DOI": "10.3389/fgene.2021.764170",
         "Date": "2021-10-28",
-        "Citations": 7
+        "Citations": 6
       }
     ],
     "Preprints": [
@@ -33514,7 +33718,7 @@
         "Citations": 2
       }
     ],
-    "Citations": 9,
+    "Citations": 8,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "scvr",
@@ -34011,7 +34215,7 @@
         "Title": "Integrated analysis of multimodal single-cell data",
         "DOI": "10.1016/j.cell.2021.04.048",
         "Date": "2021-06",
-        "Citations": 3641
+        "Citations": 3643
       },
       {
         "Title": "Spatial reconstruction of single-cell gene expression data",
@@ -34059,7 +34263,7 @@
         "Citations": 84
       }
     ],
-    "Citations": 24535,
+    "Citations": 24537,
     "NumPubs": 5,
     "NumPreprints": 5,
     "CRAN": "Seurat",
@@ -34294,6 +34498,27 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "salzmanlab/SICILIAN"
+  },
+  {
+    "Tool": "SiCR",
+    "Platform": "R",
+    "Code": "https://github.com/Masakazu-Ishikawa137/SiCR",
+    "Description": "A web application specialized for single cell repertoire analysis",
+    "Added": "2023-08-11",
+    "Updated": "2023-08-11",
+    "Categories": ["Immune", "Interactive"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "SiCR: Web application for single-cell repertoire analysis and immune profiling",
+        "DOI": "10.1101/2023.08.03.551897",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "Masakazu-Ishikawa137/SiCR"
   },
   {
     "Tool": "Sierra",
@@ -35277,7 +35502,7 @@
         "Title": "Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage",
         "DOI": "10.1038/s41590-018-0276-y",
         "Date": "2019-01-14",
-        "Citations": 1727
+        "Citations": 1728
       }
     ],
     "Preprints": [
@@ -35287,7 +35512,7 @@
         "Citations": 4
       }
     ],
-    "Citations": 1731,
+    "Citations": 1732,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "SingleR",
@@ -35758,6 +35983,28 @@
     "GitHub": "kstreet13/slingshot"
   },
   {
+    "Tool": "SMAI",
+    "Platform": "R",
+    "Code": "https://github.com/rongstat/SMAI",
+    "Description": "Spectral Manifold Alignment and Inference for Alignability Testing and Single-Cell Data Integration",
+    "License": "MIT",
+    "Added": "2023-08-11",
+    "Updated": "2023-08-11",
+    "Categories": ["Clustering", "DimensionalityReduction", "Integration"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "Is your data alignable? Principled and interpretable alignability testing and integration of single-cell data",
+        "DOI": "10.1101/2023.08.03.551836",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "rongstat/SMAI"
+  },
+  {
     "Tool": "SMaSH",
     "Platform": "Python",
     "Code": "https://gitlab.com/cvejic-group/smash",
@@ -36019,8 +36266,9 @@
     "Platform": "Python/Shell",
     "Code": "https://github.com/bvaldebenitom/SoloTE",
     "Description": "For analysis of transposable elements in single-cell RNA-Seq data using locus-specific expression",
+    "License": "GPL-3.0",
     "Added": "2022-10-14",
-    "Updated": "2022-10-14",
+    "Updated": "2023-08-11",
     "Categories": ["Quantification"],
     "Publications": [
       {
@@ -36680,6 +36928,28 @@
     "GitHub": "CenterForStatistics-UGent/SPsimSeq"
   },
   {
+    "Tool": "SR2",
+    "Platform": "R/C/C++",
+    "Code": "https://github.com/kai0511/SR2",
+    "Description": "SR2 decomposes variation from multiple biological conditions and cellular variation across bio-samples into shared low-rank latent spaces",
+    "License": "GPL-2.0-or-later",
+    "Added": "2023-08-11",
+    "Updated": "2023-08-11",
+    "Categories": ["Clustering", "DimensionalityReduction"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "SR2: Sparse Representation Learning for Scalable Single-cell RNA Sequencing Data Analysis",
+        "DOI": "10.1101/2023.07.31.551228",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "kai0511/SR2"
+  },
+  {
     "Tool": "SSBER",
     "Platform": "R",
     "Code": "https://github.com/zy456/SSBER",
@@ -36836,7 +37106,7 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 28461
+        "Citations": 28462
       }
     ],
     "Preprints": [
@@ -36846,7 +37116,7 @@
         "Citations": 93
       }
     ],
-    "Citations": 28554,
+    "Citations": 28555,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "alexdobin/STAR"
@@ -37180,9 +37450,9 @@
     "Platform": "R/C++",
     "Code": "https://github.com/yanwu2014/swne",
     "Description": "Similarity Weighted Nonnegative Embedding (SWNE), is a method for visualizing high dimensional datasets.",
-    "License": "GPL-2.0",
+    "License": "BSD-3-Clause",
     "Added": "2018-03-08",
-    "Updated": "2019-01-06",
+    "Updated": "2023-08-04",
     "Categories": ["DimensionalityReduction", "Normalisation", "Visualisation"],
     "Publications": [
       {
@@ -38348,11 +38618,11 @@
         "Title": "Prediction of single-cell gene expression for transcription factor analysis",
         "DOI": "10.1093/gigascience/giaa113",
         "Date": "2020-10-30",
-        "Citations": 7
+        "Citations": 8
       }
     ],
     "Preprints": [],
-    "Citations": 7,
+    "Citations": 8,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "SchulzLab/Triangulate"
