@@ -125,6 +125,7 @@ celda	R/C++	https://github.com/campbio/celda	"celda" stands for "CEllular Latent
 CeLEry	Python	https://github.com/QihuangZhang/CeLEry	CeLEry, a supervised deep learning algorithm to recover the spatial origins of cells in scRNA-seq by leveraging gene expression and spatial location information learned from spatial transcriptomics	MIT	2023-07-14	2023-07-14
 Cell-BLAST	Python	https://github.com/gao-lab/Cell_BLAST	Cell BLAST is a cell querying tool for single-cell transcriptomics data.	MIT	2019-04-16	2021-04-23
 cell2cell	Python	https://github.com/earmingol/cell2cell	Inferring cell-cell interactions from transcriptomes with cell2cell	BSD-3-Clause	2021-08-07	2022-12-02
+cell2fate	Python	https://github.com/BayraktarLab/cell2fate	A formulation of RNA velocity based on a linearization of the velocity ODE	Apache-2.0	2023-08-11	2023-08-11
 cell2location	Python	https://github.com/BayraktarLab/cell2location	Cell2location maps the spatial distribution of cell types by integrating single-cell RNA-seq (scRNA-seq) and multi-cell spatial transcriptomic data from a given tissue	Apache-2.0	2020-11-22	2022-03-04
 cellAlign	R/C++	https://github.com/shenorrLab/cellAlign	CellAlign is a tool for quantitative comparison of expression dynamics within or between single-cell trajectories.	Custom	2018-03-14	2018-03-14
 CellANOVA	Python	https://github.com/Janezjz/cellanova	CellANOVA: Cell State Space Analysis of Variance	GPL-3.0	2023-05-26	2023-05-26
@@ -202,6 +203,7 @@ clonealign	R	https://github.com/kieranrcampbell/clonealign	clonealign assigns si
 ClonoCluster	R	https://github.com/leeprichman/ClonoCluster	A method for using clonal origin to inform transcriptome clustering	GPL-3.0	2022-02-18	2023-05-12
 ClustAssess	R/C++	https://github.com/Core-Bioinformatics/ClustAssess	Provides a set of tools for evaluating clustering robustness	MIT	2022-02-04	2022-02-04
 cluster_diffex	Python	https://github.com/simslab/cluster_diffex2018	Representative marker selection, cluster, visualization, and binomial differential expression pipeline	MIT	2020-04-28	2020-04-28
+ClusterDE	R	https://github.com/SONGDONGYUAN1994/ClusterDE	A Post-clustering Differential Expression (DE) Method For Solving Double Dipping	MIT	2023-08-04	2023-08-11
 clusterExperiment	R	https://github.com/epurdom/clusterExperiment	Functions for running and comparing many different clusterings of single-cell sequencing data. Meant to work with SCONE and slingshot.	Artistic-2.0	2016-09-08	2020-03-25
 ClusterFoldSimilarity	R	https://github.com/OscarGVelasco/ClusterFoldSimilarity	Calculate cluster similarity between clusters from different single cell datasets/batches/samples	MIT	2022-03-18	2022-03-18
 Clustergrammer2	Python	https://github.com/ismms-himc/clustergrammer2	Clustergrammer2 is an interactive WebGL heatmap Jupyter widget that is built to help researchers interactively explore single cell data (e.g. scRNA-seq). Clustergrammer2 enables unbiased hierarchical clustering, integration of prior knowledge categories, and the generation of novel signatures.	MIT	2019-11-06	2021-06-28
@@ -500,12 +502,14 @@ GRM	R	http://wanglab.ucsd.edu/star/GRM	Normalization and noise reduction for sin
 GRN-VAE	Python	https://github.com/TuftsBCB/grnvae	A stablized SEM style Variational autoencoder for gene regulatory network inference	MIT	2023-02-03	2023-06-30
 GRNUlar	Python	https://github.com/Harshs27/GRNUlar	Gene Regulatory Network reconstruction using Unrolled algorithms	MIT	2020-04-28	2022-02-04
 GRNVBEM	MATLAB	https://github.com/mscastillo/GRNVBEM	Gene Regulatory Network (GRN) inference from time series or pseudo-time series data using a first-order autoregressive moving average (AR1MA1) model within a variational Bayesian Expectation-Maximization (VBEM) framework.	NA	2017-10-02	2017-10-02
+GRouNdGAN	Python	https://github.com/Emad-COMBINE-lab/GRouNdGAN	GRN-guided in silico simulation of single-cell RNA-seq data using Causal Generative Adversarial Networks	AGPL-3.0	2023-08-04	2023-08-04
 GRUFFI	R	https://github.com/jn-goe/gruffi	Gruffi identifies and removes stressed cells from brain organoid single-cell datasets.	GPL-3.0	2022-08-19	2022-08-19
 gsdensity	R	https://github.com/qingnanl/gsdensity	A computational tool dedicated for 'pathway centric' analysis of single-cell data	GPL-3.0	2023-07-14	2023-07-14
 GSEApy	Python/Rust	https://github.com/zqfang/GSEApy	GSEApy is a Python/Rust implementation for GSEA and wrapper for Enrichr	BSD-3-Clause	2022-12-02	2022-12-02
 GSFA	R/C++	https://github.com/gradonion/GSFA	Bayesian sparse factor analysis on single-cell CRISPR screen data	MIT	2022-02-18	2022-02-18
 gssnng	Python	https://github.com/gibbsdavidl/gssnng	Gene Set Scoring on the Nearest Neighbor Graph (gssnng) for Single Cell RNA-seq (scRNA-seq)	MIT	2022-12-09	2022-12-09
 h-tSNE	Python	https://github.com/Cobanoglu-Lab/h-tSNE	Hierarchical t-Distributed Stochastic Neighbor Embedding	NA	2020-10-15	2022-08-12
+hadge	Nextflow/R/Python/Shell	https://github.com/theislab/hadge	hadge: a comprehensive pipeline for donor deconvolution in single cell	MIT	2023-08-04	2023-08-04
 Haisu	Python	https://github.com/Cobanoglu-Lab/Haisu	Hierarchical Supervised Nonlinear Dimensionality Reduction	MIT	2021-01-22	2021-01-22
 HAL	Python	https://github.com/alexandreday/HAL	Uses supervised linkage methods to build a cluster hierarchy on raw single-cell data	NA	2022-10-07	2022-10-07
 HARISSA	Python	https://github.com/ulysseherbach/harissa	HARtree approximation for Inference along with a Stochastic Simulation Algorithm, a Python package for inferring gene regulatory networks from single-cell data	BSD-3-Clause	2022-06-24	2022-06-24
@@ -792,6 +796,7 @@ phiclust	R	https://github.com/semraulab/phiclust	A package to calculate clustera
 PhitestR	R	https://github.com/Vivianstats/PhitestR	Phitest is a bioinformatics method developed for analyzing the heterogeneity of single-cell populations	GPL-3.0	2022-03-11	2022-03-11
 PhylEx	C++	https://github.com/junseonghwan/PhylEx	Integrated analysis of bulk aDNA-seq and single cell RNA-seq data	NA	2021-02-19	2021-02-19
 phyloRNA	R/Python	https://github.com/bioDS/phyloRNA	phyloRNA is an utility package that maps functionality of a commonly used software to easy building phylogenetic trees from scRNAseq data	MIT	2021-01-15	2023-01-04
+PhyloVelo	Python	https://github.com/kunwang34/PhyloVelo	PhyloVelo is a computational framework to quantify the transcriptomic velocity field from phylogeny-resolved scRNA-seq data	BSD-3-Clause	2023-08-04	2023-08-04
 Piccolo	R	https://github.com/Amartya101/Piccolo	An R package for processing and analyzing single-cell counts data	GPL-3.0	2023-03-10	2023-03-10
 PieParty	Python	https://github.com/harbourlab/PieParty	PieParty is a visualization tool allowing to represent every cell in single-cell sequencing plots (UMAP, tSNE, ect.) as a pie chart	NA	2020-09-10	2021-03-12
 PILOT	Python	https://github.com/CostaLab/PILOT	PILOT uses optimal transport to compute the Wasserstein distance between two single single-cell experiments	NA	2023-07-01	2023-07-01
@@ -816,6 +821,7 @@ Pre-Phaser	Python/C++	https://github.com/ayurovsky/Pre-Phaser	Cell-Cycle Phase D
 PreCanCell	R	https://github.com/WangX-Lab/PreCanCell	PreCanCell is a simple and effective ensemble learning algorithm for predicting cancer and non-cancer cells from single-cell transcriptomes	GPL-3.0	2023-07-14	2023-07-14
 PRESCIENT	Python	https://github.com/gifford-lab/prescient	PRESCIENT (Potential eneRgy undErlying Single Cell gradIENTs), a generative model for modeling single-cell time-series	MIT	2020-09-10	2021-06-04
 ProjecTILs	R	https://github.com/carmonalab/ProjecTILs	Computational tool to project new scRNA-seq data into a reference map of T cells, allowing their direct comparison in a stable, annotated system of coordinates.	GPL-3.0	2020-07-03	2020-07-03
+ProjectSVR	R	https://github.com/jarninggau/ProjectSVR	ProjectSVR is a machine learning-based algorithm for mapping the query cells onto well-constructed reference atlas	MIT	2023-08-11	2023-08-11
 PROSSTT	Python	https://github.com/soedinglab/prosstt	PROSSTT (PRObabilistic Simulations of ScRNA-seq Tree-like Topologies) is a package with code for the simulation of scRNAseq data for dynamic processes such as cell differentiation.	GPL-3.0	2018-02-07	2019-05-17
 protaccel	Python	https://github.com/pachterlab/GSP_2019	Infer kinetics from scRNA-seq/feature barcoding data	BSD-2-Clause	2020-03-03	2020-03-03
 Pseudocell_Tracer	Python	https://github.com/akds/pseudocell	Infers trajectories in pseudospace rather than in pseudotime	MIT	2020-07-03	2021-05-14
@@ -915,6 +921,7 @@ scAdapt	Python	https://github.com/zhoux85/scAdapt	scAdapt is a virtual adversari
 scAEGAN	Python	https://github.com/sumeer1/scAEGAN	scAEGAN is a python based deep learning model that is designed for single-cell-omics and multi-omics integration	GPL-3.0	2022-05-03	2023-05-12
 scAEspy	Python	https://gitlab.com/cvejic-group/scaespy	scAEspy: a unifying tool based on autoencoders for the analysis of single-cell RNA sequencing data	GPL-3.0	2019-08-12	2021-03-12
 SCAFE	Perl/R	https://github.com/chung-lab/scafe	SCAFE (Single Cell Analysis of Five-prime Ends) provides an end-to-end solution for processing of single cell 5’ end RNA-seq data	MIT	2021-04-05	2023-01-04
+scaffold	R	https://github.com/rhondabacher/scaffold	Scaffold is an R package for generating scRNA-seq data by statistically modeling each step of the experimental data generation process	GPL-2.0-or-later	2023-08-04	2023-08-04
 scAI	R/MATLAB	https://github.com/sqjin/scAI	scAI: a single cell Aggregation and Integration method for analyzing single cell multi-omics data	GPL-3.0	2020-02-20	2020-02-20
 scAIDE	Python/R	https://github.com/tinglabs/scAIDE	scAIDE is an unsupervised clustering framework for single-cell RNA-seq data	NA	2020-10-27	2020-10-27
 scAL	Python	https://github.com/xianglin226/scAL	An active learning approach for clustering single-cell RNA-seq data	Apache-2.0	2021-07-16	2021-07-16
@@ -978,7 +985,7 @@ scClustViz	R	https://github.com/BaderLab/scClustViz	An interactive R Shiny tool 
 scCobra	Python	https://github.com/GlancerZ/scCobra	Contrastive cell embedding learning with domain adaptation for single-cell data integration	MIT	2022-10-28	2022-10-28
 scCODA	Python	https://github.com/theislab/scCODA	scCODA allows for identification of compositional changes in high-throughput sequencing count data, especially cell compositions from scRNA-seq	BSD-3-Clause	2021-01-08	2021-11-27
 scCODE	R	https://github.com/XZouProjects/scCODE	scCODE (Consensus Optimization of Differentially Expressed gene detection for single cell)	MIT	2021-11-27	2022-06-03
-sccomp	R/Stan	https://github.com/stemangiola/sccomp	Outlier-aware and count-based compositional analysis of single-cell data	GPL-3.0	2022-03-11	2022-04-30
+sccomp	R/Stan	https://github.com/stemangiola/sccomp	Outlier-aware and count-based compositional analysis of single-cell data	GPL-3.0	2022-03-11	2023-08-11
 scConnect	Python	https://github.com/JonETJakobsson/scConnect	scConnect: Like Tinder but for single cells	MIT	2021-05-21	2021-05-21
 scConsensus	R	https://github.com/prabhakarlab/scConsensus	An approach combining semi-supervised and unsupervised clustering for cell type annotation in single-cell RNA-seq data	MIT	2020-04-28	2020-04-28
 scCorr	R	https://github.com/CBIIT-CGBB/scCorr	A graph-based k-partitioning approach for single-cell gene-gene correlation analysis	GPL-2.0	2021-03-12	2022-01-14
@@ -1106,7 +1113,7 @@ scirpy	Python	https://github.com/icbi-lab/scirpy	Scirpy is a scalable python-too
 scisorseqr	R/Shell/Awk/Python	https://github.com/noush-joglekar/scisorseqr	scisorseqr is a linux based R-package for analyzing differential isoform expression in single cells	MIT	2021-02-05	2021-02-05
 ScisorWiz	R/Python	https://github.com/ans4013/ScisorWiz	ScisorWiz is a linux-based R-package for visualizing differential isoform expression for any gene across any number of cell types	Custom	2022-05-03	2022-06-17
 scISR	R	https://github.com/duct317/scISR	scISR performs imputation for single-cell sequencing data	LPL-1.0	2021-07-16	2022-07-15
-SCISSORS	R	https://github.com/jr-leary7/SCISSORS	This package allows the reclustering of single cell clusters based on the identification of the highly variable genes that are unique to each cluster	MIT	2021-11-05	2023-05-05
+SCISSORS	R	https://github.com/jr-leary7/SCISSORS	This package allows the reclustering of single cell clusters based on the identification of the highly variable genes that are unique to each cluster	MIT	2021-11-05	2023-08-04
 scITD	R/C++	https://github.com/kharchenkolab/scITD	Single-Cell Interpretable Tensor Decomposition (scITD) is computational method capable of extracting multicellular gene expression programs that vary across donors or samples	GPL-3.0	2021-11-05	2022-03-04
 scIVA	R	https://github.com/IMB-Computational-Genomics-Lab/scIVA	scIVA - Single Cell Interactive Visualisation and Analysis	NA	2018-12-13	2018-12-13
 Sciviewer	Python	https://github.com/colabobio/sciviewer	This is an interactive viewer for 2D embeddings such as UMAP or tSNE of high dimensional single-cell RNA-seq data that is run directly out of the Jupyter Notebook environment	MIT	2021-08-27	2021-10-18
@@ -1170,7 +1177,7 @@ scone	R	https://github.com/YosefLab/scone	SCONE (Single-Cell Overview of Normali
 scOntoMatch	R	https://github.com/Functional-Genomics/scOntoMatch	scOntoMatch is an R package which unifies ontology annotation of scRNA-seq datasets to make them comparable across studies	MIT	2023-01-27	2023-01-27
 SCope	Python	https://github.com/aertslab/SCope	SCope: Visualization of large-scale and high dimensional single cell data	GPL-3.0	2018-06-15	2018-06-15
 SCORPION	R	https://github.com/kuijjerlab/SCORPION	SCORPION (Single-Cell Oriented Reconstruction of PANDA Individually Optimized Gene Regulatory Networks), is an R package that uses coarse-graining of single-cell/nuclei RNA-seq data to reduce sparsity and improve the ability to detect the gene regulatory network's underlying correlation structure	GPL-3.0	2023-01-27	2023-01-27
-SCORPIUS	R	https://github.com/rcannood/SCORPIUS	SCORPIUS an unsupervised approach for inferring developmental chronologies from single-cell RNA sequencing data.	GPL-3.0	2016-10-11	2016-10-11
+SCORPIUS	R	https://github.com/rcannood/SCORPIUS	SCORPIUS an unsupervised approach for inferring developmental chronologies from single-cell RNA sequencing data.	GPL-3.0	2016-10-11	2023-08-11
 SCOUP	C++	https://github.com/hmatsu1226/SCOUP	Uses probabilistic model based on the Ornstein-Uhlenbeck process to analyze single-cell expression data during differentiation.	MIT	2016-09-08	2016-09-08
 SCOUT	Python	https://github.com/statway/SCOUT	Inference of single-cell pseudo-time ordering with bifurcation trajectories	NA	2019-04-05	2019-04-05
 scover	Python	https://github.com/jacobhepkema/scover	scover is a convolutional neural network (CNN) for de novo inference of cis-regulatory motifs from single-cell data	MIT	2022-05-06	2023-07-21
@@ -1293,6 +1300,7 @@ scVDMC	MATLAB	https://github.com/kuanglab/scVDMC	Multitask Clustering of scRNAse
 scVEGs	R	https://github.com/hillas/scVEGs	scVEGs is a novel algorithm for single-cell RNA-seq (scRNA-seq) data to determine significant variably expressed genes (VEGs) using a gene expression variation model (GEVM).	MIT	2016-09-09	2016-09-09
 scVelo	Python	https://github.com/theislab/scvelo	scVelo is a scalable toolkit for estimating and analyzing RNA velocities in single cells using dynamical modeling.	BSD-3-Clause	2019-11-03	2020-08-06
 scvi-tools	Python	https://github.com/YosefLab/scvi-tools	scvi-tools (single-cell variational inference tools) is a package for probabilistic modeling of single-cell omics data, built on top of PyTorch and Anndata	BSD-3-Clause	2018-04-04	2022-06-03
+scViralQuant	Java/Shell/Python/Perl	https://github.com/galelab/scViralQuant	The goal of this python package is to accurately align and quantify viral reads for 10x single cell data	BSD-3-Clause	2023-08-04	2023-08-04
 scVirtualCyto	Javascript	https://github.com/FredPont/single-cell-virtual-cytometer	Single-Cell Virtual Cytometer is an open source software for straightforward visualization and exploration of multimodal single cell datasets as in flow cytometry.	AGPL-3.0	2019-11-21	2020-05-14
 scvis	Python	https://bitbucket.org/jerry00/scvis-dev	scvis is a python package for dimension reduction of high-dimensional biological data, especially single-cell RNA-sequencing (scRNA-seq) data	NA	2018-11-15	2018-11-15
 scvr	Python	https://github.com/pinellolab/singlecellvr	Tool for preparing scRNA-seq datasets to be viewed using Single Cell VR https://singlecellvr.com/	NA	2020-08-06	2021-11-27
@@ -1326,6 +1334,7 @@ ShinyCell	R	https://github.com/SGDDNB/ShinyCell	ShinyCell is a R package that al
 ShinyMultiome-UiO	R	https://github.com/EskelandLab/ShinyMultiomeUiO	An interactive open-source framework utilizing Seurat Objects for visualizing single-cell Multiomes	GPL-3.0	2023-07-14	2023-07-14
 SiCeLoRe	Java	https://github.com/ucagenomix/sicelore	SiCeLoRe (Single Cell Long Read) is a suite of tools dedicated to cell barcode / UMI assignment and bioinformatics analysis of highly multiplexed single cell Nanopore long read sequencing data.	MIT	2020-03-25	2020-03-25
 SICILIAN	Python/R	https://github.com/salzmanlab/SICILIAN	Specific splice junction detection in single cells with SICILIAN (SIngle Cell precIse spLice estImAtioN)	GPL-2.0	2020-04-17	2021-08-11
+SiCR	R	https://github.com/Masakazu-Ishikawa137/SiCR	A web application specialized for single cell repertoire analysis	NA	2023-08-11	2023-08-11
 Sierra	R	https://github.com/VCCRI/Sierra	Sierra is an R package designed for detecting differential transcript usage analysis from polyA-enriched single cell RNASeq data.	GPL-3.0	2019-12-11	2021-06-28
 SIEVE	R	https://github.com/YinanZhang522/SIEVE	SIEVE is a strategy used for select highly Variable genes from single-cell RNA Seq data, based on random sampling for all single cells in a scRNA-seq dataset	NA	2021-05-07	2021-05-07
 SiFINeT	R/C++	https://github.com/jichunxie/SifiNet	A cluster-independent feature gene sets detection method based on topology structure of gene coexpression network.	GPL-3.0	2023-06-02	2023-06-02
@@ -1383,6 +1392,7 @@ SLICE	R	https://research.cchmc.org/pbge/slice.html	The SLICE (Single Cell Lineag
 SLICER	R	https://github.com/jw156605/SLICER	Selective Locally linear Inference of Cellular Expression Relationships (SLICER) algorithm for inferring cell trajectories.	GPL-2.0	2016-09-08	2016-09-08
 SLIDE	R	https://github.com/jishnu-lab/SLIDE	Significant Latent factor Interaction Discovery and Exploration (SLIDE), a first-in-class interpretable machine learning technique for identifying significant interacting latent factors underlying outcomes of interest from high-dimensional omic datasets	MIT	2022-12-02	2022-12-02
 slingshot	R	https://github.com/kstreet13/slingshot	Functions for identifying and characterizing continuous developmental trajectories in single-cell sequencing data.	Artistic-2.0	2016-09-09	2019-01-06
+SMAI	R	https://github.com/rongstat/SMAI	Spectral Manifold Alignment and Inference for Alignability Testing and Single-Cell Data Integration	MIT	2023-08-11	2023-08-11
 SMaSH	Python	https://gitlab.com/cvejic-group/smash	The SMaSH (Scalable Marker gene Signal Hunter) framework is a general, scalable codebase for calculating marker genes from single-cell RNA-sequencing	MIT	2023-06-02	2023-06-02
 SMGR	R/C	https://github.com/QSong-github/SMGR	A tailored tool for identifying coherent signals across single-cell multi-omics data	MIT	2022-08-19	2022-08-19
 SMILE	Python	https://github.com/rpmccordlab/SMILE	SMILE: Mutual Information Learning for Integration of Single Cell Omics Data	NA	2021-02-05	2021-10-18
@@ -1393,7 +1403,7 @@ SnapCCESS	Python	https://github.com/yulijia/SnapCCESS	A python package to genera
 SNN-Cliq	MATLAB/Python	http://bioinfo.uncc.edu/SNNCliq/	SNN-Cliq is a clustering method designed for high dimensional gene expression data, e.g. single-cell transcriptome data.`	NA	2018-11-13	2018-11-13
 SoCube	Python	https://github.com/idrblab/socube	SoCube is an end-to-end doublet detection tool with novel feature embedding strategy	MIT	2023-03-24	2023-03-24
 solo	Python	https://github.com/calico/Solo	solo is a neural network framework to classify doublets, so that you can remove them from your data and clean your single cell profile.	MIT	2019-11-21	2020-07-03
-SoloTE	Python/Shell	https://github.com/bvaldebenitom/SoloTE	For analysis of transposable elements in single-cell RNA-Seq data using locus-specific expression	NA	2022-10-14	2022-10-14
+SoloTE	Python/Shell	https://github.com/bvaldebenitom/SoloTE	For analysis of transposable elements in single-cell RNA-Seq data using locus-specific expression	GPL-3.0	2022-10-14	2023-08-11
 SoptSC	MATLAB	https://github.com/WangShuxiong/SoptSC	SoptSC, a computational method for single cell data analysis.	MIT	2017-08-07	2018-05-25
 SOUP	R	https://github.com/lingxuez/SOUPR	SOUP, for Semi-sOft clUstering with Pure cells, is a clustering method for single cell data.	GPL-2.0-or-later	2019-01-11	2019-01-11
 souporcell	Python/Rust	https://github.com/wheaton5/souporcell	souporcell is a method for clustering mixed-genotype scRNAseq experiments by individual.	MIT	2019-07-15	2020-05-14
@@ -1418,6 +1428,7 @@ spliceJAC	Python	https://github.com/federicobocci/spliceJAC	spliceJAC is a pytho
 SPmarker	Python	https://github.com/LiLabAtVT/SPMarker	SPmarker is a machine learning based approach for identification of marker genes and classification of cells in plant tissues	GPL-3.0	2021-10-18	2022-03-04
 SPRING	Python/MATLAB/Javascript	https://github.com/AllonKleinLab/SPRING	SPRING is a collection of pre-processing scripts and a web browser-based tool for visualizing and interacting with high dimensional data.	NA	2016-12-05	2016-12-05
 SPsimSeq	R	https://github.com/CenterForStatistics-UGent/SPsimSeq	Semi-parametric simulation of bulk and single cell RNA-seq data	GPL-2.0	2019-06-28	2021-01-08
+SR2	R/C/C++	https://github.com/kai0511/SR2	SR2 decomposes variation from multiple biological conditions and cellular variation across bio-samples into shared low-rank latent spaces	GPL-2.0-or-later	2023-08-11	2023-08-11
 SSBER	R	https://github.com/zy456/SSBER	SSBER: removing batch effect for single-cell RNA sequencing data	NA	2021-05-21	2021-05-21
 sscClust	R	https://github.com/Japrin/sscClust	simpler single cell RNAseq data clustering (sscClust), is a package implement mutilple functionalities which are basic procedures in single cell RNAseq data analysis, including variable genes identification, dimension reduction, clustering on reduced data.	GPL-3.0	2018-11-13	2019-06-20
 SSrGE	Python	https://github.com/lanagarmire/SSrGE	This procedure aims to fit sparse linear models using a binary matrix (n_samples x n_SNV) as features matrix and a gene expression matrix (n_genes x n_samples) as response.	MIT	2017-01-10	2018-12-01
@@ -1437,7 +1448,7 @@ supercells	Python	https://github.com/compugen-ltd/supercells	Supercells is a too
 Superscan	Python	https://github.com/cshasha/superscan	Superscan (Supervised Single-Cell Annotation) is a Python package for annotation of human scRNA-seq data	NA	2021-05-28	2021-05-28
 SwarnSeq	R	https://github.com/sam-uofl/SwarnSeq	This R package performs Differential Expression, and Differential Zero Inflation analysis of Single-Cell RNA-seq (scRNA-seq) data	GPL-3.0	2021-11-27	2023-03-31
 switchde	R	https://github.com/kieranrcampbell/switchde	Differential expression analysis across pseudotime. Identify genes that exhibit switch-like up or down regulation along single-cell trajectories along with where in the trajectory the regulation occurs.	GPL-2.0-or-later	2016-09-09	2017-01-10
-SWNE	R/C++	https://github.com/yanwu2014/swne	Similarity Weighted Nonnegative Embedding (SWNE), is a method for visualizing high dimensional datasets.	GPL-2.0	2018-03-08	2019-01-06
+SWNE	R/C++	https://github.com/yanwu2014/swne	Similarity Weighted Nonnegative Embedding (SWNE), is a method for visualizing high dimensional datasets.	BSD-3-Clause	2018-03-08	2023-08-04
 Symphony	R/C++	https://github.com/immunogenomics/symphony	Efficient and precise single-cell reference atlas mapping with Symphony	GPL-3.0	2020-11-22	2023-01-27
 SymSim	R	https://github.com/YosefLab/SymSim	SymSim (Synthetic model of multiple variability factors for Simulation) is an R package for simulation of single cell RNA-Seq data	Artistic-2.0	2018-08-03	2019-06-20
 SynergisticCore	R/C++	https://git-r3lab.uni.lu/satoshi.okawa/synergisticcore	A new computational method for determining such synergistic identity cores of subpopulations within a given cell population.	NA	2019-03-01	2019-03-01

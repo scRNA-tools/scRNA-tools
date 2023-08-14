@@ -344,6 +344,7 @@ Cell-BLAST	Classification
 Cell-BLAST	Visualisation
 cell2cell	GeneNetworks
 cell2cell	Visualisation
+cell2fate	Ordering
 cell2location	Classification
 cell2location	Integration
 cellAlign	ExpressionPatterns
@@ -549,6 +550,8 @@ cluster_diffex	DifferentialExpression
 cluster_diffex	DimensionalityReduction
 cluster_diffex	MarkerGenes
 cluster_diffex	Visualisation
+ClusterDE	DifferentialExpression
+ClusterDE	MarkerGenes
 clusterExperiment	Clustering
 clusterExperiment	MarkerGenes
 clusterExperiment	Visualisation
@@ -1236,6 +1239,7 @@ GRM	Normalisation
 GRN-VAE	GeneNetworks
 GRNUlar	GeneNetworks
 GRNVBEM	GeneNetworks
+GRouNdGAN	Simulation
 GRUFFI	GeneSets
 GRUFFI	QualityControl
 GRUFFI	Visualisation
@@ -1248,6 +1252,7 @@ GSFA	VariableGenes
 GSFA	Variants
 gssnng	GeneSets
 h-tSNE	DimensionalityReduction
+hadge	Quantification
 Haisu	DimensionalityReduction
 HAL	Classification
 HAL	Clustering
@@ -1970,6 +1975,10 @@ phyloRNA	QualityControl
 phyloRNA	Quantification
 phyloRNA	UMIs
 phyloRNA	Variants
+PhyloVelo	DimensionalityReduction
+PhyloVelo	Normalisation
+PhyloVelo	Ordering
+PhyloVelo	Visualisation
 Piccolo	Clustering
 Piccolo	DifferentialExpression
 Piccolo	DimensionalityReduction
@@ -2038,6 +2047,9 @@ ProjecTILs	Classification
 ProjecTILs	DimensionalityReduction
 ProjecTILs	Immune
 ProjecTILs	Visualisation
+ProjectSVR	Classification
+ProjectSVR	Integration
+ProjectSVR	Visualisation
 PROSSTT	Simulation
 protaccel	Integration
 protaccel	Ordering
@@ -2287,6 +2299,8 @@ scAEspy	DimensionalityReduction
 scAEspy	Integration
 SCAFE	AlternativeSplicing
 SCAFE	Quantification
+scaffold	Simulation
+scaffold	Visualisation
 scAI	Clustering
 scAI	DimensionalityReduction
 scAI	Integration
@@ -3226,6 +3240,9 @@ scvi-tools	Imputation
 scvi-tools	Integration
 scvi-tools	Normalisation
 scvi-tools	QualityControl
+scViralQuant	Quantification
+scViralQuant	UMIs
+scViralQuant	Visualisation
 scVirtualCyto	Interactive
 scVirtualCyto	Visualisation
 scvis	DimensionalityReduction
@@ -3319,6 +3336,8 @@ SiCeLoRe	AlternativeSplicing
 SiCeLoRe	UMIs
 SiCeLoRe	Variants
 SICILIAN	Alignment
+SiCR	Immune
+SiCR	Interactive
 Sierra	AlternativeSplicing
 Sierra	Visualisation
 SIEVE	VariableGenes
@@ -3473,6 +3492,9 @@ SLIDE	Visualisation
 slingshot	DimensionalityReduction
 slingshot	Ordering
 slingshot	Visualisation
+SMAI	Clustering
+SMAI	DimensionalityReduction
+SMAI	Integration
 SMaSH	GeneFiltering
 SMaSH	MarkerGenes
 SMGR	Integration
@@ -3552,6 +3574,8 @@ SPRING	DimensionalityReduction
 SPRING	Interactive
 SPRING	Visualisation
 SPsimSeq	Simulation
+SR2	Clustering
+SR2	DimensionalityReduction
 SSBER	Integration
 sscClust	Clustering
 sscClust	DimensionalityReduction
