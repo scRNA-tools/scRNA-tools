@@ -299,6 +299,8 @@ cardelino	Simulation
 cardelino	Variants
 cardelino	Visualisation
 CaSee	Classification
+CASi	Classification
+CASi	ExpressionPatterns
 CaSpER	Variants
 CaSpER	Visualisation
 CaSTLe	Classification
@@ -1399,6 +1401,8 @@ InGene	Visualisation
 INSCT	Integration
 INSISTC	Classification
 INSISTC	GeneNetworks
+IntegratedLearner	Classification
+IntegratedLearner	Integration
 InterCellar	GeneNetworks
 InterCellar	Interactive
 InterCellar	Visualisation
@@ -1752,7 +1756,12 @@ Monod	DifferentialExpression
 Monod	QualityControl
 Monod	Quantification
 Monod	Visualisation
-Monopopgen	Variants
+Monopogen	Variants
+mosaicMPI	DimensionalityReduction
+mosaicMPI	GeneSets
+mosaicMPI	Integration
+mosaicMPI	VariableGenes
+mosaicMPI	Visualisation
 MOSCATO	GeneNetworks
 MOSCATO	Simulation
 moscot	Integration
@@ -2039,6 +2048,8 @@ popsicleR	Clustering
 popsicleR	Normalisation
 popsicleR	QualityControl
 popsicleR	Visualisation
+PopV	Classification
+PopV	Visualisation
 Portal	DimensionalityReduction
 Portal	Integration
 powerEQTL	Variants
@@ -2403,6 +2414,9 @@ scarf	Visualisation
 scasa	Alignment
 scasa	AlternativeSplicing
 scasa	Quantification
+scASfind	AlternativeSplicing
+scASfind	MarkerGenes
+scASfind	Visualisation
 scASK	Classification
 scASK	DimensionalityReduction
 scASK	Interactive
@@ -2429,6 +2443,7 @@ scBGEDA	DimensionalityReduction
 scBio	Integration
 scBonita	GeneNetworks
 scBT	DifferentialExpression
+scBTF	DimensionalityReduction
 scBubbletree	Visualisation
 SCC	Imputation
 scCAEs	Clustering
@@ -2443,6 +2458,12 @@ scCancer	DifferentialExpression
 scCancer	GeneNetworks
 scCancer	QualityControl
 scCancer	StemCells
+scCancer2	CellCycle
+scCancer2	Clustering
+scCancer2	GeneNetworks
+scCancer2	Integration
+scCancer2	StemCells
+scCancer2	Visualisation
 scCaps	Clustering
 scCaps	DimensionalityReduction
 scCaps	GeneNetworks
@@ -3194,6 +3215,10 @@ scTHI	Visualisation
 scTIM	MarkerGenes
 scTITANS	Clustering
 scTITANS	MarkerGenes
+scTM	DimensionalityReduction
+scTM	GeneFiltering
+scTM	Integration
+scTM	Visualisation
 scTOP	Classification
 scTopoGAN	DimensionalityReduction
 scTopoGAN	Integration
