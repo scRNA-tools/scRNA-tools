@@ -3250,6 +3250,30 @@
     "GitHub": "cran/ccRemover"
   },
   {
+    "Tool": "CCSF",
+    "Platform": "Python",
+    "Code": "https://github.com/xinglab-ai/ccsf",
+    "Description": "CCSF is a cell-cell similarity-driven framework of genomic data analysis for high-fidelity dimensionality reduction, clustering, visualization, and spatial and temporal cellular mappings",
+    "License": "GPL-3.0",
+    "Added": "2023-09-15",
+    "Updated": "2023-09-15",
+    "Categories": ["DimensionalityReduction"],
+    "Publications": [
+      {
+        "Title": "Leveraging cell-cell similarity for high-performance spatial and temporal cellular mappings from gene expression data",
+        "DOI": "10.1016/j.patter.2023.100840",
+        "Date": "2023-09",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "PyPI": "ccsf",
+    "GitHub": "xinglab-ai/ccsf"
+  },
+  {
     "Tool": "CCSN",
     "Platform": "MATLAB",
     "Description": "CCSN can be used for cell clustering and dimension reduction on a network basis of single cells",
@@ -12588,10 +12612,10 @@
       {
         "Title": "Multi-omics integration and regulatory inference for unpaired single-cell data with a graph-linked unified embedding framework",
         "DOI": "10.1101/2021.08.22.457275",
-        "Citations": 5
+        "Citations": 4
       }
     ],
-    "Citations": 87,
+    "Citations": 86,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "scglue",
@@ -13039,11 +13063,11 @@
         "Title": "Normalization and noise reduction for single cell RNA-seq experiments",
         "DOI": "10.1093/bioinformatics/btv122",
         "Date": "2015-02-24",
-        "Citations": 79
+        "Citations": 80
       }
     ],
     "Preprints": [],
-    "Citations": 79,
+    "Citations": 80,
     "NumPubs": 1,
     "NumPreprints": 0
   },
@@ -13870,10 +13894,10 @@
       {
         "Title": "Hypercluster: a flexible tool for parallelized unsupervised clustering optimization",
         "DOI": "10.1101/2020.01.13.905323",
-        "Citations": 1
+        "Citations": 2
       }
     ],
-    "Citations": 7,
+    "Citations": 8,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "hypercluster",
@@ -16977,6 +17001,36 @@
     "NumPreprints": 1,
     "PyPI": "MATTE",
     "GitHub": "zjupgx/MATTE"
+  },
+  {
+    "Tool": "MaxFuse",
+    "Platform": "Python",
+    "Code": "https://github.com/shuxiaoc/maxfuse",
+    "Description": "MaxFuse is a Python package for integrating single-cell datasets from different modalities with no overlapping features and/or under low signal-to-noise ratio regimes",
+    "License": "Custom",
+    "Added": "2023-09-15",
+    "Updated": "2023-09-15",
+    "Categories": ["Integration"],
+    "Publications": [
+      {
+        "Title": "Integration of spatial and single-cell data across modalities with weakly linked features",
+        "DOI": "10.1038/s41587-023-01935-0",
+        "Date": "2023-09-07",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "Integration of spatial and single-cell data across modalities with weak linkage",
+        "DOI": "10.1101/2023.01.12.523851",
+        "Citations": 1
+      }
+    ],
+    "Citations": 1,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "PyPI": "maxfuse",
+    "GitHub": "shuxiaoc/maxfuse"
   },
   {
     "Tool": "mbkmeans",
@@ -23965,12 +24019,19 @@
     "Description": "scAce is consisted of three major steps, a pre-training step based on a variational autoencoder, a cluster initialization step to obtain initial cluster labels, and an adaptive cluster merging step to iteratively update cluster labels and cell embeddings",
     "License": "MIT",
     "Added": "2023-02-24",
-    "Updated": "2023-02-24",
+    "Updated": "2023-09-15",
     "Categories": ["Clustering", "DimensionalityReduction"],
-    "Publications": [],
+    "Publications": [
+      {
+        "Title": "scAce: an adaptive embedding and clustering method for single-cell gene expression data",
+        "DOI": "10.1093/bioinformatics/btad546",
+        "Date": "2023-09-06",
+        "Citations": 0
+      }
+    ],
     "Preprints": [],
     "Citations": 0,
-    "NumPubs": 0,
+    "NumPubs": 1,
     "NumPreprints": 0,
     "PyPI": "scace",
     "GitHub": "sldyns/scAce"
@@ -24660,7 +24721,7 @@
         "Title": "SCANPY: large-scale single-cell gene expression data analysis",
         "DOI": "10.1186/s13059-017-1382-0",
         "Date": "2018-02-06",
-        "Citations": 3093
+        "Citations": 3094
       },
       {
         "Title": "PAGA: graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells",
@@ -24681,7 +24742,7 @@
         "Citations": 23
       }
     ],
-    "Citations": 3861,
+    "Citations": 3862,
     "NumPubs": 2,
     "NumPreprints": 2,
     "PyPI": "scanpy",
@@ -24977,7 +25038,7 @@
         "Title": "Scater: pre-processing, quality control, normalization and visualization of single-cell RNA-seq data in R",
         "DOI": "10.1093/bioinformatics/btw777",
         "Date": "2017-01-14",
-        "Citations": 849
+        "Citations": 850
       }
     ],
     "Preprints": [
@@ -24987,7 +25048,7 @@
         "Citations": 20
       }
     ],
-    "Citations": 869,
+    "Citations": 870,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "scater",
@@ -26369,7 +26430,7 @@
         "Title": "Characterizing transcriptional heterogeneity through pathway and gene set overdispersion analysis",
         "DOI": "10.1038/nmeth.3734",
         "Date": "2016-01-18",
-        "Citations": 332
+        "Citations": 333
       }
     ],
     "Preprints": [
@@ -26379,7 +26440,7 @@
         "Citations": 4
       }
     ],
-    "Citations": 1367,
+    "Citations": 1368,
     "NumPubs": 2,
     "NumPreprints": 1,
     "Bioc": "scde",
@@ -33744,7 +33805,7 @@
         "Title": "Scater: pre-processing, quality control, normalization and visualization of single-cell RNA-seq data in R",
         "DOI": "10.1093/bioinformatics/btw777",
         "Date": "2017-01-14",
-        "Citations": 849
+        "Citations": 850
       }
     ],
     "Preprints": [
@@ -33754,7 +33815,7 @@
         "Citations": 20
       }
     ],
-    "Citations": 869,
+    "Citations": 870,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "scuttle",
@@ -34642,7 +34703,7 @@
         "Title": "Comprehensive Integration of Single-Cell Data",
         "DOI": "10.1016/j.cell.2019.05.031",
         "Date": "2019-06",
-        "Citations": 8051
+        "Citations": 8052
       },
       {
         "Title": "Integrated analysis of multimodal single-cell data",
@@ -34660,7 +34721,7 @@
         "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
         "DOI": "10.1038/nbt.4096",
         "Date": "2018-04-02",
-        "Citations": 7494
+        "Citations": 7495
       },
       {
         "Title": "Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression",
@@ -34696,7 +34757,7 @@
         "Citations": 85
       }
     ],
-    "Citations": 25382,
+    "Citations": 25384,
     "NumPubs": 5,
     "NumPreprints": 5,
     "CRAN": "Seurat",
@@ -37539,7 +37600,7 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 29050
+        "Citations": 29052
       }
     ],
     "Preprints": [
@@ -37549,7 +37610,7 @@
         "Citations": 103
       }
     ],
-    "Citations": 29153,
+    "Citations": 29155,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "alexdobin/STAR"
@@ -38779,6 +38840,36 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "teichlab/tracer"
+  },
+  {
+    "Tool": "trackplot",
+    "Platform": "Python",
+    "Code": "https://github.com/ygidtu/trackplot",
+    "Description": "trackplot is a tool for visualizing various next-generation sequencing (NGS) data, including DNA-seq, RNA-seq, single-cell RNA-seq and full-length sequencing datasets",
+    "License": "BSD-3-Clause",
+    "Added": "2023-09-15",
+    "Updated": "2023-09-15",
+    "Categories": ["Visualisation"],
+    "Publications": [
+      {
+        "Title": "Trackplot: A flexible toolkit for combinatorial analysis of genomic data",
+        "DOI": "10.1371/journal.pcbi.1011477",
+        "Date": "2023-09-05",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "Sashimi.py: a flexible toolkit for combinatorial analysis of genomic data",
+        "DOI": "10.1101/2022.11.02.514803",
+        "Citations": 4
+      }
+    ],
+    "Citations": 4,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "PyPI": "trackplot",
+    "GitHub": "ygidtu/trackplot"
   },
   {
     "Tool": "tradeSeq",
@@ -41212,6 +41303,29 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "ttgump/ZINBAE"
+  },
+  {
+    "Tool": "ZINBMM",
+    "Platform": "R",
+    "Code": "https://github.com/mengyunwu2020/ZINBMM",
+    "Description": "A Zero-Inflated Negative Binomical mixture model for simultaneous scRNA-seq data clustering and biological relevant gene selection",
+    "License": "GPL-2.0",
+    "Added": "2023-09-15",
+    "Updated": "2023-09-15",
+    "Categories": ["Clustering", "MarkerGenes"],
+    "Publications": [
+      {
+        "Title": "ZINBMM: a general mixture model for simultaneous clustering and gene selection using single-cell transcriptomic data",
+        "DOI": "10.1186/s13059-023-03046-0",
+        "Date": "2023-09-11",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "mengyunwu2020/ZINBMM"
   },
   {
     "Tool": "zingeR",
