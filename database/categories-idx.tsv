@@ -59,6 +59,7 @@ AltAnalyze	Visualisation
 AlzScPred	Classification
 AmbientContaminationMetrics	QualityControl
 anchor	Modality
+ANS	GeneSets
 anticor_features	VariableGenes
 APL	GeneSets
 APL	MarkerGenes
@@ -328,6 +329,7 @@ CCNMF	DimensionalityReduction
 CCNMF	Integration
 CCNMF	Visualisation
 CCPE	CellCycle
+CCPlotR	Visualisation
 ccRemover	CellCycle
 CCSF	DimensionalityReduction
 CCSN	GeneNetworks
@@ -354,6 +356,8 @@ cell2cell	Visualisation
 cell2fate	Ordering
 cell2location	Classification
 cell2location	Integration
+cell2sentence	Transformation
+cell2sentence-ft	Transformation
 cellAlign	ExpressionPatterns
 cellAlign	Normalisation
 cellAlign	Ordering
@@ -372,6 +376,8 @@ CellaRepertorium	Variants
 CellaRepertorium	Visualisation
 cellassign	Classification
 cellassign	Simulation
+cellatlas	Quantification
+cellatlas	UMIs
 CellBench	Visualisation
 CellBender	QualityControl
 CellBender	Visualisation
@@ -768,6 +774,7 @@ DeepCycle	DimensionalityReduction
 DeepCycle	Ordering
 DeepDRIM	GeneNetworks
 DeepImpute	Imputation
+DeepRIG	GeneNetworks
 DeepSEM	DimensionalityReduction
 DeepSEM	GeneNetworks
 DeepSEM	Simulation
@@ -1240,6 +1247,7 @@ Granatum	QualityControl
 Granatum	Visualisation
 GrandPrix	DimensionalityReduction
 GrandPrix	Ordering
+Graph-Dynamo	DimensionalityReduction
 graph-sc	DimensionalityReduction
 graph-sc	Visualisation
 GraphCS	Classification
@@ -1396,6 +1404,7 @@ inferCNV	Visualisation
 inferCNVpy	Clustering
 inferCNVpy	DimensionalityReduction
 inferCNVpy	Variants
+inferCSN	GeneNetworks
 Inferelator	GeneNetworks
 infohet	VariableGenes
 InGene	DimensionalityReduction
@@ -1756,6 +1765,7 @@ Monocle	ExpressionPatterns
 Monocle	MarkerGenes
 Monocle	Ordering
 Monocle	Visualisation
+Monod	Clustering
 Monod	DifferentialExpression
 Monod	QualityControl
 Monod	Quantification
@@ -2612,6 +2622,7 @@ SCell	QualityControl
 SCell	Visualisation
 SCellBOW	Clustering
 SCellBOW	DimensionalityReduction
+scellpam	Clustering
 SCelVis	Interactive
 SCelVis	Visualisation
 scEMAIL	Classification
@@ -2695,6 +2706,8 @@ scGen	DifferentialExpression
 scGen	Integration
 scGen	Perturbations
 scGeneFit	MarkerGenes
+scGeom	Clustering
+scGeom	DimensionalityReduction
 scGESTALT	Alignment
 scGESTALT	Interactive
 scGESTALT	Ordering
@@ -3550,6 +3563,12 @@ SMILE	Integration
 SMNN	Integration
 SMSC	Clustering
 SMURF	DimensionalityReduction
+SnapATAC2	Clustering
+SnapATAC2	DifferentialExpression
+SnapATAC2	DimensionalityReduction
+SnapATAC2	Integration
+SnapATAC2	QualityControl
+SnapATAC2	Visualisation
 SnapCCESS	DimensionalityReduction
 SnapCCESS	Integration
 SNN-Cliq	Clustering
@@ -3644,6 +3663,7 @@ STARE	GeneNetworks
 starmapVis	Interactive
 starmapVis	Visualisation
 StationaryOT	Ordering
+STEGO-R	Immune
 STEM	DimensionalityReduction
 STEM	Integration
 STEMNET	Ordering
@@ -3692,6 +3712,8 @@ TBSP	Variants
 TBSP	Visualisation
 TCM	DimensionalityReduction
 TCM	Visualisation
+TDEseq	ExpressionPatterns
+TDEseq	Visualisation
 TDL	GeneNetworks
 TedSim	DimensionalityReduction
 TedSim	Simulation
