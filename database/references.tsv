@@ -295,6 +295,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1038/s41467-023-39494-2	FALSE	FALSE	2023-07-12	Multi-batch single-cell comparative atlas construction by deep learning disentanglement
 10.1038/s41467-023-39895-3	FALSE	FALSE	2023-07-08	Leveraging spatial transcriptomics data to recover cell locations in single-cell RNA-seq with CeLEry
 10.1038/s41467-023-40457-w	FALSE	FALSE	2023-08-12	Characterizing cancer metabolism from bulk and single-cell RNA-seq data using METAFlux
+10.1038/s41467-023-41795-5	FALSE	FALSE	2023-09-28	scBridge embraces cell heterogeneity in single-cell RNA-seq and ATAC-seq data integration
 10.1038/s41540-020-00162-6	FALSE	FALSE	2021-01-05	Sparsely-connected autoencoder (SCA) for single cell RNAseq data mining
 10.1038/s41540-022-00245-6	FALSE	FALSE	2022-09-12	sciCAN: single-cell chromatin accessibility and gene expression data integration via cycle-consistent adversarial network
 10.1038/s41540-022-00246-5	FALSE	FALSE	2022-09-21	Executable models of immune signaling pathways in HIV-associated atherosclerosis
@@ -387,6 +388,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1038/s41592-022-01408-3	FALSE	FALSE	2022-03	Alevin-fry unlocks rapid, accurate and memory-frugal quantification of single-cell RNA-seq data
 10.1038/s41592-022-01595-z	FALSE	FALSE	2022-09-06	MIRA: joint regulatory modeling of multimodal expression and chromatin accessibility in single cells
 10.1038/s41592-023-01814-1	FALSE	FALSE	2023-04-10	Comparison of transformations for single-cell RNA-seq data
+10.1038/s41592-023-02017-4	FALSE	FALSE	2023-09-28	A new Bayesian factor analysis method improves detection of genes and biological processes affected by perturbations in single-cell CRISPR screening
 10.1038/s41596-018-0058-x	FALSE	FALSE	2018-10-23	Large-scale reconstruction of cell lineages using single-cell readout of transcriptomes and CRISPR–Cas9 barcodes by scGESTALT
 10.1038/s41596-019-0246-3	FALSE	FALSE	2020-01-13	FLOW-MAP: a graph-based, force-directed layout algorithm for trajectory mapping in single-cell time course datasets
 10.1038/s41596-019-0247-2	FALSE	FALSE	2020-02-12	CellTagging: combinatorial indexing to simultaneously map lineage and identity at single-cell resolution
@@ -1347,6 +1349,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2021.11.08.467820	FALSE	TRUE	NA	scDeepHash: An automatic cell type annotation and cell retrieval method for large-scale scRNA-seq datasets using neural network-based hashing
 10.1101/2021.11.15.468695	FALSE	TRUE	NA	A copula based topology preserving graph convolution network for clustering of single-cell RNA seq data
 10.1101/2021.11.15.468733	FALSE	TRUE	NA	PMD Uncovers Widespread Cell-State Erasure by scRNAseq Batch Correction Methods
+10.1101/2021.11.15.468755	FALSE	TRUE	NA	sc2MeNetDrug: A computational tool to uncover inter-cell signaling targets and identify relevant drugs based on single cell RNA-seq data
 10.1101/2021.11.16.468881	FALSE	TRUE	NA	Meta-Transcriptome Detector (MTD): a novel pipeline for metatranscriptome analysis of bulk and single-cell RNAseq data
 10.1101/2021.11.16.468892	FALSE	TRUE	NA	Adversarial domain translation networks for fast and accurate integration of large-scale atlas-level single-cell datasets
 10.1101/2021.11.18.469072	FALSE	TRUE	NA	scCODE: an R package for personalized differentially expressed gene detection on single-cell RNA-sequencing data
@@ -1553,7 +1556,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2023.01.24.525264	FALSE	TRUE	NA	Delineating genotypes and phenotypes of individual cells from long-read single cell transcriptomes
 10.1101/2023.01.25.525581	FALSE	TRUE	NA	scTOP: physics-inspired order parameters for cellular identification and visualization
 10.1101/2023.01.26.523391	FALSE	TRUE	NA	scMINER: a mutual information-based framework for identifying hidden drivers from single-cell omics data
-10.1101/2023.01.26.525733	FALSE	TRUE	NA	GRN-VAE: A Simplified and Stabilized SEM Model for Gene Regulatory Network Inference
+10.1101/2023.01.26.525733	FALSE	TRUE	NA	Improving Gene Regulatory Network Inference using Dropout Augmentation
 10.1101/2023.01.27.525916	FALSE	TRUE	NA	scGREAT: Graph-based regulatory element analysis tool for single-cell multi-omics data
 10.1101/2023.01.27.525961	FALSE	TRUE	NA	demuxmix: Demultiplexing oligonucleotide-barcoded single-cell RNA sequencing data with regression mixture models
 10.1101/2023.01.30.525343	FALSE	TRUE	NA	Cell type matching across species using protein embeddings and transfer learning
@@ -1617,6 +1620,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2023.05.24.541352	FALSE	TRUE	NA	SifiNet: A robust and accurate method to identify feature gene sets and annotate cells
 10.1101/2023.05.29.542760	FALSE	TRUE	NA	Boosting Single-Cell RNA Sequencing Analysis with Simple Neural Attention
 10.1101/2023.05.29.542786	FALSE	TRUE	NA	Visualizing scRNA-Seq Data at Population Scale with GloScope
+10.1101/2023.06.01.543212	FALSE	TRUE	NA	Predicting drug response from single-cell expression profiles of tumours
 10.1101/2023.06.13.544751	FALSE	TRUE	NA	MultiNicheNet: a flexible framework for differential cell-cell communication analysis from multi-sample multi-condition single-cell transcriptomics data
 10.1101/2023.06.13.544850	FALSE	TRUE	NA	The impacts of active and self-supervised learning on efficient annotation of single-cell expression data
 10.1101/2023.06.16.544954	FALSE	TRUE	NA	TooManyCellsInteractive: a visualization tool for dynamic exploration of single-cell data
@@ -1656,6 +1660,11 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2023.09.20.558114	FALSE	TRUE	NA	ANS: Adjusted Neighborhood Scoring to improve assessment of gene signatures in single-cell RNA-seq data
 10.1101/2023.09.24.559170	FALSE	TRUE	NA	Graph-Dynamo: Learning stochastic cellular state transition dynamics from single cell data
 10.1101/2023.09.27.559702	FALSE	TRUE	NA	STEGO.R: an application to aid in scRNA-seq and scTCR-seq processing and analysis
+10.1101/2023.10.02.560416	FALSE	TRUE	NA	Ranking of cell clusters in a single-cell RNA-sequencing analysis framework using prior knowledge
+10.1101/2023.10.03.560734	FALSE	TRUE	NA	CellPLM: Pre-training of Cell Language Model Beyond Single Cells
+10.1101/2023.10.05.561074	FALSE	TRUE	NA	Ocelli: an open-source tool for the visualization of developmental multimodal single-cell data
+10.1101/2023.10.07.561331	FALSE	TRUE	NA	Scaling cross-tissue single-cell annotation models
+10.1101/2023.10.09.561613	FALSE	TRUE	NA	MSIsensor-RNA: Microsatellite Instability Detection for Bulk and Single-cell Gene Expression Data
 10.1101/205534	FALSE	TRUE	NA	Simultaneous single-cell profiling of lineages and cell types in the vertebrate brain by scGESTALT
 10.1101/206052	FALSE	TRUE	NA	RNA velocity in single cells
 10.1101/207704	FALSE	TRUE	NA	ascend: R package for analysis of single cell RNA-seq data
@@ -2170,6 +2179,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1186/s13059-023-02974-1	FALSE	FALSE	2023-06-23	VarID2 quantifies gene expression noise dynamics and unveils functional heterogeneity of ageing hematopoietic stem cells
 10.1186/s13059-023-02980-3	FALSE	FALSE	2023-06-26	DCATS: differential composition analysis for flexible single-cell experimental designs
 10.1186/s13059-023-03046-0	FALSE	FALSE	2023-09-11	ZINBMM: a general mixture model for simultaneous clustering and gene selection using single-cell transcriptomic data
+10.1186/s13059-023-03069-7	FALSE	FALSE	2023-10-05	MCProj: metacell projection for interpretable and quantitative use of transcriptional atlases
 10.1186/s13073-017-0492-3	FALSE	FALSE	2017-12-05	Granatum: a graphical single-cell RNA-Seq analysis pipeline for genomics scientists
 10.1186/s13073-018-0528-3	FALSE	FALSE	2018-03-20	BALDR: a computational pipeline for paired heavy and light chain immunoglobulin reconstruction in single-cell RNA-seq data
 10.1186/s13073-018-0567-9	FALSE	FALSE	2018-07-24	Single-cell transcriptome analysis of lineage diversity in high-grade glioma
@@ -2282,6 +2292,7 @@ DOI	arXiv	Preprint	Date	Title
 10.21203/rs.3.rs-2853524/v1	FALSE	TRUE	NA	CRMetrics - an R package for Cell Ranger Filtering and Metrics Visualisation
 10.21203/rs.3.rs-311045/v1	FALSE	TRUE	NA	Multiscale PHATE Exploration of SARS-CoV-2 Data Reveals Multimodal Signatures of Disease
 10.21203/rs.3.rs-3211191/v1	FALSE	TRUE	NA	ClusterDE: a post-clustering differential expression (DE) method robust to false-positive inflation caused by double dipping
+10.21203/rs.3.rs-3375942/v1	FALSE	TRUE	NA	Scanpro: robust proportion analysis for single cell resolution data
 10.21203/rs.3.rs-355014/v1	FALSE	TRUE	NA	sc-REnF: An Entropy Guided Robust Feature Selection for Single-Cell RNA-seq Data
 10.21203/rs.3.rs-36926/v1	FALSE	TRUE	NA	gCAnno: A Graph-based Single Cell Type Annotation Method
 10.21203/rs.3.rs-418249/v1	FALSE	TRUE	NA	MarkerCount: A stable, count-based cell type identifier for single cell RNA-Seq experiments
@@ -2302,6 +2313,7 @@ DOI	arXiv	Preprint	Date	Title
 10.26508/lsa.202000986	FALSE	FALSE	2021-03-05	PieParty: visualizing cells from scRNA-seq data as pie charts
 10.26508/lsa.202001004	FALSE	FALSE	2021-03-23	CellMixS: quantifying and visualizing batch effects in single-cell RNA-seq data
 10.26508/lsa.202201591	FALSE	FALSE	2022-08-09	Resolution of the curse of dimensionality in single-cell RNA sequencing data analysis
+10.26508/lsa.202302103	FALSE	FALSE	2023-10-03	scFseCluster: a feature selection-enhanced clustering for single-cell RNA-seq data
 10.3389/fbioe.2020.00018	FALSE	FALSE	2020-02-04	CALISTA: Clustering and LINEAGE Inference in Single-Cell Transcriptional Analysis
 10.3389/fgene.2019.00009	FALSE	FALSE	2019-01-29	McImpute: Matrix Completion Based Imputation for Single Cell RNA-seq Data
 10.3389/fgene.2019.00734	FALSE	FALSE	2019-08-09	A Tool for Visualization and Analysis of Single-Cell RNA-Seq Data Based on Text Mining

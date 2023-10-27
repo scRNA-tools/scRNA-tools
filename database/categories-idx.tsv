@@ -431,6 +431,9 @@ CellPath	Ordering
 CellPath	Visualisation
 CellPhoneDB	GeneNetworks
 CellPhoneDB	Visualisation
+CellPLM	Classification
+CellPLM	DimensionalityReduction
+CellPLM	Imputation
 cellpypes	Classification
 cellpypes	Visualisation
 CellRanger	Alignment
@@ -743,6 +746,8 @@ DANCE	Integration
 dandelion	Immune
 dandelion	Visualisation
 DAPCA	DimensionalityReduction
+DAZZLE	GeneNetworks
+DAZZLE	Imputation
 dbcti	DimensionalityReduction
 dbcti	Normalisation
 dbcti	Ordering
@@ -916,6 +921,8 @@ DREAM	DimensionalityReduction
 DREAM	Visualisation
 dreamlet	DifferentialExpression
 dreamlet	Visualisation
+DREEP	Clustering
+DREEP	Perturbations
 DrImpute	Imputation
 DrivAER	DimensionalityReduction
 DrivAER	GeneSets
@@ -1795,6 +1802,7 @@ mrtree	DimensionalityReduction
 mrtree	Imputation
 mrtree	Simulation
 mrtree	Visualisation
+MSIsensor-RNA	Variants
 mtANN	Classification
 MTD	Alignment
 MTD	Quantification
@@ -1902,6 +1910,9 @@ OCAT	Integration
 OCAT	MarkerGenes
 OCAT	Normalisation
 OCAT	Visualisation
+Ocelli	Clustering
+Ocelli	DimensionalityReduction
+Ocelli	Visualisation
 ODEGRfinder	DifferentialExpression
 ODEGRfinder	DimensionalityReduction
 OEFinder	Interactive
@@ -2309,6 +2320,15 @@ sc-REnF	GeneFiltering
 sc2marker	MarkerGenes
 sc2marker	Normalisation
 sc2marker	Visualisation
+sc2MeNetDrug	Clustering
+sc2MeNetDrug	DimensionalityReduction
+sc2MeNetDrug	GeneNetworks
+sc2MeNetDrug	GeneSets
+sc2MeNetDrug	Imputation
+sc2MeNetDrug	MarkerGenes
+sc2MeNetDrug	Normalisation
+sc2MeNetDrug	Perturbations
+sc2MeNetDrug	QualityControl
 SC2P	DifferentialExpression
 SC2P	Visualisation
 SC2Spa	ExpressionPatterns
@@ -2456,6 +2476,9 @@ scBGEDA	Clustering
 scBGEDA	DimensionalityReduction
 scBio	Integration
 scBonita	GeneNetworks
+scBridge	DimensionalityReduction
+scBridge	Integration
+scBridge	Visualisation
 scBT	DifferentialExpression
 scBTF	DimensionalityReduction
 scBubbletree	Visualisation
@@ -2678,6 +2701,8 @@ scFlow	MarkerGenes
 scFlow	QualityControl
 scFlow	Visualisation
 scFormer	DimensionalityReduction
+scFseCluster	Clustering
+scFseCluster	VariableGenes
 scFusion	Variants
 scGAE	DimensionalityReduction
 scGAE	Visualisation
@@ -3082,6 +3107,10 @@ scran	Interactive
 scran	Normalisation
 scran	VariableGenes
 scran	Visualisation
+scRANK	Clustering
+scRANK	GeneNetworks
+scRANK	GeneSets
+scRANK	Visualisation
 scRare	Classification
 scRare	RareCells
 scRAS	RareCells
@@ -3203,6 +3232,7 @@ scSTEM	Visualisation
 scSVA	DimensionalityReduction
 scSVA	Interactive
 scSVA	Visualisation
+scTab	Classification
 scTCRseq	Immune
 scTDA	Ordering
 scTDA	QualityControl
