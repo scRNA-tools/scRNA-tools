@@ -30,6 +30,7 @@ adobo	Imputation
 adobo	Normalisation
 adobo	QualityControl
 adobo	Visualisation
+adverSCarial	Classification
 AE-TPGG	DimensionalityReduction
 aggregateBioVar	Quantification
 airpart	AlternativeSplicing
@@ -389,6 +390,8 @@ CellCall	GeneSets
 CellCall	Visualisation
 CellChat	GeneNetworks
 CellChat	Visualisation
+CellContrast	DimensionalityReduction
+CellContrast	Integration
 cellDancer	Ordering
 cellDancer	Simulation
 cellDancer	Visualisation
@@ -402,6 +405,8 @@ CellexalVR	Visualisation
 CellFishing	Classification
 CellGEP	Classification
 cellgrid	Classification
+CellHint	Classification
+CellHint	Integration
 CellID	Classification
 CellID	DimensionalityReduction
 CellID	GeneSets
@@ -518,6 +523,9 @@ CHETAH	Classification
 CHETAH	Interactive
 CHETAH	Normalisation
 CHETAH	Visualisation
+Chloris	Simulation
+Chloris	Variants
+Chloris	Visualisation
 chooseR	Clustering
 Chord	DimensionalityReduction
 Chord	QualityControl
@@ -767,6 +775,9 @@ de-goulash	Variants
 DECENT	DifferentialExpression
 DECENT	Imputation
 DECODE	Imputation
+decontX	Quantification
+decontX	Simulation
+decontX	Visualisation
 decoupler	GeneNetworks
 decoupler	Visualisation
 deCS	Classification
@@ -1203,6 +1214,7 @@ gficf	Visualisation
 GFPA	GeneNetworks
 GFPA	Integration
 GFPA	Visualisation
+ggsc	Visualisation
 GIANT	DimensionalityReduction
 GIANT	GeneNetworks
 GIANT	GeneSets
@@ -2403,6 +2415,12 @@ scanalysis	Visualisation
 scAnCluster	Classification
 scAnCluster	Clustering
 scAnCluster	MarkerGenes
+SCANet	DimensionalityReduction
+SCANet	GeneNetworks
+SCANet	Normalisation
+SCANet	QualityControl
+SCANet	VariableGenes
+SCANet	Visualisation
 scANNA	Classification
 scANNA	VariableGenes
 scAnno	Classification
@@ -2476,6 +2494,8 @@ scBGEDA	Clustering
 scBGEDA	DimensionalityReduction
 scBio	Integration
 scBonita	GeneNetworks
+scBoolSeq	Simulation
+scBoolSeq	Transformation
 scBridge	DimensionalityReduction
 scBridge	Integration
 scBridge	Visualisation
@@ -3005,6 +3025,8 @@ SCope	Clustering
 SCope	GeneSets
 SCope	Interactive
 SCope	Visualisation
+scopeplus	Interactive
+scopeplus	Visualisation
 SCORPION	GeneNetworks
 SCORPIUS	DimensionalityReduction
 SCORPIUS	ExpressionPatterns
@@ -3754,6 +3776,8 @@ Tempora	GeneSets
 Tempora	Ordering
 Tempora	Visualisation
 TENET	GeneNetworks
+TFvelo	Ordering
+TFvelo	Visualisation
 tGPT	DimensionalityReduction
 TILPRED	Classification
 TILPRED	Immune
