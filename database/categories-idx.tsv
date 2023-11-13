@@ -197,6 +197,9 @@ bigSCale2	Normalisation
 bigSCale2	Ordering
 bigSCale2	VariableGenes
 bigSCale2	Visualisation
+BigSur	Normalisation
+BigSur	QualityControl
+BigSur	VariableGenes
 bindSC	Clustering
 bindSC	Integration
 bindSC	Visualisation
@@ -478,6 +481,8 @@ cellSNP	Variants
 cellsnp-lite	Variants
 CellST	Ordering
 CellST	Visualisation
+cellstates	Clustering
+cellstates	Visualisation
 CellTagR	QualityControl
 CellTagR	Quantification
 CellTagR	UMIs
@@ -789,6 +794,8 @@ DeepCycle	CellCycle
 DeepCycle	DimensionalityReduction
 DeepCycle	Ordering
 DeepDRIM	GeneNetworks
+DeepGAMI	Imputation
+DeepGAMI	Integration
 DeepImpute	Imputation
 DeepRIG	GeneNetworks
 DeepSEM	DimensionalityReduction
@@ -2157,6 +2164,7 @@ RaceID	Ordering
 RaceID	RareCells
 RaceID	StemCells
 RaceID	Visualisation
+RADO	QualityControl
 RAFSIL	Clustering
 RAFSIL	DimensionalityReduction
 RainDrop	Quantification
@@ -2214,6 +2222,7 @@ redPATH	MarkerGenes
 redPATH	Ordering
 redPATH	VariableGenes
 redPATH	Visualisation
+RegDiffusion	GeneNetworks
 Regionvelocity	DimensionalityReduction
 Regionvelocity	GeneFiltering
 Regionvelocity	Ordering
@@ -2695,6 +2704,7 @@ scEpath	Normalisation
 scEpath	Ordering
 scEpath	QualityControl
 scEpath	Visualisation
+Sceptic	Ordering
 scETM	DimensionalityReduction
 scETM	Integration
 SCEVAN	Classification
@@ -2882,6 +2892,9 @@ scIVA	QualityControl
 scIVA	Visualisation
 Sciviewer	Interactive
 Sciviewer	Visualisation
+scJIVE	DimensionalityReduction
+scJIVE	Integration
+scJIVE	Visualisation
 scJoint	Integration
 scJoint	Visualisation
 scKB	Quantification
@@ -3369,6 +3382,10 @@ scWizard	Ordering
 scWizard	QualityControl
 scWizard	Variants
 scWizard	Visualisation
+scX	DifferentialExpression
+scX	Interactive
+scX	MarkerGenes
+scX	Visualisation
 scziDesk	Clustering
 scziDesk	DimensionalityReduction
 SDAMS	Modality
@@ -3682,6 +3699,14 @@ Spectre	RareCells
 Spectre	StemCells
 Spectrum	Clustering
 Spectrum	Visualisation
+SPEEDI	Classification
+SPEEDI	Clustering
+SPEEDI	DifferentialExpression
+SPEEDI	DimensionalityReduction
+SPEEDI	Integration
+SPEEDI	Interactive
+SPEEDI	QualityControl
+SPEEDI	Visualisation
 Sphetcher	DimensionalityReduction
 splattdr	Simulation
 Splatter	Simulation
@@ -3693,6 +3718,7 @@ SPRING	DimensionalityReduction
 SPRING	Interactive
 SPRING	Visualisation
 SPsimSeq	Simulation
+spVIPES	Integration
 SR2	Clustering
 SR2	DimensionalityReduction
 SSBER	Integration
@@ -3990,6 +4016,8 @@ VITAE	Ordering
 VITAE	Visualisation
 Vitessce	Interactive
 Vitessce	Visualisation
+VIVS	Integration
+VIVS	VariableGenes
 VoxHunt	Visualisation
 VPAC	Clustering
 VPAC	DimensionalityReduction
