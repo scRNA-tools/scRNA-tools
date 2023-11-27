@@ -44,6 +44,8 @@ BAMMSC	R/C++	https://github.com/CHPGenetics/BAMMSC	A Bayesian mixture model for 
 BarCounter	C	https://github.com/AllenInstitute/BarCounter-release	BarCounter is a tool designed to process Next-Generation Sequencing data and count the number of Unique Molecular Identifiers (UMIs) for each specified Hash Tag Oligo (HTO) or Antibody Derived Tag (ADT) for each cell barcode specified in a user provided barcode whitelist	Custom	2022-04-01	2022-04-01
 baredSC	Python	https://github.com/lldelisle/baredSC	baredSC (Bayesian Approach to Retreive Expression Distribution of Single Cell) is a tool that uses a Monte-Carlo Markov Chain to estimate a confidence interval on the probability density function (PDF) of expression of one or two genes from single-cell RNA-seq data	GPL-3.0	2021-05-28	2022-01-22
 BarMixer	R	https://github.com/AllenInstitute/BarMixer	Barcode-based demultiplexing of hashed scRNA-seq datasets	Custom	2022-04-01	2022-04-01
+BARtab	Nextflow/Python/R/Shell	https://github.com/DaneVass/BARtab	A Nextflow pipeline to tabulate synthetic barcode counts from NGS data	GPL-3.0	2023-11-24	2023-11-24
+bartools	R	https://github.com/DaneVass/bartools	Tools for the analysis of cellular barcoding datasets	MIT	2023-11-24	2023-11-24
 BASIC	Python	http://ttic.uchicago.edu/~aakhan/BASIC/	BASIC is a semi-de novo assembly method to determine the full-length sequence of the BCR in single B cells from scRNA-seq data.	MIT	2016-10-10	2017-09-09
 BASiCS	R	https://github.com/catavallejos/BASiCS	Bayesian Analysis of single-cell RNA-seq data. Estimates cell-specific normalization constants. Technical variability is quantified based on spike-in genes. The total variability of the expression counts is decomposed into technical and biological components.	GPL-2.0-or-later	2016-09-08	2022-02-04
 BASiCStan	R/Stan/C++	https://github.com/Alanocallaghan/BASiCStan	Provides an interface to infer the parameters of BASiCS using Stan inference engines	GPL-3.0	2022-11-04	2022-11-04
@@ -95,7 +97,7 @@ BSDE	R	https://github.com/mqzhanglab/BSDE	Barycenter Single-cell RNAseq Differen
 bseqsc	R	https://github.com/shenorrLab/bseqsc	BSeq-sc is a bioinformatics analysis pipeline that leverages single-cell sequencing data to estimate cell type proportion and cell type-specific gene expression differences from RNA-seq data from bulk tissue samples.	GPL-2.0-or-later	2018-06-27	2018-06-27
 BTR	R	https://github.com/cheeyeelim/btr	BTR is a model learning algorithm for reconstructing and training asynchronous Boolean models using single-cell expression data.	GPL-3.0	2016-09-12	2016-09-12
 BUSseq	R/C++	https://github.com/songfd2018/BUSseq	The BUSseq R package implements the BUSseq model to adjust single-cell RNA-sequencing data for batch effects when there are unknown cell types.	GPL-2.0-or-later	2019-02-01	2021-10-29
-bustools	C++	https://github.com/BUStools/bustools	bustools is a program for manipulating BUS files for single cell RNA-Seq datasets	BSD-2-Clause	2018-12-01	2021-04-12
+bustools	C++	https://github.com/BUStools/bustools	bustools is a program for manipulating BUS files for single cell RNA-Seq datasets	BSD-2-Clause	2018-12-01	2023-11-24
 BZINB	R/C++	https://github.com/Hunyong/BZINB	Provides a maximum likelihood estimation of Bivariate Zero-Inflated Negative Binomial (BZINB) model or the nested model parameters.	GPL-2.0	2020-03-18	2023-05-12
 CAbiNet	R/C++/Python	https://github.com/VingronLab/CAbiNet	Correspondence Analysis based Biclustering on Networks	GPL-3.0-or-later	2023-01-04	2023-01-04
 CACTUS	R	https://github.com/LUMC/CACTUS	Clonal Architecture of genomic Clustering of TUmor Single cells	NA	2020-06-26	2020-06-26
@@ -622,7 +624,7 @@ jSRC	MATLAB	https://github.com/xkmaxidian/jSRC	Clustering scRNA-seq by joint spa
 Jvis	Python	https://github.com/canzarlab/JVis-learn	A generalization of t-SNE and UMAP to single-cell multimodal omics	BSD-3-Clause	2021-01-15	2021-05-14
 k-branches	R	https://github.com/theislab/kbranches	The main idea behind the K-Branches method is to identify regions of interest (branching regions and tips) in differentiation trajectories of single cells.	GPL-3.0	2016-12-22	2016-12-22
 K2Taxonomer	R	https://github.com/montilab/K2Taxonomer	K2Taxonomer is an R package built around a "top-down" recursive partitioning framework to perform unsupervised learning of nested “taxonomy-like” subgroups from high-throughput -omics data	GPL-3.0	2020-11-08	2021-07-27
-kallisto	C/C++	https://github.com/pachterlab/kallisto	kallisto produces transcript-level quantification estimates for RNA-seq data. It can produce transript compatibility count estimates for scRNA-seq data.	BSD-2-Clause	2018-06-08	2022-12-09
+kallisto	C/C++	https://github.com/pachterlab/kallisto	kallisto produces transcript-level quantification estimates for RNA-seq data. It can produce transript compatibility count estimates for scRNA-seq data.	BSD-2-Clause	2018-06-08	2023-11-24
 kana	JavaScript	https://github.com/jkanche/kana	kana is a web application for single-cell RNA-seq data analysis that works directly in the browser	MIT	2022-03-11	2022-03-11
 kBET	R	https://github.com/theislab/kBET	An R package to provide a test for batch effects in high-dimensional single-cell RNA sequencing data.	Apache-2.0	2017-10-10	2022-11-11
 KMD	Python	https://github.com/KaplanLab/KMDHierarchicalClustering	A clustering method based on hierarchical clustering using KMD linkage, KMD silhouette and outlier-aware partitioning	MIT	2020-10-15	2020-10-15
@@ -1618,6 +1620,7 @@ Velorama	Python	https://github.com/rs239/velorama	Velorama is a Python library f
 VeloRep	Python	https://github.com/qiaochen/VeloRep	Low-dimensional Projection of Single Cell Velocity with AutoEncoder	MIT	2021-03-26	2021-12-17
 VeloSim	R	https://github.com/PeterZZQ/VeloSim	VeloSim is a simulation package that generates single-cell RNA Sequencing data for continuous cell developmental processes	MIT	2021-01-15	2021-01-15
 VeloVAE	Python	https://github.com/welch-lab/VeloVAE	Variational Mixtures of ODEs for Inferring Cellular Gene Expression Dynamics	BSD-3-Clause	2022-08-12	2023-05-26
+VeloVGI	Python	https://github.com/HuangDDU/velovgi_workstation	Graph Variational Autoencoder for scRNA-seq velocity	MIT	2023-11-24	2023-11-24
 VeloViz	R/C++	https://github.com/JEFworks-Lab/veloviz	VeloViz creates an RNA-velocity-informed 2D embedding for single cell transcriptomics data	GPL-3.0	2021-01-29	2021-10-29
 velvet	Python	https://github.com/rorymaizels/velvet	Variational Estimation of Latent Velocity from Expression with Time-resolution	MIT	2023-07-14	2023-07-14
 Venus	Python	https://github.com/aicb-ZhangLabs/Venus	Venus: an efficient Virus infection detection and fusion Site discovery method using single-cell and bulk RNA-seq data	NA	2022-11-04	2022-11-04
