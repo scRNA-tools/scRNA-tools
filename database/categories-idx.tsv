@@ -808,6 +808,8 @@ DeepDRIM	GeneNetworks
 DeepGAMI	Imputation
 DeepGAMI	Integration
 DeepImpute	Imputation
+DeepKINET	Ordering
+DeepKINET	Visualisation
 DeepRIG	GeneNetworks
 DeepSEM	DimensionalityReduction
 DeepSEM	GeneNetworks
@@ -1955,6 +1957,12 @@ OEFinder	QualityControl
 OGFSC	GeneFiltering
 OmicInt	GeneNetworks
 OmicInt	Visualisation
+OmicVerse	Classification
+OmicVerse	GeneNetworks
+OmicVerse	Integration
+OmicVerse	MarkerGenes
+OmicVerse	Ordering
+OmicVerse	Perturbations
 OnClass	Classification
 OnClass	GeneSets
 OnClass	Integration
@@ -2190,6 +2198,7 @@ Randomly	GeneFiltering
 Randomly	Imputation
 Randomly	QualityControl
 Randomly	Visualisation
+RankCompV3	DifferentialExpression
 RankCorr	MarkerGenes
 RayleighSelection	DifferentialExpression
 RayleighSelection	DimensionalityReduction
@@ -2599,6 +2608,10 @@ scConsensus	DifferentialExpression
 scConsensus	Integration
 scConsensus	Visualisation
 scCorr	GeneNetworks
+scCross	DimensionalityReduction
+scCross	Integration
+scCross	Perturbations
+scCross	Simulation
 scCustomize	Visualisation
 scDA	DimensionalityReduction
 scDALI	AlternativeSplicing
@@ -3289,6 +3302,7 @@ scsim	Simulation
 scSimClassify	Classification
 scSimClassify	Quantification
 SCSit	UMIs
+scSniper	MarkerGenes
 scSNPdemux	Variants
 scsnv	Alignment
 scsnv	Quantification
@@ -3923,6 +3937,9 @@ trendsceek	ExpressionPatterns
 trendsceek	Simulation
 trendsceek	Visualisation
 Triangulate	GeneNetworks
+TRIBAL	Immune
+TRIBAL	Ordering
+TRIBAL	Visualisation
 tricycle	CellCycle
 tricycle	DimensionalityReduction
 tricycle	Visualisation
@@ -3948,6 +3965,7 @@ TWO-SIGMA	DifferentialExpression
 TWO-SIGMA	GeneSets
 TWO-SIGMA	Simulation
 txburst	AlleleSpecific
+UCE	DimensionalityReduction
 UCell	GeneSets
 ucie	Visualisation
 UICPC	Clustering
@@ -4067,6 +4085,8 @@ VITAE	Ordering
 VITAE	Visualisation
 Vitessce	Interactive
 Vitessce	Visualisation
+ViVAE	DimensionalityReduction
+ViVAE	Imputation
 VIVS	Integration
 VIVS	VariableGenes
 VoxHunt	Visualisation
