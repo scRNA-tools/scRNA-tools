@@ -813,7 +813,7 @@
         "Title": "SCENIC: single-cell regulatory network inference and clustering",
         "DOI": "10.1038/nmeth.4463",
         "Date": "2017-10-09",
-        "Citations": 2672
+        "Citations": 2674
       }
     ],
     "Preprints": [
@@ -823,7 +823,7 @@
         "Citations": 10
       }
     ],
-    "Citations": 2682,
+    "Citations": 2684,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "AUCell",
@@ -3990,7 +3990,7 @@
         "Title": "Inference and analysis of cell-cell communication using CellChat",
         "DOI": "10.1038/s41467-021-21246-9",
         "Date": "2021-02-17",
-        "Citations": 1649
+        "Citations": 1650
       }
     ],
     "Preprints": [
@@ -4005,7 +4005,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 1675,
+    "Citations": 1676,
     "NumPubs": 1,
     "NumPreprints": 2,
     "GitHub": "jinworks/CellChat"
@@ -4547,7 +4547,7 @@
         "Title": "Single-cell reconstruction of the early maternal–fetal interface in humans",
         "DOI": "10.1038/s41586-018-0698-6",
         "Date": "2018-11-14",
-        "Citations": 1367
+        "Citations": 1368
       },
       {
         "Title": "CellPhoneDB: inferring cell–cell communication from combined expression of multi-subunit ligand–receptor complexes",
@@ -4573,7 +4573,7 @@
         "Citations": 0
       }
     ],
-    "Citations": 2942,
+    "Citations": 2943,
     "NumPubs": 2,
     "NumPreprints": 3,
     "PyPI": "cellphonedb",
@@ -5419,6 +5419,28 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "13308204545/Chord"
+  },
+  {
+    "Tool": "CIA",
+    "Platform": "Python",
+    "Code": "https://github.com/ingmbioinfo/cia",
+    "Description": "CIA (Cluster Independent Annotation) is a new computational tool that enables a highly accurate automatic classification of cells in scRNA-seq datasets exploiting gene signatures",
+    "License": "MIT",
+    "Added": "2023-12-08",
+    "Updated": "2023-12-08",
+    "Categories": ["Classification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "CIA: a Cluster Independent Annotation method to investigate cell identities in scRNA-seq data",
+        "DOI": "10.1101/2023.11.30.569382",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "ingmbioinfo/cia"
   },
   {
     "Tool": "CIARA",
@@ -6727,11 +6749,11 @@
         "Title": "Delineating copy number and clonal substructure in human tumors from single-cell transcriptomes",
         "DOI": "10.1038/s41587-020-00795-2",
         "Date": "2021-01-18",
-        "Citations": 241
+        "Citations": 242
       }
     ],
     "Preprints": [],
-    "Citations": 241,
+    "Citations": 242,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "navinlabcode/copykat"
@@ -11923,7 +11945,7 @@
         "Title": "FEATS: feature selection-based clustering of single-cell RNA-seq data",
         "DOI": "10.1093/bib/bbaa306",
         "Date": "2020-12-08",
-        "Citations": 11
+        "Citations": 10
       }
     ],
     "Preprints": [
@@ -11933,7 +11955,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 12,
+    "Citations": 11,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "feats",
@@ -12642,6 +12664,28 @@
     "GitHub": "ToryDeng/scGeneClust"
   },
   {
+    "Tool": "GeneExt",
+    "Platform": "Python/R",
+    "Code": "https://github.com/sebepedroslab/GeneExt",
+    "Description": "GeneExt takes as input scRNA-seq mapped reads and a gene annotation file (GTF or GFF, any version) and outputs an extended gene annotation file for improved scRNA-seq transcript quantification",
+    "License": "GPL-3.0",
+    "Added": "2023-12-08",
+    "Updated": "2023-12-08",
+    "Categories": ["Quantification"],
+    "Publications": [],
+    "Preprints": [
+      {
+        "Title": "GeneExt: a gene model extension tool for enhanced single-cell RNA-seq analysis",
+        "DOI": "10.1101/2023.12.05.570120",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 1,
+    "GitHub": "sebepedroslab/GeneExt"
+  },
+  {
     "Tool": "GenePattern",
     "Platform": "Python",
     "Code": "https://github.com/genepattern/single_cell_clustering_notebook",
@@ -13152,10 +13196,10 @@
       {
         "Title": "Multi-omics integration and regulatory inference for unpaired single-cell data with a graph-linked unified embedding framework",
         "DOI": "10.1101/2021.08.22.457275",
-        "Citations": 4
+        "Citations": 5
       }
     ],
-    "Citations": 118,
+    "Citations": 119,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "scglue",
@@ -13996,7 +14040,7 @@
         "Title": "Fast, sensitive and accurate integration of single-cell data with Harmony",
         "DOI": "10.1038/s41592-019-0619-0",
         "Date": "2019-11-18",
-        "Citations": 2875
+        "Citations": 2876
       }
     ],
     "Preprints": [
@@ -14006,7 +14050,7 @@
         "Citations": 74
       }
     ],
-    "Citations": 2949,
+    "Citations": 2950,
     "NumPubs": 1,
     "NumPreprints": 1,
     "CRAN": "harmony",
@@ -18574,11 +18618,11 @@
         "Title": "MiXCR: software for comprehensive adaptive immunity profiling",
         "DOI": "10.1038/nmeth.3364",
         "Date": "2015-04-29",
-        "Citations": 1114
+        "Citations": 1115
       }
     ],
     "Preprints": [],
-    "Citations": 1328,
+    "Citations": 1329,
     "NumPubs": 2,
     "NumPreprints": 0,
     "GitHub": "milaboratory/mixcr"
@@ -18800,7 +18844,7 @@
         "Title": "Reversed graph embedding resolves complex single-cell trajectories",
         "DOI": "10.1038/nmeth.4402",
         "Date": "2017-08-21",
-        "Citations": 2343
+        "Citations": 2344
       }
     ],
     "Preprints": [
@@ -18810,7 +18854,7 @@
         "Citations": 51
       }
     ],
-    "Citations": 7605,
+    "Citations": 7606,
     "NumPubs": 3,
     "NumPreprints": 1,
     "Bioc": "monocle",
@@ -19779,10 +19823,10 @@
       {
         "Title": "Nebulosa recovers single cell gene expression signals by kernel density estimation",
         "DOI": "10.1101/2020.09.29.315879",
-        "Citations": 15
+        "Citations": 16
       }
     ],
-    "Citations": 121,
+    "Citations": 122,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "Nebulosa",
@@ -28410,22 +28454,22 @@
     "Platform": "R/Python",
     "Code": "https://github.com/aertslab/SCENIC",
     "Description": "SCENIC is a tool to infer Gene Regulatory Networks and cell types from single-cell RNA-seq data.",
-    "License": "Custom",
+    "License": "GPL-3.0",
     "Added": "2017-06-26",
-    "Updated": "2020-06-26",
+    "Updated": "2023-12-08",
     "Categories": ["Clustering", "GeneNetworks", "Visualisation"],
     "Publications": [
       {
         "Title": "SCENIC: single-cell regulatory network inference and clustering",
         "DOI": "10.1038/nmeth.4463",
         "Date": "2017-10-09",
-        "Citations": 2672
+        "Citations": 2674
       },
       {
         "Title": "A scalable SCENIC workflow for single-cell gene regulatory network analysis",
         "DOI": "10.1038/s41596-020-0336-2",
         "Date": "2020-06-19",
-        "Citations": 399
+        "Citations": 400
       }
     ],
     "Preprints": [
@@ -28435,7 +28479,7 @@
         "Citations": 10
       }
     ],
-    "Citations": 3081,
+    "Citations": 3084,
     "NumPubs": 2,
     "NumPreprints": 1,
     "PyPI": "pyscenic",
@@ -29635,11 +29679,11 @@
     "Description": "scHPF is a tool for de novo discovery of both discrete and continuous expression patterns in single-cell RNA-sequencing (scRNA-seq) data.",
     "License": "BSD-2-Clause",
     "Added": "2018-11-13",
-    "Updated": "2021-06-28",
+    "Updated": "2023-12-08",
     "Categories": ["DimensionalityReduction", "ExpressionPatterns"],
     "Publications": [
       {
-        "Title": "De novo gene signature identification from single‐cell RNA‐seq with hierarchical Poisson factorization",
+        "Title": "<i>De novo<\/i> gene signature identification from single‐cell <scp>RNA<\/scp> ‐seq with hierarchical Poisson factorization",
         "DOI": "10.15252/msb.20188557",
         "Date": "2019-02-22",
         "Citations": 71
@@ -29647,14 +29691,19 @@
     ],
     "Preprints": [
       {
-        "Title": "De novo Gene Signature Identification from Single-Cell RNA-Seq with Hierarchical Poisson Factorization",
+        "Title": "Consensus scHPF Identifies Cell Type-Specific Drug Responses in Glioma by Integrating Large-Scale scRNA-seq",
+        "DOI": "10.1101/2023.12.05.570193",
+        "Citations": 0
+      },
+      {
+        "Title": "<i>De novo<\/i>Gene Signature Identification from Single-Cell RNA-Seq with Hierarchical Poisson Factorization",
         "DOI": "10.1101/367003",
         "Citations": 7
       }
     ],
     "Citations": 78,
     "NumPubs": 1,
-    "NumPreprints": 1,
+    "NumPreprints": 2,
     "GitHub": "simslab/scHPF"
   },
   {
@@ -36024,7 +36073,7 @@
         "Title": "Integrated analysis of multimodal single-cell data",
         "DOI": "10.1016/j.cell.2021.04.048",
         "Date": "2021-06",
-        "Citations": 4757
+        "Citations": 4758
       },
       {
         "Title": "Spatial reconstruction of single-cell gene expression data",
@@ -36036,7 +36085,7 @@
         "Title": "Integrating single-cell transcriptomic data across different conditions, technologies, and species",
         "DOI": "10.1038/nbt.4096",
         "Date": "2018-04-02",
-        "Citations": 7939
+        "Citations": 7940
       },
       {
         "Title": "Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression",
@@ -36072,7 +36121,7 @@
         "Citations": 85
       }
     ],
-    "Citations": 27707,
+    "Citations": 27709,
     "NumPubs": 5,
     "NumPreprints": 5,
     "CRAN": "Seurat",
@@ -36109,6 +36158,30 @@
     "NumPubs": 0,
     "NumPreprints": 0,
     "GitHub": "nasqar/SeuratWizard"
+  },
+  {
+    "Tool": "SEVtras",
+    "Platform": "Python",
+    "Code": "https://github.com/bioinfo-biols/SEVtras",
+    "Description": "SEVtras delineates small extracellular vesicles at droplet resolution from single-cell transcriptomes",
+    "License": "AGPL-3.0",
+    "Added": "2023-12-08",
+    "Updated": "2023-12-08",
+    "Categories": ["GeneSets", "Quantification"],
+    "Publications": [
+      {
+        "Title": "SEVtras delineates small extracellular vesicles at droplet resolution from single-cell transcriptomes",
+        "DOI": "10.1038/s41592-023-02117-1",
+        "Date": "2023-12-04",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "PyPI": "SEVtras",
+    "GitHub": "bioinfo-biols/SEVtras"
   },
   {
     "Tool": "sfaira",
@@ -38981,7 +39054,7 @@
         "Title": "STAR: ultrafast universal RNA-seq aligner",
         "DOI": "10.1093/bioinformatics/bts635",
         "Date": "2012-10-25",
-        "Citations": 30710
+        "Citations": 30711
       }
     ],
     "Preprints": [
@@ -38991,7 +39064,7 @@
         "Citations": 125
       }
     ],
-    "Citations": 30835,
+    "Citations": 30836,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "alexdobin/STAR"
@@ -39828,7 +39901,7 @@
         "Title": "Tempora: Cell trajectory inference using time-series single-cell RNA sequencing data",
         "DOI": "10.1371/journal.pcbi.1008205",
         "Date": "2020-09-09",
-        "Citations": 43
+        "Citations": 44
       }
     ],
     "Preprints": [
@@ -39838,7 +39911,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 44,
+    "Citations": 45,
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "BaderLab/Tempora"
@@ -39920,6 +39993,29 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "deeplearningplus/tGPT"
+  },
+  {
+    "Tool": "TIGON",
+    "Platform": "Python",
+    "Code": "https://github.com/yutongo/TIGON",
+    "Description": "Trajectory Inference with Growth via Optimal transport and Neural network",
+    "License": "MIT",
+    "Added": "2023-12-08",
+    "Updated": "2023-12-08",
+    "Categories": ["GeneNetworks", "Ordering"],
+    "Publications": [
+      {
+        "Title": "Reconstructing growth and dynamic trajectories from single-cell transcriptomics data",
+        "DOI": "10.1038/s42256-023-00763-w",
+        "Date": "2023-11-30",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 0,
+    "GitHub": "yutongo/TIGON"
   },
   {
     "Tool": "TILPRED",
@@ -41936,7 +42032,7 @@
     "Description": "Graph Variational Autoencoder for scRNA-seq velocity",
     "License": "MIT",
     "Added": "2023-11-24",
-    "Updated": "2023-11-24",
+    "Updated": "2023-12-08",
     "Categories": ["Ordering", "Visualisation"],
     "Publications": [],
     "Preprints": [
@@ -41949,7 +42045,7 @@
     "Citations": 0,
     "NumPubs": 0,
     "NumPreprints": 1,
-    "PyPI": "velovgi",
+    "PyPI": "VeloVGI",
     "GitHub": "HuangDDU/velovgi_workstation"
   },
   {
