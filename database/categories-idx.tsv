@@ -351,6 +351,7 @@ CDI	Visualisation
 CDR-g	DimensionalityReduction
 CDR-g	GeneSets
 CDR-g	QualityControl
+CEFCON	GeneNetworks
 celaref	Classification
 celaref	Visualisation
 celda	Clustering
@@ -395,6 +396,10 @@ CellBench	Visualisation
 CellBender	QualityControl
 CellBender	Visualisation
 CellBIC	Clustering
+CellBridge	Clustering
+CellBridge	MarkerGenes
+CellBridge	QualityControl
+CellBridge	Visualisation
 cellBrowser	Interactive
 cellBrowser	Visualisation
 CellCall	GeneNetworks
@@ -500,6 +505,9 @@ CellTagR	UMIs
 CellTagR	Visualisation
 celltalker	GeneNetworks
 celltalker	Visualisation
+CellTICS	Classification
+CellTICS	GeneSets
+CellTICS	MarkerGenes
 CellTools	Imputation
 CellTrails	DimensionalityReduction
 CellTrails	Ordering
@@ -785,6 +793,7 @@ DCATS	DifferentialExpression
 DCATS	Simulation
 DCLEAR	Ordering
 DCLEAR	Simulation
+DCP	Ordering
 ddqc	QualityControl
 ddSeeker	QualityControl
 ddSeeker	UMIs
@@ -1073,7 +1082,15 @@ ESAT	Ordering
 ESAT	Quantification
 escape	GeneSets
 escape	Visualisation
+ESCHR	Clustering
+ESCHR	Visualisation
 ESCO	Simulation
+ESCORT	Clustering
+ESCORT	DifferentialExpression
+ESCORT	DimensionalityReduction
+ESCORT	Interactive
+ESCORT	Ordering
+ESCORT	VariableGenes
 eSPRESSO	Clustering
 eSPRESSO	DimensionalityReduction
 eSPRESSO	GeneFiltering
@@ -1517,6 +1534,7 @@ JIND	Integration
 JOINT	Clustering
 JOINT	DifferentialExpression
 JOINT	Imputation
+JOINTLY	Clustering
 JSNMF_py	Clustering
 JSNMF_py	GeneSets
 JSNMF_py	Integration
@@ -1754,6 +1772,7 @@ MIMOSCA	Classification
 MIMOSCA	Integration
 MIMOSCA	Perturbations
 MIND	Integration
+MINI-EX	GeneNetworks
 minicore	Clustering
 minnow	Simulation
 minnow	UMIs
@@ -1859,6 +1878,13 @@ MUDAN	QualityControl
 MUDAN	VariableGenes
 MUDAN	Visualisation
 MuDCoD	GeneNetworks
+MUFFIN	Clustering
+MUFFIN	DifferentialExpression
+MUFFIN	DimensionalityReduction
+MUFFIN	GeneSets
+MUFFIN	Normalisation
+MUFFIN	VariableGenes
+MUFFIN	Visualisation
 multiGroupVI	Integration
 MultiK	Clustering
 MultiK	Visualisation
@@ -2254,6 +2280,7 @@ Regionvelocity	DimensionalityReduction
 Regionvelocity	GeneFiltering
 Regionvelocity	Ordering
 Regionvelocity	Visualisation
+RESA	Variants
 RESCUE	Imputation
 ResPAN	Integration
 Revelio	CellCycle
@@ -2295,6 +2322,8 @@ ROGUE	Visualisation
 ROSeq	DifferentialExpression
 ROSeq-R	DifferentialExpression
 rpca	DimensionalityReduction
+rROMA	GeneSets
+rROMA	Visualisation
 RSCORE	Clustering
 RSCORE	GeneNetworks
 RSCORE	Visualisation
@@ -2654,6 +2683,8 @@ scDeepHash	Classification
 scDeepInsight	Classification
 scDeepInsight	DimensionalityReduction
 scDeepSort	Classification
+scDEF	MarkerGenes
+scDEF	Visualisation
 scDesign	Simulation
 scDesign2	Simulation
 scDesign3	Simulation
@@ -2951,6 +2982,10 @@ scJoint	Visualisation
 scKB	Quantification
 scKB	UMIs
 scKINETICS	Ordering
+scLANE	DifferentialExpression
+scLANE	ExpressionPatterns
+scLANE	GeneSets
+scLANE	Visualisation
 scLAPA	AlternativeSplicing
 scLAPA	Clustering
 scLCA	Clustering
@@ -3058,6 +3093,8 @@ scNanoGPS	AlternativeSplicing
 scNanoGPS	Quantification
 scNanoGPS	UMIs
 scNanoGPS	Variants
+scNAT	DimensionalityReduction
+scNAT	Integration
 scNBMF	DimensionalityReduction
 scNCA	Integration
 scNCA	Simulation
@@ -3153,6 +3190,9 @@ scPopCorn	Visualisation
 scPOST	Simulation
 scPower	Interactive
 scPower	Simulation
+scPRAM	DimensionalityReduction
+scPRAM	Perturbations
+scPRAM	QualityControl
 scPred	Classification
 scPred	DimensionalityReduction
 scPred	Visualisation
@@ -3224,6 +3264,7 @@ scriabin	Visualisation
 Scribe	GeneNetworks
 Scribe	Visualisation
 SCRIP	Simulation
+SCRIPro	GeneNetworks
 SCRL	DimensionalityReduction
 SCRL	GeneNetworks
 scRMD	Clustering
@@ -3363,6 +3404,9 @@ scTHI	Classification
 scTHI	DimensionalityReduction
 scTHI	GeneNetworks
 scTHI	Visualisation
+scTIE	DimensionalityReduction
+scTIE	GeneNetworks
+scTIE	Integration
 scTIM	MarkerGenes
 scTITANS	Clustering
 scTITANS	MarkerGenes
@@ -3982,6 +4026,10 @@ UMI-tools	UMIs
 UMICollapse	UMIs
 umis	Quantification
 umis	UMIs
+UNAGI	DimensionalityReduction
+UNAGI	GeneNetworks
+UNAGI	Integration
+UNAGI	Perturbations
 UNCURL	Clustering
 UNCURL	DimensionalityReduction
 UNCURL	Interactive
@@ -4015,6 +4063,10 @@ uSORT	Interactive
 uSORT	Ordering
 uSORT	QualityControl
 uSORT	VariableGenes
+UVAE	Classification
+UVAE	DimensionalityReduction
+UVAE	Integration
+UVAE	Visualisation
 VAE-SNE	Clustering
 VAE-SNE	DimensionalityReduction
 vaeda	QualityControl
