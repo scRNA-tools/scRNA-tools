@@ -277,6 +277,10 @@ BZINB	Simulation
 CAbiNet	Clustering
 CAbiNet	DimensionalityReduction
 CAbiNet	Visualisation
+CACIMAR	GeneNetworks
+CACIMAR	Integration
+CACIMAR	MarkerGenes
+CACIMAR	Visualisation
 CACTUS	Variants
 CAISC	Clustering
 CAISC	Integration
@@ -412,6 +416,9 @@ CellContrast	Integration
 cellDancer	Ordering
 cellDancer	Simulation
 cellDancer	Visualisation
+CellDemux	Alignment
+CellDemux	QualityControl
+CellDemux	Quantification
 CellDrift	Ordering
 CellDrift	Perturbations
 CellDrift	Visualisation
@@ -550,6 +557,9 @@ CHETAH	Visualisation
 Chloris	Simulation
 Chloris	Variants
 Chloris	Visualisation
+CHOIR	Clustering
+CHOIR	DimensionalityReduction
+CHOIR	Visualisation
 chooseR	Clustering
 Chord	DimensionalityReduction
 Chord	QualityControl
@@ -1472,6 +1482,7 @@ InGene	Visualisation
 INSCT	Integration
 INSISTC	Classification
 INSISTC	GeneNetworks
+IntegrAO	Integration
 IntegratedLearner	Classification
 IntegratedLearner	Integration
 InterCellar	GeneNetworks
@@ -1766,6 +1777,8 @@ MicroCellClust	GeneFiltering
 MicroCellClust	RareCells
 MICTI	MarkerGenes
 MICTI	Visualisation
+MIDAS	Imputation
+MIDAS	Integration
 Millefy	Ordering
 Millefy	Visualisation
 miloR	MarkerGenes
@@ -1847,6 +1860,9 @@ MOSCATO	Simulation
 moscot	Integration
 moscot	Ordering
 moscot	Visualisation
+MOSim	GeneNetworks
+MOSim	Simulation
+MOSim	Visualisation
 Mowgli	GeneSets
 Mowgli	Integration
 Mowgli	Visualisation
@@ -2989,6 +3005,7 @@ scJoint	Visualisation
 scKB	Quantification
 scKB	UMIs
 scKINETICS	Ordering
+scKWARN	Normalisation
 scLANE	DifferentialExpression
 scLANE	ExpressionPatterns
 scLANE	GeneSets
@@ -3161,10 +3178,14 @@ scPanoView	Clustering
 scPanoView	DimensionalityReduction
 scPanoView	VariableGenes
 scPanoView	Visualisation
+scPathoQuant	Quantification
+scPathoQuant	UMIs
+scPathoQuant	Visualisation
 SCPattern	DifferentialExpression
 SCPattern	ExpressionPatterns
 SCPattern	Interactive
 scPCA	DimensionalityReduction
+scPECA	GeneNetworks
 scPharm	DimensionalityReduction
 scPharm	Perturbations
 scphaser	Haplotypes
@@ -3483,9 +3504,6 @@ scvi-tools	Normalisation
 scvi-tools	QualityControl
 scViewer	Interactive
 scViewer	Visualisation
-scViralQuant	Quantification
-scViralQuant	UMIs
-scViralQuant	Visualisation
 scVirtualCyto	Interactive
 scVirtualCyto	Visualisation
 scvis	DimensionalityReduction
@@ -3880,6 +3898,8 @@ SuperCell	Ordering
 SuperCell	Visualisation
 supercells	QualityControl
 Superscan	Classification
+SURGE	GeneNetworks
+SURGE	Variants
 SwarnSeq	DifferentialExpression
 switchde	DifferentialExpression
 switchde	ExpressionPatterns
@@ -4104,6 +4124,11 @@ VEGA	DimensionalityReduction
 VEGA	GeneNetworks
 velociraptor	DimensionalityReduction
 velociraptor	Ordering
+VeloCycle	CellCycle
+VeloCycle	GeneFiltering
+VeloCycle	Normalisation
+VeloCycle	Ordering
+VeloCycle	Visualisation
 velocyto	AlternativeSplicing
 velocyto	Ordering
 velocyto	Visualisation
