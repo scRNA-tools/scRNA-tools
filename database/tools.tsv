@@ -450,7 +450,7 @@ Epi-Impute	R/C++	https://github.com/raevskymichail/epi-impute	A computational to
 EPIC	R	https://github.com/rujinwang/EPIC	EPIC (cEll tyPe enrIChment), a statistical framework that relates large-scale GWAS summary statistics to cell-type-specific omics measurements from single-cell sequencing	GPL-2.0	2021-06-25	2022-06-17
 eQTLsingle	R/Shell	https://github.com/horsedayday/eQTLsingle	eQTLsingle is an R package for discovering eQTLs only with single cell RNA-seq (scRNA-seq) data, without genomic data	NA	2021-06-11	2022-04-30
 ESAT	Java	https://github.com/garber-lab/ESAT	The ESAT toolkit is designed for expression analysis of Digital expression (DGE) libraries that target transcript "ends". ESAT takes a set of alignment files (SAM or BAM) with genome alignment coordinates, a file containing transcript coordinates (BED or text file) and outputs read counts for each transcript provided.	NA	2016-09-09	2016-09-09
-escape	R	https://github.com/ncborcherding/escape	A bridging R package to facilitate gene set enrichment analysis (GSEA) in the context of single-cell RNA sequencing	Apache-2.0	2020-10-30	2020-10-30
+escape	R	https://github.com/ncborcherding/escape	A bridging R package to facilitate gene set enrichment analysis (GSEA) in the context of single-cell RNA sequencing	MIT	2020-10-30	2024-02-23
 ESCHR	Python	https://github.com/zunderlab/eschr	ESCHR: A hyperparameter-randomized ensemble approach for robust clustering across diverse datasets	MIT	2024-01-05	2024-01-05
 ESCO	R	https://github.com/JINJINT/ESCO	An scRNA-seq simulation model that adopts the idea of the copula to impose gene co-expression, while preserving the highlights of available simulators	GPL-3.0	2020-11-08	2020-11-08
 ESCORT	R	https://github.com/xiaorudong/Escort	Escort is a framework for evaluating a single-cell RNA-seq dataset’s suitability for trajectory inference and for quantifying trajectory properties influenced by analysis decisions	MIT	2024-01-05	2024-01-05
@@ -515,6 +515,7 @@ geosketch	Python	https://github.com/brianhie/geosketch	geosketch is a Python pac
 gExcite	Snakemake/R/Python	https://github.com/ETH-NEXUS/gExcite_pipeline	A start-to-end framework for single-cell gene expression, hashing, and antibody analysis	GPL-3.0	2022-05-27	2024-01-05
 gficf	R	https://github.com/gambalab/gficf	An R implementation of the Gene Frequency - Inverse Cell Frequency method for single cell data normalization	GPL-3.0	2019-08-12	2023-05-12
 GFPA	Python	https://github.com/studentiz/gfpa	A single-cell multiomics data analysis framework that analyzes the association of gene function and cell surface proteins	MIT	2023-03-10	2023-03-10
+gget	Python	https://github.com/pachterlab/gget	gget is a free and open-source command line tool and Python package that enables efficient querying of genomic reference databases, such as Ensembl	BSD-2-Clause	2024-02-23	2024-02-23
 ggsc	R/C++	https://github.com/YuLab-SMU/ggsc	Useful functions to visualize single cell and spatial data.	Artistic-2.0	2023-11-03	2023-11-03
 GIANT	Python/Cython/C	https://github.com/chenhcs/GIANT	GIANT (Gene-based data Integration and ANalysis Technique) is a method for unified analysis of atlas-level single cell data	MIT	2023-07-07	2023-07-07
 GiniClust	R/Python	https://github.com/lanjiangboston/GiniClust	GiniClust is a clustering method implemented in Python and R for detecting rare cell-types from large-scale single-cell gene expression data.	MIT	2016-09-09	2016-09-09
@@ -688,9 +689,10 @@ MAGIC	Python/R/MATLAB	https://github.com/KrishnaswamyLab/MAGIC	Markov Affinity-b
 MAPiT	MATLAB	https://github.com/karstenkuritz/MAPiT	MAPiT: measure-preserving MAP of pseudotime into true Time	BSD-3-Clause	2020-03-12	2020-03-12
 MARGARET	Python	https://github.com/Zafar-Lab/Margaret	MARGARET is a Metric learning-based graph-partitioned trajectory inference method for single-cell sequencing data.	MIT	2021-10-29	2022-06-17
 MarkerCount	Python	https://github.com/combio-dku/MarkerCount	MarkerCount: A stable, count-based cell type identifier for single cell RNA-Seq experiments	MIT	2021-04-30	2023-10-27
-MarkerMap	Python	https://github.com/Computational-Morphogenomics-Group/MarkerMap	MarkerMap is a generative model for selecting the most informative gene markers by projecting cells into a shared, interpretable embedding without sacrificing accuracy	MIT	2022-08-19	2022-08-19
+MarkerMap	Python	https://github.com/Computational-Morphogenomics-Group/MarkerMap	MarkerMap is a generative model for selecting the most informative gene markers by projecting cells into a shared, interpretable embedding without sacrificing accuracy	MIT	2022-08-19	2024-02-23
 MarkovHC	R	https://github.com/ZhenyiWangTHU/MarkovHC	MarkovHC as a novel single-cell omics data analysis tool, can facilitate the stratification of cells, identification of cell population hierarchical structures, and characterization of cellular trajectories and critical points	GPL-3.0	2021-12-10	2021-12-10
 MARS	Python	https://github.com/snap-stanford/mars	A meta-learning approach for cell type discovery in heterogenous single-cell data	MIT	2020-03-12	2021-06-28
+Marsilea	Python	https://github.com/Marsilea-viz/marsilea	Create x-layout visualization	MIT	2024-02-23	2024-02-23
 MASI	Python	https://github.com/hayatlab/MASI	MASI: marker-assisted standardization and integration for single-cell transcriptomics data	NA	2023-05-12	2023-05-12
 MAST	R	https://github.com/RGLab/MAST	Model-based Analysis of Single-cell Transcriptomics (MAST) fits a two-part, generalized linear models that are specially adapted for bimodal and/or zero-inflated single cell gene expression data.	GPL-2.0-or-later	2016-09-08	2016-09-08
 MAT2	Python	https://github.com/Zhang-Jinglong/MAT2	Manifold Alignment of Single-Cell Transcriptomes with Cell Triplets	MIT	2021-05-21	2021-05-21
@@ -741,6 +743,7 @@ mitoSplitter	JavaScript/Python/Shell	https://github.com/lnscan/mitoSplitter	A mi
 MitoTrace	R	https://github.com/lkmklsmn/MitoTrace	MitoTrace, a user-friendly R package for the analysis of mitochondrial variation in next generation sequencing data	GPL-2.0-or-later	2023-06-30	2023-06-30
 MiXCR	Java/Kotlin	https://github.com/milaboratory/mixcr	MiXCR is an ultimate software platform for analysis of Next-Generation Sequencing (NGS) data for immune profiling. It supports all kinds of single cell platforms and technologies for immune profiling, including commercial vendors such as 10x Genomics or BD Rhapsody and any custom protocol (droplet-based, plate-based, combinatorial barcoding etc.). Check more at https://docs.milaboratories.com.	Custom	2022-12-25	2022-12-25
 MLG	R	https://github.com/keleslab/mlg	MLG: Multilayer graph clustering of scRNA-seq data across multiple experimental conditions	NA	2021-04-05	2021-10-18
+MMIDAS	Python	https://github.com/AllenInstitute/MMIDAS	MMIDAS (Mixture Model Inference with Discrete-coupled AutoencoderS)	NA	2024-02-23	2024-02-23
 mmutil	C++	https://github.com/ypark/mmutil	Lightweight single-cell data analysis by Matrix Market Utility	MIT	2021-09-03	2021-09-03
 mmutilR	R/C++	https://github.com/causalpathlab/mmutilR	A toolbox for single-cell data analysis using an indexed Matrix Market format	MIT	2024-02-09	2024-02-09
 mnnpy	Python	https://github.com/chriscainx/mnnpy	Python implementation of the MNN batch correction algorithm	BSD-3-Clause	2020-03-03	2020-03-03
@@ -788,6 +791,7 @@ NaiveDE	Python	https://github.com/Teichlab/NaiveDE	This package implements the s
 NanoPARE	Python/Shell/R/Perl	https://github.com/Gregor-Mendel-Institute/NanoPARE	This repository contains a collection of tools for analyzing RNA 5′ end data from nanoPARE sequencing libraries.	GPL-3.0	2018-11-09	2021-10-08
 NATMI	Python	https://github.com/forrest-lab/NATMI	NATMI: Network Analysis Toolkit for the Multicellular Interactions	MIT	2020-10-15	2020-10-15
 NBID	R	https://bitbucket.org/Wenan/nbid/src	Negative binomial with independent dispersions (NBID) for UMI based scRNA-seq data	MIT	2018-06-08	2018-06-08
+Nclusion	Julia	https://github.com/microsoft/Nclusion.jl	Nonparametric CLUstering of SIngle cell PopulatiONs (NCLUSION)	MIT	2024-02-23	2024-02-23
 NEBULA	R/C++	https://github.com/lhe17/nebula	NEBULA provides fast algorithms for fitting negative binomial and Poisson mixed models for analyzing large-scale multi-subject single-cell data	GPL-2.0	2020-10-05	2022-01-21
 Nebulosa	R	https://github.com/powellgenomicslab/Nebulosa	Single-Cell Data Visualisation Using Kernel Gene-Weighted Density Estimation	GPL-3.0	2020-10-15	2020-10-30
 Neighbor-seq	R	https://github.com/sjdlabgroup/Neighborseq	Neighbor-seq is an R package designed to infer the architecture of direct cell-cell interactions from standard single-cell RNA sequencing (scRNA-seq) data	NA	2022-05-03	2022-06-17
@@ -863,7 +867,7 @@ phyloRNA	R/Python	https://github.com/bioDS/phyloRNA	phyloRNA is an utility packa
 PhyloVelo	Python	https://github.com/kunwang34/PhyloVelo	PhyloVelo is a computational framework to quantify the transcriptomic velocity field from phylogeny-resolved scRNA-seq data	BSD-3-Clause	2023-08-04	2023-08-04
 Piccolo	R	https://github.com/Amartya101/Piccolo	An R package for processing and analyzing single-cell counts data	GPL-3.0	2023-03-10	2023-03-10
 PieParty	Python	https://github.com/harbourlab/PieParty	PieParty is a visualization tool allowing to represent every cell in single-cell sequencing plots (UMAP, tSNE, ect.) as a pie chart	NA	2020-09-10	2021-03-12
-PILOT	Python	https://github.com/CostaLab/PILOT	PILOT uses optimal transport to compute the Wasserstein distance between two single single-cell experiments	NA	2023-07-01	2024-01-05
+PILOT	Python	https://github.com/CostaLab/PILOT	PILOT uses optimal transport to compute the Wasserstein distance between two single single-cell experiments	MIT	2023-07-01	2024-02-23
 PIMseq	R	https://github.com/CenterForStatistics-UGent/PIMseq	Probabilistic index models for testing differential expression in gene expression data	GPL-2.0	2020-02-21	2020-02-21
 pipeComp	R	https://github.com/plger/pipeComp	pipeComp is a simple framework to facilitate the comparison of pipelines involving various steps and parameters	GPL-3.0	2020-02-13	2021-06-28
 PISCES	R	https://github.com/califano-lab/PISCES	The pipeline for Protein Activity Inference in Single Cells (PISCES) is a regulatory-network-based methdology for the analysis of single cell gene expression profiles	NA	2021-05-28	2021-05-28
@@ -1578,6 +1582,7 @@ TACTiCS	Python	https://github.com/kbiharie/TACTiCS	Cell type matching across spe
 talklr	R	https://github.com/yuliangwang/talklr	An information theory-based approach to uncover potential ligand-receptor interactions involved in tissue homeostasis and diseases	GPL-2.0-or-later	2020-02-20	2020-02-20
 Tangram	Python	https://github.com/broadinstitute/Tangram	Tangram is a Python package, written in PyTorch, for mapping single-cell (or single-nucleus) gene expression data onto spatial gene expression data	BSD-3-Clause	2020-09-17	2021-11-27
 TAR-scRNA-seq	Snakemake	https://github.com/fw262/TAR-scRNA-seq	TAR-scRNA-seq (Transcriptionally Active Region single-cell RNA-seq) is a workflow that enables the discovery of transcripts beyond those listed in gene annotations in scRNA-seq analysis	GPL-3.0	2020-08-14	2020-08-14
+TarCA	R	https://github.com/shadowdeng1994/TarCA	The method, termed as targeting coalescent analysis (TCA), computes for all cells of a tissue the average coalescent rate at the monophyletic clades of the target tissue, the inverse of which then measures the progenitor number of the tissue	MIT	2024-02-23	2024-02-23
 TASC	C++	https://github.com/scrna-seq/TASC	TASC (Toolkit for Analysis of Single Cell RNA-seq), an empirical Bayes approach to reliably model the cell-specific dropout rates and amplification bias by use of external RNA spike-ins.	MIT	2017-03-29	2018-03-14
 tascCODA	Python	https://github.com/bio-datascience/tascCODA	Tree-aggregated compositional analysis for high-throughput sequencing data	BSD-3-Clause	2021-09-10	2021-12-17
 TASIC	MATLAB	https://www.andrew.cmu.edu/user/sabrinar/TASIC/TASIC.htm	TASIC uses a Hidden Markov Model (HMM) based on a probabilistic Kalman Filter approach to combine time and expression information for determining the branching process associated with time series single cell studies.	NA	2017-04-27	2017-04-27
