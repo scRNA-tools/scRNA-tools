@@ -1,3 +1,30 @@
 .page-header {
-  color: #984ea3;
+  color: #f781bf;
+}
+
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code {
+  border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+  margin-top: -5px;
+}
+.bs-callout-updates {
+  border-left-color: #f781bf;
+}
+.bs-callout-updates h4 {
+  color: #f781bf;
 }
