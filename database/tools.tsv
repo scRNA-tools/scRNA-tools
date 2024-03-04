@@ -51,6 +51,7 @@ BASIC	Python	http://ttic.uchicago.edu/~aakhan/BASIC/	BASIC is a semi-de novo ass
 BASiCS	R	https://github.com/catavallejos/BASiCS	Bayesian Analysis of single-cell RNA-seq data. Estimates cell-specific normalization constants. Technical variability is quantified based on spike-in genes. The total variability of the expression counts is decomposed into technical and biological components.	GPL-2.0-or-later	2016-09-08	2022-02-04
 BASiCStan	R/Stan/C++	https://github.com/Alanocallaghan/BASiCStan	Provides an interface to infer the parameters of BASiCS using Stan inference engines	GPL-3.0	2022-11-04	2022-11-04
 BasisVAE	Python	https://github.com/kasparmartens/BasisVAE	BasisVAE: Translation-invariant feature-level clustering with Variational Autoencoders	MIT	2020-03-23	2020-03-23
+BatchAIF	Python	https://gitlab-research.centralesupelec.fr/mics_biomathematics/biomaths/batchaif	Batch-effects correction with Adversarial Information Factorization	MIT	2024-03-01	2024-03-01
 BatchBench	Nextflow	https://github.com/cellgeni/batchbench	BatchBench is a Nextflow workflow for running and comparing scRNA-seq batch effect correction methods	MIT	2020-05-29	2021-06-28
 batchelor	R	https://github.com/LTLA/batchelor	Implements a variety of methods for batch correction of single-cell (RNA sequencing) data.	GPL-3.0	2019-06-28	2019-06-28
 BATMAN	python	https://github.com/mandricigor/batman	BATMAN is a novel tool for batch effect correction (integration) of single-cell RNA-Seq datasets.	NA	2020-02-01	2020-09-10
@@ -123,6 +124,7 @@ cb_sniffer	Python	https://github.com/sridnona/cb_sniffer	Mutation barcode caller
 ccdf	R	https://github.com/Mgauth/ccdf	ccdf is a package for performing single-cell RNA-seq differential expression analysis and more generally complex hypothesis testing	GPL-3.0	2021-05-28	2021-09-24
 ccfindR	R	https://github.com/hjunwoo/ccfindR	single-cell RNA-seq data analysis using Bayesian non-negative matrix factorization	GPL-2.0-or-later	2018-05-13	2019-07-11
 ccImpute	R/C++	https://github.com/khazum/ccImpute	ccImpute: an accurate and scalable consensus clustering based approach to impute dropout events in the single-cell RNA-seq data	BSD-3-Clause	2022-08-19	2022-11-04
+CCLONE	Python	https://github.com/ValerieMarot/clonal_tracing_package	This package provides functions for analyis of single-cell variant call data	NA	2024-03-01	2024-03-01
 ccNet	Python	https://github.com/Just-Jia/ccNet	Ccnet, cell-cell network, is a single-cell RNA sequencing data analysis package based on non-uniform epsilon-neighborhood network (NEN)	GPL-3.0	2022-03-04	2022-03-04
 CCNMF	R/C++	https://github.com/labxscut/CCNMF	Coupled-Clone Nonnegative Matrix Factorization (CCNMF) is a method for joint inference of clonal structure using paired Single-cell DNA-Seq and RNA-Seq data	MIT	2020-02-17	2023-06-02
 CCPE	MATLAB	https://github.com/LiuJJ0327/CCPE	A novel cell cycle pseudotime estimation method to characterize cell cycle timing and determine cell cycle phases from single-cell RNA-seq data	NA	2021-06-18	2022-01-06
@@ -293,6 +295,7 @@ CSMF	Matlab	http://page.amss.ac.cn/shihua.zhang/software.html	CSMF (Common and S
 CSN	MATLAB	https://github.com/wys8c764/CSN	Cell-specific Network Constructed from Single-cell RNA Sequencing Data	NA	2019-03-25	2019-03-25
 CSOmap	MATLAB	https://codeocean.com/capsule/2860903/tree/v1	A computational strategy to infer cellular interaction from scRNA-seq	MIT	2020-02-21	2020-02-21
 CStreet	Python	https://github.com/TongjiZhanglab/CStreet	CStreet is a cell state trajectory inference method for time-series single-cell RNA-seq data	MIT	2021-07-09	2021-07-09
+CTAT-LR-fusion	Perl/Javascript	https://github.com/TrinityCTAT/CTAT-LR-fusion	Find fusion transcripts using minimap2 and FusionInspector for long (and optionally additional short) RNA-seq reads	BSD-3-Clause	2024-03-01	2024-03-01
 ctgGEM	R	https://github.com/bicbioeng/ctgGEM	ctgGEM is an R package that combines a variety of visualization packages for single cell RNA tree hierarchies	GPL-2.0-or-later	2020-04-29	2020-04-29
 CTMM	Python/R	https://github.com/Minhui-Chen/CTMM	CTMM estimates the variance of gene expression specific to each cell type and shared across cell types	GPL-3.0	2023-03-03	2023-03-03
 CTpathway	Python	https://github.com/Bioccjw/CTpathway	CTpathway is a CrossTalk-based pathway enrichment analysis method to identify disease risk pathways	GPL-3.0	2022-10-28	2022-10-28
@@ -456,6 +459,7 @@ ESCO	R	https://github.com/JINJINT/ESCO	An scRNA-seq simulation model that adopts
 ESCORT	R	https://github.com/xiaorudong/Escort	Escort is a framework for evaluating a single-cell RNA-seq dataset’s suitability for trajectory inference and for quantifying trajectory properties influenced by analysis decisions	MIT	2024-01-05	2024-01-05
 eSPRESSO	R	https://github.com/tmorikuicr/espresso	espresso is a package for domain estimation of cells only from gene expression profile based on graph-structured stochastic self-organizing map (graph-SOM) and Markov chain Monte Carlo (MCMC)	GPL-3.0	2021-01-08	2024-01-05
 eSVD	R	https://github.com/linnykos/esvd	eSVD estimates an embedding for each cell with respect to a hierarchical model using the exponential family	MIT	2020-10-05	2020-10-05
+eSVD2	R/C++/C	https://github.com/linnykos/eSVD2	eSVD estimates an embedding for each cell with respect to a hierarchical model where the inner product between the row's and column's latent vectors is the natural parameter of a one-parameter exponential family random variable	MIT	2024-03-01	2024-03-01
 EVI	Python	https://github.com/jranek/EVI	EVI is a python package designed for evaluating multi-modal data integration strategies on combining unspliced, spliced, and RNA velocity gene expression modalities for trajectory inference and disease prediction tasks	MIT	2022-03-04	2023-01-04
 exceiver	Python	https://github.com/keiserlab/exceiver	A pretrained single cell gene expression language model	MIT	2022-11-04	2022-11-04
 exFINDER	R	https://github.com/ChanghanGitHub/exFINDER	exFINDER is a method that identifies external signals (received signals from the external system) in the single-cell transcriptomics datasets by utilizing the prior knowledge of signaling pathways	GPL-3.0	2023-03-31	2023-05-12
@@ -1095,7 +1099,7 @@ scDEA	R	https://github.com/Zhangxf-ccnu/scDEA	Applies ensemble learning for sing
 scDEAL	Python	https://github.com/OSU-BMBL/scDEAL	Deep Transfer Learning of Drug Sensitivity by Integrating Bulk and Single-cell RNA-seq data	Apache-2.0	2021-08-08	2022-11-04
 scDECAF	R	https://github.com/DavisLaboratory/scDECAF	scDECAF is a tool for mapping phenotype and celltype similarities in single cell RNAseq from a collection of genesets or makers such as those available from cellMarker, PanglaoDB and MSigDB	GPL-3.0	2021-06-04	2021-06-04
 scDecouple	R	https://github.com/MengQiuchen/scDecouple	scDecouple is an R package that aims to decouple true cellular response from infected proportion bias in scCRISPR-seq	NA	2023-09-08	2023-09-08
-scDEED	R	https://github.com/JSB-UCLA/scDEED	scDEED (single-cell dubious embeddings detector): a statistical method for detecting dubious non-linear embeddings	MIT	2023-05-12	2023-05-12
+scDEED	R	https://github.com/JSB-UCLA/scDEED	scDEED (single-cell dubious embeddings detector): a statistical method for detecting dubious non-linear embeddings	MIT	2023-05-12	2024-03-01
 scDeepCluster	Python	https://github.com/ttgump/scDeepCluster	scDeepCluster, a model-based deep embedded clustering for Single Cell RNA-seq data.	Apache-2.0	2019-04-16	2019-04-16
 scDeepHash	Python	https://github.com/bowang-lab/scDeepHash	An automatic cell type annotation and cell retrieval method for large-scale scRNA-seq datasets using neural network-based hashing	NA	2021-11-20	2022-01-14
 scDeepInsight	Python	https://github.com/shangruJia/scDeepInsight	scDeepInsight is a supervised deep learning-based single-cell method for annotation of single-cell RNA-sequencing datasets	NA	2023-07-07	2024-01-05
@@ -1240,6 +1244,7 @@ scMayoMap	R	https://github.com/chloelulu/scMayoMap	The goal of scMayoMap is to a
 scMC	R	https://github.com/amsszlh/scMC	scMC is an R toolkit for integrating and comparing multiple single cell genomic datasets from single cell RNA-seq and ATAC-seq experiments across different conditions, time points and tissues	GPL-3.0	2021-01-15	2021-01-15
 scMCA	R	https://github.com/ggjlab/scMCA	Accurately defines cell types based on single-cell digital expression.	GPL-3.0	2018-02-23	2018-02-23
 scMDC	Python	https://github.com/xianglin226/scMDC	Single Cell Multi-omics deep clustering	Apache-2.0	2023-01-04	2023-01-04
+scMDCF	Python	https://github.com/DARKpmm/scMDCF	scMDCF is a python package containing tools for clustering single cell multi-omics data based on cross-modality contrastive learning to learn the common latent representation and assign clustering	MIT	2024-03-01	2024-03-01
 scMEGA	R/C++	https://github.com/CostaLab/scMEGA	Single-cell Multiomic Enhancer-based Gene Regulatory Network Inference	MIT	2022-08-26	2023-05-12
 SCMER	Python	https://github.com/KChen-lab/SCMER	SCMER is a feature selection methods designed for single-cell data analysis	MIT	2020-12-13	2021-05-28
 scMerge	R	https://github.com/SydneyBioX/scMerge	scMerge removes unwanted variation by combining stably expressed genes and utilizing pseudo-replicates across datasets	GPL-3.0	2018-08-17	2024-01-05
@@ -1422,6 +1427,7 @@ scvis	Python	https://bitbucket.org/jerry00/scvis-dev	scvis is a python package f
 scvr	Python	https://github.com/pinellolab/singlecellvr	Tool for preparing scRNA-seq datasets to be viewed using Single Cell VR https://singlecellvr.com/	NA	2020-08-06	2021-11-27
 scWizard	R/Python	https://github.com/Dulab2020/scWizard	scWizard is a tool with graphical user interface (GUI) for cancer single cell RNA-seq data analysis	GPL-3.0-or-later	2022-09-02	2022-09-02
 scX	R	https://github.com/chernolabs/scX	scX is an R package that enables interactive visualization and analysis of single-cell experiment data	MIT	2023-11-10	2023-11-10
+scywalker	Shell	https://github.com/derijkp/scywalker	A program for the analysis of single cell Oxford nanopore long read data	NA	2024-03-01	2024-03-01
 scziDesk	Python	https://github.com/xuebaliang/scziDesk	Deep soft K-means clustering with self-training for single cell RNA sequence data	NA	2020-06-05	2020-06-05
 SDAMS	R	https://bioconductor.org/packages/SDAMS	Differential Abundant/Expression Analysis for Metabolomics, Proteomics and single-cell RNA sequencing Data	GPL-1.0	2021-08-06	2021-08-06
 SDImpute	R	https://github.com/Jinsl-lab/SDImpute	SDImpute: A statistical block imputation method based on cell-level and gene-level information for dropouts in single-cell RNA-seq data	GPL-3.0	2021-06-25	2021-06-25
