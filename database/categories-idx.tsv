@@ -667,11 +667,14 @@ COMET	MarkerGenes
 COMET	Visualisation
 CommPath	GeneNetworks
 CommPath	Visualisation
+community	GeneNetworks
+community	Visualisation
 Compartmap	Integration
 Compartmap	Visualisation
 compass	DimensionalityReduction
 compass	GeneNetworks
 compass	Visualisation
+Compound-SNE	DimensionalityReduction
 CONCLUS	Clustering
 CONCLUS	DimensionalityReduction
 CONCLUS	MarkerGenes
@@ -1534,6 +1537,8 @@ ISnorm	Normalisation
 IsoCell	Clustering
 ISOP	DifferentialExpression
 ISOP	ExpressionPatterns
+iSORT	Integration
+iSORT	VariableGenes
 iTALK	DifferentialExpression
 iTALK	GeneNetworks
 iTALK	Immune
@@ -1833,6 +1838,9 @@ MiXCR	UMIs
 MLG	Clustering
 MLG	Integration
 MLG	Visualisation
+MMCCI	GeneNetworks
+MMCCI	Integration
+MMCCI	Visualisation
 MMIDAS	Clustering
 MMIDAS	DimensionalityReduction
 mmutil	Clustering
@@ -2632,6 +2640,9 @@ scBT	DifferentialExpression
 scBTF	DimensionalityReduction
 scBubbletree	Visualisation
 SCC	Imputation
+scCAD	Clustering
+scCAD	Normalisation
+scCAD	RareCells
 scCAEs	Clustering
 scCAEs	DimensionalityReduction
 SCCAF	Clustering
@@ -2679,6 +2690,9 @@ scCODA	Modality
 scCODE	DifferentialExpression
 scCODE	Visualisation
 sccomp	Simulation
+scConfluence	DimensionalityReduction
+scConfluence	Imputation
+scConfluence	Integration
 scConnect	GeneNetworks
 scConsensus	Classification
 scConsensus	DifferentialExpression
@@ -2710,6 +2724,7 @@ scDblFinder	QualityControl
 scDBM	Simulation
 scDC	Clustering
 scDC	Visualisation
+scDCA	GeneNetworks
 scDCC	Clustering
 scDD	DifferentialExpression
 scDD	Simulation
@@ -3242,6 +3257,9 @@ scploid	Variants
 scploid	Visualisation
 scPlot	Interactive
 scPlot	Visualisation
+scPMP	Clustering
+scPMP	DimensionalityReduction
+scPMP	Visualisation
 scPNMF	VariableGenes
 scpoisson	Clustering
 scpoisson	Visualisation
@@ -3587,6 +3605,7 @@ SEPA	GeneSets
 SEPA	Interactive
 SEPIRA	GeneNetworks
 seqgendiff	Simulation
+SequencingCancerFinder	Classification
 SEQUIN	Clustering
 SEQUIN	GeneSets
 SEQUIN	Interactive
