@@ -293,6 +293,7 @@ CALISTA	Clustering
 CALISTA	Normalisation
 CALISTA	Ordering
 CALISTA	Visualisation
+callback	Clustering
 CAMLU	Classification
 CancerInSilico	CellCycle
 CancerInSilico	GeneNetworks
@@ -360,6 +361,7 @@ CDI	Visualisation
 CDR-g	DimensionalityReduction
 CDR-g	GeneSets
 CDR-g	QualityControl
+CDSKNN	Clustering
 CEFCON	GeneNetworks
 celaref	Classification
 celaref	Visualisation
@@ -446,6 +448,9 @@ CellLayers	Visualisation
 CellMap	DimensionalityReduction
 CellMap	Interactive
 CellMap	Visualisation
+cellmarkeraccordion	CellCycle
+cellmarkeraccordion	Classification
+cellmarkeraccordion	Visualisation
 CellMeSH	Classification
 CellMixS	Integration
 CellMixS	Visualisation
@@ -741,6 +746,8 @@ coupleCoC_plus	Clustering
 coupleCoC_plus	Integration
 coupledAE-patchseq	DimensionalityReduction
 coupledAE-patchseq	Integration
+CoupleVAE	DimensionalityReduction
+CoupleVAE	Perturbations
 CPA	DimensionalityReduction
 CPA	Perturbations
 CPLVM	DimensionalityReduction
@@ -2252,6 +2259,7 @@ PySCUBA	Clustering
 PySCUBA	Interactive
 PySCUBA	Ordering
 PySCUBA	Visualisation
+QClus	QualityControl
 qSNE	DimensionalityReduction
 quasildr	DimensionalityReduction
 quasildr	Ordering
@@ -2606,6 +2614,9 @@ scASfind	Visualisation
 scASK	Classification
 scASK	DimensionalityReduction
 scASK	Interactive
+SCASL	AlternativeSplicing
+SCASL	Clustering
+SCASL	Visualisation
 Scater	DimensionalityReduction
 Scater	QualityControl
 Scater	Visualisation
@@ -3220,6 +3231,9 @@ SCP	QualityControl
 SCP	Visualisation
 SCPA	GeneSets
 SCPA	Visualisation
+scPAFA	GeneSets
+scPAFA	Simulation
+scPAFA	Visualisation
 scPagwas	GeneNetworks
 scPagwas	Variants
 scPagwas	Visualisation
