@@ -80,6 +80,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1016/j.crmeth.2023.100512	FALSE	FALSE	2023-07	Characterization of cell-fate decision landscapes by estimating transcription factor dynamics
 10.1016/j.crmeth.2023.100577	FALSE	FALSE	2023-08	Single-cell assignment using multiple-adversarial domain adaptation network with large-scale references
 10.1016/j.crmeth.2023.100581	FALSE	FALSE	2023-09	Inferring single-cell transcriptomic dynamics with structured latent gene expression dynamics
+10.1016/j.crmeth.2024.100733	FALSE	FALSE	2024-03	Anchored-fusion enables targeted fusion search in bulk and single-cell RNA sequencing data
 10.1016/j.csbj.2021.05.046	FALSE	FALSE	2021	scDA: single cell discriminant analysis for single-cell RNA sequencing data
 10.1016/j.csbj.2021.06.043	FALSE	FALSE	2021	UCell: Robust and scalable single-cell gene signature scoring
 10.1016/j.csbj.2021.07.016	FALSE	FALSE	2021	Identify differential genes and cell subclusters from time-series scRNA-seq data using scTITANS
@@ -741,6 +742,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1093/bioinformatics/btad760	FALSE	FALSE	2023-12-19	Scaling up single-cell RNA-seq data analysis with CellBridge workflow
 10.1093/bioinformatics/btae008	FALSE	FALSE	2024-01-17	scKWARN: Kernel-weighted-average robust normalization for single-cell RNA-seq data
 10.1093/bioinformatics/btae068	FALSE	FALSE	2024-02-05	AGImpute: Imputation of scRNA-seq data based on a hybrid GAN with dropouts identification
+10.1093/bioinformatics/btae089	FALSE	FALSE	2024-03-15	ICELLNET v2: a versatile method for cell–cell communication analysis from human transcriptomic data
 10.1093/bioinformatics/btq503	FALSE	FALSE	2010-09-01	CoGAPS: an R/C++ package to identify patterns and biological process activity in transcriptomic data
 10.1093/bioinformatics/bts635	FALSE	FALSE	2012-10-25	STAR: ultrafast universal RNA-seq aligner
 10.1093/bioinformatics/btt511	FALSE	FALSE	2013-08-31	SAMstrt: statistical test for differential expression in single-cell transcriptome with spike-in normalization
@@ -1844,6 +1846,11 @@ DOI	arXiv	Preprint	Date	Title
 10.1101/2024.03.08.584053	FALSE	TRUE	NA	Interpreting single-cell messages in normal and aberrant hematopoiesis with the Cell Marker Accordion
 10.1101/2024.03.08.584180	FALSE	TRUE	NA	A knockoff calibration method to avoid over-clustering in single-cell RNA-sequencing
 10.1101/2024.03.11.584023	FALSE	TRUE	NA	Uncovering disease-related multicellular pathway modules on large-scale single-cell transcriptomes with scPAFA
+10.1101/2024.03.12.584547	FALSE	TRUE	NA	SCAPE-APA: a package for estimating alternative polyadenylation events from scRNA-seq data
+10.1101/2024.03.14.585078	FALSE	TRUE	NA	Modeling interpretable correspondence between cell state and perturbation response with CellCap
+10.1101/2024.03.18.585595	FALSE	TRUE	NA	Canopy2: tumor phylogeny inference by bulk DNA and single-cell RNA sequencing
+10.1101/2024.03.19.585637	FALSE	TRUE	NA	Mapping single-cell developmental potential in health and disease with interpretable deep learning
+10.1101/2024.03.19.585667	FALSE	TRUE	NA	SciGeneX: Enhancing transcriptional analysis through gene module detection in single-cell and spatial transcriptomics data.
 10.1101/205534	FALSE	TRUE	NA	Simultaneous single-cell profiling of lineages and cell types in the vertebrate brain by scGESTALT
 10.1101/206052	FALSE	TRUE	NA	RNA velocity in single cells
 10.1101/207704	FALSE	TRUE	NA	ascend: R package for analysis of single cell RNA-seq data
@@ -2237,6 +2244,7 @@ DOI	arXiv	Preprint	Date	Title
 10.1186/s12859-023-05471-1	FALSE	FALSE	2023-09-14	Scellpam: an R package/C++ library to perform parallel partitioning around medoids on scRNAseq data sets
 10.1186/s12859-023-05490-y	FALSE	FALSE	2023-11-07	Sctensor detects many-to-many cell–cell interactions from single cell RNA-sequencing data
 10.1186/s12859-023-05563-y	FALSE	FALSE	2023-11-27	scMuffin: an R package to disentangle solid tumor heterogeneity by single-cell gene expression analysis
+10.1186/s12859-024-05706-9	FALSE	FALSE	2024-03-16	Integration of scRNA-seq data by disentangled representation learning with condition domain adaptation
 10.1186/s12864-016-2897-6	FALSE	FALSE	2016-08-22	Detection of high variability in gene expression from single-cell RNA-seq profiling
 10.1186/s12864-017-4019-5	FALSE	FALSE	2017-10-03	SAIC: an iterative clustering approach for analysis of single cell RNA-seq data
 10.1186/s12864-017-4253-x	FALSE	FALSE	2017-11-25	Mosaic autosomal aneuploidies are detectable from single-cell RNAseq data
@@ -2608,3 +2616,4 @@ arxiv/2309.07950	TRUE	TRUE	NA	Topological and geometric analysis of cell states 
 arxiv/2311.00012	TRUE	TRUE	NA	scX: A user-friendly tool for scRNA-seq exploration
 arxiv/2311.04567	TRUE	TRUE	NA	CellPhoneDB v5: inferring cell-cell communication from single-cell multiomics data
 arxiv/2401.07937	TRUE	TRUE	NA	Integrate Any Omics: Towards genome-wide data integration for patient stratification
+arxiv/2403.08959	TRUE	TRUE	NA	scVGAE: A Novel Approach using ZINB-Based Variational Graph Autoencoder for Single-Cell RNA-Seq Imputation

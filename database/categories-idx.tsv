@@ -61,6 +61,7 @@ AltAnalyze	Visualisation
 AlzScPred	Classification
 AmbientContaminationMetrics	QualityControl
 anchor	Modality
+Anchored-Fusion	Variants
 ANS	GeneSets
 anticor_features	VariableGenes
 APL	GeneSets
@@ -301,6 +302,10 @@ CancerInSilico	Interactive
 CancerInSilico	Simulation
 CancerInSilico	Visualisation
 Canek	Integration
+Canopy2	Ordering
+Canopy2	Simulation
+Canopy2	Variants
+Canopy2	Visualisation
 CanSig	Clustering
 CanSig	GeneSets
 CanSig	Integration
@@ -416,6 +421,8 @@ cellBrowser	Visualisation
 CellCall	GeneNetworks
 CellCall	GeneSets
 CellCall	Visualisation
+CellCap	DimensionalityReduction
+CellCap	Perturbations
 CellChat	GeneNetworks
 CellChat	Visualisation
 CellContrast	DimensionalityReduction
@@ -790,6 +797,9 @@ Cytopath	Visualisation
 CytoSPACE	Integration
 CytoSPACE	Visualisation
 CytoTalk	GeneNetworks
+CytoTRACE2	Ordering
+CytoTRACE2	StemCells
+CytoTRACE2	Visualisation
 D-EE	DimensionalityReduction
 D-EE	Visualisation
 D-SPIN	GeneNetworks
@@ -2586,6 +2596,7 @@ scAPAtrap	AlternativeSplicing
 scAPAtrap	Quantification
 SCAPE	AlternativeSplicing
 SCAPE	Quantification
+SCAPE-APA	AlternativeSplicing
 scapGNN	GeneNetworks
 scapGNN	Visualisation
 SCAPTURE	AlternativeSplicing
@@ -2780,6 +2791,7 @@ scdiff	Ordering
 scdiff	Visualisation
 scDiffCom	GeneNetworks
 scDiffCom	Visualisation
+scDisco	Integration
 scDisInFact	DimensionalityReduction
 scDisInFact	Integration
 scDisInFact	Perturbations
@@ -2996,6 +3008,9 @@ scID	MarkerGenes
 scID	Normalisation
 scID	Visualisation
 scIGANs	Imputation
+scigenex	GeneNetworks
+scigenex	GeneSets
+scigenex	Visualisation
 scIHPF	DimensionalityReduction
 scIHPF	Integration
 SCILEN	Clustering
@@ -3561,6 +3576,7 @@ scVelo	GeneFiltering
 scVelo	Normalisation
 scVelo	Ordering
 scVelo	Visualisation
+scVGAE	Imputation
 scvi-tools	Classification
 scvi-tools	DifferentialExpression
 scvi-tools	DimensionalityReduction
