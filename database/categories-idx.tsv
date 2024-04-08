@@ -388,6 +388,9 @@ cell2location	Classification
 cell2location	Integration
 cell2sentence	Transformation
 cell2sentence-ft	Transformation
+CellAgentChat	GeneNetworks
+CellAgentChat	Ordering
+CellAgentChat	Visualisation
 cellAlign	ExpressionPatterns
 cellAlign	Normalisation
 cellAlign	Ordering
@@ -567,6 +570,7 @@ CeTF	Visualisation
 cFIT	DimensionalityReduction
 cFIT	Integration
 cFIT	Visualisation
+CHAI	Clustering
 CHETAH	Classification
 CHETAH	Interactive
 CHETAH	Normalisation
@@ -1148,6 +1152,7 @@ Falco	Alignment
 Falco	Quantification
 FastCount	Quantification
 FastCount	UMIs
+fastglmpca	DimensionalityReduction
 fasthplus	Clustering
 FastIntegration	Integration
 FastProject	DimensionalityReduction
@@ -1248,6 +1253,11 @@ GEDI	Imputation
 GEDI	Integration
 GEDI	Normalisation
 GEDI	Visualisation
+GEMLI	DifferentialExpression
+GEMLI	ExpressionPatterns
+GEMLI	MarkerGenes
+GEMLI	Ordering
+GEMLI	Visualisation
 geneBasisR	DifferentialExpression
 geneBasisR	DimensionalityReduction
 geneBasisR	MarkerGenes
@@ -1319,6 +1329,7 @@ GiRAFR	UMIs
 GiRAFR	Variants
 GLM-PCA	DimensionalityReduction
 glmGamPoi	DifferentialExpression
+GLMsim	Simulation
 GloScope	Visualisation
 GLUE	GeneNetworks
 GLUE	Integration
@@ -1497,6 +1508,12 @@ ImmClassifier	Classification
 ImmClassifier	Immune
 immunarch	Immune
 immunarch	Visualisation
+immunopipe	Clustering
+immunopipe	GeneSets
+immunopipe	Immune
+immunopipe	Integration
+immunopipe	MarkerGenes
+immunopipe	Visualisation
 ImSpectR	Quantification
 ImSpectR	Visualisation
 IndepthPathway	GeneSets
@@ -2229,6 +2246,7 @@ Pre-Phaser	CellCycle
 PreCanCell	Classification
 PRESCIENT	Ordering
 PRESCIENT	Perturbations
+PreTSA	ExpressionPatterns
 ProjecTILs	Classification
 ProjecTILs	DimensionalityReduction
 ProjecTILs	Immune
@@ -2579,6 +2597,8 @@ scAnno	VariableGenes
 scAnnotatR	Classification
 scAnnotatR	MarkerGenes
 scAnnotatR	Visualisation
+scAnnoX	Classification
+scAnnoX	MarkerGenes
 scanorama	Integration
 Scanpro	Modality
 Scanpy	Clustering
@@ -3103,6 +3123,7 @@ scMAGS	DimensionalityReduction
 scMAGS	GeneFiltering
 scMAGS	MarkerGenes
 scMAGS	Visualisation
+scmallet	DimensionalityReduction
 scmap	Classification
 scMAPA	AlternativeSplicing
 scMAPA	Quantification
@@ -3369,6 +3390,7 @@ scReadSim	Simulation
 scReClassify	Classification
 scRecover	Imputation
 scRecover	Normalisation
+SCREEN	Perturbations
 scREhurdle	DifferentialExpression
 scriabin	GeneNetworks
 scriabin	Visualisation
@@ -3937,6 +3959,9 @@ SPEEDI	Interactive
 SPEEDI	QualityControl
 SPEEDI	Visualisation
 Sphetcher	DimensionalityReduction
+SPLASH	AlternativeSplicing
+SPLASH	Quantification
+SPLASH	Variants
 splattdr	Simulation
 Splatter	Simulation
 Splatter	Visualisation
