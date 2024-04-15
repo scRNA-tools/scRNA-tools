@@ -62,6 +62,8 @@ AlzScPred	Classification
 AmbientContaminationMetrics	QualityControl
 anchor	Modality
 Anchored-Fusion	Variants
+Annotatability	Classification
+Annotatability	DimensionalityReduction
 ANS	GeneSets
 anticor_features	VariableGenes
 APL	GeneSets
@@ -196,6 +198,7 @@ Beyondcell	GeneSets
 Beyondcell	Perturbations
 Beyondcell	Visualisation
 Bfimpute	Imputation
+BiGCN	Imputation
 bigSCale	Clustering
 bigSCale	DifferentialExpression
 bigSCale	MarkerGenes
@@ -612,6 +615,9 @@ CiteFuse	Visualisation
 CITEseqCount	Integration
 CITEseqCount	Quantification
 CITEseqCount	UMIs
+CITEViz	Classification
+CITEViz	Interactive
+CITEViz	Visualisation
 Citrus	Normalisation
 CL-Impute	Imputation
 CLEAR	Integration
@@ -810,6 +816,8 @@ D-SPIN	GeneNetworks
 D-SPIN	Perturbations
 D-SPIN	Visualisation
 D3E	DifferentialExpression
+DAARIO	Integration
+DAARIO	Visualisation
 DALI	Immune
 DALI	Integration
 DALI	Visualisation
@@ -1146,6 +1154,11 @@ eSVD2	DimensionalityReduction
 EVI	Integration
 EVI	Ordering
 exceiver	GeneNetworks
+exdyn	ExpressionPatterns
+exdyn	GeneNetworks
+exdyn	Integration
+exdyn	Ordering
+exdyn	Visualisation
 exFINDER	GeneNetworks
 expressyouRcell	Visualisation
 Falco	Alignment
@@ -1284,6 +1297,7 @@ GeneSwitches	ExpressionPatterns
 GeneSwitches	GeneSets
 GeneSwitches	Transformation
 GeneSwitches	Visualisation
+genet	GeneNetworks
 GeneVector	DimensionalityReduction
 GeneVector	GeneNetworks
 GeneVector	Integration
@@ -1829,6 +1843,9 @@ MFA	Ordering
 MFA	Simulation
 MFA	Visualisation
 MGFR	MarkerGenes
+MGPfactR	DimensionalityReduction
+MGPfactR	Ordering
+MGPfactR	Visualisation
 MicroCellClust	Clustering
 MicroCellClust	GeneFiltering
 MicroCellClust	RareCells
@@ -2085,6 +2102,9 @@ OnlinePCA	Visualisation
 OpenBioMed	Classification
 OpenBioMed	DimensionalityReduction
 OpenVisuMap	DimensionalityReduction
+Originiator	Immune
+Originiator	QualityControl
+Originiator	Variants
 ORIGINS	GeneNetworks
 ORIGINS2	GeneNetworks
 orthomap	GeneSets
@@ -2288,6 +2308,8 @@ PySCUBA	Interactive
 PySCUBA	Ordering
 PySCUBA	Visualisation
 QClus	QualityControl
+QDiffusion	DimensionalityReduction
+QDiffusion	Normalisation
 qSNE	DimensionalityReduction
 quasildr	DimensionalityReduction
 quasildr	Ordering
@@ -2681,6 +2703,13 @@ scBridge	Visualisation
 scBT	DifferentialExpression
 scBTF	DimensionalityReduction
 scBubbletree	Visualisation
+scButterfly	Clustering
+scButterfly	DimensionalityReduction
+scButterfly	Integration
+scButterfly	Normalisation
+scButterfly	Perturbations
+scButterfly	QualityControl
+scButterfly	Visualisation
 SCC	Imputation
 scCAD	Clustering
 scCAD	Normalisation
