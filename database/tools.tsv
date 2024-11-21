@@ -532,6 +532,7 @@ GEMLI	R	https://github.com/UPSUTER/GEMLI	GEMLI is an R package to predict cell l
 geneBasisR	R	https://github.com/MarioniLab/geneBasisR	Selects an optimal targeted gene panel (based on scRNA-seq data) as a function of designated number of genes	MIT	2021-08-11	2021-12-17
 GeneClust	Python	https://github.com/ToryDeng/scGeneClust	GeneClust is a computational feature selection method for scRNA-seq cell clustering. GeneClust groups genes into clusters from which genes are evaluated and selected with the aim of maximizing relevance, minimizing redundancy and preserving complementarity.	AGPL-3.0	2023-02-17	2023-02-17
 GeneExt	Python/R	https://github.com/sebepedroslab/GeneExt	GeneExt takes as input scRNA-seq mapped reads and a gene annotation file (GTF or GFF, any version) and outputs an extended gene annotation file for improved scRNA-seq transcript quantification	GPL-3.0	2023-12-08	2023-12-08
+GeneNMF	R	https://github.com/carmonalab/GeneNMF	GeneNMF is a package that implements methods for matrix factorization and gene program discovery for single-cell omics data	GPL-3.0	2024-11-20	2024-11-20
 GenePattern	Python	https://github.com/genepattern/single_cell_clustering_notebook	Interactive notebook workflow for pre-processing data, identification of sub-populations of cells by clustering, and exploration of biomarkers.	BSD-3-Clause	2018-08-24	2019-10-02
 Genes2Genes	Python	https://github.com/Teichlab/Genes2Genes	G2G aims to guide downstream comparative analysis of single-cell reference and query systems along any axis of progression	MIT	2023-03-17	2024-04-26
 genesorteR	R	https://github.com/mahmoudibrahim/genesorteR	genesorteR is an R package for single cell data analysis. It calculates a specificity score to rank all genes in each cell cluster. It can then use this ranking to find sets of marker genes or to find highly variable genes.	GPL-3.0	2017-06-28	2017-06-28
@@ -1051,6 +1052,7 @@ scAlign	Python/R	https://github.com/quon-titative-biology/scAlign	A deep learnin
 scAllele	Python	https://github.com/gxiaolab/scAllele	scAllele is a versatile tool to detect and analyze nucleotide variants in scRNA-seq	MIT	2022-04-08	2023-01-04
 scAlleleCount	Python/R	https://github.com/barkasn/scAlleleCount	Calculate allele-specific count tables	NA	2019-02-01	2019-02-01
 Scallop2	C++	https://github.com/Shao-Group/scallop2	Scallop2 is a reference-based transcript assembler specifically optimized for paired-/multiple-end RNA-seq data	BSD-3-Clause	2022-04-01	2022-04-01
+scaLR	Python	https://github.com/infocusp/scaLR	scaLR is a comprehensive end-to-end pipeline that is equipped with a range of advanced features to streamline and enhance the analysis of scRNA-seq data	GPL-3.0	2024-11-20	2024-11-20
 scAMACE	R	https://github.com/cuhklinlab/scAMACE	scAMACE (integrative Analysis of single-cell Methylation, chromatin ACcessibility, and gene Expression)	LGPL-3.0	2021-04-05	2021-04-05
 scAMACE_py	Python	https://github.com/cuhklinlab/scAMACE_py	Python implementation (both CPU and GPU version) to a model-based approach to the joint analysis of single-cell data on chromatin accessibility, gene expression and methylation	MIT	2021-04-05	2021-04-05
 scAmpi	Snakemake	https://github.com/ETH-NEXUS/scAmpi_single_cell_RNA	scAmpi includes general scRNA processing steps, such as mapping, QC, normalisation, unsupervised clustering, cell type classification, and DE analysis, as well as search for disease relevant target genes	GPL-3.0	2021-04-05	2022-06-17
@@ -1462,7 +1464,7 @@ scTM	Python	https://github.com/JinmiaoChenLab/scTM	scTM is a package for spatial
 scTOP	Python	https://github.com/Emergent-Behaviors-in-Biology/scTOP	A Python package for finding projections onto known cell phenotyes, given matrices of raw RNA count data	GPL-3.0	2022-03-25	2024-01-05
 scTopoGAN	Python	https://github.com/AkashCiel/scTopoGAN	Unsupervised manifold alignment of single-cell data	MIT	2023-05-12	2024-10-29
 scTour	Python	https://github.com/LiQian-XC/sctour	scTour is an innovative and comprehensive method for dissecting cellular dynamics by analysing datasets derived from single-cell genomics	MIT	2022-05-03	2024-01-05
-scTrace	Python	https://github.com/czythu/scTrace	scTrace is a computational method to enhance single-cell lineage data through kernelized bayesian network	NA	2024-09-15	2024-09-15
+scTrace	Python	https://github.com/czythu/scTrace	scTrace is a computational method to enhance single-cell lineage data through kernelized bayesian network	MIT	2024-09-15	2024-11-20
 sctransform	R	https://github.com/ChristophH/sctransform	R package for modeling single cell UMI expression data using regularized negative binomial regression	GPL-3.0	2018-07-27	2018-07-27
 scTree	R	https://github.com/jspaezp/sctree	An R package to generate antibody-compatible classifiers from singel-cell sequencing data	Apache-2.0	2020-05-05	2020-05-05
 scTreeViz	R	https://github.com/HCBravoLab/scTreeViz	This package provides methods to interactively explore and visualize datasets with hierarchies. eg. single cells datasets with hierarchy over cells at different resolutions	Artistic-2.0	2021-10-29	2021-10-29
@@ -1479,6 +1481,7 @@ scUTRquant	R/Python	https://github.com/Mayrlab/scUTRquant	A bioinformatics pipel
 scuttle	R/C++	https://github.com/LTLA/scuttle	Provides basic utility functions for performing single-cell analyses, focusing on simple normalization, quality control and data transformations	GPL-3.0	2020-10-30	2020-10-30
 scVAE	Python	https://github.com/chgroenbech/scVAE	scVAE: Single-cell variational auto-encoders	Apache-2.0	2018-05-18	2018-05-18
 scVAEIT	Python	https://github.com/jaydu1/scVAEIT	Variational autoencoder for multimodal single-cell mosaic integration and transfer learning	MIT	2022-11-04	2024-09-15
+scValue	Python	https://github.com/LHBCB/scvalue	scValue is a Python package designed for efficient value-based subsampling of large scRNA-seq datasets	BSD-3-Clause	2024-11-20	2024-11-20
 scVDMC	MATLAB	https://github.com/kuanglab/scVDMC	Multitask Clustering of scRNAseq Data	Apache-2.0	2018-04-17	2018-04-17
 scVEGs	R	https://github.com/hillas/scVEGs	scVEGs is a novel algorithm for single-cell RNA-seq (scRNA-seq) data to determine significant variably expressed genes (VEGs) using a gene expression variation model (GEVM).	MIT	2016-09-09	2016-09-09
 scVelo	Python	https://github.com/theislab/scvelo	scVelo is a scalable toolkit for estimating and analyzing RNA velocities in single cells using dynamical modeling.	BSD-3-Clause	2019-11-03	2020-08-06
@@ -1628,7 +1631,7 @@ SR2	R/C/C++	https://github.com/kai0511/SR2	SR2 decomposes variation from multipl
 SSBER	R	https://github.com/zy456/SSBER	SSBER: removing batch effect for single-cell RNA sequencing data	NA	2021-05-21	2021-05-21
 sscClust	R	https://github.com/Japrin/sscClust	simpler single cell RNAseq data clustering (sscClust), is a package implement mutilple functionalities which are basic procedures in single cell RNAseq data analysis, including variable genes identification, dimension reduction, clustering on reduced data.	GPL-3.0	2018-11-13	2019-06-20
 SSrGE	Python	https://github.com/lanagarmire/SSrGE	This procedure aims to fit sparse linear models using a binary matrix (n_samples x n_SNV) as features matrix and a gene expression matrix (n_genes x n_samples) as response.	MIT	2017-01-10	2018-12-01
-StabMap	R	https://github.com/MarioniLab/StabMap	Mosaic single cell data integration using non-overlapping features	GPL-2.0	2022-03-04	2023-07-01
+StabMap	R	https://github.com/MarioniLab/StabMap	Mosaic single cell data integration using non-overlapping features	GPL-2.0	2022-03-04	2024-11-20
 STACAS	R	https://github.com/carmonalab/STACAS	STACAS is a method for anchor identification, designed to be easily incorporated in Seurat pipelines for batch correction and integration of scRNA-seq datasets	GPL-3.0	2020-06-16	2024-05-06
 STAR	C/C++	https://github.com/alexdobin/STAR	STARsolo: mapping, demultiplexing and gene quantification for single cell RNA-seq	MIT	2019-01-25	2021-06-28
 STARE	C++	https://github.com/schulzlab/STARE	Look into TF regulation on gene level leveraging an adapted Activity-By-Contact score	MIT	2022-02-04	2023-05-12

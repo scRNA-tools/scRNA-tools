@@ -1290,6 +1290,9 @@ GeneClust	DimensionalityReduction
 GeneClust	Normalisation
 GeneClust	VariableGenes
 GeneExt	Quantification
+GeneNMF	DimensionalityReduction
+GeneNMF	GeneSets
+GeneNMF	Visualisation
 GenePattern	Clustering
 GenePattern	DimensionalityReduction
 GenePattern	Interactive
@@ -2601,6 +2604,12 @@ scAllele	AlternativeSplicing
 scAllele	Variants
 scAlleleCount	AlleleSpecific
 Scallop2	Assembly
+scaLR	Classification
+scaLR	DifferentialExpression
+scaLR	GeneFiltering
+scaLR	MarkerGenes
+scaLR	Normalisation
+scaLR	Visualisation
 scAMACE	Clustering
 scAMACE	Integration
 scAMACE_py	Clustering
@@ -3661,6 +3670,7 @@ scuttle	QualityControl
 scVAE	Clustering
 scVAEIT	Imputation
 scVAEIT	Integration
+scValue	DimensionalityReduction
 scVDMC	Clustering
 scVEGs	VariableGenes
 scVelo	GeneFiltering
