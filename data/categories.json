@@ -32,6 +32,10 @@
         "Tool": "CellRanger"
       },
       {
+        "Tool": "Change-O",
+        "PyPI": "changeo"
+      },
+      {
         "Tool": "dropSeqPipe",
         "PyPI": "dropSeqPipe"
       },
@@ -78,6 +82,10 @@
       },
       {
         "Tool": "PPMS"
+      },
+      {
+        "Tool": "pRESTO",
+        "PyPI": "presto"
       },
       {
         "Tool": "rCASC"
@@ -209,6 +217,11 @@
       },
       {
         "Tool": "SiCeLoRe"
+      },
+      {
+        "Tool": "TIgGER",
+        "Bioc": "trigger",
+        "CRAN": "tigger"
       },
       {
         "Tool": "txburst"
@@ -381,6 +394,9 @@
     "Category": "Assembly",
     "Description": "Tools that perform assembly of scRNA-seq reads",
     "Tools": [
+      {
+        "Tool": "airrflow"
+      },
       {
         "Tool": "BALDR"
       },
@@ -1028,8 +1044,7 @@
         "Tool": "scDetect"
       },
       {
-        "Tool": "scDHA",
-        "CRAN": "scDHA"
+        "Tool": "scDHA"
       },
       {
         "Tool": "scdney"
@@ -1293,6 +1308,9 @@
       {
         "Tool": "adobo",
         "PyPI": "adobo"
+      },
+      {
+        "Tool": "airrflow"
       },
       {
         "Tool": "AltAnalyze",
@@ -2149,8 +2167,7 @@
         "PyPI": "SCCAF"
       },
       {
-        "Tool": "scCAN",
-        "CRAN": "scCAN"
+        "Tool": "scCAN"
       },
       {
         "Tool": "scCancer"
@@ -2191,8 +2208,7 @@
         "Tool": "scDeepCluster"
       },
       {
-        "Tool": "scDHA",
-        "CRAN": "scDHA"
+        "Tool": "scDHA"
       },
       {
         "Tool": "scdney"
@@ -2314,6 +2330,10 @@
       },
       {
         "Tool": "SCope"
+      },
+      {
+        "Tool": "SCOPer",
+        "CRAN": "scoper"
       },
       {
         "Tool": "scPanoView"
@@ -4077,7 +4097,8 @@
         "PyPI": "scalex"
       },
       {
-        "Tool": "scAlign"
+        "Tool": "scAlign",
+        "PyPI": "scalign"
       },
       {
         "Tool": "scAN10"
@@ -4169,8 +4190,7 @@
         "Tool": "scDGN"
       },
       {
-        "Tool": "scDHA",
-        "CRAN": "scDHA"
+        "Tool": "scDHA"
       },
       {
         "Tool": "scDHMap"
@@ -5071,8 +5091,7 @@
         "PyPI": "scarf"
       },
       {
-        "Tool": "scDHA",
-        "CRAN": "scDHA"
+        "Tool": "scDHA"
       },
       {
         "Tool": "SCell"
@@ -6459,6 +6478,13 @@
     "Description": "Assignment of receptor sequences and immune cell clonality",
     "Tools": [
       {
+        "Tool": "airrflow"
+      },
+      {
+        "Tool": "Alakazam",
+        "CRAN": "alakazam"
+      },
+      {
         "Tool": "BALDR"
       },
       {
@@ -6478,6 +6504,10 @@
         "Bioc": "CellaRepertorium"
       },
       {
+        "Tool": "Change-O",
+        "PyPI": "changeo"
+      },
+      {
         "Tool": "CoNGA"
       },
       {
@@ -6486,6 +6516,10 @@
       {
         "Tool": "dandelion",
         "PyPI": "sc-dandelion"
+      },
+      {
+        "Tool": "Dowser",
+        "CRAN": "dowser"
       },
       {
         "Tool": "dsb",
@@ -6502,6 +6536,9 @@
       },
       {
         "Tool": "iBRIDGE"
+      },
+      {
+        "Tool": "IgPhyML"
       },
       {
         "Tool": "ImmClassifier"
@@ -6530,6 +6567,10 @@
         "Tool": "Originiator"
       },
       {
+        "Tool": "pRESTO",
+        "PyPI": "presto"
+      },
+      {
         "Tool": "ProjecTILs"
       },
       {
@@ -6546,7 +6587,15 @@
         "PyPI": "scirpy"
       },
       {
+        "Tool": "SCOPer",
+        "CRAN": "scoper"
+      },
+      {
         "Tool": "scTCRseq"
+      },
+      {
+        "Tool": "SHazaM",
+        "CRAN": "shazam"
       },
       {
         "Tool": "SiCR"
@@ -6568,6 +6617,11 @@
       {
         "Tool": "STREAK",
         "CRAN": "STREAK"
+      },
+      {
+        "Tool": "TIgGER",
+        "Bioc": "trigger",
+        "CRAN": "tigger"
       },
       {
         "Tool": "TILPRED"
@@ -7596,7 +7650,8 @@
         "PyPI": "scalex"
       },
       {
-        "Tool": "scAlign"
+        "Tool": "scAlign",
+        "PyPI": "scalign"
       },
       {
         "Tool": "scAMACE"
@@ -7688,6 +7743,10 @@
       },
       {
         "Tool": "scFlow"
+      },
+      {
+        "Tool": "scGALA",
+        "PyPI": "scGALA"
       },
       {
         "Tool": "scGATE"
@@ -9530,6 +9589,9 @@
     "Description": "Ordering of cells along a trajectory",
     "Tools": [
       {
+        "Tool": "airrflow"
+      },
+      {
         "Tool": "Asc-Seurat"
       },
       {
@@ -9928,8 +9990,7 @@
         "PyPI": "scarf"
       },
       {
-        "Tool": "scDHA",
-        "CRAN": "scDHA"
+        "Tool": "scDHA"
       },
       {
         "Tool": "scdiff",
@@ -10402,6 +10463,9 @@
       {
         "Tool": "airpart",
         "Bioc": "airpart"
+      },
+      {
+        "Tool": "airrflow"
       },
       {
         "Tool": "AmbientContaminationMetrics"
@@ -11421,7 +11485,8 @@
         "PyPI": "shannonca"
       },
       {
-        "Tool": "scAlign"
+        "Tool": "scAlign",
+        "PyPI": "scalign"
       },
       {
         "Tool": "scCAD"
@@ -11721,6 +11786,10 @@
         "Tool": "scDist"
       },
       {
+        "Tool": "scGALA",
+        "PyPI": "scGALA"
+      },
+      {
         "Tool": "scGAN"
       },
       {
@@ -11789,6 +11858,10 @@
       {
         "Tool": "SERGIO",
         "PyPI": "sergio-scSim"
+      },
+      {
+        "Tool": "SHazaM",
+        "CRAN": "shazam"
       },
       {
         "Tool": "SLIDE"
@@ -12026,6 +12099,10 @@
       },
       {
         "Tool": "PPMS"
+      },
+      {
+        "Tool": "pRESTO",
+        "PyPI": "presto"
       },
       {
         "Tool": "rCASC"
@@ -12806,6 +12883,13 @@
         "Bioc": "airpart"
       },
       {
+        "Tool": "airrflow"
+      },
+      {
+        "Tool": "Alakazam",
+        "CRAN": "alakazam"
+      },
+      {
         "Tool": "alevinQC",
         "Bioc": "alevinQC"
       },
@@ -13458,6 +13542,10 @@
         "PyPI": "doubletdetection"
       },
       {
+        "Tool": "Dowser",
+        "CRAN": "dowser"
+      },
+      {
         "Tool": "dpi",
         "PyPI": "dpi-sc"
       },
@@ -13738,6 +13826,9 @@
       {
         "Tool": "iCellR",
         "CRAN": "iCellR"
+      },
+      {
+        "Tool": "IgPhyML"
       },
       {
         "Tool": "IKAP"
@@ -14448,8 +14539,7 @@
         "Bioc": "scDesign3"
       },
       {
-        "Tool": "scDHA",
-        "CRAN": "scDHA"
+        "Tool": "scDHA"
       },
       {
         "Tool": "scdiff",
@@ -14686,6 +14776,10 @@
         "Tool": "scopeplus"
       },
       {
+        "Tool": "SCOPer",
+        "CRAN": "scoper"
+      },
+      {
         "Tool": "SCORPIUS",
         "CRAN": "SCORPIUS"
       },
@@ -14914,6 +15008,10 @@
         "Tool": "Sharq"
       },
       {
+        "Tool": "SHazaM",
+        "CRAN": "shazam"
+      },
+      {
         "Tool": "ShinyCell"
       },
       {
@@ -15131,6 +15229,11 @@
       },
       {
         "Tool": "TFvelo"
+      },
+      {
+        "Tool": "TIgGER",
+        "Bioc": "trigger",
+        "CRAN": "tigger"
       },
       {
         "Tool": "TinGa"
