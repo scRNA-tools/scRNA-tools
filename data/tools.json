@@ -5127,7 +5127,7 @@
         "Title": "Dissecting cell identity via network inference and in silico gene perturbation",
         "DOI": "10.1038/s41586-022-05688-9",
         "Date": "2023-02-08",
-        "Citations": 302
+        "Citations": 303
       }
     ],
     "Preprints": [
@@ -5137,7 +5137,7 @@
         "Citations": 59
       }
     ],
-    "Citations": 382,
+    "Citations": 383,
     "NumPubs": 2,
     "NumPreprints": 1,
     "GitHub": "morris-lab/CellOracle"
@@ -5775,7 +5775,7 @@
         "Title": "Cross-tissue immune cell analysis reveals tissue-specific features in humans",
         "DOI": "10.1126/science.abl5197",
         "Date": "2022-05-13",
-        "Citations": 578
+        "Citations": 579
       }
     ],
     "Preprints": [
@@ -5785,7 +5785,7 @@
         "Citations": 13
       }
     ],
-    "Citations": 591,
+    "Citations": 592,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "celltypist",
@@ -6127,6 +6127,57 @@
     "NumPreprints": 1,
     "Bioc": "CHETAH",
     "GitHub": "jdekanter/CHETAH"
+  },
+  {
+    "Tool": "chevreulPlot",
+    "Platform": "R",
+    "Code": "https://github.com/cobriniklab/chevreulPlot",
+    "Description": "Tools for plotting SingleCellExperiment objects in the chevreulPlot package. Includes functions for analysis and visualization of single-cell data.",
+    "License": "MIT",
+    "Added": "2025-04-24",
+    "Updated": "2025-04-24",
+    "Categories": ["Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "chevreulPlot",
+    "GitHub": "cobriniklab/chevreulPlot"
+  },
+  {
+    "Tool": "chevreulProcess",
+    "Platform": "R",
+    "Code": "https://github.com/whtns/chevreulProcess",
+    "Description": "Tools analyzing SingleCellExperiment objects as projects. for input into the Chevreul app downstream. Includes functions for analysis of single cell RNA sequencing data.",
+    "License": "MIT",
+    "Added": "2025-04-24",
+    "Updated": "2025-04-24",
+    "Categories": ["CellCycle", "Clustering", "DimensionalityReduction", "Integration", "MarkerGenes", "Normalisation", "QualityControl"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "chevreulProcess",
+    "GitHub": "whtns/chevreulProcess"
+  },
+  {
+    "Tool": "chevreulShiny",
+    "Platform": "R",
+    "Code": "https://github.com/whtns/chevreulShiny",
+    "Description": "Tools for managing SingleCellExperiment objects as projects. Includes functions for analysis and visualization of single-cell data. Also included is a shiny app for visualization of pre-processed scRNA data.",
+    "License": "MIT",
+    "Added": "2025-04-24",
+    "Updated": "2025-04-24",
+    "Categories": ["Interactive", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "chevreulShiny",
+    "GitHub": "whtns/chevreulShiny"
   },
   {
     "Tool": "Chloris",
@@ -8802,10 +8853,10 @@
       {
         "Title": "Mapping single-cell developmental potential in health and disease with interpretable deep learning",
         "DOI": "10.1101/2024.03.19.585637",
-        "Citations": 27
+        "Citations": 28
       }
     ],
-    "Citations": 27,
+    "Citations": 28,
     "NumPubs": 0,
     "NumPreprints": 1,
     "PyPI": "cytotrace2-py",
@@ -9006,6 +9057,36 @@
     "NumPreprints": 2,
     "PyPI": "sc-dandelion",
     "GitHub": "zktuong/dandelion"
+  },
+  {
+    "Tool": "dandelionR",
+    "Platform": "R",
+    "Code": "https://github.com/tuonglab/dandelionR",
+    "Description": "dandelionR is an R package for performing single-cell immune repertoire trajectory analysis, based on the original python implementation in dandelion",
+    "License": "MIT",
+    "Added": "2025-04-24",
+    "Updated": "2025-04-24",
+    "Categories": ["Immune", "Ordering", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "Dandelion uses the single-cell adaptive immune receptor repertoire to explore lymphocyte developmental origins",
+        "DOI": "10.1038/s41587-023-01734-7",
+        "Date": "2023-04-13",
+        "Citations": 33
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "dandelionR: Single-cell immune repertoire trajectory analysis in R",
+        "DOI": "10.1101/2025.02.04.636146",
+        "Citations": 0
+      }
+    ],
+    "Citations": 33,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "Bioc": "dandelionR",
+    "GitHub": "tuonglab/dandelionR"
   },
   {
     "Tool": "DAPCA",
@@ -9373,7 +9454,7 @@
         "Title": "Decontamination of ambient RNA in single-cell RNA-seq with DecontX",
         "DOI": "10.1186/s13059-020-1950-6",
         "Date": "2020-03-05",
-        "Citations": 337
+        "Citations": 338
       }
     ],
     "Preprints": [
@@ -9388,7 +9469,7 @@
         "Citations": 5
       }
     ],
-    "Citations": 347,
+    "Citations": 348,
     "NumPubs": 2,
     "NumPreprints": 2,
     "Bioc": "decontX",
@@ -15827,7 +15908,7 @@
         "Title": "Fast, sensitive and accurate integration of single-cell data with Harmony",
         "DOI": "10.1038/s41592-019-0619-0",
         "Date": "2019-11-18",
-        "Citations": 5828
+        "Citations": 5829
       }
     ],
     "Preprints": [
@@ -15837,7 +15918,7 @@
         "Citations": 96
       }
     ],
-    "Citations": 5924,
+    "Citations": 5925,
     "NumPubs": 1,
     "NumPreprints": 1,
     "CRAN": "harmony",
@@ -16157,7 +16238,7 @@
         "Title": "Hotspot identifies informative gene modules across modalities of single-cell genomics",
         "DOI": "10.1016/j.cels.2021.04.005",
         "Date": "2021-05",
-        "Citations": 153
+        "Citations": 154
       }
     ],
     "Preprints": [
@@ -16167,7 +16248,7 @@
         "Citations": 12
       }
     ],
-    "Citations": 165,
+    "Citations": 166,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "hotspotsc",
@@ -16687,11 +16768,11 @@
         "Title": "Integrative differential expression and gene set enrichment analysis using summary statistics for scRNA-seq studies",
         "DOI": "10.1038/s41467-020-15298-6",
         "Date": "2020-03-27",
-        "Citations": 61
+        "Citations": 60
       }
     ],
     "Preprints": [],
-    "Citations": 61,
+    "Citations": 60,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "xzhoulab/iDEA"
@@ -19255,7 +19336,7 @@
         "Title": "Recovering Gene Interactions from Single-Cell Data Using Data Diffusion",
         "DOI": "10.1016/j.cell.2018.05.061",
         "Date": "2018-07",
-        "Citations": 1406
+        "Citations": 1407
       }
     ],
     "Preprints": [
@@ -19265,7 +19346,7 @@
         "Citations": 62
       }
     ],
-    "Citations": 1468,
+    "Citations": 1469,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "magic-impute",
@@ -19519,7 +19600,7 @@
         "Title": "MAST: a flexible statistical framework for assessing transcriptional changes and characterizing heterogeneity in single-cell RNA sequencing data",
         "DOI": "10.1186/s13059-015-0844-5",
         "Date": "2015-12-10",
-        "Citations": 2465
+        "Citations": 2466
       }
     ],
     "Preprints": [
@@ -19529,7 +19610,7 @@
         "Citations": 11
       }
     ],
-    "Citations": 2476,
+    "Citations": 2477,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "MAST",
@@ -20765,6 +20846,35 @@
     "GitHub": "hannenhalli-lab/miRSCAPE"
   },
   {
+    "Tool": "miRTalk",
+    "Platform": "R",
+    "Code": "https://github.com/multitalk/miRTalk",
+    "Description": "miRTalk is a pioneering framework for inferring EV-derived miRNA-mediated cell-cell communications with a curated database, miRTalkDB, which includes EV-derived miRNA-target associations.",
+    "License": "GPL-3.0",
+    "Added": "2025-04-24",
+    "Updated": "2025-04-24",
+    "Categories": ["GeneNetworks", "VariableGenes", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "Extracellular vesicle-derived miRNA-mediated cell–cell communication inference for single-cell transcriptomic data with miRTalk",
+        "DOI": "10.1186/s13059-025-03566-x",
+        "Date": "2025-04-14",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "Extracellular vesicle-derived miRNA-mediated cell-cell communication inference for single-cell transcriptomic data with miRTalk",
+        "DOI": "10.1101/2024.07.07.602386",
+        "Citations": 1
+      }
+    ],
+    "Citations": 1,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "GitHub": "multitalk/miRTalk"
+  },
+  {
     "Tool": "Miscell",
     "Platform": "Python",
     "Code": "https://github.com/lixiangchun/Miscell",
@@ -21215,7 +21325,7 @@
         "Title": "Single-cell mRNA quantification and differential analysis with Census",
         "DOI": "10.1038/nmeth.4150",
         "Date": "2017-01-23",
-        "Citations": 1426
+        "Citations": 1427
       },
       {
         "Title": "Reversed graph embedding resolves complex single-cell trajectories",
@@ -21231,7 +21341,7 @@
         "Citations": 58
       }
     ],
-    "Citations": 10445,
+    "Citations": 10446,
     "NumPubs": 3,
     "NumPreprints": 1,
     "Bioc": "monocle",
@@ -22459,7 +22569,7 @@
         "Title": "netSmooth: Network-smoothing based imputation for single cell RNA-seq",
         "DOI": "10.12688/f1000research.13511.2",
         "Date": "2018-01-24",
-        "Citations": 6
+        "Citations": 5
       }
     ],
     "Preprints": [
@@ -22469,7 +22579,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 7,
+    "Citations": 6,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "netSmooth",
@@ -26477,7 +26587,7 @@
         "Title": "A likelihood-based deconvolution of bulk gene expression data using single-cell references",
         "DOI": "10.1101/gr.272344.120",
         "Date": "2021-07-22",
-        "Citations": 27
+        "Citations": 28
       }
     ],
     "Preprints": [
@@ -26487,7 +26597,7 @@
         "Citations": 1
       }
     ],
-    "Citations": 28,
+    "Citations": 29,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "rnasieve",
@@ -28593,7 +28703,7 @@
         "Title": "SCANPY: large-scale single-cell gene expression data analysis",
         "DOI": "10.1186/s13059-017-1382-0",
         "Date": "2018-02-06",
-        "Citations": 5697
+        "Citations": 5698
       },
       {
         "Title": "PAGA: graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells",
@@ -28614,7 +28724,7 @@
         "Citations": 27
       }
     ],
-    "Citations": 6920,
+    "Citations": 6921,
     "NumPubs": 2,
     "NumPreprints": 2,
     "PyPI": "scanpy",
@@ -30514,11 +30624,11 @@
         "Title": "Doublet identification in single-cell sequencing data using scDblFinder",
         "DOI": "10.12688/f1000research.73600.1",
         "Date": "2021-09-28",
-        "Citations": 394
+        "Citations": 395
       }
     ],
     "Preprints": [],
-    "Citations": 394,
+    "Citations": 395,
     "NumPubs": 1,
     "NumPreprints": 0,
     "Bioc": "scDblFinder",
@@ -34379,6 +34489,23 @@
     "GitHub": "PMBio/scLVM"
   },
   {
+    "Tool": "scMAGCA",
+    "Platform": "Python",
+    "Code": "https://github.com/zemingzhou30/scMAGCA",
+    "Description": "Single Cell Multi-omics adversarial graph convolutional autoencoder",
+    "License": "MIT",
+    "Added": "2025-04-24",
+    "Updated": "2025-04-24",
+    "Categories": ["DimensionalityReduction", "Integration"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "PyPI": "scMAGCA",
+    "GitHub": "zemingzhou30/scMAGCA"
+  },
+  {
     "Tool": "scMAGeCK",
     "Platform": "R/Python",
     "Code": "https://bitbucket.org/weililab/scmageck",
@@ -34843,7 +34970,7 @@
         "Title": "Evaluating stably expressed genes in single cells",
         "DOI": "10.1093/gigascience/giz106",
         "Date": "2019-09-16",
-        "Citations": 63
+        "Citations": 62
       }
     ],
     "Preprints": [
@@ -34863,7 +34990,7 @@
         "Citations": 9
       }
     ],
-    "Citations": 249,
+    "Citations": 248,
     "NumPubs": 3,
     "NumPreprints": 3,
     "Bioc": "scMerge",
@@ -37033,6 +37160,23 @@
     "GitHub": "mary77/scQcut"
   },
   {
+    "Tool": "scQTLtools",
+    "Platform": "R",
+    "Code": "https://github.com/XFWuCN/scQTLtools",
+    "Description": "This package specializes in analyzing and visualizing eQTL at the single-cell level",
+    "License": "MIT",
+    "Added": "2025-04-24",
+    "Updated": "2025-04-24",
+    "Categories": ["Normalisation", "Variants", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "scQTLtools",
+    "GitHub": "XFWuCN/scQTLtools"
+  },
+  {
     "Tool": "scQuint",
     "Platform": "Python",
     "Code": "https://github.com/songlab-cal/scquint",
@@ -37798,7 +37942,7 @@
         "Title": "Scrublet: Computational Identification of Cell Doublets in Single-Cell Transcriptomic Data",
         "DOI": "10.1016/j.cels.2018.11.005",
         "Date": "2019-04",
-        "Citations": 1808
+        "Citations": 1809
       }
     ],
     "Preprints": [
@@ -37808,7 +37952,7 @@
         "Citations": 29
       }
     ],
-    "Citations": 1837,
+    "Citations": 1838,
     "NumPubs": 1,
     "NumPreprints": 1,
     "PyPI": "scrublet",
@@ -38058,6 +38202,35 @@
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "xuebaliang/scSemiCluster"
+  },
+  {
+    "Tool": "scSemiProfiler",
+    "Platform": "Python",
+    "Code": "https://github.com/mcgilldinglab/scSemiProfiler",
+    "Description": "scSemiProfiler is a deep generative AI tool designed for cost-effective single-cell data generation",
+    "License": "GPL-3.0",
+    "Added": "2025-04-24",
+    "Updated": "2025-04-24",
+    "Categories": ["Simulation"],
+    "Publications": [
+      {
+        "Title": "scSemiProfiler: Advancing large-scale single-cell studies through semi-profiling with deep generative models and active learning",
+        "DOI": "10.1038/s41467-024-50150-1",
+        "Date": "2024-07-16",
+        "Citations": 2
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "scSemiProfiler: Advancing Large-scale Single-cell Studies through Semi-profiling with Deep Generative Models and Active Learning",
+        "DOI": "10.1101/2023.11.20.567929",
+        "Citations": 0
+      }
+    ],
+    "Citations": 2,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "GitHub": "mcgilldinglab/scSemiProfiler"
   },
   {
     "Tool": "scSensitiveGeneDefine",
@@ -40064,11 +40237,11 @@
         "Title": "SelfE: Gene Selection via Self-Expression for Single-Cell Data",
         "DOI": "10.1109/TCBB.2020.2997326",
         "Date": "2020",
-        "Citations": 1
+        "Citations": 2
       }
     ],
     "Preprints": [],
-    "Citations": 1,
+    "Citations": 2,
     "NumPubs": 1,
     "NumPreprints": 0,
     "GitHub": "Priyadarshini-Rai/SelfE"
@@ -40366,7 +40539,7 @@
         "Title": "Integrated analysis of multimodal single-cell data",
         "DOI": "10.1016/j.cell.2021.04.048",
         "Date": "2021-06",
-        "Citations": 10007
+        "Citations": 10008
       },
       {
         "Title": "Spatial reconstruction of single-cell gene expression data",
@@ -40384,13 +40557,13 @@
         "Title": "Dictionary learning for integrative, multimodal and scalable single-cell analysis",
         "DOI": "10.1038/s41587-023-01767-y",
         "Date": "2023-05-25",
-        "Citations": 1428
+        "Citations": 1429
       },
       {
         "Title": "Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression",
         "DOI": "10.1186/s13059-019-1874-1",
         "Date": "2019-12-23",
-        "Citations": 3265
+        "Citations": 3266
       }
     ],
     "Preprints": [
@@ -40420,7 +40593,7 @@
         "Citations": 99
       }
     ],
-    "Citations": 43037,
+    "Citations": 43040,
     "NumPubs": 6,
     "NumPreprints": 5,
     "CRAN": "Seurat",
@@ -43278,6 +43451,36 @@
     "GitHub": "federicobocci/spliceJAC"
   },
   {
+    "Tool": "SplineDV",
+    "Platform": "R",
+    "Code": "https://github.com/Xenon8778/SplineDV",
+    "Description": "A spline based scRNA-seq method for identifying differentially variable (DV) genes across two experimental conditions",
+    "License": "GPL-2.0",
+    "Added": "2025-04-24",
+    "Updated": "2025-04-24",
+    "Categories": ["DifferentialExpression", "VariableGenes", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "Exploring cell-to-cell variability and functional insights through differentially variable gene analysis",
+        "DOI": "10.1038/s41540-025-00507-z",
+        "Date": "2025-03-20",
+        "Citations": 0
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "Beyond Differential Expression: Embracing Cell-to-Cell Variability in Single-Cell Gene Expression Data Analysis",
+        "DOI": "10.1101/2024.08.08.607086",
+        "Citations": 0
+      }
+    ],
+    "Citations": 0,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "Bioc": "SplineDV",
+    "GitHub": "Xenon8778/SplineDV"
+  },
+  {
     "Tool": "SPmarker",
     "Platform": "Python",
     "Code": "https://github.com/LiLabAtVT/SPMarker",
@@ -43962,6 +44165,23 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "BennyStrobes/surge"
+  },
+  {
+    "Tool": "SVP",
+    "Platform": "R/C++",
+    "Code": "https://github.com/YuLab-SMU/SVP",
+    "Description": "SVP uses the distance between cells and cells, features and features, cells and features in the space of MCA to build nearest neighbor graph, then uses random walk with restart algorithm to calculate the activity score of gene sets",
+    "License": "GPL-3.0",
+    "Added": "2025-04-24",
+    "Updated": "2025-04-24",
+    "Categories": ["DimensionalityReduction", "GeneSets", "MarkerGenes", "Visualisation"],
+    "Publications": [],
+    "Preprints": [],
+    "Citations": 0,
+    "NumPubs": 0,
+    "NumPreprints": 0,
+    "Bioc": "SVP",
+    "GitHub": "YuLab-SMU/SVP"
   },
   {
     "Tool": "SwarnSeq",
@@ -45844,7 +46064,7 @@
         "Title": "UCell: Robust and scalable single-cell gene signature scoring",
         "DOI": "10.1016/j.csbj.2021.06.043",
         "Date": "2021",
-        "Citations": 538
+        "Citations": 539
       }
     ],
     "Preprints": [
@@ -45854,7 +46074,7 @@
         "Citations": 3
       }
     ],
-    "Citations": 541,
+    "Citations": 542,
     "NumPubs": 1,
     "NumPreprints": 1,
     "Bioc": "UCell",
@@ -46914,6 +47134,35 @@
     "NumPubs": 1,
     "NumPreprints": 1,
     "GitHub": "rorymaizels/velvet"
+  },
+  {
+    "Tool": "VelvetVAE",
+    "Platform": "Python",
+    "Code": "https://github.com/rorymaizels/velvetVAE",
+    "Description": "VelvetVAE: deep dynamical modelling from temporal transcriptomics",
+    "License": "MIT",
+    "Added": "2025-04-24",
+    "Updated": "2025-04-24",
+    "Categories": ["ExpressionPatterns", "Normalisation", "Ordering", "VariableGenes", "Visualisation"],
+    "Publications": [
+      {
+        "Title": "Reconstructing developmental trajectories using latent dynamical systems and time-resolved transcriptomics",
+        "DOI": "10.1016/j.cels.2024.04.004",
+        "Date": "2024-05",
+        "Citations": 6
+      }
+    ],
+    "Preprints": [
+      {
+        "Title": "Deep dynamical modelling of developmental trajectories with temporal transcriptomics",
+        "DOI": "10.1101/2023.07.06.547989",
+        "Citations": 5
+      }
+    ],
+    "Citations": 11,
+    "NumPubs": 1,
+    "NumPreprints": 1,
+    "GitHub": "rorymaizels/velvetVAE"
   },
   {
     "Tool": "Venus",
