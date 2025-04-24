@@ -608,6 +608,16 @@ CHETAH	Classification
 CHETAH	Interactive
 CHETAH	Normalisation
 CHETAH	Visualisation
+chevreulPlot	Visualisation
+chevreulProcess	CellCycle
+chevreulProcess	Clustering
+chevreulProcess	DimensionalityReduction
+chevreulProcess	Integration
+chevreulProcess	MarkerGenes
+chevreulProcess	Normalisation
+chevreulProcess	QualityControl
+chevreulShiny	Interactive
+chevreulShiny	Visualisation
 Chloris	Simulation
 Chloris	Variants
 Chloris	Visualisation
@@ -861,6 +871,9 @@ DANCE	Imputation
 DANCE	Integration
 dandelion	Immune
 dandelion	Visualisation
+dandelionR	Immune
+dandelionR	Ordering
+dandelionR	Visualisation
 DAPCA	DimensionalityReduction
 DAZZLE	GeneNetworks
 DAZZLE	Imputation
@@ -1922,6 +1935,9 @@ MIRA	Integration
 MIRA	Ordering
 MIRA	Visualisation
 miRSCAPE	Imputation
+miRTalk	GeneNetworks
+miRTalk	VariableGenes
+miRTalk	Visualisation
 Miscell	DimensionalityReduction
 mitch	GeneSets
 mitch	Visualisation
@@ -3224,6 +3240,8 @@ scLVM	CellCycle
 scLVM	Normalisation
 scLVM	VariableGenes
 scLVM	Visualisation
+scMAGCA	DimensionalityReduction
+scMAGCA	Integration
 scMAGeCK	Perturbations
 scMAGeCK	Quantification
 scMAGeCK	Variants
@@ -3479,6 +3497,9 @@ scQCEA	Classification
 scQCEA	Interactive
 scQCEA	QualityControl
 scQcut	Clustering
+scQTLtools	Normalisation
+scQTLtools	Variants
+scQTLtools	Visualisation
 scQuint	Alignment
 scQuint	AlternativeSplicing
 scQuint	DimensionalityReduction
@@ -3583,6 +3604,7 @@ scSDAE	Imputation
 scSemiAE	DimensionalityReduction
 scSemiAE	Integration
 scSemiCluster	Clustering
+scSemiProfiler	Simulation
 scSensitiveGeneDefine	VariableGenes
 scSeqComm	GeneNetworks
 scSeqComm	GeneSets
@@ -4108,6 +4130,9 @@ Splatter	Simulation
 Splatter	Visualisation
 spliceJAC	GeneNetworks
 spliceJAC	Visualisation
+SplineDV	DifferentialExpression
+SplineDV	VariableGenes
+SplineDV	Visualisation
 SPmarker	MarkerGenes
 SPRING	DimensionalityReduction
 SPRING	Interactive
@@ -4157,6 +4182,10 @@ supercells	QualityControl
 Superscan	Classification
 SURGE	GeneNetworks
 SURGE	Variants
+SVP	DimensionalityReduction
+SVP	GeneSets
+SVP	MarkerGenes
+SVP	Visualisation
 SwarnSeq	DifferentialExpression
 switchde	DifferentialExpression
 switchde	ExpressionPatterns
@@ -4409,6 +4438,11 @@ velvet	Normalisation
 velvet	Ordering
 velvet	VariableGenes
 velvet	Visualisation
+VelvetVAE	ExpressionPatterns
+VelvetVAE	Normalisation
+VelvetVAE	Ordering
+VelvetVAE	VariableGenes
+VelvetVAE	Visualisation
 Venus	Alignment
 Venus	Quantification
 VeTra	Ordering
