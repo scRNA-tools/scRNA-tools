@@ -484,6 +484,10 @@ CellLayers	Visualisation
 CellMap	DimensionalityReduction
 CellMap	Interactive
 CellMap	Visualisation
+CellMapper	Classification
+CellMapper	Imputation
+CellMapper	Integration
+CellMapper	Visualisation
 cellmarkeraccordion	CellCycle
 cellmarkeraccordion	Classification
 cellmarkeraccordion	Visualisation
@@ -648,6 +652,8 @@ CIPR	MarkerGenes
 CIPR	Visualisation
 Cirrocumulus	Interactive
 Cirrocumulus	Visualisation
+Cisformer	Imputation
+Cisformer	Integration
 CiteFuse	Clustering
 CiteFuse	DifferentialExpression
 CiteFuse	Interactive
@@ -3250,6 +3256,9 @@ scMAGS	DimensionalityReduction
 scMAGS	GeneFiltering
 scMAGS	MarkerGenes
 scMAGS	Visualisation
+scMalignantFinder	Classification
+scMalignantFinder	GeneSets
+scMalignantFinder	RareCells
 scmallet	DimensionalityReduction
 scmap	Classification
 scMAPA	AlternativeSplicing
@@ -3973,6 +3982,7 @@ SingleCellSignalR	Normalisation
 SingleCellSignalR	Visualisation
 SingleCellSignatureExplorer	GeneSets
 SingleCellSignatureExplorer	Visualisation
+SingleCellStat	DifferentialExpression
 singleCellTK	Alignment
 singleCellTK	Clustering
 singleCellTK	DifferentialExpression
