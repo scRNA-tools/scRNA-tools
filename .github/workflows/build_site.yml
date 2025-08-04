@@ -25,7 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt-get install libcurl4-openssl-dev
+          sudo apt-get install libcurl4-openssl-dev libgit2-dev libssl-dev libxml2-dev libssh2-1-dev
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
