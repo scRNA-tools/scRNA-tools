@@ -402,6 +402,7 @@ CellChat	GeneNetworks
 CellChat	Visualisation
 CellContrast	DimensionalityReduction
 CellContrast	Integration
+CellDEEP	DifferentialExpression
 CellDemux	Alignment
 CellDemux	QualityControl
 CellDemux	Quantification
@@ -2731,6 +2732,8 @@ batchelor	Integration
 bayNorm	Imputation
 bayNorm	Normalisation
 bayNorm	Simulation
+bayesReact	GeneNetworks
+bayesReact	Normalisation
 bbknn	Integration
 bbknn	Visualisation
 bcbio	Alignment
@@ -3689,6 +3692,10 @@ scDrugPrio	Perturbations
 scEC	Clustering
 scEC	DifferentialExpression
 scEC	VariableGenes
+scECODA	Classification
+scECODA	DifferentialExpression
+scECODA	Normalisation
+scECODA	Visualisation
 scEFSC	Clustering
 scEMAIL	Classification
 scEMAIL	DimensionalityReduction
@@ -3988,6 +3995,8 @@ scPSM	Integration
 scPagwas	GeneNetworks
 scPagwas	Variants
 scPagwas	Visualisation
+scPairs	GeneNetworks
+scPairs	Visualisation
 scPanoView	Clustering
 scPanoView	DimensionalityReduction
 scPanoView	VariableGenes
@@ -4218,6 +4227,9 @@ scTreeViz	Visualisation
 scTriangulate	Clustering
 scTriangulate	QualityControl
 scTriangulate	Visualisation
+scTypeEval	Classification
+scTypeEval	DimensionalityReduction
+scTypeEval	Visualisation
 scTyper	Classification
 scTyper	Visualisation
 scUTRquant	AlternativeSplicing
