@@ -14,22 +14,24 @@ get_pkgs_cache <- function() {
     usethis::ui_done("Got CRAN packages")
     pypi_pkgs  <- get_pypi_pkgs()
     usethis::ui_done("Got PyPI packages")
-    usethis::ui_todo("Getting Conda packages...")
-    conda_pkgs <- get_conda_pkgs()
-    usethis::ui_done("Got Conda packages")
+    # usethis::ui_todo("Getting Conda packages...")
+    # conda_pkgs <- get_conda_pkgs()
+    # usethis::ui_done("Got Conda packages")
 
+    usethis::ui_todo("Building packages cache...")
     pkgs_cache <- tibble::tibble(
-        Name = c(bioc_pkgs, cran_pkgs, pypi_pkgs, conda_pkgs),
+        Name = c(bioc_pkgs, cran_pkgs, pypi_pkgs), # conda_pkgs
         Type = c(
             rep("Bioc",  length(bioc_pkgs)),
             rep("CRAN",  length(cran_pkgs)),
-            rep("PyPI",  length(pypi_pkgs)),
-            rep("Conda", length(conda_pkgs))
+            rep("PyPI",  length(pypi_pkgs))
+            # rep("Conda", length(conda_pkgs))
         ),
         Added = lubridate::now("UTC")
     ) %>%
         dplyr::mutate(Repository = paste(Name, Type, sep = "@")) %>%
         dplyr::select(Repository, Name, Type, Added)
+    usethis::ui_done("Packages cache built")
 
     return(pkgs_cache)
 }
